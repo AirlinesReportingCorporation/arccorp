@@ -1,11 +1,18 @@
+@import 'partials/bootstrap.grid';
+
 .supernav {
   background: #ffffff;
-  height: 90px;
+  height: auto;
   position: relative;
+  &::after {
+    display: block;
+    content: "";
+    clear: both;
+  }
 }
 
 .supernav .supernav-inner {
-  height: 100%;
+  height: 90px + 36px;
   margin: 0 auto;
   max-width: 1170px;
 }
@@ -24,7 +31,7 @@
   display: table-cell;
   height: 100%;
   vertical-align: middle;
-  font-size: 1.8rem;
+  font-size: 2.3rem;
   padding: 0 10px;
 }
 
@@ -40,19 +47,21 @@
   vertical-align: top;
 }
 
-.supernav .supernav-menu-items {
-  font-family: SourceSansPro-Regular, "Source Sans Pro", helvetica, arial, sans-serif;
+.supernav .supernav-menu-item {
+  font-family: SourceSansPro-Bold, "Source Sans Pro", helvetica, arial, sans-serif;
   color: #189bb0;
   display: inline-block;
   line-height: 90px;
   text-decoration: none;
   vertical-align: top;
   padding: 0 10px;
+  text-transform: uppercase;
 }
 
 .supernav .supernav-sub {
-  background: #f7f7f7;
-  border-bottom: #dedede 2px solid;
+  background: #ffffff;
+  border-bottom: #dedede 1px solid;
+  border-top: #dedede 1px solid;
   font-size: 0.875rem;
   padding: 30px 0;
   position: absolute;
@@ -60,6 +69,7 @@
   left: 0;
   min-height: 200px;
   z-index: 5;
+
 }
 
 .supernav .supernav-sub .supernav-sub-inner {
@@ -75,23 +85,93 @@
 }
 
 .supernav .supernav-sub .supernav-header {
+  display: block;
   color: #189bb0;
   font-family: SourceSansPro-Bold, "Source Sans Pro", helvetica, arial, sans-serif;
   font-weight: 600;
   text-transform: uppercase;
   margin-bottom: 15px;
+  font-size: 1rem;
+  padding-bottom:10px;
+  max-width: 235px;
 }
 
 .supernav .supernav-sub .supernav-sub-link,
 .supernav .supernav-sub .supernav-sub-link:focus,
 .supernav .supernav-sub .supernav-sub-link:visited {
-  color: #949494;
+  color: #6c6c6c;
   display: block;
   font-family: SourceSansPro-Regular, "Source Sans Pro", helvetica, arial, sans-serif;
   padding-bottom: 10px;
+  font-size: 1rem;
   text-decoration: none;
 }
 
 .supernav .supernav-sub .supernav-sub-link:hover {
   color: #6c6c6c;
+}
+
+.supernav-topnav {
+  font-family: SourceSansPro-Regular, helvetica, arial, sans-serif;
+  padding: 15px 0 0;
+  position: relative;
+
+  .supernav-topnav-inner {
+    position: relative;
+    text-align: right;
+    height: 100%;
+    max-width:1170px;
+    margin: 0 auto;
+    a {
+      font-family: SourceSansPro-Regular, helvetica, arial, sans-serif;
+    }
+  }
+
+  .supernav-login {
+    background: #242039;
+    z-index:9;
+    text-align: left;
+    color: #ffffff;
+    padding:20px;
+    position: absolute;
+    right: 0;
+    margin-top: 5px;
+    max-width: 400px;
+    width: 100%;
+    h2 {
+      color: #ffffff;
+    }
+    label {
+      color: #ffffff;
+    }
+    input {
+      background: #161323;
+      border-color: #161323;
+      color: #ffffff;
+      border-radius: 4px;
+      font-size: 1rem;
+    }
+    ::-webkit-input-placeholder, ::placeholder, ::-ms-input-placeholder, ::-ms-input-placeholder {
+      color: #ffffff;
+      opacity: 1;
+    }
+  }
+
+  .supernav-contact {
+    background: #ffffff;
+    position: absolute;
+    margin-top: 5px;
+    right: 0;
+    text-align: left;
+    z-index:9;
+    max-width: 250px;
+    width: 100%;
+    padding: 20px;
+    border: #dedede 1px solid;
+  }
+
+  .topnav-link {
+    padding:0 20px;
+  }
+
 }

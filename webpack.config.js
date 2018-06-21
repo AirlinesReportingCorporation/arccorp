@@ -10,7 +10,7 @@
   module.exports = [
 		{
 			entry: {
-					main: './src/main.js'
+					main: './src/js/main.js'
 			},
 			output: {
 				filename: '[name].min.js',
@@ -49,7 +49,8 @@
 			resolve: {
 				alias: {
 					'masonry': 'masonry-layout',
-					'isotope': 'isotope-layout'
+					'isotope': 'isotope-layout',
+          'vue': 'vue/dist/vue.js'
 				}
 			},
 			plugins: [
