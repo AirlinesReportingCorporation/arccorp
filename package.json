@@ -11,7 +11,7 @@
     "extract-text-webpack-plugin": "^3.0.1",
     "featherlight": "^1.7.9",
     "isotope-layout": "^3.0.6",
-    "jquery": "^1.11.2",
+    "jquery": "^3.0.0",
     "leaflet": "^1.2.0",
     "masonry-layout": "^4.2.0",
     "node-sass": "^4.5.3",
