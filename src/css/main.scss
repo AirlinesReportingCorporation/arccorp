@@ -1,4 +1,7 @@
 @import 'partials/bootstrap.grid';
+@import url('https://use.fontawesome.com/releases/v5.1.0/css/all.css');
+@import url("https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.0.0-beta.2.4/assets/owl.carousel.css");
+@import url("https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.0.0-beta.2.4/assets/owl.theme.default.css");
 
 .supernav {
   background: #ffffff;
@@ -12,7 +15,7 @@
 }
 
 .supernav .supernav-inner {
-  height: 90px + 36px;
+  height: 90px;
   margin: 0 auto;
   max-width: 1170px;
 }
@@ -43,26 +46,27 @@
 
 .supernav .supernav-menu {
   display: inline-block;
-  float: right;
+  margin-left: 100px;
   vertical-align: top;
 }
 
 .supernav .supernav-menu-item {
   font-family: SourceSansPro-Bold, "Source Sans Pro", helvetica, arial, sans-serif;
-  color: #189bb0;
+  font-size: 1.2rem;
+  color: #333333;
   display: inline-block;
   line-height: 90px;
   text-decoration: none;
   vertical-align: top;
   padding: 0 10px;
-  text-transform: uppercase;
+  text-transform: capitalize;
 }
 
 .supernav .supernav-sub {
   background: #ffffff;
   border-bottom: #dedede 1px solid;
   border-top: #dedede 1px solid;
-  font-size: 0.875rem;
+  font-size: .9rem;
   padding: 30px 0;
   position: absolute;
   width: 100%;
@@ -80,20 +84,25 @@
 
 .supernav .supernav-sub .supernav-sub-main {
   display: inline-block;
-  margin-right: 20px;
   vertical-align: top;
 }
 
 .supernav .supernav-sub .supernav-header {
   display: block;
-  color: #189bb0;
-  font-family: SourceSansPro-Bold, "Source Sans Pro", helvetica, arial, sans-serif;
+  color: #333333;
+  font-family: SourceSansPro-Black, "Source Sans Pro", helvetica, arial, sans-serif;
   font-weight: 600;
-  text-transform: uppercase;
+  font-size: 1.2rem;
   margin-bottom: 15px;
-  font-size: 1rem;
-  padding-bottom:10px;
-  max-width: 235px;
+  padding-bottom: 5px;
+  border-top: #333333 solid 1px;
+  padding-top: 10px;
+
+  &.supernav-header-nonlink{
+    color: #189bb0;
+    border-top: #189bb0 solid 1px;
+    margin-bottom: 15px;
+  }
 }
 
 .supernav .supernav-sub .supernav-sub-link,
@@ -103,7 +112,6 @@
   display: block;
   font-family: SourceSansPro-Regular, "Source Sans Pro", helvetica, arial, sans-serif;
   padding-bottom: 10px;
-  font-size: 1rem;
   text-decoration: none;
 }
 
@@ -113,8 +121,9 @@
 
 .supernav-topnav {
   font-family: SourceSansPro-Regular, helvetica, arial, sans-serif;
-  padding: 15px 0 0;
+  padding: 15px 0 10px;
   position: relative;
+  border-bottom: 1px solid #f1f1f1;
 
   .supernav-topnav-inner {
     position: relative;
@@ -174,4 +183,184 @@
     padding:0 20px;
   }
 
+}
+
+.owl-carousel {
+  h2 {
+    font-family: SourceSansPro-Bold, helvetica, arial, sans-serif;
+  }
+  .carousel-container {
+    position: relative;
+    width: 100%;
+  }
+  .carousel-slide {
+    margin: 0 auto;
+    display: table;
+    color: #ffffff;
+    font-family: SourceSansPro-Regular, helvetica, arial, sans-serif;
+    padding: 20px;
+    height: 500px;
+    vertical-align: middle;
+    max-width: 1170px;
+    width: 100%;
+  }
+  .carousel-slide-content {
+    position: relative;
+    display: table-cell;
+    vertical-align: middle;
+    text-align: center;
+    max-width: 700px;
+    width: 100%;
+
+    z-index: 3;
+  }
+  .slide-1 {
+    background: url("https://www2.arccorp.com/contentassets/36df66ade6794041806a1101adf85010/jumbotron-distribution-strategy.jpg") center center no-repeat;
+    background-size:cover;
+  }
+  .slide-2 {
+    background:url("https://www2.arccorp.com/globalassets/homepage/fullbleed_1400x687_home.jpg") center center no-repeat;
+    background-size:cover;
+  }
+  .owl-dots {
+    position: absolute;
+    width: 100%;
+    bottom: 35px;
+    text-align: center;
+  }
+  .owl-nav {
+    color: #ffffff;
+    position: absolute;
+    top: 50%;
+    width: 100%;
+    font-size: 2rem;
+    opacity: 0.7;
+    z-index: 0;
+  }
+  .owl-next, .owl-prev {
+    position: absolute;
+    height: 100%;
+    background: #ffffff;
+    padding-right: 15px;
+    padding-left: 15px;
+    z-index: 4;
+  }
+  .owl-next {
+    right: 0;
+  }
+  .owl-prev {
+    left: 0;
+
+  }
+  .background--opacity {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 50%;
+    left: 0;
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+    opacity: 0.4;
+    z-index: 2;
+    content: '';
+    max-height: 100%;
+    background: #000;
+  }
+}
+
+.homePageGrid {
+
+  background: #ffffff;
+
+  .page-grid__content {
+    background: #ffffff;
+    position: relative;
+  }
+  .page-grid__topContent{
+    max-width: 100%;
+  }
+  .byline {
+    text-align: left;
+  }
+  .page-grid__items--collapsed .page-grid__row:nth-child(n+1), .page-grid__items--expanded .page-grid__row:nth-child(n+1) {
+    display: inline-block;
+    vertical-align: top;
+  }
+  .page-grid__items--collapsed, .page-grid__items--expanded {
+    height: auto !important;
+    width: 5000px;
+    text-align: left;
+  }
+  .page-grid__content {
+    overflow:hidden;
+  }
+  a.ctaBtn.ctaBtn--main {
+    position: absolute;
+    top: 20px;
+    right: 0;
+    background: none;
+    color: #189bb0;
+    border: none;
+  }
+  .latestArrowRight {
+    position: absolute;
+    top: 50%;
+    right: 10px;
+    box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+    &:hover {
+      cursor: pointer;
+    }
+  }
+  .latestArrowLeft {
+    position: absolute;
+    top: 50%;
+    left: 10px;
+    box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+    &:hover {
+      cursor: pointer;
+    }
+  }
+  .content-block--pageItem__inside {
+    background: none;
+    border: none;
+    text-align: left !important;
+    overflow: visible;
+    max-height: auto !important;
+    img {
+      display:block;
+      width:100%;
+      margin-bottom:20px;
+    }
+  }
+  .ctaLink {
+    color: #333333;
+    font-family:SourceSansPro-Black, helvetica, arial, sans-serif;
+    font-size: 1.5rem;
+  }
+}
+
+@media screen and (min-width: 960px){
+  .homePageGrid .page-grid__content {
+      padding: 55px 15px 0 15px;
+  }
+}
+
+@media screen and (min-width: 768px){
+  .homePageGrid.page-grid .block-header {
+      text-align: left;
+  }
+  .page-grid__row .content-block--pageItem {
+      width: auto !important;
+      max-width: 380px;
+      background: none;
+    }
+  .homePageGrid .content-block--pageItem__inside {
+    max-height: none;
+  }
+  .page-grid--centerItemText .content-block--pageItem .content-block--pageItem__inside {
+    padding-top: 0;
+  }
+  .page-grid .content-block--pageItem__body {
+    float: none;
+  }
 }
