@@ -4,11 +4,15 @@
 <head>
   <meta charset="utf-8">
   <title>Homepage Redesign</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="HandheldFriendly" content="true" />
+  <meta http-equiv="x-ua-compatible" content="IE=edge" />
+
   <link href="https://www2.arccorp.com/globalassets/static/style.css" rel="stylesheet" />
   <link rel="stylesheet" href="dest/main.min.css">
 </head>
 
-<body>
+<body class=" home-page">
   <div class="supernav" v-on:mouseleave="navPanelReset()">
 
     <div class="primary-nav__after"></div>
@@ -403,8 +407,6 @@
       <div class="page-grid__items page-grid__items--expanded" style="height: 1098px;">
         <div class="page-grid__row page-grid__row--3 clearfix" data-page-grid="row">
 
-
-
           <div class="content-block--pageItem">
             <div data-grid-content="insideContent" class="content-block--pageItem__inside">
               <div class="content-block--pageItem__title">
@@ -645,6 +647,196 @@
       <a href="/articles-trends/the-latest/" title="Show All" class="ctaBtn ctaBtn--main">Show All</a>
     </div>
   </section>
+
+  <div class="techPanel">
+    <div class="iconPanel">
+      <h2>Technologies</h2>
+      <div class="iconContainer">
+        <div class="techContainer">
+          <div class="techIcon" v-on:click="techSwitch('techBlurb1')">
+            <img src="/globalassets/homepage/redesign/techIcon1.png" alt="Tech Icon 1">
+            <div class="iconText">NDC Exchange</div>
+          </div>
+          <div class="techIcon" v-on:click="techSwitch('techBlurb2')">
+            <img src="/globalassets/homepage/redesign/techIcon2.png" alt="Tech Icon 2">
+            <div class="iconText">Blockchain</div>
+          </div>
+          <div class="techIcon">
+            <img src="/globalassets/homepage/redesign/techIcon1.png" alt="Tech Icon 3">
+            <div class="iconText">NDC Exchange</div>
+          </div>
+          <div class="techIcon">
+            <img src="/globalassets/homepage/redesign/techIcon2.png" alt="Tech Icon 4">
+            <div class="iconText">Blockchain</div>
+          </div>
+          <div class="techIcon">
+            <img src="/globalassets/homepage/redesign/techIcon1.png" alt="Tech Icon 5">
+            <div class="iconText">NDC Exchange</div>
+          </div>
+        </div>
+        <div class="techContainer">
+          <div class="techIcon" v-on:click="techSwitch('techBlurb1')">
+            <img src="/globalassets/homepage/redesign/techIcon1.png" alt="Tech Icon 1">
+            <div class="iconText">NDC Exchange</div>
+          </div>
+          <div class="techIcon" v-on:click="techSwitch('techBlurb2')">
+            <img src="/globalassets/homepage/redesign/techIcon2.png" alt="Tech Icon 2">
+            <div class="iconText">Blockchain</div>
+          </div>
+          <div class="techIcon">
+            <img src="/globalassets/homepage/redesign/techIcon1.png" alt="Tech Icon 3">
+            <div class="iconText">NDC Exchange</div>
+          </div>
+          <div class="techIcon">
+            <img src="/globalassets/homepage/redesign/techIcon2.png" alt="Tech Icon 4">
+            <div class="iconText">Blockchain</div>
+          </div>
+          <div class="techIcon">
+            <img src="/globalassets/homepage/redesign/techIcon1.png" alt="Tech Icon 5">
+            <div class="iconText">NDC Exchange</div>
+          </div>
+        </div>
+      </div>
+      <div class="techArrowRight">
+        <img src="/globalassets/homepage/redesign/techArrowRight.png" alt="">
+      </div>
+      <div class="techArrowLeft">
+        <img src="/globalassets/homepage/redesign/techArrowLeft.png" alt="">
+      </div>
+    </div>
+    <div class="techDropdown">
+      <div class="techBlurb" v-show="pullDown === 'techBlurb1'">
+        <h2>NDC Exchange</h2>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute
+          irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+        <a href="/about-us/contact-us/" title="Contact Us" class="ctaBtn ctaBtn--main">NDC Page</a>
+        <div class="blurbClose" v-on:click="techSwitch('techReset')"></div>
+      </div>
+      <div class="techBlurb" v-show="pullDown === 'techBlurb2'">
+        <h2>Blockchain</h2>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute
+          irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+        <div class="blurbClose" v-on:click="techSwitch('techReset')"></div>
+      </div>
+    </div>
+  </div>
+
+  <div class="fullPanel">
+    <div class="testPanel">
+      <div class="row">
+        <div class="col-md-5">
+          <img src="/globalassets/homepage/redesign/british_airways.png" alt=""><br/><br/>
+          <div class="testQuote">"British Airways is excited to be the first test partner to ARC's enhanced settlement functionality, which enables us to evolve our distribution strategy with the travel agency channel."</div><br/>
+          <small><strong>Simon Brooks</strong>, Senior Vice President, Sales for North American</small><br/><br/>
+
+          <a class="testCta" href="#">Tell Your Story &raquo;</a> View More <a href="#">customer stories</a>
+        </div>
+      </div>
+
+
+    </div>
+  </div>
+
+  <div class="featuredProduct productPurple">
+    <div class="innerProduct">
+      <div class="row">
+        <div class="col-md-7">
+          <span class="eyebrow">Featured Product</span>
+          <h2>ARIA Web</h2>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+          <a href="/about-us/contact-us/" title="Contact Us" class="ctaBtn ctaBtn--main">Request Product Demo</a>
+
+        </div>
+      </div>
+      <hr>
+      <div class="row">
+        <div class="col-12">
+          <div><img style="width:100%" src="/globalassets/homepage/redesign/testProduct.jpg" alt=""></div>
+        </div>
+      </div>
+
+
+    </div>
+  </div>
+
+  <div class="ourStory">
+    <div class="blockText">
+      <div class="row">
+        <div class="col-md-6">
+          <h2>Our Story</h2>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+          <div class="twoButtons clearfix" style="margin: 0;">
+            <div class="twoButtons__content">
+
+
+              <a href="/products-participation/travel-agencies/" title="Support for Agencies" class="ctaBtn ctaBtn--main">Hear from Past CEOs</a>
+
+              <div class="twoButtons__spacer"></div>
+
+
+
+              <a href="/support-training/airlines/" title="Support for Airlines" class="ctaBtn ctaBtn--secondaryOnImage">Executive Team Leadership</a>
+
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <footer>
+    <div class="border-image"></div>
+    <div class="footer-inside">
+      <div class="rtf">
+
+
+        <p><span>© 2018 Airlines Reporting Corporation (ARC). All rights reserved.</span></p>
+        <noscript> &lt;img height="1" width="1" style="display:none;" alt="" src="https://secure-web.cisco.com/1lFIqAtewp9_1BLUnV0GC98_Dk17wziT5RY3nBb8ZXxTeDBINBdDwEpMrgda9AlaE4ynN8wwEGDc8xENujrxKH6c46BuYWUkWtrxBOZp96AYq8vSkmcjVU9rB4h6xZCtjcFWmJwlnWvVorXMe5D0hCBV6eCxDfpt5Syb2yPI6WozRP4eESeFUnG18ovf8C-Et-677xqxaI6b5EfgxOnxlc_yCKvwsz6FI2urXjO3vKbIbppx02UEzS8PcAgPbkcMA2zZBPQoHGHC6iFlNll5ng4aUnNCeBpFEZPiJBFdkYDrilPOFxEnv2jsDQauqxP2VBLd0EeQ5bOFJ9N-Boqc5hw/https%3A%2F%2Fdc.ads.linkedin.com/collect/?pid=80871&amp;fmt=gif" /&gt; </noscript>
+
+
+
+        <span class="footer-rtf-links">
+
+<a href="/website-terms-of-use/" title="Terms">Terms</a>
+
+
+<a href="/site-privacy-policy/" title="Privacy">Privacy</a>
+
+
+<a href="/pci-data-security-standards/" title="PCI Standards">PCI Standards</a>
+
+
+<a href="https://arccorp.statusdashboard.com/" title="Status" target="_blank">Status</a>
+</span>
+      </div>
+
+
+
+      <ul class="footer-links-social">
+        <li>
+
+          <a href="https://www.schellmanco.com/certificate-directory" class="icon-iso_logo"></a>
+        </li>
+        <li>
+
+          <a href="https://twitter.com/ARCtalk" title="twitter" target="_blank" class="icon-twitter"></a>
+        </li>
+        <li>
+
+          <a href="https://www.facebook.com/ARCtalk" title="facebook" target="_blank" class="icon-facebook"></a>
+        </li>
+        <li>
+
+          <a href="https://www.linkedin.com/company/arc" title="LinkedIn" target="_blank" class="icon-linkedin"></a>
+        </li>
+        <li>
+
+          <a href="https://www.instagram.com/arctalk/" target="_blank" class="icon-instagram"></a>
+        </li>
+      </ul>
+    </div>
+  </footer>
 
   <script src="https://www2.arccorp.com//globalassets/static/scripts.js?45432"></script>
   <script src="https://www2.arccorp.com//static/js/foundation-custom.js"></script>

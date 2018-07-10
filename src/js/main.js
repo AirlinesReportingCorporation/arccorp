@@ -10,19 +10,21 @@ var latestSliderPosition = 0;
 var latestSliderWidth = 100;
 var maxSliderHeight = 0;
 
+var latestTechPosition = 0;
+
 function latestSliderInit(){
-  $(".homePageGrid .page-grid__row").eq(0).prepend("<div class='content-block--pageItem'><img src='test2.png'></div>");
+  $(".homePageGrid .page-grid__row").eq(0).prepend("<div class='featuredLatest content-block--pageItem'><img src='/globalassets/homepage/redesign/test2.png'><div class='featuredContent'><p>2018 Trends<br/> in Airline Data</p><a href='#'>Call To Action <i class='icon-right-arrow'></i></a></div></div>");
   var sliderDistance = $(".homePageGrid .page-grid__row").outerWidth() / 3.0;
   var windowWidth = $(".homePageGrid .page-grid__content").outerWidth();
 
 
 
-  $(".content-block--pageItem__inside").prepend("<img src='test.jpg'>");
+  $(".content-block--pageItem__inside").prepend("<img src='/globalassets/homepage/redesign/test.jpg'>");
 
   $(".homePageGrid .page-grid__row").each(function(){
 
     $(this).find(".content-block--pageItem").each(function(){
-      console.log($(this).outerWidth());
+      //console.log($(this).outerWidth());
       latestSliderWidth += $(this).outerWidth();
     });
 
@@ -35,12 +37,12 @@ function latestSliderInit(){
     }
   });
 
-  $(".homePageGrid .page-grid__content").append("<div class='latestArrowRight'><img src='latestArrowRight.png'></div><div class='latestArrowLeft'><img src='latestArrowLeft.png'></div>");
+  $(".homePageGrid .page-grid__content").append("<div class='latestArrowRight'><img src='/globalassets/homepage/redesign/latestArrowRight.png'></div><div class='latestArrowLeft'><img src='/globalassets/homepage/redesign/latestArrowLeft.png'></div>");
 
   $(".latestArrowLeft").click(function(){
     var leftmargin = $(".homePageGrid .page-grid__items").css('margin-left');
     leftmargin = parseInt(leftmargin.replace('px', ''));
-    console.log(leftmargin);
+    //console.log(leftmargin);
 
 
     if(leftmargin < sliderDistance && leftmargin < 0){
@@ -53,7 +55,7 @@ function latestSliderInit(){
 
   $(".latestArrowRight").click(function(){
     var leftmargin = $(".homePageGrid .page-grid__items").css('margin-left');
-    console.log(leftmargin);
+    //console.log(leftmargin);
 
     if(latestSliderPosition < Math.abs(windowWidth - latestSliderWidth)){
       $(".homePageGrid .page-grid__items").stop(true, true).animate({
@@ -65,7 +67,45 @@ function latestSliderInit(){
   });
 }
 
-latestSliderInit();
+function techInit(){
+
+  var length = $(".techContainer").length;
+  var tcWidth = $(".techContainer").width();
+  var techIcon = $(".techIcon").width();
+
+  $(".iconContainer").width( (tcWidth * length) + 100 + "px");
+
+  $(".techArrowRight").click(function(){
+    var leftmargin = $(".iconContainer").css('margin-left');
+    techIcon = $(".techIcon").width();
+    var percentage = (tcWidth) / $(".techIcon").css("width").replace("px", "");
+
+    var techNum = $(".iconContainer").width() - (techIcon * percentage);
+
+    console.log((techNum * -1) >= leftmargin);
+
+    if(latestTechPosition <= Math.abs(leftmargin.replace("px", "")) && (techNum * -1) <= leftmargin.replace("px", "") ){
+      $(".iconContainer").stop(true, true).animate({
+        marginLeft: '-=' + techIcon + 'px'
+      }, 200);
+      latestTechPosition += techIcon;
+    }
+  });
+
+  $(".techArrowLeft").click(function(){
+    var leftmargin = $(".iconContainer").css('margin-left');
+    techIcon = $(".techIcon").width();
+    //console.log(leftmargin);
+
+
+    if(latestTechPosition > 0 ){
+      $(".iconContainer").stop(true, true).animate({
+        marginLeft: '+=' + techIcon + 'px'
+      }, 200);
+      latestTechPosition -= techIcon;
+    }
+  });
+}
 
 var data = {
   primaryNav: "",
@@ -157,3 +197,28 @@ var app = new Vue({
      }
    }
 });
+
+var techApp = new Vue({
+  el: '.techPanel',
+  data: {
+    pullDown: ""
+  },
+  methods: {
+    techReset: function() {
+      this.pullDown = "";
+    },
+    techSwitch: function(curNav) {
+      if(this.pullDown == curNav){
+        this.techReset();
+      }
+      else {
+        this.pullDown = curNav;
+      }
+    }
+  }
+});
+
+if($("body").hasClass("home-page")){
+  latestSliderInit();
+  techInit();
+}
