@@ -57,8 +57,9 @@
 			plugins: [
         new webpack.ProvidePlugin({
           $: 'jquery',
-          jQuery: 'jquery',
-          'window.jQuery': 'jquery'
+          jquery: 'jquery',
+          'window.jQuery': 'jquery',
+          jQuery: 'jquery'
         }),
         extractSass,
 				new UglifyJSPlugin()

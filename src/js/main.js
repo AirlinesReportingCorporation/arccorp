@@ -12,14 +12,15 @@ var maxSliderHeight = 0;
 
 var latestTechPosition = 0;
 
+/*
 function latestSliderInit(){
-  $(".homePageGrid .page-grid__row").eq(0).prepend("<div class='featuredLatest content-block--pageItem'><img src='/globalassets/homepage/redesign/test2.png'><div class='featuredContent'><p>2018 Trends<br/> in Airline Data</p><a href='#'>Call To Action <i class='icon-right-arrow'></i></a></div></div>");
+  $(".homePageGrid .page-grid__row").eq(0).prepend("<div class='featuredLatest content-block--pageItem'><img src='https://intg-epi01.arcnp.com/globalassets/homepage/redesign/test2.png'><div class='featuredContent'><p>2018 Trends<br/> in Airline Data</p><a href='#'>Call To Action <i class='icon-right-arrow'></i></a></div></div>");
   var sliderDistance = $(".homePageGrid .page-grid__row").outerWidth() / 3.0;
   var windowWidth = $(".homePageGrid .page-grid__content").outerWidth();
 
 
 
-  $(".content-block--pageItem__inside").prepend("<img src='/globalassets/homepage/redesign/test.jpg'>");
+  $(".content-block--pageItem__inside").prepend("<img src='https://intg-epi01.arcnp.com/globalassets/homepage/redesign/test.jpg'>");
 
   $(".homePageGrid .page-grid__row").each(function(){
 
@@ -37,7 +38,7 @@ function latestSliderInit(){
     }
   });
 
-  $(".homePageGrid .page-grid__content").append("<div class='latestArrowRight'><img src='/globalassets/homepage/redesign/latestArrowRight.png'></div><div class='latestArrowLeft'><img src='/globalassets/homepage/redesign/latestArrowLeft.png'></div>");
+  $(".homePageGrid .page-grid__content").append("<div class='latestArrowRight'><img src='https://intg-epi01.arcnp.com/globalassets/homepage/redesign/latestArrowRight.png'></div><div class='latestArrowLeft'><img src='https://intg-epi01.arcnp.com/globalassets/homepage/redesign/latestArrowLeft.png'></div>");
 
   $(".latestArrowLeft").click(function(){
     var leftmargin = $(".homePageGrid .page-grid__items").css('margin-left');
@@ -65,6 +66,28 @@ function latestSliderInit(){
     }
 
   });
+}
+*/
+
+function latestSliderInit(){
+  $(".homePageGrid .page-grid__row").eq(0).before("<div class='page-grid__row page-grid__row--3 clearfix' data-page-grid='row'><div class='featuredLatest content-block--pageItem'><div class='featuredLatestImage'><img src='https://intg-epi01.arcnp.com/globalassets/homepage/redesign/test2.png'></div><div class='featuredContent'><p>2018 Trends<br/> in Airline Data</p><a href='#'>Call To Action <i class='icon-right-arrow'></i></a></div></div></div>");
+
+  $(".content-block--pageItem__inside").prepend("<img src='https://intg-epi01.arcnp.com/globalassets/homepage/redesign/test.jpg'>");
+
+  $('.page-grid__items.page-grid__items--expanded').addClass("owl-carousel").addClass("owl-theme");
+
+  $(".page-grid__row").each(function(index){
+    $(this).prop("data-hash", index);
+  });
+
+  $('.page-grid__items.page-grid__items--expanded').owlCarousel({
+    loop: true,
+    dots: true,
+    autoWidth: true,
+    items: 1
+  });
+
+
 }
 
 function techInit(){
@@ -107,11 +130,21 @@ function techInit(){
   });
 }
 
-var data = {
-  primaryNav: "",
-  loginActive: false,
-  contactActive: false
+function quoteRandomize() {
+  var num = $(".fullPanel").length;
+  var random = Math.floor(Math.random() * num);
+  $(".fullPanel-first").hide();
+  $(".fullPanel").eq(random).show();
 }
+
+function productRandomize() {
+  var num = $(".featuredProduct").length;
+  var random = Math.floor(Math.random() * num);
+  $(".featuredProduct-first").hide();
+  $(".featuredProduct").eq(random).show();
+}
+
+
 
 $('.owl-carousel').owlCarousel({
     center: true,
@@ -120,8 +153,12 @@ $('.owl-carousel').owlCarousel({
     nav: true,
     autoplayTimeout: 7000,
     autoplaySpeed: 2000,
+    smartSpeed:450,
     URLhashListener:true,
-    navText: [ '<i class="fas fa-angle-left"></i>', '<i class="fas fa-angle-right"></i>'],
+    autoplayHoverPause:true,
+    animateIn: 'fadeIn',
+    animateOut: 'fadeOut',
+    navText: [ '<img src="https://www2.arccorp.com/globalassets/homepage/redesign/arrowwhiteleft.png">', '<img src="https://www2.arccorp.com/globalassets/homepage/redesign/arrowwhiteright.png">'],
     responsive:{
         0:{
             items:1
@@ -134,6 +171,14 @@ $('.owl-carousel').owlCarousel({
         }
     }
 })
+
+var data = {
+  primaryNav: "",
+  loginActive: false,
+  contactActive: false,
+  showSearch: false,
+  formInput: ""
+}
 
 var app = new Vue({
   el: '.supernav',
@@ -162,6 +207,17 @@ var app = new Vue({
     },
     hideContact: function() {
       this.contactActive = false;
+    },
+    toggleSearch: function() {
+      if(this.showSearch == false){
+        this.showSearch = true;
+        this.$nextTick(() =>{
+          this.$refs.search.focus();
+        });
+      }
+      else {
+        this.showSearch = false;
+      }
     }
   },
   directives: {
@@ -197,7 +253,7 @@ var app = new Vue({
      }
    }
 });
-
+/*
 var techApp = new Vue({
   el: '.techPanel',
   data: {
@@ -216,9 +272,12 @@ var techApp = new Vue({
       }
     }
   }
-});
+});*/
 
 if($("body").hasClass("home-page")){
   latestSliderInit();
-  techInit();
+
+  //techInit();
+  quoteRandomize();
+  productRandomize();
 }
