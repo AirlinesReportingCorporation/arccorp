@@ -20,16 +20,16 @@
 
     <div class="supernav-topnav" v-click-outside="hideLogin" v-on:mouseenter="navPanelReset()">
       <div class="supernav-topnav-inner">
-        <form class="topnav-search" action="/search/" method="get" v-show="showSearch">
-          <input type="text" name="q" id="topnav-search-input" ref="search">
-          <div class="icon-close" v-on:click="toggleSearch()"></div>
+        <form class="topnav-search" action="/search/" method="get" v-show="showSearch" v-cloak>
+          <input type="text" name="q" id="topnav-search-input" ref="search" v-cloak>
+          <div class="icon-close" v-on:click="toggleSearch()" v-cloak></div>
           <button type="submit" class="icon-search" id="topnav-search-button" value="submit"></button>
         </form>
         <a href="#" class="topnav-link show-search icon-search" v-on:click="toggleSearch()" v-show="!showSearch"></a>
         <a class="topnav-link">1-800-555-5555</a>
         <a href="/about-us/contact-us/" class="topnav-link">Contact Us</a>
         <a href="#" class="topnav-link topnav-myarc" v-on:click="showPopup('loginActive')">My ARC</a>
-        <div class="supernav-login" v-show="loginActive">
+        <div class="supernav-login" v-show="loginActive" v-cloak>
           <div class="supernav-login-inner">
             <h2>Sign into My ARC </h2>
             <form id="frmMyARCLogin" name="frmMyARCLogin" method="POST" action="https://myarc.arccorp.com/PortalApp/PreLogin.portal">
@@ -42,16 +42,6 @@
                 </button>
             </form>
           </div>
-        </div>
-        <div class="supernav-contact" v-show="contactActive">
-          <h2>Contact Us</h2>
-          <strong>Travel Professionals</strong><br/> Phone: 1-703-816-8088<br/> Email: <a href="mailto:cchelp@arccorp.com">ccchelp@arccorp.com</a>
-          <br/><br/>
-          <strong>Airlines</strong><br/> Phone: 1-703-816-8039<br/> Email: <a href="mailto:ahd@arccorp.com">ahd@arccorp.com</a><br/>
-          <br/>
-          <strong>Others</strong><br/> Phone: 1-703-816-8000<br/> Email: <a href="mailto:cchelp@arccorp.com">ccchelp@arccorp.com</a>
-          <br/><br/>
-          <a href="#">Contact Us &raquo</a>
         </div>
       </div>
     </div>
@@ -87,7 +77,7 @@
       </div>
     </div>
 
-    <div class="supernav-sub supernav-sub-products" v-show="primaryNav === 'products'">
+    <div class="supernav-sub supernav-sub-products" v-show="primaryNav === 'products'" v-cloak>
       <div class="supernav-sub-inner row">
         <div class="supernav-sub-main col-md-12">
           <div class="supernav-header supernav-header-nonlink">
@@ -171,7 +161,7 @@
       </div>
     </div>
 
-    <div class="supernav-sub" v-show="primaryNav === 'participation'">
+    <div class="supernav-sub" v-show="primaryNav === 'participation'" v-cloak>
       <div class="supernav-sub-inner row">
         <div class="supernav-sub-main col-md-3">
 
@@ -202,7 +192,7 @@
       </div>
     </div>
 
-    <div class="supernav-sub" v-show="primaryNav === 'community'">
+    <div class="supernav-sub" v-show="primaryNav === 'community'" v-cloak>
       <div class="supernav-sub-inner row">
         <div class="supernav-sub-main col-md-3">
           <a href="/articles-trends/the-latest/" class="supernav-header">The Latest</a>
@@ -254,7 +244,7 @@
       </div>
     </div>
 
-    <div class="supernav-sub" v-show="primaryNav === 'training'">
+    <div class="supernav-sub" v-show="primaryNav === 'training'" v-cloak>
       <div class="supernav-sub-inner row">
         <div class="supernav-sub-main col-md-3">
           <a href="/support-training/travel-agencies/" class="supernav-header">Agencies</a>
@@ -284,7 +274,7 @@
       </div>
     </div>
 
-    <div class="supernav-sub" v-show="primaryNav === 'support'">
+    <div class="supernav-sub" v-show="primaryNav === 'support'" v-cloak>
       <div class="supernav-sub-inner row">
         <div class="supernav-sub-main col-md-3">
 
@@ -329,7 +319,7 @@
 
       </div>
     </div>
-    <div class="supernav-sub" v-show="primaryNav === 'about'">
+    <div class="supernav-sub" v-show="primaryNav === 'about'" v-cloak>
       <div class="supernav-sub-inner row">
         <div class="supernav-sub-main col-md-3">
           <div class="supernav-header">
@@ -679,24 +669,24 @@
       <h2>Technologies</h2>
       <div class="iconContainer">
         <div class="techContainer row">
-          <div class="techIcon col-md-2 offset-md-1" v-on:click="techSwitch('techBlurb1')">
-            <div class="techIconImg"><img src="https://www2.arccorp.com/globalassets/homepage/redesign/codeIcon.png" alt="Code1"></div>
+          <div class="techIcon col-sm-2 offset-md-1" v-on:click="techSwitch('techBlurb1')">
+            <div class="techIconImg hvr-grow"><img src="https://www2.arccorp.com/globalassets/homepage/redesign/codeIcon.png" alt="Code1"></div>
             <div class="iconText">Code</div>
           </div>
-          <div class="techIcon col-md-2" v-on:click="techSwitch('techBlurb2')">
-            <div class="techIconImg"><img src="https://www2.arccorp.com/globalassets/homepage/redesign/securityIcon.png" alt="Security"></div>
+          <div class="techIcon col-sm-2" v-on:click="techSwitch('techBlurb2')">
+            <div class="techIconImg hvr-grow"><img src="https://www2.arccorp.com/globalassets/homepage/redesign/securityIcon.png" alt="Security"></div>
             <div class="iconText">Data</div>
           </div>
-          <div class="techIcon col-md-2">
-            <div class="techIconImg"><img src="https://www2.arccorp.com/globalassets/homepage/redesign/ndcIcon.png" alt="NDC"></div>
+          <div class="techIcon col-sm-2">
+            <div class="techIconImg hvr-grow"><img src="https://www2.arccorp.com/globalassets/homepage/redesign/ndcIcon.png" alt="NDC"></div>
             <div class="iconText">Security</div>
           </div>
-          <div class="techIcon col-md-2">
-            <div class="techIconImg"><img src="https://www2.arccorp.com/globalassets/homepage/redesign/dataIcon.png" alt="Data"></div>
+          <div class="techIcon col-sm-2">
+            <div class="techIconImg hvr-grow"><img src="https://www2.arccorp.com/globalassets/homepage/redesign/dataIcon.png" alt="Data"></div>
             <div class="iconText">Data</div>
           </div>
-          <div class="techIcon col-md-2">
-            <div class="techIconImg"><img src="https://www2.arccorp.com/globalassets/homepage/redesign/cloudicon.png" alt="Cloud"></div>
+          <div class="techIcon col-sm-2">
+            <div class="techIconImg hvr-grow"><img src="https://www2.arccorp.com/globalassets/homepage/redesign/cloudicon.png" alt="Cloud"></div>
             <div class="iconText">Cloud</div>
           </div>
         </div>

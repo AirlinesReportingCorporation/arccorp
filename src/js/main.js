@@ -70,7 +70,9 @@ function latestSliderInit(){
 */
 
 function latestSliderInit(){
-  $(".homePageGrid .page-grid__row").eq(0).before("<div class='page-grid__row page-grid__row--3 clearfix' data-page-grid='row'><div class='featuredLatest content-block--pageItem'><div class='featuredLatestImage'><img src='https://intg-epi01.arcnp.com/globalassets/homepage/redesign/test2.png'></div><div class='featuredContent'><p>2018 Trends<br/> in Airline Data</p><a href='#'>Call To Action <i class='icon-right-arrow'></i></a></div></div></div>");
+  //$(".homePageGrid .page-grid__row").eq(0).before("<div class='page-grid__row page-grid__row--3 clearfix' data-page-grid='row'><div class='featuredLatest content-block--pageItem'><div class='featuredLatestImage'><img src='https://intg-epi01.arcnp.com/globalassets/homepage/redesign/test2.png'></div><div class='featuredContent'><p>2018 Trends<br/> in Airline Data</p><a href='#'>Call To Action <i class='icon-right-arrow'></i></a></div></div></div>");
+
+  $(".homePageGrid .page-grid__row").eq(0).prepend("<div class='featuredLatest content-block--pageItem'><div class='featuredLatestImage'><img src='https://intg-epi01.arcnp.com/globalassets/homepage/redesign/test2.png'></div><div class='featuredContent'><p>2018 Trends<br/> in Airline Data</p><a href='#'>Call To Action <i class='icon-right-arrow'></i></a></div></div>");
 
   $(".content-block--pageItem__inside").prepend("<img src='https://intg-epi01.arcnp.com/globalassets/homepage/redesign/test.jpg'>");
 
@@ -83,8 +85,19 @@ function latestSliderInit(){
   $('.page-grid__items.page-grid__items--expanded').owlCarousel({
     loop: true,
     dots: true,
-    autoWidth: true,
-    items: 1
+    items: 1,
+    responsive:{
+        0:{
+            items:1
+        },
+        600:{
+            items:1
+        },
+        1000:{
+            items:1,
+            autoWidth: true
+        }
+    }
   });
 
 
@@ -151,6 +164,7 @@ $('.owl-carousel').owlCarousel({
     autoplay: true,
     loop: true,
     nav: true,
+    autoHeight: true,
     autoplayTimeout: 7000,
     autoplaySpeed: 2000,
     smartSpeed:450,
@@ -167,7 +181,8 @@ $('.owl-carousel').owlCarousel({
             items:1
         },
         1000:{
-            items:1
+            items:1,
+
         }
     }
 })

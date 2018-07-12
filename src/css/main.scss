@@ -1,5 +1,6 @@
 @import 'partials/bootstrap.grid';
 @import 'partials/animate';
+@import 'partials/hover';
 @import url('https://use.fontawesome.com/releases/v5.1.0/css/all.css');
 @import url("https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.0.0-beta.2.4/assets/owl.carousel.css");
 @import url("https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.0.0-beta.2.4/assets/owl.theme.default.css");
@@ -10,6 +11,8 @@
   font-weight: normal;
   font-style: normal;
 }
+
+[v-cloak] { display:none; }
 
 .supernav {
   background: #ffffff;
@@ -314,6 +317,7 @@
     .owl-item {
       animation-duration: 2s;
       animation-delay: 0s;
+      text-align: center;
     }
 
     .carousel-container {
@@ -459,7 +463,7 @@
 
     .page-grid__items--collapsed .page-grid__row:nth-child(n+1),
     .page-grid__items--expanded .page-grid__row:nth-child(n+1) {
-      //display: inline-block;
+      display: inline-block;
       vertical-align: top;
     }
 
@@ -602,8 +606,8 @@
 
     .techIcon {
       cursor: pointer;
-      display: inline-block;
-      width: 25%;
+      //display: inline-block;
+      //width: 25%;
       text-align: center;
 
       img {
@@ -797,6 +801,7 @@
 @media screen and (min-width: 960px) {
   .home-page .homePageGrid .page-grid__content {
     padding: 55px 15px 0;
+    max-width: 1350px;
   }
 }
 @media screen and (min-width: 768px) {
@@ -840,7 +845,7 @@
 @media screen and (max-width:768px) {
   .home-page .homePageGrid .page-grid__items--collapsed,
   .home-page .homePageGrid .page-grid__items--expanded {
-    width: auto !important;
+    //width: auto !important;
   }
 
   .home-page .homePageGrid .content-block--pageItem__inside img {
@@ -860,10 +865,19 @@
     display: block;
   }
 
+  .home-page .page-grid .content-block--pageItem.featuredLatest {
+    display: none;
+  }
+
   .home-page .page-grid .content-block--pageItem {
+    display: block;
     border: none;
     border-bottom: 1px solid #dddddd;
     min-height: 1px;
+    max-width: 100%;
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
   }
 
   .home-page .page-grid--centerItemText .content-block--pageItem .content-block--pageItem__inside {
@@ -876,7 +890,9 @@
 
   .home-page .homePageGrid .page-grid__items--collapsed,
   .home-page .homePageGrid .page-grid__items--expanded {
-    max-height: 500px;
-    overflow-y: scroll;
+
+  }
+  .home-page .homePageGrid a.ctaBtn.ctaBtn--main {
+    position: relative;
   }
 }
