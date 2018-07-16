@@ -12,69 +12,23 @@ var maxSliderHeight = 0;
 
 var latestTechPosition = 0;
 
-/*
 function latestSliderInit(){
-  $(".homePageGrid .page-grid__row").eq(0).prepend("<div class='featuredLatest content-block--pageItem'><img src='https://intg-epi01.arcnp.com/globalassets/homepage/redesign/test2.png'><div class='featuredContent'><p>2018 Trends<br/> in Airline Data</p><a href='#'>Call To Action <i class='icon-right-arrow'></i></a></div></div>");
-  var sliderDistance = $(".homePageGrid .page-grid__row").outerWidth() / 3.0;
-  var windowWidth = $(".homePageGrid .page-grid__content").outerWidth();
 
-
-
-  $(".content-block--pageItem__inside").prepend("<img src='https://intg-epi01.arcnp.com/globalassets/homepage/redesign/test.jpg'>");
-
-  $(".homePageGrid .page-grid__row").each(function(){
-
-    $(this).find(".content-block--pageItem").each(function(){
-      //console.log($(this).outerWidth());
-      latestSliderWidth += $(this).outerWidth();
-    });
-
-
-
-    var myHeight = $(this).find('.content-block--pageItem').height();
-
-    if(myHeight > maxSliderHeight){
-      maxSliderHeight = myHeight;
-    }
+  $(".homePageGrid .content-block--pageItem__inside").each(function(){
+    var link = $(this).find(".ctaLink").prop("href");
+    var subString = link.substring(link.indexOf("latest/") +7).replace("/", "");
+    var imgLink = "https://www2.arccorp.com/globalassets/homepage/redesign/latest/" + subString + ".jpg";
+    $(this).prepend("<a href='" + link + "'><img class='latestImage' src='"+ imgLink + "'></a>");
   });
 
-  $(".homePageGrid .page-grid__content").append("<div class='latestArrowRight'><img src='https://intg-epi01.arcnp.com/globalassets/homepage/redesign/latestArrowRight.png'></div><div class='latestArrowLeft'><img src='https://intg-epi01.arcnp.com/globalassets/homepage/redesign/latestArrowLeft.png'></div>");
+  $(".latestImage").on( "error", function(){
+    $(this).hide();
+    $(this).after("<div style='width:280px;height:250px; background:#189bb0; margin-bottom:20px;'></div>");
+  })
 
-  $(".latestArrowLeft").click(function(){
-    var leftmargin = $(".homePageGrid .page-grid__items").css('margin-left');
-    leftmargin = parseInt(leftmargin.replace('px', ''));
-    //console.log(leftmargin);
+  $(".homePageGrid .page-grid__row").eq(0).prepend("<div class='featuredLatest content-block--pageItem'><div class='featuredLatestImage'><a href='#'><img src='https://www2.arccorp.com/globalassets/homepage/redesign/thelatest_ad.jpg'></a></div></div>");
 
-
-    if(leftmargin < sliderDistance && leftmargin < 0){
-      $(".homePageGrid .page-grid__items").stop(true, true).animate({
-        marginLeft: '+=' + sliderDistance + 'px'
-      }, 200);
-      latestSliderPosition -= sliderDistance;
-    }
-  });
-
-  $(".latestArrowRight").click(function(){
-    var leftmargin = $(".homePageGrid .page-grid__items").css('margin-left');
-    //console.log(leftmargin);
-
-    if(latestSliderPosition < Math.abs(windowWidth - latestSliderWidth)){
-      $(".homePageGrid .page-grid__items").stop(true, true).animate({
-        marginLeft: '-=' + sliderDistance + 'px'
-      }, 200);
-      latestSliderPosition += sliderDistance;
-    }
-
-  });
-}
-*/
-
-function latestSliderInit(){
-  //$(".homePageGrid .page-grid__row").eq(0).before("<div class='page-grid__row page-grid__row--3 clearfix' data-page-grid='row'><div class='featuredLatest content-block--pageItem'><div class='featuredLatestImage'><img src='https://intg-epi01.arcnp.com/globalassets/homepage/redesign/test2.png'></div><div class='featuredContent'><p>2018 Trends<br/> in Airline Data</p><a href='#'>Call To Action <i class='icon-right-arrow'></i></a></div></div></div>");
-
-  $(".homePageGrid .page-grid__row").eq(0).prepend("<div class='featuredLatest content-block--pageItem'><div class='featuredLatestImage'><img src='https://intg-epi01.arcnp.com/globalassets/homepage/redesign/test2.png'></div><div class='featuredContent'><p>2018 Trends<br/> in Airline Data</p><a href='#'>Call To Action <i class='icon-right-arrow'></i></a></div></div>");
-
-  $(".content-block--pageItem__inside").prepend("<img src='https://intg-epi01.arcnp.com/globalassets/homepage/redesign/test.jpg'>");
+  $(".content-block--pageItem__inside").prepend("");
 
   $('.page-grid__items.page-grid__items--expanded').addClass("owl-carousel").addClass("owl-theme");
 
@@ -86,6 +40,7 @@ function latestSliderInit(){
     loop: true,
     dots: true,
     items: 1,
+    smartSpeed:1450,
     responsive:{
         0:{
             items:1
@@ -97,7 +52,8 @@ function latestSliderInit(){
             items:1,
             autoWidth: true
         }
-    }
+    },
+    navText: [ '<img src="https://www2.arccorp.com/globalassets/homepage/redesign/arrowBlackleft.png">', '<img src="https://www2.arccorp.com/globalassets/homepage/redesign/arrowBlackright.png">']
   });
 
 
@@ -172,7 +128,7 @@ $('.owl-carousel').owlCarousel({
     autoplayHoverPause:true,
     animateIn: 'fadeIn',
     animateOut: 'fadeOut',
-    navText: [ '<img src="https://www2.arccorp.com/globalassets/homepage/redesign/arrowwhiteleft.png">', '<img src="https://www2.arccorp.com/globalassets/homepage/redesign/arrowwhiteright.png">'],
+    navText: [ '<img src="https://www2.arccorp.com/globalassets/homepage/redesign/arrowBlackleft.png">', '<img src="https://www2.arccorp.com/globalassets/homepage/redesign/arrowBlackright.png">'],
     responsive:{
         0:{
             items:1
