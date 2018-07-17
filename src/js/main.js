@@ -155,6 +155,9 @@ var app = new Vue({
   el: '.supernav',
   data: data,
   methods: {
+    primaryNavCheck: function(item) {
+      return item === this.primaryNav;
+    },
     navPanelReset: function() {
       this.primaryNav = "";
     },
@@ -250,5 +253,9 @@ if($("body").hasClass("home-page")){
 
   //techInit();
   quoteRandomize();
-  productRandomize();
+  //productRandomize();
+
+  $(".supernav-mobile-icon .icon-menu").click(function(){
+    $(".supernav-mobile-menu").toggle();
+  });
 }

@@ -11,9 +11,27 @@
   font-weight: normal;
   font-style: normal;
 }
+@font-face {
+  font-family: Oswald-Bold;
+  src: url("https://www2.arccorp.com/globalassets/style/fonts/Oswald-Bold.ttf");
+  src: url("https://www2.arccorp.com/globalassets/style/fonts/Oswald-Bold.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: Oswald-Regular;
+  src: url("https://www2.arccorp.com/globalassets/style/fonts/Oswald-Regular.ttf");
+  src: url("https://www2.arccorp.com/globalassets/style/fonts/Oswald-Regular.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
 
 [v-cloak] {
   display: none;
+}
+
+.home-page .data-panel {
+  margin-top:0 !important;
 }
 
 .supernav {
@@ -34,6 +52,8 @@
 }
 
 .supernav .supernav-inner {
+  position: relative;
+  background: #ffffff;
   height: 90px;
   margin: 0 auto;
   max-width: 1170px;
@@ -108,7 +128,9 @@
   position: absolute;
   width: 100%;
   left: 0;
-  z-index: 10;
+  z-index: 11;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+  transition: all 0.3s cubic-bezier(.25,.8,.25,1);
 }
 
 .supernav .supernav-sub .supernav-sub-inner {
@@ -130,7 +152,7 @@
 }
 
 .supernav .supernav-sub.supernav-sub-products {
-  padding: 30px 0;
+  padding: 30px 0 0 0;
 }
 
 .supernav-participation-stats {
@@ -196,12 +218,14 @@
 }
 
 .supernav-webinar-title {
+  color: #333333;
   font-family: SourceSansPro-Regular, helvetica, arial, sans-serif;
   font-size: 1.1rem;
   font-weight: bold;
 }
 
 .supernav-webinar-date {
+  color: #333333;
   font-family: SourceSansPro-Bold, helvetica, arial, sans-serif;
   margin: 10px 0;
 }
@@ -210,7 +234,6 @@
   display: block;
   color: #189bb0;
   font-family: SourceSansPro-Bold, "Source Sans Pro", helvetica, arial, sans-serif;
-  font-weight: 600;
   font-size: 0.9rem;
   margin-bottom: 15px;
   padding-bottom: 5px;
@@ -267,7 +290,12 @@
   }
 }
 
+.supernav-topnav, .supernav-inner {
+  z-index: 30;
+}
+
 .supernav-topnav {
+  background: #ffffff;
   font-family: SourceSansPro-Regular, helvetica, arial, sans-serif;
   position: relative;
   border-bottom: 1px solid #f1f1f1;
@@ -427,6 +455,35 @@
   }
 }
 
+.supernav .supernav-mobile-icon {
+  display: none;
+  position: absolute;
+  left: 15px;
+  vertical-align: middle;
+  height: 90px;
+  line-height: 90px;
+  .hamburger.icon-menu{
+    display: inline-block;
+    color: #333333;
+  }
+
+}
+
+.supernav .supernav-mobile-menu {
+  display: none;
+  background: #ffffff;
+  position: absolute;
+  margin: 0;
+  top: 131px;
+  width: 100%;
+  z-index:11;
+  border-top: 2px solid #189bb0;
+  border-bottom: 1px #333333 solid;
+  a {
+    color: #333333;
+  }
+}
+
 .home-page {
   .ctaBtn {
     min-width: auto;
@@ -461,7 +518,7 @@
       display: table;
       color: #ffffff;
       font-family: SourceSansPro-Regular, helvetica, arial, sans-serif;
-      padding: 20px;
+      padding: 0;
       height: 680px;
       vertical-align: middle;
       max-width: 1170px;
@@ -484,14 +541,91 @@
       }
     }
 
+    .travelconnect-content {
+      color: #282f76;
+      font-family: Oswald-Bold, Oswald-Regular, helvetica, arial, sans-serif;
+      .block-header {
+        font-family: Oswald-Bold, Oswald-Regular, helvetica, arial, sans-serif;
+        color: #282f76;
+      }
+      h3 {
+        color: #282f76;
+        font-size: 2rem;
+        font-family: Oswald-Bold, Oswald-Regular, helvetica, arial, sans-serif;
+      }
+      p {
+        font-family: SourceSansPro-Regular, helvetica, arial, sans-serif;
+      }
+      .ctaBtn {
+        background-color: #282f76;
+        color: #ffffff;
+        border-color: #282f76;
+      }
+      .ctaBtn--blank {
+        background-color: transparent;
+        color: #282f76;
+        margin-left: 10px;
+
+        &:hover {
+          background-color: #282f76;
+          color: #ffffff;
+        }
+      }
+    }
+
     .slide-1 {
-      background: url("https://www2.arccorp.com/contentassets/36df66ade6794041806a1101adf85010/jumbotron-distribution-strategy.jpg") center center no-repeat;
+      background: #f6ef48;
       background-size: cover;
+      .carousel-slide-content {
+        text-align: left;
+        .block-header {
+          text-align: left;
+        }
+      }
     }
 
     .slide-2 {
-      background: url("https://www2.arccorp.com/globalassets/homepage/fullbleed_1400x687_home.jpg") center center no-repeat;
+      background: url("https://www2.arccorp.com/globalassets/homepage/redesign/slides/carousel4.png") center center no-repeat;
       background-size: cover;
+      .carousel-slide-content {
+        padding-top: 60px;
+        vertical-align: top;
+        text-align: left;
+        color: #333333;
+        .block-header {
+          text-align: left;
+          color: #333333;
+        }
+      }
+    }
+
+    .slide-3 {
+      background: url("https://www2.arccorp.com/globalassets/homepage/redesign/slides/carousel3.png") right top no-repeat;
+      background-size: cover;
+      .carousel-slide-content {
+        padding-top: 120px;
+        vertical-align: top;
+        text-align: left;
+        .block-header {
+          font-size: 3.2rem;
+          text-align: left;
+        }
+      }
+    }
+
+    .slide-4 {
+      background: url("https://www2.arccorp.com/globalassets/homepage/redesign/slides/carousel1.png") center center no-repeat;
+      background-size: cover;
+      .carousel-slide-content {
+        padding-top: 60px;
+        vertical-align: top;
+        text-align: left;
+        color: #333333;
+        .block-header {
+          text-align: left;
+          color: #333333;
+        }
+      }
     }
 
     .owl-dots {
@@ -506,6 +640,7 @@
       border-radius: 0;
       width: 40px;
       height: 6px;
+      margin: 5px 7px 5px 0;
     }
 
     &.owl-theme .owl-dots .owl-dot.active span,
@@ -566,7 +701,24 @@
       position: absolute;
       top: -40%;
       left: 0;
-      z-index: 3;
+      max-height: 100%;
+    }
+    .geoGreenPattern {
+      position: absolute;
+      bottom: 0;
+      right: 0;
+      max-height: 100%;
+    }
+    .geoTravelconnect1 {
+      position: absolute;
+      bottom:0;
+      left: 10px;
+      max-height: 100%;
+    }
+    .geoTravelconnect2 {
+      position: absolute;
+      top: 0;
+      right: 10px;
       max-height: 100%;
     }
   }
@@ -592,24 +744,27 @@
   .homePageGrid {
     background: #ffffff;
 
+    .owl-carousel {
+          position: static;
+    }
+
     .owl-carousel .owl-dots {
       bottom: 0;
     }
 
     .owl-carousel .owl-nav {
-      width: 50px;
+      z-index:30;
+      width: 100%;
       right: 0;
       left: auto;
-      top: 50%;
+      top: 55%;
     }
 
-    .owl-carousel .owl-next {
+    .owl-carousel .owl-next, .owl-carousel .owl-prev {
+      position: absolute;
+      top: 0;
       box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
       border: 1px solid #dddddd;
-    }
-
-    .owl-carousel .owl-prev {
-      display: none;
     }
 
     .page-grid__content {
@@ -618,7 +773,7 @@
     }
 
     .page-grid__topContent {
-      max-width: 100%;
+      max-width: 120%;
       padding-left: 0;
       font-weight: bold;
     }
@@ -630,6 +785,9 @@
         content: "";
         display: table;
         clear: both;
+      }
+      &:first-of-type {
+
       }
     }
 
@@ -714,7 +872,7 @@
 
       &::after {
         content: '';
-        width: 1140px;
+        width: 1153px;
         height: 6px;
         display: inline-block;
         background: #d6d6d6;
@@ -833,28 +991,28 @@
     min-height: 500px;
 
     &.fullPanel1 {
-      background: url("https://www2.arccorp.com/globalassets/homepage/redesign/quotes/quote1.jpg") center center no-repeat;
-      background-size: cover;
+      background: #f8f8f8 url("https://www2.arccorp.com/globalassets/homepage/redesign/quotes/quote1.jpg") right center no-repeat;
+      background-size: contain;
     }
 
     &.fullPanel2 {
-      background: url("https://www2.arccorp.com/globalassets/homepage/redesign/quotes/quote2.jpg") center center no-repeat;
-      background-size: cover;
+      background: #f1f0f0 url("https://www2.arccorp.com/globalassets/homepage/redesign/quotes/quote2.jpg") right center no-repeat;
+      background-size: contain;
     }
 
     &.fullPanel3 {
-      background: url("https://www2.arccorp.com/globalassets/homepage/redesign/quotes/quote3.jpg") center center no-repeat;
-      background-size: cover;
+      background: #fcfcfc url("https://www2.arccorp.com/globalassets/homepage/redesign/quotes/quote3.jpg") right center no-repeat;
+      background-size: contain;
     }
 
     &.fullPanel4 {
-      background: url("https://www2.arccorp.com/globalassets/homepage/redesign/quotes/quote4.jpg") center center no-repeat;
-      background-size: cover;
+      background: #fbf8f6 url("https://www2.arccorp.com/globalassets/homepage/redesign/quotes/quote4.jpg") right center no-repeat;
+      background-size: contain;
     }
 
     &.fullPanel5 {
-      background: url("https://www2.arccorp.com/globalassets/homepage/redesign/quotes/quote5.jpg") center center no-repeat;
-      background-size: cover;
+      background: #fcf6f2 url("https://www2.arccorp.com/globalassets/homepage/redesign/quotes/quote5.jpg") right center no-repeat;
+      background-size: contain;
     }
 
     &.fullPanel-first {
@@ -1019,9 +1177,46 @@
     max-width: 1350px;
   }
 }
+
+@media screen and (min-width: 901px){
+  .supernav .supernav-mobile-menu {
+    display: none !important;
+  }
+}
+
+@media screen and (max-width: 900px){
+    .supernav {
+      z-index: 2;
+    }
+    .supernav .supernav-inner {
+      text-align: center;
+    }
+    .supernav .supernav-menu {
+      display: none;
+      z-index: 20;
+
+    }
+    .supernav .supernav-mobile-icon {
+      display: block;
+      font-size: 1.5rem;
+      cursor: pointer;
+
+    }
+    .supernav-topnav .supernav-topnav-inner a.topnav-number {
+      display:none;
+    }
+    .supernav .supernav-mobile-menu a {
+      font-size: 1rem;
+      line-height:1;
+      padding:20px 10px;
+    }
+}
+
 @media screen and (min-width: 768px) {
   .home-page .homePageGrid.page-grid .block-header {
     text-align: left;
+    margin-left: 20px;
+    font-size: 2rem;
   }
 
   .home-page .page-grid__row .content-block--pageItem {
@@ -1035,6 +1230,7 @@
     position: relative;
     width: 280px;
     margin-right: 21px;
+    margin-left: 21px;
 
     img {
       width: auto;
