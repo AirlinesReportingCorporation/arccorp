@@ -9297,6 +9297,22 @@ html {
   font-style: normal;
 }
 
+@font-face {
+  font-family: SourceSansPro-Light;
+  src: url("https://www2.arccorp.com/globalassets/style/fonts/SourceSansPro-Light.ttf");
+  src: url("https://www2.arccorp.com/globalassets/style/fonts/SourceSansPro-Light.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: SourceSansPro-SemiBold;
+  src: url("https://www2.arccorp.com/globalassets/style/fonts/SourceSansPro-SemiBold.ttf");
+  src: url("https://www2.arccorp.com/globalassets/style/fonts/SourceSansPro-SemiBold.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
 [v-cloak] {
   display: none;
 }
@@ -9380,7 +9396,7 @@ html {
 }
 
 .supernav .supernav-menu-item {
-  font-family: SourceSansPro-Bold, "Source Sans Pro", helvetica, arial, sans-serif;
+  font-family: SourceSansPro-SemiBold, "Source Sans Pro", helvetica, arial, sans-serif;
   font-size: 1.2rem;
   color: #333333;
   display: inline-block;
@@ -9424,7 +9440,7 @@ html {
 }
 
 .supernav .supernav-sub.supernav-sub-products {
-  padding: 30px 0 0 0;
+  padding: 30px 0;
 }
 
 .supernav-participation-stats {
@@ -9491,9 +9507,8 @@ html {
 
 .supernav-webinar-title {
   color: #333333;
-  font-family: SourceSansPro-Regular, helvetica, arial, sans-serif;
+  font-family: SourceSansPro-SemiBold, helvetica, arial, sans-serif;
   font-size: 1.1rem;
-  font-weight: bold;
 }
 
 .supernav-webinar-date {
@@ -9507,7 +9522,7 @@ html {
   color: #189bb0;
   font-family: SourceSansPro-Bold, "Source Sans Pro", helvetica, arial, sans-serif;
   font-size: 0.9rem;
-  margin-bottom: 15px;
+  margin-bottom: 5px;
   padding-bottom: 5px;
   padding-top: 10px;
   text-transform: uppercase;
@@ -9528,7 +9543,7 @@ html {
   font-family: SourceSansPro-Black, "Source Sans Pro", helvetica, arial, sans-serif;
   font-size: 1rem;
   color: #333333;
-  border-top: #333333 solid 1px;
+  border-top: #d6d6d6 solid 1px;
   margin-top: 15px;
   text-transform: none;
   margin-bottom: 5px;
@@ -9544,7 +9559,8 @@ html {
   color: #6c6c6c;
   display: block;
   font-family: SourceSansPro-Regular, "Source Sans Pro", helvetica, arial, sans-serif;
-  padding-bottom: 10px;
+  padding-bottom: 7px;
+  margin-left: 10px;
   text-decoration: none;
 }
 
@@ -9560,7 +9576,11 @@ html {
   color: #316677;
 }
 
-.supernav-topnav, .supernav-inner {
+.supernav-topnav {
+  z-index: 31;
+}
+
+.supernav-inner {
   z-index: 30;
 }
 
@@ -9583,6 +9603,14 @@ html {
   font-family: SourceSansPro-Regular, helvetica, arial, sans-serif;
   color: #333333;
   display: inline-block;
+}
+
+.supernav-topnav a.show-search {
+  height: 41px;
+  line-height: 41px;
+  vertical-align: top;
+  padding: 0;
+  font-size: 1.3rem;
 }
 
 .supernav-topnav .topnav-search {
@@ -9644,7 +9672,7 @@ html {
 .supernav-topnav .supernav-login {
   background: #f6f6f6;
   border: 1px solid #dddddd;
-  z-index: 11;
+  z-index: 31;
   text-align: right;
   color: #333333;
   padding: 40px;
@@ -9685,9 +9713,9 @@ html {
 .supernav-topnav .supernav-login .forgotPassword,
 .supernav-topnav .supernav-login .forgotUsername {
   color: #189bb0;
-  font-weight: bold;
+  font-family: SourceSansPro-SemiBold, SourceSansPro-Regular, helvetica, arial, sans-serif;
   font-size: 12px;
-  text-align: right;
+  text-align: left;
   text-transform: uppercase;
   margin-bottom: 5px;
 }
@@ -9767,8 +9795,9 @@ html {
 }
 
 .home-page .owl-carousel h2 {
-  font-family: SourceSansPro-Regular, helvetica, arial, sans-serif;
+  font-family: SourceSansPro-Light, helvetica, arial, sans-serif;
   font-size: 3.75rem;
+  line-height: 1;
 }
 
 .home-page .owl-carousel .owl-item {
@@ -9889,6 +9918,7 @@ html {
 }
 
 .home-page .owl-carousel .slide-3 .carousel-slide-content .block-header {
+  font-family: SourceSansPro-Light, helvetica, arial, sans-serif;
   font-size: 3.2rem;
   text-align: left;
 }
@@ -9902,12 +9932,13 @@ html {
   padding-top: 60px;
   vertical-align: top;
   text-align: left;
-  color: #333333;
+  color: #1d1837;
 }
 
 .home-page .owl-carousel .slide-4 .carousel-slide-content .block-header {
+  font-family: SourceSansPro-Light, helvetica, arial, sans-serif;
   text-align: left;
-  color: #333333;
+  color: #1d1837;
 }
 
 .home-page .owl-carousel .owl-dots {
@@ -9935,7 +9966,7 @@ html {
   font-size: 2rem;
   opacity: 1;
   z-index: 0;
-  width: 500px;
+  width: 570px;
   bottom: 37px;
   position: absolute;
   left: 50%;
@@ -9983,28 +10014,24 @@ html {
   position: absolute;
   top: -40%;
   left: 0;
-  max-height: 100%;
 }
 
 .home-page .owl-carousel .geoGreenPattern {
   position: absolute;
   bottom: 0;
   right: 0;
-  max-height: 100%;
 }
 
 .home-page .owl-carousel .geoTravelconnect1 {
   position: absolute;
   bottom: 0;
   left: 10px;
-  max-height: 100%;
 }
 
 .home-page .owl-carousel .geoTravelconnect2 {
   position: absolute;
   top: 0;
-  right: 10px;
-  max-height: 100%;
+  right: 0;
 }
 
 .home-page .owl-jumbotron .owl-nav img {
@@ -10016,14 +10043,20 @@ html {
   bottom: 35px;
   position: absolute;
   right: 50%;
-  width: 500px;
+  width: 570px;
   margin-right: 0;
   text-align: left;
 }
 
 .home-page .homePageGrid {
   background: #ffffff;
+  padding-bottom: 45px;
   /* carousel */
+}
+
+.home-page .homePageGrid .owl-dot {
+  background: #ffffff;
+  vertical-align: top;
 }
 
 .home-page .homePageGrid .owl-carousel {
@@ -10031,10 +10064,18 @@ html {
 }
 
 .home-page .homePageGrid .owl-carousel .owl-dots {
+  background: #d6d6d6;
   bottom: 0;
+  height: 6px;
+  margin-left: 21px;
+}
+
+.home-page .homePageGrid .owl-carousel .owl-dots .owl-dot span {
+  margin: 0 7px 0 0;
 }
 
 .home-page .homePageGrid .owl-carousel .owl-nav {
+  display: table;
   z-index: 30;
   width: 100%;
   right: 0;
@@ -10049,6 +10090,10 @@ html {
   border: 1px solid #dddddd;
 }
 
+.home-page .homePageGrid .owl-carousel .owl-prev {
+  margin-left: 31px;
+}
+
 .home-page .homePageGrid .page-grid__content {
   background: #ffffff;
   position: relative;
@@ -10057,7 +10102,7 @@ html {
 .home-page .homePageGrid .page-grid__topContent {
   max-width: 120%;
   padding-left: 0;
-  font-weight: bold;
+  font-family: SourceSansPro-SemiBold, SourceSansPro-Regular, helvetica, arial, sans-serif;
 }
 
 .home-page .homePageGrid .page-grid .content-block--pageItem {
@@ -10097,6 +10142,7 @@ html {
   background: none;
   color: #189bb0;
   border: none;
+  margin-top: 30px;
 }
 
 .home-page .homePageGrid .latestArrowRight {
@@ -10146,16 +10192,7 @@ html {
 }
 
 .home-page .homePageGrid .owl-carousel .owl-dots {
-  text-align: center;
-}
-
-.home-page .homePageGrid .owl-carousel .owl-dots::after {
-  content: '';
-  width: 1153px;
-  height: 6px;
-  display: inline-block;
-  background: #d6d6d6;
-  margin: 5px 7px;
+  text-align: left;
 }
 
 .home-page .techPanel {
@@ -10265,6 +10302,26 @@ html {
   min-height: 500px;
 }
 
+.home-page .fullPanel .view-more {
+  font-family: SourceSansPro-Bold, SourceSansPro-Bold, helvetica, arial, sans-serif;
+}
+
+.home-page .fullPanel .tellStory {
+  font-size: 14px;
+  display: block;
+  margin-bottom: 15px;
+  color: #189bb0;
+  font-family: SourceSansPro-SemiBold, SourceSansPro-Bold, helvetica, arial, sans-serif;
+  text-transform: uppercase;
+}
+
+.home-page .fullPanel .tellStory::after {
+  font-family: 'icomoon';
+  content: "\E909";
+  font-size: 0.675rem;
+  margin-left: 10px;
+}
+
 .home-page .fullPanel.fullPanel1 {
   background: #f8f8f8 url("https://www2.arccorp.com/globalassets/homepage/redesign/quotes/quote1.jpg") right center no-repeat;
   background-size: contain;
@@ -10300,10 +10357,9 @@ html {
 }
 
 .home-page .fullPanel .testPanel .testQuote {
-  font-size: 1.5rem;
+  font-size: 1.4rem;
   line-height: 1.75rem;
-  font-family: SourceSansPro-Regular, helvetica, arial, sans-serif;
-  font-weight: bold;
+  font-family: SourceSansPro-SemiBold, helvetica, arial, sans-serif;
   padding: 15px 0;
   color: #242039;
 }
@@ -10360,6 +10416,16 @@ html {
 .home-page .featuredProduct {
   padding: 60px 0;
   display: none;
+}
+
+.home-page .featuredProduct hr {
+  opacity: .2;
+}
+
+.home-page .featuredProduct .ctaBtn--inverse {
+  background: #ffffff;
+  color: #189bb0;
+  border-color: #ffffff;
 }
 
 .home-page .featuredProduct.featuredProduct-first {
@@ -10445,7 +10511,7 @@ html {
 
 @media screen and (min-width: 960px) {
   .home-page .homePageGrid .page-grid__content {
-    padding: 55px 15px 0;
+    padding: 55px 0 20px 0;
     max-width: 1350px;
   }
 }
