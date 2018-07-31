@@ -19,6 +19,7 @@ function latestSliderInit(){
     var subString = link.substring(link.indexOf("latest/") +7).replace("/", "");
     var imgLink = "https://www2.arccorp.com/globalassets/homepage/redesign/latest/" + subString + ".jpg";
     $(this).prepend("<a href='" + link + "'><img class='latestImage' src='"+ imgLink + "'></a>");
+    $(this).append("<div class='read-more'><a href='" + link + "'>Read More</a></div>");
   });
 
   $(".latestImage").on( "error", function(){
@@ -26,7 +27,7 @@ function latestSliderInit(){
     $(this).after("<div style='width:280px;height:250px; background:#189bb0; margin-bottom:20px;'></div>");
   })
 
-  $(".homePageGrid .page-grid__row").eq(0).prepend("<div class='featuredLatest content-block--pageItem'><div class='featuredLatestImage'><a href='#'><img src='https://www2.arccorp.com/globalassets/homepage/redesign/thelatest_ad.jpg'></a></div></div>");
+  $(".homePageGrid .page-grid__row").eq(0).prepend("<div class='featuredLatest content-block--pageItem'><div class='featuredLatestImage'><a target='_blank'  href='https://gbta18.mapyourshow.com/7_0/sessions/session-details.cfm?ScheduleID=179'><img src='https://www2.arccorp.com/globalassets/homepage/redesign/thelatest_ad.jpg'></a></div></div>");
 
   $(".content-block--pageItem__inside").prepend("");
 
@@ -113,7 +114,58 @@ function productRandomize() {
   $(".featuredProduct").eq(random).show();
 }
 
+function articleSocial() {
+  // add social for articles
+  if( $(".article--headline").length ) {
 
+    //test on latest first
+    if($(".btn--link.parentLink").text() == "The Latest") {
+      var url = window.location.href;
+      var meta = $("meta[name='description']").prop("content");
+      var title = $("h1.mainTitle").text();
+
+      console.log(url);
+      console.log(meta);
+      console.log(title);
+
+      $(".basic-text-inside").eq(0).prepend("<div class='articleShareContainer'></div>");
+
+      $(".articleShareContainer").append("<div class='shareTitle'>Share</div>");
+
+      //add facebook share
+      var facebookUrl = "https://www.facebook.com/sharer/sharer.php?u=" + encodeURIComponent(url);
+      $(".articleShareContainer").append("<a class='articleShare articleShare-facebook' target='_blank' href='" + facebookUrl + "'></a>");
+
+      //add twitter share
+      var twitterUrl = "http://twitter.com/intent/tweet?text=" + encodeURIComponent(title) + "&url=" + encodeURIComponent(url) + "&via=ARCtalk";
+      $(".articleShareContainer").append("<a class='articleShare articleShare-twitter' target='_blank' href='" + twitterUrl + "'></a>");
+
+      //add linkedin share
+      var linkedinUrl = "https://www.linkedin.com/shareArticle?mini=true&url=" + encodeURIComponent(url) +"&title=" + encodeURIComponent(title) + "&summary=" + encodeURIComponent(meta);
+      $(".articleShareContainer").append("<a class='articleShare articleShare-linkedin' target='_blank' href='" + linkedinUrl + "'></a>");
+
+      var scrollTop = $('.articleShareContainer').offset().top;
+      var scrollLeft = $('.articleShareContainer').offset().left;
+
+      $(window).scroll(function(e){
+        var $el = $('.articleShareContainer');
+        var isPositionFixed = ($el.css('position') == 'fixed');
+
+        if ($(this).scrollTop() > scrollTop && !isPositionFixed){
+          $('.articleShareContainer').css({'position': 'fixed', 'top': '0px', 'left' : scrollLeft});
+        }
+        if ($(this).scrollTop() < scrollTop && isPositionFixed)
+        {
+          $('.articleShareContainer').css({'position': 'absolute', 'top': '60px', 'left' : '-150px'});
+        }
+      });
+
+
+    }
+  }
+
+
+}
 
 $('.owl-carousel').owlCarousel({
     center: true,
@@ -121,7 +173,7 @@ $('.owl-carousel').owlCarousel({
     loop: true,
     nav: true,
     autoHeight: true,
-    autoplayTimeout: 7000,
+    autoplayTimeout: 5000,
     autoplaySpeed: 2000,
     smartSpeed:450,
     URLhashListener:true,
@@ -227,35 +279,37 @@ var app = new Vue({
      }
    }
 });
-/*
-var techApp = new Vue({
-  el: '.techPanel',
-  data: {
-    pullDown: ""
-  },
-  methods: {
-    techReset: function() {
-      this.pullDown = "";
-    },
-    techSwitch: function(curNav) {
-      if(this.pullDown == curNav){
-        this.techReset();
-      }
-      else {
-        this.pullDown = curNav;
-      }
-    }
-  }
-});*/
+
 
 if($("body").hasClass("home-page")){
   latestSliderInit();
 
   //techInit();
   quoteRandomize();
-  //productRandomize();
+  productRandomize();
 
   $(".supernav-mobile-icon .icon-menu").click(function(){
     $(".supernav-mobile-menu").toggle();
   });
+}
+
+articleSocial(); 
+
+if( $(".navcontainer").hasClass("signedIn") ) {
+  var username = $(".navcontainer").data("username");
+
+  $("#frmMyARCLogin").hide();
+  $(".supernav-loggedin").show();
+
+  $(".supernav-myarc-username").html(username);
+}
+
+// add social for articles
+if( $("article--headline").length ) {
+
+  //test on latest first
+  if($(".btn--link.parentLink").text() == "The Latest") {
+
+    $(".article--headline__content").prepend("<div class='socialShare'></div>");
+  }
 }

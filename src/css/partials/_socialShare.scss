@@ -1,0 +1,58 @@
+.article-body .basic-text-inside {
+  position: relative;
+}
+
+.articleShareContainer {
+  position: absolute;
+  left: -150px;
+  top: 60px;
+}
+
+.shareTitle {
+  text-align: center;
+  font-family: SourceSansPro-Regular, helvetica, arial, sans-serif;
+  font-size: .8rem;
+  text-transform: uppercase;
+  margin-bottom: 15px;
+  padding-top: 15px;
+}
+
+.articleShare, .articleShare:visited, .articleShare:focus {
+  display: block;
+  font-family: 'icomoon';
+  background: #b0b0b0;
+  color: #ffffff;
+  font-size: 1rem;
+  padding: 20px;
+  text-align: center;
+  vertical-align: middle;
+  margin-top: 5px;
+}
+
+.articleShare:hover {
+  color: #ffffff;
+}
+
+.articleShare.articleShare-twitter:hover {
+  background: #1DA1F2;
+}
+
+.articleShare-twitter:after {
+  content: "\e900";
+}
+
+.articleShare.articleShare-facebook:hover {
+  background: #3B5998;
+}
+
+.articleShare-facebook:after {
+  content: "\e903";
+}
+
+.articleShare.articleShare-linkedin:hover {
+  background: #0077B5;
+}
+
+.articleShare-linkedin:after {
+  content: "\eaca";
+}
