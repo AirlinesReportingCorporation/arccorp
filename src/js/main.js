@@ -9,7 +9,6 @@ import owlCarousel from 'owl.carousel';
 var latestSliderPosition = 0;
 var latestSliderWidth = 100;
 var maxSliderHeight = 0;
-
 var latestTechPosition = 0;
 
 function latestSliderInit(){
@@ -21,11 +20,6 @@ function latestSliderInit(){
     $(this).prepend("<a href='" + link + "'><img class='latestImage' src='"+ imgLink + "'></a>");
     $(this).append("<div class='read-more'><a href='" + link + "'>Read More</a></div>");
   });
-
-  $(".latestImage").on( "error", function(){
-    $(this).hide();
-    $(this).after("<div style='width:280px;height:250px; background:#189bb0; margin-bottom:20px;'></div>");
-  })
 
   $(".homePageGrid .page-grid__row").eq(0).prepend("<div class='featuredLatest content-block--pageItem'><div class='featuredLatestImage'><a target='_blank'  href='https://gbta18.mapyourshow.com/7_0/sessions/session-details.cfm?ScheduleID=179'><img src='https://www2.arccorp.com/globalassets/homepage/redesign/thelatest_ad.jpg'></a></div></div>");
 
@@ -114,6 +108,38 @@ function productRandomize() {
   $(".featuredProduct").eq(random).show();
 }
 
+
+function articleSocialInit(){
+  if( $(".article--headline").length ) {
+
+  }
+}
+
+function articleResize(scrollTop, scrollLeft, resize) {
+  if( $(".article--headline").length ) {
+    var $el = $('.articleShareContainer');
+    var isPositionFixed = ($el.css('position') == 'fixed');
+    var windowWidth = $(window).width();
+
+    var offset = $(".basic-text-inside").eq(0).offset().left;
+
+    if(parseInt(windowWidth) > 1169){
+      if ($(window).scrollTop() > scrollTop && !isPositionFixed){
+          $('.articleShareContainer').css({'position': 'fixed', 'top': '0px', 'left' : (offset - 150) + 'px'});
+      }
+      else if ($(window).scrollTop() < scrollTop && isPositionFixed)
+      {
+
+        $('.articleShareContainer').css({'position': 'absolute', 'top': '60px', 'left' : '-150px'});
+      }
+      else if(isPositionFixed){
+        $('.articleShareContainer').css({'position': 'fixed', 'top': '0px', 'left' : (offset - 150) + 'px'});
+      }
+    }
+
+  }
+}
+
 function articleSocial() {
   // add social for articles
   if( $(".article--headline").length ) {
@@ -123,10 +149,6 @@ function articleSocial() {
       var url = window.location.href;
       var meta = $("meta[name='description']").prop("content");
       var title = $("h1.mainTitle").text();
-
-      console.log(url);
-      console.log(meta);
-      console.log(title);
 
       $(".basic-text-inside").eq(0).prepend("<div class='articleShareContainer'></div>");
 
@@ -144,28 +166,29 @@ function articleSocial() {
       var linkedinUrl = "https://www.linkedin.com/shareArticle?mini=true&url=" + encodeURIComponent(url) +"&title=" + encodeURIComponent(title) + "&summary=" + encodeURIComponent(meta);
       $(".articleShareContainer").append("<a class='articleShare articleShare-linkedin' target='_blank' href='" + linkedinUrl + "'></a>");
 
-      var scrollTop = $('.articleShareContainer').offset().top;
-      var scrollLeft = $('.articleShareContainer').offset().left;
+      var scrollTop = $('.basic-text-inside').eq(0).offset().top;
+      var scrollLeft = $(".basic-text-inside").eq(0).offset().left;
 
-      $(window).scroll(function(e){
-        var $el = $('.articleShareContainer');
-        var isPositionFixed = ($el.css('position') == 'fixed');
-
-        if ($(this).scrollTop() > scrollTop && !isPositionFixed){
-          $('.articleShareContainer').css({'position': 'fixed', 'top': '0px', 'left' : scrollLeft});
-        }
-        if ($(this).scrollTop() < scrollTop && isPositionFixed)
-        {
-          $('.articleShareContainer').css({'position': 'absolute', 'top': '60px', 'left' : '-150px'});
-        }
+      $(window).scroll(function(){
+        articleResize(scrollTop, scrollLeft);
       });
+
+      $(window).resize(function(){
+        console.log('hit');
+        scrollTop = $('.basic-text-inside').eq(0).offset().top;
+        scrollLeft = $('.basic-text-inside').eq(0).offset().left;
+        articleResize(scrollTop, scrollLeft);
+      });
+
 
 
     }
   }
 
 
-}
+
+
+}//end articleSocial
 
 $('.owl-carousel').owlCarousel({
     center: true,
@@ -281,6 +304,7 @@ var app = new Vue({
 });
 
 
+//functions for just the homepage
 if($("body").hasClass("home-page")){
   latestSliderInit();
 
@@ -293,8 +317,11 @@ if($("body").hasClass("home-page")){
   });
 }
 
-articleSocial(); 
+articleSocial();
 
+
+
+//function for sign-in
 if( $(".navcontainer").hasClass("signedIn") ) {
   var username = $(".navcontainer").data("username");
 
@@ -302,14 +329,4 @@ if( $(".navcontainer").hasClass("signedIn") ) {
   $(".supernav-loggedin").show();
 
   $(".supernav-myarc-username").html(username);
-}
-
-// add social for articles
-if( $("article--headline").length ) {
-
-  //test on latest first
-  if($(".btn--link.parentLink").text() == "The Latest") {
-
-    $(".article--headline__content").prepend("<div class='socialShare'></div>");
-  }
 }

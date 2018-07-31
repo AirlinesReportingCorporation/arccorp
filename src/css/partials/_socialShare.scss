@@ -6,6 +6,7 @@
   position: absolute;
   left: -150px;
   top: 60px;
+  z-index: 100;
 }
 
 .shareTitle {
@@ -55,4 +56,28 @@
 
 .articleShare-linkedin:after {
   content: "\eaca";
+}
+
+@media screen and (max-width: 1169px){
+  .articleShareContainer {
+    position: fixed !important;
+    bottom: 0 !important;
+    left: auto !important;
+    right: 0;
+    text-align: center;
+    top: auto !important;
+  }
+  .articleShare, .articleShare:visited, .articleShare:focus {
+    margin: 0;
+    vertical-align: bottom;
+    display: inline-block;
+  }
+  .shareTitle {
+    display: inline-block;
+    border: 1px solid #b0b0b0;
+    background: #ffffff;
+    padding: 20px;
+    margin-bottom:0;
+    height: 61px;
+  }
 }

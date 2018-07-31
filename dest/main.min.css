@@ -9321,6 +9321,7 @@ html {
   position: absolute;
   left: -150px;
   top: 60px;
+  z-index: 100;
 }
 
 .shareTitle {
@@ -9370,6 +9371,30 @@ html {
 
 .articleShare-linkedin:after {
   content: "\EACA";
+}
+
+@media screen and (max-width: 1169px) {
+  .articleShareContainer {
+    position: fixed !important;
+    bottom: 0 !important;
+    left: auto !important;
+    right: 0;
+    text-align: center;
+    top: auto !important;
+  }
+  .articleShare, .articleShare:visited, .articleShare:focus {
+    margin: 0;
+    vertical-align: bottom;
+    display: inline-block;
+  }
+  .shareTitle {
+    display: inline-block;
+    border: 1px solid #b0b0b0;
+    background: #ffffff;
+    padding: 20px;
+    margin-bottom: 0;
+    height: 61px;
+  }
 }
 
 [v-cloak] {
@@ -9676,7 +9701,7 @@ footer .footer-links-social li a.icon-iso_logo {
 }
 
 .supernav .supernav-sub .supernav-sub-link:hover {
-  color: #000000;
+  color: #189bb0;
 }
 
 .supernav .supernav-sub .supernav-sub-link.supernav-viewall {
@@ -9791,7 +9816,7 @@ footer .footer-links-social li a.icon-iso_logo {
   right: 0;
   max-width: 300px;
   width: 100%;
-  box-shadow: 0px 5px 8px rgba(0, 0, 0, 0.15);
+  box-shadow: 0px 5px 40px rgba(0, 0, 0, 0.3);
 }
 
 .supernav-topnav .supernav-login .supernav-myarc-username {
@@ -10587,10 +10612,15 @@ footer .footer-links-social li a.icon-iso_logo {
   z-index: 3;
 }
 
-.home-page .ourStory .ctaBtn.ctaBtn--secondaryOnImage, .home-page .ourStory .ctaBtn.ctaBtn--secondaryOnImage:hover {
+.home-page .ourStory .ctaBtn.ctaBtn--secondaryOnImage {
   color: #ffffff;
   background: transparent;
   border-color: #ffffff;
+}
+
+.home-page .ourStory .ctaBtn.ctaBtn--secondaryOnImage:hover {
+  color: #333333;
+  background: #ffffff;
 }
 
 .home-page .featuredContent {
@@ -10648,6 +10678,11 @@ footer .footer-links-social li a.icon-iso_logo {
   background: transparent;
   color: #ffffff;
   border-color: #ffffff;
+}
+
+.home-page .featuredProduct .ctaBtn--inverse:hover {
+  background: #ffffff;
+  color: #333333;
 }
 
 .home-page .featuredProduct.featuredProduct-first {
@@ -10722,6 +10757,9 @@ footer .footer-links-social li a.icon-iso_logo {
   }
   .home-page .homePageGrid .owl-carousel .owl-dots::after {
     display: none;
+  }
+  .home-page .fullPanel.fullPanel1, .home-page .fullPanel.fullPanel2, .home-page .fullPanel.fullPanel3, .home-page .fullPanel.fullPanel4, .home-page .fullPanel.fullPanel5, .home-page .fullPanel.fullPanel6, .home-page .fullPanel.fullPanel7, .home-page .fullPanel.fullPanel8, .home-page .fullPanel.fullPanel9 {
+    background-size: cover;
   }
 }
 
@@ -10818,11 +10856,17 @@ footer .footer-links-social li a.icon-iso_logo {
   .home-page .featuredLatest {
     display: none;
   }
+  .geoTravelconnect1 {
+    display: none;
+  }
 }
 
 @media screen and (max-width: 768px) {
   .home-page .mobile-only {
     display: block;
+  }
+  .homePageGrid .read-more {
+    display: none;
   }
   .home-page .owl-carousel .carousel-slide {
     height: 400px !important;
@@ -10902,6 +10946,9 @@ footer .footer-links-social li a.icon-iso_logo {
   }
   .home-page .homePageGrid a.ctaBtn.ctaBtn--main {
     position: relative;
+  }
+  .featuredProduct img {
+    display: none;
   }
 }
 

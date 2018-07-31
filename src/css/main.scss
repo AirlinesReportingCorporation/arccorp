@@ -347,7 +347,7 @@ footer .footer-links-social li a.icon-iso_logo {
 }
 
 .supernav .supernav-sub .supernav-sub-link:hover {
-  color: #000000;
+  color: #189bb0;
 }
 
 .supernav .supernav-sub .supernav-sub-link.supernav-viewall {
@@ -460,7 +460,7 @@ footer .footer-links-social li a.icon-iso_logo {
     right: 0;
     max-width: 300px;
     width: 100%;
-    box-shadow: 0px 5px 8px rgba(0, 0, 0, 0.15);
+    box-shadow: 0px 5px 40px rgba(0, 0, 0, 0.3);
 
     .supernav-myarc-username {
       font-family: SourceSansPro-Bold, helvetica, arial, sans-serif;
@@ -1243,10 +1243,14 @@ footer .footer-links-social li a.icon-iso_logo {
       position: relative;
       z-index: 3;
     }
-    .ctaBtn.ctaBtn--secondaryOnImage, .ctaBtn.ctaBtn--secondaryOnImage:hover {
+    .ctaBtn.ctaBtn--secondaryOnImage {
       color: #ffffff;
       background: transparent;
       border-color: #ffffff;
+      &:hover {
+        color: #333333;
+        background: #ffffff;
+      }
     }
   }
 
@@ -1301,6 +1305,10 @@ footer .footer-links-social li a.icon-iso_logo {
       background: transparent;
       color: #ffffff;
       border-color: #ffffff;
+      &:hover {
+        background: #ffffff;
+        color: #333333;
+      }
     }
 
     &.featuredProduct-first {
@@ -1380,6 +1388,11 @@ footer .footer-links-social li a.icon-iso_logo {
 
   .home-page .homePageGrid .owl-carousel .owl-dots::after {
     display: none;
+  }
+  .home-page .fullPanel {
+    &.fullPanel1, &.fullPanel2, &.fullPanel3, &.fullPanel4, &.fullPanel5, &.fullPanel6, &.fullPanel7, &.fullPanel8, &.fullPanel9 {
+      background-size:cover;
+    }
   }
 }
 @media screen and (max-width: 1000px) {
@@ -1481,6 +1494,9 @@ footer .footer-links-social li a.icon-iso_logo {
   .home-page .featuredLatest {
     display: none;
   }
+  .geoTravelconnect1 {
+    display: none;
+  }
 }
 @media screen and (max-width:768px) {
   .home-page .homePageGrid .page-grid__items--collapsed,
@@ -1490,6 +1506,10 @@ footer .footer-links-social li a.icon-iso_logo {
 
   .home-page .mobile-only {
     display: block;
+  }
+
+  .homePageGrid .read-more {
+    display: none;
   }
 
   .home-page .owl-carousel .carousel-slide {
@@ -1594,6 +1614,10 @@ footer .footer-links-social li a.icon-iso_logo {
 
   .home-page .homePageGrid a.ctaBtn.ctaBtn--main {
     position: relative;
+  }
+
+  .featuredProduct img {
+    display: none;
   }
 }
 @media screen and (max-width: 480px){

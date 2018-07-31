@@ -850,323 +850,347 @@
   <!-- page grid end -->
 
   <!-- technology panel start -->
-  <div class="techPanel">
-    <div class="iconPanel">
-      <h2><a style="font-family: SourceSansPro-Regular, helvetica, arial, sans-serif;" href="/about-us/our-technology" style="">Our Technology Principles</a></h2>
-      <div class="iconContainer">
-        <div class="techContainer row">
-          <div class="techIcon col-sm-2 offset-md-1">
-            <a href="/about-us/our-technology#principles">
-            <div class="techIconImg hvr-grow"><img src="https://www2.arccorp.com/globalassets/homepage/redesign/cloudicon.png" alt="Cloud"></div>
-            <div class="iconText">Flexible & Scalable</div></a>
-          </div>
-          <div class="techIcon col-sm-2">
-            <a href="/about-us/our-technology#principles">
-            <div class="techIconImg hvr-grow"><img src="https://www2.arccorp.com/globalassets/homepage/redesign/easytouse.png" alt="Data"></div>
-            <div class="iconText">Easy to Use</div></a>
-          </div>
-          <div class="techIcon col-sm-2">
-            <a href="/about-us/our-technology#principles">
-            <div class="techIconImg hvr-grow"><img src="https://www2.arccorp.com/globalassets/homepage/redesign/available.png" alt="NDC"></div>
-            <div class="iconText">Available</div></a>
-          </div>
-          <div class="techIcon col-sm-2" v-on:click="techSwitch('techBlurb2')">
-            <a href="/about-us/our-technology#principles">
-            <div class="techIconImg hvr-grow"><img src="https://www2.arccorp.com/globalassets/homepage/redesign/automated.png" alt="Security"></div>
-            <div class="iconText">Automated</div></a>
-          </div>
-          <div class="techIcon col-sm-2 " v-on:click="techSwitch('techBlurb1')">
-            <a href="/about-us/our-technology#principles">
-            <div class="techIconImg hvr-grow"><img src="https://www2.arccorp.com/globalassets/homepage/redesign/securityIcon.png" alt="Code1"></div>
-            <div class="iconText">Secure</div></a>
-          </div>
+    <div class="techPanel">
+      <div class="iconPanel">
+        <h2><a style="font-family: SourceSansPro-Regular, helvetica, arial, sans-serif;" href="/about-us/our-technology" style="">Our Technology Principles</a></h2>
+        <div class="iconContainer">
+          <div class="techContainer row">
+            <div class="techIcon col-sm-2 offset-md-1">
+              <a href="/about-us/our-technology#principles">
+              <div class="techIconImg hvr-grow"><img src="https://www2.arccorp.com/globalassets/homepage/redesign/cloudicon.png" alt="Cloud"></div>
+              <div class="iconText">Flexible & Scalable</div></a>
+            </div>
+            <div class="techIcon col-sm-2">
+              <a href="/about-us/our-technology#principles">
+              <div class="techIconImg hvr-grow"><img src="https://www2.arccorp.com/globalassets/homepage/redesign/easytouse.png" alt="Data"></div>
+              <div class="iconText">Easy to Use</div></a>
+            </div>
+            <div class="techIcon col-sm-2">
+              <a href="/about-us/our-technology#principles">
+              <div class="techIconImg hvr-grow"><img src="https://www2.arccorp.com/globalassets/homepage/redesign/available.png" alt="NDC"></div>
+              <div class="iconText">Available</div></a>
+            </div>
+            <div class="techIcon col-sm-2" v-on:click="techSwitch('techBlurb2')">
+              <a href="/about-us/our-technology#principles">
+              <div class="techIconImg hvr-grow"><img src="https://www2.arccorp.com/globalassets/homepage/redesign/automated.png" alt="Security"></div>
+              <div class="iconText">Automated</div></a>
+            </div>
+            <div class="techIcon col-sm-2 " v-on:click="techSwitch('techBlurb1')">
+              <a href="/about-us/our-technology#principles">
+              <div class="techIconImg hvr-grow"><img src="https://www2.arccorp.com/globalassets/homepage/redesign/securityIcon.png" alt="Code1"></div>
+              <div class="iconText">Secure</div></a>
+            </div>
 
 
 
 
+          </div>
         </div>
+        <!--
+        <div class="techArrowRight">
+          <img src="https://intg-epi01.arcnp.com/globalassets/homepage/redesign/techArrowRight.png" alt="">
+        </div>
+        <div class="techArrowLeft">
+          <img src="https://intg-epi01.arcnp.com/globalassets/homepage/redesign/techArrowLeft.png" alt="">
+        </div> -->
       </div>
       <!--
-      <div class="techArrowRight">
-        <img src="https://intg-epi01.arcnp.com/globalassets/homepage/redesign/techArrowRight.png" alt="">
+      <div class="techDropdown">
+        <div class="techBlurb" v-show="pullDown === 'techBlurb1'">
+          <h2>NDC Exchange</h2>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute
+            irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+          <a href="/about-us/contact-us/" title="Contact Us" class="ctaBtn ctaBtn--main">NDC Page</a>
+          <div class="blurbClose" v-on:click="techSwitch('techReset')"></div>
+        </div>
+        <div class="techBlurb" v-show="pullDown === 'techBlurb2'">
+          <h2>Blockchain</h2>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute
+            irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+          <div class="blurbClose" v-on:click="techSwitch('techReset')"></div>
+        </div>
+      </div>-->
+    </div>
+    <!-- technology panel end -->
+
+    <!-- quote panels -->
+    <div class="fullPanel fullPanel1 fullPanel-first">
+      <div class="testPanel">
+        <div class="row">
+          <div class="col-lg-6 col-md-12">
+            <img src="https://www2.arccorp.com/globalassets/homepage/redesign/quotes/british_airways.png" alt=""><br/><br/>
+            <div class="testQuote">"British Airways is excited to be the first test partner to ARC's enhanced settlement functionality, which enables us to evolve our distribution strategy with the travel agency channel."</div><br/>
+            <small><strong>Simon Brooks</strong>, Senior Vice President, Sales for North American</small><br/>
+
+            <a class="ctaBtn" href="/articles-trends/the-latest/implementing-ndc-q-a-with-british-airways/">Learn More</a>
+
+            <a href="/products-participation/customer-success-stories#feedback-form" class="tellStory">Tell Your Story</a>
+
+            <div class="view-more">Read more <a href="/products-participation/customer-success-stories/">customer stories &raquo;</a></div>
+          </div>
+        </div>
+
+
       </div>
-      <div class="techArrowLeft">
-        <img src="https://intg-epi01.arcnp.com/globalassets/homepage/redesign/techArrowLeft.png" alt="">
-      </div> -->
+    </div>
+
+    <div class="fullPanel fullPanel6">
+      <div class="testPanel">
+        <div class="row">
+          <div class="col-lg-6 col-md-12">
+            <img src="https://www2.arccorp.com/globalassets/homepage/redesign/quotes/ovation.png" alt=""><br/><br/>
+            <div class="testQuote">"The Agency BI tool pays for itself. I am now ultra-prepared before airline reviews."</div><br/>
+            <small><strong>Shane Chapman</strong>, Vice President, Airline Supplier Relations, Ovation</small><br/>
+
+            <a class="ctaBtn" href="/products-participation/case-studies/Ovation-Travel-Group-Enhances-Airline-Relations/">Learn More</a>
+
+            <a href="/products-participation/customer-success-stories#feedback-form" class="tellStory">Tell Your Story</a>
+
+            <div class="view-more">Read more <a href="/products-participation/customer-success-stories/">customer stories</a>.</div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="fullPanel fullPanel3">
+      <div class="testPanel">
+        <div class="row">
+          <div class="col-lg-6 col-md-12">
+            <img src="https://www2.arccorp.com/globalassets/homepage/redesign/quotes/expedia.png" alt=""><br/><br/>
+            <div class="testQuote">"Analyzing massive data sets with our partners at ARC gives us smart insights that we can pass along to travelers."</div><br/>
+            <small><strong>Greg Schulze</strong>, Senior Vice President, Global Tour & Transport, Expedia Inc.</small><br/>
+
+            <a class="ctaBtn" href="/products-participation/products/arc-custom-reports/">Learn More</a>
+
+            <a href="/products-participation/customer-success-stories#feedback-form" class="tellStory">Tell Your Story</a>
+
+            <div class="view-more">Read more <a href="/products-participation/customer-success-stories/">customer stories</a>.</div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="fullPanel fullPanel2">
+      <div class="testPanel">
+        <div class="row">
+          <div class="col-lg-6 col-md-12">
+            <img src="https://www2.arccorp.com/globalassets/homepage/redesign/quotes/frosch.png" alt=""><br/><br/>
+            <div class="testQuote">"TASF offers convenience, access to all card brands, back-office reconciliation and high transaction limits."</div><br/>
+            <small><strong>Bryan Leibman</strong>, President & CEO, Frosch</small><br/>
+
+            <a class="ctaBtn" href="/products-participation/products/travel-agency-service-fee/">Learn More</a>
+
+            <a href="/products-participation/customer-success-stories#feedback-form" class="tellStory">Tell Your Story</a>
+
+            <div class="view-more">Read more <a href="/products-participation/customer-success-stories/">customer stories</a>.</div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="fullPanel fullPanel5">
+      <div class="testPanel">
+        <div class="row">
+          <div class="col-lg-6 col-md-12">
+            <img src="https://www2.arccorp.com/globalassets/homepage/redesign/quotes/americanairlines.png" alt=""><br/><br/>
+            <div class="testQuote">"Direct Data Solutions is the most comprehensive industry data source available today."</div><br/>
+            <small><strong>Zia Syed</strong>, Director of Data Management & Sales Reporting, American Airlines</small><br/>
+            <a class="ctaBtn" href="/products-participation/products/direct-data-solutions/">Learn More</a>
+
+            <a href="/products-participation/customer-success-stories#feedback-form" class="tellStory">Tell Your Story</a>
+
+            <div class="view-more">Read more <a href="/products-participation/customer-success-stories/">customer stories</a>.</div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="fullPanel fullPanel4">
+      <div class="testPanel">
+        <div class="row">
+          <div class="col-lg-6 col-md-12">
+            <img src="https://www2.arccorp.com/globalassets/homepage/redesign/quotes/expedia.png" alt=""><br/><br/>
+            <div class="testQuote">"The Debit Memo Working Group, with ARC’s leadership and guidance, has accelerated positive changes for the industry."</div><br/>
+            <small><strong>Teresa Young</strong>, Senior Manager, Global Airline Debit Memos, Expedia, Inc.</small><br/>
+            <a class="ctaBtn" href="/articles-trends/the-latest/latest01222018/">Learn More</a>
+            <a href="/products-participation/customer-success-stories#feedback-form" class="tellStory">Tell Your Story</a>
+            <div class="view-more">Read more <a href="/products-participation/customer-success-stories/">customer stories</a>.</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  <!--
+    <div class="fullPanel fullPanel7">
+      <div class="testPanel">
+        <div class="row">
+          <div class="col-lg-6 col-md-12">
+            <div class="testQuote">"The ARC accreditation sign is a welcome sign of trustworthiness that clients want to see. I really do not believe we could have grown and remained in business without ARC."</div><br/>
+            <small><strong>Maria Polanco</strong>, General Manager, Vallarta's VIP Travel</small><br/>
+            <a class="ctaBtn" href="/products-participation/travel-agencies/agency-participation/">Learn More</a>
+            <a href="/products-participation/customer-success-stories#feedback-form" class="tellStory">Tell Your Story</a>
+            <div class="view-more">Read more <a href="/products-participation/customer-success-stories/">customer stories</a>.</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  -->
+    <div class="fullPanel fullPanel8">
+      <div class="testPanel">
+        <div class="row">
+          <div class="col-lg-6 col-md-12">
+            <img src="https://www2.arccorp.com/globalassets/homepage/redesign/quotes/flightcentre.png" alt=""><br/><br/>
+            <div class="testQuote">"Thanks to Aria, airline analyses that used to take us four days a month now only takes us one hour. These time savings alone have made it a worthwhile investment."</div><br/>
+            <small><strong>Helena Jursca</strong>, Senior Analyst, Product Nation, Flight Centre</small><br/>
+
+            <a class="ctaBtn" href="/products-participation/products/aria/">Learn More</a>
+
+            <a href="/products-participation/customer-success-stories#feedback-form" class="tellStory">Tell Your Story</a>
+
+            <div class="view-more">Read more <a href="/products-participation/customer-success-stories/">customer stories</a>.</div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- quote panels end -->
+
+    <!-- featured products -->
+    <!--
+    <div class="featuredProduct productPurple featuredProduct-first">
+      <div class="innerProduct">
+        <div class="row">
+          <div class="col-lg-6 col-md-12">
+            <span class="eyebrow">Featured Product</span>
+            <h2>Payments Made Simple</h2>
+            <p>TASF isn’t limited to service fees. Travel agents can use ARC’s GDS-integrated payment solution to charge up to $10,000 per transaction for any travel-related service. </p>
+            <a href="/products-participation/products/travel-agency-service-fee/" title="Contact Us" class="ctaBtn ctaBtn--main">Simplify Your Payments</a>
+
+          </div>
+        </div>
+
+
+
+      </div>
+    </div>
+    -->
+    <div class="featuredProduct productPurple featuredProduct-first">
+      <div class="innerProduct">
+        <div class="row">
+          <div class="col-lg-12 col-md-12">
+            <span class="eyebrow">Featured Product</span>
+            <h2>Maximize Your Bottom Line</h2>
+            <p>ARC's business intelligence tools for airlines and agencies provide a holistic view of your organization's sales data and enable you to benchmark performance against peers. </p>
+            <a href="/products-participation/products/agency-bi/" title="Agency BI" class="ctaBtn ctaBtn--main">Agency BI</a>
+            <a href="/products-participation/products/airline-bi/" title="Airline BI" class="ctaBtn ctaBtn--inverse" style="margin-left:15px;">Airline BI</a>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-12">
+            <hr/>
+            <img style="margin-top: 20px;" src="https://www2.arccorp.com/globalassets/homepage/redesign/product/airlineBI.png?123" alt="Airline BI Data">
+            <div class="view-more"><a href="/products-participation/products/">See more products</a></div>
+          </div>
+        </div>
+      </div>
     </div>
     <!--
-    <div class="techDropdown">
-      <div class="techBlurb" v-show="pullDown === 'techBlurb1'">
-        <h2>NDC Exchange</h2>
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute
-          irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-        <a href="/about-us/contact-us/" title="Contact Us" class="ctaBtn ctaBtn--main">NDC Page</a>
-        <div class="blurbClose" v-on:click="techSwitch('techReset')"></div>
-      </div>
-      <div class="techBlurb" v-show="pullDown === 'techBlurb2'">
-        <h2>Blockchain</h2>
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute
-          irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-        <div class="blurbClose" v-on:click="techSwitch('techReset')"></div>
-      </div>
-    </div>-->
-  </div>
-  <!-- technology panel end -->
+    <div class="featuredProduct productDarkBlue">
+      <div class="innerProduct">
+        <div class="row">
+          <div class="col-lg-6 col-md-12">
+            <span class="eyebrow">Featured Product</span>
+            <h2>Aria</h2>
+            <p>ARC’s Aria tool allows agencies to quickly and effectively view, download and analyze their sales data through customized reports.</p>
+            <a href="/products-participation/products/aria/" title="Contact Us" class="ctaBtn ctaBtn--main">Learn More</a>
 
-  <!-- quote panels -->
-  <div class="fullPanel fullPanel1 fullPanel-first">
-    <div class="testPanel">
-      <div class="row">
-        <div class="col-lg-6 col-md-12">
-          <img src="https://www2.arccorp.com/globalassets/homepage/redesign/quotes/british_airways.png" alt=""><br/><br/>
-          <div class="testQuote">"British Airways is excited to be the first test partner to ARC's enhanced settlement functionality, which enables us to evolve our distribution strategy with the travel agency channel."</div><br/>
-          <small><strong>Simon Brooks</strong>, Senior Vice President, Sales for North American</small><br/>
-
-          <a class="ctaBtn" href="/articles-trends/the-latest/implementing-ndc-q-a-with-british-airways/">Learn More</a>
-
-          <a href="/products-participation/customer-success-stories#feedback-form" class="tellStory">Tell Your Story</a>
-
-          <div class="view-more">Read more <a href="/products-participation/customer-success-stories/">customer stories &raquo;</a></div>
-        </div>
-      </div>
-
-
-    </div>
-  </div>
-
-  <div class="fullPanel fullPanel6">
-    <div class="testPanel">
-      <div class="row">
-        <div class="col-lg-6 col-md-12">
-          <img src="https://www2.arccorp.com/globalassets/homepage/redesign/quotes/ovation.png" alt=""><br/><br/>
-          <div class="testQuote">"The Agency BI tool pays for itself. I am now ultra-prepared before airline reviews."</div><br/>
-          <small><strong>Shane Chapman</strong>, Vice President, Airline Supplier Relations, Ovation</small><br/>
-
-          <a class="ctaBtn" href="/products-participation/case-studies/Ovation-Travel-Group-Enhances-Airline-Relations/">Learn More</a>
-
-          <a href="/products-participation/customer-success-stories#feedback-form" class="tellStory">Tell Your Story</a>
-
-          <div class="view-more">Read more <a href="/products-participation/customer-success-stories/">customer stories</a>.</div>
-        </div>
-      </div>
-    </div>
-  </div>
-
-  <div class="fullPanel fullPanel3">
-    <div class="testPanel">
-      <div class="row">
-        <div class="col-lg-6 col-md-12">
-          <img src="https://www2.arccorp.com/globalassets/homepage/redesign/quotes/expedia.png" alt=""><br/><br/>
-          <div class="testQuote">"Analyzing massive data sets with our partners at ARC gives us smart insights that we can pass along to travelers."</div><br/>
-          <small><strong>Greg Schulze</strong>, Senior Vice President, Global Tour & Transport, Expedia Inc.</small><br/>
-
-          <a class="ctaBtn" href="/products-participation/products/arc-custom-reports/">Learn More</a>
-
-          <a href="/products-participation/customer-success-stories#feedback-form" class="tellStory">Tell Your Story</a>
-
-          <div class="view-more">Read more <a href="/products-participation/customer-success-stories/">customer stories</a>.</div>
-        </div>
-      </div>
-    </div>
-  </div>
-
-  <div class="fullPanel fullPanel2">
-    <div class="testPanel">
-      <div class="row">
-        <div class="col-lg-6 col-md-12">
-          <img src="https://www2.arccorp.com/globalassets/homepage/redesign/quotes/frosch.png" alt=""><br/><br/>
-          <div class="testQuote">"TASF offers convenience, access to all card brands, back-office reconciliation and high transaction limits."</div><br/>
-          <small><strong>Bryan Leibman</strong>, President & CEO, Frosch</small><br/>
-
-          <a class="ctaBtn" href="/products-participation/products/travel-agency-service-fee/">Learn More</a>
-
-          <a href="/products-participation/customer-success-stories#feedback-form" class="tellStory">Tell Your Story</a>
-
-          <div class="view-more">Read more <a href="/products-participation/customer-success-stories/">customer stories</a>.</div>
-        </div>
-      </div>
-    </div>
-  </div>
-
-  <div class="fullPanel fullPanel5">
-    <div class="testPanel">
-      <div class="row">
-        <div class="col-lg-6 col-md-12">
-          <img src="https://www2.arccorp.com/globalassets/homepage/redesign/quotes/americanairlines.png" alt=""><br/><br/>
-          <div class="testQuote">"Direct Data Solutions is the most comprehensive industry data source available today."</div><br/>
-          <small><strong>Zia Syed</strong>, Director of Data Management & Sales Reporting, American Airlines</small><br/>
-          <a class="ctaBtn" href="/products-participation/products/direct-data-solutions/">Learn More</a>
-
-          <a href="/products-participation/customer-success-stories#feedback-form" class="tellStory">Tell Your Story</a>
-
-          <div class="view-more">Read more <a href="/products-participation/customer-success-stories/">customer stories</a>.</div>
-        </div>
-      </div>
-    </div>
-  </div>
-
-  <div class="fullPanel fullPanel4">
-    <div class="testPanel">
-      <div class="row">
-        <div class="col-lg-6 col-md-12">
-          <img src="https://www2.arccorp.com/globalassets/homepage/redesign/quotes/expedia.png" alt=""><br/><br/>
-          <div class="testQuote">"The Debit Memo Working Group, with ARC’s leadership and guidance, has accelerated positive changes for the industry."</div><br/>
-          <small><strong>Teresa Young</strong>, Senior Manager, Global Airline Debit Memos, Expedia, Inc.</small><br/>
-          <a class="ctaBtn" href="/articles-trends/the-latest/latest01222018/">Learn More</a>
-          <a href="/products-participation/customer-success-stories#feedback-form" class="tellStory">Tell Your Story</a>
-          <div class="view-more">Read more <a href="/products-participation/customer-success-stories/">customer stories</a>.</div>
-        </div>
-      </div>
-    </div>
-  </div>
-<!--
-  <div class="fullPanel fullPanel7">
-    <div class="testPanel">
-      <div class="row">
-        <div class="col-lg-6 col-md-12">
-          <div class="testQuote">"The ARC accreditation sign is a welcome sign of trustworthiness that clients want to see. I really do not believe we could have grown and remained in business without ARC."</div><br/>
-          <small><strong>Maria Polanco</strong>, General Manager, Vallarta's VIP Travel</small><br/>
-          <a class="ctaBtn" href="/products-participation/travel-agencies/agency-participation/">Learn More</a>
-          <a href="/products-participation/customer-success-stories#feedback-form" class="tellStory">Tell Your Story</a>
-          <div class="view-more">Read more <a href="/products-participation/customer-success-stories/">customer stories</a>.</div>
-        </div>
-      </div>
-    </div>
-  </div>
--->
-  <div class="fullPanel fullPanel8">
-    <div class="testPanel">
-      <div class="row">
-        <div class="col-lg-6 col-md-12">
-          <img src="https://www2.arccorp.com/globalassets/homepage/redesign/quotes/flightcentre.png" alt=""><br/><br/>
-          <div class="testQuote">"Thanks to Aria, airline analyses that used to take us four days a month now only takes us one hour. These time savings alone have made it a worthwhile investment."</div><br/>
-          <small><strong>Helena Jursca</strong>, Senior Analyst, Product Nation, Flight Centre</small><br/>
-
-          <a class="ctaBtn" href="/products-participation/products/aria/">Learn More</a>
-
-          <a href="/products-participation/customer-success-stories#feedback-form" class="tellStory">Tell Your Story</a>
-
-          <div class="view-more">Read more <a href="/products-participation/customer-success-stories/">customer stories</a>.</div>
-        </div>
-      </div>
-    </div>
-  </div>
-  <!-- quote panels end -->
-
-  <!-- featured products -->
-  <!--
-  <div class="featuredProduct productPurple featuredProduct-first">
-    <div class="innerProduct">
-      <div class="row">
-        <div class="col-lg-6 col-md-12">
-          <span class="eyebrow">Featured Product</span>
-          <h2>Payments Made Simple</h2>
-          <p>TASF isn’t limited to service fees. Travel agents can use ARC’s GDS-integrated payment solution to charge up to $10,000 per transaction for any travel-related service. </p>
-          <a href="/products-participation/products/travel-agency-service-fee/" title="Contact Us" class="ctaBtn ctaBtn--main">Simplify Your Payments</a>
-
-        </div>
-      </div>
-
-
-
-    </div>
-  </div>
-  -->
-  <div class="featuredProduct productPurple featuredProduct-first">
-    <div class="innerProduct">
-      <div class="row">
-        <div class="col-lg-12 col-md-12">
-          <span class="eyebrow">Featured Product</span>
-          <h2>Maximize Your Bottom Line</h2>
-          <p>ARC's business intelligence tools for airlines and agencies provide a holistic view of your organization's sales data and enable you to benchmark performance against peers. </p>
-          <a href="/products-participation/products/agency-bi/" title="Agency BI" class="ctaBtn ctaBtn--main">Agency BI</a>
-          <a href="/products-participation/products/airline-bi/" title="Airline BI" class="ctaBtn ctaBtn--inverse" style="margin-left:15px;">Airline BI</a>
-        </div>
-      </div>
-      <div class="row">
-        <div class="col-md-12">
-          <hr/>
-          <img style="margin-top: 20px;" src="https://www2.arccorp.com/globalassets/homepage/redesign/product/airlineBI.png?123" alt="Airline BI Data">
-          <div class="view-more"><a href="/products-participation/products/">See more products</a></div>
-        </div>
-      </div>
-    </div>
-  </div>
-  <!--
-  <div class="featuredProduct productDarkBlue">
-    <div class="innerProduct">
-      <div class="row">
-        <div class="col-lg-6 col-md-12">
-          <span class="eyebrow">Featured Product</span>
-          <h2>Aria</h2>
-          <p>ARC’s Aria tool allows agencies to quickly and effectively view, download and analyze their sales data through customized reports.</p>
-          <a href="/products-participation/products/aria/" title="Contact Us" class="ctaBtn ctaBtn--main">Learn More</a>
-
-        </div>
-      </div>
-    </div>
-  </div>
-
-  <div class="featuredProduct productDarkBlue">
-    <div class="innerProduct">
-      <div class="row">
-        <div class="col-lg-6 col-md-12">
-          <span class="eyebrow">Featured Product</span>
-          <h2>Memo Analyzer </h2>
-          <p>With ARC's Memo Analyzer tool, airlines and travel agencies can gain actionable insights into key memo metrics like reason, volume, status and trends over time.</p>
-          <a href="/products-participation/products/memo-analyzer-for-airlines/" title="Contact Us" class="ctaBtn ctaBtn--main">Memo Analyzer for Airlines</a>
-          <a href="/products-participation/products/memo-analyzer-for-agencies//" title="Contact Us" class="ctaBtn ctaBtn--main">Memo Analyzer for Agencies</a>
-        </div>
-      </div>
-    </div>
-  </div>
-  -->
-  <div class="featuredProduct productPurple">
-    <div class="innerProduct">
-      <div class="row">
-        <div class="col-lg-12 col-md-12">
-          <span class="eyebrow">Featured Product</span>
-          <h2>Preserve Agency Relationships. Recover Lost Revenue.</h2>
-          <p>Let ARC handle your airline’s recovery of outstanding debit memos. With Revenue Recovery Service, you can trust that your agency relationships are in good hands.</p>
-          <a href="/products-participation/products/revenue-recovery-service/" title="Contact Us" class="ctaBtn ctaBtn--main">See How</a>
-
-        </div>
-      </div>
-      <div class="row">
-        <div class="col-md-12">
-          <hr/>
-          <img style="margin-top: 20px;" src="https://www2.arccorp.com/globalassets/homepage/redesign/product/RSS.png?123" alt="RSS Data">
-          <div class="view-more"><a href="/products-participation/products/">See more products</a></div>
-        </div>
-      </div>
-    </div>
-  </div>
-
-  <!-- featured products -->
-
-  <!-- Our Story -->
-  <div class="ourStory">
-    <div class="background--opacity mobile-only" style="-ms-transform: translateY(-50%);"></div>
-    <div class="blockText">
-      <div class="row">
-        <div class="col-lg-6 col-md-12">
-          <h2>Our Story</h2>
-          <p>ARC provides flexible distribution solutions and the world’s most comprehensive air travel data, helping airlines and travel agencies connect, grow and thrive. </p>
-          <div class="twoButtons clearfix" style="margin: 0;">
-            <div class="twoButtons__content">
-              <a href="/about-us/our-story/" title="Learn More" class="ctaBtn ctaBtn--main">Learn More</a>
-
-              <div class="twoButtons__spacer"></div>
-              <a href="/about-us/careers/" title="Join The Team" class="ctaBtn ctaBtn--secondaryOnImage">Join the Team</a>
-
-            </div>
           </div>
-
         </div>
       </div>
     </div>
-  </div>
-  <!-- Our Story End -->
+
+    <div class="featuredProduct productDarkBlue">
+      <div class="innerProduct">
+        <div class="row">
+          <div class="col-lg-6 col-md-12">
+            <span class="eyebrow">Featured Product</span>
+            <h2>Memo Analyzer </h2>
+            <p>With ARC's Memo Analyzer tool, airlines and travel agencies can gain actionable insights into key memo metrics like reason, volume, status and trends over time.</p>
+            <a href="/products-participation/products/memo-analyzer-for-airlines/" title="Contact Us" class="ctaBtn ctaBtn--main">Memo Analyzer for Airlines</a>
+            <a href="/products-participation/products/memo-analyzer-for-agencies//" title="Contact Us" class="ctaBtn ctaBtn--main">Memo Analyzer for Agencies</a>
+          </div>
+        </div>
+      </div>
+    </div>
+    -->
+    <div class="featuredProduct productPurple">
+      <div class="innerProduct">
+        <div class="row">
+          <div class="col-lg-12 col-md-12">
+            <span class="eyebrow">Featured Product</span>
+            <h2>Preserve Agency Relationships. Recover Lost Revenue.</h2>
+            <p>Let ARC handle your airline’s recovery of outstanding debit memos. With Revenue Recovery Service, you can trust that your agency relationships are in good hands.</p>
+            <a href="/products-participation/products/revenue-recovery-service/" title="Contact Us" class="ctaBtn ctaBtn--main">See How</a>
+
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-12">
+            <hr/>
+            <img style="margin-top: 20px;" src="https://www2.arccorp.com/globalassets/homepage/redesign/product/RSS.png?123" alt="RSS Data">
+            <div class="view-more"><a href="/products-participation/products/">See more products</a></div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="featuredProduct productPurple">
+      <div class="innerProduct">
+        <div class="row">
+          <div class="col-lg-12 col-md-12">
+            <span class="eyebrow">Featured Product</span>
+            <h2>Payments Made Simple</h2>
+            <p>TASF isn’t limited to service fees. Travel agents can use ARC’s GDS-integrated payment solution to charge up to $10,000 per transaction for any travel-related service. </p>
+            <a href="/products-participation/products/travel-agency-service-fee/" title="Simplify Your Payments" class="ctaBtn ctaBtn--main">Simplify Your Payments</a>
+
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-12" >
+            <hr/>
+            <div style="text-align:center;">
+              <img style="margin-top: 20px;" src="https://www2.arccorp.com/globalassets/homepage/redesign/product/TASF_product.png?123" alt="TASF">
+            </div>
+
+            <div class="view-more"><a href="/products-participation/products/">See more products</a></div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- featured products -->
+
+    <!-- Our Story -->
+    <div class="ourStory">
+      <div class="background--opacity mobile-only" style="-ms-transform: translateY(-50%);"></div>
+      <div class="blockText">
+        <div class="row">
+          <div class="col-lg-6 col-md-12">
+            <h2>Our Story</h2>
+            <p>ARC provides flexible distribution solutions and the world’s most comprehensive air travel data, helping airlines and travel agencies connect, grow and thrive. </p>
+            <div class="twoButtons clearfix" style="margin: 0;">
+              <div class="twoButtons__content">
+                <a href="/about-us/our-story/" title="Learn More" class="ctaBtn ctaBtn--main">Learn More</a>
+
+                <div class="twoButtons__spacer"></div>
+                <a href="/about-us/careers/" title="Join The Team" class="ctaBtn ctaBtn--secondaryOnImage">Join the Team</a>
+
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Our Story End -->
 
   <!-- Footer -->
   <footer>
