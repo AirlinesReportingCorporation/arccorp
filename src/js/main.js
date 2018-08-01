@@ -48,7 +48,7 @@ function latestSliderInit(){
             autoWidth: true
         }
     },
-    navText: [ '<img src="https://www2.arccorp.com/globalassets/homepage/redesign/arrowBlackleft.png">', '<img src="https://www2.arccorp.com/globalassets/homepage/redesign/arrowBlackright.png">']
+    navText: [ '<img src="https://www2.arccorp.com/globalassets/homepage/redesign/latestArrowLeft.png">', '<img src="https://www2.arccorp.com/globalassets/homepage/redesign/latestArrowRight.png">']
   });
 
 
@@ -186,8 +186,6 @@ function articleSocial() {
   }
 
 
-
-
 }//end articleSocial
 
 $('.owl-carousel').owlCarousel({
@@ -203,7 +201,7 @@ $('.owl-carousel').owlCarousel({
     autoplayHoverPause:true,
     animateIn: 'fadeIn',
     animateOut: 'fadeOut',
-    navText: [ '<img src="https://www2.arccorp.com/globalassets/homepage/redesign/arrowBlackleft.png">', '<img src="https://www2.arccorp.com/globalassets/homepage/redesign/arrowBlackright.png">'],
+    navText: [ '<img src="https://www2.arccorp.com/globalassets/homepage/redesign/latestArrowLeft.png">', '<img src="https://www2.arccorp.com/globalassets/homepage/redesign/latestArrowRight.png">'],
     responsive:{
         0:{
             items:1
@@ -215,6 +213,13 @@ $('.owl-carousel').owlCarousel({
             items:1,
 
         }
+    },
+    onInitialize : function(element){
+        $('.owl-carousel').children().sort(function(){
+            return Math.round(Math.random()) - 0.5;
+        }).each(function(){
+            $(this).appendTo($('.owl-carousel'));
+        });
     }
 })
 
@@ -311,15 +316,17 @@ if($("body").hasClass("home-page")){
   //techInit();
   quoteRandomize();
   productRandomize();
-
-  $(".supernav-mobile-icon .icon-menu").click(function(){
-    $(".supernav-mobile-menu").toggle();
-  });
 }
 
 articleSocial();
 
-
+$(".supernav-mobile-icon .icon-menu").click(function(){
+  $(".supernav-mobile-menu").toggle();
+  if($(".supernav-mobile-menu").css("display") == "none"){
+    console.log(true);
+    $(".supernav-sub").hide();
+  }
+});
 
 //function for sign-in
 if( $(".navcontainer").hasClass("signedIn") ) {

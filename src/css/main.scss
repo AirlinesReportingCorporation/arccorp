@@ -765,10 +765,8 @@ footer .footer-links-social li a.icon-iso_logo {
 
     .owl-next,
     .owl-prev {
-      background: #ffffff;
-      border-radius: 50%;
-      height: 38px;
-      width: 38px;
+      border: none;
+      background: transparent;
       text-align: center;
       vertical-align: middle;
       z-index: 4;
@@ -894,7 +892,6 @@ footer .footer-links-social li a.icon-iso_logo {
       position: absolute;
       top: 0;
       box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
-      border: 1px solid #dddddd;
     }
 
     .owl-carousel .owl-next {
@@ -1439,7 +1436,7 @@ footer .footer-links-social li a.icon-iso_logo {
       line-height:1;
       padding:20px 10px;
     }
-    .supernav .supernav-sub.supernav-sub-products {
+    .supernav .supernav-sub {
         margin-top: 100px;
     }
 }
@@ -1618,6 +1615,12 @@ footer .footer-links-social li a.icon-iso_logo {
 
   .featuredProduct img {
     display: none;
+  }
+  .supernav {
+    .primary-nav__after,
+    .primary-nav__before {
+      height: 20px;
+    }
   }
 }
 @media screen and (max-width: 480px){
