@@ -1,6 +1,6 @@
  const path = require('path');
  const ExtractTextPlugin = require("extract-text-webpack-plugin");
- const UglifyJSPlugin = require('uglifyjs-webpack-plugin');
+ const UglifyJsPlugin = require('uglifyjs-webpack-plugin');
  const webpack = require('webpack');
 
  const extractSass = new ExtractTextPlugin({
@@ -39,7 +39,7 @@
 								}, {
 										loader: "sass-loader",
 										options: {
-											outputStyle: "expanded"
+											outputStyle: "compressed"
 										}
 								}],
 								fallback: "style-loader"
@@ -62,7 +62,9 @@
           jQuery: 'jquery'
         }),
         extractSass,
-				new UglifyJSPlugin()
+				new UglifyJsPlugin({
+          test: /\main.min.js($|\?)/i
+        })
 			]
 		}
   ];

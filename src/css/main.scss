@@ -1,10 +1,10 @@
 @import 'partials/bootstrap.grid';
 @import 'partials/animate';
 @import 'partials/hover';
-
+@import 'partials/owlcarousel';
 @import url('https://use.fontawesome.com/releases/v5.1.0/css/all.css');
-@import url("https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.0.0-beta.2.4/assets/owl.carousel.css");
-@import url("https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.0.0-beta.2.4/assets/owl.theme.default.css");
+
+
 @font-face {
   font-family: RobotoSlab-Light;
   src: url("https://www2.arccorp.com/globalassets/style/fonts/robotoslab-light.ttf");
@@ -72,6 +72,16 @@ footer .footer-links-social li a.icon-iso_logo {
   content: '';
   max-height: 100%;
   background: #000000;
+}
+
+.navcontainer {
+  position: relative;
+  z-index: 5;
+}
+
+#sticky-wrapper {
+  position: relative;
+  z-index: 4;
 }
 
 .supernav {
@@ -885,7 +895,7 @@ footer .footer-links-social li a.icon-iso_logo {
       width: 100%;
       right: 0;
       left: auto;
-      top: 55%;
+      top: 48%;
     }
 
     .owl-carousel .owl-next, .owl-carousel .owl-prev {
@@ -950,12 +960,13 @@ footer .footer-links-social li a.icon-iso_logo {
 
     a.ctaBtn.ctaBtn--main {
       position: absolute;
-      top: 20px;
+      top: 2px;
       right: 0;
       background: none;
       color: #189bb0;
       border: none;
       margin-top: 30px;
+      padding-right: 0;
       &::after {
         font-family: 'icomoon';
         content: "\E909";
@@ -1226,6 +1237,13 @@ footer .footer-links-social li a.icon-iso_logo {
     color: #ffffff;
     padding: 120px 0;
     position: relative;
+    overflow: hidden;
+
+    .geoPatternWhite {
+      position: absolute;
+      left:0;
+      top: -30%;
+    }
 
 
     h2 {
@@ -1399,7 +1417,7 @@ footer .footer-links-social li a.icon-iso_logo {
 }
 @media screen and (min-width: 960px) {
   .home-page .homePageGrid .page-grid__content {
-    padding: 55px 0 20px 0;
+    padding: 40px 0 20px 0;
     max-width: 1350px;
   }
 }
@@ -1438,6 +1456,8 @@ footer .footer-links-social li a.icon-iso_logo {
     }
     .supernav .supernav-sub {
         margin-top: 100px;
+        padding: 15px;
+        max-width: 100%;
     }
 }
 
@@ -1448,7 +1468,8 @@ footer .footer-links-social li a.icon-iso_logo {
   .home-page .homePageGrid.page-grid .block-header {
     text-align: left;
     margin-left: 20px;
-    font-size: 2rem;
+    font-size: 1.7rem;
+    margin-bottom: 40px;
   }
 
   .home-page .page-grid__row .content-block--pageItem {
@@ -1493,6 +1514,9 @@ footer .footer-links-social li a.icon-iso_logo {
   }
   .geoTravelconnect1 {
     display: none;
+  }
+  .home-page .homePageGrid a.ctaBtn.ctaBtn--main {
+    top: 0;
   }
 }
 @media screen and (max-width:768px) {
@@ -1610,7 +1634,7 @@ footer .footer-links-social li a.icon-iso_logo {
   .home-page .homePageGrid .page-grid__items--expanded {}
 
   .home-page .homePageGrid a.ctaBtn.ctaBtn--main {
-    position: relative;
+    top: 0;
   }
 
   .featuredProduct img {
@@ -1626,5 +1650,27 @@ footer .footer-links-social li a.icon-iso_logo {
 @media screen and (max-width: 480px){
   .supernav-topnav .topnav-search #topnav-search-input {
     width: 150px;
+  }
+  .home-page .owl-jumbotron .owl-dots {
+    bottom: 5px;
+  }
+  .home-page .owl-carousel .ctaBtn {
+    margin-top: 10px;
+    margin-bottom: 0;
+    &.ctaBtn--blank {
+      margin-left: 0;
+
+    }
+  }
+  .home-page .homePageGrid a.ctaBtn.ctaBtn--main {
+    top: 50px;
+  }
+}
+
+@media screen and (max-width: 380px){
+  .supernav .supernav-mobile-menu a {
+      font-size: .8rem;
+      line-height: 1;
+      padding: 20px 2px;
   }
 }

@@ -1,4 +1,4 @@
-//css imports
+//css imports 
 import '../css/main.scss';
 
 //js dependency imports
@@ -68,8 +68,6 @@ function techInit(){
     var percentage = (tcWidth) / $(".techIcon").css("width").replace("px", "");
 
     var techNum = $(".iconContainer").width() - (techIcon * percentage);
-
-    console.log((techNum * -1) >= leftmargin);
 
     if(latestTechPosition <= Math.abs(leftmargin.replace("px", "")) && (techNum * -1) <= leftmargin.replace("px", "") ){
       $(".iconContainer").stop(true, true).animate({
