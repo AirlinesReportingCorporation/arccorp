@@ -1,4 +1,4 @@
-//css imports 
+//css imports
 import '../css/main.scss';
 
 //js dependency imports
@@ -21,7 +21,7 @@ function latestSliderInit(){
     $(this).append("<div class='read-more'><a href='" + link + "'>Read More</a></div>");
   });
 
-  $(".homePageGrid .page-grid__row").eq(0).prepend("<div class='featuredLatest content-block--pageItem'><div class='featuredLatestImage'><a target='_blank'  href='https://gbta18.mapyourshow.com/7_0/sessions/session-details.cfm?ScheduleID=179'><img src='https://www2.arccorp.com/globalassets/homepage/redesign/thelatest_ad.jpg'></a></div></div>");
+  $(".homePageGrid .page-grid__row").eq(0).prepend("<div class='featuredLatest content-block--pageItem'><div class='featuredLatestImage'><a href='https://www2.arccorp.com/about-us/events/?link=webinars'><img src='https://www2.arccorp.com/globalassets/homepage/redesign/fraud_banner.jpg'></a></div></div>");
 
   $(".content-block--pageItem__inside").prepend("");
 
