@@ -42,6 +42,7 @@
 }
 
 @import 'partials/socialShare';
+@import 'partials/readingTime';
 
 [v-cloak] {
   display: none;
@@ -738,6 +739,22 @@ footer .footer-links-social li a.icon-iso_logo {
         }
       }
     }
+    .slide-5 {
+      background: url("https://www2.arccorp.com/globalassets/homepage/redesign/slides/carousel5.png") center center no-repeat;
+      background-size: cover;
+      .carousel-slide-content {
+        padding-top: 60px;
+        vertical-align: top;
+        text-align: left;
+        color: #ffffff;
+        .block-header {
+          font-size: 3.25rem; 
+          font-family: SourceSansPro-Light, helvetica, arial, sans-serif;
+          text-align: left;
+          color: #ffffff;
+        }
+      }
+    }
 
     .owl-dots {
       position: absolute;
@@ -826,6 +843,16 @@ footer .footer-links-social li a.icon-iso_logo {
       position: absolute;
       top: 0;
       right: 0;
+    }
+    .fraudLogos {
+      position: absolute;
+      bottom: 20%;
+      left: 15px;
+      img {
+        display: inline-block;
+        margin-right: 10px;
+        width: auto;
+      }
     }
   }
 
@@ -1574,7 +1601,7 @@ footer .footer-links-social li a.icon-iso_logo {
     .slide-1, .slide-2, .slide-3, .slide-4, .slide-5 {
       //background: #f6f6f6 !important;
     }
-    .geoTravelconnect1, .geoTravelconnect2, .geoPattern, .geoGreenPattern {
+    .geoTravelconnect1, .geoTravelconnect2, .geoPattern, .geoGreenPattern, .fraudLogos {
       display: none;
     }
   }

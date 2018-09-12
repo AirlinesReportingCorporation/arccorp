@@ -1,0 +1,5 @@
+.article--headline .metadata li:nth-child(3):before {
+    content: '\2022';
+    display: inline-block;
+    margin-right: 10px;
+}
