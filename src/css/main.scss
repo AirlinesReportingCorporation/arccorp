@@ -3,8 +3,6 @@
 @import 'partials/hover';
 @import 'partials/owlcarousel';
 @import url('https://use.fontawesome.com/releases/v5.1.0/css/all.css');
-
-
 @font-face {
   font-family: RobotoSlab-Light;
   src: url("https://www2.arccorp.com/globalassets/style/fonts/robotoslab-light.ttf");
@@ -40,7 +38,6 @@
   font-weight: normal;
   font-style: normal;
 }
-
 @import 'partials/socialShare';
 @import 'partials/readingTime';
 
@@ -49,11 +46,11 @@
 }
 
 footer .footer-links-social li a.icon-iso_logo {
-    opacity: .5;
+  opacity: 0.5;
 }
 
 .home-page .data-panel {
-  margin-top:0 !important;
+  margin-top: 0 !important;
 }
 
 .home-page .mobile-only {
@@ -102,7 +99,8 @@ footer .footer-links-social li a.icon-iso_logo {
   }
 }
 
-.home-page .supernav .primary-nav__after, .home-page .supernav .primary-nav__before {
+.home-page .supernav .primary-nav__after,
+.home-page .supernav .primary-nav__before {
   display: none;
 }
 
@@ -173,6 +171,7 @@ footer .footer-links-social li a.icon-iso_logo {
   vertical-align: top;
   padding: 0 10px;
   text-transform: capitalize;
+
   &.active::after {
     content: ' ';
     width: 50px;
@@ -232,13 +231,15 @@ footer .footer-links-social li a.icon-iso_logo {
 .supernav-careers {
   position: relative;
   text-align: center;
+
   img {
     margin-top: 15px;
   }
 }
 
-.supernav-contact, .contact-image {
-  display:inline-block;
+.contact-image,
+.supernav-contact {
+  display: inline-block;
   vertical-align: top;
 }
 
@@ -257,11 +258,12 @@ footer .footer-links-social li a.icon-iso_logo {
   padding-left: 15px;
 }
 
-.supernav-careers-title, .supernav-story-title, .supernav-contact-title {
+.supernav-careers-title,
+.supernav-contact-title,
+.supernav-story-title {
   color: #333333;
   font-family: SourceSansPro-Black, helvetica, arial, sans-serif;
   font-size: 22px;
-
 }
 
 .supernav-story-title {
@@ -277,12 +279,11 @@ footer .footer-links-social li a.icon-iso_logo {
   color: #333333;
   font-family: SourceSansPro-Black, helvetica, arial, sans-serif;
   font-size: 22px;
-  margin-bottom:15px;
+  margin-bottom: 15px;
 }
 
 .supernav-participation-body {
-  font-family:  RobotoSlab-Regular, helvetica, arial, sans-serif;
-
+  font-family: RobotoSlab-Regular, helvetica, arial, sans-serif;
 }
 
 .supernav-webinar {
@@ -337,6 +338,7 @@ footer .footer-links-social li a.icon-iso_logo {
       display: none;
     }
   }
+
   &.supernav-header-nonlink2 {
     color: #333333;
 
@@ -372,6 +374,7 @@ footer .footer-links-social li a.icon-iso_logo {
 .supernav-topnav {
   z-index: 105;
 }
+
 .supernav-inner {
   z-index: 104;
 }
@@ -471,7 +474,7 @@ footer .footer-links-social li a.icon-iso_logo {
     right: 0;
     max-width: 300px;
     width: 100%;
-    box-shadow: 0px 20px 40px rgba(0, 0, 0, 0.3);
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.3);
 
     .supernav-myarc-username {
       font-family: SourceSansPro-Bold, helvetica, arial, sans-serif;
@@ -481,10 +484,11 @@ footer .footer-links-social li a.icon-iso_logo {
     .supernav-loggedin {
       text-align: center;
       display: none;
+
       a.ctaBtn {
         color: #ffffff;
         padding: 10px;
-        margin: 10px 3px 0 3px;
+        margin: 10px 3px 0;
       }
     }
 
@@ -569,11 +573,11 @@ footer .footer-links-social li a.icon-iso_logo {
   vertical-align: middle;
   height: 90px;
   line-height: 90px;
-  .hamburger.icon-menu{
+
+  .hamburger.icon-menu {
     display: inline-block;
     color: #333333;
   }
-
 }
 
 .supernav .supernav-mobile-menu {
@@ -584,9 +588,10 @@ footer .footer-links-social li a.icon-iso_logo {
   top: 90px;
   width: 100%;
   min-height: 120px;
-  z-index:103;
+  z-index: 103;
   border-top: 2px solid #189bb0;
   border-bottom: 1px #333333 solid;
+
   a {
     color: #333333;
   }
@@ -606,6 +611,7 @@ footer .footer-links-social li a.icon-iso_logo {
 
   .owl-carousel {
     z-index: 12;
+
     h2 {
       font-family: SourceSansPro-Light, helvetica, arial, sans-serif;
       font-size: 3.75rem;
@@ -654,23 +660,28 @@ footer .footer-links-social li a.icon-iso_logo {
     .travelconnect-content {
       color: #282f76;
       font-family: Oswald-Bold, Oswald-Regular, helvetica, arial, sans-serif;
+
       .block-header {
         font-family: Oswald-Bold, Oswald-Regular, helvetica, arial, sans-serif;
         color: #282f76;
       }
+
       h3 {
         color: #282f76;
         font-size: 2rem;
         font-family: Oswald-Bold, Oswald-Regular, helvetica, arial, sans-serif;
       }
+
       p {
         font-family: SourceSansPro-Regular, helvetica, arial, sans-serif;
       }
+
       .ctaBtn {
         background-color: #282f76;
         color: #ffffff;
         border-color: #282f76;
       }
+
       .ctaBtn--blank {
         background-color: transparent;
         color: #282f76;
@@ -686,8 +697,10 @@ footer .footer-links-social li a.icon-iso_logo {
     .slide-1 {
       background: #f6ef48;
       background-size: cover;
+
       .carousel-slide-content {
         text-align: left;
+
         .block-header {
           text-align: left;
         }
@@ -697,11 +710,13 @@ footer .footer-links-social li a.icon-iso_logo {
     .slide-2 {
       background: url("https://www2.arccorp.com/globalassets/homepage/redesign/slides/carousel4.png") center center no-repeat;
       background-size: cover;
+
       .carousel-slide-content {
         padding-top: 60px;
         vertical-align: top;
         text-align: left;
         color: #333333;
+
         .block-header {
           text-align: left;
           color: #333333;
@@ -712,10 +727,12 @@ footer .footer-links-social li a.icon-iso_logo {
     .slide-3 {
       background: url("https://www2.arccorp.com/globalassets/homepage/redesign/slides/carousel3.png") right top no-repeat;
       background-size: cover;
+
       .carousel-slide-content {
         padding-top: 120px;
         vertical-align: top;
         text-align: left;
+
         .block-header {
           font-family: SourceSansPro-Light, helvetica, arial, sans-serif;
           font-size: 3.2rem;
@@ -727,11 +744,13 @@ footer .footer-links-social li a.icon-iso_logo {
     .slide-4 {
       background: url("https://www2.arccorp.com/globalassets/homepage/redesign/slides/carousel1.png") center center no-repeat;
       background-size: cover;
+
       .carousel-slide-content {
         padding-top: 60px;
         vertical-align: top;
         text-align: left;
         color: #1d1837;
+
         .block-header {
           font-family: SourceSansPro-Light, helvetica, arial, sans-serif;
           text-align: left;
@@ -739,16 +758,19 @@ footer .footer-links-social li a.icon-iso_logo {
         }
       }
     }
+
     .slide-5 {
       background: url("https://www2.arccorp.com/globalassets/homepage/redesign/slides/carousel5.png") center center no-repeat;
       background-size: cover;
+
       .carousel-slide-content {
         padding-top: 60px;
         vertical-align: top;
         text-align: left;
         color: #ffffff;
+
         .block-header {
-          font-size: 3.25rem; 
+          font-size: 3.25rem;
           font-family: SourceSansPro-Light, helvetica, arial, sans-serif;
           text-align: left;
           color: #ffffff;
@@ -764,7 +786,7 @@ footer .footer-links-social li a.icon-iso_logo {
     }
 
     &.owl-theme .owl-dots .owl-dot span {
-      background:#bbbbbb;
+      background: #bbbbbb;
       color: #565350;
       border-radius: 0;
       width: 40px;
@@ -829,25 +851,30 @@ footer .footer-links-social li a.icon-iso_logo {
       top: -40%;
       left: 0;
     }
+
     .geoGreenPattern {
       position: absolute;
       bottom: 0;
       right: 0;
     }
+
     .geoTravelconnect1 {
       position: absolute;
-      bottom:0;
+      bottom: 0;
       left: 10px;
     }
+
     .geoTravelconnect2 {
       position: absolute;
       top: 0;
       right: 0;
     }
+
     .fraudLogos {
       position: absolute;
       bottom: 20%;
       left: 15px;
+
       img {
         display: inline-block;
         margin-right: 10px;
@@ -859,6 +886,7 @@ footer .footer-links-social li a.icon-iso_logo {
   .owl-jumbotron {
     .owl-nav {
       display: none;
+
       img {
         display: block;
         margin: 0 auto;
@@ -879,6 +907,10 @@ footer .footer-links-social li a.icon-iso_logo {
     background: #ffffff;
     padding-bottom: 45px;
 
+    .page-grid__content {
+      max-height: 700px;
+    }
+
     .owl-dot {
       background: #ffffff;
       vertical-align: top;
@@ -889,11 +921,13 @@ footer .footer-links-social li a.icon-iso_logo {
       bottom: 0;
       margin-top: 10px;
       left: 21px;
+
       a {
         font-family: SourceSansPro-SemiBold, helvetica, arial, sans-serif;
         text-transform: uppercase;
       }
       color: #189bb0;
+
       &::after {
         font-family: 'icomoon';
         content: "\E909";
@@ -903,7 +937,7 @@ footer .footer-links-social li a.icon-iso_logo {
     }
 
     .owl-carousel {
-          position: static;
+      position: static;
     }
 
     .owl-carousel .owl-dots {
@@ -911,6 +945,7 @@ footer .footer-links-social li a.icon-iso_logo {
       bottom: 0;
       height: 6px;
       margin-left: 21px;
+
       .owl-dot span {
         margin: 0 7px 0 0;
       }
@@ -918,22 +953,21 @@ footer .footer-links-social li a.icon-iso_logo {
 
     .owl-carousel .owl-nav {
       display: table;
-      z-index:30;
+      z-index: 30;
       width: 100%;
       right: 0;
       left: auto;
       top: 48%;
     }
 
-    .owl-carousel .owl-next, .owl-carousel .owl-prev {
+    .owl-carousel .owl-next,
+    .owl-carousel .owl-prev {
       position: absolute;
       top: 0;
       box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
     }
 
-    .owl-carousel .owl-next {
-
-    }
+    .owl-carousel .owl-next {}
 
     .owl-carousel .owl-prev {
       margin-left: 31px;
@@ -959,9 +993,8 @@ footer .footer-links-social li a.icon-iso_logo {
         display: table;
         clear: both;
       }
-      &:first-of-type {
 
-      }
+      &:first-of-type {}
     }
 
     .byline {
@@ -994,6 +1027,7 @@ footer .footer-links-social li a.icon-iso_logo {
       border: none;
       margin-top: 30px;
       padding-right: 0;
+
       &::after {
         font-family: 'icomoon';
         content: "\E909";
@@ -1043,6 +1077,7 @@ footer .footer-links-social li a.icon-iso_logo {
       color: #333333;
       font-family: SourceSansPro-Bold, helvetica, arial, sans-serif;
       font-size: 1.1rem;
+
       &:hover {
         color: #189bb0;
       }
@@ -1181,6 +1216,7 @@ footer .footer-links-social li a.icon-iso_logo {
       color: #189bb0;
       font-family: SourceSansPro-SemiBold, SourceSansPro-Bold, helvetica, arial, sans-serif;
       text-transform: uppercase;
+
       &::after {
         font-family: 'icomoon';
         content: "\E909";
@@ -1268,10 +1304,9 @@ footer .footer-links-social li a.icon-iso_logo {
 
     .geoPatternWhite {
       position: absolute;
-      left:0;
+      left: 0;
       top: -30%;
     }
-
 
     h2 {
       color: #ffffff;
@@ -1285,10 +1320,12 @@ footer .footer-links-social li a.icon-iso_logo {
       position: relative;
       z-index: 3;
     }
+
     .ctaBtn.ctaBtn--secondaryOnImage {
       color: #ffffff;
       background: transparent;
       border-color: #ffffff;
+
       &:hover {
         color: #333333;
         background: #ffffff;
@@ -1324,14 +1361,16 @@ footer .footer-links-social li a.icon-iso_logo {
   .featuredProduct {
     padding: 60px 0;
     display: none;
+
     .view-more a {
-      margin-top:60px;
+      margin-top: 60px;
       font-size: 14px;
       display: block;
       margin-bottom: 15px;
       color: #189bb0;
       font-family: SourceSansPro-SemiBold, SourceSansPro-Bold, helvetica, arial, sans-serif;
       text-transform: uppercase;
+
       &::after {
         font-family: 'icomoon';
         content: "\E909";
@@ -1339,14 +1378,16 @@ footer .footer-links-social li a.icon-iso_logo {
         margin-left: 10px;
       }
     }
+
     hr {
-      opacity: .2;
+      opacity: 0.2;
     }
 
     .ctaBtn--inverse {
       background: transparent;
       color: #ffffff;
       border-color: #ffffff;
+
       &:hover {
         background: #ffffff;
         color: #333333;
@@ -1431,10 +1472,37 @@ footer .footer-links-social li a.icon-iso_logo {
   .home-page .homePageGrid .owl-carousel .owl-dots::after {
     display: none;
   }
+
   .home-page .fullPanel {
-    &.fullPanel1, &.fullPanel2, &.fullPanel3, &.fullPanel4, &.fullPanel5, &.fullPanel6, &.fullPanel7, &.fullPanel8, &.fullPanel9 {
-      background-size:cover;
+    position: relative;
+
+    .testPanel {
+      position: relative;
+      z-index: 1;
     }
+
+    &.fullPanel1,
+    &.fullPanel2,
+    &.fullPanel3,
+    &.fullPanel4,
+    &.fullPanel5,
+    &.fullPanel6,
+    &.fullPanel7,
+    &.fullPanel8,
+    &.fullPanel9 {
+      background-size: cover;
+    }
+  }
+
+  .home-page .fullPanel::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: #ffffff;
+    opacity: 0.8;
   }
 }
 @media screen and (max-width: 1000px) {
@@ -1444,54 +1512,56 @@ footer .footer-links-social li a.icon-iso_logo {
 }
 @media screen and (min-width: 960px) {
   .home-page .homePageGrid .page-grid__content {
-    padding: 40px 0 20px 0;
+    padding: 40px 0 20px;
     max-width: 1350px;
   }
 }
-
-@media screen and (min-width: 901px){
+@media screen and (min-width: 901px) {
   .supernav .supernav-mobile-menu {
     display: none !important;
   }
 }
+@media screen and (max-width: 900px) {
+  .supernav {
+    z-index: 13;
+  }
 
-@media screen and (max-width: 900px){
-    .supernav {
-      z-index: 13;
-    }
-    .supernav .supernav-inner {
-      text-align: center;
-    }
-    .supernav .supernav-menu {
-      display: none;
-      z-index: 20;
+  .supernav .supernav-inner {
+    text-align: center;
+  }
 
-    }
-    .supernav .supernav-mobile-icon {
-      display: block;
-      font-size: 1.5rem;
-      cursor: pointer;
+  .supernav .supernav-menu {
+    display: none;
+    z-index: 20;
+  }
 
-    }
-    .supernav-topnav .supernav-topnav-inner a.topnav-number {
-      display:none;
-    }
-    .supernav .supernav-mobile-menu a {
-      font-size: .8rem;
-      line-height:1;
-      padding:20px 10px;
-    }
-    .supernav .supernav-sub {
-        margin-top: 100px;
-        padding: 15px;
-        max-width: 100%;
-    }
+  .supernav .supernav-mobile-icon {
+    display: block;
+    font-size: 1.5rem;
+    cursor: pointer;
+  }
+
+  .supernav-topnav .supernav-topnav-inner a.topnav-number {
+    display: none;
+  }
+
+  .supernav .supernav-mobile-menu a {
+    font-size: 0.8rem;
+    line-height: 1;
+    padding: 20px 10px;
+  }
+
+  .supernav .supernav-sub {
+    margin-top: 100px;
+    padding: 15px;
+    max-width: 100%;
+  }
 }
-
 @media screen and (min-width: 768px) {
   footer .border-image {
     background: #189bb0;
   }
+
   .home-page .homePageGrid.page-grid .block-header {
     text-align: left;
     margin-left: 20px;
@@ -1539,9 +1609,11 @@ footer .footer-links-social li a.icon-iso_logo {
   .home-page .featuredLatest {
     display: none;
   }
+
   .geoTravelconnect1 {
     display: none;
   }
+
   .home-page .homePageGrid a.ctaBtn.ctaBtn--main {
     top: 0;
   }
@@ -1562,11 +1634,14 @@ footer .footer-links-social li a.icon-iso_logo {
 
   .home-page .owl-carousel .carousel-slide {
     height: 400px !important;
+
     .carousel-slide-content {
       padding-top: 30px !important;
       text-align: center !important;
-    }.carousel-slide-content .travelconnect-content {
-      padding-top:30px !important;
+    }
+
+    .carousel-slide-content .travelconnect-content {
+      padding-top: 30px !important;
     }
   }
 
@@ -1591,17 +1666,27 @@ footer .footer-links-social li a.icon-iso_logo {
   .home-page .fullPanel {
     position: relative;
     background: #f6f6f6 !important;
+
     .testPanel {
       position: relative;
       z-index: 3;
     }
   }
 
-  .home-page .owl-carousel{
-    .slide-1, .slide-2, .slide-3, .slide-4, .slide-5 {
+  .home-page .owl-carousel {
+    .slide-1,
+    .slide-2,
+    .slide-3,
+    .slide-4,
+    .slide-5 {
       //background: #f6f6f6 !important;
     }
-    .geoTravelconnect1, .geoTravelconnect2, .geoPattern, .geoGreenPattern, .fraudLogos {
+
+    .fraudLogos,
+    .geoGreenPattern,
+    .geoPattern,
+    .geoTravelconnect1,
+    .geoTravelconnect2 {
       display: none;
     }
   }
@@ -1667,6 +1752,7 @@ footer .footer-links-social li a.icon-iso_logo {
   .featuredProduct img {
     display: none;
   }
+
   .supernav {
     .primary-nav__after,
     .primary-nav__before {
@@ -1674,30 +1760,37 @@ footer .footer-links-social li a.icon-iso_logo {
     }
   }
 }
-@media screen and (max-width: 480px){
+@media screen and (max-width: 480px) {
   .supernav-topnav .topnav-search #topnav-search-input {
     width: 150px;
   }
+
   .home-page .owl-jumbotron .owl-dots {
     bottom: 5px;
   }
+
   .home-page .owl-carousel .ctaBtn {
     margin-top: 10px;
     margin-bottom: 0;
+
     &.ctaBtn--blank {
       margin-left: 0;
-
     }
   }
+
   .home-page .homePageGrid a.ctaBtn.ctaBtn--main {
     top: 50px;
+    right: 20px;
+  }
+
+  .home-page .homePageGrid .page-grid__content {
+    max-height: 750px;
   }
 }
-
-@media screen and (max-width: 380px){
+@media screen and (max-width: 380px) {
   .supernav .supernav-mobile-menu a {
-      font-size: .8rem;
-      line-height: 1;
-      padding: 20px 2px;
+    font-size: 0.8rem;
+    line-height: 1;
+    padding: 20px 2px;
   }
 }
