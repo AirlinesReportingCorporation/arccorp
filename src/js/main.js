@@ -23,7 +23,7 @@ function latestSliderInit(){
     $(this).append("<div class='read-more'><a href='" + link + "'>Read More</a></div>");
   });
 
-  $(".homePageGrid .page-grid__row").eq(0).prepend("<div class='featuredLatest content-block--pageItem'><div class='featuredLatestImage'><a href='https://www2.arccorp.com/about-us/events/?link=webinars'><img src='https://www2.arccorp.com/globalassets/homepage/redesign/fraud_banner.jpg'></a></div></div>");
+  $(".homePageGrid .page-grid__row").eq(0).prepend("<div class='featuredLatest content-block--pageItem'><div class='featuredLatestImage'><a href='https://arctravelconnect.com/' target='_blank'><img src='https://www2.arccorp.com/globalassets/homepage/redesign/featured-lastest-travelconnect.png'></a></div></div>");
 
   $(".content-block--pageItem__inside").prepend("");
 
