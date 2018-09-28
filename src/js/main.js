@@ -141,12 +141,12 @@ function articleResize(scrollTop, scrollLeft, resize) {
   }
 }
 
-function articleSocial() {
+function articleSocial() {  
   // add social for articles
-  if( $(".article--headline").length ) {
+  if( $(".article--headline").length ){
 
-    //test on latest first
-    if($(".btn--link.parentLink").text() == "The Latest") {
+    //test on latest first & case studies
+    if($(".btn--link.parentLink").text() == "The Latest" || $(".btn--link.parentLink").text() == "Case Studies") {
       var url = window.location.href;
       var meta = $("meta[name='description']").prop("content");
       var title = $("h1.mainTitle").text();

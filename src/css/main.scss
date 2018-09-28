@@ -45,6 +45,14 @@
   display: none;
 }
 
+.icon-youtube:before {
+    content: "\ea9d";
+}
+
+footer .footer-links-social li a.icon-youtube:before {
+    margin-left: -11px;
+}
+
 footer .footer-links-social li a.icon-iso_logo {
   opacity: 0.5;
 }
