@@ -786,6 +786,58 @@ footer .footer-links-social li a.icon-iso_logo {
       }
     }
 
+    .slide-6 {
+      background: url("https://www2.arccorp.com/globalassets/homepage/redesign/slides/carousel6.jpg") center center no-repeat;
+      background-size: cover;
+
+      .carousel-slide-content {
+        vertical-align: middle;
+        text-align: left;
+        color: #ffffff;
+
+        .block-header {
+          text-align: left;
+          color: #ffffff;
+        }
+      }
+    }
+
+    .slide-7 {
+      background: url("https://www2.arccorp.com/globalassets/homepage/redesign/slides/carousel7.jpg") center center no-repeat;
+      background-size: cover;
+
+      .carousel-slide-content {
+        padding-top: 60px;
+        vertical-align: middle;
+        text-align: left;
+        color: #ffffff;
+
+        .block-header {
+          text-align: left;
+          color: #ffffff;
+          font-family: SourceSansPro-Light, helvetica, arial, sans-serif;
+        }
+      }
+    }
+
+    .slide-8 {
+      background: url("https://www2.arccorp.com/globalassets/homepage/redesign/slides/carousel8.jpg?3") center center no-repeat;
+      background-size: cover;
+
+      .carousel-slide-content {
+        padding-top:  60px;
+        vertical-align: middle;
+        text-align: center;
+        color: #ffffff;
+
+        .block-header {
+          text-align: center;
+          color: #ffffff;
+          font-family: SourceSansPro-Light, helvetica, arial, sans-serif;
+        }
+      }
+    }
+
     .owl-dots {
       position: absolute;
       width: 100%;

@@ -16,14 +16,23 @@ var latestTechPosition = 0;
 function latestSliderInit(){
 
   $(".homePageGrid .content-block--pageItem__inside").each(function(){
+    var e = $(this);
     var link = $(this).find(".ctaLink").prop("href");
-    var subString = link.substring(link.indexOf("latest/") +7).replace("/", "");
-    var imgLink = "https://www2.arccorp.com/globalassets/homepage/redesign/latest/" + subString + ".jpg";
-    $(this).prepend("<a href='" + link + "'><img class='latestImage' src='"+ imgLink + "'></a>");
-    $(this).append("<div class='read-more'><a href='" + link + "'>Read More</a></div>");
+
+    if(link.indexOf("Achieving-Better-Business-Results-Insights-from-US-Road-Warriors") > -1){
+      $(e).remove();
+    }
+    else {
+      var subString = link.substring(link.indexOf("latest/") +7).replace("/", "");
+      var imgLink = "https://www2.arccorp.com/globalassets/homepage/redesign/latest/" + subString + ".jpg";
+      $(this).prepend("<a href='" + link + "'><img class='latestImage' src='"+ imgLink + "'></a>");
+      $(this).append("<div class='read-more'><a href='" + link + "'>Read More</a></div>");
+    }
+
+
   });
 
-  $(".homePageGrid .page-grid__row").eq(0).prepend("<div class='featuredLatest content-block--pageItem'><div class='featuredLatestImage'><a href='https://arctravelconnect.com/' target='_blank'><img src='https://www2.arccorp.com/globalassets/homepage/redesign/featured-lastest-travelconnect.png'></a></div></div>");
+  $(".homePageGrid .page-grid__row").eq(0).prepend("<div class='featuredLatest content-block--pageItem'><div class='featuredLatestImage'><a href='/articles-trends/the-latest/Achieving-Better-Business-Results-Insights-from-US-Road-Warriors/'><img src='https://www2.arccorp.com/globalassets/homepage/redesign/the-latest-road-warriors.jpg'></a></div></div>");
 
   $(".content-block--pageItem__inside").prepend("");
 
@@ -141,12 +150,12 @@ function articleResize(scrollTop, scrollLeft, resize) {
   }
 }
 
-function articleSocial() {  
+function articleSocial() {
   // add social for articles
   if( $(".article--headline").length ){
 
     //test on latest first & case studies
-    if($(".btn--link.parentLink").text() == "The Latest" || $(".btn--link.parentLink").text() == "Case Studies") {
+    if($(".btn--link.parentLink").text() == "The Latest" || $(".btn--link.parentLink").text() == "Case Studies" || $(".custom-brow span").text() == "Highlights") {
       var url = window.location.href;
       var meta = $("meta[name='description']").prop("content");
       var title = $("h1.mainTitle").text();
