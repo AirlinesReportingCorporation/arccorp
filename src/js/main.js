@@ -23,9 +23,19 @@ function latestSliderInit(){
       $(e).remove();
     }
     else {
-      var subString = link.substring(link.indexOf("latest/") +7).replace("/", "");
+      var subString = link.substring(link.indexOf("latest/") + 7).replace("/", "");
+      if(link.indexOf("arctravelconnect") > -1) {
+        subString = link.substring(link.indexOf("highlights/") + 11).replace("/", "");
+      }
       var imgLink = "https://www2.arccorp.com/globalassets/homepage/redesign/latest/" + subString + ".jpg";
-      $(this).prepend("<a href='" + link + "'><img class='latestImage' src='"+ imgLink + "'></a>");
+
+      if(link.indexOf("arctravelconnect") > -1) {
+        $(this).prepend("<a target='_blank' href='" + link + "'><img class='latestImage' src='"+ imgLink + "'></a>");
+      }
+      else {
+        $(this).prepend("<a href='" + link + "'><img class='latestImage' src='"+ imgLink + "'></a>");
+      }
+
       $(this).append("<div class='read-more'><a href='" + link + "'>Read More</a></div>");
     }
 
