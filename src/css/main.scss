@@ -46,11 +46,11 @@
 }
 
 .icon-youtube:before {
-    content: "\ea9d";
+  content: "\ea9d";
 }
 
 footer .footer-links-social li a.icon-youtube:before {
-    margin-left: -11px;
+  margin-left: -11px;
 }
 
 footer .footer-links-social li a.icon-iso_logo {
@@ -825,7 +825,7 @@ footer .footer-links-social li a.icon-iso_logo {
       background-size: cover;
 
       .carousel-slide-content {
-        padding-top:  60px;
+        padding-top: 60px;
         vertical-align: middle;
         text-align: center;
         color: #ffffff;
@@ -835,6 +835,38 @@ footer .footer-links-social li a.icon-iso_logo {
           color: #ffffff;
           font-family: SourceSansPro-Light, helvetica, arial, sans-serif;
         }
+      }
+    }
+
+    .slide-9 {
+      background: radial-gradient(circle, #42332C 20%, #231812 80%);
+
+      .carousel-slide-content {
+        vertical-align: middle;
+        text-align: left;
+        color: #ffffff;
+        padding-top: 30px;
+        padding-bottom: 30px;
+
+        h2 {
+          font-family: SourceSansPro-Black, helvetica, arial, sans-serif;
+        }
+
+        p {
+          font-family: SourceSansPro-Light, SourceSansPro-Regular, helvetica, arial, sans-serif;
+          font-size: 1.7rem;
+          line-height: 2rem;
+        }
+
+        .block-header {
+          text-align: left;
+          color: #ffffff;
+        }
+      }
+
+      .shadow {
+        -webkit-filter: drop-shadow(-5px -5px 5px #000);
+        filter: drop-shadow(-5px -5px 5px #271C16);
       }
     }
 
@@ -928,6 +960,10 @@ footer .footer-links-social li a.icon-iso_logo {
       position: absolute;
       top: 0;
       right: 0;
+    }
+
+    .happyHolidays {
+      position: absolute;
     }
 
     .fraudLogos {
@@ -1721,6 +1757,14 @@ footer .footer-links-social li a.icon-iso_logo {
       max-height: 100%;
       background: #ffffff;
     }
+  }
+
+  .home-page .owl-carousel .carousel-container.slide-9:before {
+    display: none;
+  }
+
+  .slide-9 .holiday-container {
+    margin-top: 30px;
   }
 
   .home-page .fullPanel {
