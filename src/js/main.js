@@ -208,7 +208,6 @@ function articleSocial() {
 
 }//end articleSocial
 
-/* //12/18/2018 commented out for single holiday slide
 $('.owl-carousel').owlCarousel({
     center: true,
     autoplay: true,
@@ -242,7 +241,7 @@ $('.owl-carousel').owlCarousel({
             $(this).appendTo($('.owl-carousel'));
         });
     }
-})*/
+});
 
 var data = {
   primaryNav: "",
