@@ -19,6 +19,8 @@ function latestSliderInit(){
     var e = $(this);
     var link = $(this).find(".ctaLink").prop("href");
 
+    $(this).find(".ctaLink").prop("href", link + "?UTM_Source=Latest_Carousel");
+
     if(link.indexOf("Achieving-Better-Business-Results-Insights-from-US-Road-Warriors") > -1){
       $(e).remove();
     }
@@ -30,13 +32,13 @@ function latestSliderInit(){
       var imgLink = "https://www2.arccorp.com/globalassets/homepage/redesign/latest/" + subString + ".jpg";
 
       if(link.indexOf("arctravelconnect") > -1) {
-        $(this).prepend("<a target='_blank' href='" + link + "'><img class='latestImage' src='"+ imgLink + "'></a>");
+        $(this).prepend("<a target='_blank' href='" + link + "?UTM_Source=Latest_Carousel'><img class='latestImage' src='"+ imgLink + "'></a>");
       }
       else {
-        $(this).prepend("<a href='" + link + "'><img class='latestImage' src='"+ imgLink + "'></a>");
+        $(this).prepend("<a href='" + link + "?UTM_Source=Latest_Carousel'><img class='latestImage' src='"+ imgLink + "'></a>");
       }
 
-      $(this).append("<div class='read-more'><a href='" + link + "'>Read More</a></div>");
+      $(this).append("<div class='read-more'><a href='" + link + "?UTM_Source=Latest_Carousel'>Read More</a></div>");
     }
 
 
