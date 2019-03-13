@@ -2,47 +2,20 @@
 @import 'partials/animate';
 @import 'partials/hover';
 @import 'partials/owlcarousel';
-@import url('https://use.fontawesome.com/releases/v5.1.0/css/all.css');
-@font-face {
-  font-family: RobotoSlab-Light;
-  src: url("https://www2.arccorp.com/globalassets/style/fonts/robotoslab-light.ttf");
-  src: url("https://www2.arccorp.com/globalassets/style/fonts/robotoslab-light.ttf") format("truetype");
-  font-weight: normal;
-  font-style: normal;
-}
-@font-face {
-  font-family: Oswald-Bold;
-  src: url("https://www2.arccorp.com/globalassets/style/fonts/Oswald-Bold.ttf");
-  src: url("https://www2.arccorp.com/globalassets/style/fonts/Oswald-Bold.ttf") format("truetype");
-  font-weight: normal;
-  font-style: normal;
-}
-@font-face {
-  font-family: Oswald-Regular;
-  src: url("https://www2.arccorp.com/globalassets/style/fonts/Oswald-Regular.ttf");
-  src: url("https://www2.arccorp.com/globalassets/style/fonts/Oswald-Regular.ttf") format("truetype");
-  font-weight: normal;
-  font-style: normal;
-}
-@font-face {
-  font-family: SourceSansPro-Light;
-  src: url("https://www2.arccorp.com/globalassets/style/fonts/SourceSansPro-Light.ttf");
-  src: url("https://www2.arccorp.com/globalassets/style/fonts/SourceSansPro-Light.ttf") format("truetype");
-  font-weight: normal;
-  font-style: normal;
-}
-@font-face {
-  font-family: SourceSansPro-SemiBold;
-  src: url("https://www2.arccorp.com/globalassets/style/fonts/SourceSansPro-SemiBold.ttf");
-  src: url("https://www2.arccorp.com/globalassets/style/fonts/SourceSansPro-SemiBold.ttf") format("truetype");
-  font-weight: normal;
-  font-style: normal;
-}
+@import 'partials/fonts';
 @import 'partials/socialShare';
 @import 'partials/readingTime';
 
 [v-cloak] {
   display: none;
+}
+
+.related-content [data-aux-label="Hide"] {
+  display: none;
+}
+
+.sticky-nav--collapsed {
+  z-index: 4;
 }
 
 .icon-youtube:before {
@@ -94,6 +67,7 @@ footer .footer-links-social li a.icon-iso_logo {
   background: #ffffff;
   height: auto;
   position: relative;
+  box-shadow: rgba(0, 0, 0, 0.1) 0 29px 30px -30px;
 
   &::after {
     display: block;
@@ -908,8 +882,6 @@ footer .footer-links-social li a.icon-iso_logo {
       background: url("https://www2.arccorp.com/globalassets/homepage/redesign/slides/carousel12.jpg") center center no-repeat;
       background-size: cover;
 
-
-
       .carousel-slide-content {
         vertical-align: middle;
         text-align: left;
@@ -940,6 +912,40 @@ footer .footer-links-social li a.icon-iso_logo {
         .block-header {
           text-align: left;
           color: #242039;
+          font-size: 3rem;
+        }
+      }
+    }
+
+    .slide-14 {
+      background: url("https://www2.arccorp.com/globalassets/homepage/redesign/slides/carousel14.jpg") center center no-repeat;
+      background-size: cover;
+
+      .carousel-slide-content {
+        vertical-align: middle;
+        text-align: left;
+        color: #ffffff;
+
+        .block-header {
+          text-align: left;
+          color: #ffffff;
+          font-size: 3rem;
+        }
+      }
+    }
+
+    .slide-15 {
+      background: url("https://www2.arccorp.com/globalassets/homepage/redesign/slides/carousel15.jpg") center center no-repeat;
+      background-size: cover;
+
+      .carousel-slide-content {
+        vertical-align: middle;
+        text-align: left;
+        color: #ffffff;
+
+        .block-header {
+          text-align: left;
+          color: #ffffff;
           font-size: 3rem;
         }
       }
