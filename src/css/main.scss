@@ -951,6 +951,23 @@ footer .footer-links-social li a.icon-iso_logo {
       }
     }
 
+    .slide-16 {
+      background: url("https://www2.arccorp.com/globalassets/homepage/redesign/slides/carousel16.jpg") center center no-repeat;
+      background-size: cover;
+
+      .carousel-slide-content {
+        vertical-align: middle;
+        text-align: left;
+        color: #ffffff;
+
+        .block-header {
+          text-align: left;
+          color: #ffffff;
+          font-size: 3rem;
+        }
+      }
+    }
+
     .owl-dots {
       position: absolute;
       width: 100%;
