@@ -1068,6 +1068,7 @@ footer .footer-links-social li a.icon-iso_logo {
           color: #ffffff;
           font-size: 3rem;
         }
+
         p {
           line-height: 2rem;
         }
@@ -1094,9 +1095,9 @@ footer .footer-links-social li a.icon-iso_logo {
           font-size: 3rem;
         }
 
-         p {
-           line-height: 2rem;
-         }
+        p {
+          line-height: 2rem;
+        }
       }
     }
 
@@ -1119,8 +1120,47 @@ footer .footer-links-social li a.icon-iso_logo {
           color: #000000;
           font-size: 3rem;
         }
+
         p {
           line-height: 2rem;
+        }
+      }
+    }
+
+    .slide-25 {
+      background: url("https://www2.arccorp.com/globalassets/homepage/redesign/slides/jumbotron_retina_ARCPay.jpg?234") center center no-repeat;
+      background-size: cover;
+
+      .background--opacity {
+        background: #ffffff;
+        opacity: 0.3;
+      }
+
+      .carousel-slide-content {
+        vertical-align: middle;
+        text-align: left;
+        color: #ffffff;
+
+        .block-header {
+          text-align: left;
+          color: #ffffff;
+          font-size: 3rem;
+        }
+
+        p {
+          line-height: 2rem;
+        }
+
+        h2 {
+          font-family: SourceSansPro-Regular, helvetica, arial, sans-serif;
+          color: #ffffff;
+          margin-bottom: 15px;
+        }
+
+        img {
+          display: block;
+          max-width: 200px;
+          margin-bottom: 20px;
         }
       }
     }
