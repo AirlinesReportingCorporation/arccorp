@@ -1037,7 +1037,7 @@ footer .footer-links-social li a.icon-iso_logo {
     }
 
     .slide-21 {
-      background: #C4E8F5 center center no-repeat;
+      background: url("https://www2.arccorp.com/globalassets/homepage/redesign/slides/carousel20.jpg?234") center center no-repeat;
       background-size: cover;
 
       .carousel-slide-content {
@@ -1049,6 +1049,78 @@ footer .footer-links-social li a.icon-iso_logo {
           text-align: left;
           color: #ffffff;
           font-size: 3rem;
+        }
+      }
+    }
+
+    .slide-22 {
+      background: #fde79e center center no-repeat;
+      background-size: contain;
+
+      .carousel-slide-content {
+        padding-top: 60px;
+        vertical-align: top;
+        text-align: left;
+        color: #000000;
+
+        .block-header {
+          text-align: left;
+          color: #ffffff;
+          font-size: 3rem;
+        }
+        p {
+          line-height: 2rem;
+        }
+      }
+    }
+
+    .slide-23 {
+      background: url("https://www2.arccorp.com/globalassets/homepage/redesign/slides/airline-bi-jumbo-testA.jpg?234") center center no-repeat;
+      background-size: cover;
+
+      .background--opacity {
+        background: #000000;
+        opacity: 0.3;
+      }
+
+      .carousel-slide-content {
+        vertical-align: middle;
+        text-align: left;
+        color: #ffffff;
+
+        .block-header {
+          text-align: left;
+          color: #ffffff;
+          font-size: 3rem;
+        }
+
+         p {
+           line-height: 2rem;
+         }
+      }
+    }
+
+    .slide-24 {
+      background: url("https://www2.arccorp.com/globalassets/homepage/redesign/slides/airline-bi-jumbo-testB.jpg?234") center center no-repeat;
+      background-size: cover;
+
+      .background--opacity {
+        background: #ffffff;
+        opacity: 0.3;
+      }
+
+      .carousel-slide-content {
+        vertical-align: middle;
+        text-align: left;
+        color: #000000;
+
+        .block-header {
+          text-align: left;
+          color: #000000;
+          font-size: 3rem;
+        }
+        p {
+          line-height: 2rem;
         }
       }
     }

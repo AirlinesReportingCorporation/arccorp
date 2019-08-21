@@ -396,7 +396,7 @@ $('.owl-carousel').owlCarousel({
     autoHeight: true,
     autoplayTimeout: 5000,
     autoplaySpeed: 2000,
-    smartSpeed:450,
+    smartSpeed:700,
     URLhashListener:true,
     autoplayHoverPause:true,
     animateIn: 'fadeIn',
