@@ -1165,6 +1165,59 @@ footer .footer-links-social li a.icon-iso_logo {
       }
     }
 
+    .slide-26 {
+      background: url("https://www2.arccorp.com/globalassets/homepage/redesign/slides/carousel26.jpg?12") center center no-repeat;
+      background-size: cover;
+    }
+
+    .slide-27 {
+      background: url("https://www2.arccorp.com/globalassets/homepage/redesign/slides/carousel27.jpg") center center no-repeat;
+      background-size: cover;
+    }
+
+    .slide-28 {
+      background: url("https://www2.arccorp.com/globalassets/homepage/redesign/slides/carousel28.jpg") center center no-repeat;
+      background-size: cover;
+    }
+
+    .slide-white {
+      .carousel-slide-content {
+        vertical-align: middle;
+        text-align: left;
+        color: #ffffff;
+
+
+        .block-header {
+          text-align: left;
+          color: #ffffff;
+          font-size: 3rem;
+        }
+
+        p {
+          line-height: 2rem;
+        }
+      }
+    }
+
+    .slide-black {
+      .carousel-slide-content {
+        vertical-align: middle;
+        text-align: left;
+        color: #222222;
+
+
+        .block-header {
+          text-align: left;
+          color: #222222;
+          font-size: 3rem;
+        }
+
+        p {
+          line-height: 2rem;
+        }
+      }
+    }
+
     .owl-dots {
       position: absolute;
       width: 100%;
@@ -1900,6 +1953,13 @@ footer .footer-links-social li a.icon-iso_logo {
   .home-page .page-grid__row .content-block--pageItem.featuredLatest {
     margin-left: 21px;
   }
+  .home-page .owl-carousel .carousel-container {
+    //background: #f6f6f6 !important;
+
+    &.slide-28 {
+      background: #316677;
+    }
+  }
 }
 @media screen and (min-width: 960px) {
   .home-page .homePageGrid .page-grid__content {
@@ -2008,11 +2068,17 @@ footer .footer-links-social li a.icon-iso_logo {
   .home-page .homePageGrid a.ctaBtn.ctaBtn--main {
     top: 0;
   }
+
+
 }
 @media screen and (max-width:768px) {
   .home-page .homePageGrid .page-grid__items--collapsed,
   .home-page .homePageGrid .page-grid__items--expanded {
     //width: auto !important;
+  }
+
+  .home-page .owl-jumbotron .owl-dots {
+    display: none;
   }
 
   .home-page .mobile-only {
@@ -2038,6 +2104,18 @@ footer .footer-links-social li a.icon-iso_logo {
 
   .home-page .owl-carousel .carousel-container {
     //background: #f6f6f6 !important;
+
+    &.slide-28 {
+      background: #189bb0;
+    }
+
+    &.slide-25 {
+      text-align: center;
+      img {
+        margin: 0 auto;
+      }
+    }
+
     &:before {
       position: absolute;
       width: 100%;
@@ -2050,7 +2128,7 @@ footer .footer-links-social li a.icon-iso_logo {
       z-index: 2;
       content: '';
       max-height: 100%;
-      background: #ffffff;
+      background: #000000;
     }
   }
 
@@ -2160,12 +2238,16 @@ footer .footer-links-social li a.icon-iso_logo {
   }
 }
 @media screen and (max-width: 480px) {
+  .home-page .owl-carousel .carousel-container {
+    background: #0C1C47 !important;
+  }
   .supernav-topnav .topnav-search #topnav-search-input {
     width: 150px;
   }
 
   .home-page .owl-jumbotron .owl-dots {
     bottom: 5px;
+    display: none;
   }
 
   .home-page .owl-carousel .ctaBtn {
