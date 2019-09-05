@@ -1402,6 +1402,7 @@ footer .footer-links-social li a.icon-iso_logo {
       right: 0;
       left: auto;
       top: 48%;
+      pointer-events: none;
     }
 
     .owl-carousel .owl-next,
@@ -1409,6 +1410,7 @@ footer .footer-links-social li a.icon-iso_logo {
       position: absolute;
       top: 0;
       box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
+      pointer-events: all;
     }
 
     .owl-carousel .owl-next {}
