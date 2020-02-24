@@ -47,8 +47,8 @@ function latestSliderInit(){
 
   });
 
-  $(".homePageGrid .page-grid__row").eq(0).prepend("<div class='featuredLatest content-block--pageItem'><div class='featuredLatestImage'><a target='_blank' href='https://www2.arccorp.com/products-participation/customer-success-stories?utm_source=thelatest_static'><img src='https://www2.arccorp.com/globalassets/homepage/redesign/customer_success_feature.jpg'></a></div></div> "); 
-
+  $(".homePageGrid .page-grid__row").eq(0).prepend("<div class='featuredLatest content-block--pageItem'><div class='featuredLatestImage'><a target='_blank' href='https://www2.arccorp.com/articles-trends/the-latest/coronavirus/?utm_source=thelatest_static'><img src='https://www2.arccorp.com/globalassets/homepage/redesign/featured-coronavirus-thelastest.jpg'></a></div></div> "); 
+  
   $(".content-block--pageItem__inside").prepend("");
 
   $('.page-grid__items.page-grid__items--expanded').addClass("owl-carousel").addClass("owl-theme");

@@ -405,7 +405,7 @@ footer .footer-links-social li a.icon-iso_logo {
 
     #topnav-search-input {
       border: none;
-      width: 500px;
+      width: 550px;
       padding: 5px 40px 5px 20px;
       margin: 0;
       border-radius: 0;
@@ -617,7 +617,7 @@ footer .footer-links-social li a.icon-iso_logo {
       color: #ffffff;
       font-family: SourceSansPro-Regular, helvetica, arial, sans-serif;
       padding: 0;
-      height: 680px;
+      height: 550px;
       vertical-align: middle;
       max-width: 1170px;
       width: 100%;
@@ -1215,6 +1215,21 @@ footer .footer-links-social li a.icon-iso_logo {
       background-size: cover;
     }
 
+    .slide-36 {
+      background: url("https://www2.arccorp.com/globalassets/homepage/redesign/slides/bt-jumbo.jpg") bottom center no-repeat;
+      background-size: cover;
+    }
+
+    .slide-37 {
+      background: url("https://www2.arccorp.com/globalassets/homepage/redesign/slides/amadeus-jumbo-2.jpg?1") center center no-repeat;
+      background-size: cover; 
+    }
+
+    .slide-38 {
+      background: url("https://www2.arccorp.com/globalassets/homepage/redesign/slides/top10-jumbo.jpg?1") center center no-repeat;
+      background-size: cover;
+    }
+
     .slide-white {
       .carousel-slide-content {
         vertical-align: middle;
@@ -1576,7 +1591,7 @@ footer .footer-links-social li a.icon-iso_logo {
   .techPanel {
     background: #212226;
     color: #ffffff;
-    padding: 60px 0;
+    padding: 20px 0;
     font-size: 0;
 
     a {
@@ -2127,7 +2142,7 @@ footer .footer-links-social li a.icon-iso_logo {
   }
 
   .home-page .owl-carousel .carousel-slide {
-    height: 400px !important;
+    height: 550px !important;
 
     .carousel-slide-content {
       padding-top: 30px !important;
