@@ -5,6 +5,7 @@
 @import 'partials/fonts';
 @import 'partials/socialShare';
 @import 'partials/readingTime';
+@import 'partials/newsroomPosts';
 
 [v-cloak] {
   display: none;
@@ -1230,6 +1231,11 @@ footer .footer-links-social li a.icon-iso_logo {
       background-size: cover;
     }
 
+    .slide-39 {
+      background: url("https://www2.arccorp.com/globalassets/homepage/redesign/slides/jumbotron_retina_premomessage.jpg?1") center center no-repeat;
+      background-size: cover;
+    }
+
     .slide-white {
       .carousel-slide-content {
         vertical-align: middle;
@@ -2156,6 +2162,9 @@ footer .footer-links-social li a.icon-iso_logo {
 
   .home-page .owl-carousel .carousel-container {
     //background: #f6f6f6 !important;
+    .block-header, p {
+      color: #ffffff !important;
+    }
 
     &.slide-28 {
       background: #189bb0;
