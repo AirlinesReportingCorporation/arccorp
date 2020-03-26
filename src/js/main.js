@@ -582,7 +582,7 @@ $(".owl-carousel").owlCarousel({
   loop: true,
   nav: true,
   autoHeight: true,
-  autoplayTimeout: 5000,
+  autoplayTimeout: 8000,
   autoplaySpeed: 2000,
   smartSpeed: 700,
   URLhashListener: true,
@@ -726,7 +726,7 @@ function newsRelease() {
 }
 
 //style with new news release 
-//newsRelease();
+newsRelease();
 
 //rewriting simple foundation scripts for speed
 //tabbedPanel();
