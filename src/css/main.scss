@@ -6,6 +6,7 @@
 @import 'partials/socialShare';
 @import 'partials/readingTime';
 @import 'partials/newsroomPosts';
+@import 'partials/homepageTop';
 
 [v-cloak] {
   display: none;
@@ -1797,7 +1798,7 @@ footer .footer-links-social li a.icon-iso_logo {
   }
 
   .ourStory {
-    background: url("https://www2.arccorp.com/globalassets/homepage/redesign/our_story.png") center center no-repeat;
+    background: url("https://www2.arccorp.com/globalassets/homepage/ourdata.jpg") top center no-repeat;
     background-size: cover;
     color: #ffffff;
     padding: 120px 0;
@@ -1805,6 +1806,7 @@ footer .footer-links-social li a.icon-iso_logo {
     overflow: hidden;
 
     .geoPatternWhite {
+      display: none;
       position: absolute;
       left: 0;
       top: -30%;

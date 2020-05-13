@@ -701,12 +701,12 @@ var app = new Vue({
     }
   }
 });
-
+ 
 //functions for just the homepage
 if ($("body").hasClass("home-page")) {
-  latestSliderInit();
-  quoteRandomize();
-  productRandomize();
+  //latestSliderInit();
+  //quoteRandomize();
+  //productRandomize();
 }
 
 //functions for tabs
