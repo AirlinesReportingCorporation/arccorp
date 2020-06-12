@@ -360,18 +360,18 @@ footer .footer-links-social li a.icon-iso_logo {
 }
 
 .supernav-alert {
-  z-index: 105;
-
-  padding: 5px 0;
+  z-index: 104;
+  position: relative;
+  padding: 15px 15px;
   text-align: center;
-  background: #96BE3C;
+  background: #232038;
 
   .supernav-alert-inner {
     margin: 0 auto;
   }
 
   &:hover {
-    opacity: .9;
+    opacity: 0.9;
     cursor: pointer;
   }
 
@@ -379,7 +379,17 @@ footer .footer-links-social li a.icon-iso_logo {
     font-family: SourceSansPro-Regular, Arial, Helvetica, sans-serif;
     color: #ffffff;
     display: block;
-    &:hover, &:active, &:focus {
+    span {
+      font-family: SourceSansPro-Bold, Arial, Helvetica, sans-serif;
+      color: #ED3D71;
+    }
+    i {
+      color: #ED3D71;
+      padding-right: 5px;
+    }
+    &:hover,
+    &:active,
+    &:focus {
       color: #ffffff;
     }
   }
@@ -397,7 +407,6 @@ footer .footer-links-social li a.icon-iso_logo {
   background: #ffffff;
   font-family: SourceSansPro-Regular, helvetica, arial, sans-serif;
   position: relative;
-  border-bottom: 1px solid #f1f1f1;
 
   .supernav-topnav-inner {
     position: relative;
