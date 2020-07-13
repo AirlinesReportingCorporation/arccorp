@@ -159,7 +159,7 @@ function latestSliderInit() {
   $(".homePageGrid .page-grid__row")
     .eq(0)
     .prepend(
-      "<div class='featuredLatest content-block--pageItem'><div class='featuredLatestImage'><a target='_blank' href='https://www2.arccorp.com/articles-trends/the-latest/coronavirus-data/?utm_source=thelatest_static'><img src='https://www2.arccorp.com/globalassets/homepage/redesign/featured-coronavirus-thelastest.jpg'></a></div></div> "
+      "<div class='featuredLatest featuredLatest-custom content-block--pageItem'><div class='featuredLatestImage'><a target='_blank' href='https://arctravelconnect.com/2020/?utm_source=thelatest_static'><img src='https://www2.arccorp.com/globalassets/homepage/redesign/TCblog_carousel.jpg'><h2>TravelConnect Goes Virtual</h2><div class='sep'></div><p>View the latest episode of ARC's TravelConnect virtual series.</p><div class='readmore'>Read More</div></a></div></div> "
     );
 
   $(".content-block--pageItem__inside").prepend("");
@@ -704,7 +704,7 @@ var app = new Vue({
  
 //functions for just the homepage
 if ($("body").hasClass("home-page")) {
-  //latestSliderInit();
+  latestSliderInit();
   //quoteRandomize();
   //productRandomize();
 }

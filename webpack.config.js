@@ -10,7 +10,8 @@
 
  module.exports = [{
    entry: {
-     main: './src/js/main.js'
+     main: './src/js/main.js',
+     blog: './src/js/blog.js'
    },
    output: {
      filename: '[name].min.js',

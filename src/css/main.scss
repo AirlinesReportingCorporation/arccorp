@@ -381,10 +381,10 @@ footer .footer-links-social li a.icon-iso_logo {
     display: block;
     span {
       font-family: SourceSansPro-Bold, Arial, Helvetica, sans-serif;
-      color: #ED3D71;
+      color: #ed3d71;
     }
     i {
-      color: #ED3D71;
+      color: #ed3d71;
       padding-right: 5px;
     }
     &:hover,
@@ -637,7 +637,7 @@ footer .footer-links-social li a.icon-iso_logo {
     z-index: 12;
 
     h2 {
-      font-family: SourceSansPro-Light, helvetica, arial, sans-serif;
+      font-family: SourceSansPro-Regular, helvetica, arial, sans-serif;
       font-size: 3.75rem;
       line-height: 1;
     }
@@ -663,6 +663,12 @@ footer .footer-links-social li a.icon-iso_logo {
       vertical-align: middle;
       max-width: 1170px;
       width: 100%;
+      a.ctaBtn.ctaBtn--main {
+        font-size: 16px;
+        line-height: 20px;
+        padding: 17px 25px;
+        margin-top: 0;
+      }
     }
 
     .carousel-slide-content {
@@ -675,10 +681,11 @@ footer .footer-links-social li a.icon-iso_logo {
       z-index: 3;
 
       p {
-        font-family: RobotoSlab-Light, SourceSansPro-Regular, helvetica, arial,
+        font-family: RobotoSlab-Regular, SourceSansPro-Regular, helvetica, arial,
           sans-serif;
         font-size: 1.125rem;
         line-height: 1.5rem;
+        margin-bottom: 20px;
       }
     }
 
@@ -1131,10 +1138,6 @@ footer .footer-links-social li a.icon-iso_logo {
           color: #ffffff;
           font-size: 3rem;
         }
-
-        p {
-          line-height: 2rem;
-        }
       }
     }
 
@@ -1157,10 +1160,6 @@ footer .footer-links-social li a.icon-iso_logo {
           text-align: left;
           color: #ffffff;
           font-size: 3rem;
-        }
-
-        p {
-          line-height: 2rem;
         }
       }
     }
@@ -1315,6 +1314,24 @@ footer .footer-links-social li a.icon-iso_logo {
       background-size: cover;
     }
 
+    .slide-40 {
+      background: url("https://www2.arccorp.com/globalassets/homepage/redesign/slides/masthead_01.jpg?1")
+        center center no-repeat;
+      background-size: cover;
+    }
+
+    .slide-41 {
+      background: url("https://www2.arccorp.com/globalassets/homepage/redesign/slides/masthead_02.jpg?1")
+        center center no-repeat;
+      background-size: cover;
+    }
+
+    .slide-42 {
+      background: url("https://www2.arccorp.com/globalassets/homepage/redesign/slides/masthead_03.jpg?1")
+        center center no-repeat;
+      background-size: cover;
+    }
+
     .slide-white {
       .carousel-slide-content {
         vertical-align: middle;
@@ -1325,10 +1342,7 @@ footer .footer-links-social li a.icon-iso_logo {
           text-align: left;
           color: #ffffff;
           font-size: 3rem;
-        }
-
-        p {
-          line-height: 2rem;
+          margin-bottom: 10px;
         }
       }
     }
@@ -1343,10 +1357,7 @@ footer .footer-links-social li a.icon-iso_logo {
           text-align: left;
           color: #222222;
           font-size: 3rem;
-        }
-
-        p {
-          line-height: 2rem;
+          margin-bottom: 10px;
         }
       }
     }
@@ -2062,6 +2073,171 @@ footer .footer-links-social li a.icon-iso_logo {
     padding-bottom: 15px;
   }
 }
+
+.homeContentBlock {
+  max-width: 1350px;
+  margin: 40px auto 0;
+  .row {
+    max-width: 100%;
+  }
+
+  .halfBleedSection {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 550px;
+    padding: 180px 50px;
+    color: #ffffff;
+    text-align: center;
+    margin-bottom: 40px;
+    margin-left: 20px;
+
+    h2 {
+      font-family: SourceSansPro-Regular, Arial, Helvetica, sans-serif;
+      font-size: 48px;
+      line-height: 50px;
+      color: #ffffff;
+      margin-bottom: 15px;
+    }
+
+    p {
+      font-family: RobotoSlab-Light, Arial, Helvetica, sans-serif;
+      font-size: 16px;
+      line-height: 21px;
+    }
+
+    a {
+      font-family: SourceSansPro-Bold, Arial, Helvetica, sans-serif;
+      font-size: 16px;
+      line-height: 20px;
+      text-transform: uppercase;
+      &::after {
+        font-family: "icomoon";
+        content: "\E909";
+        font-size: 0.675rem;
+        margin-left: 10px;
+      }
+    }
+  }
+
+  .hb-1 {
+    background: url("https://www2.arccorp.com/globalassets/homepage/redesign/Content_Block01.jpg")
+      center center no-repeat;
+    background-size: cover;
+  }
+
+  .hb-2 {
+    background: url("https://www2.arccorp.com/globalassets/homepage/redesign/Content_Block02.jpg")
+      center center no-repeat;
+    background-size: cover;
+  }
+}
+
+.home-page .page-grid__row .content-block--pageItem.featuredLatest {
+  &.featuredLatest-custom {
+    .featuredLatestImage {
+      background: #000000;
+      a {
+        display: block;
+        padding-bottom: 50px;
+      }
+    }
+
+    .sep {
+      background: #ffffff;
+      height: 2px;
+      width: 40px;
+      margin: 12px 38px;
+    }
+
+    h2 {
+      background: #000000;
+      color: #ffffff;
+      padding: 0 38px;
+      font-size: 21px;
+      line-height: 26px;
+      font-family: SourceSansPro-Bold, Arial, Helvetica, sans-serif;
+    }
+
+    p {
+      background: #000000;
+      color: #898989;
+      padding: 0 38px;
+      font-family: RobotoSlab-Regular, Arial, Helvetica, sans-serif;
+      font-size: 14px;
+      letter-spacing: 0.32px;
+      line-height: 20px;
+    }
+
+    .readmore {
+      color: #ffa816;
+      font-size: 16px;
+      line-height: 20px;
+      padding: 0 38px;
+      font-family: SourceSansPro-SemiBold, Arial, Helvetica, sans-serif;
+      text-transform: uppercase;
+      &::after {
+        font-family: "icomoon";
+        content: "\E909";
+        font-size: 0.675rem;
+        margin-left: 10px;
+      }
+    }
+  }
+}
+
+.article--headline {
+  text-align: left;
+}
+
+.article--headline .parentLink {
+  font-size: 18px;
+  line-height: 23px;
+}
+
+.article--headline .mainTitle {
+  font-family: SourceSansPro-Bold, Arial, Helvetica, sans-serif;
+
+  &:after {
+    margin: 40px 0;
+    width: 115px;
+    height: 4px;
+    background: #189bb0;
+    font-family: SourceSansPro-SemiBold, Arial, Helvetica, sans-serif;
+  }
+}
+
+.article-body .basic-text-inside {
+  font-size: 21px;
+  line-height: 36px;
+  color: #6c6c6c;
+
+  p {
+    font-size: 21px;
+    line-height: 36px;
+  }
+}
+
+.article--headline .author-byline {
+  text-align: left;
+}
+
+.article--headline .metadata li {
+  font-size: 16px;
+}
+
+@media screen and (min-width: 768px) {
+  .article--headline .mainTitle {
+    font-size: 60px;
+  }
+  .basic-text .basic-text-inside {
+    padding: 2rem 0;
+  }
+  .article--headline {
+    margin-top: 50px;
+  }
+}
+
 @media screen and (max-width: 1365px) {
   .home-page .owl-jumbotron {
     .owl-nav {
@@ -2188,7 +2364,7 @@ footer .footer-links-social li a.icon-iso_logo {
     max-width: 380px;
     background: none;
     padding: 0 !important;
-    min-height: 485px;
+    min-height: 515px;
   }
 
   .home-page .page-grid__row .content-block--pageItem.featuredLatest {
