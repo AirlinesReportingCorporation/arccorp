@@ -2,12 +2,56 @@
 import "../css/main.scss";
 
 //js dependency imports
-import $ from "jquery";
+//import $ from "jquery";
 import Vue from "vue";
-import owlCarousel from "owl.carousel";
+import 'owl.carousel'
 import "jquery-validation";
 
 import LazyLoad from "vanilla-lazyload";
+
+$(document).ready(function() {
+  $(".owl-carousel").owlCarousel({
+    center: true,
+    autoplay: true,
+    loop: true,
+    nav: true,
+    autoHeight: true,
+    autoplayTimeout: 8000,
+    autoplaySpeed: 2000,
+    smartSpeed: 700,
+    URLhashListener: true,
+    autoplayHoverPause: true,
+    animateIn: "fadeIn",
+    animateOut: "fadeOut",
+    navText: [
+      '<img src="https://www2.arccorp.com/globalassets/homepage/redesign/latestArrowLeft.png">',
+      '<img src="https://www2.arccorp.com/globalassets/homepage/redesign/latestArrowRight.png">'
+    ],
+    responsive: {
+      0: {
+        items: 1
+      },
+      600: {
+        items: 1
+      },
+      1000: {
+        items: 1
+      }
+    },
+    onInitialize: function(element) {
+      /* randomize carousel
+      $(".owl-carousel")
+        .children()
+        .sort(function() {
+          return Math.round(Math.random()) - 0.5;
+        })
+        .each(function() {
+          $(this).appendTo($(".owl-carousel"));
+        });
+      */
+    }
+  });
+});
 
 // lazy load
 var lazyLoadInstance = new LazyLoad({});
@@ -177,27 +221,29 @@ function latestSliderInit() {
     $(this).prop("data-hash", index);
   });
 
-  $(".page-grid__items.page-grid__items--expanded").owlCarousel({
-    loop: true,
-    dots: true,
-    items: 1,
-    smartSpeed: 1450,
-    responsive: {
-      0: {
-        items: 1
+  $(document).ready(function() {
+    $(".page-grid__items.page-grid__items--expanded").owlCarousel({
+      loop: true,
+      dots: true,
+      items: 1,
+      smartSpeed: 1450,
+      responsive: {
+        0: {
+          items: 1
+        },
+        600: {
+          items: 1
+        },
+        1000: {
+          items: 1,
+          autoWidth: true
+        }
       },
-      600: {
-        items: 1
-      },
-      1000: {
-        items: 1,
-        autoWidth: true
-      }
-    },
-    navText: [
-      '<img src="https://www2.arccorp.com/globalassets/homepage/redesign/latestArrowLeft.png">',
-      '<img src="https://www2.arccorp.com/globalassets/homepage/redesign/latestArrowRight.png">'
-    ]
+      navText: [
+        '<img src="https://www2.arccorp.com/globalassets/homepage/redesign/latestArrowLeft.png">',
+        '<img src="https://www2.arccorp.com/globalassets/homepage/redesign/latestArrowRight.png">'
+      ]
+    });
   });
 }
 
@@ -580,48 +626,6 @@ function stickyNav() {
     });
   }
 }
-
-$(".owl-carousel").owlCarousel({
-  center: true,
-  autoplay: true,
-  loop: true,
-  nav: true,
-  autoHeight: true,
-  autoplayTimeout: 8000,
-  autoplaySpeed: 2000,
-  smartSpeed: 700,
-  URLhashListener: true,
-  autoplayHoverPause: true,
-  animateIn: "fadeIn",
-  animateOut: "fadeOut",
-  navText: [
-    '<img src="https://www2.arccorp.com/globalassets/homepage/redesign/latestArrowLeft.png">',
-    '<img src="https://www2.arccorp.com/globalassets/homepage/redesign/latestArrowRight.png">'
-  ],
-  responsive: {
-    0: {
-      items: 1
-    },
-    600: {
-      items: 1
-    },
-    1000: {
-      items: 1
-    }
-  },
-  onInitialize: function(element) {
-    /* randomize carousel
-    $(".owl-carousel")
-      .children()
-      .sort(function() {
-        return Math.round(Math.random()) - 0.5;
-      })
-      .each(function() {
-        $(this).appendTo($(".owl-carousel"));
-      });
-    */
-  }
-});
 
 var data = {
   primaryNav: "",
