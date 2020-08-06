@@ -9854,12 +9854,15 @@ html {
   font-family: SourceSansPro-Regular, "SourceSansPro-Regular", arial, helvetica, sans-serif;
   font-size: 38px;
   line-height: 45px; }
+  .product-callout-copy span {
+    font-family: SourceSansPro-SemiBold, "SourceSansPro-SemiBold", arial, helvetica, sans-serif;
+    color: #333132; }
+  .product-callout-copy .quote {
+    font-family: SourceSansPro-Light, "SourceSansPro-Light", arial, helvetica, sans-serif; }
+    .product-callout-copy .quote span {
+      font-family: SourceSansPro-Bold, "SourceSansPro-Bold", arial, helvetica, sans-serif; }
 
-.product-callout-copy span {
-  font-family: SourceSansPro-SemiBold, "SourceSansPro-SemiBold", arial, helvetica, sans-serif;
-  color: #333132; }
-
-.product-callout-copy.lightgray span {
+.product-callout-copy .product-callout-copy.lightgray span {
   color: #898790; }
 
 .product-callout-copy.gray span {

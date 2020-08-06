@@ -47,7 +47,7 @@ html {
   background-position: center center;
   background-repeat: no-repeat;
   padding: 140px 0 100px;
-  
+
   .product-quote-name {
     margin-top: 70px;
     margin-bottom: 0;
@@ -124,15 +124,27 @@ html {
     sans-serif;
   font-size: 38px;
   line-height: 45px;
+
+  span {
+    font-family: SourceSansPro-SemiBold, "SourceSansPro-SemiBold", arial,
+      helvetica, sans-serif;
+    color: #333132;
+  }
+
+  .quote {
+    font-family: SourceSansPro-Light, "SourceSansPro-Light", arial, helvetica,
+    sans-serif;
+
+    span {
+      font-family: SourceSansPro-Bold, "SourceSansPro-Bold", arial, helvetica,
+    sans-serif;
+    }
+  }
+
+  
 }
 
-.product-callout-copy span {
-  font-family: SourceSansPro-SemiBold, "SourceSansPro-SemiBold", arial,
-    helvetica, sans-serif;
-  color: #333132;
-}
-
-.product-callout-copy.lightgray span {
+.product-callout-copy .product-callout-copy.lightgray span {
   color: #898790;
 }
 
@@ -231,7 +243,6 @@ html {
 
 .data-icon-grid {
   background: #f7f5f5;
-
 }
 
 .data-icon-grid-title {
