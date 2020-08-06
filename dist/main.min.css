@@ -9793,7 +9793,11 @@ html {
 .atd-jumbo {
   background-size: cover !important;
   background-position: center center;
+  background-repeat: no-repeat;
   padding: 140px 0 100px; }
+  .atd-jumbo .product-quote-name {
+    margin-top: 70px;
+    margin-bottom: 0; }
 
 .ctaBtn {
   padding: 1rem 3.25rem;
@@ -9854,6 +9858,9 @@ html {
 .product-callout-copy span {
   font-family: SourceSansPro-SemiBold, "SourceSansPro-SemiBold", arial, helvetica, sans-serif;
   color: #333132; }
+
+.product-callout-copy.lightgray span {
+  color: #898790; }
 
 .product-callout-copy.gray span {
   color: #ff1b71; }
@@ -9925,9 +9932,14 @@ html {
   line-height: 20px;
   margin-bottom: 240px; }
 
+.margin-0 {
+  margin-bottom: 0 !important; }
+
+.quote-name .gray {
+  color: #838282; }
+
 .data-icon-grid {
-  background: #f7f5f5;
-  padding: 70px 0; }
+  background: #f7f5f5; }
 
 .data-icon-grid-title {
   font-family: SourceSansPro-Black, Arial, Helvetica, sans-serif;
@@ -9961,7 +9973,7 @@ html {
   color: #ffffff;
   padding: 60px;
   border-top: 1px solid #898790;
-  max-width: 1140px;
+  max-width: 1166px;
   margin: 0 auto; }
 
 .sub-callout-container p {
