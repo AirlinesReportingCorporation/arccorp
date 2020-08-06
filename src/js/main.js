@@ -7,6 +7,11 @@ import Vue from "vue";
 import owlCarousel from "owl.carousel";
 import "jquery-validation";
 
+import LazyLoad from "vanilla-lazyload";
+
+// lazy load
+var lazyLoadInstance = new LazyLoad({});
+
 /* reading time script start */
 !(function(e) {
   e.fn.readingTime = function(n) {
@@ -626,6 +631,7 @@ var data = {
   formInput: ""
 };
 
+//supernav
 var app = new Vue({
   el: ".supernav",
   data: data,
@@ -701,7 +707,7 @@ var app = new Vue({
     }
   }
 });
- 
+
 //functions for just the homepage
 if ($("body").hasClass("home-page")) {
   latestSliderInit();
@@ -716,7 +722,11 @@ readingTime();
 //add class to news release pages
 function newsRelease() {
   if ($(".btn--link.parentLink")) {
-    if ($(".btn--link.parentLink").text().indexOf("News Releases") > -1) {
+    if (
+      $(".btn--link.parentLink")
+        .text()
+        .indexOf("News Releases") > -1
+    ) {
       $("body").addClass("newsReleaseLayout");
 
       $(".btn--link.parentLink").text("Newsroom");
@@ -725,7 +735,7 @@ function newsRelease() {
   }
 }
 
-//style with new news release 
+//style with new news release
 newsRelease();
 
 //rewriting simple foundation scripts for speed
