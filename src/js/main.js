@@ -4,9 +4,9 @@ import "../css/main.scss";
 //js dependency imports
 //import $ from "jquery";
 import Vue from "vue";
-import 'owl.carousel'
+import "owl.carousel";
 import "jquery-validation";
-
+import stickybits from "stickybits";
 import LazyLoad from "vanilla-lazyload";
 
 $(document).ready(function() {
@@ -52,6 +52,10 @@ $(document).ready(function() {
     }
   });
 });
+
+if ($(".data-panel-sticky")) {
+  stickybits(".data-panel-sticky", { useStickyClasses: true });
+}
 
 // lazy load
 var lazyLoadInstance = new LazyLoad({});
