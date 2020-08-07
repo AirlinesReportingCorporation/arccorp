@@ -41,7 +41,7 @@ html {
 
 @media (min-width: 1200px) {
   .container {
-    max-width: 1140px; } }
+    max-width: 1177px; } }
 
 .container-fluid {
   width: 100%;
@@ -9756,6 +9756,30 @@ footer .footer-links-social li a.icon-iso_logo {
     line-height: 1;
     padding: 20px 2px; } }
 
+.type-color-product-lightgray {
+  color: #898790 !important; }
+
+.bg-color-product-lightgray {
+  background: #898790 !important; }
+
+.type-color-white {
+  color: #ffffff !important; }
+
+.bg-color-white {
+  background: #ffffff !important; }
+
+.type-color-teal {
+  color: #189bb0 !important; }
+
+.bg-color-teal {
+  background: #189bb0 !important; }
+
+.type-color-midgray {
+  color: #2a2b30 !important; }
+
+.bg-color-midgray {
+  background: #2a2b30 !important; }
+
 html {
   scroll-behavior: smooth; }
 
@@ -9795,9 +9819,20 @@ html {
   background-position: center center;
   background-repeat: no-repeat;
   padding: 140px 0 100px; }
+  .atd-jumbo.data-jumbo {
+    background-color: #000000;
+    background-size: contain !important;
+    background-position: top center; }
   .atd-jumbo .product-quote-name {
     margin-top: 70px;
+    margin-left: 40px;
     margin-bottom: 0; }
+
+.bg-section {
+  background-color: #000000;
+  background-size: cover !important;
+  background-position: center center;
+  background-repeat: no-repeat; }
 
 .ctaBtn {
   padding: 1rem 3.25rem;
@@ -9808,6 +9843,11 @@ html {
 .ctaBtn.ctaBtn--white:active {
   background: #ffffff;
   color: #189bb0 !important; }
+
+.product-quote-mark {
+  font-size: 60px;
+  font-family: SourceSansPro-Bold, "SourceSansPro-Bold", arial, sans-serif;
+  min-width: 40px; }
 
 .product-jumbo-eyebrow {
   color: #838282;
@@ -9823,6 +9863,8 @@ html {
   font-size: 66px;
   line-height: 64px;
   margin-bottom: 50px; }
+  .product-header.light {
+    font-family: SourceSansPro-Light, "SourceSansPro-Light", arial, helvetica, sans-serif; }
 
 .product-section-header {
   font-family: SourceSansPro-Bold, "SourceSansPro-Bold", arial, helvetica, sans-serif;
@@ -9857,12 +9899,19 @@ html {
   .product-callout-copy span {
     font-family: SourceSansPro-SemiBold, "SourceSansPro-SemiBold", arial, helvetica, sans-serif;
     color: #333132; }
-  .product-callout-copy .quote {
-    font-family: SourceSansPro-Light, "SourceSansPro-Light", arial, helvetica, sans-serif; }
-    .product-callout-copy .quote span {
+  .product-callout-copy.quote {
+    font-family: SourceSansPro-Light, "SourceSansPro-Light", arial, helvetica, sans-serif;
+    font-size: 40px;
+    line-height: 48px; }
+    .product-callout-copy.quote.regular span {
+      font-family: SourceSansPro-Regular, "SourceSansPro-Regular", arial, helvetica, sans-serif; }
+    .product-callout-copy.quote span {
       font-family: SourceSansPro-Bold, "SourceSansPro-Bold", arial, helvetica, sans-serif; }
 
-.product-callout-copy .product-callout-copy.lightgray span {
+.product-callout-copy {
+  color: #898790; }
+
+.product-callout-copy.lightgray span {
   color: #898790; }
 
 .product-callout-copy.gray span {
@@ -9871,8 +9920,13 @@ html {
 .product-callout-copy.yellow span {
   color: #f8c743; }
 
-.callout-container {
-  padding: 100px 0 60px; }
+.product-callout-copy.teal span {
+  color: #189bb0; }
+
+.callout-container .container,
+.data-icon-grid .container {
+  padding-top: 100px;
+  padding-bottom: 60px; }
 
 .callout-container-mt2 {
   padding-top: 120px; }
@@ -9934,12 +9988,11 @@ html {
   font-size: 16px;
   line-height: 20px;
   margin-bottom: 240px; }
+  .product-quote-name.gray {
+    color: #838282; }
 
 .margin-0 {
   margin-bottom: 0 !important; }
-
-.quote-name .gray {
-  color: #838282; }
 
 .data-icon-grid {
   background: #f7f5f5; }
@@ -10066,11 +10119,15 @@ html {
   padding-top: 150px;
   padding-bottom: 150px; }
 
+.callout-box-container {
+  padding-top: 70px;
+  padding-bottom: 30px; }
+  .callout-box-container.dark {
+    background: #2a2b30; }
+
 .callout-box {
   padding: 60px;
-  text-align: center;
-  margin-top: 70px;
-  margin-bottom: 30px; }
+  text-align: center; }
 
 .callout-box.teal {
   color: #ffffff;
@@ -10096,7 +10153,7 @@ html {
   margin: 0 auto 30px; }
 
 .box-icon {
-  margin: 70px 0 70px; }
+  padding: 70px 0 70px; }
 
 .box-icon-item {
   padding: 0 30px; }
@@ -10192,6 +10249,9 @@ a.product-sticky-link-right svg {
 .data-panel-sticky .background {
   background: transparent !important; }
 
+.data-overview .callout-container .container {
+  border-top: 1px solid #898790; }
+
 @media screen and (max-width: 900px) {
   .product-sticky-nav {
     flex-direction: column; }
@@ -10223,4 +10283,88 @@ a.product-sticky-link-right svg {
 @media screen and (max-width: 767.9px) {
   .product-sticky-menu {
     display: none !important; } }
+
+.ss-container {
+  border-top: 1px solid #898790;
+  margin-bottom: 120px; }
+
+.ss-title {
+  padding-top: 70px;
+  padding-bottom: 120px; }
+
+.ss-row {
+  margin-top: 30px; }
+
+.ss-system-info-item {
+  background: #212226;
+  color: #ffffff;
+  padding: 20px;
+  border: 1px solid #5d5c68;
+  border-radius: 7px;
+  margin-bottom: 10px;
+  position: relative; }
+
+.ss-system-info-number {
+  font-family: SourceSansPro-Regular, "SourceSansPro-Regular", Arial, Helvetica, sans-serif;
+  font-size: 40px;
+  line-height: 48px; }
+
+.ss-system-info-label {
+  font-family: SourceSansPro-Bold, Arial, Helvetica, sans-serif;
+  font-size: 16px;
+  line-height: 22px;
+  color: #ffffff; }
+
+.ss-system-info-icon {
+  width: 41px;
+  text-align: right;
+  margin-left: auto; }
+
+.transactionData {
+  background-color: #2a2b31;
+  background-position: top center;
+  background-repeat: no-repeat;
+  background-size: 100% auto;
+  padding: 90px 0 60px; }
+  .transactionData .transactionTitle {
+    text-align: center; }
+  .transactionData h2 {
+    color: #ffffff;
+    font-family: SourceSansPro-Semibold, SourceSansPro-Regular, arial, sans-serif;
+    font-size: 3.25rem;
+    margin-bottom: 60px;
+    line-height: 1; }
+  .transactionData .dataFeatures {
+    background: rgba(0, 0, 0, 0.7);
+    color: #ffffff;
+    padding: 0 100px 70px; }
+    .transactionData .dataFeatures img {
+      margin-bottom: 20px; }
+    .transactionData .dataFeatures .dataFeature {
+      padding: 70px 35px 35px 35px; }
+    .transactionData .dataFeatures .dataFeatureTitle {
+      border-top: 2px solid #189bb0;
+      font-family: SourceSansPro-Semibold, SourceSansPro-Regular, arial, sans-serif;
+      font-size: 1.5rem;
+      padding-top: 15px;
+      padding-bottom: 15px; }
+    .transactionData .dataFeatures p {
+      font-size: 17px;
+      line-height: 22px;
+      font-family: SourceSansPro-Regular, "SourceSansPro-Regular", Arial, Helvetica, sans-serif;
+      color: #868b8c; }
+    .transactionData .dataFeatures a {
+      font-family: SourceSansPro-Bold, "SourceSansPro-Bold", Arial, Helvetica, sans-serif; }
+      .transactionData .dataFeatures a i,
+      .transactionData .dataFeatures a svg {
+        font-size: 12px;
+        margin-left: 5px; }
+
+@media screen and (max-width: 900px) {
+  .transactionData {
+    padding: 40px; }
+    .transactionData .dataFeatures {
+      padding: 20px; }
+      .transactionData .dataFeatures .dataFeature {
+        padding: 20px; } }
 

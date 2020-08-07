@@ -1,0 +1,15 @@
+$teal: #189bb0;
+$productgray: #898790;
+$midgray: #2a2b30;
+
+$brand-colors: ("product-lightgray", $productgray), ("white", #ffffff),
+  ("teal", $teal), ("midgray", $midgray);
+
+@each $color in $brand-colors {
+  &.type-color-#{nth($color,1)} {
+    color: nth($color, 2) !important;
+  }
+  &.bg-color-#{nth($color,1)} {
+    background: nth($color, 2) !important;
+  }
+}

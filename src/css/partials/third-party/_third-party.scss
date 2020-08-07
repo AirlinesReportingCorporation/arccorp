@@ -1,0 +1,78 @@
+$transaction-gray: #868b8c;
+
+.transactionData {
+  background-color: #2a2b31;
+  background-position: top center;
+  background-repeat: no-repeat;
+  background-size: 100% auto;
+  padding: 90px 0 60px;
+
+  .transactionTitle {
+    text-align: center;
+  }
+
+  h2 {
+    color: #ffffff;
+    font-family: SourceSansPro-Semibold, SourceSansPro-Regular, arial,
+      sans-serif;
+    font-size: 3.25rem;
+    margin-bottom: 60px;
+    line-height: 1;
+  }
+
+  .dataFeatures {
+    background: rgba(0, 0, 0, 0.7);
+    color: #ffffff;
+    padding: 0 100px 70px;
+
+    img {
+      margin-bottom: 20px;
+    }
+
+    .dataFeature {
+      padding: 70px 35px 35px 35px;
+    }
+
+    .dataFeatureTitle {
+      border-top: 2px solid #189bb0;
+      font-family: SourceSansPro-Semibold, SourceSansPro-Regular, arial,
+        sans-serif;
+      font-size: 1.5rem;
+      padding-top: 15px;
+      padding-bottom: 15px;
+    }
+
+    p {
+      font-size: 17px;
+      line-height: 22px;
+      font-family: SourceSansPro-Regular, "SourceSansPro-Regular", Arial,
+        Helvetica, sans-serif;
+      color: $transaction-gray;
+    }
+
+    a {
+      font-family: SourceSansPro-Bold, "SourceSansPro-Bold", Arial, Helvetica,
+        sans-serif;
+
+      i,
+      svg {
+        font-size: 12px;
+        margin-left: 5px;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 900px) {
+  .transactionData {
+    padding: 40px;
+
+    .dataFeatures {
+      padding: 20px;
+
+      .dataFeature {
+        padding: 20px;
+      }
+    }
+  }
+}
