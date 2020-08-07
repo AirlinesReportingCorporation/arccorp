@@ -9836,13 +9836,21 @@ html {
 
 .ctaBtn {
   padding: 1rem 3.25rem;
-  margin: 0; }
+  margin: 0 5px; }
 
 .ctaBtn.ctaBtn--white,
 .ctaBtn.ctaBtn--white:hover,
 .ctaBtn.ctaBtn--white:active {
   background: #ffffff;
+  border-color: #ffffff;
   color: #189bb0 !important; }
+
+.ctaBtn.ctaBtn--white-outline,
+.ctaBtn.ctaBtn--white-outline:hover,
+.ctaBtn.ctaBtn--white-outline:active {
+  background: transparent;
+  color: #ffffff !important;
+  border-color: #ffffff !important; }
 
 .product-quote-mark {
   font-size: 60px;
@@ -10150,7 +10158,7 @@ html {
   font-size: 18px;
   line-height: 22px;
   max-width: 830px;
-  margin: 0 auto 30px; }
+  margin: 0 auto 60px; }
 
 .box-icon {
   padding: 70px 0 70px; }

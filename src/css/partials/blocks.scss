@@ -72,14 +72,23 @@ html {
 
 .ctaBtn {
   padding: 1rem 3.25rem;
-  margin: 0;
+  margin: 0 5px;
 }
 
 .ctaBtn.ctaBtn--white,
 .ctaBtn.ctaBtn--white:hover,
 .ctaBtn.ctaBtn--white:active {
   background: #ffffff;
+  border-color: #ffffff;
   color: $teal !important;
+}
+
+.ctaBtn.ctaBtn--white-outline,
+.ctaBtn.ctaBtn--white-outline:hover,
+.ctaBtn.ctaBtn--white-outline:active {
+  background: transparent;
+  color: $white !important;
+  border-color: $white !important;
 }
 
 .product-quote-mark {
@@ -469,7 +478,7 @@ html {
   font-size: 18px;
   line-height: 22px;
   max-width: 830px;
-  margin: 0 auto 30px;
+  margin: 0 auto 60px;
 }
 
 .box-icon {

@@ -1,8 +1,9 @@
 $teal: #189bb0;
 $productgray: #898790;
 $midgray: #2a2b30;
+$white: #ffffff;
 
-$brand-colors: ("product-lightgray", $productgray), ("white", #ffffff),
+$brand-colors: ("product-lightgray", $productgray), ("white", $white),
   ("teal", $teal), ("midgray", $midgray);
 
 @each $color in $brand-colors {
