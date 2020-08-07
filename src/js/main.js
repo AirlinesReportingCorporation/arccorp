@@ -9,37 +9,36 @@ import "jquery-validation";
 import stickybits from "stickybits";
 import LazyLoad from "vanilla-lazyload";
 
-$(document).ready(function() {
-  $(".owl-carousel").owlCarousel({
-    center: true,
-    autoplay: true,
-    loop: true,
-    nav: true,
-    autoHeight: true,
-    autoplayTimeout: 8000,
-    autoplaySpeed: 2000,
-    smartSpeed: 700,
-    URLhashListener: true,
-    autoplayHoverPause: true,
-    animateIn: "fadeIn",
-    animateOut: "fadeOut",
-    navText: [
-      '<img src="https://www2.arccorp.com/globalassets/homepage/redesign/latestArrowLeft.png">',
-      '<img src="https://www2.arccorp.com/globalassets/homepage/redesign/latestArrowRight.png">'
-    ],
-    responsive: {
-      0: {
-        items: 1
-      },
-      600: {
-        items: 1
-      },
-      1000: {
-        items: 1
-      }
+$(".owl-carousel").owlCarousel({
+  center: true,
+  autoplay: true,
+  loop: true,
+  nav: true,
+  autoHeight: true,
+  autoplayTimeout: 8000,
+  autoplaySpeed: 2000,
+  smartSpeed: 700,
+  URLhashListener: true,
+  autoplayHoverPause: true,
+  animateIn: "fadeIn",
+  animateOut: "fadeOut",
+  navText: [
+    '<img src="https://www2.arccorp.com/globalassets/homepage/redesign/latestArrowLeft.png">',
+    '<img src="https://www2.arccorp.com/globalassets/homepage/redesign/latestArrowRight.png">'
+  ],
+  responsive: {
+    0: {
+      items: 1
     },
-    onInitialize: function(element) {
-      /* randomize carousel
+    600: {
+      items: 1
+    },
+    1000: {
+      items: 1
+    }
+  },
+  onInitialize: function(element) {
+    /* randomize carousel
       $(".owl-carousel")
         .children()
         .sort(function() {
@@ -49,8 +48,7 @@ $(document).ready(function() {
           $(this).appendTo($(".owl-carousel"));
         });
       */
-    }
-  });
+  }
 });
 
 if ($(".data-panel-sticky")) {
