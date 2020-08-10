@@ -9808,6 +9808,9 @@ html {
 .data-panel + footer {
   margin-top: 0 !important; }
 
+a.ctaBtn.product-cta {
+  min-width: 216px; }
+
 .data-panel--white a.ctaBtn.ctaBtn--secondaryOnImage {
   color: #189bb0; }
 
