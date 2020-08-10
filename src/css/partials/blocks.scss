@@ -588,7 +588,11 @@ a.link-download svg {
 
 .product-sticky-menu {
   height: 100%;
-  margin-left: auto;
+}
+
+.product-sticky-links {
+  height: 100%;
+  margin: 0 auto;
 }
 
 a.product-sticky-link,
@@ -687,7 +691,7 @@ a.product-sticky-link-right svg {
 }
 
 @media screen and (max-width: 768px) {
-  .product-sticky-menu {
+  .product-sticky-menu, .product-sticky-links {
     display: none !important;
   }
 }

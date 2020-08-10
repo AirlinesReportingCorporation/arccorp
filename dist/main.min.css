@@ -10247,8 +10247,11 @@ a.link-download svg {
   height: 100%; }
 
 .product-sticky-menu {
+  height: 100%; }
+
+.product-sticky-links {
   height: 100%;
-  margin-left: auto; }
+  margin: 0 auto; }
 
 a.product-sticky-link,
 a.product-sticky-link-right {
@@ -10322,7 +10325,7 @@ a.product-sticky-link-right svg {
     line-height: 30px; } }
 
 @media screen and (max-width: 768px) {
-  .product-sticky-menu {
+  .product-sticky-menu, .product-sticky-links {
     display: none !important; } }
 
 @media screen and (min-width: 768px) {
