@@ -79,10 +79,15 @@ html {
 }
 
 .ctaBtn.ctaBtn--white-outline,
-.ctaBtn.ctaBtn--white-outline:hover,
 .ctaBtn.ctaBtn--white-outline:active {
   background: transparent;
   color: $white !important;
+  border-color: $white !important;
+}
+
+.ctaBtn.ctaBtn--white-outline:hover {
+  background: $white;
+  color: $teal !important;
   border-color: $white !important;
 }
 
@@ -114,6 +119,8 @@ html {
   &.light {
     font-family: SourceSansPro-Light, "SourceSansPro-Light", arial, helvetica,
       sans-serif;
+    font-size: 72px;
+    line-height: 72px;
   }
 }
 
@@ -212,10 +219,8 @@ html {
 
 .callout-container,
 .data-icon-grid {
-  .container {
-    padding-top: 100px;
-    padding-bottom: 60px;
-  }
+  padding-top: 100px;
+  padding-bottom: 60px;
 }
 
 .callout-container-mt2 {
@@ -510,7 +515,7 @@ html {
   font-size: 18px;
   line-height: 22px;
   max-width: 830px;
-  margin: 0 auto 60px;
+  margin: 0 auto 30px;
 }
 
 .box-icon {
@@ -632,9 +637,7 @@ a.product-sticky-link-right svg {
 
 .data-overview {
   .callout-container {
-    .container {
-      border-top: 1px solid $productgray;
-    }
+    border-top: 1px solid $productgray;
   }
 }
 
@@ -680,8 +683,11 @@ a.product-sticky-link-right svg {
   }
 }
 
-@media screen and (max-width: 767.9px) {
+@media screen and (max-width: 768px) {
   .product-sticky-menu {
     display: none !important;
+  }
+  .jumbotron {
+    margin-top: 0;
   }
 }

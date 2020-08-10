@@ -9757,10 +9757,10 @@ footer .footer-links-social li a.icon-iso_logo {
     padding: 20px 2px; } }
 
 .type-color-product-lightgray {
-  color: #898790 !important; }
+  color: #868b8c !important; }
 
 .bg-color-product-lightgray {
-  background: #898790 !important; }
+  background: #868b8c !important; }
 
 .type-color-white {
   color: #ffffff !important; }
@@ -9842,10 +9842,14 @@ html {
   color: #189bb0 !important; }
 
 .ctaBtn.ctaBtn--white-outline,
-.ctaBtn.ctaBtn--white-outline:hover,
 .ctaBtn.ctaBtn--white-outline:active {
   background: transparent;
   color: #ffffff !important;
+  border-color: #ffffff !important; }
+
+.ctaBtn.ctaBtn--white-outline:hover {
+  background: #ffffff;
+  color: #189bb0 !important;
   border-color: #ffffff !important; }
 
 .product-quote-mark {
@@ -9868,7 +9872,9 @@ html {
   line-height: 64px;
   margin-bottom: 50px; }
   .product-header.light {
-    font-family: SourceSansPro-Light, "SourceSansPro-Light", arial, helvetica, sans-serif; }
+    font-family: SourceSansPro-Light, "SourceSansPro-Light", arial, helvetica, sans-serif;
+    font-size: 72px;
+    line-height: 72px; }
 
 .product-section-header {
   font-family: SourceSansPro-Bold, "SourceSansPro-Bold", arial, helvetica, sans-serif;
@@ -9899,10 +9905,10 @@ html {
 .product-callout {
   margin-top: 40px;
   padding-top: 35px;
-  border-top: 1px solid #898790; }
+  border-top: 1px solid #868b8c; }
 
 .product-callout-copy {
-  color: #898790;
+  color: #868b8c;
   font-family: SourceSansPro-Regular, "SourceSansPro-Regular", arial, helvetica, sans-serif;
   font-size: 38px;
   line-height: 45px; }
@@ -9919,10 +9925,10 @@ html {
       font-family: SourceSansPro-Bold, "SourceSansPro-Bold", arial, helvetica, sans-serif; }
 
 .product-callout-copy {
-  color: #898790; }
+  color: #868b8c; }
 
 .product-callout-copy.lightgray span {
-  color: #898790; }
+  color: #868b8c; }
 
 .product-callout-copy.gray span {
   color: #ff1b71; }
@@ -9933,8 +9939,8 @@ html {
 .product-callout-copy.teal span {
   color: #189bb0; }
 
-.callout-container .container,
-.data-icon-grid .container {
+.callout-container,
+.data-icon-grid {
   padding-top: 100px;
   padding-bottom: 60px; }
 
@@ -9967,7 +9973,7 @@ html {
   font-family: SourceSansPro-Regular, Arial, Helvetica, sans-serif;
   font-size: 30px;
   line-height: 38px;
-  color: #898790; }
+  color: #868b8c; }
 
 .yoy-graph-copy span {
   font-family: SourceSansPro-SemiBold, Arial, Helvetica, sans-serif;
@@ -10060,7 +10066,7 @@ html {
 .sub-callout-container {
   color: #ffffff;
   padding: 60px;
-  border-top: 1px solid #898790;
+  border-top: 1px solid #868b8c;
   max-width: 1166px;
   margin: 0 auto; }
 
@@ -10182,7 +10188,7 @@ html {
   font-size: 18px;
   line-height: 22px;
   max-width: 830px;
-  margin: 0 auto 60px; }
+  margin: 0 auto 30px; }
 
 .box-icon {
   padding: 70px 0 70px; }
@@ -10217,7 +10223,7 @@ a.link-download svg {
   margin-left: 3px; }
 
 .product-company .container {
-  border-bottom: 1px solid #898790; }
+  border-bottom: 1px solid #868b8c; }
 
 .product-company-title {
   font-family: SourceSansPro-Bold, Arial, Helvetica, sans-serif;
@@ -10281,8 +10287,8 @@ a.product-sticky-link-right svg {
 .data-panel-sticky .background {
   background: transparent !important; }
 
-.data-overview .callout-container .container {
-  border-top: 1px solid #898790; }
+.data-overview .callout-container {
+  border-top: 1px solid #868b8c; }
 
 @media screen and (max-width: 900px) {
   .product-sticky-nav {
@@ -10312,9 +10318,11 @@ a.product-sticky-link-right svg {
     font-size: 25px;
     line-height: 30px; } }
 
-@media screen and (max-width: 767.9px) {
+@media screen and (max-width: 768px) {
   .product-sticky-menu {
-    display: none !important; } }
+    display: none !important; }
+  .jumbotron {
+    margin-top: 0; } }
 
 .ss-container {
   border-top: 1px solid #898790;
@@ -10352,19 +10360,26 @@ a.product-sticky-link-right svg {
   text-align: right;
   margin-left: auto; }
 
+.data-jumbo .product-callout-copy {
+  font-size: 48px;
+  line-height: 54px; }
+  .data-jumbo .product-callout-copy.lightgray span {
+    color: #868b8c;
+    font-family: SourceSansPro-SemiBold, "SourceSansPro-SemiBold", arial, helvetica, sans-serif; }
+
 .transactionData {
   background-color: #2a2b31;
   background-position: top center;
   background-repeat: no-repeat;
   background-size: 100% auto;
-  padding: 90px 0 60px; }
+  padding: 140px 0 60px; }
   .transactionData .transactionTitle {
     text-align: center; }
   .transactionData h2 {
     color: #ffffff;
     font-family: SourceSansPro-Semibold, SourceSansPro-Regular, arial, sans-serif;
     font-size: 3.25rem;
-    margin-bottom: 60px;
+    margin-bottom: 80px;
     line-height: 1; }
   .transactionData .dataFeatures {
     background: rgba(0, 0, 0, 0.7);
@@ -10373,7 +10388,7 @@ a.product-sticky-link-right svg {
     .transactionData .dataFeatures img {
       margin-bottom: 20px; }
     .transactionData .dataFeatures .dataFeature {
-      padding: 70px 35px 35px 35px; }
+      padding: 70px 35px 0px 35px; }
     .transactionData .dataFeatures .dataFeatureTitle {
       border-top: 2px solid #189bb0;
       font-family: SourceSansPro-Semibold, SourceSansPro-Regular, arial, sans-serif;
@@ -10409,6 +10424,11 @@ a.product-sticky-link-right svg {
     font-family: SourceSansPro-Bold, "SourceSansPro-Bold", Arial, Helvetica, sans-serif; }
   .streamlineData p {
     color: #868b8c; }
+
+.callout-box-data .ctaBtn {
+  min-width: 220px;
+  padding-right: 10px;
+  padding-left: 10px; }
 
 @media screen and (max-width: 900px) {
   .transactionData {

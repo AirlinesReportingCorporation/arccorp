@@ -1,11 +1,24 @@
 $transaction-gray: #868b8c;
 
+.data-jumbo {
+  .product-callout-copy {
+    font-size: 48px;
+    line-height: 54px;
+
+    &.lightgray span {
+      color: $transaction-gray;
+      font-family: SourceSansPro-SemiBold, "SourceSansPro-SemiBold", arial,
+        helvetica, sans-serif;
+    }
+  }
+}
+
 .transactionData {
   background-color: #2a2b31;
   background-position: top center;
   background-repeat: no-repeat;
   background-size: 100% auto;
-  padding: 90px 0 60px;
+  padding: 140px 0 60px;
 
   .transactionTitle {
     text-align: center;
@@ -16,7 +29,7 @@ $transaction-gray: #868b8c;
     font-family: SourceSansPro-Semibold, SourceSansPro-Regular, arial,
       sans-serif;
     font-size: 3.25rem;
-    margin-bottom: 60px;
+    margin-bottom: 80px;
     line-height: 1;
   }
 
@@ -30,7 +43,7 @@ $transaction-gray: #868b8c;
     }
 
     .dataFeature {
-      padding: 70px 35px 35px 35px;
+      padding: 70px 35px 0px 35px;
     }
 
     .dataFeatureTitle {
@@ -63,14 +76,14 @@ $transaction-gray: #868b8c;
   }
 }
 
-
 .streamlineData {
   background-color: #2a2b31;
   padding: 30px 0 150px;
   font-size: 22px;
   line-height: 36px;
   color: $transaction-gray;
-  font-family: SourceSansPro-Regular, "SourceSansPro-Regular", Arial, Helvetica, sans-serif;
+  font-family: SourceSansPro-Regular, "SourceSansPro-Regular", Arial, Helvetica,
+    sans-serif;
 
   .streamline-row {
     margin-bottom: 50px;
@@ -83,13 +96,21 @@ $transaction-gray: #868b8c;
 
   .steamline-title {
     color: #ffffff;
-    font-family: SourceSansPro-Bold, "SourceSansPro-Bold", Arial, Helvetica, sans-serif;
+    font-family: SourceSansPro-Bold, "SourceSansPro-Bold", Arial, Helvetica,
+      sans-serif;
   }
 
   p {
     color: $transaction-gray;
   }
+}
 
+.callout-box-data {
+  .ctaBtn {
+    min-width: 220px;
+    padding-right: 10px;
+    padding-left: 10px;
+  }
 }
 
 @media screen and (max-width: 900px) {
