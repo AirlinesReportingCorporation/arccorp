@@ -687,6 +687,9 @@ a.product-sticky-link-right svg {
   .product-sticky-menu {
     display: none !important;
   }
+}
+
+@media screen and (min-width: 768px) {
   .jumbotron {
     margin-top: 0;
   }
