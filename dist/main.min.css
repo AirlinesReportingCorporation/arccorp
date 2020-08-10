@@ -9976,12 +9976,34 @@ html {
 
 .product-quote {
   padding-top: 160px; }
+  .product-quote.fluid {
+    padding-top: 120px;
+    padding-bottom: 80px; }
+    .product-quote.fluid .product-quote-container {
+      padding: 0; }
+    .product-quote.fluid .product-quote-name,
+    .product-quote.fluid .product-quote-copy {
+      margin-bottom: 70px; }
+    .product-quote.fluid .product-quote-copy {
+      margin-top: 10px;
+      font-size: 32px;
+      line-height: 42px;
+      font-family: SourceSansPro-SemiBold, Arial, Helvetica, sans-serif; }
+    .product-quote.fluid .product-quote-mark {
+      font-size: 35px;
+      color: #ffffff;
+      min-width: 25px; }
 
 .product-quote-container {
   background-position: center center;
   background-repeat: no-repeat;
   background-size: cover;
   padding: 90px 60px; }
+
+.product-quote-bg {
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover; }
 
 .product-quote-copy {
   font-family: SourceSansPro-Bold, Arial, Helvetica, sans-serif;
@@ -10367,6 +10389,24 @@ a.product-sticky-link-right svg {
       .transactionData .dataFeatures a svg {
         font-size: 12px;
         margin-left: 5px; }
+
+.streamlineData {
+  background-color: #2a2b31;
+  padding: 30px 0 150px;
+  font-size: 22px;
+  line-height: 36px;
+  color: #868b8c;
+  font-family: SourceSansPro-Regular, "SourceSansPro-Regular", Arial, Helvetica, sans-serif; }
+  .streamlineData .streamline-row {
+    margin-bottom: 50px; }
+  .streamlineData .streamline-icon {
+    max-width: 95px;
+    width: 100%; }
+  .streamlineData .steamline-title {
+    color: #ffffff;
+    font-family: SourceSansPro-Bold, "SourceSansPro-Bold", Arial, Helvetica, sans-serif; }
+  .streamlineData p {
+    color: #868b8c; }
 
 @media screen and (max-width: 900px) {
   .transactionData {

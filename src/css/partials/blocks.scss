@@ -175,18 +175,15 @@ html {
     line-height: 48px;
 
     &.regular span {
-      font-family: SourceSansPro-Regular, "SourceSansPro-Regular", arial, helvetica,
-      sans-serif;
+      font-family: SourceSansPro-Regular, "SourceSansPro-Regular", arial,
+        helvetica, sans-serif;
     }
-
 
     span {
       font-family: SourceSansPro-Bold, "SourceSansPro-Bold", arial, helvetica,
         sans-serif;
     }
   }
-
-  
 }
 
 .product-callout-copy {
@@ -265,6 +262,31 @@ html {
 
 .product-quote {
   padding-top: 160px;
+  &.fluid {
+    padding-top: 120px;
+    padding-bottom: 80px;
+
+    .product-quote-container {
+      padding: 0;
+    }
+    .product-quote-name,
+    .product-quote-copy {
+      margin-bottom: 70px;
+    }
+
+    .product-quote-copy {
+      margin-top: 10px;
+      font-size: 32px;
+      line-height: 42px;
+      font-family: SourceSansPro-SemiBold, Arial, Helvetica, sans-serif;
+    }
+
+    .product-quote-mark {
+      font-size: 35px;
+      color: #ffffff;
+      min-width: 25px;
+    }
+  }
 }
 
 .product-quote-container {
@@ -272,6 +294,12 @@ html {
   background-repeat: no-repeat;
   background-size: cover;
   padding: 90px 60px;
+}
+
+.product-quote-bg {
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 .product-quote-copy {
