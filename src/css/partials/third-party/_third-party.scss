@@ -115,7 +115,7 @@ $transaction-gray: #868b8c;
 
 @media screen and (max-width: 900px) {
   .transactionData {
-    padding: 40px;
+    padding: 15px;
 
     .dataFeatures {
       padding: 20px;
@@ -124,5 +124,10 @@ $transaction-gray: #868b8c;
         padding: 20px;
       }
     }
+  }
+
+  .data-jumbo .product-callout-copy {
+    font-size: 30px;
+    line-height: 35px;
   }
 }

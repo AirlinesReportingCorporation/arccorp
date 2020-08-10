@@ -10307,11 +10307,14 @@ a.product-sticky-link-right svg {
   .callout-box,
   .product-option-box {
     padding: 25px 15px; }
-  .product-header {
+  .product-header,
+  .product-header.light {
     font-size: 50px;
     line-height: 55px; }
   .product-callout-copy,
-  .product-quote-copy {
+  .product-quote-copy,
+  .product-callout-copy.quote,
+  .product-quote.fluid .product-quote-copy {
     font-size: 30px;
     line-height: 35px; }
   .yoy-graph-copy {
@@ -10348,8 +10351,8 @@ a.product-sticky-link-right svg {
 
 .ss-system-info-number {
   font-family: SourceSansPro-Regular, "SourceSansPro-Regular", Arial, Helvetica, sans-serif;
-  font-size: 40px;
-  line-height: 48px; }
+  font-size: 34px;
+  line-height: 36px; }
 
 .ss-system-info-label {
   font-family: SourceSansPro-Bold, Arial, Helvetica, sans-serif;
@@ -10434,9 +10437,12 @@ a.product-sticky-link-right svg {
 
 @media screen and (max-width: 900px) {
   .transactionData {
-    padding: 40px; }
+    padding: 15px; }
     .transactionData .dataFeatures {
       padding: 20px; }
       .transactionData .dataFeatures .dataFeature {
-        padding: 20px; } }
+        padding: 20px; }
+  .data-jumbo .product-callout-copy {
+    font-size: 30px;
+    line-height: 35px; } }
 

@@ -666,13 +666,16 @@ a.product-sticky-link-right svg {
     padding: 25px 15px;
   }
 
-  .product-header {
+  .product-header,
+  .product-header.light {
     font-size: 50px;
     line-height: 55px;
   }
 
   .product-callout-copy,
-  .product-quote-copy {
+  .product-quote-copy,
+  .product-callout-copy.quote,
+  .product-quote.fluid .product-quote-copy {
     font-size: 30px;
     line-height: 35px;
   }
