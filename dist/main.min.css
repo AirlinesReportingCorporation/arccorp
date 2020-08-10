@@ -9834,10 +9834,6 @@ html {
   background-position: center center;
   background-repeat: no-repeat; }
 
-.ctaBtn {
-  padding: 1rem 3.25rem;
-  margin: 0 5px; }
-
 .ctaBtn.ctaBtn--white,
 .ctaBtn.ctaBtn--white:hover,
 .ctaBtn.ctaBtn--white:active {
@@ -9888,6 +9884,12 @@ html {
 
 .atd-jumbo .product-header {
   margin-bottom: 70px; }
+
+.atd-jumbo .ctaBtn,
+.product-full-bleed .ctaBtn,
+.product-quote .ctaBtn {
+  padding: 1rem 3.25rem;
+  margin: 0 5px; }
 
 .product-header.white,
 .product-subheader.white,
