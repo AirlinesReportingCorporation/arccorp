@@ -4,10 +4,6 @@ html {
   scroll-behavior: smooth;
 }
 
-.supernav {
-  border-bottom: 2px solid $teal;
-}
-
 .data-panel {
   color: #333132;
   height: auto !important;
@@ -644,6 +640,11 @@ a.product-sticky-link-right svg {
   top: 0;
   background: transparent;
   width: 100%;
+}
+
+
+.supernav-secondary-present {
+  border-bottom: 2px solid $teal;
 }
 
 .data-panel-sticky .background {

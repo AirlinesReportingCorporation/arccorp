@@ -9785,9 +9785,6 @@ footer .footer-links-social li a.icon-iso_logo {
 html {
   scroll-behavior: smooth; }
 
-.supernav {
-  border-bottom: 2px solid #189bb0; }
-
 .data-panel {
   color: #333132;
   height: auto !important;
@@ -10297,6 +10294,9 @@ a.product-sticky-link-right svg {
   top: 0;
   background: transparent;
   width: 100%; }
+
+.supernav-secondary-present {
+  border-bottom: 2px solid #189bb0; }
 
 .data-panel-sticky .background {
   background: transparent !important; }

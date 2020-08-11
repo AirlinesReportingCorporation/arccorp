@@ -53,6 +53,7 @@ $(".owl-carousel").owlCarousel({
 
 if ($(".data-panel-sticky")) {
   stickybits(".data-panel-sticky", { useStickyClasses: true });
+  $(".supernav").addClass("supernav-secondary-present");
 }
 
 // lazy load
