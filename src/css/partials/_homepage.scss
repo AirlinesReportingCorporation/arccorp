@@ -80,6 +80,8 @@ footer .footer-links-social li a.icon-iso_logo {
 
 .supernav .supernav-inner {
   position: relative;
+  display: flex;
+  align-items: center;
   background: #ffffff;
   height: 76px;
   margin: 0 auto;
@@ -1591,9 +1593,6 @@ footer .footer-links-social li a.icon-iso_logo {
         display: table;
         clear: both;
       }
-
-      &:first-of-type {
-      }
     }
 
     .byline {
@@ -2421,10 +2420,6 @@ footer .footer-links-social li a.icon-iso_logo {
   }
 }
 @media screen and (max-width: 768px) {
-  .home-page .homePageGrid .page-grid__items--collapsed,
-  .home-page .homePageGrid .page-grid__items--expanded {
-    //width: auto !important;
-  }
 
   .home-page .owl-jumbotron .owl-dots {
     display: none;
@@ -2504,14 +2499,6 @@ footer .footer-links-social li a.icon-iso_logo {
   }
 
   .home-page .owl-carousel {
-    .slide-1,
-    .slide-2,
-    .slide-3,
-    .slide-4,
-    .slide-5 {
-      //background: #f6f6f6 !important;
-    }
-
     .fraudLogos,
     .geoGreenPattern,
     .geoPattern,
@@ -2573,10 +2560,6 @@ footer .footer-links-social li a.icon-iso_logo {
 
   .home-page .content-block--pageItem__title {
     text-decoration: underline;
-  }
-
-  .home-page .homePageGrid .page-grid__items--collapsed,
-  .home-page .homePageGrid .page-grid__items--expanded {
   }
 
   .home-page .homePageGrid a.ctaBtn.ctaBtn--main {

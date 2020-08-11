@@ -8081,6 +8081,8 @@ footer .footer-links-social li a.icon-iso_logo {
 
 .supernav .supernav-inner {
   position: relative;
+  display: flex;
+  align-items: center;
   background: #ffffff;
   height: 76px;
   margin: 0 auto;
@@ -10264,7 +10266,8 @@ a.product-sticky-link-right {
   color: #5d5c68; }
 
 a.product-sticky-link-right {
-  color: #189bb0; }
+  color: #189bb0;
+  padding-right: 0; }
 
 a.product-sticky-link-right i,
 a.product-sticky-link-right svg {
