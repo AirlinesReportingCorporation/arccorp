@@ -343,6 +343,13 @@ a.ctaBtn.product-cta {
   background: #f7f5f5;
 }
 
+.data-icon-inner {
+  color: #ffffff;
+  background: #222222;
+  border-radius: 8px;
+  padding: 30px;
+}
+
 .data-icon-grid-title {
   font-family: SourceSansPro-Black, Arial, Helvetica, sans-serif;
   margin-bottom: 60px;
@@ -359,16 +366,15 @@ a.ctaBtn.product-cta {
 .data-icon-grid-value {
   font-family: SourceSansPro-Bold, Arial, Helvetica, sans-serif;
   font-size: 100px;
-  border-top: 1px solid $teal;
-  padding-top: 30px;
-  line-height: 1;
+  line-height: 72px;
 }
 
 .data-icon-grid-label {
   font-family: SourceSansPro-SemiBold, Arial, Helvetica, sans-serif;
   font-size: 28px;
-  line-height: 45px;
+  line-height: 48px;
   color: #9a99a0;
+  margin-top: 10px;
 }
 
 .bg-img-container {
