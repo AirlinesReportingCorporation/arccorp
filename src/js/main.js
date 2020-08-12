@@ -211,7 +211,7 @@ function latestSliderInit() {
   $(".homePageGrid .page-grid__row")
     .eq(0)
     .prepend(
-      "<div class='featuredLatest featuredLatest-custom content-block--pageItem'><div class='featuredLatestImage'><a target='_blank' href='https://arctravelconnect.com/2020/?utm_source=thelatest_static'><img src='https://www2.arccorp.com/globalassets/homepage/redesign/TCblog_carousel.jpg'><h2>TravelConnect Goes Virtual</h2><div class='sep'></div><p>View the latest episode of ARC's TravelConnect virtual series.</p><div class='readmore'>Read More</div></a></div></div> "
+      "<div class='featuredLatest featuredLatest-custom content-block--pageItem'><div class=''><a target='_blank' href='https://www.surveygizmo.com/s3/5736700/ARC-TravelConnect-Virtual-Series-What-s-Next-for-Business-Travel?utm_source=thelatest_static'><img src='https://www2.arccorp.com/globalassets/homepage/redesign/The-Latest-TC-Episode3.png'></a></div></div> "
     );
 
   $(".content-block--pageItem__inside").prepend("");
