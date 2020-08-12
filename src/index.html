@@ -17,15 +17,13 @@
       href="https://www2.arccorp.com/globalassets/static/style.css?12a3"
       rel="stylesheet"
     />
-    
+
     <link rel="stylesheet" href="/main.min.css" />
   </head>
 
   <body class=" home-page">
     <!-- supernav start -->
     <div class="supernav" v-on:mouseleave="navPanelReset()">
-      
-
       <!-- start alert -->
       <div class="supernav-alert">
         <div class="supernav-alert-inner">
@@ -171,116 +169,122 @@
           </div>
           <div v-cloak class="supernav-utility">
             <!-- start topnav -->
-      <div
-      class="supernav-topnav"
-      v-click-outside="hideLogin"
-      v-on:mouseenter="navPanelReset()"
-    >
-      <div class="supernav-topnav-inner">
-        <form
-          class="topnav-search"
-          action="/search/"
-          method="get"
-          v-show="showSearch"
-          v-cloak
-        >
-          <input
-            title="topnavsearch"
-            type="text"
-            name="q"
-            id="topnav-search-input"
-            ref="search"
-            placeholder="Search"
-            v-cloak
-          />
-          <div class="icon-close" v-on:click="toggleSearch()" v-cloak></div>
-          <button
-            type="submit"
-            class="icon-search"
-            id="topnav-search-button"
-            value="submit"
-          ></button>
-        </form>
-        <a
-          href="#"
-          class="topnav-link show-search icon-search"
-          v-on:click="toggleSearch()"
-          v-show="!showSearch"
-        ></a>
-        <a href="/about-us/contact-us/" class="topnav-link">Contact Us</a>
-        <a
-          href="#"
-          class="topnav-link topnav-myarc"
-          v-on:click="showPopup('loginActive')"
-          >My ARC</a
-        >
-        <div class="supernav-login" v-show="loginActive" v-cloak>
-          <div class="supernav-login-inner">
-            <div class="supernav-loggedin">
-              You are currently logged in as
-              <div class="supernav-myarc-username"></div>
-              <a
-                target="_blank"
-                href="https://myarc.arccorp.com/"
-                class="ctaBtn"
-                >My ARC</a
-              >
-              <a
-                target="_blank"
-                href="https://myarc.arccorp.com/PortalApp/ARCGateway.portal?_nfpb=true&_st=&_pageLabel=ARC_Login&_name=logout&_nfls=false"
-                class="ctaBtn"
-                >Log Out</a
-              >
-            </div>
-            <form
-              id="frmMyARCLogin"
-              name="frmMyARCLogin"
-              method="POST"
-              action="https://myarc.arccorp.com/PortalApp/PreLogin.portal"
+            <div
+              class="supernav-topnav"
+              v-click-outside="hideLogin"
+              v-on:mouseenter="navPanelReset()"
             >
-              <input
-                type="text"
-                id="myarcusername"
-                name="user"
-                placeholder="Username"
-                title="username"
-              />
-
-              <input
-                type="password"
-                id="myarcpassword"
-                name="password"
-                placeholder="Password"
-                title="password"
-              />
-              <div class="supernav-submit">
-                <button
-                  title="submit form"
-                  class="ctaBtn ctaBtn--main"
-                  type="submit"
+              <div class="supernav-topnav-inner">
+                <form
+                  class="topnav-search"
+                  action="/search/"
+                  method="get"
+                  v-show="showSearch"
+                  v-cloak
                 >
-                  Log In
-                </button>
+                  <input
+                    title="topnavsearch"
+                    type="text"
+                    name="q"
+                    id="topnav-search-input"
+                    ref="search"
+                    placeholder="Search"
+                    v-cloak
+                  />
+                  <div
+                    class="icon-close"
+                    v-on:click="toggleSearch()"
+                    v-cloak
+                  ></div>
+                  <button
+                    type="submit"
+                    class="icon-search"
+                    id="topnav-search-button"
+                    value="submit"
+                  ></button>
+                </form>
+                <a
+                  href="#"
+                  class="topnav-link show-search icon-search"
+                  v-on:click="toggleSearch()"
+                  v-show="!showSearch"
+                ></a>
+                <a href="/about-us/contact-us/" class="topnav-link"
+                  >Contact Us</a
+                >
+                <a
+                  href="#"
+                  class="topnav-link topnav-myarc"
+                  v-on:click="showPopup('loginActive')"
+                  >My ARC</a
+                >
+                <div class="supernav-login" v-show="loginActive" v-cloak>
+                  <div class="supernav-login-inner">
+                    <div class="supernav-loggedin">
+                      You are currently logged in as
+                      <div class="supernav-myarc-username"></div>
+                      <a
+                        target="_blank"
+                        href="https://myarc.arccorp.com/"
+                        class="ctaBtn"
+                        >My ARC</a
+                      >
+                      <a
+                        target="_blank"
+                        href="https://myarc.arccorp.com/PortalApp/ARCGateway.portal?_nfpb=true&_st=&_pageLabel=ARC_Login&_name=logout&_nfls=false"
+                        class="ctaBtn"
+                        >Log Out</a
+                      >
+                    </div>
+                    <form
+                      id="frmMyARCLogin"
+                      name="frmMyARCLogin"
+                      method="POST"
+                      action="https://myarc.arccorp.com/PortalApp/PreLogin.portal"
+                    >
+                      <input
+                        type="text"
+                        id="myarcusername"
+                        name="user"
+                        placeholder="Username"
+                        title="username"
+                      />
+
+                      <input
+                        type="password"
+                        id="myarcpassword"
+                        name="password"
+                        placeholder="Password"
+                        title="password"
+                      />
+                      <div class="supernav-submit">
+                        <button
+                          title="submit form"
+                          class="ctaBtn ctaBtn--main"
+                          type="submit"
+                        >
+                          Log In
+                        </button>
+                      </div>
+                      <br />
+                      <a
+                        href="https://myarc.arccorp.com/PortalApp/ArcPublicPortal.portal?_nfpb=true&_pageLabel=MyARC_ForgotUserName&_nfls=false"
+                        target="_blank"
+                        class="forgotUsername"
+                        >Forgot Username?</a
+                      >
+                      <a
+                        href="https://myarc.arccorp.com/PortalApp/ArcPublicPortal.portal?_nfpb=true&_pageLabel=ARC_ForgotPassword&_nfls=false"
+                        target="_blank"
+                        class="forgotUsername"
+                        >Forgot Password?</a
+                      >
+                    </form>
+                  </div>
+                </div>
               </div>
-              <br />
-              <a
-                href="https://myarc.arccorp.com/PortalApp/ArcPublicPortal.portal?_nfpb=true&_pageLabel=MyARC_ForgotUserName&_nfls=false"
-                target="_blank"
-                class="forgotUsername"
-                >Forgot Username?</a
-              >
-              <a
-                href="https://myarc.arccorp.com/PortalApp/ArcPublicPortal.portal?_nfpb=true&_pageLabel=ARC_ForgotPassword&_nfls=false"
-                target="_blank"
-                class="forgotUsername"
-                >Forgot Password?</a
-              >
-            </form>
-          </div>
-        </div>
-      </div>
-    </div>
-    <!-- end top nav -->
+            </div>
+            <!-- end top nav -->
           </div>
         </div>
       </div>
@@ -1281,23 +1285,43 @@
           </div>
         </div>
       </div>
-      <div class="carousel-container slide-white slide-42">
+
+      <div
+        class="carousel-container slide-white lazy"
+        data-bg="https://www2.arccorp.com/globalassets/homepage/redesign/slides/jumbotron_retina_ATD.jpg"
+      >
         <div class="carousel-slide ">
           <div class="carousel-slide-content">
             <div class="row">
               <div class="col-lg-6 col-md-12">
-                <h2 class="block-header alt">
-                  ARC Omnichannel Retailing
+                <h2
+                  class="block-header alt"
+                  style="max-width: 500px; font-family: SourceSansPro-Bold, 'SourceSansPro-Bold', helvetica, arial,
+                sans-serif; margin-bottom: 0;"
+                >
+                  Introducing
                 </h2>
+                <div
+                  class="d-flex align-items-center"
+                  style="font-family: SourceSansPro-Regular, 'SourceSansPro-Regular', helvetica, arial,
+                sans-serif; font-size: 40px; margin-bottom: 15px;"
+                >
+                  <img
+                    style="margin-right: 5px; height: 40px; width: auto;"
+                    data-src="https://www2.arccorp.com/globalassets/arc-logos/corporate-logos/arc-logo-l-white.png"
+                    class="lazy"
+                  />
+                  Travel Demand
+                </div>
                 <p>
-                  Seamlessly connecting airlines, travel agencies, travel
-                  managers and travelers to create a more transparent retailing
-                  environment.
+                  Gain full visibility into air travel activity with ARC's
+                  newest data offering, updated daily and available through
+                  Snowflake or API.
                 </p>
                 <a
                   class="ctaBtn ctaBtn--main"
-                  href="https://www2.arccorp.com/about-us/arc-omnichannel-retailing/?utm_source=Latest_Carousel"
-                  >Discover Omnichannel Retailing</a
+                  href="https://www2.arccorp.com/products-participation/products/arc-travel-demand/?utm_source=Latest_Carousel"
+                  >Learn More</a
                 >
               </div>
             </div>

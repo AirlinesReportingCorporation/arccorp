@@ -657,6 +657,9 @@ footer .footer-links-social li a.icon-iso_logo {
     }
 
     .carousel-container {
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-position: center center;
       position: relative;
       width: 100%;
     }
@@ -689,11 +692,11 @@ footer .footer-links-social li a.icon-iso_logo {
       z-index: 3;
 
       p {
-        font-family: RobotoSlab-Regular, SourceSansPro-Regular, helvetica, arial,
+        font-family: SourceSansPro-Regular, "SourceSansPro-Regular", helvetica, arial,
           sans-serif;
         font-size: 1.125rem;
         line-height: 1.5rem;
-        margin-bottom: 20px;
+        margin-bottom: 60px;
       }
     }
 

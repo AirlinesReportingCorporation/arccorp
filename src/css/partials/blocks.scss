@@ -609,7 +609,10 @@ a.product-sticky-link-right {
   color: #ffffff;
 }
 
-a.product-sticky-link-right {
+a.product-sticky-link-right,
+a.product-sticky-link-right:active,
+a.product-sticky-link-right:focus,
+a.product-sticky-link-right:hover {
   color: #ffffff;
   padding-right: 0;
 }
@@ -637,7 +640,6 @@ a.product-sticky-link-right svg {
 .data-panel-sticky {
   z-index: 3;
 }
-
 
 .supernav-secondary-present {
   border-bottom: 2px solid $teal;
@@ -699,7 +701,8 @@ a.product-sticky-link-right svg {
 }
 
 @media screen and (max-width: 768px) {
-  .product-sticky-menu, .product-sticky-links {
+  .product-sticky-menu,
+  .product-sticky-links {
     display: none !important;
   }
 }

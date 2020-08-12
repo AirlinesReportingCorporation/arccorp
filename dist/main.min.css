@@ -8514,6 +8514,9 @@ footer .footer-links-social li a.icon-iso_logo {
     animation-delay: 0s;
     text-align: center; }
   .home-page .owl-carousel .carousel-container {
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
     position: relative;
     width: 100%; }
   .home-page .owl-carousel .carousel-slide {
@@ -8540,10 +8543,10 @@ footer .footer-links-social li a.icon-iso_logo {
     width: 100%;
     z-index: 3; }
     .home-page .owl-carousel .carousel-slide-content p {
-      font-family: RobotoSlab-Regular, SourceSansPro-Regular, helvetica, arial, sans-serif;
+      font-family: SourceSansPro-Regular, "SourceSansPro-Regular", helvetica, arial, sans-serif;
       font-size: 1.125rem;
       line-height: 1.5rem;
-      margin-bottom: 20px; }
+      margin-bottom: 60px; }
   .home-page .owl-carousel .travelconnect-content {
     color: #282f76;
     font-family: Oswald-Bold, Oswald-Regular, helvetica, arial, sans-serif; }
@@ -10265,7 +10268,10 @@ a.product-sticky-link-right {
   padding: 0 10px;
   color: #ffffff; }
 
-a.product-sticky-link-right {
+a.product-sticky-link-right,
+a.product-sticky-link-right:active,
+a.product-sticky-link-right:focus,
+a.product-sticky-link-right:hover {
   color: #ffffff;
   padding-right: 0; }
 
@@ -10330,7 +10336,8 @@ a.product-sticky-link-right svg {
     line-height: 30px; } }
 
 @media screen and (max-width: 768px) {
-  .product-sticky-menu, .product-sticky-links {
+  .product-sticky-menu,
+  .product-sticky-links {
     display: none !important; } }
 
 @media screen and (min-width: 768px) {
