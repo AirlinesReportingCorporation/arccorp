@@ -576,13 +576,13 @@ a.link-download svg {
 
 .product-sticky-container {
   height: 56px;
-  border-bottom: 1px solid #d5d4d4;
-  /*box-shadow: 0 1px 34px rgba(0, 0, 0, 0.1), 0 1px 52px rgba(0, 0, 0, 0.1);*/
+  //border-bottom: 1px solid #d5d4d4;
+  //box-shadow: 0 1px 34px rgba(0, 0, 0, 0.1), 0 1px 52px rgba(0, 0, 0, 0.1);
 }
 
 .product-sticky-inner {
   height: 100%;
-  background: #ffffff;
+  background: #189bb0;
 }
 
 .product-sticky-nav {
@@ -606,11 +606,11 @@ a.product-sticky-link-right {
   font-family: SourceSansPro-SemiBold, Arial, Helvetica, sans-serif;
   font-size: 14px;
   padding: 0 10px;
-  color: #5d5c68;
+  color: #ffffff;
 }
 
 a.product-sticky-link-right {
-  color: $teal;
+  color: #ffffff;
   padding-right: 0;
 }
 
@@ -631,15 +631,11 @@ a.product-sticky-link-right svg {
   font-family: SourceSansPro-Regular, Arial, Helvetica, sans-serif;
   font-size: 20px;
   margin-left: 0px;
+  color: #ffffff;
 }
 
 .data-panel-sticky {
   z-index: 3;
-  position: absolute;
-  height: 100% !important;
-  top: 0;
-  background: transparent;
-  width: 100%;
 }
 
 

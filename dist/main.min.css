@@ -10239,13 +10239,11 @@ a.link-download svg {
   text-align: center; }
 
 .product-sticky-container {
-  height: 56px;
-  border-bottom: 1px solid #d5d4d4;
-  /*box-shadow: 0 1px 34px rgba(0, 0, 0, 0.1), 0 1px 52px rgba(0, 0, 0, 0.1);*/ }
+  height: 56px; }
 
 .product-sticky-inner {
   height: 100%;
-  background: #ffffff; }
+  background: #189bb0; }
 
 .product-sticky-nav {
   display: flex;
@@ -10265,10 +10263,10 @@ a.product-sticky-link-right {
   font-family: SourceSansPro-SemiBold, Arial, Helvetica, sans-serif;
   font-size: 14px;
   padding: 0 10px;
-  color: #5d5c68; }
+  color: #ffffff; }
 
 a.product-sticky-link-right {
-  color: #189bb0;
+  color: #ffffff;
   padding-right: 0; }
 
 a.product-sticky-link-right i,
@@ -10285,15 +10283,11 @@ a.product-sticky-link-right svg {
 .product-sticky-title {
   font-family: SourceSansPro-Regular, Arial, Helvetica, sans-serif;
   font-size: 20px;
-  margin-left: 0px; }
+  margin-left: 0px;
+  color: #ffffff; }
 
 .data-panel-sticky {
-  z-index: 3;
-  position: absolute;
-  height: 100% !important;
-  top: 0;
-  background: transparent;
-  width: 100%; }
+  z-index: 3; }
 
 .supernav-secondary-present {
   border-bottom: 2px solid #189bb0; }
