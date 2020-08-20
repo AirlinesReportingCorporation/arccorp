@@ -10114,7 +10114,6 @@ a.ctaBtn.product-cta {
   margin: 0 auto 10px;
   display: flex;
   flex-direction: column;
-  cursor: pointer;
   justify-content: space-between; }
 
 .product-option-container-item-eyebrow {
@@ -10267,6 +10266,12 @@ a.product-sticky-link-right {
   font-size: 14px;
   padding: 0 10px;
   color: #ffffff; }
+  a.product-sticky-link:hover, a.product-sticky-link:active, a.product-sticky-link:focus,
+  a.product-sticky-link-right:hover,
+  a.product-sticky-link-right:active,
+  a.product-sticky-link-right:focus {
+    color: #ffffff;
+    opacity: .9; }
 
 a.product-sticky-link-right,
 a.product-sticky-link-right:active,

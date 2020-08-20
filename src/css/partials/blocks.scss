@@ -423,7 +423,6 @@ a.ctaBtn.product-cta {
   margin: 0 auto 10px;
   display: flex;
   flex-direction: column;
-  cursor: pointer;
   justify-content: space-between;
 }
 
@@ -607,6 +606,11 @@ a.product-sticky-link-right {
   font-size: 14px;
   padding: 0 10px;
   color: #ffffff;
+
+  &:hover, &:active, &:focus {
+    color: #ffffff;
+    opacity: .9;
+  }
 }
 
 a.product-sticky-link-right,
