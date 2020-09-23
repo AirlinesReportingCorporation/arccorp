@@ -208,12 +208,14 @@ function latestSliderInit() {
     }
   });
 
+  /*
   $(".homePageGrid .page-grid__row")
     .eq(0)
     .prepend(
       "<div class='featuredLatest featuredLatest-custom content-block--pageItem'><div class=''><a target='_blank' href='https://arctravelconnect.com/2020/episodes/Whats-Next-for-Business-Travel/'><img src='https://www2.arccorp.com/globalassets/homepage/redesign/the-latest-tc-episode-3.png'></a></div></div> "
     );
-
+      */
+     
   $(".content-block--pageItem__inside").prepend("");
 
   $(".page-grid__items.page-grid__items--expanded")

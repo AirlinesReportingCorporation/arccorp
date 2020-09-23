@@ -8016,6 +8016,42 @@ html {
     height: auto;
     margin: 15px auto; } }
 
+.type-color-product-lightgray {
+  color: #868b8c !important; }
+
+.bg-color-product-lightgray {
+  background: #868b8c !important; }
+
+.type-color-white {
+  color: #ffffff !important; }
+
+.bg-color-white {
+  background: #ffffff !important; }
+
+.type-color-teal {
+  color: #189bb0 !important; }
+
+.bg-color-teal {
+  background: #189bb0 !important; }
+
+.type-color-midgray {
+  color: #2a2b30 !important; }
+
+.bg-color-midgray {
+  background: #2a2b30 !important; }
+
+.type-color-fog {
+  color: #f7f5f5 !important; }
+
+.bg-color-fog {
+  background: #f7f5f5 !important; }
+
+.type-color-tarmac {
+  color: #2a2b2c !important; }
+
+.bg-color-tarmac {
+  background: #2a2b2c !important; }
+
 .related-content [data-aux-label="Hide"] {
   display: none; }
 
@@ -9052,9 +9088,9 @@ footer .footer-links-social li a.icon-iso_logo {
     vertical-align: top; }
   .home-page .homePageGrid .read-more {
     position: absolute;
-    bottom: 0;
-    margin-top: 10px;
-    left: 21px;
+    bottom: 30px;
+    left: 15px;
+    color: #189bb0;
     color: #189bb0; }
     .home-page .homePageGrid .read-more a {
       font-family: SourceSansPro-SemiBold, helvetica, arial, sans-serif;
@@ -9067,20 +9103,12 @@ footer .footer-links-social li a.icon-iso_logo {
   .home-page .homePageGrid .owl-carousel {
     position: static; }
   .home-page .homePageGrid .owl-carousel .owl-dots {
-    background: #d6d6d6;
     bottom: 0;
-    height: 6px;
-    margin-left: 21px; }
+    height: 4px; }
     .home-page .homePageGrid .owl-carousel .owl-dots .owl-dot span {
       margin: 0 7px 0 0; }
   .home-page .homePageGrid .owl-carousel .owl-nav {
-    display: table;
-    z-index: 30;
-    width: 100%;
-    right: 0;
-    left: auto;
-    top: 48%;
-    pointer-events: none; }
+    display: none; }
   .home-page .homePageGrid .owl-carousel .owl-next,
   .home-page .homePageGrid .owl-carousel .owl-prev {
     position: absolute;
@@ -9153,7 +9181,9 @@ footer .footer-links-social li a.icon-iso_logo {
     .home-page .homePageGrid .content-block--pageItem__inside img {
       display: block;
       width: 100%;
-      margin-bottom: 20px; }
+      margin-bottom: 0px; }
+  .home-page .homePageGrid .content-block--pageItem__body {
+    display: none; }
   .home-page .homePageGrid .ctaLink {
     color: #333333;
     font-family: SourceSansPro-Bold, helvetica, arial, sans-serif;
@@ -9299,7 +9329,7 @@ footer .footer-links-social li a.icon-iso_logo {
 .home-page .ourStory {
   background: url("https://www2.arccorp.com/globalassets/homepage/ourdata.jpg") top center no-repeat;
   background-size: cover;
-  color: #ffffff;
+  color: #2a2b2c;
   padding: 120px 0;
   position: relative;
   overflow: hidden; }
@@ -9309,14 +9339,21 @@ footer .footer-links-social li a.icon-iso_logo {
     left: 0;
     top: -30%; }
   .home-page .ourStory h2 {
-    color: #ffffff;
-    font-family: Roboto-Slab, SourceSansPro-Regular, helvetica, arial, sans-serif;
-    font-size: 3rem; }
+    color: #2a2b2c;
+    font-family: SourceSansPro-Bold, helvetica, arial, sans-serif;
+    font-size: 3rem;
+    margin-bottom: 30px;
+    line-height: 1; }
+  .home-page .ourStory p {
+    font-family: SourceSansPro-Regular, helvetica, arial, sans-serif;
+    margin-bottom: 30px; }
   .home-page .ourStory .blockText {
     max-width: 1170px;
     margin: 0 auto;
     position: relative;
     z-index: 3; }
+  .home-page .ourStory .ctaBtn--main {
+    margin: 0; }
   .home-page .ourStory .ctaBtn.ctaBtn--secondaryOnImage {
     color: #ffffff;
     background: transparent;
@@ -9411,46 +9448,41 @@ footer .footer-links-social li a.icon-iso_logo {
   padding-bottom: 15px; }
 
 .homeContentBlock {
-  max-width: 1350px;
-  margin: 40px auto 0; }
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 80px 0; }
   .homeContentBlock .row {
     max-width: 100%; }
   .homeContentBlock .halfBleedSection {
+    background: #f7f5f5;
     display: flex;
     flex-direction: column;
     justify-content: center;
-    height: 550px;
-    padding: 180px 50px;
-    color: #ffffff;
-    text-align: center;
-    margin-bottom: 40px;
-    margin-left: 20px; }
+    height: 270px;
+    padding: 50px;
+    color: #2a2b2c;
+    text-align: center; }
     .homeContentBlock .halfBleedSection h2 {
-      font-family: SourceSansPro-Regular, Arial, Helvetica, sans-serif;
-      font-size: 48px;
-      line-height: 50px;
-      color: #ffffff;
+      font-family: SourceSansPro-Bold, Arial, Helvetica, sans-serif;
+      font-size: 30px;
+      line-height: 34px;
+      color: #2a2b2c;
       margin-bottom: 15px; }
     .homeContentBlock .halfBleedSection p {
-      font-family: RobotoSlab-Light, Arial, Helvetica, sans-serif;
-      font-size: 16px;
-      line-height: 21px; }
+      font-family: SourceSansPro-Regular, Arial, Helvetica, sans-serif;
+      font-size: 18px;
+      line-height: 21px;
+      margin-bottom: 20px; }
     .homeContentBlock .halfBleedSection a {
       font-family: SourceSansPro-Bold, Arial, Helvetica, sans-serif;
-      font-size: 16px;
-      line-height: 20px;
+      font-size: 14px;
+      line-height: 24px;
       text-transform: uppercase; }
       .homeContentBlock .halfBleedSection a::after {
         font-family: "icomoon";
         content: "\E909";
         font-size: 0.675rem;
         margin-left: 10px; }
-  .homeContentBlock .hb-1 {
-    background: url("https://www2.arccorp.com/globalassets/homepage/redesign/Content_Block01.jpg") center center no-repeat;
-    background-size: cover; }
-  .homeContentBlock .hb-2 {
-    background: url("https://www2.arccorp.com/globalassets/homepage/redesign/Content_Block02.jpg") center center no-repeat;
-    background-size: cover; }
 
 .home-page .page-grid__row .content-block--pageItem.featuredLatest.featuredLatest-custom .featuredLatestImage {
   background: #000000; }
@@ -9567,7 +9599,7 @@ footer .footer-links-social li a.icon-iso_logo {
 @media screen and (min-width: 960px) {
   .home-page .homePageGrid .page-grid__content {
     padding: 40px 0 20px;
-    max-width: 1350px; } }
+    max-width: 1170px; } }
 
 @media screen and (min-width: 901px) {
   .supernav .supernav-mobile-menu {
@@ -9609,13 +9641,17 @@ footer .footer-links-social li a.icon-iso_logo {
   .home-page .page-grid__row .content-block--pageItem {
     position: relative;
     width: auto;
-    max-width: 380px;
+    max-width: 300px;
     background: none;
     padding: 0 !important;
-    min-height: 515px; }
+    min-height: 425px;
+    margin-right: 30px;
+    background: #f7f5f5; }
+  .home-page .page-grid__row .content-block--pageItem__title {
+    padding: 35px 15px 0px; }
   .home-page .page-grid__row .content-block--pageItem.featuredLatest {
     position: relative;
-    width: 280px;
+    width: 270px;
     margin-right: 21px;
     margin-left: 21px; }
     .home-page .page-grid__row .content-block--pageItem.featuredLatest img {
@@ -9628,9 +9664,9 @@ footer .footer-links-social li a.icon-iso_logo {
 .content-block--pageItem
 .content-block--pageItem__inside {
     padding-top: 0;
-    max-width: 280px;
+    max-width: 270px;
     padding: 0 !important;
-    margin: 0 21px; } }
+    margin: 0; } }
 
 @media screen and (max-width: 960px) {
   .home-page .page-grid__row .content-block--pageItem {
@@ -9784,6 +9820,18 @@ footer .footer-links-social li a.icon-iso_logo {
 
 .bg-color-midgray {
   background: #2a2b30 !important; }
+
+.type-color-fog {
+  color: #f7f5f5 !important; }
+
+.bg-color-fog {
+  background: #f7f5f5 !important; }
+
+.type-color-tarmac {
+  color: #2a2b2c !important; }
+
+.bg-color-tarmac {
+  background: #2a2b2c !important; }
 
 html {
   scroll-behavior: smooth; }
@@ -10167,10 +10215,11 @@ a.ctaBtn.product-cta {
   padding-bottom: 150px; }
 
 .callout-box-container {
-  padding-top: 70px;
-  padding-bottom: 30px; }
+  padding-top: 80px; }
   .callout-box-container.dark {
     background: #2a2b30; }
+  .callout-box-container .container {
+    max-width: 1200px; }
 
 .callout-box {
   padding: 60px;
@@ -10179,6 +10228,12 @@ a.ctaBtn.product-cta {
 .callout-box.teal {
   color: #ffffff;
   background: #189bb0; }
+
+.callout-box.white-outline {
+  color: #ffffff;
+  border: 5px solid #ffffff; }
+  .callout-box.white-outline .ctaBtn--white.product-cta {
+    color: #2a2b2c !important; }
 
 .callout-box-eyebrow {
   font-family: SourceSansPro-Regular, Arial, Helvetica, sans-serif;
@@ -10271,7 +10326,7 @@ a.product-sticky-link-right {
   a.product-sticky-link-right:active,
   a.product-sticky-link-right:focus {
     color: #ffffff;
-    opacity: .9; }
+    opacity: 0.9; }
 
 a.product-sticky-link-right,
 a.product-sticky-link-right:active,
@@ -10348,6 +10403,10 @@ a.product-sticky-link-right svg {
 @media screen and (min-width: 768px) {
   .jumbotron {
     margin-top: 0; } }
+
+@media (min-width: 1201px) {
+  .callout-box-container .container {
+    max-width: 1200px; } }
 
 .ss-container {
   border-top: 1px solid #898790;

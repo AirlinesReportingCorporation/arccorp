@@ -1,3 +1,5 @@
+@import "./block-utilities";
+
 .related-content [data-aux-label="Hide"] {
   display: none;
 }
@@ -692,8 +694,8 @@ footer .footer-links-social li a.icon-iso_logo {
       z-index: 3;
 
       p {
-        font-family: SourceSansPro-Regular, "SourceSansPro-Regular", helvetica, arial,
-          sans-serif;
+        font-family: SourceSansPro-Regular, "SourceSansPro-Regular", helvetica,
+          arial, sans-serif;
         font-size: 1.125rem;
         line-height: 1.5rem;
         margin-bottom: 60px;
@@ -1517,9 +1519,9 @@ footer .footer-links-social li a.icon-iso_logo {
 
     .read-more {
       position: absolute;
-      bottom: 0;
-      margin-top: 10px;
-      left: 21px;
+      bottom: 30px;
+      left: 15px;
+      color: #189bb0;
 
       a {
         font-family: SourceSansPro-SemiBold, helvetica, arial, sans-serif;
@@ -1540,10 +1542,9 @@ footer .footer-links-social li a.icon-iso_logo {
     }
 
     .owl-carousel .owl-dots {
-      background: #d6d6d6;
+      //background: #d6d6d6;
       bottom: 0;
-      height: 6px;
-      margin-left: 21px;
+      height: 4px;
 
       .owl-dot span {
         margin: 0 7px 0 0;
@@ -1551,13 +1552,7 @@ footer .footer-links-social li a.icon-iso_logo {
     }
 
     .owl-carousel .owl-nav {
-      display: table;
-      z-index: 30;
-      width: 100%;
-      right: 0;
-      left: auto;
-      top: 48%;
-      pointer-events: none;
+      display: none;
     }
 
     .owl-carousel .owl-next,
@@ -1667,8 +1662,12 @@ footer .footer-links-social li a.icon-iso_logo {
       img {
         display: block;
         width: 100%;
-        margin-bottom: 20px;
+        margin-bottom: 0px;
       }
+    }
+
+    .content-block--pageItem__body {
+      display: none;
     }
 
     .ctaLink {
@@ -1916,7 +1915,7 @@ footer .footer-links-social li a.icon-iso_logo {
     background: url("https://www2.arccorp.com/globalassets/homepage/ourdata.jpg")
       top center no-repeat;
     background-size: cover;
-    color: #ffffff;
+    color: $tarmac;
     padding: 120px 0;
     position: relative;
     overflow: hidden;
@@ -1929,10 +1928,16 @@ footer .footer-links-social li a.icon-iso_logo {
     }
 
     h2 {
-      color: #ffffff;
-      font-family: Roboto-Slab, SourceSansPro-Regular, helvetica, arial,
-        sans-serif;
+      color: $tarmac;
+      font-family: SourceSansPro-Bold, helvetica, arial, sans-serif;
       font-size: 3rem;
+      margin-bottom: 30px;
+      line-height: 1;
+    }
+
+    p {
+      font-family: SourceSansPro-Regular, helvetica, arial, sans-serif;
+      margin-bottom: 30px;
     }
 
     .blockText {
@@ -1940,6 +1945,10 @@ footer .footer-links-social li a.icon-iso_logo {
       margin: 0 auto;
       position: relative;
       z-index: 3;
+    }
+
+    .ctaBtn--main {
+      margin: 0;
     }
 
     .ctaBtn.ctaBtn--secondaryOnImage {
@@ -2080,41 +2089,43 @@ footer .footer-links-social li a.icon-iso_logo {
 }
 
 .homeContentBlock {
-  max-width: 1350px;
-  margin: 40px auto 0;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 80px 0;
+
   .row {
     max-width: 100%;
   }
 
   .halfBleedSection {
+    background: $fog;
     display: flex;
     flex-direction: column;
     justify-content: center;
-    height: 550px;
-    padding: 180px 50px;
-    color: #ffffff;
+    height: 270px;
+    padding: 50px;
+    color: $tarmac;
     text-align: center;
-    margin-bottom: 40px;
-    margin-left: 20px;
 
     h2 {
-      font-family: SourceSansPro-Regular, Arial, Helvetica, sans-serif;
-      font-size: 48px;
-      line-height: 50px;
-      color: #ffffff;
+      font-family: SourceSansPro-Bold, Arial, Helvetica, sans-serif;
+      font-size: 30px;
+      line-height: 34px;
+      color: $tarmac;
       margin-bottom: 15px;
     }
 
     p {
-      font-family: RobotoSlab-Light, Arial, Helvetica, sans-serif;
-      font-size: 16px;
+      font-family: SourceSansPro-Regular, Arial, Helvetica, sans-serif;
+      font-size: 18px;
       line-height: 21px;
+      margin-bottom: 20px;
     }
 
     a {
       font-family: SourceSansPro-Bold, Arial, Helvetica, sans-serif;
-      font-size: 16px;
-      line-height: 20px;
+      font-size: 14px;
+      line-height: 24px;
       text-transform: uppercase;
       &::after {
         font-family: "icomoon";
@@ -2123,18 +2134,6 @@ footer .footer-links-social li a.icon-iso_logo {
         margin-left: 10px;
       }
     }
-  }
-
-  .hb-1 {
-    background: url("https://www2.arccorp.com/globalassets/homepage/redesign/Content_Block01.jpg")
-      center center no-repeat;
-    background-size: cover;
-  }
-
-  .hb-2 {
-    background: url("https://www2.arccorp.com/globalassets/homepage/redesign/Content_Block02.jpg")
-      center center no-repeat;
-    background-size: cover;
   }
 }
 
@@ -2307,7 +2306,7 @@ footer .footer-links-social li a.icon-iso_logo {
 @media screen and (min-width: 960px) {
   .home-page .homePageGrid .page-grid__content {
     padding: 40px 0 20px;
-    max-width: 1350px;
+    max-width: 1170px;
   }
 }
 @media screen and (min-width: 901px) {
@@ -2370,15 +2369,22 @@ footer .footer-links-social li a.icon-iso_logo {
   .home-page .page-grid__row .content-block--pageItem {
     position: relative;
     width: auto;
-    max-width: 380px;
+    max-width: 300px;
     background: none;
     padding: 0 !important;
-    min-height: 515px;
+    min-height: 425px;
+    //margin: 0 15px;
+    margin-right: 30px;
+    background: $fog;
+  }
+
+  .home-page .page-grid__row .content-block--pageItem__title {
+    padding: 35px 15px 0px;
   }
 
   .home-page .page-grid__row .content-block--pageItem.featuredLatest {
     position: relative;
-    width: 280px;
+    width: 270px;
     margin-right: 21px;
     margin-left: 21px;
 
@@ -2397,9 +2403,9 @@ footer .footer-links-social li a.icon-iso_logo {
     .content-block--pageItem
     .content-block--pageItem__inside {
     padding-top: 0;
-    max-width: 280px;
+    max-width: 270px;
     padding: 0 !important;
-    margin: 0 21px;
+    margin: 0;
   }
 }
 @media screen and (max-width: 960px) {
@@ -2420,7 +2426,6 @@ footer .footer-links-social li a.icon-iso_logo {
   }
 }
 @media screen and (max-width: 768px) {
-
   .home-page .owl-jumbotron .owl-dots {
     display: none;
   }

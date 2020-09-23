@@ -160,7 +160,6 @@ function generateHomepage() {
   latestData.latestFirst = featuredPost;
 
   var maxLoad = 6;
-  //var maxLoad = $(".latestGrid .content-block--pageItem").length;
 
   for (var i = 0; i < maxLoad; i++) {
     var postFirst = $(".latestGrid .content-block--pageItem").eq(i);
@@ -234,7 +233,6 @@ function generateFeatured() {
       .eq(0)
       .text();
     if (tags.indexOf(filter) > -1 && latestData.featuredData.length < 6) {
-      console.log(index);
       latestData.featuredData.push(setPostData(post));
     }
   });
@@ -252,7 +250,6 @@ function generateRecommended() {
       .eq(0)
       .text();
     if (tags.indexOf(filter) > -1 && latestData.recommendedData.length < 6) {
-      console.log(index);
       latestData.recommendedData.push(setPostData(post));
     }
   });
@@ -402,7 +399,7 @@ jQuery
       }
     }
 
-    console.log(tweetObjs);
+    //console.log(tweetObjs);
 
     for (var i = 0; i < 4; i++) {
       var imageURL = tweetObjs[i].entities.media[0].media_url_https;

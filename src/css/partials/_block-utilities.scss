@@ -2,9 +2,11 @@ $teal: #189bb0;
 $productgray: #868b8c;
 $midgray: #2a2b30;
 $white: #ffffff;
+$fog: #f7f5f5;
+$tarmac: #2a2b2c;
 
 $brand-colors: ("product-lightgray", $productgray), ("white", $white),
-  ("teal", $teal), ("midgray", $midgray);
+  ("teal", $teal), ("midgray", $midgray), ("fog", $fog), ("tarmac", $tarmac);
 
 @each $color in $brand-colors {
   &.type-color-#{nth($color,1)} {
