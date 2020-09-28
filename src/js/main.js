@@ -246,7 +246,7 @@ function latestSliderInit() {
       },
       navText: [
         '<img src="https://www2.arccorp.com/globalassets/homepage/redesign/latestArrowLeft.png">',
-        '<img src="https://www2.arccorp.com/globalassets/homepage/redesign/latestArrowRight.png">'
+        'More'
       ]
     });
   });

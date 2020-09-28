@@ -8973,7 +8973,7 @@ footer .footer-links-social li a.icon-iso_logo {
     .home-page .owl-carousel .slide-white .carousel-slide-content .block-header {
       text-align: left;
       color: #ffffff;
-      font-size: 3rem;
+      font-size: 4rem;
       margin-bottom: 10px; }
   .home-page .owl-carousel .slide-black .carousel-slide-content {
     vertical-align: middle;
@@ -8982,7 +8982,7 @@ footer .footer-links-social li a.icon-iso_logo {
     .home-page .owl-carousel .slide-black .carousel-slide-content .block-header {
       text-align: left;
       color: #222222;
-      font-size: 3rem;
+      font-size: 4rem;
       margin-bottom: 10px; }
   .home-page .owl-carousel .owl-dots {
     position: absolute;
@@ -8994,7 +8994,7 @@ footer .footer-links-social li a.icon-iso_logo {
     color: #565350;
     border-radius: 0;
     width: 40px;
-    height: 6px;
+    height: 4px;
     margin: 5px 7px 5px 0; }
   .home-page .owl-carousel.owl-theme .owl-dots .owl-dot.active span,
   .home-page .owl-carousel .owl-theme .owl-dots .owl-dot:hover span {
@@ -9079,7 +9079,7 @@ footer .footer-links-social li a.icon-iso_logo {
 
 .home-page .homePageGrid {
   background: #ffffff;
-  padding-bottom: 45px;
+  padding-bottom: 60px;
   /* carousel */ }
   .home-page .homePageGrid .page-grid__content {
     max-height: 700px; }
@@ -9091,9 +9091,10 @@ footer .footer-links-social li a.icon-iso_logo {
     bottom: 30px;
     left: 15px;
     color: #189bb0;
+    font-size: 14px;
     color: #189bb0; }
     .home-page .homePageGrid .read-more a {
-      font-family: SourceSansPro-SemiBold, helvetica, arial, sans-serif;
+      font-family: SourceSansPro-Bold, helvetica, arial, sans-serif;
       text-transform: uppercase; }
     .home-page .homePageGrid .read-more::after {
       font-family: "icomoon";
@@ -9107,7 +9108,7 @@ footer .footer-links-social li a.icon-iso_logo {
     height: 4px; }
     .home-page .homePageGrid .owl-carousel .owl-dots .owl-dot span {
       margin: 0 7px 0 0; }
-  .home-page .homePageGrid .owl-carousel .owl-nav {
+  .home-page .homePageGrid .owl-carousel .owl-prev {
     display: none; }
   .home-page .homePageGrid .owl-carousel .owl-next,
   .home-page .homePageGrid .owl-carousel .owl-prev {
@@ -9117,6 +9118,19 @@ footer .footer-links-social li a.icon-iso_logo {
     pointer-events: all; }
   .home-page .homePageGrid .owl-carousel .owl-prev {
     margin-left: 10px; }
+  .home-page .homePageGrid .owl-carousel .owl-next {
+    margin-top: 25px;
+    box-shadow: none;
+    color: #1a9cb1;
+    font-size: 14px;
+    margin-right: 0;
+    text-transform: uppercase;
+    font-family: SourceSansPro-Bold, Arial, Sans-serif; }
+    .home-page .homePageGrid .owl-carousel .owl-next:after {
+      font-family: "icomoon";
+      content: "\E909";
+      font-size: 0.675rem;
+      margin-left: 10px; }
   .home-page .homePageGrid .page-grid__content {
     background: #ffffff;
     position: relative; }
@@ -9150,8 +9164,8 @@ footer .footer-links-social li a.icon-iso_logo {
     background: none;
     color: #189bb0;
     border: none;
-    margin-top: 30px;
-    padding-right: 0; }
+    margin-top: 60px;
+    padding: 0; }
     .home-page .homePageGrid a.ctaBtn.ctaBtn--main::after {
       font-family: "icomoon";
       content: "\E909";
@@ -9453,6 +9467,8 @@ footer .footer-links-social li a.icon-iso_logo {
   padding: 80px 0; }
   .homeContentBlock .row {
     max-width: 100%; }
+  .homeContentBlock .img-full {
+    width: 100%; }
   .homeContentBlock .halfBleedSection {
     background: #f7f5f5;
     display: flex;
@@ -9598,7 +9614,7 @@ footer .footer-links-social li a.icon-iso_logo {
 
 @media screen and (min-width: 960px) {
   .home-page .homePageGrid .page-grid__content {
-    padding: 40px 0 20px;
+    padding: 60px 0;
     max-width: 1170px; } }
 
 @media screen and (min-width: 901px) {
@@ -9635,9 +9651,10 @@ footer .footer-links-social li a.icon-iso_logo {
     background: #189bb0; }
   .home-page .homePageGrid.page-grid .block-header {
     text-align: left;
-    margin-left: 20px;
-    font-size: 1.7rem;
-    margin-bottom: 40px; }
+    font-size: 30px;
+    margin-bottom: 60px;
+    font-family: SourceSansPro-SemiBold, Arial, Helvetica, sans-serif;
+    margin-left: 0; }
   .home-page .page-grid__row .content-block--pageItem {
     position: relative;
     width: auto;
