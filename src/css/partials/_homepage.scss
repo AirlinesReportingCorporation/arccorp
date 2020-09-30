@@ -363,7 +363,7 @@ footer .footer-links-social li a.icon-iso_logo {
   position: relative;
   padding: 15px 15px;
   text-align: center;
-  background: #232038;
+  background: $tarmac;
 
   .supernav-alert-inner {
     margin: 0 auto;
@@ -380,10 +380,10 @@ footer .footer-links-social li a.icon-iso_logo {
     display: block;
     span {
       font-family: SourceSansPro-Bold, Arial, Helvetica, sans-serif;
-      color: #ed3d71;
+      color: $lightTeal;
     }
     i {
-      color: #ed3d71;
+      color: $lightTeal;
       margin-right: 5px;
     }
     svg {
@@ -635,8 +635,8 @@ footer .footer-links-social li a.icon-iso_logo {
   .ctaBtn {
     min-width: auto;
     min-height: auto;
-    padding-top: 0.8rem;
-    padding-bottom: 0.8rem;
+    padding-top: 0.7rem;
+    padding-bottom: 0.7rem;
   }
 
   .row {
@@ -672,14 +672,11 @@ footer .footer-links-social li a.icon-iso_logo {
       color: #ffffff;
       font-family: SourceSansPro-Regular, helvetica, arial, sans-serif;
       padding: 0;
-      height: 550px;
+      height: 680px;
       vertical-align: middle;
       max-width: 1170px;
       width: 100%;
       a.ctaBtn.ctaBtn--main {
-        font-size: 16px;
-        line-height: 20px;
-        padding: 17px 25px;
         margin-top: 0;
       }
     }
@@ -698,7 +695,7 @@ footer .footer-links-social li a.icon-iso_logo {
           arial, sans-serif;
         font-size: 1.125rem;
         line-height: 1.5rem;
-        margin-bottom: 60px;
+        margin-bottom: 38px;
       }
     }
 
@@ -1355,7 +1352,7 @@ footer .footer-links-social li a.icon-iso_logo {
           text-align: left;
           color: #ffffff;
           font-size: 4rem;
-          margin-bottom: 10px;
+          margin-bottom: 38px;
         }
       }
     }
@@ -1370,7 +1367,7 @@ footer .footer-links-social li a.icon-iso_logo {
           text-align: left;
           color: #222222;
           font-size: 4rem;
-          margin-bottom: 10px;
+          margin-bottom: 38px;
         }
       }
     }
@@ -1387,7 +1384,7 @@ footer .footer-links-social li a.icon-iso_logo {
       color: #565350;
       border-radius: 0;
       width: 40px;
-      height: 4px;
+      height: 3px;
       margin: 5px 7px 5px 0;
     }
 
@@ -1545,7 +1542,7 @@ footer .footer-links-social li a.icon-iso_logo {
     .owl-carousel .owl-dots {
       //background: #d6d6d6;
       bottom: 0;
-      height: 4px;
+      height: 3px;
 
       .owl-dot span {
         margin: 0 7px 0 0;
@@ -2226,7 +2223,7 @@ footer .footer-links-social li a.icon-iso_logo {
   &:after {
     margin: 40px 0;
     width: 115px;
-    height: 4px;
+    height: 3px;
     background: #189bb0;
     font-family: SourceSansPro-SemiBold, Arial, Helvetica, sans-serif;
   }
@@ -2326,7 +2323,7 @@ footer .footer-links-social li a.icon-iso_logo {
 }
 @media screen and (min-width: 960px) {
   .home-page .homePageGrid .page-grid__content {
-    padding: 60px 0;
+    padding: 60px 0 40px;
     max-width: 1170px;
   }
 }
@@ -2377,6 +2374,7 @@ footer .footer-links-social li a.icon-iso_logo {
 }
 @media screen and (min-width: 768px) {
   footer .border-image {
+    height: 3px;
     background: #189bb0;
   }
 
@@ -2401,7 +2399,7 @@ footer .footer-links-social li a.icon-iso_logo {
   }
 
   .home-page .page-grid__row .content-block--pageItem__title {
-    padding: 35px 15px 0px;
+    padding: 38px 20px 0px;
   }
 
   .home-page .page-grid__row .content-block--pageItem.featuredLatest {
@@ -2461,7 +2459,7 @@ footer .footer-links-social li a.icon-iso_logo {
   }
 
   .home-page .owl-carousel .carousel-slide {
-    height: 550px !important;
+    height: 680px !important;
 
     .carousel-slide-content {
       padding-top: 30px !important;
