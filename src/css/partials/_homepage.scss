@@ -16,6 +16,18 @@ footer {
   background: #282828;
 }
 
+footer .rtf .footer-rtf-links {
+  display: block;
+  margin: 10px 10px 0 0;
+}
+
+footer .rtf .footer-rtf-links a {
+  margin-right: 15px;
+  &:before {
+    display: none;
+  }
+}
+
 footer .footer-links-social li a.icon-youtube:before {
   margin-left: -11px;
 }
@@ -635,8 +647,8 @@ footer .footer-links-social li a.icon-iso_logo {
   .ctaBtn {
     min-width: auto;
     min-height: auto;
-    padding-top: 0.7rem;
-    padding-bottom: 0.7rem;
+    padding-top: 0.7rem !important;
+    padding-bottom: 0.7rem !important;
   }
 
   .row {
@@ -1930,7 +1942,7 @@ footer .footer-links-social li a.icon-iso_logo {
       top center no-repeat;
     background-size: cover;
     color: $tarmac;
-    padding: 120px 0;
+    padding: 160px 0;
     position: relative;
     overflow: hidden;
 
