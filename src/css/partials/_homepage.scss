@@ -686,7 +686,7 @@ footer .footer-links-social li a.icon-iso_logo {
       padding: 0;
       height: 680px;
       vertical-align: middle;
-      max-width: 1170px;
+      max-width: 1200px;
       width: 100%;
       a.ctaBtn.ctaBtn--main {
         margin-top: 0;
@@ -1361,6 +1361,7 @@ footer .footer-links-social li a.icon-iso_logo {
         color: #ffffff;
 
         .block-header {
+          font-family: SourceSansPro-Bold, Arial, Helvetica, sans-serif;
           text-align: left;
           color: #ffffff;
           font-size: 4rem;
@@ -1376,6 +1377,7 @@ footer .footer-links-social li a.icon-iso_logo {
         color: #222222;
 
         .block-header {
+          font-family: SourceSansPro-Bold, Arial, Helvetica, sans-serif;
           text-align: left;
           color: #222222;
           font-size: 4rem;
@@ -1529,7 +1531,7 @@ footer .footer-links-social li a.icon-iso_logo {
     .read-more {
       position: absolute;
       bottom: 30px;
-      left: 15px;
+      left: 20px;
       color: #189bb0;
       font-size: 14px;
 
@@ -1690,10 +1692,6 @@ footer .footer-links-social li a.icon-iso_logo {
         width: 100%;
         margin-bottom: 0px;
       }
-    }
-
-    .content-block--pageItem__body {
-      display: none;
     }
 
     .ctaLink {
@@ -2384,6 +2382,7 @@ footer .footer-links-social li a.icon-iso_logo {
     max-width: 100%;
   }
 }
+
 @media screen and (min-width: 768px) {
   footer .border-image {
     height: 3px;
@@ -2405,13 +2404,16 @@ footer .footer-links-social li a.icon-iso_logo {
     background: none;
     padding: 0 !important;
     min-height: 425px;
-    //margin: 0 15px;
     margin-right: 30px;
     background: $fog;
   }
 
   .home-page .page-grid__row .content-block--pageItem__title {
     padding: 38px 20px 0px;
+  }
+
+  .page-grid .content-block--pageItem__body {
+    display: none;
   }
 
   .home-page .page-grid__row .content-block--pageItem.featuredLatest {
@@ -2456,6 +2458,78 @@ footer .footer-links-social li a.icon-iso_logo {
   .home-page .homePageGrid a.ctaBtn.ctaBtn--main {
     top: 0;
   }
+
+  .home-page .page-grid__row .content-block--pageItem {
+    width: auto;
+  }
+
+  .home-page .homePageGrid .content-block--pageItem__inside img {
+    max-width: 270px;
+    margin: 0 auto;
+  }
+
+  .home-page .homePageGrid .latestArrowLeft,
+  .home-page .homePageGrid .latestArrowRight {
+    display: none;
+  }
+
+  .home-page .content-block--pageItem__body {
+    display: none;
+    overflow: visible;
+  }
+
+  .home-page .page-grid .content-block--pageItem.featuredLatest {
+    display: none;
+  }
+
+  .home-page .page-grid .content-block--pageItem {
+    display: block;
+    border: none;
+    border-bottom: 1px solid #dddddd;
+    min-height: 1px;
+    max-width: 100%;
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .home-page .homePageGrid .page-grid__content {
+    max-height: none;
+  }
+
+  .home-page
+    .page-grid--centerItemText
+    .content-block--pageItem
+    .content-block--pageItem__inside {
+    min-height: auto !important;
+    max-width: 100%;
+  }
+
+  .homePageGrid .read-more {
+    display: none;
+  }
+
+  .home-page .page-grid__row .content-block--pageItem__title {
+    padding: 0;
+  }
+
+  .home-page .page-grid__row .content-block--pageItem__title a {
+    max-width: 270px;
+    margin: 15px auto 15px;
+    display: block;
+  }
+  .home-page .homePageGrid .read-more {
+    display: block;
+    position: relative;
+    left: auto;
+    bottom: auto;
+    max-width: 270px;
+    margin: 0 auto 15px;
+  }
+
+  .home-page .page-grid .content-block--pageItem {
+    background: transparent;
+  }
 }
 @media screen and (max-width: 768px) {
   .home-page .owl-jumbotron .owl-dots {
@@ -2466,9 +2540,7 @@ footer .footer-links-social li a.icon-iso_logo {
     display: block;
   }
 
-  .homePageGrid .read-more {
-    display: none;
-  }
+  
 
   .home-page .owl-carousel .carousel-slide {
     height: 680px !important;
@@ -2554,50 +2626,7 @@ footer .footer-links-social li a.icon-iso_logo {
     text-align: center !important;
   }
 
-  .home-page .page-grid__row .content-block--pageItem {
-    width: auto;
-  }
-
-  .home-page .homePageGrid .content-block--pageItem__inside img {
-    display: none;
-  }
-
-  .home-page .homePageGrid .latestArrowLeft,
-  .home-page .homePageGrid .latestArrowRight {
-    display: none;
-  }
-
-  .home-page .content-block--pageItem__body {
-    display: block;
-    overflow: visible;
-  }
-
-  .home-page .page-grid .content-block--pageItem.featuredLatest {
-    display: none;
-  }
-
-  .home-page .page-grid .content-block--pageItem {
-    display: block;
-    border: none;
-    border-bottom: 1px solid #dddddd;
-    min-height: 1px;
-    max-width: 100%;
-    width: 100%;
-    margin-left: auto;
-    margin-right: auto;
-  }
-
-  .home-page
-    .page-grid--centerItemText
-    .content-block--pageItem
-    .content-block--pageItem__inside {
-    min-height: auto !important;
-    max-width: 100%;
-  }
-
-  .home-page .content-block--pageItem__title {
-    text-decoration: underline;
-  }
+  
 
   .home-page .homePageGrid a.ctaBtn.ctaBtn--main {
     top: 0;

@@ -230,13 +230,13 @@ function latestSliderInit() {
     $(".page-grid__items.page-grid__items--expanded").owlCarousel({
       loop: true,
       dots: true,
-      items: 1,
       smartSpeed: 1450,
+      responsiveClass: true,
       responsive: {
         0: {
           items: 1
         },
-        600: {
+        960: {
           items: 1
         },
         1000: {
