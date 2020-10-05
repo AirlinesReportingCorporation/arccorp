@@ -9679,7 +9679,7 @@ footer .footer-links-social li a.icon-iso_logo {
     background: #f7f5f5; }
   .home-page .page-grid__row .content-block--pageItem__title {
     padding: 38px 20px 0px; }
-  .page-grid .content-block--pageItem__body {
+  .home-page .page-grid .content-block--pageItem__body {
     display: none; }
   .home-page .page-grid__row .content-block--pageItem.featuredLatest {
     position: relative;
