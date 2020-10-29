@@ -10,7 +10,8 @@ const extractSass = new MiniCssExtractPlugin({
 module.exports = {
   entry: {
     main: "./src/js/main.js",
-    blog: "./src/js/blog.js"
+    blog: "./src/js/blog.js",
+    webinar: "./src/js/webinar.js"
   },
   output: {
     filename: "[name].min.js",

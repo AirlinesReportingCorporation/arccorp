@@ -12,20 +12,6 @@ Vue.use(VueLazyload);
 var latestData = {
   currentPage: "home",
   filterName: "home",
-  filterDescriptions: {
-    Innovation:
-      "ARC actively explores new approaches to technology, data, payments and distribution, delivering a return on innovation to the global air travel community.",
-    Distribution:
-      "ARC helps airlines and travel agencies connect, grow and thrive by delivering flexible distribution solutions.",
-    Data:
-      "ARC delivers actionable insights that leverage the world’s most comprehensive air transaction data, which represents more than 2.7 billion passenger flights per year",
-    Connection:
-      "As an industry connector, ARC generates collaboration, efficiencies and relationship-building across the global air travel community.",
-    Research:
-      "ARC partners with trusted organizations to conduct research on traveler trends, emerging technology, purchasing behaviors and airline distribution.",
-    Case_Studies:
-      "See how ARC’s distribution solutions help accelerate growth for airlines, travel agencies and a variety of other businesses."
-  },
   homepageData: [],
   homepageMoreIndex: 0,
   filterMoreIndex: 6,
