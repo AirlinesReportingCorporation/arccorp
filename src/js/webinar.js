@@ -21,7 +21,7 @@ var data = {
     "During this webinar, ARC’s revenue integrity and payments experts will share data on fraud trends they have seen so far in 2020, including insights specific to the COVID-19 pandemic.",
   jumboButtonText: "Watch Now",
   jumboImg:
-    "https://www2.arccorp.com/globalassets/homepage/redesign/slides/snowflake.jpg",
+    "https://www2.arccorp.com/globalassets/homepage/redesign/slides/carousel16.jpg",
   featuredList: [
     "Closing the Loop: Managing Travel Fraud in Chaotic Times",
     "The Battle Against Fraud: Payment Managers",
