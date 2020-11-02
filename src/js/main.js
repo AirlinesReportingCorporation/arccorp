@@ -744,8 +744,22 @@ function newsRelease() {
   }
 }
 
+function webinarPages() {
+  if ($(".btn--link.parentLink")) {
+    if (
+      $(".btn--link.parentLink")
+        .text()
+        .indexOf("On-Demand Webinars") > -1
+    ) {
+      $("body").addClass("webinarPageLayout");
+
+    }
+  }
+}
+
 //style with new news release
 newsRelease();
+webinarPages();
 
 //rewriting simple foundation scripts for speed
 //tabbedPanel();

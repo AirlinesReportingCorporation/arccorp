@@ -468,11 +468,19 @@
     margin-right: 0;
   }
 
+  .latestArticleImg {
+    display: flex;
+    height: 217px;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+  }
+
+  
+
   .latestArticle img {
     min-width: 380px;
-    margin-top: 15px;
     max-height: 217px;
-    background: black;
   }
 
   .row.no-gutter [class*="col-"],

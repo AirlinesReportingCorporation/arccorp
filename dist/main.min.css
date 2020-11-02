@@ -9554,42 +9554,55 @@ footer .footer-links-social li a.icon-iso_logo {
     font-size: 0.675rem;
     margin-left: 10px; }
 
-.article--headline {
-  text-align: left; }
-
-.article--headline .parentLink {
-  font-size: 18px;
-  line-height: 23px; }
-
-.article--headline .mainTitle {
+.article--headline .mainTitle,
+.page--headline .mainTitle,
+.page--headline .mainTitle--withSpacer {
   font-family: SourceSansPro-Bold, Arial, Helvetica, sans-serif; }
-  .article--headline .mainTitle:after {
+  .article--headline .mainTitle:after,
+  .page--headline .mainTitle:after,
+  .page--headline .mainTitle--withSpacer:after {
     margin: 40px 0;
     width: 115px;
     height: 3px;
     background: #189bb0;
     font-family: SourceSansPro-SemiBold, Arial, Helvetica, sans-serif; }
 
-.article-body .basic-text-inside {
+.article-body .basic-text-inside, .webinarPageLayout .basic-text-inside {
   font-size: 21px;
   line-height: 36px;
   color: #6c6c6c; }
-  .article-body .basic-text-inside p {
+  .article-body .basic-text-inside p, .webinarPageLayout .basic-text-inside p {
     font-size: 21px;
     line-height: 36px; }
 
-.article--headline .author-byline {
-  text-align: left; }
+.webinarPageLayout .byline {
+  display: none; }
 
-.article--headline .metadata li {
-  font-size: 16px; }
+.article--headline,
+.page--headline {
+  text-align: left; }
+  .article--headline .author-byline,
+  .page--headline .author-byline {
+    text-align: left; }
+  .article--headline .metadata li,
+  .page--headline .metadata li {
+    font-size: 16px; }
+  .article--headline .parentLink,
+  .page--headline .parentLink {
+    font-size: 18px;
+    line-height: 23px; }
+
+.page--headline__content {
+  max-width: 960px; }
 
 @media screen and (min-width: 768px) {
-  .article--headline .mainTitle {
+  .article--headline .mainTitle,
+  .page--headline .mainTitle--withSpacer {
     font-size: 60px; }
   .basic-text .basic-text-inside {
     padding: 2rem 0; }
-  .article--headline {
+  .article--headline,
+  .page--headline {
     margin-top: 50px; } }
 
 @media screen and (max-width: 1365px) {
@@ -10889,11 +10902,15 @@ a.product-sticky-link-right svg {
   .on-demand-webinar .row.no-gutter {
     margin-left: 0;
     margin-right: 0; }
+  .on-demand-webinar .latestArticleImg {
+    display: flex;
+    height: 217px;
+    align-content: center;
+    justify-content: center;
+    align-items: center; }
   .on-demand-webinar .latestArticle img {
     min-width: 380px;
-    margin-top: 15px;
-    max-height: 217px;
-    background: black; }
+    max-height: 217px; }
   .on-demand-webinar .row.no-gutter [class*="col-"],
   .on-demand-webinar .row.no-gutter [class*="col-"] {
     padding-right: 0;

@@ -5,13 +5,17 @@ import "intersection-observer";
 import Vue from "vue";
 import VueLazyload from "vue-lazyload";
 
-Vue.use(VueLazyload);
+// or with options
+Vue.use(VueLazyload, {
+  preLoad: 1.3,
+  attempt: 1
+})
 
 var data = {
   jumboTitle:
     "What Travel Professionals Need to Know About Fraud During COVID-19",
   jumboLink:
-    "https://www2.arccorp.com/articles-trends/on-demand-webinars/2020-webinars/webinar-090920/",
+    "https://www2.arccorp.com/articles-trends/on-demand-webinars/2020-webinars/webinar-090920/?utm_source=OnDemand_Jumbo",
   jumboTags: ["Agent / Airline Webinar"],
   jumboDescription:
     "During this webinar, ARC’s revenue integrity and payments experts will share data on fraud trends they have seen so far in 2020, including insights specific to the COVID-19 pandemic.",
@@ -19,19 +23,19 @@ var data = {
   jumboImg:
     "https://www2.arccorp.com/globalassets/homepage/redesign/slides/snowflake.jpg",
   featuredList: [
-    "The Battle Against Fraud",
-    "What Travel Professionals ",
-    "Closing the Loop: Managing Travel Fraud in Chaotic Times"
+    "Closing the Loop: Managing Travel Fraud in Chaotic Times",
+    "The Battle Against Fraud: Payment Managers",
+    "Global Travel Fraud Trends to Watch"
   ],
   recommendList: [
-    "COVID-19 and Trends in Payments",
-    "How OTAs Can Prevent Costly Chargebacks",
-    "Talk NDC with British Airways"
+    "An Overview and Demo of the",
+    "Spotlight on NDC",
+    "Overview - Agencies"
   ],
   mostViewedList: [
-    "How Fraudsters Target Travel Agents",
-    "Expert Panel: The True Cost of Fraud to Travel Agents",
-    "What Travel Agencies Need to Know About Debit Memos"
+    "An Introduction to ONE Order",
+    "Staying Vigilant: How to Combat Fraud During COVID-19",
+    "Talk NDC with British Airways"
   ],
   homepageMoreIndex: 0,
   archiveLength: 0,
@@ -44,7 +48,9 @@ var data = {
   mostViewedData: []
 };
 
-function setPostData(el) {
+function setPostData(el, param) {
+  param = param || 0;
+
   var parentGrid = el
     .parent()
     .parent()
@@ -99,20 +105,31 @@ function setPostData(el) {
   post.postTags = postTagsFinal;
 
   //getimageUrl
-
   var link = el.find(".content-block--pageItem__title a").prop("href");
 
-  post.postImg = "";
+  var lastLink = link.split("/");
+  var imageUrlLast = "";
+
+  if (lastLink[lastLink.length - 1] == "") {
+    imageUrlLast = lastLink[lastLink.length - 2];
+  } else {
+    imageUrlLast = lastLink[lastLink.length - 1];
+  }
+
+  var imgLink =
+    "https://www2.arccorp.com/globalassets/homepage/redesign/webinar/" +
+    imageUrlLast +
+    ".jpg";
+
+  post.postImg = imgLink;
+
+  if (param) {
+    link += param;
+  }
 
   post.postLink = link;
 
   return post;
-}
-
-function loadingBarInit() {
-  $(".on-demand-webinar-page").prepend(
-    "<div class='progress'><div class='loadingBar'></div></div>"
-  );
 }
 
 function randomIntFromInterval(min, max) {
@@ -120,52 +137,7 @@ function randomIntFromInterval(min, max) {
   return Math.floor(Math.random() * (max - min + 1) + min);
 }
 
-function loadingBarStart() {
-  var elem = $(".loadingBar");
-  elem.css("width", "1%");
-  elem.show();
-
-  elem.animate(
-    {
-      width: randomIntFromInterval(1, 25) + "%"
-    },
-    400,
-    function() {}
-  );
-  elem.animate(
-    {
-      width: randomIntFromInterval(25, 50) + "%"
-    },
-    400,
-    function() {}
-  );
-  elem.animate(
-    {
-      width: randomIntFromInterval(50, 80) + "%"
-    },
-    400,
-    function() {}
-  );
-}
-
-function loadingBarEnd() {
-  var elem = $(".loadingBar");
-  var width = 51;
-  elem.animate(
-    {
-      width: "100%"
-    },
-    800,
-    function() {
-      elem.hide();
-      elem.css("width", "1%");
-    }
-  );
-}
-
 function generateHomepage() {
-  loadingBarStart();
-
   var latestGridEl = ".2020-archive";
 
   var maxLoad = 3;
@@ -186,8 +158,6 @@ function generateHomepage() {
   generateFeatured();
   generateRecommended();
   generateMostViewed();
-
-  loadingBarEnd();
 }
 
 function generateFeatured() {
@@ -201,7 +171,9 @@ function generateFeatured() {
 
     for (var i = 0; i < data.featuredList.length; i++) {
       if (postTitle.indexOf(data.featuredList[i]) > -1) {
-        data.featuredData.push(setPostData(post));
+        data.featuredData.push(
+          setPostData(post, "?utm_source=OnDemand_Feature")
+        );
       }
     }
   });
@@ -230,7 +202,9 @@ function generateRecommended() {
 
     for (var i = 0; i < data.featuredList.length; i++) {
       if (postTitle.indexOf(data.recommendList[i]) > -1) {
-        data.recommendedData.push(setPostData(post));
+        data.recommendedData.push(
+          setPostData(post, "?utm_source=OnDemand_Recommends")
+        );
       }
     }
   });
@@ -242,7 +216,9 @@ function generateRecommended() {
 
     for (var i = 0; i < data.featuredList.length; i++) {
       if (postTitle.indexOf(data.recommendList[i]) > -1) {
-        data.recommendedData.push(setPostData(post));
+        data.recommendedData.push(
+          setPostData(post, "?utm_source=OnDemand_Recommends")
+        );
       }
     }
   });
@@ -252,8 +228,6 @@ function generateMostViewed() {
   var $el = $(".2020-archive .content-block--pageItem");
   var $el2 = $(".archive .content-block--pageItem");
 
-
-
   $el.each(function(index) {
     var post = $(this);
 
@@ -261,7 +235,9 @@ function generateMostViewed() {
 
     for (var i = 0; i < data.featuredList.length; i++) {
       if (postTitle.indexOf(data.mostViewedList[i]) > -1) {
-        data.mostViewedData.push(setPostData(post));
+        data.mostViewedData.push(
+          setPostData(post, "?utm_source=OnDemand_MostViewed")
+        );
       }
     }
   });
@@ -273,7 +249,9 @@ function generateMostViewed() {
 
     for (var i = 0; i < data.featuredList.length; i++) {
       if (postTitle.indexOf(data.mostViewedList[i]) > -1) {
-        data.mostViewedData.push(setPostData(post));
+        data.mostViewedData.push(
+          setPostData(post, "?utm_source=OnDemand_MostViewed")
+        );
       }
     }
   });
@@ -281,20 +259,22 @@ function generateMostViewed() {
 
 function generateHomeMore() {
 
-  console.log(data.homepageMoreIndex);
-
   var el = data.curEl;
   var maxlength = data.recentLength;
 
   if (data.webinarList.length >= data.recentLength && el == ".2020-archive") {
-    data.homepageMoreIndex = 0;
+    if(data.recentLength % 3 != 0) {
+      data.homepageMoreIndex = 1;
+    }
+    else {
+      data.homepageMoreIndex = 0;
+    }
   }
 
   if (data.webinarList.length >= data.recentLength) {
     el = ".archive";
     data.curEl = ".archive";
     maxlength = data.archiveLength;
-    
   }
 
   var max =
@@ -308,6 +288,15 @@ function generateHomeMore() {
 
     if (i == maxlength - 1 && data.webinarList.length >= data.recentLength) {
       $(".addMore").hide();
+    }
+
+    
+  }
+
+  if (data.webinarList.length >= data.recentLength && el == ".2020-archive") {
+    if(data.recentLength % 3 != 0) {
+      var post = $(".archive .content-block--pageItem").eq(0);
+      data.webinarList.push(setPostData(post));
     }
   }
 
@@ -325,7 +314,4 @@ var latestApp = new Vue({
   }
 });
 
-loadingBarInit();
-
 generateHomepage();
-
