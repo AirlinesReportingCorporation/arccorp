@@ -474,6 +474,18 @@
     align-content: center;
     justify-content: center;
     align-items: center;
+    position: relative;
+
+    &:after {
+      position: absolute;
+      bottom: 15px;
+      left: 10px;
+      content: '';
+      width: 59px;
+      height: 27px;
+      background: url("https://www2.arccorp.com/globalassets/homepage/redesign/webinar/play-button.png") center center no-repeat;
+      background-size: contain;
+    }
   }
 
   

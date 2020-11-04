@@ -10907,7 +10907,17 @@ a.product-sticky-link-right svg {
     height: 217px;
     align-content: center;
     justify-content: center;
-    align-items: center; }
+    align-items: center;
+    position: relative; }
+    .on-demand-webinar .latestArticleImg:after {
+      position: absolute;
+      bottom: 15px;
+      left: 10px;
+      content: '';
+      width: 59px;
+      height: 27px;
+      background: url("https://www2.arccorp.com/globalassets/homepage/redesign/webinar/play-button.png") center center no-repeat;
+      background-size: contain; }
   .on-demand-webinar .latestArticle img {
     min-width: 380px;
     max-height: 217px; }
