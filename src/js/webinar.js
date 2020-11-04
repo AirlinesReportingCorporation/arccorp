@@ -19,7 +19,7 @@ var data = {
   jumboTags: ["Agent / Airline Webinar"],
   jumboDescription:
     "During this webinar, ARC’s revenue integrity and payments experts will share data on fraud trends they have seen so far in 2020, including insights specific to the COVID-19 pandemic.",
-  jumboButtonText: "Watch Now",
+  jumboButtonText: "View",
   jumboImg:
     "https://www2.arccorp.com/globalassets/homepage/redesign/slides/carousel16.jpg",
   featuredList: [
