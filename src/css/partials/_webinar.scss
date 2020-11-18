@@ -830,6 +830,9 @@
       font-size: 3px;
       line-height: 14px;
     }
+    &:last-child:after {
+      display: none;
+    }
   }
 
   .latestTags a,
@@ -1131,18 +1134,6 @@
     .secondaryNav .col-md-12 {
       padding: 0;
     }
-  }
-
-  .latestTags ul li:after {
-    font-family: "Font Awesome 5 Free";
-    display: inline-block;
-    content: "\f111";
-    color: $tarmac;
-    padding-left: 4px;
-  }
-
-  .latestTags ul li:last-child:after {
-    display: none;
   }
 
   .latestJumbo {

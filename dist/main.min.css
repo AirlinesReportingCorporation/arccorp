@@ -11143,6 +11143,8 @@ a.product-sticky-link-right svg {
       font-weight: 900;
       font-size: 3px;
       line-height: 14px; }
+    .on-demand-webinar .latestTags li:last-child:after {
+      display: none; }
   .on-demand-webinar .latestTags a,
   .on-demand-webinar .latestTags a:hover {
     cursor: default;
@@ -11341,14 +11343,6 @@ a.product-sticky-link-right svg {
       margin-right: 0; }
     .on-demand-webinar .secondaryNav .col-md-12 {
       padding: 0; } }
-  .on-demand-webinar .latestTags ul li:after {
-    font-family: "Font Awesome 5 Free";
-    display: inline-block;
-    content: "\f111";
-    color: #2a2b2c;
-    padding-left: 4px; }
-  .on-demand-webinar .latestTags ul li:last-child:after {
-    display: none; }
   .on-demand-webinar .latestJumbo {
     position: relative;
     padding: 168px 47px 33px; }
