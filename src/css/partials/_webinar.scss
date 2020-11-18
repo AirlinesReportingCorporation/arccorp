@@ -70,7 +70,8 @@
     }
 
     h3 {
-      font-family: SourceSansPro-Light, SourceSansPro-Regular, Arial, Helvetica, sans-serif;
+      font-family: SourceSansPro-Light, SourceSansPro-Regular, Arial, Helvetica,
+        sans-serif;
       font-size: 24px;
       line-height: 31px;
       color: #ffffff;
@@ -480,15 +481,14 @@
       position: absolute;
       bottom: 15px;
       left: 10px;
-      content: '';
+      content: "";
       width: 59px;
       height: 27px;
-      background: url("https://www2.arccorp.com/globalassets/homepage/redesign/webinar/play-button.png") center center no-repeat;
+      background: url("https://www2.arccorp.com/globalassets/homepage/redesign/webinar/play-button.png")
+        center center no-repeat;
       background-size: contain;
     }
   }
-
-  
 
   .latestArticle img {
     min-width: 380px;
@@ -699,7 +699,6 @@
 
   /*  latest */
   @media (min-width: 1200px) {
-
     .row {
       max-width: 100%;
     }
@@ -786,7 +785,7 @@
   .latestDate {
     font-family: SourceSansPro-Regular, helvetica, arial, sans-serif;
     color: #ffffff;
-    font-size: 16px;
+    font-size: 14px;
     line-height: 20px;
     margin-top: 15px;
     text-transform: capitalize;
@@ -814,8 +813,23 @@
       sans-serif;
     font-size: 14px;
     line-height: 1rem;
-    color: #6d6e71;
+    color: #96be3c;
     text-transform: uppercase;
+  }
+
+  .latestTags li {
+    position: relative;
+    a:after {
+      font-family: "Font Awesome 5 Free";
+      display: inline-block;
+      content: "\f111";
+      color: #6d6e71;
+      padding-left: 10px;
+      vertical-align: middle;
+      font-weight: 900;
+      font-size: 3px;
+      line-height: 14px;
+    }
   }
 
   .latestTags a,
@@ -1120,8 +1134,9 @@
   }
 
   .latestTags ul li:after {
+    font-family: "Font Awesome 5 Free";
     display: inline-block;
-    content: "\2022";
+    content: "\f111";
     color: $tarmac;
     padding-left: 4px;
   }

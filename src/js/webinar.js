@@ -9,7 +9,7 @@ import VueLazyload from "vue-lazyload";
 Vue.use(VueLazyload, {
   preLoad: 1.3,
   attempt: 1
-})
+});
 
 var data = {
   jumboTitle:
@@ -69,7 +69,17 @@ function setPostData(el, param) {
     .text()
     .split(",");
 
+  post.postDate = el
+    .find(".content-block--pageItem__metadata li")
+    .eq(1)
+    .text();
+
   if (parentGrid.indexOf("2020-archive") > -1) {
+    post.postDate = el
+    .find(".content-block--pageItem__metadata li")
+    .eq(0)
+    .text();
+
     post.postTags = el
       .find(".content-block--pageItem__metadata li")
       .eq(1)
@@ -77,10 +87,6 @@ function setPostData(el, param) {
       .split(",");
   }
 
-  post.postDate = el
-    .find(".content-block--pageItem__metadata li")
-    .eq(1)
-    .text();
   post.postBody = el.find(".content-block--pageItem__body").text();
 
   var postTagsTemp = post.postTags;
@@ -128,6 +134,10 @@ function setPostData(el, param) {
   }
 
   post.postLink = link;
+
+  if(post.postTags.length == 0) {
+    post.postTags.push("Online Webinar");
+  }
 
   return post;
 }
@@ -258,15 +268,13 @@ function generateMostViewed() {
 }
 
 function generateHomeMore() {
-
   var el = data.curEl;
   var maxlength = data.recentLength;
 
   if (data.webinarList.length >= data.recentLength && el == ".2020-archive") {
-    if(data.recentLength % 3 != 0) {
+    if (data.recentLength % 3 != 0) {
       data.homepageMoreIndex = 1;
-    }
-    else {
+    } else {
       data.homepageMoreIndex = 0;
     }
   }
@@ -289,12 +297,10 @@ function generateHomeMore() {
     if (i == maxlength - 1 && data.webinarList.length >= data.recentLength) {
       $(".addMore").hide();
     }
-
-    
   }
 
   if (data.webinarList.length >= data.recentLength && el == ".2020-archive") {
-    if(data.recentLength % 3 != 0) {
+    if (data.recentLength % 3 != 0) {
       var post = $(".archive .content-block--pageItem").eq(0);
       data.webinarList.push(setPostData(post));
     }
