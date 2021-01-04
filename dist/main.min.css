@@ -9848,9 +9848,7 @@ footer .footer-links-social li a.icon-iso_logo {
       margin-left: 0; }
   .home-page .homePageGrid a.ctaBtn.ctaBtn--main {
     top: 50px;
-    right: 20px; }
-  .home-page .homePageGrid .page-grid__content {
-    max-height: 750px; } }
+    right: 20px; } }
 
 @media screen and (max-width: 380px) {
   .supernav .supernav-mobile-menu a {
