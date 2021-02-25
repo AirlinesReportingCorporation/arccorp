@@ -7,11 +7,16 @@
 @import "partials/hover";
 @import "partials/owlcarousel";
 @import "partials/fonts";
+
+@import "partials/base";
+
+//plugin styles
 @import "partials/socialShare";
 @import "partials/readingTime";
 @import "partials/newsroomPosts";
 @import "partials/homepageTop";
 
+//page specific styles
 @import "partials/homepage";
 @import "partials/blocks";
 @import "partials/salesstats";

@@ -7788,6 +7788,13 @@ html {
   font-weight: normal;
   font-style: normal; }
 
+body {
+  font-family: SourceSansPro-Regular, Arial, Helvetica, sans-serif;
+  font-size: 16px; }
+
+p {
+  font-family: SourceSansPro-Regular; }
+
 .article-body .basic-text-inside {
   position: relative; }
 
