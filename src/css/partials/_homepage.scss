@@ -649,6 +649,13 @@ footer .footer-links-social li a.icon-iso_logo {
     min-height: auto;
     padding-top: 1rem !important;
     padding-bottom: 1rem !important;
+    margin-right: 1rem;
+  }
+  
+  .ctaBtn--main-outline {
+    background: none;
+    color: $teal;
+    border: $teal 2px solid;
   }
 
   .row {

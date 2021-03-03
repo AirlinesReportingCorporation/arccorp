@@ -8556,7 +8556,13 @@ footer .footer-links-social li a.icon-iso_logo {
   min-width: auto;
   min-height: auto;
   padding-top: 1rem !important;
-  padding-bottom: 1rem !important; }
+  padding-bottom: 1rem !important;
+  margin-right: 1rem; }
+
+.home-page .ctaBtn--main-outline {
+  background: none;
+  color: #189bb0;
+  border: #189bb0 2px solid; }
 
 .home-page .row {
   margin: 0; }
