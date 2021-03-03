@@ -118,7 +118,7 @@ function generateHomepage() {
     .text()
     .split(",");
   featuredPost.postDate = $(".featuredPost .date").text();
-  featuredPost.postBody = $(".featuredPost .body").text();
+  featuredPost.postBody = $(".featuredPost .body").html();
   featuredPost.postLink = $(".featuredPost .ctaBtn--main").prop("href");
   featuredPost.postImgJumbo = $(".featuredPost .ctaBtn--secondary").prop(
     "href"
