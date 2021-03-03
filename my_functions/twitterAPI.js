@@ -13,18 +13,14 @@ exports.handler = async (event, context) => {
     "statuses/user_timeline",
     { screen_name: "ARCtalk", count: 20, tweet_mode: "extended" },
     function(err, data, response) {
-      if (err) {
-        console.log(err.stack);
-      }
-
       return {
-        statusCode: 200,
+        statusCode: 400,
         headers: {
           "Access-Control-Allow-Headers":
             "Origin, X-Requested-With, Content-Type, Accept",
           "Access-Control-Allow-Origin": "*"
         },
-        body: json(data)
+        body: JSON.stringify(data)
       };
     }
   );
