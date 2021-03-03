@@ -11,39 +11,19 @@ var T = new Twit({
   timeout_ms: 60 * 1000 // optional HTTP request timeout to apply to all requests.
 });
 
-exports.handler = async (event, context) => {
-  let response;
-  try {
-    response = T.get(
-      "statuses/user_timeline",
-      { screen_name: "ARCtalk", count: 20, tweet_mode: "extended" },
-      function(err, data, response) {
-        if (err) {
-          console.log(err.stack);
-        }
-
-        return data;
+exports.handler = async (event, context, callback) => {
+  return T.get(
+    "statuses/user_timeline",
+    { screen_name: "ARCtalk", count: 20, tweet_mode: "extended" },
+    function(err, data, response) {
+      if (err) {
+        console.log(err.stack);
       }
-    );
-    // handle response
-  } catch (err) {
-    return {
-      statusCode: err.statusCode || 500,
-      body: JSON.stringify({
-        error: err.message
-      })
-    };
-  }
 
-  return {
-    statusCode: 200,
-    headers: {
-      "Access-Control-Allow-Headers":
-        "Origin, X-Requested-With, Content-Type, Accept",
-      "Access-Control-Allow-Origin": "*"
-    },
-    body: JSON.stringify({
-      data: response
-    })
-  };
+      callback(null, {
+        statusCode: 200,
+        body: JSON.stringify(data)
+      });
+    }
+  );
 };
