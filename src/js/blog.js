@@ -1,10 +1,10 @@
-import 'core-js/stable';
-import 'regenerator-runtime/runtime';
-import 'intersection-observer';
+import "core-js/stable";
+import "regenerator-runtime/runtime";
+import "intersection-observer";
 
-import Vue from 'vue';
-import BootstrapVue from 'bootstrap-vue';
-import VueLazyload from 'vue-lazyload';
+import Vue from "vue";
+import BootstrapVue from "bootstrap-vue";
+import VueLazyload from "vue-lazyload";
 
 Vue.use(BootstrapVue);
 Vue.use(VueLazyload);
@@ -289,8 +289,6 @@ var latestApp = new Vue({
   }
 });
 
-
-
 loadingBarInit();
 
 generateHomepage();
@@ -356,7 +354,8 @@ function loadingBarEnd() {
 
 jQuery
   .ajax({
-    url: "https://us-central1-myarc-4b29c.cloudfunctions.net/twitterAPI",
+    url:
+      "https://arccorp-script-test.netlify.app/.netlify/functions/twitterAPI",
     contentType: "application/json; charset=utf-8",
     dataType: "json",
     type: "GET"
