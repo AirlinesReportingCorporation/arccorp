@@ -10080,7 +10080,7 @@ a.ctaBtn.product-cta {
 
 .product-eyebrow {
   font-family: SourceSansPro-Bold, "SourceSansPro-Bold", Arial, Helvetica, sans-serif;
-  font-size: 14px;
+  font-size: 16px;
   text-transform: uppercase;
   color: #189bb0;
   margin-bottom: 30px; }
@@ -10396,7 +10396,7 @@ a.link-download svg {
 a.product-sticky-link,
 a.product-sticky-link-right {
   font-family: SourceSansPro-SemiBold, Arial, Helvetica, sans-serif;
-  font-size: 14px;
+  font-size: 16px;
   padding: 0 10px;
   color: #ffffff; }
   a.product-sticky-link:hover, a.product-sticky-link:active, a.product-sticky-link:focus,

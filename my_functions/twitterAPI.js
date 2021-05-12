@@ -1,8 +1,5 @@
 const fetch = require("node-fetch");
 const Twit = require("twit");
-
-const API_ENDPOINT = "https://cat-fact.herokuapp.com/facts";
-
 var T = new Twit({
   consumer_key: "onFsZbUz23wNU21wDEqGcHbf0",
   consumer_secret: "D6f8gaMfemGPfM6u73lLOZUooCYZwLzM8XLdnSXjlOse5p9dTs",

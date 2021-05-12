@@ -47,7 +47,7 @@ function setPostData(el) {
     .find(".content-block--pageItem__metadata li")
     .eq(1)
     .text();
-  post.postBody = el.find(".content-block--pageItem__body").text();
+  post.postBody = el.find(".content-block--pageItem__body").html();
 
   var postTagsTemp = post.postTags;
   var postTagsFinal = [];
