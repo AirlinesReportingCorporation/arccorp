@@ -9580,6 +9580,12 @@ footer .footer-links-social li a.icon-iso_logo {
     background: #189bb0;
     font-family: SourceSansPro-SemiBold, Arial, Helvetica, sans-serif; }
 
+body a {
+  font-family: SourceSansPro-Bold, Arial, Helvetica, sans-serif; }
+
+body .byline {
+  font-family: SourceSansPro-Regular, Arial, Helvetica, sans-serif; }
+
 .article-body .basic-text-inside, .webinarPageLayout .basic-text-inside {
   font-size: 21px;
   line-height: 36px;
