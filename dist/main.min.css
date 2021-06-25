@@ -9580,7 +9580,7 @@ footer .footer-links-social li a.icon-iso_logo {
     background: #189bb0;
     font-family: SourceSansPro-SemiBold, Arial, Helvetica, sans-serif; }
 
-body a {
+body a, body .rtf strong {
   font-family: SourceSansPro-Bold, Arial, Helvetica, sans-serif; }
 
 body .byline {
@@ -10052,6 +10052,9 @@ a.ctaBtn.product-cta {
   .product-callout-copy span {
     font-family: SourceSansPro-SemiBold, "SourceSansPro-SemiBold", arial, helvetica, sans-serif;
     color: #333132; }
+  .product-callout-copy.product-callout-copy-small {
+    font-size: 30px;
+    line-height: 38px; }
   .product-callout-copy.quote {
     font-family: SourceSansPro-Light, "SourceSansPro-Light", arial, helvetica, sans-serif;
     font-size: 40px;
@@ -10075,6 +10078,9 @@ a.ctaBtn.product-cta {
 
 .product-callout-copy.teal span {
   color: #189bb0; }
+
+.product-callout-copy.white span {
+  color: #ffffff !important; }
 
 .callout-container,
 .data-icon-grid {
@@ -10211,6 +10217,24 @@ a.ctaBtn.product-cta {
   border-top: 1px solid #868b8c;
   max-width: 1166px;
   margin: 0 auto; }
+  .sub-callout-container.transparent-bg {
+    background: rgba(42, 43, 44, 0.5);
+    padding: 60px 40px; }
+    .sub-callout-container.transparent-bg .sub-callout-title {
+      font-family: SourceSansPro-SemiBold, Arial, Helvetica, sans-serif;
+      font-size: 48px;
+      line-height: 52px;
+      margin-bottom: 60px; }
+    .sub-callout-container.transparent-bg .sub-callout-bold {
+      font-family: SourceSansPro-Bold, Arial, Helvetica, sans-serif;
+      font-size: 22px;
+      line-height: 36px;
+      margin-top: 25px; }
+    .sub-callout-container.transparent-bg .sub-callout-copy {
+      color: #868b8c;
+      font-family: SourceSansPro-Regular, Arial, Helvetica, sans-serif;
+      font-size: 22px;
+      line-height: 36px; }
 
 .sub-callout-container p {
   font-family: SourceSansPro-Regular, Arial, Helvetica, sans-serif;
@@ -10218,6 +10242,37 @@ a.ctaBtn.product-cta {
   font-size: 22px;
   line-height: 36px;
   padding: 15px 0; }
+
+.callout-border-section {
+  border-top: 1px solid #2a2b2c;
+  color: #2a2b2c;
+  margin-top: 70px; }
+
+.callout-number {
+  font-family: SourceSansPro-Bold, Arial, Helvetica, sans-serif;
+  font-size: 120px;
+  line-height: 72px;
+  margin-top: 45px; }
+  .callout-number span {
+    font-size: 72px; }
+
+.callout-number-sub {
+  font-family: SourceSansPro-SemiBold, Arial, Helvetica, sans-serif;
+  font-size: 30px;
+  line-height: 48px; }
+  .callout-number-sub small {
+    display: block;
+    color: #868b8c;
+    font-size: 12px;
+    line-height: 48px; }
+  .callout-number-sub .callout-number-sub-bold {
+    font-family: SourceSansPro-Bold, Arial, Helvetica, sans-serif; }
+
+.callout-number-sub-copy {
+  color: #868b8c;
+  font-size: 22px;
+  line-height: 30px;
+  margin-top: 10px; }
 
 .product-option-container {
   background-color: #171717;

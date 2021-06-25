@@ -178,6 +178,11 @@ a.ctaBtn.product-cta {
     color: #333132;
   }
 
+  &.product-callout-copy-small {
+    font-size: 30px;
+    line-height: 38px;
+  }
+
   &.quote {
     font-family: SourceSansPro-Light, "SourceSansPro-Light", arial, helvetica,
       sans-serif;
@@ -215,6 +220,10 @@ a.ctaBtn.product-cta {
 
 .product-callout-copy.teal span {
   color: $teal;
+}
+
+.product-callout-copy.white span {
+  color: #ffffff !important;
 }
 
 .callout-container,
@@ -384,6 +393,32 @@ a.ctaBtn.product-cta {
   border-top: 1px solid $productgray;
   max-width: 1166px;
   margin: 0 auto;
+
+  &.transparent-bg {
+    background: rgba($tarmac, 0.5);
+    padding: 60px 40px;
+
+    .sub-callout-title {
+      font-family: SourceSansPro-SemiBold, Arial, Helvetica, sans-serif;
+      font-size: 48px;
+      line-height: 52px;
+      margin-bottom: 60px;
+    }
+
+    .sub-callout-bold {
+      font-family: SourceSansPro-Bold, Arial, Helvetica, sans-serif;
+      font-size: 22px;
+      line-height: 36px;
+      margin-top: 25px;
+    }
+
+    .sub-callout-copy {
+      color: $productgray;
+      font-family: SourceSansPro-Regular, Arial, Helvetica, sans-serif;
+      font-size: 22px;
+      line-height: 36px;
+    }
+  }
 }
 
 .sub-callout-container p {
@@ -392,6 +427,47 @@ a.ctaBtn.product-cta {
   font-size: 22px;
   line-height: 36px;
   padding: 15px 0;
+}
+
+.callout-border-section {
+  border-top: 1px solid $tarmac;
+  color: $tarmac;
+  margin-top: 70px;
+}
+
+.callout-number {
+  font-family: SourceSansPro-Bold, Arial, Helvetica, sans-serif;
+  font-size: 120px;
+  line-height: 72px;
+  margin-top: 45px;
+
+  span {
+    font-size: 72px;
+  }
+}
+
+.callout-number-sub {
+  font-family: SourceSansPro-SemiBold, Arial, Helvetica, sans-serif;
+  font-size: 30px;
+  line-height: 48px;
+
+  small {
+    display: block;
+    color: $productgray;
+    font-size: 12px;
+    line-height: 48px;
+  }
+
+  .callout-number-sub-bold {
+    font-family: SourceSansPro-Bold, Arial, Helvetica, sans-serif;
+  }
+}
+
+.callout-number-sub-copy {
+  color: $productgray;
+  font-size: 22px;
+  line-height: 30px;
+  margin-top: 10px;
 }
 
 .product-option-container {
@@ -510,8 +586,6 @@ a.ctaBtn.product-cta {
   .ctaBtn--white.product-cta {
     color: $tarmac !important;
   }
-
-  
 }
 
 .callout-box-eyebrow {
