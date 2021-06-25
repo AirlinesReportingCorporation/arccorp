@@ -8552,6 +8552,15 @@ footer .footer-links-social li a.icon-iso_logo {
   .supernav .supernav-mobile-menu a {
     color: #333333; }
 
+a.ctaBtn.ctaBtn--main-outline {
+  background: none;
+  color: #189bb0;
+  border: #189bb0 2px solid; }
+  a.ctaBtn.ctaBtn--main-outline:hover {
+    color: #ffffff;
+    background: #189bb0;
+    border: #189bb0 2px solid; }
+
 .home-page .ctaBtn {
   min-width: auto;
   min-height: auto;
@@ -9580,17 +9589,20 @@ footer .footer-links-social li a.icon-iso_logo {
     background: #189bb0;
     font-family: SourceSansPro-SemiBold, Arial, Helvetica, sans-serif; }
 
-body a, body .rtf strong {
+body a,
+body .rtf strong {
   font-family: SourceSansPro-Bold, Arial, Helvetica, sans-serif; }
 
 body .byline {
   font-family: SourceSansPro-Regular, Arial, Helvetica, sans-serif; }
 
-.article-body .basic-text-inside, .webinarPageLayout .basic-text-inside {
+.article-body .basic-text-inside,
+.webinarPageLayout .basic-text-inside {
   font-size: 21px;
   line-height: 36px;
   color: #6c6c6c; }
-  .article-body .basic-text-inside p, .webinarPageLayout .basic-text-inside p {
+  .article-body .basic-text-inside p,
+  .webinarPageLayout .basic-text-inside p {
     font-size: 21px;
     line-height: 36px; }
 
@@ -10210,6 +10222,24 @@ a.ctaBtn.product-cta {
 .bg-img-container {
   background-position: center center;
   background-size: cover; }
+
+.portfolio-card {
+  border-radius: 8px;
+  border: 1px solid #868b8c;
+  padding: 60px 30px 40px;
+  background: #ffffff;
+  margin-top: 20px; }
+  .portfolio-card img:first-child {
+    display: block;
+    margin: 0 auto 50px; }
+  .portfolio-card h2 {
+    font-family: SourceSansPro-Bold, Arial, Helvetica, sans-serif;
+    font-size: 30px;
+    line-height: 32px;
+    margin-bottom: 30px; }
+  .portfolio-card p {
+    font-family: SourceSansPro-SemiBold, Arial, Helvetica, sans-serif;
+    color: #868b8c; }
 
 .sub-callout-container {
   color: #ffffff;

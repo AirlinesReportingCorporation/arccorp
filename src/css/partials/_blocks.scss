@@ -387,6 +387,31 @@ a.ctaBtn.product-cta {
   background-size: cover;
 }
 
+.portfolio-card {
+  border-radius: 8px;
+  border: 1px solid $productgray;
+  padding: 60px 30px 40px;
+  background: $white;
+  margin-top: 20px;
+
+  img:first-child {
+    display: block;
+    margin: 0 auto 50px;
+  }
+
+  h2 {
+    font-family: SourceSansPro-Bold, Arial, Helvetica, sans-serif;
+    font-size: 30px;
+    line-height: 32px;
+    margin-bottom: 30px;
+  }
+
+  p {
+    font-family: SourceSansPro-SemiBold, Arial, Helvetica, sans-serif;
+    color: $productgray;
+  }
+}
+
 .sub-callout-container {
   color: #ffffff;
   padding: 60px;
