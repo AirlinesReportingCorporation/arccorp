@@ -412,6 +412,34 @@ a.ctaBtn.product-cta {
   }
 }
 
+.arc-pay-resources {
+  img {
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
+}
+
+.underphoto-box {
+  padding: 60px 30px;
+  background: $fog;
+  color: $tarmac;
+  text-align: center;
+
+  h3 {
+    color: $tarmac;
+    font-family: SourceSansPro-Bold, Arial, Helvetica, sans-serif;
+    font-size: 30px;
+    line-height: 30px;
+    margin-bottom: 30px;
+  }
+
+  p {
+    font-size: 18px;
+    line-height: 24px;
+    margin-bottom: 30px;
+  }
+}
+
 .sub-callout-container {
   color: #ffffff;
   padding: 60px;
@@ -422,6 +450,7 @@ a.ctaBtn.product-cta {
   &.transparent-bg {
     background: rgba($tarmac, 0.5);
     padding: 60px 40px;
+    border-color: $white;
 
     .sub-callout-title {
       font-family: SourceSansPro-SemiBold, Arial, Helvetica, sans-serif;
