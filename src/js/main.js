@@ -38,16 +38,15 @@ $(".owl-carousel").owlCarousel({
     }
   },
   onInitialize: function(element) {
-    /* randomize carousel
-      $(".owl-carousel")
-        .children()
-        .sort(function() {
-          return Math.round(Math.random()) - 0.5;
-        })
-        .each(function() {
-          $(this).appendTo($(".owl-carousel"));
-        });
-      */
+    /* randomize carousel*/
+    $(".owl-carousel")
+      .children()
+      .sort(function() {
+        return Math.round(Math.random()) - 0.5;
+      })
+      .each(function() {
+        $(this).appendTo($(".owl-carousel"));
+      });
   }
 });
 
@@ -215,7 +214,7 @@ function latestSliderInit() {
       "<div class='featuredLatest featuredLatest-custom content-block--pageItem'><div class=''><a target='_blank' href='https://arctravelconnect.com/2020/episodes/Whats-Next-for-Business-Travel/'><img src='https://www2.arccorp.com/globalassets/homepage/redesign/the-latest-tc-episode-3.png'></a></div></div> "
     );
       */
-     
+
   $(".content-block--pageItem__inside").prepend("");
 
   $(".page-grid__items.page-grid__items--expanded")
@@ -246,7 +245,7 @@ function latestSliderInit() {
       },
       navText: [
         '<img src="https://www2.arccorp.com/globalassets/homepage/redesign/latestArrowLeft.png">',
-        'More'
+        "More"
       ]
     });
   });
@@ -752,7 +751,6 @@ function webinarPages() {
         .indexOf("On-Demand Webinars") > -1
     ) {
       $("body").addClass("webinarPageLayout");
-
     }
   }
 }
