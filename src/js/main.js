@@ -207,13 +207,13 @@ function latestSliderInit() {
     }
   });
 
-  /*
+  
   $(".homePageGrid .page-grid__row")
     .eq(0)
     .prepend(
-      "<div class='featuredLatest featuredLatest-custom content-block--pageItem'><div class=''><a target='_blank' href='https://arctravelconnect.com/2020/episodes/Whats-Next-for-Business-Travel/'><img src='https://www2.arccorp.com/globalassets/homepage/redesign/the-latest-tc-episode-3.png'></a></div></div> "
+      "<div style='position: relative;' class='featuredLatest featuredLatest-custom content-block--pageItem'><div><a target='_blank' href='https://www2.arccorp.com/arc-talk-podcast/how-travel-systems-are-adapting-to-covid-19?utm_source=thelatest_static'><img src='https://www2.arccorp.com/globalassets/homepage/redesign/podcast_background.jpg'><div style='position: absolute; bottom: 0; left: 0; color: #ffffff; padding: 0 20px 30px'><div style='font-size: 13px; font-family: SourceSansPro-Regular;'>NEWEST PODCAST EPISODE</div><div style='margin-bottom: 30px;'>ARC Talk: How Travel Systems are adapting to COVID-19</div><div style='display: flex; color: #ffa619;'><img style='margin: 0 10px 0 0' src='https://www2.arccorp.com/globalassets/homepage/redesign/playbutton.png'/> Start Listening </div></div></a><div style=''></div></div></div> "
     );
-      */
+      
 
   $(".content-block--pageItem__inside").prepend("");
 
