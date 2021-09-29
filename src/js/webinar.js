@@ -13,15 +13,15 @@ Vue.use(VueLazyload, {
 
 var data = {
   jumboTitle:
-    "What Travel Professionals Need to Know About Fraud During COVID-19",
+    "An Analytical View on 100 Billion Transactions by Worldpay/FIS",
   jumboLink:
-    "https://www2.arccorp.com/articles-trends/on-demand-webinars/2020-webinars/webinar-090920/?utm_source=OnDemand_Jumbo",
-  jumboTags: ["Agent / Airline Webinar"],
+    "https://www2.arccorp.com/articles-trends/on-demand-webinars/webinar-list/webinar-091621/",
+  jumboTags: ["Fraud Webinar"],
   jumboDescription:
-    "During this webinar, ARC’s revenue integrity and payments experts will share data on fraud trends they have seen so far in 2020, including insights specific to the COVID-19 pandemic.",
+    "Watch this information session where Tony Ashe from WorldPay will take you through trends and provide insight into global markets",
   jumboButtonText: "View",
   jumboImg:
-    "https://www2.arccorp.com/globalassets/homepage/redesign/slides/carousel16.jpg",
+    "https://www2.arccorp.com/globalassets/homepage/redesign/slides/carousel15.jpg",
   featuredList: [
     "Closing the Loop: Managing Travel Fraud in Chaotic Times",
     "The Battle Against Fraud: Payment Managers",
