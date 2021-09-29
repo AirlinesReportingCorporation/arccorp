@@ -150,7 +150,7 @@ function randomIntFromInterval(min, max) {
 function generateHomepage() {
   var latestGridEl = ".2020-archive";
 
-  var maxLoad = 3;
+  var maxLoad = 6;
 
   var length2020 = $(latestGridEl + " .content-block--pageItem").length;
   var lengthArchive = $(".archive .content-block--pageItem").length;

@@ -1369,7 +1369,6 @@
           <div>
             <div class="theLatestCol">
               <div class="latestColInner">
-                
                 <div class="latestFirst">
                   <div class="container">
                     <div class="row">
@@ -1405,6 +1404,60 @@
                       style="margin-top: 60px; margin-bottom: 30px;"
                     >
                       <div class="col-lg-12">
+                        <h2 class="sectionHeader">Latest Webinars</h2>
+                      </div>
+                    </div>
+                    <div class="row">
+                      <div class="col-lg-4" v-for="webinar in webinarList">
+                        <div class="latestAdditional">
+                          <div class="latestArticle">
+                            <a
+                              class="latestArticleImg"
+                              v-bind:href="webinar.postLink"
+                              ><img v-lazy="webinar.postImg"
+                            /></a>
+
+                            <div class="latestTags">
+                              <ul>
+                                <li
+                                  v-for="tag in webinar.postTags"
+                                  v-bind:class="tag.toLowerCase()"
+                                >
+                                  <a>{{tag}}</a>
+                                </li>
+                              </ul>
+                              <span class="latestDate">
+                                {{webinar.postDate}}
+                              </span>
+                            </div>
+                            <a v-bind:href="webinar.postLink" class="postTitle">
+                              {{webinar.postTitle}}
+                            </a>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="row">
+                      <div class="col-lg-12" style="text-align: center">
+                        <a
+                          href="#"
+                          class="ctaBtn"
+                          v-on:click="generateHomeMore"
+                        >
+                          View More
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="featuredContent secondaryContent">
+                  <div class="container container-longer">
+                    <div
+                      class="row"
+                      style="margin-top: 60px; margin-bottom: 30px;"
+                    >
+                      <div class="col-lg-12">
                         <h2 class="sectionHeader">Fraud Month Features</h2>
                       </div>
                     </div>
@@ -1412,7 +1465,9 @@
                       <div class="col-lg-4" v-for="webinar in featuredData">
                         <div class="latestAdditional">
                           <div class="latestArticle">
-                            <a class="latestArticleImg" v-bind:href="webinar.postLink"
+                            <a
+                              class="latestArticleImg"
+                              v-bind:href="webinar.postLink"
                               ><img v-lazy="webinar.postImg"
                             /></a>
 
@@ -1439,7 +1494,10 @@
                   </div>
                 </div>
 
-                <div class="featuredContent secondaryContent" style='margin-top: 80px;'>
+                <div
+                  class="featuredContent secondaryContent"
+                  style="margin-top: 80px;"
+                >
                   <div class="container container-longer">
                     <div class="row">
                       <div class="col-lg-12">
@@ -1472,7 +1530,9 @@
                       <div class="col-lg-4" v-for="webinar in recommendedData">
                         <div class="latestAdditional">
                           <div class="latestArticle">
-                            <a class="latestArticleImg" v-bind:href="webinar.postLink"
+                            <a
+                              class="latestArticleImg"
+                              v-bind:href="webinar.postLink"
                               ><img v-lazy="webinar.postImg"
                             /></a>
 
@@ -1498,47 +1558,6 @@
                     </div>
                   </div>
                 </div>
-
-                <div class="featuredContent secondaryContent">
-                    <div class="container container-longer">
-                      <div
-                        class="row"
-                        style="margin-top: 60px; margin-bottom: 30px;"
-                      >
-                        <div class="col-lg-12">
-                          <h2 class="sectionHeader">Most Viewed</h2>
-                        </div>
-                      </div>
-                      <div class="row">
-                        <div class="col-lg-4" v-for="webinar in mostViewedData">
-                          <div class="latestAdditional">
-                            <div class="latestArticle">
-                              <a class="latestArticleImg" v-bind:href="webinar.postLink"
-                                ><img v-lazy="webinar.postImg"
-                              /></a>
-  
-                              <div class="latestTags">
-                                <ul>
-                                  <li
-                                    v-for="tag in webinar.postTags"
-                                    v-bind:class="tag.toLowerCase()"
-                                  >
-                                    <a>{{tag}}</a>
-                                  </li>
-                                </ul>
-                                <span class="latestDate">
-                                  {{webinar.postDate}}
-                                </span>
-                              </div>
-                              <a v-bind:href="webinar.postLink" class="postTitle">
-                                {{webinar.postTitle}}
-                              </a>
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
 
                 <div class="featuredContent secondaryContent">
                   <div class="container container-longer">
@@ -1547,14 +1566,16 @@
                       style="margin-top: 60px; margin-bottom: 30px;"
                     >
                       <div class="col-lg-12">
-                        <h2 class="sectionHeader">Archived Webinars</h2>
+                        <h2 class="sectionHeader">Most Viewed</h2>
                       </div>
                     </div>
                     <div class="row">
-                      <div class="col-lg-4" v-for="webinar in webinarList">
+                      <div class="col-lg-4" v-for="webinar in mostViewedData">
                         <div class="latestAdditional">
                           <div class="latestArticle">
-                            <a class="latestArticleImg" v-bind:href="webinar.postLink"
+                            <a
+                              class="latestArticleImg"
+                              v-bind:href="webinar.postLink"
                               ><img v-lazy="webinar.postImg"
                             /></a>
 
@@ -1578,29 +1599,29 @@
                         </div>
                       </div>
                     </div>
+                  </div>
+                </div>
+
+                <div
+                  class="subscribeContent featuredContent secondaryContent"
+                  style="background: url('https://www2.arccorp.com/globalassets/homepage/redesign/webinar/webinar-footer-image.jpg') center center no-repeat; background-size: cover;"
+                >
+                  <div class="container container-longer">
                     <div class="row">
-                      <div class="col-lg-12" style="text-align: center">
-                        <a href="#" class="ctaBtn" v-on:click="generateHomeMore">
-                          View More
+                      <div class="col-lg-12">
+                        <h2>
+                          Stay Up to Date with the Latest Industry Knowledge.
+                        </h2>
+                        <h3>Subscribe to our YouTube channel.</h3>
+                        <a
+                          href="https://www.youtube.com/channel/UCWHZsoCDNhjorop892EVETw"
+                          class="ctaBtn ctaBtn-youtube"
+                          ><i class="fab fa-youtube"></i> SUBSCRIBE
                         </a>
                       </div>
                     </div>
                   </div>
                 </div>
-
-                <div class="subscribeContent featuredContent secondaryContent" style="background: url('https://www2.arccorp.com/globalassets/homepage/redesign/webinar/webinar-footer-image.jpg') center center no-repeat; background-size: cover;">
-                  <div class="container container-longer">
-                    <div class="row">
-                      <div class="col-lg-12">
-                        <h2>Stay Up to Date with the Latest Industry Knowledge.</h2>
-                        <h3>Subscribe to our YouTube channel.</h3>
-                        <a href="https://www.youtube.com/channel/UCWHZsoCDNhjorop892EVETw" class="ctaBtn ctaBtn-youtube"><i class="fab fa-youtube"></i> SUBSCRIBE </a>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-
-
               </div>
             </div>
           </div>
