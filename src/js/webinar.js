@@ -163,7 +163,7 @@ function generateHomepage() {
     data.webinarList.push(setPostData(postFirst));
   }
 
-  data.homepageMoreIndex = 3;
+  data.homepageMoreIndex = 6;
 
   generateFeatured();
   generateRecommended();
