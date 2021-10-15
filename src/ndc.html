@@ -4,12 +4,18 @@
 <html class="no-js" lang="en">
   <!--<![endif]-->
   <head>
-    <title>ARC Travel Demand</title>
+    <title>NDC</title>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="HandheldFriendly" content="true" />
-    <meta name="description" content="ARC Travel Demand" />
-    <meta name="keywords" />
+    <meta
+      name="description"
+      content="ARC Travel Demand provides a holistic view of global airline ticket sales, with visibility into the current industry environment and understanding of future travel demand."
+    />
+    <meta
+      name="keywords"
+      content="airline sales data, airline data, air ticket data, airline ticket sales data, air traffic data, passenger air traffic data, travel demand, travel demand modeling, travel demand forecasting, travel demand analysis, airline data sources, airline booking data"
+    />
     <meta http-equiv="x-ua-compatible" content="IE=edge" />
 
     <link
@@ -140,21 +146,102 @@
       }
     </script>
     <script src="/tealeaf/TLCX_UIC.js"></script>
+
+    <script>
+      window["_fs_debug"] = false;
+      window["_fs_host"] = "fullstory.com";
+      window["_fs_script"] = "edge.fullstory.com/s/fs.js";
+      window["_fs_org"] = "ZEMG0";
+      window["_fs_namespace"] = "FS";
+      (function(m, n, e, t, l, o, g, y) {
+        if (e in m) {
+          if (m.console && m.console.log) {
+            m.console.log(
+              'FullStory namespace conflict. Please set window["_fs_namespace"].'
+            );
+          }
+          return;
+        }
+        g = m[e] = function(a, b, s) {
+          g.q ? g.q.push([a, b, s]) : g._api(a, b, s);
+        };
+        g.q = [];
+        o = n.createElement(t);
+        o.async = 1;
+        o.crossOrigin = "anonymous";
+        o.src = "https://" + _fs_script;
+        y = n.getElementsByTagName(t)[0];
+        y.parentNode.insertBefore(o, y);
+        g.identify = function(i, v, s) {
+          g(l, { uid: i }, s);
+          if (v) g(l, v, s);
+        };
+        g.setUserVars = function(v, s) {
+          g(l, v, s);
+        };
+        g.event = function(i, v, s) {
+          g("event", { n: i, p: v }, s);
+        };
+        g.anonymize = function() {
+          g.identify(!!0);
+        };
+        g.shutdown = function() {
+          g("rec", !1);
+        };
+        g.restart = function() {
+          g("rec", !0);
+        };
+        g.log = function(a, b) {
+          g("log", [a, b]);
+        };
+        g.consent = function(a) {
+          g("consent", !arguments.length || a);
+        };
+        g.identifyAccount = function(i, v) {
+          o = "account";
+          v = v || {};
+          v.acctId = i;
+          g(o, v);
+        };
+        g.clearUserCookie = function() {};
+        g.setVars = function(n, p) {
+          g("setVars", [n, p]);
+        };
+        g._w = {};
+        y = "XMLHttpRequest";
+        g._w[y] = m[y];
+        y = "fetch";
+        g._w[y] = m[y];
+        if (m[y])
+          m[y] = function() {
+            return g._w[y].apply(this, arguments);
+          };
+        g._v = "1.3.0";
+      })(window, document, window["_fs_namespace"], "script", "user");
+    </script>
+
+    <style>
+      .product-option-container-item,
+      .product-option-container img,
+      .product-copy-item img {
+        cursor: auto;
+      }
+    </style>
   </head>
-  <body class=" 15730">
+  <body class=" 17387">
     <div class="navcontainer signedOut" data-username="">
       <!-- supernav start -->
       <div class="supernav" v-on:mouseleave="navPanelReset()">
         <!-- start alert -->
-        <div class="supernav-alert">
-          <div class="supernav-alert-inner">
-            <a target="_blank" href="https://on.bcg.com/travelrecovery"
-              ><i class="fas fa-chart-line"></i> Track the travel industry
-              recovery from the COVID-19 pandemic with the
-              <span>Travel Recovery Insights Portal</span>.</a
-            >
-          </div>
-        </div>
+        <!--<div class="supernav-alert">
+    <div class="supernav-alert-inner">
+      <a target="_blank" href="https://on.bcg.com/travelrecovery"
+        >Track the travel industry recovery
+        from the COVID-19 pandemic with the
+        <span>Travel Recovery Insights Portal</span>.</a
+      >
+    </div>
+  </div> -->
         <!-- end alert -->
 
         <!-- start menu nav -->
@@ -339,6 +426,16 @@
                     v-on:click="showPopup('loginActive')"
                     >My ARC</a
                   >
+                  <a
+                    href="https://myarc.force.com/agencyportal"
+                    class="topnav-link topnav-myarc"
+                    style="border: none;"
+                    >Accreditation Login
+                    <i
+                      style="font-size: 11px; margin-left: 5px;"
+                      class="fas fa-chevron-right"
+                    ></i
+                  ></a>
                   <div class="supernav-login" v-show="loginActive" v-cloak>
                     <div class="supernav-login-inner">
                       <div class="supernav-loggedin">
@@ -476,6 +573,11 @@
                 >Airline BI</a
               >
               <a
+                href="/products-participation/products/arc-data-connect/?utm_source=Global_Navigation&utm_campaign=arc-data-connect"
+                class="supernav-sub-link"
+                >ARC Data Connect</a
+              >
+              <a
                 href="/products-participation/products/arc-custom-reports/?utm_source=Global_Navigation&utm_campaign=Airlines"
                 class="supernav-sub-link"
                 >Custom Reports</a
@@ -505,9 +607,9 @@
                 >Other Data Users</a
               >
               <a
-                href="/products-participation/products/travel-bi/?utm_source=Global_Navigation&utm_campaign=Other_Data_Users"
+                href="/products-participation/products/arc-travel-demand/?utm_source=Global_Navigation&utm_campaign=Other_Data_Users"
                 class="supernav-sub-link"
-                >Travel BI</a
+                >ARC Travel Demand</a
               >
               <a
                 href="/products-participation/products/arc-custom-reports/?utm_source=Global_Navigation&utm_campaign=Other_Data_Users"
@@ -596,11 +698,7 @@
                 class="supernav-sub-link"
                 >ARC's IRS 1099 Processing Service</a
               >
-              <a
-                href="/products-participation/products/printables-collection/?utm_source=Global_Navigation"
-                class="supernav-sub-link"
-                >Printables Collection</a
-              >
+
               <a
                 href="/products-participation/products/revenue-recovery-service/?utm_source=Global_Navigation"
                 class="supernav-sub-link"
@@ -775,6 +873,11 @@
                       >Blog</a
                     >
                     <a
+                      href="/arc-talk-podcast?utm_source=Global_Navigation"
+                      class="supernav-sub-link"
+                      >ARC Talk Podcast</a
+                    >
+                    <a
                       href="/about-us/newsroom/media-kit/?utm_source=Global_Navigation"
                       class="supernav-sub-link"
                       >Media Kit</a
@@ -914,6 +1017,11 @@
                       >ARC Online Training</a
                     >
                     <a
+                      href="/support-training/travel-agencies/iata-travel-tourism-diploma-courses/?utm_source=Global_Navigation"
+                      class="supernav-sub-link"
+                      >ARC/IATA Training</a
+                    >
+                    <a
                       href="/products-participation/travel-agencies/agency-participation/arc-specialist-certification/?utm_source=Global_Navigation"
                       class="supernav-sub-link"
                       >ARC Specialist Training & Certification</a
@@ -955,16 +1063,16 @@
                   <div class="supernav-sub-main col-md-6">
                     <div class="supernav-webinar">
                       <a
-                        href="/articles-trends/on-demand-webinars?utm_source=Navigation_Feature"
+                        href="https://arctravelconnect.com/Episodes?utm_source=Navigation_Feature"
                         class="supernav-header no-arrow"
-                        >On-Demand Webinars</a
+                        >TravelConnect Virtual Series</a
                       >
                       <div class="supernav-webinar-title">
                         Build your knowledge of ARC and the travel industry.
                       </div>
 
                       <a
-                        href="/articles-trends/on-demand-webinars?utm_source=Navigation_Feature"
+                        href="https://arctravelconnect.com/Episodes?utm_source=Navigation_Feature"
                         class="supernav-header"
                       >
                         View All
@@ -973,8 +1081,8 @@
                   </div>
                   <div class="supernav-sub-main col-md-6">
                     <img
-                      src="https://www2.arccorp.com/globalassets/homepage/redesign/training_feature3.png"
-                      alt="training"
+                      src="https://www2.arccorp.com/globalassets/homepage/redesign/slides/TCVS.png"
+                      alt="Travel Connect Virtual Series"
                     />
                   </div>
                 </div>
@@ -1005,15 +1113,17 @@
                       class="supernav-sub-link"
                       >2020 ARC Agency Fees</a
                     >
+
                     <a
-                      href="/support-training/holiday-schedule-2020/?utm_source=Global_Navigation"
+                      href="/support-training/2021-holiday-schedule/?utm_source=Global_Navigation"
                       class="supernav-sub-link"
-                      >2020 Holiday Schedule</a
+                      >2021 Holiday Schedule</a
                     >
+
                     <a
-                      href="/support-training/airlines/processing-schedule/?utm_source=Global_Navigation"
+                      href="/support-training/airlines/2021-processing-schedule/?utm_source=Global_Navigation"
                       class="supernav-sub-link"
-                      >2020 Processing Schedule</a
+                      >2021 Processing Schedule</a
                     >
                     <a
                       href="/support-training/airlines/airline-ticket-matrix/?utm_source=Global_Navigation"
@@ -1264,7 +1374,7 @@
                       Airline Sales Statistics
                     </a>
                     <a
-                      href="/about-us/our-data/?utm_source=Global_Navigation"
+                      href="/about-us/arc-data/?utm_source=Global_Navigation"
                       class="supernav-sub-link"
                       >Our Data</a
                     >
@@ -1347,24 +1457,26 @@
             <div class="product-sticky-nav">
               <div class="product-sticky-brand d-flex align-items-center">
                 <img
-                  src="https://www2.arccorp.com/globalassets/arc-logos/corporate-logos/arc-logo-s-black.png"
+                  src="https://www2.arccorp.com/globalassets/arc-logos/corporate-logos/arc-logo-s-white.png"
                   alt="ARC Logo"
                 />
-                <div class="product-sticky-title">
-                  Travel Demand
+                <div class="product-sticky-title" style="line-height: 20px;">
+                  NDC
                 </div>
               </div>
               <div class="product-sticky-links d-flex align-items-center">
                 <a href="#overview" class="product-sticky-link">Overview</a>
+                <!-- <a href="#customers" class="product-sticky-link">Customers</a> -->
+                <a href="#features" class="product-sticky-link">Features</a>
+                <a href="#getstarted" class="product-sticky-link">Get Started</a>
                 <a href="#customers" class="product-sticky-link">Customers</a>
-                <a href="#portfolio" class="product-sticky-link">Portfolio</a>
                 <a href="#resources" class="product-sticky-link">Resources</a>
               </div>
               <div class="product-sticky-menu d-flex align-items-center">
                 <a
-                  href="https://www2.arccorp.com/support-training/product-sales-request/?Product=ARC_Travel_Demand"
+                  href="https://www2.arccorp.com/products-participation/product-sales-request/arc-travel-demand/"
                   class="product-sticky-link-right"
-                  >Request a Demo <i class="fas fa-chevron-right"></i
+                  >Get Started Guide <i class="fas fa-chevron-right"></i
                 ></a>
               </div>
             </div>
@@ -1385,27 +1497,17 @@
     >
       <div class="background">
         <div
-          class="atd-jumbo lazy"
-          data-bg="https://www2.arccorp.com/globalassets/products--participation/arc-travel-demand/atd-jumbo-1.png"
+          class="ndc-jumbo lazy"
+          data-bg="https://www2.arccorp.com/globalassets/homepage/redesign/ndc/ndc-jumbo.jpg?1"
         >
           <div class="container">
             <div class="row">
-              <div class="col-lg-5">
-                <div>
-                  <div class="product-jumbo-eyebrow d-flex align-items-center">
-                    <img
-                      class="d-flex"
-                      src="https://www2.arccorp.com/globalassets/arc-logos/corporate-logos/arc-logo-s-gray.png"
-                    />
-
-                    <div class="d-flex product-jumbo-eyebrow-copy">
-                      Travel Demand
-                    </div>
-                  </div>
+              <div class="col-lg-8">
+                <div style="max-width: 725px;">
                   <h2 class="product-header white">
-                    Full visibility into air travel activity.
+                    Participate in ARC's program to leverage NDC in your
+                    distribution strategy.
                   </h2>
-                  <a href="#" class="ctaBtn">Request a Demo</a>
                 </div>
               </div>
             </div>
@@ -1413,13 +1515,16 @@
             <div class="row">
               <div class="col-lg-12">
                 <div class="product-callout">
-                  <h3 class="product-callout-copy gray">
-                    Providing timely intelligence on the current global air
-                    travel landscape with the
+                  <h3
+                    class="product-callout-copy yellow"
+                    style="max-width: 800px"
+                  >
+                    As the distribution landscape becomes more customizable,
                     <span
-                      >industry’s most accurate and comprehensive airline sales
-                      data.</span
-                    >
+                      >ARC forges connections between airlines and travel
+                      agencies</span
+                    >, equipping them to do business together in the way they
+                    choose.
                   </h3>
                 </div>
               </div>
@@ -1441,111 +1546,160 @@
     >
       <div class="background">
         <div id="overview">
-          <div class="callout-container">
+          <div class="callout-container gray">
             <div class="container">
               <div class="row">
-                <div class="col-lg-8">
+                <div class="col-lg-10">
                   <div class="product-eyebrow">Overview</div>
-                  <h2 class="product-header">
-                    Insight into airline sales & traffic volume.
+                  <h2 class="product-header white">
+                    Flexible distribution solutions
                   </h2>
                 </div>
               </div>
               <div class="row">
                 <div class="col-lg-12">
-                  <div class="product-callout-copy">
+                  <div class="product-callout-copy lightgray">
+                    With ARC’s secure, flexible and cost-effective settlement
+                    platform, airlines and travel agencies can
                     <span
-                      >ARC Travel Demand provides a holistic view of
-                      globalairline ticket sales</span
-                    >, with visibility into the current industry environment and
-                    understanding of future travel demand.
+                      >create efficient partnerships that leverage New
+                      Distribution Capability (NDC)</span
+                    >.
+                  </div>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-lg-12">
+                  <img
+                    src="https://www2.arccorp.com/globalassets/homepage/redesign/ndc/ndc-chart.png"
+                    alt="NDC Chart"
+                    style="padding-top: 80px; padding-bottom: 80px"
+                    class="img-fluid"
+                  />
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="data-panel__inside">
+        <div class="foreground foreground--left valign--middle">
+          <div class="body"></div>
+        </div>
+      </div>
+    </section>
+
+    <section
+      class="data-panel data-panel--white"
+      data-fullscreenimageblock="true"
+      data-section="data-panel"
+    >
+      <div class="background">
+        <div
+          id="features"
+          class="bg-img-container lazy"
+          data-bg="https://www2.arccorp.com/globalassets/homepage/redesign/ndc/ndc-settlement.jpg"
+        >
+          <div class="callout-container callout-container-mt2">
+            <div class="container">
+              <div class="row">
+                <div class="col-lg-12">
+                  <h2 class="product-header white">
+                    ARC's new settlement features
+                  </h2>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-lg-12">
+                  <div
+                    class="product-callout-copy white"
+                    style="max-width: 815px"
+                  >
+                    To support a wide range of NDC implementations, ARC has
+                    introduced several new features to its trusted, secure
+                    settlement platform:
                   </div>
                 </div>
               </div>
             </div>
           </div>
-        </div>
-      </div>
-      <div class="data-panel__inside">
-        <div class="foreground foreground--left valign--middle">
-          <div class="body"></div>
-        </div>
-      </div>
-    </section>
 
-    <section
-      class="data-panel data-panel--white"
-      data-fullscreenimageblock="true"
-      data-section="data-panel"
-    >
-      <div class="background">
-        <div class="yoy-graph">
-          <div class="container">
-            <div class="row">
-              <div class="col-lg-12">
-                <div class="yoy-graph-title">
-                  Year-over-year Ticket Sales for July Travel
-                </div>
-                <div class="yoy-graph-copy">
-                  Cumulative Passenger Count from the United States to Korea
-                </div>
-                <img
-                  src="https://www2.arccorp.com/globalassets/products--participation/arc-travel-demand/yoy-graph.png"
-                  alt="YOY Grapah"
-                />
-                <div class="yoy-graph-copy">
-                  View data by ticket purchase date and by flight departure date
-                  for a clear picture of sales activity, including refunds and
-                  exchanges, travel trends and itinerary dates.
-                  <span
-                    >Achieve great insight into the market and demand based on
-                    actual airline tickets sold</span
-                  >
-                  and their associated fees.
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="data-panel__inside">
-        <div class="foreground foreground--left valign--middle">
-          <div class="body"></div>
-        </div>
-      </div>
-    </section>
-
-    <section
-      class="data-panel data-panel--white"
-      data-fullscreenimageblock="true"
-      data-section="data-panel"
-    >
-      <div class="background">
-        <div class="product-quote" id="customers">
-          <div class="container">
-            <div class="row">
-              <div class="col-lg-12">
-                <div
-                  class="product-quote-container lazy"
-                  data-bg="https://www2.arccorp.com/globalassets/products--participation/arc-travel-demand/quote-1.png"
-                >
-                  <div class="row">
-                    <div class="col-lg-8">
-                      <div class="product-quote-copy">
-                        "Eaque ab cumque qui officia architecto recusandae vel
-                        quae optio nobis delectus nam impedit, id nihil
-                        explicabo deserunt ducimus?"
+          <div
+            class="sub-callout-container"
+            style="padding-top: 0;padding-left: 0; padding-right: 0; border-top: none;"
+          >
+            <div style="max-width: 815px;">
+              <div class="container">
+                <div class="row align-items-center">
+                  <div class="col-lg-6">
+                    <div class="subcallout-card">
+                      <div class="d-flex align-items-center">
+                        <img
+                          src="https://www2.arccorp.com/globalassets/homepage/redesign/ndc/ndc-settlement-1.png"
+                          style="padding-top: 5px; padding-bottom: 6px;"
+                          alt="Flexible credit card billing options"
+                        />
+                        <div class="subcallout-card-copy">
+                          Flexible credit card billing options
+                        </div>
                       </div>
-                      <div class="product-quote-name">
-                        <strong>FirstName LastName</strong><br />
-                        Title<br />
-                        Company
+                    </div>
+                  </div>
+                  <div class="col-lg-6">
+                    <div class="subcallout-card">
+                      <div class="d-flex align-items-center">
+                        <img
+                          src="https://www2.arccorp.com/globalassets/homepage/redesign/ndc/ndc-settlement-2.png"
+                          alt="Customizable transaction modifications"
+                        />
+                        <div class="subcallout-card-copy">
+                          Customizable transaction modifications
+                        </div>
                       </div>
-                      <a
-                        href="https://www2.arccorp.com/products-participation/customer-success-stories"
-                        class="ctaBtn ctaBtn--secondaryOnImage"
-                        >More Customer Praise</a
-                      >
+                    </div>
+                  </div>
+                </div>
+                <div class="row align-items-center">
+                  <div class="col-lg-6">
+                    <div class="subcallout-card">
+                      <div class="d-flex align-items-center">
+                        <img
+                          src="https://www2.arccorp.com/globalassets/homepage/redesign/ndc/ndc-settlement-3.png"
+                          alt="Acceptance of SPRF (ARC) or RET (BSP) file formats"
+                        />
+                        <div class="subcallout-card-copy">
+                          Acceptance of SPRF (ARC) or RET (BSP) file formats
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-lg-6">
+                    <div class="subcallout-card">
+                      <div class="d-flex align-items-center">
+                        <img
+                          src="https://www2.arccorp.com/globalassets/homepage/redesign/ndc/ndc-settlement-4.png"
+                          alt="Ability to identify direct connect transactions in IAR and on airline outputs"
+                        />
+                        <div class="subcallout-card-copy">
+                          Ability to identify direct connect transactions in IAR
+                          and on airline outputs
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="row align-items-center">
+                  <div class="col-lg-6">
+                    <div class="subcallout-card">
+                      <div class="d-flex align-items-center">
+                        <img
+                          src="https://www2.arccorp.com/globalassets/homepage/redesign/ndc/ndc-settlement-5.png"
+                          alt="Flexible messaging schema options (NDC or proprietary)"
+                        />
+                        <div class="subcallout-card-copy">
+                          Flexible messaging schema options (NDC or proprietary)
+                        </div>
+                      </div>
                     </div>
                   </div>
                 </div>
@@ -1567,95 +1721,141 @@
       data-section="data-panel"
     >
       <div class="background">
-        <div id="overview" class="bg-img-container">
-          <div class="callout-container">
-            <div class="container">
-              <div class="row">
-                <div class="col-lg-12">
-                  <h2 class="product-header">
-                    Access to timely ticketing data.
-                  </h2>
+        <div id="getstarted" class="data-icon-grid">
+          <div class="container">
+            <div class="row">
+              <div class="col-lg-12">
+                <div class="data-icon-grid-title">
+                  Get Started with ARC
                 </div>
               </div>
-              <div class="row">
-                <div class="col-lg-12">
-                  <div class="product-callout-copy">
-                    ARC Travel Demand
-                    <span
-                      >pulls from the world's most comprehensive source of
-                      global air travel intelligence,</span
-                    >
-                    including both travel agency sales and direct ticket sales
-                    from airlines across the world.
+            </div>
+            <div class="row">
+              <div class="col-lg-4">
+                <div class="data-icon-inner data-icon-number-inner text-center">
+                  <div class="data-icon-number">
+                    1
+                  </div>
+                  <div class="data-icon-grid-text">
+                    Watch
+                  </div>
+                  <div class="data-icon-grid-label">
+                    Video Application Guide
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-4">
+                <div class="data-icon-inner data-icon-number-inner text-center">
+                  <div class="data-icon-number">
+                    2
+                  </div>
+                  <div class="data-icon-grid-text">
+                    Review
+                  </div>
+                  <div class="data-icon-grid-label">
+                    NDC Application & Manual
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-4">
+                <div class="data-icon-inner data-icon-number-inner text-center">
+                  <div class="data-icon-number">
+                    3
+                  </div>
+                  <div class="data-icon-grid-text">
+                    Initiate
+                  </div>
+                  <div class="data-icon-grid-label">
+                    Discovery Call with ARC
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-lg-4">
+                <div class="data-icon-inner data-icon-number-inner text-center">
+                  <div class="data-icon-number">
+                    4
+                  </div>
+                  <div class="data-icon-grid-text">
+                    Determine
+                  </div>
+                  <div class="data-icon-grid-label">
+                    NDC Transaction Business Rules
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-4">
+                <div class="data-icon-inner data-icon-number-inner text-center">
+                  <div class="data-icon-number">
+                    5
+                  </div>
+                  <div class="data-icon-grid-text">
+                    Submit
+                  </div>
+                  <div class="data-icon-grid-label">
+                    Application with Onboarding Fee
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-4">
+                <div class="data-icon-inner data-icon-number-inner text-center">
+                  <div class="data-icon-number">
+                    6
+                  </div>
+                  <div class="data-icon-grid-text">
+                    Complete
+                  </div>
+                  <div class="data-icon-grid-label">
+                    Testing, Onboarding & Implementation
                   </div>
                 </div>
               </div>
             </div>
           </div>
         </div>
-      </div>
-      <div class="data-panel__inside">
-        <div class="foreground foreground--left valign--middle">
-          <div class="body"></div>
-        </div>
-      </div>
-    </section>
 
-    <section
-      class="data-panel data-panel--white"
-      data-fullscreenimageblock="true"
-      data-section="data-panel"
-    >
-      <div class="background">
-        <div class="data-icon-grid">
-          <div class="container">
-            <div class="row">
-              <div class="col-lg-12">
-                <div class="data-icon-grid-title">
-                  Global Coverage Spans Flights From
-                </div>
-              </div>
-            </div>
-            <div class="row">
-              <div class="col-lg-4">
-                <div class="data-icon-inner">
-                  <img
-                    class="lazy"
-                    data-src="https://www2.arccorp.com/globalassets/products--participation/arc-travel-demand/airports-icon.png?2"
-                    alt="Airports"
-                  />
-                  <div class="data-icon-grid-value">
-                    4,600
-                  </div>
-                  <div class="data-icon-grid-label">Airports</div>
-                </div>
-              </div>
-              <div class="col-lg-4">
-                <div class="data-icon-inner">
-                  <img
-                    class="lazy"
-                    data-src="https://www2.arccorp.com/globalassets/products--participation/arc-travel-demand/country-icon.png?2"
-                    alt="Countries & Territories"
-                  />
-                  <div class="data-icon-grid-value">
-                    234
-                  </div>
-                  <div class="data-icon-grid-label">
-                    Countries & Territories
+        <div class=" bg-color-fog" id="customers">
+          <div
+            class="sub-callout-container dark"
+            style="padding-left: 10px; padding-right:10px; padding-bottom: 120px;"
+          >
+            <div class="container">
+              <div class="row">
+                <div class="col-lg-12">
+                  <div class="data-icon-grid-title text-center">
+                    Companies that Partner with ARC
                   </div>
                 </div>
               </div>
-              <div class="col-lg-4">
-                <div class="data-icon-inner">
+              <div class="row align-items-center text-center">
+                <div class="col-lg-3">
                   <img
+                    data-src="https://www2.arccorp.com/globalassets/homepage/redesign/ndc/ndc-logo-1.png"
+                    alt="American Airlines"
                     class="lazy"
-                    data-src="https://www2.arccorp.com/globalassets/products--participation/arc-travel-demand/passenger-icon.png?2"
-                    alt="Passenger Trips"
                   />
-                  <div class="data-icon-grid-value">
-                    2.2B
-                  </div>
-                  <div class="data-icon-grid-label">Passenger Trips</div>
+                </div>
+                <div class="col-lg-3">
+                  <img
+                    data-src="https://www2.arccorp.com/globalassets/homepage/redesign/ndc/ndc-logo-2.png"
+                    alt="American Airlines"
+                    class="lazy"
+                  />
+                </div>
+                <div class="col-lg-3">
+                  <img
+                    data-src="https://www2.arccorp.com/globalassets/homepage/redesign/ndc/ndc-logo-3.png"
+                    alt="American Airlines"
+                    class="lazy"
+                  />
+                </div>
+                <div class="col-lg-3">
+                  <img
+                    data-src="https://www2.arccorp.com/globalassets/homepage/redesign/ndc/ndc-logo-4.png"
+                    alt="American Airlines"
+                    class="lazy"
+                  />
                 </div>
               </div>
             </div>
@@ -1676,232 +1876,34 @@
     >
       <div class="background">
         <div
-          id="expansive-intellgience"
-          class="bg-img-container lazy"
-          data-bg="https://www2.arccorp.com/globalassets/products--participation/arc-travel-demand/expansive-intelligence.jpg"
+          class="product-quote lazy"
+          id="customers"
+          style="padding-top: 110px; padding-bottom: 80px;"
+          data-bg="https://www2.arccorp.com/globalassets/homepage/redesign/ndc/ndc-quote.jpg"
         >
-          <div class="callout-container callout-container-mt2">
-            <div class="container">
-              <div class="row">
-                <div class="col-lg-8">
-                  <h2 class="product-header white">
-                    Expansive intelligence.
-                  </h2>
+          <div class="container">
+            <div class="row">
+              <div class="col-lg-12">
+                <div class="product-quote-copy sm" style="max-width: 800px;">
+                  "British Airways is excited to be the first test partner for
+                  ARC's enhanced settlement functionality, which enables us to
+                  evolve our distribution strategy with the travel agency
+                  channel. ARC has always been a trusted partner to British
+                  Airways, and we have valued their flexibility, responsiveness
+                  and collaboration during this testing process. These
+                  enhancements will aid us in developing our relationships with
+                  agencies, and they set the stage for our growing distribution
+                  stratetgy in the U.S."
                 </div>
-              </div>
-              <div class="row">
-                <div class="col-lg-12">
-                  <div class="product-callout-copy yellow">
-                    With data updated daily, ARC Travel Demand customers have
-                    access to timely airlines sales for travel
-                    <span
-                      >up to 12 months into the future, as well as five years of
-                      historical data</span
-                    >
-                    for benchmarking.
-                  </div>
+                <div class="product-quote-name sm">
+                  <strong>Simon Brooks</strong><br />Senior Vice President,
+                  Sales for North America<br />British Airways<br />
                 </div>
-              </div>
-            </div>
-          </div>
-
-          <div class="sub-callout-container ">
-            <div class="container">
-              <div class="row align-items-center">
-                <div class="col-lg-4">
-                  <img
-                    class="lazy"
-                    data-src="https://www2.arccorp.com/globalassets/products--participation/arc-travel-demand/travel-industry-performance.jpg"
-                    alt=""
-                  />
-                </div>
-                <div class="col-lg-8">
-                  <p>
-                    Get insight into ticketing and fare trends, by country, to
-                    identify rebounding destinations. With this data, see
-                    year-over-year variances in air sales, down to
-                    transaction-level details, such as service class as well as
-                    fare information,to visualize the evolving air travel
-                    market.
-                  </p>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="data-panel__inside">
-        <div class="foreground foreground--left valign--middle">
-          <div class="body"></div>
-        </div>
-      </div>
-    </section>
-
-    <section
-      class="data-panel data-panel--white"
-      data-fullscreenimageblock="true"
-      data-section="data-panel"
-    >
-      <div class="background">
-        <div id="portfolio">
-          <div class="callout-container">
-            <div class="container">
-              <div class="row">
-                <div class="col-lg-8">
-                  <div class="product-eyebrow">Portfolio</div>
-                  <h2 class="product-header">
-                    Flexible product options.
-                  </h2>
-                </div>
-              </div>
-              <div class="row">
-                <div class="col-lg-12">
-                  <div class="product-callout-copy">
-                    <span
-                      >Gain access to versatile, customizable intelligence
-                      withARC Travel Demand.</span
-                    >
-                    Customers can select datasets for specific origin and
-                    destinations, point-of-sale locations, flight departure
-                    dates as well as ticket purchase dates.
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="data-panel__inside">
-        <div class="foreground foreground--left valign--middle">
-          <div class="body"></div>
-        </div>
-      </div>
-    </section>
-
-    <section
-      class="data-panel data-panel--white"
-      data-fullscreenimageblock="true"
-      data-section="data-panel"
-    >
-      <div class="background">
-        <div class="container">
-          <div
-            class="product-option-box lazy"
-            data-bg="https://www2.arccorp.com/globalassets/products--participation/arc-travel-demand/product-container-bg-1.jpg"
-          >
-            <div class="row align-items-center">
-              <div class="col-lg-4">
-                <div
-                  class="product-option product-option-container-item"
-                  data-id="3"
+                <a
+                  href="https://www2.arccorp.com/products-participation/customer-success-stories"
+                  class="ctaBtn ctaBtn--secondaryOnImage"
+                  >More Customer Stories</a
                 >
-                  <div class="product-option-container-item-eyebrow">
-                    Product Option
-                  </div>
-                  <div class="product-option-container-item-title">
-                    Snowflake <br />Datbase<br />Sharing
-                  </div>
-                  <img
-                    class="lazy"
-                    data-src="https://www2.arccorp.com/globalassets/products--participation/arc-travel-demand/snowflake-icon.png"
-                    alt="Snowflake"
-                  />
-                </div>
-              </div>
-              <div class="col-lg-8">
-                <div class="product-copy-item">
-                  <img
-                    class="lazy"
-                    data-src="https://www2.arccorp.com/globalassets/products--participation/arc-travel-demand/snowflake.png?123"
-                    alt="Snowflake Logo"
-                  />
-                  <p>
-                    ARC Travel Demand is also available as a shared database on
-                    Snowflake. Users can easily query, ingest and analyze data
-                    on demand, without the need for additional data storage.
-                  </p>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div
-            class="product-option-box lazy"
-            data-bg="https://www2.arccorp.com/globalassets/products--participation/arc-travel-demand/product-option-bg.png"
-          >
-            <div class="row align-items-center">
-              <div class="col-lg-4">
-                <div
-                  class="product-option product-option-container-item"
-                  data-id="1"
-                >
-                  <div class="product-option-container-item-eyebrow">
-                    Product Option
-                  </div>
-                  <div class="product-option-container-item-title">
-                    Direct <br />Source <br />API
-                  </div>
-                  <img
-                    class="lazy"
-                    data-src="https://www2.arccorp.com/globalassets/products--participation/arc-travel-demand/direct-source-api-icon.png"
-                    alt="Direct Source API Icon"
-                  />
-                </div>
-              </div>
-              <div class="col-lg-8">
-                <div class="product-copy-item">
-                  <img
-                    class="lazy"
-                    data-src="https://www2.arccorp.com/globalassets/products--participation/arc-travel-demand/aws-logo.png"
-                    alt="AWS Logo"
-                  />
-                  <p>
-                    With ARC Travel Demand’s API, data is sourced directly from
-                    Amazon Web Services (AWS) and available for ingestion into
-                    any customer source system. This delivery method allows
-                    customers to easily automate file intake.
-                  </p>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="data-panel__inside">
-        <div class="foreground foreground--left valign--middle">
-          <div class="body"></div>
-        </div>
-      </div>
-    </section>
-
-    <section
-      class="data-panel data-panel--white"
-      data-fullscreenimageblock="true"
-      data-section="data-panel"
-    >
-      <div class="background">
-        <div id="resources">
-          <div
-            class="product-full-bleed lazy"
-            data-bg="https://www2.arccorp.com/globalassets/products--participation/arc-travel-demand/resources-bg.jpg"
-          >
-            <div class="container">
-              <div class="row">
-                <div class="col-lg-5">
-                  <div class="product-eyebrow">Resources</div>
-                  <div class="product-section-header white">
-                    The intelligence behind air travel.
-                  </div>
-                </div>
-              </div>
-              <div class="row">
-                <div class="col-lg-7">
-                  <div class="product-subheader white">
-                    ARC manages the world's most comprehensive air transaction
-                    data. ARC's data is derivedfrom ticketed transactions,
-                    reflecting both historical and advance travel purchases.
-                  </div>
-                  <a href="" class="ctaBtn">Learn More</a>
-                </div>
               </div>
             </div>
           </div>
@@ -1925,24 +1927,23 @@
             <div class="callout-box teal">
               <div class="row">
                 <div class="col-lg-12">
-                  <div class="callout-box-eyebrow">
-                    Targeted Insights
-                  </div>
                   <div class="callout-box-title">
-                    Looking for a more custom data solution?
+                    Still have questions?
                   </div>
-                  <div class="callout-box-copy">
-                    ARC's timely, concise and accurate data solutions contain
-                    actionable insights tailored to your organization'sunique
-                    business needs. With a staff of analysts, statisticians and
-                    data scientists, ARC's team will consult with you on
-                    available report solutions, including format, frequency,
-                    depth and breadth of data.
+                  <div class="callout-box-copy" style="max-width: 300px;">
+                    Check out our most frequently asked questions about NDC.
                   </div>
                   <a
                     href="https://www2.arccorp.com/products-participation/products/arc-custom-reports/"
                     class="ctaBtn ctaBtn--white"
-                    >Let's Talk</a
+                    style="margin-right: 1rem; width: 215px"
+                    >FAQs</a
+                  >
+                  <a
+                    href="https://www2.arccorp.com/products-participation/products/arc-custom-reports/"
+                    class="ctaBtn ctaBtn--white-outline"
+                    style="width: 215px"
+                    >Contact Us</a
                   >
                 </div>
               </div>
@@ -1963,25 +1964,34 @@
       data-section="data-panel"
     >
       <div class="background">
-        <div class="box-icon">
-          <div class="container">
-            <div class="box-icon-container bg-color-midgray">
+        <div class="box-icon bg-color-midgray" id="resources">
+          <div class="container ndc-resources">
+            <div class="box-icon-container">
               <div class="row align-items-center text-center">
                 <div class="col-lg-4">
-                  <div class="box-icon-item">
+                  <div
+                    class="box-icon-item"
+                    style="padding-left: 0; padding-right: 0;"
+                  >
                     <img
                       class="lazy"
-                      data-src="https://www2.arccorp.com/globalassets/products--participation/arc-travel-demand/atd-product-sheet.jpg"
-                      alt="Product Sheet"
+                      data-src="https://www2.arccorp.com/globalassets/homepage/redesign/ndc/ndc-icon-1.png"
+                      alt="Travel Agency Payment Best Practices"
+                      style="padding: 10px 0;"
                     />
-                    <div class="box-icon-header">
-                      ARC Travel Demand Product Sheet
+                    <div class="box-icon-header type-color-white">
+                      Direct Connect <br />Product Sheet
                     </div>
-                    <div class="box-icon-copy">
-                      For more information on ARC Travel Demand, download the
-                      product sheet.
+                    <div
+                      class="box-icon-copy type-color-product-lightgray"
+                      style="padding-left: 0; padding-right: 0"
+                    >
+                      A concise guide with advice, best practices and practical
+                      examples for travel payment professionals.
                     </div>
-                    <a href="#" class="link-download"
+                    <a
+                      href="https://www2.arccorp.com/globalassets/datasheets/arc-travel-demand-datasheet.pdf"
+                      class="link-download"
                       >Download <i class="fas fa-chevron-down"></i
                     ></a>
                   </div>
@@ -1990,18 +2000,20 @@
                   <div class="box-icon-item">
                     <img
                       class="lazy"
-                      data-src="https://www2.arccorp.com/globalassets/products--participation/arc-travel-demand/atd-data.jpg"
-                      alt="Data"
+                      data-src="https://www2.arccorp.com/globalassets/homepage/redesign/ndc/ndc-icon-2.png"
+                      alt="Chargebacks Best Practices"
+                      style="padding: 17px 0;"
                     />
-                    <div class="box-icon-header">
-                      Innovative Data Solutions
+                    <div class="box-icon-header type-color-white">
+                      Access ARC's NDC Recordings
                     </div>
-                    <div class="box-icon-copy">
-                      Refine your business strategy with ARC products for
-                      industry analysts.
+                    <div class="box-icon-copy type-color-product-lightgray">
+                      View videos that further explain the benefits of NDC.<br /><br />
                     </div>
-                    <a href="#" class="link-download"
-                      >Learn More <i class="fas fa-chevron-right"></i
+                    <a
+                      href="https://www2.arccorp.com/products-participation/products/arc-travel-demand/arc-travel-demand-glossary/"
+                      class="link-download"
+                      >Watch <i class="fas fa-chevron-right"></i
                     ></a>
                   </div>
                 </div>
@@ -2009,18 +2021,23 @@
                   <div class="box-icon-item">
                     <img
                       class="lazy"
-                      data-src="https://www2.arccorp.com/globalassets/products--participation/arc-travel-demand/atd-graph.jpg"
-                      alt="Graph"
+                      data-src="https://www2.arccorp.com/globalassets/homepage/redesign/ndc/ndc-icon-3.png"
+                      alt="Fraud Prevention Practices"
+                      style="padding: 15px 0;"
                     />
-                    <div class="box-icon-header">
-                      Industry-leading <br />air data
+                    <div
+                      class="box-icon-header type-color-white"
+                    >
+                      Direct Connect Airline Capabilities Grid
                     </div>
-                    <div class="box-icon-copy">
-                      ARC's data delivers actionable insights into broad trends
-                      and distinct details.
+                    <div class="box-icon-copy type-color-product-lightgray">
+                      See a detailed chart by airlines of NDC capabilities they
+                      have implemented.
                     </div>
-                    <a href="#" class="link-download"
-                      >About ARC Data <i class="fas fa-chevron-right"></i
+                    <a
+                      href="https://www2.arccorp.com/about-us/arc-data/"
+                      class="link-download"
+                      >Learn More <i class="fas fa-chevron-right"></i
                     ></a>
                   </div>
                 </div>
@@ -2042,7 +2059,7 @@
         <div class="rtf">
           <p>
             <span
-              >© 2020 Airlines Reporting Corporation (ARC). All rights reserved.
+              >© 2021 Airlines Reporting Corporation (ARC). All rights reserved.
             </span>
           </p>
           <noscript>
@@ -2108,7 +2125,10 @@
               -->
             </style>
           </div>
-          <script type="text/javascript" src="main.min.js"></script>
+          <script
+            type="text/javascript"
+            src="https://cdn.jsdelivr.net/gh/AirlinesReportingCorporation/arccorp@v0.57/dist/main.min.js"
+          ></script>
 
           <span class="footer-rtf-links">
             <a href="/website-terms-of-use/" title="Terms">Terms</a>
@@ -2131,7 +2151,8 @@
         <ul class="footer-links-social">
           <li>
             <a
-              href="https://www.schellman.com/certificate-directory?certificateNumber=1427462-8"
+              href="https://www.schellman.com/certificate-directory?certificateNumber=1427462-9"
+              target="_blank"
               class="icon-iso_logo"
             ></a>
           </li>
@@ -2239,14 +2260,5 @@
         "<a href='https://www2.arccorp.com/support-training/data-subject-access-request-form/'>Do Not Sell My Personal Information</a>"
       );
     </script>
-    <script></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/stickybits/3.7.7/stickybits.min.js"></script>
-
-    <script>
-      stickybits(".data-panel-sticky", { useStickyClasses: true });
-    </script>
-    <script></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/stickybits/3.7.7/jquery.stickybits.min.js"></script>
-    <script></script>
   </body>
 </html>
