@@ -82,6 +82,45 @@ a.ctaBtn.product-cta {
   }
 }
 
+.ndc-grid {
+  .content-block--pageItem__inside {
+    border-radius: 0;
+    text-align: left !important;
+    border: none;
+    border-top: 5px solid #019bb1;
+    max-height: none !important;
+    min-height: 365px !important;
+
+    .ctaLink {
+      font-family: SourceSansPro-Bold, Arial, Helvetica, sans-serif;
+      font-size: 24px;
+      line-height: 28px;
+      align-items: center;
+    }
+
+    
+
+    .content-block--pageItem__metadata li {
+      margin-bottom: 15px;
+      &:first-child {
+        display: none;
+      }
+
+      &:before {
+        display: none;
+      }
+    }
+  }
+
+  .showmore__spacer {
+    margin-top: 15px;
+  }
+
+  .content-block--pageItem__body {
+    font-size: 16px !important;
+  }
+}
+
 .bg-section {
   background-color: #000000;
   background-size: cover !important;
