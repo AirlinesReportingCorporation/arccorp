@@ -1467,11 +1467,12 @@
               <div class="product-sticky-links d-flex align-items-center">
                 <a href="#overview" class="product-sticky-link">Overview</a>
                 <!-- <a href="#customers" class="product-sticky-link">Customers</a> -->
-                <a href="#features" class="product-sticky-link">Features</a>
+
                 <a href="#getstarted" class="product-sticky-link"
                   >Get Started</a
                 >
                 <a href="#customers" class="product-sticky-link">Customers</a>
+                <a href="/faqs" class="product-sticky-link">FAQs</a>
                 <a href="#resources" class="product-sticky-link">Resources</a>
               </div>
               <div class="product-sticky-menu d-flex align-items-center">
@@ -1910,40 +1911,476 @@
     </section>
 
     <section
-      class="data-panel data-panel--white"
+      class="data-panel data-panel--white full-width-callout-copy"
       data-fullscreenimageblock="true"
       data-section="data-panel"
     >
       <div class="background">
         <div
-          class="product-quote lazy"
-          id="customers"
-          style="padding-top: 110px; padding-bottom: 80px;"
-          data-bg="https://www2.arccorp.com/globalassets/homepage/redesign/ndc/ndc-quote.jpg"
+          id="ndc-app"
+          class="container"
+          style="padding-top: 80px; padding-bottom: 65px"
         >
-          <div class="container">
-            <div class="row">
-              <div class="col-lg-12">
-                <div class="product-quote-copy sm" style="max-width: 800px;">
-                  "British Airways is excited to be the first test partner for
-                  ARC's enhanced settlement functionality, which enables us to
-                  evolve our distribution strategy with the travel agency
-                  channel. ARC has always been a trusted partner to British
-                  Airways, and we have valued their flexibility, responsiveness
-                  and collaboration during this testing process. These
-                  enhancements will aid us in developing our relationships with
-                  agencies, and they set the stage for our growing distribution
-                  stratetgy in the U.S."
+          <div class="row no-gutters">
+            <div class="col-lg-12">
+              <div class="ndc-accordion">
+                <div class="product-accordion">
+                  <span v-for="(ndcAirline, index) in ndcAirlines">
+                    <div
+                      v-bind:class="[ndcAirline.display ? 'active': '', 'product-accordion-row']"
+                    >
+                      <div class="product-accordion-top">
+                        <div class="product-accordion-start">
+                          <div class="row align-items-center">
+                            <div class="col-11">
+                              <div class="d-flex flex-column flex-lg-row">
+                                <div class="d-flex align-items-center">
+                                  <div class="apDesignator">
+                                    {{ndcAirline.designator}}
+                                  </div>
+                                  <div class="apCode">
+                                    {{ndcAirline.code}}
+                                  </div>
+                                </div>
+                                <div>
+                                  <div class="apName">
+                                    {{ndcAirline.name}}
+                                  </div>
+                                </div>
+                                <div class="ml-auto d-flex align-items-center">
+                                  <div
+                                    class="apUpdated"
+                                    style="margin-right:0;"
+                                  >
+                                    <span>Latest Updates:</span> November 1,
+                                    2021
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                            <div class="col-1">
+                              <div
+                                class="apExpand"
+                                v-on:click="toggleView(index)"
+                              >
+                                <i
+                                  v-bind:class="[ndcAirline.display ? 'fa-minus': 'fa-plus', 'fas']"
+                                ></i>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <div
+                          v-bind:class="[ndcAirline.display ? 'show': '', 'product-accordion-info animated slideInDown']"
+                        >
+                          <div class="row no-gutters">
+                            <div class="col-lg-3">
+                              <div class="apSection apSectionMarginLeft">
+                                <div class="apSectionTop">
+                                  <div class="d-flex align-items-center">
+                                    <h3>System Provider (SASI)</h3>
+
+                                    <div class="ml-auto">
+                                      <div class="airlineTooltip">
+                                        <img
+                                          src="https://www2.arccorp.com/globalassets/about-us/our-data/redesign/tooltip.png"
+                                          alt="Help"
+                                        />
+                                        <div class="airlineTooltipText">
+                                          Refunds are either managed via the GDS
+                                          or directly.
+                                        </div>
+                                      </div>
+                                    </div>
+                                  </div>
+                                </div>
+                                <div class="apSectionBottom">
+                                  <div
+                                    class="apProcessing m-auto"
+                                    style="max-width: 80px; width: auto;"
+                                  >
+                                    {{ndcAirline.system}}
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+
+                            <div class="col-lg-3">
+                              <div class="apSection apSectionMarginLeft">
+                                <div class="apSectionTop">
+                                  <div class="d-flex align-items-center">
+                                    <h3>Payment via ARC</h3>
+
+                                    <div class="ml-auto">
+                                      <div class="airlineTooltip">
+                                        <img
+                                          src="https://www2.arccorp.com/globalassets/about-us/our-data/redesign/tooltip.png"
+                                          alt="Help"
+                                        />
+                                        <div class="airlineTooltipText">
+                                          Refunds are either managed via the GDS
+                                          or directly.
+                                        </div>
+                                      </div>
+                                    </div>
+                                  </div>
+                                </div>
+                                <div class="apSectionBottom">
+                                  <div class="d-flex justify-content-center">
+                                    <div
+                                      v-bind:class="[(paymentMatch(ndcAirline.payment, 'Cash')) ? 'active': '', 'apButton apButtonBorder']"
+                                    >
+                                      Cash
+                                    </div>
+                                    <div
+                                      v-bind:class="[(paymentMatch(ndcAirline.payment, 'Credit')) ? 'active': '', 'apButton apButtonBorder']"
+                                    >
+                                      Credit
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+
+                            <div class="col-lg-6">
+                              <div class="apSection apSectionMargin">
+                                <div class="apSectionTop">
+                                  <div class="d-flex align-items-center">
+                                    <h3>IAR Error Management</h3>
+
+                                    <div class="ml-auto">
+                                      <div class="airlineTooltip">
+                                        <img
+                                          src="https://www2.arccorp.com/globalassets/about-us/our-data/redesign/tooltip.png"
+                                          alt="Help"
+                                        />
+                                        <div class="airlineTooltipText">
+                                          Refunds are either managed via the GDS
+                                          or directly.
+                                        </div>
+                                      </div>
+                                    </div>
+                                  </div>
+                                </div>
+                                <div class="apSectionBottom">
+                                  <div class="d-flex justify-content-center">
+                                    <div
+                                      v-bind:class="[(paymentMatch(ndcAirline.iarErr, 'Corrected by Agent')) ? 'on': '', 'apButton ']"
+                                    >
+                                      Corrected by Agent
+                                    </div>
+                                    <div
+                                      v-bind:class="[(paymentMatch(ndcAirline.iarErr, 'Return to Airline')) ? 'on': '', 'apButton ']"
+                                    >
+                                      Return to Airline
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="row no-gutters">
+                            <div class="col-lg-6">
+                              <div
+                                class="apSection apSectionMarginLeft"
+                                style="margin-top: 20px"
+                              >
+                                <div class="apSectionTop">
+                                  <div class="d-flex align-items-center">
+                                    <h3>Airline Transaction Types</h3>
+
+                                    <div class="ml-auto">
+                                      <div class="airlineTooltip">
+                                        <img
+                                          src="https://www2.arccorp.com/globalassets/about-us/our-data/redesign/tooltip.png"
+                                          alt="Help"
+                                        />
+                                        <div class="airlineTooltipText">
+                                          Refunds are either managed via the GDS
+                                          or directly.
+                                        </div>
+                                      </div>
+                                    </div>
+                                  </div>
+                                </div>
+                                <div class="apSectionBottom">
+                                  <div class="d-flex justify-content-center">
+                                    <div
+                                      v-bind:class="[(paymentMatch(ndcAirline.types, 'Sales')) ? 'active-gray': '', 'apButton apButtonBorder']"
+                                    >
+                                      Sales
+                                    </div>
+                                    <div
+                                      v-bind:class="[(paymentMatch(ndcAirline.types, 'Refunds')) ? 'active-gray': '', 'apButton apButtonBorder']"
+                                    >
+                                      Refunds
+                                    </div>
+                                    <div
+                                      v-bind:class="[(paymentMatch(ndcAirline.types, 'Voids')) ? 'active-gray': '', 'apButton apButtonBorder']"
+                                    >
+                                      Voids
+                                    </div>
+                                    <div
+                                      v-bind:class="[(paymentMatch(ndcAirline.types, 'Exchanges')) ? 'active-gray': '', 'apButton apButtonBorder']"
+                                    >
+                                      Exchanges
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                            <div class="col-lg-6">
+                              <div
+                                class="apSection apSectionMargin"
+                                style="margin-top: 20px"
+                              >
+                                <div class="apSectionTop">
+                                  <div class="d-flex align-items-center">
+                                    <h3>IAR Modifications</h3>
+
+                                    <div class="ml-auto">
+                                      <div class="airlineTooltip">
+                                        <img
+                                          src="https://www2.arccorp.com/globalassets/about-us/our-data/redesign/tooltip.png"
+                                          alt="Help"
+                                        />
+                                        <div class="airlineTooltipText">
+                                          Refunds are either managed via the GDS
+                                          or directly.
+                                        </div>
+                                      </div>
+                                    </div>
+                                  </div>
+                                </div>
+                                <div class="apSectionBottom">
+                                  <div class="d-flex justify-content-center">
+                                    <div
+                                      v-bind:class="[(paymentMatch(ndcAirline.iarMod, 'All')) ? 'on': '', 'apButton ']"
+                                    >
+                                      All
+                                    </div>
+                                    <div
+                                      v-bind:class="[(paymentMatch(ndcAirline.iarMod, 'None')) ? 'on': '', 'apButton ']"
+                                    >
+                                      None
+                                    </div>
+                                    <div
+                                      v-bind:class="[(paymentMatch(ndcAirline.iarMod, 'Commission Only')) ? 'on': '', 'apButton ']"
+                                    >
+                                      Commission Only
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                          <div
+                            class="row no-gutters"
+                            style="margin-top: 20px; margin-bottom: 15px;"
+                          >
+                            <div class="col-lg-6">
+                              <div
+                                class="apSection apSectionMarginLeft"
+                                style="margin-top: 20px"
+                              >
+                                <div class="apSectionTop">
+                                  <div class="d-flex align-items-center">
+                                    <h3>Exchange and Refund Verification</h3>
+
+                                    <div class="ml-auto">
+                                      <div class="airlineTooltip">
+                                        <img
+                                          src="https://www2.arccorp.com/globalassets/about-us/our-data/redesign/tooltip.png"
+                                          alt="Help"
+                                        />
+                                        <div class="airlineTooltipText">
+                                          Refunds are either managed via the GDS
+                                          or directly.
+                                        </div>
+                                      </div>
+                                    </div>
+                                  </div>
+                                </div>
+                                <div class="apSectionBottom">
+                                  <div class="d-flex justify-content-center">
+                                    <div
+                                      v-bind:class="[(paymentMatch(ndcAirline.refund, 'Yes')) ? 'on-green': '', 'apButton']"
+                                    >
+                                      Yes
+                                    </div>
+                                    <div
+                                      v-bind:class="[(paymentMatch(ndcAirline.refund, 'No')) ? 'on-red': '', 'apButton']"
+                                    >
+                                      No
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                            <div class="col-lg-6">
+                              <div
+                                class="apSection apSectionMargin"
+                                style="margin-top: 20px"
+                              >
+                                <div class="apSectionTop">
+                                  <div class="d-flex align-items-center">
+                                    <h3>IAR Manual Entries</h3>
+
+                                    <div class="ml-auto">
+                                      <div class="airlineTooltip">
+                                        <img
+                                          src="https://www2.arccorp.com/globalassets/about-us/our-data/redesign/tooltip.png"
+                                          alt="Help"
+                                        />
+                                        <div class="airlineTooltipText">
+                                          Refunds are either managed via the GDS
+                                          or directly.
+                                        </div>
+                                      </div>
+                                    </div>
+                                  </div>
+                                </div>
+                                <div class="apSectionBottom">
+                                  <div class="d-flex justify-content-center">
+                                    <div
+                                      v-bind:class="[(paymentMatch(ndcAirline.iarMan, 'All')) ? 'on': '', 'apButton ']"
+                                    >
+                                      All
+                                    </div>
+                                    <div
+                                      v-bind:class="[(paymentMatch(ndcAirline.iarMan, 'None')) ? 'on': '', 'apButton ']"
+                                    >
+                                      None
+                                    </div>
+                                    <div
+                                      v-bind:class="[(paymentMatch(ndcAirline.iarMan, 'Commission Only')) ? 'on': '', 'apButton ']"
+                                    >
+                                      Voids Only
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </span>
                 </div>
-                <div class="product-quote-name sm">
-                  <strong>Simon Brooks</strong><br />Senior Vice President,
-                  Sales for North America<br />British Airways<br />
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="data-panel__inside">
+        <div class="foreground foreground--left valign--middle">
+          <div class="body"></div>
+        </div>
+      </div>
+    </section>
+
+    <section
+      class="data-panel data-panel--white"
+      data-fullscreenimageblock="true"
+      data-section="data-panel"
+    >
+      <div class="background">
+        <div class="randomize-section">
+          <div
+            class="product-quote lazy"
+            id="customers"
+            style="padding-top: 110px; padding-bottom: 80px;"
+            data-bg="https://www2.arccorp.com/globalassets/homepage/redesign/ndc/ndc-quote.jpg"
+          >
+            <div class="container">
+              <div class="row">
+                <div class="col-lg-12">
+                  <div class="product-quote-copy sm" style="max-width: 800px;">
+                    "British Airways is excited to be the first test partner for
+                    ARC's enhanced settlement functionality, which enables us to
+                    evolve our distribution strategy with the travel agency
+                    channel. ARC has always been a trusted partner to British
+                    Airways, and we have valued their flexibility,
+                    responsiveness and collaboration during this testing
+                    process. These enhancements will aid us in developing our
+                    relationships with agencies, and they set the stage for our
+                    growing distribution stratetgy in the U.S."
+                  </div>
+                  <div class="product-quote-name sm">
+                    <strong>Simon Brooks</strong><br />Senior Vice President,
+                    Sales for North America<br />British Airways<br />
+                  </div>
+                  <a
+                    href="https://www2.arccorp.com/products-participation/customer-success-stories"
+                    class="ctaBtn ctaBtn--secondaryOnImage"
+                    >More Customer Stories</a
+                  >
                 </div>
-                <a
-                  href="https://www2.arccorp.com/products-participation/customer-success-stories"
-                  class="ctaBtn ctaBtn--secondaryOnImage"
-                  >More Customer Stories</a
-                >
+              </div>
+            </div>
+          </div>
+          <div
+            class="product-quote lazy"
+            id="customers"
+            style="padding-top: 110px; padding-bottom: 80px;"
+            data-bg="https://www2.arccorp.com/globalassets/homepage/redesign/ndc/ndc-quote2.jpg"
+          >
+            <div class="container">
+              <div class="row">
+                <div class="col-lg-12">
+                  <div class="product-quote-copy sm" style="max-width: 800px;">
+                    "ARC has partnered closely with United on several of our
+                    omnichannel retailing initiatives, including NDC. This
+                    implementation provides us with a strong foundation for
+                    managing NDC transactions with travel agencies and travel
+                    management companies. By leveraging NDC, United is equipped
+                    to distribute richer content to travelers through our travel
+                    agency partners, with more flexible payment and settlement
+                    options."
+                  </div>
+                  <div class="product-quote-name sm">
+                    <strong>Tye Radcliffe </strong><br />Director of
+                    Distribution <br />United Airlines <br />
+                  </div>
+                  <a
+                    href="https://www2.arccorp.com/products-participation/customer-success-stories"
+                    class="ctaBtn ctaBtn--secondaryOnImage"
+                    >More Customer Stories</a
+                  >
+                </div>
+              </div>
+            </div>
+          </div>
+          <div
+            class="product-quote lazy"
+            id="customers"
+            style="padding-top: 110px; padding-bottom: 80px;"
+            data-bg="https://www2.arccorp.com/globalassets/homepage/redesign/ndc/ndc-quote3.jpg"
+          >
+            <div class="container">
+              <div class="row">
+                <div class="col-lg-12">
+                  <div class="product-quote-copy sm" style="max-width: 800px;">
+                    "Iberia and ARC have worked closely together to enable NDC
+                    settlement in preparation for renewed and accelerated travel
+                    demand from the U.S., Puerto Rico and Spain. ARC´s
+                    omnichannel strategy is a win-win for all. It allows agents
+                    to remit in the method of their choosing, with all the
+                    benefits that Interactive Agent Reporting provides, and to
+                    retain all NDC efficiencies, fare guarantees, and no
+                    fare-related agency debit memos. We are thrilled to bring
+                    NDC to our customers."
+                  </div>
+                  <div class="product-quote-name sm">
+                    <strong>Celia Muñoz Espín </strong><br />Sales Strategy and
+                    EME, USA and Asia Sales Director <br />Iberia <br />
+                  </div>
+                  <a
+                    href="https://www2.arccorp.com/products-participation/customer-success-stories"
+                    class="ctaBtn ctaBtn--secondaryOnImage"
+                    >More Customer Stories</a
+                  >
+                </div>
               </div>
             </div>
           </div>
@@ -1960,15 +2397,17 @@
       class="page-grid page-grid--noThumbnails page-grid--centerItemText page-grid--multiRows ndc-grid"
       data-section="page-grid"
       data-sticky-id="arc-and-ndc"
-      
     >
       <div class="page-grid__content">
         <div class="page-grid__topContent">
-          <h2 class="block-header" style="font-size: 48px; font-family: SourceSansPro-Bold;">NDC in the News</h2>
+          <h2
+            class="block-header"
+            style="font-size: 48px; font-family: SourceSansPro-Bold;"
+          >
+            NDC in the News
+          </h2>
 
-          <div class="byline">
-            
-          </div>
+          <div class="byline"></div>
         </div>
         <div
           class="page-grid__items page-grid__items--all page-grid__items--collapsed"
@@ -4404,7 +4843,7 @@
                     >FAQs</a
                   >
                   <a
-                    href="https://www2.arccorp.com/products-participation/products/arc-custom-reports/"
+                    href="/about-us/contact-us/"
                     class="ctaBtn ctaBtn--white-outline"
                     style="width: 215px"
                     >Contact Us</a
@@ -4450,10 +4889,11 @@
                       class="box-icon-copy type-color-product-lightgray"
                       style="padding-left: 0; padding-right: 0;"
                     >
-                    Download an overview<br/> sheet of Direct Connect.  <br/><br/>
+                      Download an overview<br />
+                      sheet of Direct Connect. <br /><br />
                     </div>
                     <a
-                      href="https://www2.arccorp.com/globalassets/datasheets/arc-travel-demand-datasheet.pdf"
+                      href="https://www2.arccorp.com/globalassets/datasheets/DirectConnectwithNDC.pdf"
                       class="link-download"
                       >Download <i class="fas fa-chevron-down"></i
                     ></a>
@@ -4471,10 +4911,12 @@
                       Access ARC's NDC Recordings
                     </div>
                     <div class="box-icon-copy type-color-product-lightgray">
-                      View videos that further explain the benefits of NDC.  <br /><br />
+                      View videos that further explain the benefits of NDC.
+                      <br /><br />
                     </div>
                     <a
-                      href="https://www2.arccorp.com/products-participation/products/arc-travel-demand/arc-travel-demand-glossary/"
+                      target="_blank"
+                      href="https://www.youtube.com/playlist?list=PLf5REmQDokOmWX9wwbsFMTUDAwP5ih8LU"
                       class="link-download"
                       >Watch <i class="fas fa-chevron-right"></i
                     ></a>
@@ -4489,14 +4931,13 @@
                       style="padding: 15px 0;"
                     />
                     <div class="box-icon-header type-color-white">
-                        Direct Connect Airline Capabilities Grid  
+                      Direct Connect Airline Capabilities Grid
                     </div>
                     <div class="box-icon-copy type-color-product-lightgray">
-                        See a detailed chart by airlines of NDC capabilities they have implemented.  
+                      See a detailed chart by airlines of NDC capabilities they
+                      have implemented.
                     </div>
-                    <a
-                      href="https://www2.arccorp.com/about-us/arc-data/"
-                      class="link-download"
+                    <a href="#ndc-app" class="link-download"
                       >Learn More <i class="fas fa-chevron-right"></i
                     ></a>
                   </div>
@@ -4585,10 +5026,7 @@
               -->
             </style>
           </div>
-          <script
-            type="text/javascript"
-            src="https://cdn.jsdelivr.net/gh/AirlinesReportingCorporation/arccorp@v0.57/dist/main.min.js"
-          ></script>
+          <script type="text/javascript" src="main.min.js"></script>
 
           <span class="footer-rtf-links">
             <a href="/website-terms-of-use/" title="Terms">Terms</a>

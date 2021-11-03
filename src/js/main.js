@@ -207,13 +207,11 @@ function latestSliderInit() {
     }
   });
 
-  
   $(".homePageGrid .page-grid__row")
     .eq(0)
     .prepend(
       "<div style='position: relative; margin-left: 0;' class='featuredLatest featuredLatest-custom content-block--pageItem'><div><a target='_blank' href='https://www2.arccorp.com/arc-talk-podcast/how-travel-systems-are-adapting-to-covid-19?utm_source=thelatest_static'><img src='https://www2.arccorp.com/globalassets/homepage/redesign/podcast_background.jpg'><div style='position: absolute; bottom: 0; left: 0; color: #ffffff; padding: 0 20px 30px'><div style='font-size: 13px; font-family: SourceSansPro-Regular;'>NEWEST PODCAST EPISODE</div><div style='margin-bottom: 30px;'>ARC Talk: How Travel Systems are adapting to COVID-19</div><div class='align-items-center'  style='display: flex; color: #ffa619; font-size: 13px;'><img style='margin: 0 10px 0 0;' src='https://www2.arccorp.com/globalassets/homepage/redesign/playbutton.png'/> START LISTENING </div></div></a><div style=''></div></div></div> "
     );
-      
 
   $(".content-block--pageItem__inside").prepend("");
 
@@ -438,6 +436,18 @@ function quoteRandomize() {
     .show();
 }
 
+function sectionRandomize() {
+  if ($(".randomize-section")) {
+    var children = $(".randomize-section").children();
+    var num = children.length;
+    var random = Math.floor(Math.random() * num);
+    children.hide();
+    children.eq(random).show();
+  }
+}
+
+sectionRandomize();
+
 function productRandomize() {
   var num = $(".featuredProduct").length;
   var random = Math.floor(Math.random() * num);
@@ -630,6 +640,76 @@ function stickyNav() {
     });
   }
 }
+
+var productAccordion = new Vue({
+  el: "#ndc-app",
+  data: {
+    ndcAirlines: [
+      {
+        display: false,
+        designator: "BA",
+        code: "125",
+        name: "British Airways",
+        system: "1256",
+        payment: "Cash",
+        types: "Sales, Refunds, Voids",
+        refund: "No",
+        iarErr: "Return to Airline",
+        iarMod: "None",
+        iarMan: "None"
+      },
+      {
+        display: false,
+        designator: "UA",
+        code: "016",
+        name: "United Airlines",
+        system: "0162",
+        payment: "Cash, Credit",
+        types: "Sales, Voids, Refunds, Exchanges",
+        refund: "Yes",
+        iarErr: "Return to Airline",
+        iarMod: "Commission Only",
+        iarMan: "None"
+      },
+      {
+        display: false,
+        designator: "TA",
+        code: "202",
+        name: "TACA",
+        system: "2026",
+        payment: "Cash, Credit",
+        types: "Sales, Voids",
+        refund: "No",
+        iarErr: "Corrected by Agent",
+        iarMod: "All",
+        iarMan: "All"
+      },
+      {
+        display: false,
+        designator: "IB",
+        code: "075",
+        name: "Iberia",
+        system: "0755",
+        payment: "Cash, Credit",
+        types: "Sales, Voids, Refunds, Exchanges",
+        refund: "No",
+        iarErr: "Return to Airline",
+        iarMod: "None",
+        iarMan: "None"
+      }
+    ]
+  },
+  methods: {
+    toggleView: function(i) {
+      var copy = this.ndcAirlines;
+      copy[i].display = !copy[i].display;
+      this.ndcAirlines = copy;
+    },
+    paymentMatch: function(item, x) {
+      return item.indexOf(x) > -1;
+    }
+  }
+});
 
 var data = {
   primaryNav: "",
