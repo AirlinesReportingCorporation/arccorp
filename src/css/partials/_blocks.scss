@@ -98,8 +98,6 @@ a.ctaBtn.product-cta {
       align-items: center;
     }
 
-    
-
     .content-block--pageItem__metadata li {
       margin-bottom: 15px;
       &:first-child {
@@ -927,6 +925,36 @@ a.product-sticky-link-right svg {
 .data-overview {
   .callout-container {
     border-top: 1px solid $productgray;
+  }
+}
+
+.product-faq-page {
+  h1 {
+    font-family: "SourceSansPro-Bold", SourceSansPro-Bold, Arial, Helvetica,
+      sans-serif;
+    font-size: 48px;
+    line-height: 56px;
+    color: $tarmac;
+    margin-top: 30px;
+    margin-bottom: 60px;
+  }
+  .leadin-text {
+    font-family: "SourceSansPro-Black", SourceSansPro-Black, Arial, Helvetica,
+      sans-serif !important;
+    color: $teal !important;
+    font-size: 18px !important;
+    line-height: 24px !important;
+    margin-bottom: 30px;
+  }
+  p {
+    margin-bottom: 30px;
+    font-size: 18px !important;
+    line-height: 24px !important;
+  }
+  strong {
+    font-family: "SourceSansPro-Black", SourceSansPro-Black, Arial, Helvetica,
+      sans-serif !important;
+    color: $tarmac !important;
   }
 }
 

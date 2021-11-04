@@ -10649,6 +10649,30 @@ a.product-sticky-link-right svg {
 .data-overview .callout-container {
   border-top: 1px solid #868b8c; }
 
+.product-faq-page h1 {
+  font-family: "SourceSansPro-Bold", SourceSansPro-Bold, Arial, Helvetica, sans-serif;
+  font-size: 48px;
+  line-height: 56px;
+  color: #2a2b2c;
+  margin-top: 30px;
+  margin-bottom: 60px; }
+
+.product-faq-page .leadin-text {
+  font-family: "SourceSansPro-Black", SourceSansPro-Black, Arial, Helvetica, sans-serif !important;
+  color: #189bb0 !important;
+  font-size: 18px !important;
+  line-height: 24px !important;
+  margin-bottom: 30px; }
+
+.product-faq-page p {
+  margin-bottom: 30px;
+  font-size: 18px !important;
+  line-height: 24px !important; }
+
+.product-faq-page strong {
+  font-family: "SourceSansPro-Black", SourceSansPro-Black, Arial, Helvetica, sans-serif !important;
+  color: #2a2b2c !important; }
+
 @media screen and (max-width: 900px) {
   .product-sticky-nav {
     flex-direction: column; }
