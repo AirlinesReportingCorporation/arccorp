@@ -11633,37 +11633,37 @@ a.product-sticky-link-right svg {
     font-family: SourceSansPro-Light, helvetica, arial, sans-serif;
     margin-bottom: 36px; }
 
-.product-accordion .col-11 {
+#ndc-app .product-accordion .col-11 {
   flex: 0 0 95%;
   max-width: 95%; }
 
-.product-accordion .col-1 {
+#ndc-app .product-accordion .col-1 {
   flex: 0 0 5%;
   max-width: 5%; }
 
-.product-accordion-row {
+#ndc-app .product-accordion-row {
   background: #f1f2f2;
   color: #212122;
   margin: 0 0 20px;
   border-radius: 10px;
   overflow: hidden; }
-  .product-accordion-row.active {
+  #ndc-app .product-accordion-row.active {
     background: #212122;
     color: #ffffff; }
-    .product-accordion-row.active .product-accordion-start {
+    #ndc-app .product-accordion-row.active .product-accordion-start {
       background: #212122; }
 
-.product-accordion-top {
+#ndc-app .product-accordion-top {
   font-family: SourceSansPro-Regular, Arial, Helvetica, sans-serif;
   transition: 0.5s;
   overflow: hidden; }
 
-.product-accordion-start {
+#ndc-app .product-accordion-start {
   position: relative;
   z-index: 5;
   padding: 35px; }
 
-.product-accordion-info {
+#ndc-app .product-accordion-info {
   background: #212122;
   position: relative;
   display: none;
@@ -11673,17 +11673,17 @@ a.product-sticky-link-right svg {
   padding-right: 30px;
   padding-left: 30px;
   padding-bottom: 30px; }
-  .product-accordion-info.show {
+  #ndc-app .product-accordion-info.show {
     display: block; }
 
-.product-accordion-section {
+#ndc-app .product-accordion-section {
   background: #2a2b2c;
   padding: 20px;
   border-radius: 8px;
   height: 100%; }
 
-.apDesignator,
-.apCode {
+#ndc-app .apDesignator,
+#ndc-app .apCode {
   font-family: SourceSansPro-SemiBold, Arial, Helvetica, sans-serif;
   background: #1d9cb1;
   width: 90px;
@@ -11693,7 +11693,7 @@ a.product-sticky-link-right svg {
   border-radius: 8px;
   margin-right: 20px; }
 
-.apProcessing {
+#ndc-app .apProcessing {
   font-family: SourceSansPro-SemiBold, Arial, Helvetica, sans-serif;
   color: #2a2b2c;
   background: #ffffff;
@@ -11706,55 +11706,55 @@ a.product-sticky-link-right svg {
   border-radius: 8px;
   margin-top: 15px; }
 
-.apCode {
+#ndc-app .apCode {
   background: #c5b593;
   margin-right: 30px; }
 
-.apName {
+#ndc-app .apName {
   font-family: SourceSansPro-SemiBold, Arial, Helvetica, sans-serif;
   font-size: 30px; }
 
-.apUpdated {
+#ndc-app .apUpdated {
   color: #888888;
   font-size: 14px;
   line-height: 24px;
   font-family: SourceSansPro-Bold, Arial, Helvetica, sans-serif;
   margin-right: 25px; }
 
-.apUpdated span {
+#ndc-app .apUpdated span {
   font-family: SourceSansPro-Regular, Arial, Helvetica, sans-serif; }
 
-.apExpand {
+#ndc-app .apExpand {
   font-size: 25px;
   cursor: pointer;
   text-align: right;
   margin-right: 5px; }
 
-.ml-auto {
+#ndc-app .ml-auto {
   margin-left: auto; }
 
-.apSectionMargin {
+#ndc-app .apSectionMargin {
   margin-left: 20px;
   margin-right: 20px;
   line-height: 15px; }
 
-.apSectionMarginLeft {
+#ndc-app .apSectionMarginLeft {
   margin-left: 20px; }
 
-.apSectionMarginRight {
+#ndc-app .apSectionMarginRight {
   margin-right: 20px; }
 
-.apSection {
+#ndc-app .apSection {
   background: #2a2b2c;
   padding: 20px;
   border-radius: 8px;
   height: 100%; }
 
-.apSectionTop {
+#ndc-app .apSectionTop {
   padding-bottom: 20px;
   margin-bottom: 5px;
   border-bottom: 1px solid #444444; }
-  .apSectionTop h3 {
+  #ndc-app .apSectionTop h3 {
     color: #ffffff;
     font-family: SourceSansPro-SemiBold, SourceSansPro-Bold, Arial, Helvetica, sans-serif;
     font-size: 18px;
@@ -11762,10 +11762,10 @@ a.product-sticky-link-right svg {
     margin-right: 20px;
     margin-bottom: 0; }
 
-.airlineTooltip {
+#ndc-app .airlineTooltip {
   position: relative;
   z-index: 30; }
-  .airlineTooltip .airlineTooltipText {
+  #ndc-app .airlineTooltip .airlineTooltipText {
     position: absolute;
     right: 0;
     top: 30px;
@@ -11780,14 +11780,14 @@ a.product-sticky-link-right svg {
     border: 1px solid #000000;
     font-size: 14px;
     box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22); }
-  .airlineTooltip:hover .airlineTooltipText {
+  #ndc-app .airlineTooltip:hover .airlineTooltipText {
     display: block; }
 
-.m-auto {
+#ndc-app .m-auto {
   margin-left: auto;
   margin-right: auto; }
 
-.apButton {
+#ndc-app .apButton {
   font-family: SourceSansPro-SemiBold, Arial, Helvetica, sans-serif;
   color: #2a2b2c;
   background: #393a3b;
@@ -11801,46 +11801,46 @@ a.product-sticky-link-right svg {
   margin-top: 11px;
   padding-left: 15px;
   padding-right: 15px; }
-  .apButton.on {
+  #ndc-app .apButton.on {
     background: #939598;
     border: 2px solid #939598; }
-  .apButton.on-green {
+  #ndc-app .apButton.on-green {
     background: #8cc088;
     border: 2px solid #8cc088; }
-  .apButton.on-red {
+  #ndc-app .apButton.on-red {
     background: #d23e3e;
     border: 2px solid #d23e3e; }
-  .apButton.apButtonBorder {
+  #ndc-app .apButton.apButtonBorder {
     border: 2px solid #393a3b;
     color: #393a3b;
     background: transparent;
     line-height: 46px; }
-    .apButton.apButtonBorder.active {
+    #ndc-app .apButton.apButtonBorder.active {
       border: 2px solid #8cc088;
       color: #8cc088; }
-    .apButton.apButtonBorder.active-gray {
+    #ndc-app .apButton.apButtonBorder.active-gray {
       color: #939598;
       border: 2px solid #939598; }
 
 @media screen and (max-width: 768px) {
-  .apSectionBottom .d-flex {
+  #ndc-app .apSectionBottom .d-flex {
     flex-direction: column; }
-  .apSectionBottom .apButton {
+  #ndc-app .apSectionBottom .apButton {
     height: auto;
     line-height: 1.5; }
-  .apSectionMargin,
-  .apSectionMarginLeft,
-  .apSectionMarginRight {
+  #ndc-app .apSectionMargin,
+  #ndc-app .apSectionMarginLeft,
+  #ndc-app .apSectionMarginRight {
     margin: 0;
     height: auto !important;
     margin-top: 15px; }
-  .product-accordion .col-11 {
+  #ndc-app .product-accordion .col-11 {
     flex: 0 0 88%;
     max-width: 88%; }
-  .product-accordion .col-1 {
+  #ndc-app .product-accordion .col-1 {
     flex: 0 0 12%;
     max-width: 12%; }
-  .ml-auto {
+  #ndc-app .ml-auto {
     margin-left: 0; } }
 
 .data-jumbo .product-callout-copy {
