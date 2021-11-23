@@ -15,22 +15,19 @@
     "jquery": "^3.5.1",
     "jquery-validation": "^1.19.3",
     "leaflet": "^1.2.0",
-    "masonry-layout": "^4.2.0",
     "odometer": "^0.4.8",
     "owl.carousel": "^2.3.4",
     "regenerator-runtime": "^0.13.5",
     "scrollreveal": "^3.3.6",
     "stickybits": "^3.7.7",
     "style-loader": "^0.19.0",
-    "twit": "^2.2.11",
     "typeit": "^6.0.2",
-    "uglifyjs-webpack-plugin": "^1.0.0-beta.3",
     "vanilla-lazyload": "^17.1.0",
     "vue": "^2.5.16",
     "vue-lazyload": "^1.3.3"
   },
   "scripts": {
-    "start": "webpack-dev-server --hot --inline --open --config webpack.dev.js",
+    "start": "npx webpack serve --config webpack.dev.js",
     "dev": "npm start",
     "build": "webpack --config webpack.prod.js",
     "test": "npm start"
@@ -45,12 +42,12 @@
     "copy-webpack-plugin": "^6.0.3",
     "css-loader": "^3.6.0",
     "mini-css-extract-plugin": "^0.9.0",
-    "node-sass": "^4.14.1",
-    "sass-loader": "^6.0.7",
+    "sass": "^1.43.4",
+    "sass-loader": "^12.3.0",
     "script-loader": "^0.7.2",
-    "webpack": "^4.44.1",
-    "webpack-cli": "^3.3.12",
-    "webpack-dev-server": "^3.11.0",
+    "webpack": "^5.64.2",
+    "webpack-cli": "^4.9.1",
+    "webpack-dev-server": "^4.5.0",
     "webpack-merge": "^5.1.1"
   }
 }

@@ -11,12 +11,11 @@ $brand-colors: ("product-lightgray", $productgray), ("white", $white),
   ("lightTeal", $lightTeal);
 
 @each $color in $brand-colors {
-  
-  &.type-color-#{nth($color,1)} {
+  .type-color-#{nth($color,1)} {
     color: nth($color, 2) !important;
   }
 
-  &.bg-color-#{nth($color,1)} {
+  .bg-color-#{nth($color,1)} {
     background: nth($color, 2) !important;
   }
 }
