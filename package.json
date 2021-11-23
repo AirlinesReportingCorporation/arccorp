@@ -7,7 +7,6 @@
     "ajv": "^6.10.0",
     "bootstrap-vue": "^2.15.0",
     "core-js": "^3.6.5",
-    "expose-loader": "^0.7.5",
     "featherlight": "^1.7.9",
     "firebase-functions": "^3.13.2",
     "intersection-observer": "^0.11.0",
