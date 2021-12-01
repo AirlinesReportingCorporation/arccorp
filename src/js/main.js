@@ -641,75 +641,77 @@ function stickyNav() {
   }
 }
 
-var productAccordion = new Vue({
-  el: "#ndc-app",
-  data: {
-    ndcAirlines: [
-      {
-        display: false,
-        designator: "BA",
-        code: "125",
-        name: "British Airways",
-        system: "1256",
-        payment: "Cash",
-        types: "Sales, Refunds, Voids",
-        refund: "No",
-        iarErr: "Return to Airline",
-        iarMod: "None",
-        iarMan: "None"
-      },
-      {
-        display: false,
-        designator: "UA",
-        code: "016",
-        name: "United Airlines",
-        system: "0162",
-        payment: "Cash, Credit",
-        types: "Sales, Voids, Refunds, Exchanges",
-        refund: "Yes",
-        iarErr: "Return to Airline",
-        iarMod: "Commission Only",
-        iarMan: "None"
-      },
-      {
-        display: false,
-        designator: "TA",
-        code: "202",
-        name: "TACA",
-        system: "2026",
-        payment: "Cash, Credit",
-        types: "Sales, Voids",
-        refund: "No",
-        iarErr: "Corrected by Agent",
-        iarMod: "All",
-        iarMan: "All"
-      },
-      {
-        display: false,
-        designator: "IB",
-        code: "075",
-        name: "Iberia",
-        system: "0755",
-        payment: "Cash, Credit",
-        types: "Sales, Voids, Refunds, Exchanges",
-        refund: "No",
-        iarErr: "Return to Airline",
-        iarMod: "None",
-        iarMan: "None"
-      }
-    ]
-  },
-  methods: {
-    toggleView: function(i) {
-      var copy = this.ndcAirlines;
-      copy[i].display = !copy[i].display;
-      this.ndcAirlines = copy;
+if ($("#ndc-app").length) {
+  var productAccordion = new Vue({
+    el: "#ndc-app",
+    data: {
+      ndcAirlines: [
+        {
+          display: false,
+          designator: "TA",
+          code: "202",
+          name: "Avianca",
+          system: "2026",
+          payment: "Cash, Credit",
+          types: "Sales, Voids",
+          refund: "No",
+          iarErr: "Corrected by Agent",
+          iarMod: "All",
+          iarMan: "All"
+        },
+        {
+          display: false,
+          designator: "BA",
+          code: "125",
+          name: "British Airways",
+          system: "1256",
+          payment: "Cash",
+          types: "Sales, Refunds, Voids",
+          refund: "No",
+          iarErr: "Return to Airline",
+          iarMod: "None",
+          iarMan: "None"
+        },
+        {
+          display: false,
+          designator: "IB",
+          code: "075",
+          name: "Iberia",
+          system: "0755",
+          payment: "Cash, Credit",
+          types: "Sales, Voids, Refunds, Exchanges",
+          refund: "No",
+          iarErr: "Return to Airline",
+          iarMod: "None",
+          iarMan: "None"
+        },
+        {
+          display: false,
+          designator: "UA",
+          code: "016",
+          name: "United Airlines",
+          system: "0162",
+          payment: "Cash, Credit",
+          types: "Sales, Voids, Refunds, Exchanges",
+          refund: "Yes",
+          iarErr: "Return to Airline",
+          iarMod: "Commission Only",
+          iarMan: "None"
+        }
+      ]
     },
-    paymentMatch: function(item, x) {
-      return item.indexOf(x) > -1;
+    methods: {
+      toggleView: function(i) {
+        var copy = this.ndcAirlines;
+        copy[i].display = !copy[i].display;
+        this.ndcAirlines = copy;
+      },
+      paymentMatch: function(item, x) {
+        return item.indexOf(x) > -1;
+      }
     }
-  }
-});
+  });
+}
 
 var data = {
   primaryNav: "",
