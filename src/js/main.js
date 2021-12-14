@@ -11,7 +11,7 @@ import LazyLoad from "vanilla-lazyload";
 
 $(".owl-carousel").owlCarousel({
   center: true,
-  autoplay: true,
+  //autoplay: true,
   loop: true,
   nav: true,
   autoHeight: true,
@@ -24,18 +24,18 @@ $(".owl-carousel").owlCarousel({
   animateOut: "fadeOut",
   navText: [
     '<img src="https://www2.arccorp.com/globalassets/homepage/redesign/latestArrowLeft.png">',
-    '<img src="https://www2.arccorp.com/globalassets/homepage/redesign/latestArrowRight.png">'
+    '<img src="https://www2.arccorp.com/globalassets/homepage/redesign/latestArrowRight.png">',
   ],
   responsive: {
     0: {
-      items: 1
+      items: 1,
     },
     600: {
-      items: 1
+      items: 1,
     },
     1000: {
-      items: 1
-    }
+      items: 1,
+    },
   },
   onInitialize: function(element) {
     /* randomize carousel*/
@@ -47,7 +47,7 @@ $(".owl-carousel").owlCarousel({
       .each(function() {
         $(this).appendTo($(".owl-carousel"));
       });
-  }
+  },
 });
 
 if ($(".data-panel-sticky").length) {
@@ -73,7 +73,7 @@ var lazyLoadInstance = new LazyLoad({});
         remotePath: null,
         remoteTarget: null,
         success: function() {},
-        error: function() {}
+        error: function() {},
       },
       i = this,
       r = e(this);
@@ -231,20 +231,20 @@ function latestSliderInit() {
       responsiveClass: true,
       responsive: {
         0: {
-          items: 1
+          items: 1,
         },
         960: {
-          items: 1
+          items: 1,
         },
         1000: {
           items: 1,
-          autoWidth: true
-        }
+          autoWidth: true,
+        },
       },
       navText: [
         '<img src="https://www2.arccorp.com/globalassets/homepage/redesign/latestArrowLeft.png">',
-        "More"
-      ]
+        "More",
+      ],
     });
   });
 }
@@ -273,19 +273,19 @@ function articleResize(scrollTop, scrollLeft, resize) {
         $(".articleShareContainer").css({
           position: "fixed",
           top: "0px",
-          left: offset - 150 + "px"
+          left: offset - 150 + "px",
         });
       } else if ($(window).scrollTop() < scrollTop && isPositionFixed) {
         $(".articleShareContainer").css({
           position: "absolute",
           top: "60px",
-          left: "-150px"
+          left: "-150px",
         });
       } else if (isPositionFixed) {
         $(".articleShareContainer").css({
           position: "fixed",
           top: "0px",
-          left: offset - 150 + "px"
+          left: offset - 150 + "px",
         });
       }
     }
@@ -400,7 +400,7 @@ function techInit() {
         .stop(true, true)
         .animate(
           {
-            marginLeft: "-=" + techIcon + "px"
+            marginLeft: "-=" + techIcon + "px",
           },
           200
         );
@@ -418,7 +418,7 @@ function techInit() {
         .stop(true, true)
         .animate(
           {
-            marginLeft: "+=" + techIcon + "px"
+            marginLeft: "+=" + techIcon + "px",
           },
           200
         );
@@ -500,7 +500,7 @@ function formValidate() {
               }
             }
           }
-        }
+        },
       });
       $("select", ".page-form").each(function() {
         $(this).rules("add", {
@@ -513,8 +513,8 @@ function formValidate() {
             );
           },
           messages: {
-            required: ""
-          }
+            required: "",
+          },
         });
       });
       $("input", ".page-form").each(function() {
@@ -528,7 +528,7 @@ function formValidate() {
               );
             },
             messages: {
-              required: ""
+              required: "",
             },
             unhighlight: function(element) {
               if (
@@ -540,27 +540,27 @@ function formValidate() {
                   .find(".fieldLabel")
                   .removeClass("fieldLabelError");
               }
-            }
+            },
           });
         }
       });
       $("input[aria-required='true']", "div[id^=container_]").rules("add", {
-        required: !0
+        required: !0,
       });
       $(
         "input[data-email], input[type='email'], input[name='Email']",
         "div[id^=container_]"
       ).rules("add", {
-        email: !0
+        email: !0,
       });
       $("input[type='tel'], input[name*='phone']", "div[id^=container_]").rules(
         "add",
         {
-          phoneUS: !0
+          phoneUS: !0,
         }
       );
       $("input[type='number']", "div[id^=container_]").rules("add", {
-        number: !0
+        number: !0,
       });
     });
     jQuery.validator.addMethod(
@@ -618,7 +618,7 @@ function stickyNav() {
           event.preventDefault();
           $("html, body").animate(
             {
-              scrollTop: target.offset().top
+              scrollTop: target.offset().top,
             },
             1000,
             function() {
@@ -657,7 +657,7 @@ if ($("#ndc-app").length) {
           refund: "No",
           iarErr: "Corrected by Agent",
           iarMod: "All",
-          iarMan: "All"
+          iarMan: "All",
         },
         {
           display: false,
@@ -670,7 +670,7 @@ if ($("#ndc-app").length) {
           refund: "No",
           iarErr: "Return to Airline",
           iarMod: "None",
-          iarMan: "None"
+          iarMan: "None",
         },
         {
           display: false,
@@ -683,7 +683,7 @@ if ($("#ndc-app").length) {
           refund: "No",
           iarErr: "Return to Airline",
           iarMod: "None",
-          iarMan: "None"
+          iarMan: "None",
         },
         {
           display: false,
@@ -696,9 +696,9 @@ if ($("#ndc-app").length) {
           refund: "Yes",
           iarErr: "Return to Airline",
           iarMod: "Commission Only",
-          iarMan: "None"
-        }
-      ]
+          iarMan: "None",
+        },
+      ],
     },
     methods: {
       toggleView: function(i) {
@@ -708,8 +708,8 @@ if ($("#ndc-app").length) {
       },
       paymentMatch: function(item, x) {
         return item.indexOf(x) > -1;
-      }
-    }
+      },
+    },
   });
 }
 
@@ -718,7 +718,7 @@ var data = {
   loginActive: false,
   contactActive: false,
   showSearch: false,
-  formInput: ""
+  formInput: "",
 };
 
 //supernav
@@ -761,7 +761,7 @@ var app = new Vue({
       } else {
         this.showSearch = false;
       }
-    }
+    },
   },
   directives: {
     "click-outside": {
@@ -778,7 +778,7 @@ var app = new Vue({
         }
         // Define Handler and cache it on the element
         const bubble = binding.modifiers.bubble;
-        const handler = e => {
+        const handler = (e) => {
           if (bubble || (!el.contains(e.target) && el !== e.target)) {
             binding.value(e);
           }
@@ -793,14 +793,19 @@ var app = new Vue({
         // Remove Event Listeners
         document.removeEventListener("click", el.__vueClickOutside__);
         el.__vueClickOutside__ = null;
-      }
-    }
-  }
+      },
+    },
+  },
 });
 
 //functions for just the homepage
 if ($("body").hasClass("home-page")) {
   latestSliderInit();
+
+  $(".jumbo-img-switch").click(function() {
+    $(".jumbo-img-switch").hide();
+    $(".jumbo-img-video").show();
+  });
   //quoteRandomize();
   //productRandomize();
 }

@@ -2369,6 +2369,11 @@ body .byline {
     opacity: 0.8;
   }
 }
+
+.jumbo-img-switch:hover {
+  cursor: pointer;
+}
+
 @media screen and (max-width: 1000px) {
   .home-page .page-grid__row .content-block--pageItem.featuredLatest {
     margin-left: 21px;
@@ -2691,7 +2696,11 @@ body .byline {
 }
 @media screen and (max-width: 480px) {
   .home-page .owl-carousel .carousel-container {
-    background: #0c1c47 !important;
+    background: #383552 !important;
+
+    &:before {
+      opacity: 0;
+    }
   }
   .supernav-topnav .topnav-search #topnav-search-input {
     width: 150px;
