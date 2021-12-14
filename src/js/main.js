@@ -18,6 +18,7 @@ $(".owl-carousel").owlCarousel({
   autoplayTimeout: 8000,
   autoplaySpeed: 2000,
   smartSpeed: 700,
+  autoplayHoverPause: true,
   URLhashListener: true,
   autoplayHoverPause: true,
   animateIn: "fadeIn",
@@ -805,6 +806,11 @@ if ($("body").hasClass("home-page")) {
   $(".jumbo-img-switch").click(function() {
     $(".jumbo-img-switch").hide();
     $(".jumbo-img-video").show();
+
+    $(".jumbo-img-video iframe").attr(
+      "src",
+      $(".jumbo-img-video iframe").attr("src") + "?" + "autoplay=1"
+    );
   });
   //quoteRandomize();
   //productRandomize();
