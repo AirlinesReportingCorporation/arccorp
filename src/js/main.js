@@ -807,9 +807,11 @@ if ($("body").hasClass("home-page")) {
     $(".jumbo-img-switch").hide();
     $(".jumbo-img-video").show();
 
+    var symbol = $(".jumbo-img-video iframe").attr("src").indexOf("?") > -1 ? "&" : "?";
+
     $(".jumbo-img-video iframe").attr(
       "src",
-      $(".jumbo-img-video iframe").attr("src") + "?" + "autoplay=1"
+      $(".jumbo-img-video iframe").attr("src") + symbol + "autoplay=1"
     );
   });
   //quoteRandomize();
