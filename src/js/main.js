@@ -809,7 +809,7 @@ if ($("body").hasClass("home-page")) {
 
     var symbol = $(".jumbo-img-video iframe").attr("src").indexOf("?") > -1 ? "&" : "?";
 
-    $(".jumbo-img-video iframe").attr(
+    $(".owl-item").not(".cloned").find(".jumbo-img-video iframe").attr(
       "src",
       $(".jumbo-img-video iframe").attr("src") + symbol + "autoplay=1"
     );
