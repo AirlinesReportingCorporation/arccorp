@@ -1,27 +1,40 @@
+@use "partials/block-utilities";
+
+@use "partials/variables";
+
+@use "partials/bootstrap.grid";
+@use "partials/animate";
+@use "partials/hover";
+@use "partials/owlcarousel";
+@use "partials/fonts";
+
+// Import Swiper styles
+@use "/node_modules/swiper/swiper.min";
+@use "/node_modules/swiper/modules/pagination/pagination";
+@use "/node_modules/swiper/modules/navigation/navigation";
+@use "partials/swiperOverride";
+
+@use "partials/base";
+
+//plugin styles
+@use "partials/socialShare";
+@use "partials/readingtime";
+@use "partials/newsroomPosts";
+@use "partials/homepageTop";
+
+//page specific styles
+@use "partials/homepage";
+@use "partials/blocks";
+@use "partials/salesstats";
+@use "partials/webinar";
+@use "partials/accordion";
+
+//page imports
+@use "partials/third-party/third-party";
+
+//react page styles
+@use "partials/homepage-new";
+
 [v-cloak] {
   display: none;
 }
-
-@import "partials/bootstrap.grid";
-@import "partials/animate";
-@import "partials/hover";
-@import "partials/owlcarousel";
-@import "partials/fonts";
-
-@import "partials/base";
-
-//plugin styles
-@import "partials/socialShare";
-@import "partials/readingtime";
-@import "partials/newsroomPosts";
-@import "partials/homepageTop";
-
-//page specific styles
-@import "partials/homepage";
-@import "partials/blocks";
-@import "partials/salesstats";
-@import "partials/webinar";
-@import "partials/accordion";
-
-//page imports
-@import "partials/third-party/third-party";

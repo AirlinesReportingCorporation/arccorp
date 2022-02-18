@@ -1,3 +1,5 @@
+$black: #000000;
+
 $teal: #189bb0;
 $lightTeal: #1a9cb1;
 $productgray: #868b8c;
@@ -8,7 +10,7 @@ $tarmac: #2a2b2c;
 
 $brand-colors: ("product-lightgray", $productgray), ("white", $white),
   ("teal", $teal), ("midgray", $midgray), ("fog", $fog), ("tarmac", $tarmac),
-  ("lightTeal", $lightTeal);
+  ("lightTeal", $lightTeal),("black", $black);
 
 @each $color in $brand-colors {
   .type-color-#{nth($color,1)} {
@@ -18,4 +20,14 @@ $brand-colors: ("product-lightgray", $productgray), ("white", $white),
   .bg-color-#{nth($color,1)} {
     background: nth($color, 2) !important;
   }
+}
+
+
+.img-width-auto {
+  width: auto !important;
+}
+
+.height-auto {
+  min-height: auto !important;
+  height: auto !important;
 }

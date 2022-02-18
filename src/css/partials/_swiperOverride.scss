@@ -1,0 +1,39 @@
+@use "_variables";
+
+$name: variables.$namespace;
+$margin-spacing: 30px;
+
+.#{$name}jumbo-swiper {
+  margin-top: $margin-spacing;
+  margin-bottom: $margin-spacing * 2;
+
+  .swiper-pagination-bullet {
+    border: 1px solid #ffffff;
+    opacity: 1;
+  }
+
+  .swiper-pagination-bullet-active {
+    background: #ffffff;
+  }
+
+  .swiper-pagination.swiper-pagination-clickable.swiper-pagination-bullets.swiper-pagination-horizontal {
+    bottom: 30px;
+  }
+}
+
+.#{$name}jumbo {
+  max-width: 1210px;
+  width: 100%;
+  background: black;
+  border-radius: 10px;
+  height: 592px;
+  display: flex;
+  align-items: center;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.#{$name}jumbo-inner {
+  padding: 15px;
+}
+
