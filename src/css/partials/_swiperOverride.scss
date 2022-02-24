@@ -130,11 +130,13 @@ $margin-spacing: 30px;
   }
 }
 
-@media (max-width: 575.98px) {
-  .#{$name}-jumbo {
+@media (max-width: 767.99px) {
+  .#{$name}jumbo {
     background: variables.$tarmac !important;
   }
+}
 
+@media (max-width: 575.98px) {
   .swiper-button-prev,
   .swiper-rtl .swiper-button-next {
     left: 15%;
