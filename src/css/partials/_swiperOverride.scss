@@ -96,8 +96,52 @@ $margin-spacing: 30px;
   border-radius: 50%;
 }
 
+@media (max-width: 959.9999px) {
+  .#{$name}jumbo {
+    min-height: 592px;
+    height: auto;
+
+    .ctaBtn {
+      margin-top: 0rem !important;
+    }
+  }
+  .#{$name}jumbo-inner-title {
+    font-size: 45px;
+    line-height: 1;
+  }
+
+  .#{$name}jumbo-inner-body {
+    font-size: 20px;
+    line-height: 1.2;
+  }
+
+  .#{$name}jumbo-inner {
+    padding: $margin-spacing $margin-spacing * 2;
+  }
+
+  .swiper-button-prev,
+  .swiper-rtl .swiper-button-next {
+    left: 15px;
+  }
+
+  .swiper-button-next,
+  .swiper-rtl .swiper-button-prev {
+    right: 15px;
+  }
+}
+
 @media (max-width: 575.98px) {
   .#{$name}-jumbo {
     background: variables.$tarmac !important;
+  }
+
+  .swiper-button-prev,
+  .swiper-rtl .swiper-button-next {
+    left: 15%;
+  }
+
+  .swiper-button-next,
+  .swiper-rtl .swiper-button-prev {
+    right: 15%;
   }
 }
