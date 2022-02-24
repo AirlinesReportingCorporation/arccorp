@@ -3,6 +3,11 @@
 $name: variables.$namespace;
 $margin-spacing: 30px;
 
+.height-auto {
+  height: auto !important;
+  min-height: auto !important;
+}
+
 .#{$name}homepage {
   color: variables.$tarmac;
 }
@@ -137,6 +142,63 @@ $margin-spacing: 30px;
   text-transform: uppercase;
 }
 
+.#{$name}homepage-numbers {
+  padding: 40px;
+  margin: 0 auto;
+}
+
+.#{$name}homepage-numbers-eyebrow {
+  font-family: SourceSansPro-SemiBold, "SourceSansPro-SemiBold", Arial,
+    Helvetica, sans-serif;
+  font-size: 18px;
+  line-height: 1.2;
+  color: variables.$white;
+  text-transform: uppercase;
+  margin-top: 10px;
+}
+
+.#{$name}homepage-numbers-eyebrow-2 {
+  font-family: SourceSansPro-SemiBold, "SourceSansPro-SemiBold", Arial,
+    Helvetica, sans-serif;
+  font-size: 18px;
+  line-height: 1.2;
+  color: variables.$overcast;
+}
+
+.#{$name}homepage-numbers-main {
+  font-family: Oswald, "Oswald", SourceSansPro-Black, "SourceSansPro-Black",
+    Arial, Helvetica, sans-serif;
+  font-size: 110px;
+  line-height: 1;
+  background: -webkit-linear-gradient(180deg, #ff1b71, #fcbf49);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.#{$name}homepage-numbers-caption {
+  font-family: SourceSansPro-Bold, "SourceSansPro-Bold", Arial, Helvetica,
+    sans-serif;
+  font-size: 30px;
+  line-height: 34px;
+  margin: 30px 0;
+}
+
+.#{$name}homepage-numbers-body {
+  color: variables.$overcast;
+  font-family: SourceSansPro-Regular, "SourceSansPro-Bold", Arial, Helvetica,
+    sans-serif;
+  font-size: 18px;
+  line-height: 24px;
+  margin-bottom: 40px;
+  margin-right: auto;
+  margin-left: auto;
+  max-width: 310px;
+
+  span {
+    color: variables.$white;
+  }
+}
+
 .#{$name}homepage-stats {
   padding: 40px;
 }
@@ -213,15 +275,6 @@ a.#{$name}homepage-blog-popular-title {
   max-width: 515px;
 }
 
-.#{$name}footer {
-  border-top: 1px solid variables.$tarmac;
-  margin-top: $margin-spacing * 3;
-}
-
-.#{$name}footer-title {
-
-}
-
 @media screen and (max-width: 990.999px) {
   .#{$name}homepage-card {
     height: auto !important;
@@ -238,6 +291,10 @@ a.#{$name}homepage-blog-popular-title {
     padding-bottom: $margin-spacing;
   }
 
+  .#{$name}homepage-cta-link-center {
+    text-align: center !important;
+  }
+
   .#{$name}homepage-card-small {
     img {
       padding-top: $margin-spacing;
@@ -248,6 +305,7 @@ a.#{$name}homepage-blog-popular-title {
   .#{$name}homepage-blog-img {
     margin-right: 20px;
   }
+
   .#{$name}homepage-blog-link {
     position: relative;
     bottom: auto;

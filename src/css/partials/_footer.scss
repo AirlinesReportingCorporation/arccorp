@@ -1,0 +1,35 @@
+@use "_variables";
+
+$name: variables.$namespace;
+$margin-spacing: 30px;
+
+.#{$name}footer {
+  border-top: 1px solid variables.$tarmac;
+  margin-top: $margin-spacing * 3;
+}
+
+.#{$name}footer-sub {
+  max-width: 1170px;
+  margin: 0 auto $margin-spacing * 2;
+  padding: 18px 0;
+  border-bottom: 1px solid variables.$tarmac;
+}
+
+.#{$name}footer-section {
+  font-family: SourceSansPro-Regular, "SourceSansPro-Regular", Arial, Helvetica, sans-serif;
+  font-size: 14px;
+  line-height: 30px;
+}
+
+.#{$name}footer-title {
+  font-family: SourceSansPro-Bold, "SourceSansPro-Regular", Arial, Helvetica, sans-serif;
+  line-height: 1.2;
+}
+
+a.#{$name}footer-link {
+  display: block;
+  font-family: SourceSansPro-Regular, "SourceSansPro-Regular", Arial, Helvetica, sans-serif;
+  font-size: 14px;
+  line-height: 30px;
+  color: variables.$tarmac;
+}

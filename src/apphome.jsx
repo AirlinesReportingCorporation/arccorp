@@ -67,7 +67,43 @@ class Apphome extends Component {
                   "url(https://www2.arccorp.com/globalassets/homepage/redesign/slides/homepage-slide-test.png) center center / cover no-repeat",
               }}
             >
-              <div className="arc-jumbo-inner">asdf</div>
+              <div className="arc-jumbo-inner white">
+                <div className="row">
+                  <div className="col-md col-sm-12">
+                    <h2 className="arc-jumbo-inner-title white">
+                      U.S. Travel Agency Sales Recover in 2021
+                    </h2>
+                    <div className="arc-jumbo-inner-body">
+                      Learn of a rich history routed in air travel intelligence,
+                      distribution and settlement.
+                    </div>
+                    <div>
+                      <a className="ctaBtn ctaBtn--white-outline" href="/">
+                        Learn More
+                      </a>
+
+                      <a
+                        href="https://www.youtube.com/channel/UCWHZsoCDNhjorop892EVETw?sub_confirmation=1"
+                        class="ctaBtn ctaBtn--white"
+                        
+                      >
+                        <img
+                          src="https://www2.arccorp.com/globalassets/homepage/redesign/slides/subscribe.png"
+                          alt="Subcribe to our YouTube Channel"
+                          style={{ maxWidth: "100px", maxHeight: "55px" }}
+                        />
+                      </a>
+                    </div>
+                  </div>
+                  <div className="col-md col-sm-12">
+                    <img
+                      className="img-fluid"
+                      src="https://www2.arccorp.com/globalassets/homepage/redesign/arc-jumbo-video-hover.png"
+                      alt=""
+                    />
+                  </div>
+                </div>
+              </div>
             </div>
           </SwiperSlide>
           <SwiperSlide>
@@ -136,19 +172,30 @@ class Apphome extends Component {
             </div>
             <div className="col-lg-6">
               <div
-                className="arc-homepage-card d-flex align-items-center"
+                className="arc-homepage-card d-flex align-items-center type-color-white text-center"
                 style={{
                   background:
                     "url(https://www2.arccorp.com/globalassets/homepage/redesign/slides/homepage-sales-variance.png) center center / cover no-repeat",
                 }}
               >
-                <div className="row align-items-center text-center type-color-white">
-                  <div className="col-lg-12">
-                    <div className="arc-homepage-blog-inner">
-                      Lorem ipsum dolor, sit amet consectetur adipisicing elit.
-                      Distinctio magni quod corporis accusantium, beatae sit
-                      amet a soluta iste alias, iusto sunt, eius eveniet natus
-                      facilis laboriosam incidunt architecto! Accusantium!
+                <div className="arc-homepage-numbers">
+                  <div className="arc-homepage-numbers-eyebrow">
+                    Sales Variance
+                  </div>
+                  <div className="arc-homepage-numbers-eyebrow-2">
+                    vs. THE WEEK ENDING JANUARY 9, 2021
+                  </div>
+                  <div className="arc-homepage-numbers-main">+140.6%</div>
+                  <div className="arc-homepage-numbers-caption">
+                    ARC's Weekly Airline Sales Data
+                  </div>
+                  <div className="arc-homepage-numbers-body">
+                    Stay up to date on the latest{" "}
+                    <span>airline sales trends during COVID-19</span>.
+                  </div>
+                  <div className="">
+                    <div className="arc-homepage-cta-link arc-homepage-cta-link-center yellow">
+                      <a href="/">See the Data</a>
                     </div>
                   </div>
                 </div>
@@ -260,7 +307,10 @@ class Apphome extends Component {
                     </div>
                   </div>
                   <div className="col-lg-3 height-auto text-right">
-                    <div className="arc-homepage-cta-link yellow" style={{marginRight: "60px"}}>
+                    <div
+                      className="arc-homepage-cta-link yellow"
+                      style={{ marginRight: "60px" }}
+                    >
                       <a href="#">Learn More</a>
                     </div>
                   </div>
@@ -291,7 +341,7 @@ class Apphome extends Component {
                         trends and opportunities that accelerate business
                         growth.
                       </p>
-                      <div className="arc-homepage-cta-link yellow">
+                      <div>
                         <a className="ctaBtn ctaBtn--white-outline" href="/">
                           Learn More
                         </a>
@@ -302,12 +352,123 @@ class Apphome extends Component {
               </div>
             </div>
           </div>
+        </div>
 
-          <div className="arc-footer">
+        <div className="arc-footer">
+          <div className="arc-footer-sub text-center">
             <div className="row">
               <div className="col-lg-12">
-                asdf
+                <img
+                  src="https://www2.arccorp.com/globalassets/homepage/redesign/arc-footer-sub.png"
+                  alt="The Intelligence Behind Air Travel"
+                />
               </div>
+            </div>
+          </div>
+          <div className="arc-homepage-section">
+            <div className="row">
+              <div className="col">
+                <div className="arc-footer-section">
+                  <div className="arc-footer-title">Participation</div>
+                  <a href="#" className="arc-footer-link">
+                    ARC Participating Airlines
+                  </a>
+                  <a href="#" className="arc-footer-link">
+                    ARC Check
+                  </a>
+                  <a href="#" className="arc-footer-link">
+                    ARC Agency Accreditation
+                  </a>
+                  <a href="#" className="arc-footer-link">
+                    Become an ARC-Accredited Agency
+                  </a>
+                  <a href="#" className="arc-footer-link">
+                    Become an ARC Vertified Travel Consultant
+                  </a>
+                </div>
+              </div>
+              <div className="col-auto">
+                <div className="arc-footer-section">
+                  <div className="arc-footer-title">
+                    Distribution & Financial Solutions
+                  </div>
+                  <a href="#" className="arc-footer-link">
+                    ARC Participating Airlines
+                  </a>
+                  <a href="#" className="arc-footer-link">
+                    ARC Check
+                  </a>
+                  <a href="#" className="arc-footer-link">
+                    ARC Agency Accreditation
+                  </a>
+                  <a href="#" className="arc-footer-link">
+                    Become an ARC-Accredited Agency
+                  </a>
+                  <a href="#" className="arc-footer-link">
+                    Become an ARC Vertified Travel Consultant
+                  </a>
+                </div>
+              </div>
+              <div className="col">
+                <div className="arc-footer-section">
+                  <div className="arc-footer-title">Data Solutions</div>
+                  <a href="#" className="arc-footer-link">
+                    Our Data
+                  </a>
+                  <a href="#" className="arc-footer-link">
+                    ARC Data Connect
+                  </a>
+                  <a href="#" className="arc-footer-link">
+                    ARC Travel Demand
+                  </a>
+                  <a href="#" className="arc-footer-link">
+                    Direct Data Solutions
+                  </a>
+                </div>
+              </div>
+              <div className="col">
+                <div className="arc-footer-section">
+                  <div className="arc-footer-title">Communications</div>
+                  <a href="#" className="arc-footer-link">
+                    Newsroom
+                  </a>
+                  <a href="#" className="arc-footer-link">
+                    ARC Talk Podcast
+                  </a>
+                  <a href="#" className="arc-footer-link">
+                    Blog
+                  </a>
+                  <a href="#" className="arc-footer-link">
+                    Travel Agent Communications
+                  </a>
+                  <a href="#" className="arc-footer-link">
+                    TravelConnect
+                  </a>
+                </div>
+              </div>
+              <div className="col">
+                <div className="arc-footer-section">
+                  <div className="arc-footer-title">About Us</div>
+                  <a href="#" className="arc-footer-link">
+                    Our Story
+                  </a>
+                  <a href="#" className="arc-footer-link">
+                    Careers
+                  </a>
+                  <a href="#" className="arc-footer-link">
+                    Leadership & Governance
+                  </a>
+                  <a href="#" className="arc-footer-link">
+                    Media Kit
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div className="arc-footer-bottom">
+            <div className="row">
+              <div className="col-lg-6"></div>
+              <div className="col-lg-6 mr-auto"></div>
             </div>
           </div>
         </div>

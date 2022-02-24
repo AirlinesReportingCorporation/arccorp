@@ -24,7 +24,7 @@ $margin-spacing: 30px;
 .#{$name}jumbo {
   max-width: 1210px;
   width: 100%;
-  background: black;
+  background: variables.$tarmac;
   border-radius: 10px;
   height: 592px;
   display: flex;
@@ -34,6 +34,70 @@ $margin-spacing: 30px;
 }
 
 .#{$name}jumbo-inner {
+  max-width: 960px;
+  margin: 0 auto;
   padding: 15px;
+
+  &.white,
+  h2.white {
+    color: variables.$white;
+  }
 }
 
+.#{$name}jumbo-inner-title {
+  font-family: SourceSansPro-Bold, "SourceSansPro-Bold", Arial, Helvetica,
+    sans-serif;
+  font-size: 48px;
+  line-height: 48px;
+  margin-bottom: $margin-spacing;
+}
+
+.#{$name}jumbo-inner-body {
+  font-size: 18px;
+  line-height: 24px;
+  margin-bottom: $margin-spacing;
+}
+
+.swiper-button-prev,
+.swiper-rtl .swiper-button-next {
+  height: 45px;
+  width: 45px;
+  left: 15%;
+  right: auto;
+  color: #ffffff;
+  opacity: 0.6;
+  &:hover {
+    opacity: 0.8;
+  }
+  //background: rgba(255, 255, 255, 0.2);
+}
+
+.swiper-button-next,
+.swiper-rtl .swiper-button-prev {
+  height: 45px;
+  width: 45px;
+  right: 15%;
+  color: #ffffff;
+  left: auto;
+  opacity: 0.6;
+  &:hover {
+    opacity: 0.8;
+  }
+  //background: rgba(255, 255, 255, 0.2);
+}
+
+.swiper-button-prev:after,
+.swiper-rtl .swiper-button-next:after,
+.swiper-button-next:after,
+.swiper-rtl .swiper-button-prev:after {
+  padding: 15px 19px;
+  background: rgba(255, 255, 255, 0.6);
+  font-size: 14px;
+  border-radius: 50%;
+}
+
+@media (max-width: 575.98px) {
+  .#{$name}-jumbo {
+    background: variables.$tarmac !important;
+  }
+}
