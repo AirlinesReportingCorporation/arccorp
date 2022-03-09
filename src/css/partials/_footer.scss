@@ -5,31 +5,95 @@ $margin-spacing: 30px;
 
 .#{$name}footer {
   border-top: 1px solid variables.$tarmac;
-  margin-top: $margin-spacing * 3;
+  margin-top: 0;
 }
 
 .#{$name}footer-sub {
-  max-width: 1170px;
+  max-width: 1200px;
   margin: 0 auto $margin-spacing * 2;
   padding: 18px 0;
   border-bottom: 1px solid variables.$tarmac;
 }
 
+.#{$name}footer-container {
+  margin-top: $margin-spacing;
+  //margin-bottom: $margin-spacing;
+  max-width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+  border-bottom: 1px solid #2a2b2c;
+  padding-bottom: $margin-spacing;
+}
+
 .#{$name}footer-section {
-  font-family: SourceSansPro-Regular, "SourceSansPro-Regular", Arial, Helvetica, sans-serif;
+  font-family: SourceSansPro-Regular, "SourceSansPro-Regular", Arial, Helvetica,
+    sans-serif;
   font-size: 14px;
   line-height: 30px;
 }
 
+.#{$name}footer-bottom {
+  margin-top: 10px;
+  font-family: SourceSansPro-Regular, "SourceSansPro-Regular", Arial, Helvetica,
+    sans-serif;
+  font-size: 14px;
+  line-height: 30px;
+  max-width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
 .#{$name}footer-title {
-  font-family: SourceSansPro-Bold, "SourceSansPro-Regular", Arial, Helvetica, sans-serif;
+  font-family: SourceSansPro-Bold, "SourceSansPro-Regular", Arial, Helvetica,
+    sans-serif;
   line-height: 1.2;
 }
 
 a.#{$name}footer-link {
   display: block;
-  font-family: SourceSansPro-Regular, "SourceSansPro-Regular", Arial, Helvetica, sans-serif;
+  font-family: SourceSansPro-Regular, "SourceSansPro-Regular", Arial, Helvetica,
+    sans-serif;
   font-size: 14px;
   line-height: 30px;
   color: variables.$tarmac;
+}
+
+.#{$name}footer-links-social {
+  color: variables.$tarmac;
+  font-size: 20px;
+
+  .mr-auto {
+    margin-left: auto;
+  }
+
+  li {
+    color: variables.$tarmac;
+    list-style: none;
+    display: inline-block;
+    margin-right: 15px;
+
+    &:last-child {
+      margin-right: 0;
+    }
+
+    a {
+      color: variables.$tarmac;
+    }
+  }
+}
+
+.#{$name}footer-links-policy {
+  max-width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+  background: variables.$tarmac;
+  color: variables.$white;
+  line-height: 30px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  font-size: 14px;
+
+  a {
+    margin-right: $margin-spacing;
+  }
 }

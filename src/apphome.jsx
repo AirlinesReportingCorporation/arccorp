@@ -2,6 +2,8 @@ import React, { Component } from "react";
 
 import { Swiper, SwiperSlide } from "swiper/react";
 
+import { PodcastWidget } from "podcast-widget";
+
 // import required modules
 import { Navigation, Pagination, Mousewheel, Keyboard } from "swiper";
 
@@ -84,8 +86,7 @@ class Apphome extends Component {
 
                       <a
                         href="https://www.youtube.com/channel/UCWHZsoCDNhjorop892EVETw?sub_confirmation=1"
-                        class="ctaBtn ctaBtn--white"
-                        
+                        className="ctaBtn ctaBtn--white"
                       >
                         <img
                           src="https://www2.arccorp.com/globalassets/homepage/redesign/slides/subscribe.png"
@@ -107,13 +108,82 @@ class Apphome extends Component {
             </div>
           </SwiperSlide>
           <SwiperSlide>
-            <div className="arc-jumbo">Slide 2</div>
+            <div
+              className="arc-jumbo"
+              style={{
+                background:
+                  "url(https://www2.arccorp.com/globalassets/homepage/redesign/slides/ARCPay-Jumbo5.jpg) center center / cover no-repeat",
+              }}
+            >
+              <div className="arc-jumbo-inner white">
+                <div className="row">
+                  <div className="col-lg-7 col-md-12">
+                    <img
+                      src="https://www2.arccorp.com/globalassets/homepage/redesign/slides/ARCPay_White_Medium.png"
+                      style={{ maxWidth: "100px", marginBottom: "15px" }}
+                    />
+                    <h2 className="arc-jumbo-inner-title white">
+                      Payment <br />
+                      Myth Busters #5
+                    </h2>
+                    <div className="arc-jumbo-inner-body">
+                      <strong>Myth:</strong> You need to get and maintain
+                      separate merchant accounts for different types of charges.{" "}
+                      <br />
+                      <br />
+                      <strong>Reality:</strong> ARC Pay, an ARC-exclusive
+                      benefit, consolidates travel transactions, fees, and
+                      settlement to simplify your agency business.
+                    </div>
+                    <a
+                      className="ctaBtn ctaBtn--main"
+                      target="_blank"
+                      href="https://www2.arccorp.com/payment-myth-busters-5/?utm_source=Jumbo_Carousel&amp;utm_campaign=Myth_Busters_5"
+                    >
+                      What makes ARC Pay unique{" "}
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
           </SwiperSlide>
           <SwiperSlide>
-            <div className="arc-jumbo">Slide 3</div>
-          </SwiperSlide>
-          <SwiperSlide>
-            <div className="arc-jumbo">Slide 4</div>
+            <div
+              className="arc-jumbo"
+              style={{
+                background:
+                  "url(https://www2.arccorp.com/globalassets/homepage/redesign/slides/ARCTalk_Omni_jumbotron.jpg) center center / cover no-repeat",
+              }}
+            >
+              <div className="arc-jumbo-inner white">
+                <div className="row">
+                  <div className="col-lg-5">
+                    <img
+                      src="https://www2.arccorp.com/globalassets/homepage/redesign/slides/jumbotron-title-ep6.png"
+                      alt=""
+                      style={{
+                        "margin-bottom": "25px",
+                        "max-width": "100%",
+                        "margin-left": "auto",
+                        "margin-right": "auto",
+                      }}
+                    />
+                    <a
+                      href="https://www2.arccorp.com/arc-talk-podcast/omnichannel-chatter-with-cornerstone/?utm_source=Jumbo_Carousel"
+                      className="ctaBtn ctaBtn--white"
+                    >
+                      Listen Now
+                    </a>
+                    <a
+                      href="https://www2.arccorp.com/arc-talk-podcast?utm_source=Jumbo_Carousel"
+                      className="ctaBtn ctaBtn--white"
+                    >
+                      More Episodes
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
           </SwiperSlide>
         </Swiper>
 
@@ -131,7 +201,10 @@ class Apphome extends Component {
                         />
                       </div>
                       <div className="arc-homepage-blog-meta">
-                        <div className="arc-homepage-blog-title">
+                        <div
+                          className="arc-homepage-blog-title"
+                          style={{ marginBottom: "10px" }}
+                        >
                           {homeData.recentBlogTitle}
                         </div>
                         <div className="arc-homepage-cta-link">
@@ -143,8 +216,11 @@ class Apphome extends Component {
                   <div className="col-lg-6">
                     <div className="arc-homepage-blog-right d-flex flex-column">
                       <div>
-                        <div className="arc-homepage-blog-title">
-                          Most Popular Aritcles
+                        <div
+                          className="arc-homepage-blog-title"
+                          style={{ lineHeight: "1" }}
+                        >
+                          Most Popular Articles
                         </div>
                         {homeData.popularArticles.map((data, i) => {
                           return (
@@ -154,7 +230,11 @@ class Apphome extends Component {
                               </div>
                               <a
                                 href={data.link}
-                                className="arc-homepage-blog-popular-title"
+                                className={
+                                  homeData.popularArticles.length == i + 1
+                                    ? "arc-homepage-blog-popular-title border-bottom-none"
+                                    : "arc-homepage-blog-popular-title"
+                                }
                               >
                                 {data.title}
                               </a>
@@ -162,7 +242,7 @@ class Apphome extends Component {
                           );
                         })}
                       </div>
-                      <div className="arc-homepage-blog-link">
+                      <div className="arc-homepage-cta-link">
                         <a href={homeData.recentBlogLink}>All Articles</a>
                       </div>
                     </div>
@@ -172,23 +252,26 @@ class Apphome extends Component {
             </div>
             <div className="col-lg-6">
               <div
-                className="arc-homepage-card d-flex align-items-center type-color-white text-center"
+                className="arc-homepage-card d-flex flex-column align-items-center type-color-white text-center"
                 style={{
                   background:
                     "url(https://www2.arccorp.com/globalassets/homepage/redesign/slides/homepage-sales-variance.png) center center / cover no-repeat",
                 }}
               >
-                <div className="arc-homepage-numbers">
+                <div className="arc-homepage-numbers d-flex flex-column align-items-center">
+                  <div className="arc-homepage-numbers-caption">
+                    ARC's Weekly Airline Sales Data
+                  </div>
                   <div className="arc-homepage-numbers-eyebrow">
                     Sales Variance
                   </div>
                   <div className="arc-homepage-numbers-eyebrow-2">
-                    vs. THE WEEK ENDING JANUARY 9, 2021
+                    vs. the week ending Janurary 9, 2021
                   </div>
-                  <div className="arc-homepage-numbers-main">+140.6%</div>
-                  <div className="arc-homepage-numbers-caption">
-                    ARC's Weekly Airline Sales Data
+                  <div className="arc-homepage-numbers-main">
+                    +140.6<span>%</span>
                   </div>
+
                   <div className="arc-homepage-numbers-body">
                     Stay up to date on the latest{" "}
                     <span>airline sales trends during COVID-19</span>.
@@ -199,6 +282,14 @@ class Apphome extends Component {
                     </div>
                   </div>
                 </div>
+              </div>
+            </div>
+          </div>
+
+          <div className="row">
+            <div className="col-lg-12">
+              <div style={{ marginBottom: "60px" }}>
+                <PodcastWidget />
               </div>
             </div>
           </div>
@@ -365,7 +456,7 @@ class Apphome extends Component {
               </div>
             </div>
           </div>
-          <div className="arc-homepage-section">
+          <div className="arc-footer-container">
             <div className="row">
               <div className="col">
                 <div className="arc-footer-section">
@@ -467,8 +558,87 @@ class Apphome extends Component {
           </div>
           <div className="arc-footer-bottom">
             <div className="row">
-              <div className="col-lg-6"></div>
-              <div className="col-lg-6 mr-auto"></div>
+              <div className="col-lg-6">
+                &copy; 2022 Airlines Reporting Corporation (ARC). All rights
+                reserved.
+              </div>
+              <div className="col-lg-6 text-right">
+                <ul className="arc-footer-links-social d-inline-block">
+                  <li>
+                    <a
+                      href="https://www.schellman.com/certificate-directory?certificateNumber=1427462-10"
+                      target="_blank"
+                      class="icon-iso_logo"
+                    ></a>
+                  </li>
+                  <li>
+                    <a
+                      href="https://twitter.com/ARCtalk"
+                      title="twitter"
+                      target="_blank"
+                      class="icon-twitter"
+                    ></a>
+                  </li>
+                  <li>
+                    <a
+                      href="https://www.facebook.com/ARCtalk"
+                      title="facebook"
+                      target="_blank"
+                      class="icon-facebook"
+                    ></a>
+                  </li>
+                  <li>
+                    <a
+                      href="https://www.linkedin.com/company/arc"
+                      title="LinkedIn"
+                      target="_blank"
+                      class="icon-linkedin"
+                    ></a>
+                  </li>
+                  <li>
+                    <a
+                      href="https://www.youtube.com/channel/UCWHZsoCDNhjorop892EVETw"
+                      target="_blank"
+                      class="icon-youtube"
+                    ></a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div className="bg-color-tarmac">
+            <div className="arc-footer-links-policy">
+              <div className="row">
+                <div className="col-lg-12">
+                  <span class="footer-rtf-links">
+                    <a href="/website-terms-of-use/" title="Terms">
+                      Terms
+                    </a>
+
+                    <a href="/site-privacy-policy/" title="Privacy">
+                      Privacy
+                    </a>
+
+                    <a
+                      href="/pci-data-security-standards/"
+                      title="PCI Standards"
+                    >
+                      PCI Standards
+                    </a>
+
+                    <a
+                      href="https://arccorp.statusdashboard.com/"
+                      title="ARC continually monitors the status of ARCCorp.com and related services. If a service is interrupted or is temporarily down for maintenance, an alert is posted here. If you wish to receive an email alert for specific services (or for all services), subscribe here."
+                      target="_blank"
+                    >
+                      ARC System Status
+                    </a>
+                    <a href="https://www2.arccorp.com/support-training/data-subject-access-request-form/">
+                      Do Not Sell My Personal Information
+                    </a>
+                  </span>
+                </div>
+              </div>
             </div>
           </div>
         </div>

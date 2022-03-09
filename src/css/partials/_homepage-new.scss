@@ -14,14 +14,15 @@ $margin-spacing: 30px;
 
 .#{$name}homepage-section {
   margin-top: $margin-spacing;
-  margin-bottom: $margin-spacing * 2;
-  max-width: 1170px;
+  margin-bottom: $margin-spacing;
+  max-width: 1200px;
   margin-left: auto;
   margin-right: auto;
 }
 
 .#{$name}homepage-card {
   border-radius: variables.$border-radius;
+  position: relative;
   overflow: hidden;
   background: variables.$fog;
   height: 450px;
@@ -72,7 +73,7 @@ $margin-spacing: 30px;
   font-family: SourceSansPro-Bold, Arial, Helvetica, sans-serif;
   font-size: 18px;
   line-height: 22px;
-  margin-top: $margin-spacing;
+  margin-top: $margin-spacing + 10;
   margin-bottom: $margin-spacing;
 }
 
@@ -91,6 +92,8 @@ $margin-spacing: 30px;
   //position: absolute;
   margin-top: auto;
   align-content: flex-end;
+  line-height: 1;
+  margin-bottom: 20px;
 
   &:after {
     font-family: "icomoon";
@@ -130,6 +133,7 @@ $margin-spacing: 30px;
 
 .#{$name}homepage-blog-right {
   background: variables.$darkgrey;
+  position: relative;
   padding: 20px;
   height: 100%;
 }
@@ -138,31 +142,31 @@ $margin-spacing: 30px;
   font-family: SourceSansPro-Bold, Arial, Helvetica, sans-serif;
   color: variables.$landing;
   font-size: 12px;
-  line-height: 17px;
+  line-height: 1;
   text-transform: uppercase;
 }
 
 .#{$name}homepage-numbers {
   padding: 40px;
   margin: 0 auto;
+  position: relative;
 }
 
 .#{$name}homepage-numbers-eyebrow {
-  font-family: SourceSansPro-SemiBold, "SourceSansPro-SemiBold", Arial,
-    Helvetica, sans-serif;
+  font-family: SourceSansPro-Bold, "SourceSansPro-SemiBold", Arial, Helvetica,
+    sans-serif;
   font-size: 18px;
   line-height: 1.2;
-  color: variables.$white;
-  text-transform: uppercase;
-  margin-top: 10px;
+  color: variables.$flare;
 }
 
 .#{$name}homepage-numbers-eyebrow-2 {
-  font-family: SourceSansPro-SemiBold, "SourceSansPro-SemiBold", Arial,
-    Helvetica, sans-serif;
+  font-family: SourceSansPro-Regular, "SourceSansPro-SemiBold", Arial, Helvetica,
+    sans-serif;
   font-size: 18px;
   line-height: 1.2;
   color: variables.$overcast;
+  margin-bottom: 20px;
 }
 
 .#{$name}homepage-numbers-main {
@@ -173,14 +177,19 @@ $margin-spacing: 30px;
   background: -webkit-linear-gradient(180deg, #ff1b71, #fcbf49);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
+  margin-bottom: 20px;
+
+  span {
+    font-size: 80px;
+  }
 }
 
 .#{$name}homepage-numbers-caption {
   font-family: SourceSansPro-Bold, "SourceSansPro-Bold", Arial, Helvetica,
     sans-serif;
-  font-size: 30px;
-  line-height: 34px;
-  margin: 30px 0;
+  font-size: 27px;
+  line-height: 30px;
+  margin: 20px 0 30px;
 }
 
 .#{$name}homepage-numbers-body {
@@ -200,7 +209,7 @@ $margin-spacing: 30px;
 }
 
 .#{$name}homepage-stats {
-  padding: 40px;
+  padding: 46px 60px;
 }
 
 .#{$name}homepage-stats-title {
@@ -222,7 +231,13 @@ a.#{$name}homepage-blog-popular-title {
   color: variables.$tarmac;
   font-size: 14px;
   line-height: 17px;
-  margin-bottom: 10px;
+  margin-bottom: 12px;
+  padding-bottom: 12px;
+  border-bottom: 1px solid variables.$landing;
+
+  &.border-bottom-none {
+    border-bottom: 0;
+  }
 }
 
 .#{$name}homepage-card-inner {
