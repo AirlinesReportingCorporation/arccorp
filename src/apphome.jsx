@@ -1,5 +1,13 @@
 import React, { Component } from "react";
 
+import LazyLoad from "vanilla-lazyload";
+
+if (!document.lazyLoadInstance) {
+  document.lazyLoadInstance = new LazyLoad({
+    elements_selector: ".lazy",
+  });
+}
+
 import { Swiper, SwiperSlide } from "swiper/react";
 
 import { PodcastWidget } from "podcast-widget";
@@ -46,6 +54,15 @@ class Apphome extends Component {
     super(props);
   }
 
+  componentDidMount() {
+    document.lazyLoadInstance.update();
+  }
+
+  // Update lazyLoad after rerendering of every image
+  componentDidUpdate() {
+    document.lazyLoadInstance.update();
+  }
+
   render() {
     return (
       <div className="arc-homepage">
@@ -63,11 +80,10 @@ class Apphome extends Component {
         >
           <SwiperSlide>
             <div
-              className="arc-jumbo"
-              style={{
-                background:
-                  "url(https://www2.arccorp.com/globalassets/homepage/redesign/slides/homepage-slide-test.png) center center / cover no-repeat",
-              }}
+              className="arc-jumbo lazy"
+              data-bg={
+                "https://www2.arccorp.com/globalassets/homepage/redesign/slides/homepage-slide-test.png"
+              }
             >
               <div className="arc-jumbo-inner white">
                 <div className="row">
@@ -109,11 +125,10 @@ class Apphome extends Component {
           </SwiperSlide>
           <SwiperSlide>
             <div
-              className="arc-jumbo"
-              style={{
-                background:
-                  "url(https://www2.arccorp.com/globalassets/homepage/redesign/slides/ARCPay-Jumbo5.jpg) center center / cover no-repeat",
-              }}
+              className="arc-jumbo lazy"
+              data-bg={
+                "https://www2.arccorp.com/globalassets/homepage/redesign/slides/ARCPay-Jumbo5.jpg"
+              }
             >
               <div className="arc-jumbo-inner white">
                 <div className="row">
@@ -149,11 +164,10 @@ class Apphome extends Component {
           </SwiperSlide>
           <SwiperSlide>
             <div
-              className="arc-jumbo"
-              style={{
-                background:
-                  "url(https://www2.arccorp.com/globalassets/homepage/redesign/slides/ARCTalk_Omni_jumbotron.jpg) center center / cover no-repeat",
-              }}
+              className="arc-jumbo lazy"
+              data-bg={
+                "https://www2.arccorp.com/globalassets/homepage/redesign/slides/ARCTalk_Omni_jumbotron.jpg"
+              }
             >
               <div className="arc-jumbo-inner white">
                 <div className="row">
@@ -252,11 +266,10 @@ class Apphome extends Component {
             </div>
             <div className="col-lg-6">
               <div
-                className="arc-homepage-card d-flex flex-column align-items-center type-color-white text-center"
-                style={{
-                  background:
-                    "url(https://www2.arccorp.com/globalassets/homepage/redesign/slides/homepage-sales-variance.png) center center / cover no-repeat",
-                }}
+                className="arc-homepage-card d-flex flex-column align-items-center type-color-white text-center lazy"
+                data-bg={
+                  "https://www2.arccorp.com/globalassets/homepage/redesign/slides/homepage-sales-variance.png"
+                }
               >
                 <div className="arc-homepage-numbers d-flex flex-column align-items-center">
                   <div className="arc-homepage-numbers-caption">
@@ -297,11 +310,10 @@ class Apphome extends Component {
           <div className="row">
             <div className="col-lg-6">
               <div
-                className="arc-homepage-card"
-                style={{
-                  background:
-                    "url(https://www2.arccorp.com/globalassets/homepage/redesign/slides/homepage-arc-stats.png) center center / cover no-repeat",
-                }}
+                className="arc-homepage-card lazy"
+                data-bg={
+                  "https://www2.arccorp.com/globalassets/homepage/redesign/slides/homepage-arc-stats.png"
+                }
               >
                 <div className="row align-items-center no-gutters">
                   <div className="col-lg-12">
@@ -381,11 +393,10 @@ class Apphome extends Component {
           <div className="row">
             <div className="col-lg-12">
               <div
-                className="arc-homepage-card arc-homepage-card-small"
-                style={{
-                  background:
-                    "url(https://www2.arccorp.com/globalassets/homepage/redesign/slides/homepage-atd.png) center center / cover no-repeat",
-                }}
+                className="arc-homepage-card arc-homepage-card-small lazy"
+                data-bg={
+                  "https://www2.arccorp.com/globalassets/homepage/redesign/slides/homepage-atd.png"
+                }
               >
                 <div className="row align-items-center no-gutters">
                   <div className="col-lg-3 height-auto">
@@ -399,7 +410,7 @@ class Apphome extends Component {
                   </div>
                   <div className="col-lg-3 height-auto text-right">
                     <div
-                      className="arc-homepage-cta-link yellow"
+                      className="arc-homepage-cta-link yellow mb-0"
                       style={{ marginRight: "60px" }}
                     >
                       <a href="#">Learn More</a>
@@ -413,11 +424,10 @@ class Apphome extends Component {
           <div className="row">
             <div className="col-lg-12">
               <div
-                className="arc-homepage-card"
-                style={{
-                  background:
-                    "url(https://www2.arccorp.com/globalassets/homepage/redesign/slides/homepage-arc-stats.png) center center / cover no-repeat",
-                }}
+                className="arc-homepage-card lazy"
+                data-bg={
+                  "https://www2.arccorp.com/globalassets/homepage/redesign/slides/homepage-arc-stats.png"
+                }
               >
                 <div className="row align-items-center no-gutters">
                   <div
@@ -568,7 +578,7 @@ class Apphome extends Component {
                     <a
                       href="https://www.schellman.com/certificate-directory?certificateNumber=1427462-10"
                       target="_blank"
-                      class="icon-iso_logo"
+                      className="icon-iso_logo"
                     ></a>
                   </li>
                   <li>
@@ -576,7 +586,7 @@ class Apphome extends Component {
                       href="https://twitter.com/ARCtalk"
                       title="twitter"
                       target="_blank"
-                      class="icon-twitter"
+                      className="icon-twitter"
                     ></a>
                   </li>
                   <li>
@@ -584,7 +594,7 @@ class Apphome extends Component {
                       href="https://www.facebook.com/ARCtalk"
                       title="facebook"
                       target="_blank"
-                      class="icon-facebook"
+                      className="icon-facebook"
                     ></a>
                   </li>
                   <li>
@@ -592,14 +602,14 @@ class Apphome extends Component {
                       href="https://www.linkedin.com/company/arc"
                       title="LinkedIn"
                       target="_blank"
-                      class="icon-linkedin"
+                      className="icon-linkedin"
                     ></a>
                   </li>
                   <li>
                     <a
                       href="https://www.youtube.com/channel/UCWHZsoCDNhjorop892EVETw"
                       target="_blank"
-                      class="icon-youtube"
+                      className="icon-youtube"
                     ></a>
                   </li>
                 </ul>
@@ -610,7 +620,7 @@ class Apphome extends Component {
             <div className="arc-footer-links-policy">
               <div className="row">
                 <div className="col-lg-12">
-                  <span class="footer-rtf-links">
+                  <span className="footer-rtf-links">
                     <a href="/website-terms-of-use/" title="Terms">
                       Terms
                     </a>

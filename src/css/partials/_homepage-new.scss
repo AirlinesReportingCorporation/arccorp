@@ -28,6 +28,10 @@ $margin-spacing: 30px;
   height: 450px;
   margin-bottom: $margin-spacing * 2;
 
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+
   &.#{$name}homepage-card-small {
     height: 90px;
     padding-left: $margin-spacing * 2;

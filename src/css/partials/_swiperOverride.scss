@@ -30,6 +30,10 @@ $margin-spacing: 30px;
   align-items: center;
   margin-left: auto;
   margin-right: auto;
+
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
 }
 
 .#{$name}jumbo-inner {
@@ -120,12 +124,12 @@ $margin-spacing: 30px;
 
   .swiper-button-prev,
   .swiper-rtl .swiper-button-next {
-    left: 15px;
+    display: none;
   }
 
   .swiper-button-next,
   .swiper-rtl .swiper-button-prev {
-    right: 15px;
+    display: none;
   }
 }
 
