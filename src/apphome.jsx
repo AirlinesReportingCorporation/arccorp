@@ -164,7 +164,7 @@ class Apphome extends Component {
           </SwiperSlide>
           <SwiperSlide>
             <div
-              className="arc-jumbo lazy"
+              className="arc-jumbo teal lazy"
               data-bg={
                 "https://www2.arccorp.com/globalassets/homepage/redesign/slides/ARCTalk_Omni_jumbotron.jpg"
               }

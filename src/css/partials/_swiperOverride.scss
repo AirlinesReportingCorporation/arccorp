@@ -24,6 +24,7 @@ $margin-spacing: 30px;
 .#{$name}jumbo {
   width: 100%;
   background: variables.$tarmac;
+  max-width: 1210px;
   border-radius: 10px;
   height: 592px;
   display: flex;
@@ -136,6 +137,10 @@ $margin-spacing: 30px;
 @media (max-width: 767.99px) {
   .#{$name}jumbo {
     background: variables.$tarmac !important;
+
+    &.teal {
+      background: variables.$teal !important;
+    }
   }
 }
 
