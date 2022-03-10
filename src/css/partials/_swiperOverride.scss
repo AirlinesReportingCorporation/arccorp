@@ -6,6 +6,8 @@ $margin-spacing: 30px;
 .#{$name}jumbo-swiper {
   margin-top: $margin-spacing;
   margin-bottom: $margin-spacing * 2;
+  max-width: 1582px;
+  overflow: visible;
 
   .swiper-pagination-bullet {
     border: 1px solid #ffffff;
@@ -64,12 +66,14 @@ $margin-spacing: 30px;
 
 .swiper-button-prev,
 .swiper-rtl .swiper-button-next {
+  background: url("https://www2.arccorp.com/globalassets/homepage/redesign/march-update/left_arrow.png") center center;
+  background-size: contain;
   height: 45px;
   width: 45px;
   left: 15%;
   right: auto;
   color: #ffffff;
-  opacity: 0.6;
+  //opacity: 0.6;
   &:hover {
     opacity: 0.8;
   }
@@ -78,12 +82,14 @@ $margin-spacing: 30px;
 
 .swiper-button-next,
 .swiper-rtl .swiper-button-prev {
+  background: url("https://www2.arccorp.com/globalassets/homepage/redesign/march-update/right-arrow.png") center center;
+  background-size: contain;
   height: 45px;
   width: 45px;
   right: 15%;
   color: #ffffff;
   left: auto;
-  opacity: 0.6;
+  //opacity: 0.6;
   &:hover {
     opacity: 0.8;
   }
@@ -94,6 +100,7 @@ $margin-spacing: 30px;
 .swiper-rtl .swiper-button-next:after,
 .swiper-button-next:after,
 .swiper-rtl .swiper-button-prev:after {
+  display: none;
   padding: 15px 19px;
   background: rgba(255, 255, 255, 0.6);
   font-size: 14px;
