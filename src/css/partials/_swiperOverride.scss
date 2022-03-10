@@ -3,6 +3,17 @@
 $name: variables.$namespace;
 $margin-spacing: 30px;
 
+.swiper-wrapper {
+  align-items: stretch;
+  display: flex;
+}
+
+.swiper-slide {
+  height: auto;
+  align-items: stretch;
+  display: flex;
+}
+
 .#{$name}jumbo-swiper {
   margin-top: $margin-spacing;
   margin-bottom: $margin-spacing * 2;
@@ -27,7 +38,7 @@ $margin-spacing: 30px;
   width: 100%;
   background: variables.$tarmac;
   max-width: 1210px;
-  border-radius: 10px;
+  border-radius: variables.$border-radius * 2;
   height: 592px;
   display: flex;
   align-items: center;
@@ -66,7 +77,8 @@ $margin-spacing: 30px;
 
 .swiper-button-prev,
 .swiper-rtl .swiper-button-next {
-  background: url("https://www2.arccorp.com/globalassets/homepage/redesign/march-update/left_arrow.png") center center;
+  background: url("https://www2.arccorp.com/globalassets/homepage/redesign/march-update/left_arrow.png")
+    center center;
   background-size: contain;
   height: 45px;
   width: 45px;
@@ -82,7 +94,8 @@ $margin-spacing: 30px;
 
 .swiper-button-next,
 .swiper-rtl .swiper-button-prev {
-  background: url("https://www2.arccorp.com/globalassets/homepage/redesign/march-update/right-arrow.png") center center;
+  background: url("https://www2.arccorp.com/globalassets/homepage/redesign/march-update/right-arrow.png")
+    center center;
   background-size: contain;
   height: 45px;
   width: 45px;
@@ -160,5 +173,14 @@ $margin-spacing: 30px;
   .swiper-button-next,
   .swiper-rtl .swiper-button-prev {
     right: 15%;
+  }
+
+  .#{$name}jumbo-inner {
+    padding: 30px 15px;
+  }
+
+  .#{$name}jumbo {
+    min-height: auto;
+    height: auto;
   }
 }

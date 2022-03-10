@@ -47,6 +47,7 @@ $margin-spacing: 30px;
   font-family: SourceSansPro-Bold, "SourceSansPro-Regular", Arial, Helvetica,
     sans-serif;
   line-height: 1.2;
+  margin-bottom: $margin-spacing /2;
 }
 
 a.#{$name}footer-link {
