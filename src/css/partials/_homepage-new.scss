@@ -178,6 +178,7 @@ $margin-spacing: 30px;
 .#{$name}homepage-numbers-main {
   font-family: Oswald, "Oswald", SourceSansPro-Black, "SourceSansPro-Black",
     Arial, Helvetica, sans-serif;
+  font-weight: bold;
   font-size: 110px;
   line-height: 1;
   background: -webkit-linear-gradient(180deg, #ff1b71, #fcbf49);
@@ -195,7 +196,7 @@ $margin-spacing: 30px;
     sans-serif;
   font-size: 27px;
   line-height: 30px;
-  margin: 20px 0 30px;
+  margin: 20px 0 20px;
 }
 
 .#{$name}homepage-numbers-body {
