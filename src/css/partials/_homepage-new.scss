@@ -320,6 +320,12 @@ a.#{$name}homepage-blog-popular-title {
         padding-bottom: $margin-spacing;
       }
     }
+
+    &.#{$name}homepage-card-long {
+      height: 450px !important;
+      background-size: contain;
+      background-color: #060a0b;
+    }
   }
 
   .#{$name}homepage-card-small {

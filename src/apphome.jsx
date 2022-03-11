@@ -372,7 +372,7 @@ class Apphome extends Component {
             </div>
             <div className="col-lg-3 col-md-6">
               <div
-                className="arc-homepage-card align-items-center lazy"
+                className="arc-homepage-card arc-homepage-card-long align-items-center lazy"
                 data-bg={
                   "https://www2.arccorp.com/globalassets/homepage/redesign/march-update/TC_single_box.jpg"
                 }
