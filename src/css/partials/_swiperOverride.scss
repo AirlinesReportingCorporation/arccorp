@@ -21,6 +21,7 @@ $margin-spacing: 30px;
   overflow: visible;
 
   .swiper-pagination-bullet {
+    background: transparent;
     border: 1px solid #ffffff;
     opacity: 1;
   }
@@ -185,6 +186,16 @@ $margin-spacing: 30px;
   .swiper-rtl .swiper-button-prev {
     display: none;
   }
+}
+
+.arc-jumbo-swiper
+  .swiper-pagination.swiper-pagination-clickable.swiper-pagination-bullets.swiper-pagination-horizontal {
+  width: auto;
+  padding: 0px 8px 2px;
+  left: 50%;
+  margin-left: -35px;
+  border-radius: 10px;
+  background: rgba(255, 255, 255, 0.2);
 }
 
 @media (max-width: 767.99px) {
