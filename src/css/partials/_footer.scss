@@ -41,13 +41,14 @@ $margin-spacing: 30px;
   max-width: 1200px;
   margin-left: auto;
   margin-right: auto;
+  margin-bottom: 10px;
 }
 
 .#{$name}footer-title {
   font-family: SourceSansPro-Bold, "SourceSansPro-Regular", Arial, Helvetica,
     sans-serif;
   line-height: 1.2;
-  margin-bottom: $margin-spacing /2;
+  margin-bottom: $margin-spacing / 2;
 }
 
 a.#{$name}footer-link {
@@ -62,6 +63,7 @@ a.#{$name}footer-link {
 .#{$name}footer-links-social {
   color: variables.$tarmac;
   font-size: 20px;
+  margin-bottom: 0;
 
   .mr-auto {
     margin-left: auto;
@@ -80,6 +82,21 @@ a.#{$name}footer-link {
     a {
       color: variables.$tarmac;
     }
+  }
+}
+
+.#{$name}footer-icon {
+  img {
+    max-height: 20px;
+    width: auto;
+  }
+}
+
+.#{$name}footer-iso {
+  margin-right: 140px;
+  img {
+    max-height: 40px;
+    width: auto;
   }
 }
 

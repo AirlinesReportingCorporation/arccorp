@@ -124,13 +124,15 @@ $margin-spacing: 30px;
   }
 
   &.border-top-white {
-    padding-top: 20px;
+    margin-bottom: 12px;
+    padding-top: 30px;
     border-top: 1px solid variables.$white;
   }
 
   &.arc-homepage-cta-refund-link {
     //margin-top: 20px;
-    padding-top: 20px;
+    margin-bottom: 12px;
+    padding-top: 30px;
     border-top: 1px solid variables.$tarmac;
   }
 }
@@ -285,13 +287,14 @@ a.#{$name}homepage-blog-popular-title {
   font-family: SourceSansPro-Bold, Arial, Helvetica, sans-serif;
   font-size: 48px;
   line-height: 1.2;
-  margin-bottom: $margin-spacing;
+  margin-bottom: 35px;
 }
 
 .#{$name}homepage-data-copy {
   font-size: 16px;
   line-height: 22px;
   max-width: 515px;
+  margin-bottom: 20px;
 }
 
 @media screen and (max-width: 990.999px) {
@@ -355,5 +358,10 @@ a.#{$name}homepage-blog-popular-title {
 
   .#{$name}homepage-numbers-main {
     font-size: 70px;
+  }
+
+  .#{$name}homepage-cta-link {
+    padding-bottom: 5px;
+    margin-bottom: 5px;
   }
 }

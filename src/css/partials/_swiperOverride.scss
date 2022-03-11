@@ -44,6 +44,7 @@ $margin-spacing: 30px;
   align-items: center;
   margin-left: auto;
   margin-right: auto;
+  position: relative;
 
   background-size: cover;
   background-repeat: no-repeat;
@@ -73,6 +74,38 @@ $margin-spacing: 30px;
   font-size: 18px;
   line-height: 24px;
   margin-bottom: $margin-spacing;
+}
+
+.#{$name}jumbo-subscribe {
+  position: absolute;
+  bottom: $margin-spacing;
+  left: $margin-spacing;
+  max-width: 124px;
+
+  img {
+    border-radius: 4px;
+  }
+}
+
+.#{$name}jumbo-video-cover {
+  max-width: 497px;
+  width: 100%;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  cursor: pointer;
+
+  img {
+    border-radius: variables.$border-radius;
+  }
+}
+
+.#{$name}jumbo-video {
+  max-width: 497px;
+  width: 100%;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .swiper-button-prev,
@@ -182,5 +215,15 @@ $margin-spacing: 30px;
   .#{$name}jumbo {
     min-height: auto;
     height: auto;
+  }
+
+  .#{$name}jumbo-subscribe {
+    position: relative;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    left: 0;
+    bottom: 0;
+    margin-bottom: $margin-spacing;
   }
 }

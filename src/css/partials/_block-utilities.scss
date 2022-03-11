@@ -24,6 +24,10 @@ $brand-colors: ("product-lightgray", $productgray), ("white", $white),
   }
 }
 
+.img-fluid {
+  width: auto;
+  max-width: 100%;
+}
 
 .img-width-auto {
   width: auto !important;

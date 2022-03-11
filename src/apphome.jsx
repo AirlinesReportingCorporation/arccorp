@@ -11,6 +11,7 @@ if (!document.lazyLoadInstance) {
 import { Swiper, SwiperSlide } from "swiper/react";
 import { PodcastWidget } from "podcast-widget";
 import { Navigation, Pagination, Mousewheel, Keyboard } from "swiper";
+import Jumbovideo from "./components/Jumbovideo";
 
 function shuffleArray(array) {
   let i = array.length - 1;
@@ -57,127 +58,6 @@ var homeData = {
   ],
 };
 
-var slides = [
-  <SwiperSlide>
-    <div
-      className="arc-jumbo lazy"
-      data-bg={
-        "https://www2.arccorp.com/globalassets/homepage/redesign/slides/homepage-slide-test.png"
-      }
-    >
-      <div className="arc-jumbo-inner white">
-        <div className="row">
-          <div className="col-md col-sm-12">
-            <h2 className="arc-jumbo-inner-title white">
-              U.S. Travel Agency Sales Recover in 2021
-            </h2>
-            <div className="arc-jumbo-inner-body">
-              Learn of a rich history routed in air travel intelligence,
-              distribution and settlement.
-            </div>
-            <div>
-              <a className="ctaBtn ctaBtn--white-outline" href="/">
-                Learn More
-              </a>
-
-              <a
-                href="https://www.youtube.com/channel/UCWHZsoCDNhjorop892EVETw?sub_confirmation=1"
-                className="ctaBtn ctaBtn--white"
-              >
-                <img
-                  src="https://www2.arccorp.com/globalassets/homepage/redesign/slides/subscribe.png"
-                  alt="Subcribe to our YouTube Channel"
-                  style={{ maxWidth: "100px", maxHeight: "55px" }}
-                />
-              </a>
-            </div>
-          </div>
-          <div className="col-md col-sm-12">
-            <img
-              className="img-fluid"
-              src="https://www2.arccorp.com/globalassets/homepage/redesign/arc-jumbo-video-hover.png"
-              alt=""
-            />
-          </div>
-        </div>
-      </div>
-    </div>
-  </SwiperSlide>,
-  <SwiperSlide>
-    <div
-      className="arc-jumbo lazy"
-      data-bg={
-        "https://www2.arccorp.com/globalassets/homepage/redesign/slides/ARCPay-Jumbo5.jpg"
-      }
-    >
-      <div className="arc-jumbo-inner white">
-        <div className="row">
-          <div className="col-lg-7 col-md-12">
-            <img
-              src="https://www2.arccorp.com/globalassets/homepage/redesign/slides/ARCPay_White_Medium.png"
-              style={{ maxWidth: "100px", marginBottom: "15px" }}
-            />
-            <h2 className="arc-jumbo-inner-title white">
-              Payment <br />
-              Myth Busters #5
-            </h2>
-            <div className="arc-jumbo-inner-body">
-              <strong>Myth:</strong> You need to get and maintain separate
-              merchant accounts for different types of charges. <br />
-              <br />
-              <strong>Reality:</strong> ARC Pay, an ARC-exclusive benefit,
-              consolidates travel transactions, fees, and settlement to simplify
-              your agency business.
-            </div>
-            <a
-              className="ctaBtn ctaBtn--main"
-              target="_blank"
-              href="https://www2.arccorp.com/payment-myth-busters-5/?utm_source=Jumbo_Carousel&amp;utm_campaign=Myth_Busters_5"
-            >
-              What makes ARC Pay unique{" "}
-            </a>
-          </div>
-        </div>
-      </div>
-    </div>
-  </SwiperSlide>,
-  <SwiperSlide>
-    <div
-      className="arc-jumbo teal lazy"
-      data-bg={
-        "https://www2.arccorp.com/globalassets/homepage/redesign/march-update/podcast_jumbo.jpg"
-      }
-    >
-      <div className="arc-jumbo-inner white">
-        <div className="row">
-          <div className="offset-lg-6 col-lg-5">
-            <img
-              src="https://www2.arccorp.com/globalassets/homepage/redesign/march-update/podcast2_jumbo.png"
-              alt=""
-              className="img-fluid"
-              style={{
-                "margin-bottom": "25px",
-              }}
-            />
-            <a
-              href="https://www2.arccorp.com/arc-talk-podcast/omnichannel-chatter-with-cornerstone/?utm_source=Jumbo_Carousel"
-              className="ctaBtn ctaBtn--white"
-            >
-              Listen Now
-            </a>
-            <a
-              href="https://www2.arccorp.com/arc-talk-podcast?utm_source=Jumbo_Carousel"
-              className="ctaBtn ctaBtn--white"
-            >
-              More Episodes
-            </a>
-          </div>
-        </div>
-      </div>
-    </div>
-  </SwiperSlide>,
-];
-
 class Apphome extends Component {
   constructor(props) {
     super(props);
@@ -193,6 +73,115 @@ class Apphome extends Component {
   }
 
   render() {
+    var slides = [
+      <SwiperSlide>
+        <div
+          className="arc-jumbo lazy"
+          data-bg={
+            "https://www2.arccorp.com/globalassets/homepage/redesign/march-update/data_video_background_jumbo.jpg"
+          }
+        >
+          <div className="arc-jumbo-inner white text-center">
+            <div className="row">
+              <div className="col-md-12 col-sm-12">
+                <Jumbovideo />
+
+                <h2 className="arc-jumbo-inner-title white">
+                  U.S. Travel Agency Sales Recover in 2021
+                </h2>
+                <div className="arc-jumbo-inner-body">
+                  Learn of a rich history routed in air travel intelligence,
+                  distribution and settlement.{" "}
+                  <div className="arc-homepage-cta-link d-inline-flex pl-2">
+                    <a href={homeData.recentBlogLink}>Read More</a>
+                  </div>
+                </div>
+              </div>
+              <a href="#" className="arc-jumbo-subscribe">
+                <img
+                  src="https://www2.arccorp.com/globalassets/homepage/redesign/march-update/subscribe_jumbo.jpg"
+                  alt="subscribe_jumbo.jpg"
+                />
+              </a>
+            </div>
+          </div>
+        </div>
+      </SwiperSlide>,
+      <SwiperSlide>
+        <div
+          className="arc-jumbo lazy"
+          data-bg={
+            "https://www2.arccorp.com/globalassets/homepage/redesign/slides/ARCPay-Jumbo5.jpg"
+          }
+        >
+          <div className="arc-jumbo-inner white">
+            <div className="row">
+              <div className="col-lg-7 col-md-12">
+                <img
+                  src="https://www2.arccorp.com/globalassets/homepage/redesign/slides/ARCPay_White_Medium.png"
+                  style={{ maxWidth: "100px", marginBottom: "15px" }}
+                />
+                <h2 className="arc-jumbo-inner-title white">
+                  Payment <br />
+                  Myth Busters #5
+                </h2>
+                <div className="arc-jumbo-inner-body">
+                  <strong>Myth:</strong> You need to get and maintain separate
+                  merchant accounts for different types of charges. <br />
+                  <br />
+                  <strong>Reality:</strong> ARC Pay, an ARC-exclusive benefit,
+                  consolidates travel transactions, fees, and settlement to
+                  simplify your agency business.
+                </div>
+                <a
+                  className="ctaBtn ctaBtn--main"
+                  target="_blank"
+                  href="https://www2.arccorp.com/payment-myth-busters-5/?utm_source=Jumbo_Carousel&amp;utm_campaign=Myth_Busters_5"
+                >
+                  What makes ARC Pay unique{" "}
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </SwiperSlide>,
+      <SwiperSlide>
+        <div
+          className="arc-jumbo teal lazy"
+          data-bg={
+            "https://www2.arccorp.com/globalassets/homepage/redesign/march-update/podcast_jumbo.jpg"
+          }
+        >
+          <div className="arc-jumbo-inner white">
+            <div className="row">
+              <div className="offset-lg-6 col-lg-5">
+                <img
+                  src="https://www2.arccorp.com/globalassets/homepage/redesign/march-update/podcast2_jumbo.png"
+                  alt=""
+                  className="img-fluid"
+                  style={{
+                    "margin-bottom": "25px",
+                  }}
+                />
+                <a
+                  href="https://www2.arccorp.com/arc-talk-podcast/omnichannel-chatter-with-cornerstone/?utm_source=Jumbo_Carousel"
+                  className="ctaBtn ctaBtn--white p-0"
+                >
+                  Listen Now
+                </a>
+                <a
+                  href="https://www2.arccorp.com/arc-talk-podcast?utm_source=Jumbo_Carousel"
+                  className="ctaBtn ctaBtn--white p-0"
+                >
+                  More Episodes
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </SwiperSlide>,
+    ];
+
     return (
       <div className="arc-homepage">
         <div style={{ maxWidth: "100%", overflow: "hidden" }}>
@@ -350,9 +339,10 @@ class Apphome extends Component {
                     <div className="arc-homepage-card-inner d-flex flex-column text-left">
                       <div>
                         <img
-                          src="https://www2.arccorp.com/globalassets/homepage/redesign/slides/homepage-refund-icon.png"
+                          src="https://www2.arccorp.com/globalassets/homepage/redesign/march-update/refund_icon.png"
                           alt=""
-                          style={{ width: "auto" }}
+                          className="img-fluid"
+                          style={{ maxWidth: "67px" }}
                         />
                       </div>
 
@@ -365,10 +355,7 @@ class Apphome extends Component {
                         and ticket validity extenstions.
                       </div>
 
-                      <div
-                        className="arc-homepage-cta-link arc-homepage-cta-refund-link white"
-                        style={{ marginBottom: "20px" }}
-                      >
+                      <div className="arc-homepage-cta-link arc-homepage-cta-refund-link white">
                         <a href="/">Get Access</a>
                       </div>
                     </div>
@@ -390,10 +377,7 @@ class Apphome extends Component {
                       <div className="text-left arc-homepage-mb">
                         <img src="https://www2.arccorp.com/globalassets/homepage/redesign/slides/homepage-tc-ep.png" />
                       </div>
-                      <div
-                        className="arc-homepage-cta-link  border-top-white yellow"
-                        style={{ marginBottom: "20px" }}
-                      >
+                      <div className="arc-homepage-cta-link border-top-white yellow">
                         <a href="/">Get Access</a>
                       </div>
                     </div>
@@ -591,39 +575,64 @@ class Apphome extends Component {
                     <a
                       href="https://www.schellman.com/certificate-directory?certificateNumber=1427462-10"
                       target="_blank"
-                      className="icon-iso_logo"
-                    ></a>
+                      className="arc-footer-iso"
+                    >
+                      <img
+                        src="https://www2.arccorp.com/globalassets/homepage/redesign/march-update/iso_logo.png"
+                        alt=""
+                      />
+                    </a>
                   </li>
                   <li>
                     <a
                       href="https://twitter.com/ARCtalk"
                       title="twitter"
                       target="_blank"
-                      className="icon-twitter"
-                    ></a>
+                      className="arc-footer-icon"
+                    >
+                      <img
+                        src="https://www2.arccorp.com/globalassets/homepage/redesign/march-update/twitter_logo.png"
+                        alt=""
+                      />
+                    </a>
                   </li>
                   <li>
                     <a
                       href="https://www.facebook.com/ARCtalk"
                       title="facebook"
                       target="_blank"
-                      className="icon-facebook"
-                    ></a>
+                      className="arc-footer-icon"
+                    >
+                      <img
+                        src="https://www2.arccorp.com/globalassets/homepage/redesign/march-update/facebook_logo.png"
+                        alt=""
+                      />
+                    </a>
                   </li>
                   <li>
                     <a
                       href="https://www.linkedin.com/company/arc"
                       title="LinkedIn"
                       target="_blank"
-                      className="icon-linkedin"
-                    ></a>
+                      className="arc-footer-icon"
+                    >
+                      <img
+                        src="https://www2.arccorp.com/globalassets/homepage/redesign/march-update/linkedin_logo.png"
+                        alt=""
+                      />
+                    </a>
                   </li>
                   <li>
                     <a
                       href="https://www.youtube.com/channel/UCWHZsoCDNhjorop892EVETw"
                       target="_blank"
-                      className="icon-youtube"
-                    ></a>
+                      className="arc-footer-icon"
+                    >
+                      <img
+                        src="https://www2.arccorp.com/globalassets/homepage/redesign/march-update/youtube_logo.png"
+                        alt=""
+                      />
+                    </a>
                   </li>
                 </ul>
               </div>
