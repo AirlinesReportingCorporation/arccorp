@@ -93,11 +93,15 @@ class Apphome extends Component {
                   Learn of a rich history routed in air travel intelligence,
                   distribution and settlement.{" "}
                   <div className="arc-homepage-cta-link d-inline-flex pl-2">
-                    <a href={homeData.recentBlogLink}>Read More</a>
+                    <a href="https://www2.arccorp.com/about-us/newsroom/2022-news-releases/january-2022-us-travel-agency-sales-jump-187-year-over-year/?utm_source=Jumbo_Carousel">Read More</a>
                   </div>
                 </div>
               </div>
-              <a href="#" className="arc-jumbo-subscribe">
+              <a
+                target="_blank"
+                href="https://www.youtube.com/channel/UCWHZsoCDNhjorop892EVETw?sub_confirmation=1"
+                className="arc-jumbo-subscribe"
+              >
                 <img
                   src="https://www2.arccorp.com/globalassets/homepage/redesign/march-update/subscribe_jumbo.jpg"
                   alt="subscribe_jumbo.jpg"
@@ -129,11 +133,11 @@ class Apphome extends Component {
                   but there are still some myths out there.
                 </div>
                 <a
-                  className="ctaBtn ctaBtn--main"
+                  className="ctaBtn ctaBtn--main p-0"
                   target="_blank"
                   href="https://www2.arccorp.com/products-participation/products/arc-pay/the-top-5-payment-processing-myths?utm_source=Jumbo_Carousel&amp;utm_campaign=Myth_Busters_5"
                 >
-                  How many do you know? 
+                  See the list
                 </a>
               </div>
             </div>
@@ -254,7 +258,9 @@ class Apphome extends Component {
                         })}
                       </div>
                       <div className="arc-homepage-cta-link">
-                        <a href={homeData.recentBlogLink}>All Articles</a>
+                        <a href="https://www2.arccorp.com/articles-trends/blog?utm_source=homepage-card">
+                          All Articles
+                        </a>
                       </div>
                     </div>
                   </div>
@@ -288,7 +294,9 @@ class Apphome extends Component {
                   </div>
                   <div className="">
                     <div className="arc-homepage-cta-link arc-homepage-cta-link-center yellow">
-                      <a href="/">See the Data</a>
+                      <a href="https://www2.arccorp.com/articles-trends/the-latest/coronavirus?utm_source=homepage-card">
+                        See the Data
+                      </a>
                     </div>
                   </div>
                 </div>
@@ -320,7 +328,9 @@ class Apphome extends Component {
                         <span>Sales Statistics</span>
                       </div>
                       <div className="arc-homepage-cta-link yellow">
-                        <a href="/">Get Access</a>
+                        <a href="https://www2.arccorp.com/articles-trends/sales-statistics?utm_source=homepage-card">
+                          Get Access
+                        </a>
                       </div>
                     </div>
                   </div>
@@ -351,7 +361,9 @@ class Apphome extends Component {
                       </div>
 
                       <div className="arc-homepage-cta-link arc-homepage-cta-refund-link white">
-                        <a href="/">Get Access</a>
+                        <a href="https://www2.arccorp.com/support-training/travel-agencies/participating-airline-information?utm_source=homepage-card">
+                          Get Access
+                        </a>
                       </div>
                     </div>
                   </div>
@@ -359,21 +371,19 @@ class Apphome extends Component {
               </div>
             </div>
             <div className="col-lg-3 col-md-6">
-              <div className="arc-homepage-card align-items-center bg-color-black">
+              <div
+                className="arc-homepage-card align-items-center lazy"
+                data-bg={
+                  "https://www2.arccorp.com/globalassets/homepage/redesign/march-update/TC_single_box.jpg"
+                }
+              >
                 <div className="row align-items-center type-color-white">
                   <div className="col-lg-12">
                     <div className="arc-homepage-card-inner d-flex flex-column">
-                      <div className="text-left arc-homepage-mb">
-                        <img
-                          src="https://www2.arccorp.com/globalassets/homepage/redesign/slides/homepage-tcvs.png"
-                          className="img-width-auto"
-                        />
-                      </div>
-                      <div className="text-left arc-homepage-mb">
-                        <img src="https://www2.arccorp.com/globalassets/homepage/redesign/slides/homepage-tc-ep.png" />
-                      </div>
                       <div className="arc-homepage-cta-link border-top-white yellow">
-                        <a href="/">Get Access</a>
+                        <a href="https://arctravelconnect.com/episodes/using-consumer-spending-to-track-travel-trends?utm_source=homepage-card">
+                          Get Access
+                        </a>
                       </div>
                     </div>
                   </div>
@@ -405,7 +415,9 @@ class Apphome extends Component {
                       className="arc-homepage-cta-link yellow mb-0"
                       style={{ marginRight: "60px" }}
                     >
-                      <a href="#">Learn More</a>
+                      <a href="https://www2.arccorp.com/products-participation/products/arc-travel-demand/?utm_source=homepage-card-long">
+                        Learn More
+                      </a>
                     </div>
                   </div>
                 </div>
@@ -435,7 +447,10 @@ class Apphome extends Component {
                         growth.
                       </p>
                       <div>
-                        <a className="ctaBtn ctaBtn--white-outline" href="/">
+                        <a
+                          className="ctaBtn ctaBtn--white-outline"
+                          href="https://www2.arccorp.com/about-us/arc-data?utm_source=homepage-card"
+                        >
                           Learn More
                         </a>
                       </div>
@@ -465,19 +480,34 @@ class Apphome extends Component {
               <div className="col">
                 <div className="arc-footer-section">
                   <div className="arc-footer-title">Participation</div>
-                  <a href="#" className="arc-footer-link">
+                  <a
+                    href="https://www2.arccorp.com/support-training/travel-agencies/participating-airline-information?utm_source=footer-link"
+                    className="arc-footer-link"
+                  >
                     ARC Participating Airlines
                   </a>
-                  <a href="#" className="arc-footer-link">
+                  <a
+                    href="https://www2.arccorp.com/support-training/arc-check-results?utm_source=footer-link"
+                    className="arc-footer-link"
+                  >
                     ARC Check
                   </a>
-                  <a href="#" className="arc-footer-link">
+                  <a
+                    href="https://www2.arccorp.com/products-participation/travel-agencies/agency-participation/?utm_source=footer-link"
+                    className="arc-footer-link"
+                  >
                     ARC Agency Accreditation
                   </a>
-                  <a href="#" className="arc-footer-link">
+                  <a
+                    href="https://www2.arccorp.com/products-participation/travel-agencies/become-an-arc-accredited-agent/?utm_source=footer-link"
+                    className="arc-footer-link"
+                  >
                     Become an ARC-Accredited Agency
                   </a>
-                  <a href="#" className="arc-footer-link">
+                  <a
+                    href="https://www2.arccorp.com/products-participation/travel-agencies/become-an-arc-verified-travel-consultant/?utm_source=footer-link"
+                    className="arc-footer-link"
+                  >
                     Become an ARC Vertified Travel Consultant
                   </a>
                 </div>
@@ -487,36 +517,57 @@ class Apphome extends Component {
                   <div className="arc-footer-title">
                     Distribution & Financial Solutions
                   </div>
-                  <a href="#" className="arc-footer-link">
-                    ARC Participating Airlines
+                  <a
+                    href="https://www2.arccorp.com/products-participation/distribution/?utm_source=footer-link"
+                    className="arc-footer-link"
+                  >
+                    ARC Direct Connect (NDC)
                   </a>
-                  <a href="#" className="arc-footer-link">
-                    ARC Check
+                  <a
+                    href="https://www2.arccorp.com/about-us/arc-omnichannel-retailing/?utm_source=footer-link"
+                    className="arc-footer-link"
+                  >
+                    Omnichannel Retailing
                   </a>
-                  <a href="#" className="arc-footer-link">
-                    ARC Agency Accreditation
+                  <a
+                    href="https://www2.arccorp.com/products-participation/products/arc-pay/?utm_source=footer-link"
+                    className="arc-footer-link"
+                  >
+                    Payment Processing
                   </a>
-                  <a href="#" className="arc-footer-link">
-                    Become an ARC-Accredited Agency
-                  </a>
-                  <a href="#" className="arc-footer-link">
-                    Become an ARC Vertified Travel Consultant
+                  <a
+                    href="https://www2.arccorp.com/about-us/settlement-services/?utm_source=footer-link"
+                    className="arc-footer-link"
+                  >
+                    Settlement Services
                   </a>
                 </div>
               </div>
               <div className="col">
                 <div className="arc-footer-section">
                   <div className="arc-footer-title">Data Solutions</div>
-                  <a href="#" className="arc-footer-link">
+                  <a
+                    href="https://www2.arccorp.com/about-us/arc-data/?utm_source=footer-link"
+                    className="arc-footer-link"
+                  >
                     Our Data
                   </a>
-                  <a href="#" className="arc-footer-link">
+                  <a
+                    href="https://www2.arccorp.com/products-participation/products/arc-data-connect/?utm_source=footer-link"
+                    className="arc-footer-link"
+                  >
                     ARC Data Connect
                   </a>
-                  <a href="#" className="arc-footer-link">
+                  <a
+                    href="https://www2.arccorp.com/products-participation/products/arc-travel-demand/?utm_source=footer-link"
+                    className="arc-footer-link"
+                  >
                     ARC Travel Demand
                   </a>
-                  <a href="#" className="arc-footer-link">
+                  <a
+                    href="https://www2.arccorp.com/products-participation/products/direct-data-solutions/?utm_source=footer-link"
+                    className="arc-footer-link"
+                  >
                     Direct Data Solutions
                   </a>
                 </div>
@@ -524,19 +575,34 @@ class Apphome extends Component {
               <div className="col">
                 <div className="arc-footer-section">
                   <div className="arc-footer-title">Communications</div>
-                  <a href="#" className="arc-footer-link">
+                  <a
+                    href="https://www2.arccorp.com/about-us/newsroom/?utm_source=footer-link"
+                    className="arc-footer-link"
+                  >
                     Newsroom
                   </a>
-                  <a href="#" className="arc-footer-link">
+                  <a
+                    href="https://www2.arccorp.com/arc-talk-podcast?utm_source=footer-link"
+                    className="arc-footer-link"
+                  >
                     ARC Talk Podcast
                   </a>
-                  <a href="#" className="arc-footer-link">
+                  <a
+                    href="https://www2.arccorp.com/articles-trends/blog/?utm_source=footer-link"
+                    className="arc-footer-link"
+                  >
                     Blog
                   </a>
-                  <a href="#" className="arc-footer-link">
+                  <a
+                    href="https://www2.arccorp.com/articles-trends/agency-communications/travel-agent-communications/?utm_source=footer-link"
+                    className="arc-footer-link"
+                  >
                     Travel Agent Communications
                   </a>
-                  <a href="#" className="arc-footer-link">
+                  <a
+                    href="https://arctravelconnect.com?utm_source=footer-link"
+                    className="arc-footer-link"
+                  >
                     TravelConnect
                   </a>
                 </div>

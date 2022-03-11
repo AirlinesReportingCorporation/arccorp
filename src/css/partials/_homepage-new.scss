@@ -33,7 +33,7 @@ $margin-spacing: 30px;
   border-radius: variables.$border-radius;
   position: relative;
   overflow: hidden;
-  background: variables.$fog;
+  background-color: variables.$fog;
   height: 450px;
   margin-bottom: $margin-spacing * 2;
 
