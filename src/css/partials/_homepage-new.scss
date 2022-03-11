@@ -9,7 +9,16 @@ $margin-spacing: 30px;
 }
 
 .#{$name}homepage {
+  background: variables.$fog;
   color: variables.$tarmac;
+
+  .player-wrapper {
+    background: #ffffff;
+  }
+
+  .podcast-player .info .icon:hover {
+    cursor: pointer;
+  }
 }
 
 .#{$name}homepage-section {
@@ -60,6 +69,7 @@ $margin-spacing: 30px;
 }
 
 .#{$name}homepage-blog-left {
+  background: #ffffff;
   padding: 20px;
   position: relative;
   align-items: stretch;

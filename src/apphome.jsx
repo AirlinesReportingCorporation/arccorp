@@ -111,7 +111,7 @@ class Apphome extends Component {
         <div
           className="arc-jumbo lazy"
           data-bg={
-            "https://www2.arccorp.com/globalassets/homepage/redesign/slides/ARCPay-Jumbo5.jpg"
+            "https://www2.arccorp.com/globalassets/homepage/redesign/march-update/arc_pay_jumbo.jpg"
           }
         >
           <div className="arc-jumbo-inner white">
@@ -122,23 +122,18 @@ class Apphome extends Component {
                   style={{ maxWidth: "100px", marginBottom: "15px" }}
                 />
                 <h2 className="arc-jumbo-inner-title white">
-                  Payment <br />
-                  Myth Busters #5
+                  The Top 5 Payment-Processing Myths
                 </h2>
                 <div className="arc-jumbo-inner-body">
-                  <strong>Myth:</strong> You need to get and maintain separate
-                  merchant accounts for different types of charges. <br />
-                  <br />
-                  <strong>Reality:</strong> ARC Pay, an ARC-exclusive benefit,
-                  consolidates travel transactions, fees, and settlement to
-                  simplify your agency business.
+                  ARC Pay is the popular payment-processing service from ARC,
+                  but there are still some myths out there.
                 </div>
                 <a
                   className="ctaBtn ctaBtn--main"
                   target="_blank"
-                  href="https://www2.arccorp.com/payment-myth-busters-5/?utm_source=Jumbo_Carousel&amp;utm_campaign=Myth_Busters_5"
+                  href="https://www2.arccorp.com/products-participation/products/arc-pay/the-top-5-payment-processing-myths?utm_source=Jumbo_Carousel&amp;utm_campaign=Myth_Busters_5"
                 >
-                  What makes ARC Pay unique{" "}
+                  How many do you know? 
                 </a>
               </div>
             </div>
@@ -453,13 +448,15 @@ class Apphome extends Component {
         </div>
 
         <div className="arc-footer">
-          <div className="arc-footer-sub text-center">
+          <div className="text-center arc-footer-container-base">
             <div className="row">
               <div className="col-lg-12">
-                <img
-                  src="https://www2.arccorp.com/globalassets/homepage/redesign/arc-footer-sub.png"
-                  alt="The Intelligence Behind Air Travel"
-                />
+                <div className="arc-footer-sub">
+                  <img
+                    src="https://www2.arccorp.com/globalassets/homepage/redesign/arc-footer-sub.png"
+                    alt="The Intelligence Behind Air Travel"
+                  />
+                </div>
               </div>
             </div>
           </div>
@@ -563,26 +560,32 @@ class Apphome extends Component {
               </div>
             </div>
           </div>
+
           <div className="arc-footer-bottom">
             <div className="row">
-              <div className="col-lg-6">
+              <div className="col-lg-12">
+                <div className="arc-footer-sub-border"></div>
+              </div>
+            </div>
+            <div className="row">
+              <div className="col-lg-7">
                 &copy; 2022 Airlines Reporting Corporation (ARC). All rights
                 reserved.
               </div>
-              <div className="col-lg-6 text-right">
+              <div className="col-lg-2">
+                <a
+                  href="https://www.schellman.com/certificate-directory?certificateNumber=1427462-10"
+                  target="_blank"
+                  className="arc-footer-iso"
+                >
+                  <img
+                    src="https://www2.arccorp.com/globalassets/homepage/redesign/march-update/iso_logo.png"
+                    alt=""
+                  />
+                </a>
+              </div>
+              <div className="col-lg-3 text-right">
                 <ul className="arc-footer-links-social d-inline-block">
-                  <li>
-                    <a
-                      href="https://www.schellman.com/certificate-directory?certificateNumber=1427462-10"
-                      target="_blank"
-                      className="arc-footer-iso"
-                    >
-                      <img
-                        src="https://www2.arccorp.com/globalassets/homepage/redesign/march-update/iso_logo.png"
-                        alt=""
-                      />
-                    </a>
-                  </li>
                   <li>
                     <a
                       href="https://twitter.com/ARCtalk"
