@@ -650,7 +650,7 @@ class Apphome extends Component {
                   />
                 </a>
               </div>
-              <div className="col-lg-3 text-right">
+              <div className="col-lg-3">
                 <ul className="arc-footer-links-social d-inline-block">
                   <li>
                     <a

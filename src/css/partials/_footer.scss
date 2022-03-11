@@ -78,6 +78,7 @@ a.#{$name}footer-link {
   color: variables.$tarmac;
   font-size: 20px;
   margin-bottom: 0;
+  margin-left: 60px;
 
   .mr-auto {
     margin-left: auto;
@@ -107,7 +108,7 @@ a.#{$name}footer-link {
 }
 
 .#{$name}footer-iso {
-  margin-left: 40px;
+  margin-left: 20px;
   
   img {
     max-width: 110px;
