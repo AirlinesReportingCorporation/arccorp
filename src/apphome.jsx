@@ -325,7 +325,7 @@ class Apphome extends Component {
           <div className="row">
             <div className="col-lg-6">
               <a
-                href="https://www2.arccorp.com/support-training/travel-agencies/participating-airline-information?utm_source=homepage-card"
+                href="https://www2.arccorp.com/articles-trends/sales-statistics?utm_source=homepage-card"
                 className="arc-homepage-card d-block lazy"
                 data-bg={
                   "https://www2.arccorp.com/globalassets/homepage/redesign/march-update/monthly_sales_stats.jpg"

@@ -209,6 +209,8 @@ a.#{$name}homepage-blog-title {
   margin-bottom: 20px;
 
   span {
+    font-family: Oswald-Bold, SourceSansPro-Black, "SourceSansPro-Black", Arial,
+    Helvetica, sans-serif;
     font-size: 80px;
   }
 }
@@ -392,6 +394,10 @@ a.#{$name}homepage-blog-popular-title {
 
   .#{$name}homepage-numbers-main {
     font-size: 70px;
+
+    span {
+      font-size: 50px;
+    }
   }
 
   .#{$name}homepage-cta-link {
