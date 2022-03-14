@@ -87,8 +87,12 @@ $margin-spacing: 30px;
   font-family: SourceSansPro-Bold, Arial, Helvetica, sans-serif;
   font-size: 18px;
   line-height: 22px;
-  margin-top: $margin-spacing + 10;
+  margin-top: 25px;
   margin-bottom: $margin-spacing;
+}
+
+a.#{$name}homepage-blog-title {
+  color: variables.$tarmac;
 }
 
 .#{$name}homepage-blog-meta {
@@ -107,13 +111,19 @@ $margin-spacing: 30px;
   margin-top: auto;
   align-content: flex-end;
   line-height: 1;
-  margin-bottom: 20px;
+  padding: 20px 20px 20px 0;
 
-  &:after {
+  a:after,
+  span:after {
     font-family: "icomoon";
     content: "\E909";
     font-size: 0.675rem;
     margin-left: 10px;
+  }
+
+  a:hover,
+  span:hover {
+    opacity: 0.8;
   }
 
   &.yellow {
@@ -217,7 +227,7 @@ $margin-spacing: 30px;
     sans-serif;
   font-size: 18px;
   line-height: 24px;
-  margin-bottom: 40px;
+  margin-bottom: 25px;
   margin-right: auto;
   margin-left: auto;
   max-width: 310px;

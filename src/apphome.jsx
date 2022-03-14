@@ -92,11 +92,11 @@ class Apphome extends Component {
                 <div className="arc-jumbo-inner-body">
                   Monthly International Passenger Trips Increased 120% Compared
                   to January 2021{" "}
-                  <div className="arc-homepage-cta-link  arc-jumbo-cta-link d-inline-flex pl-2">
+                  <a className="arc-homepage-cta-link arc-jumbo-cta-link d-inline-flex p-0 pl-2">
                     <a href="https://www2.arccorp.com/about-us/newsroom/2022-news-releases/january-2022-us-travel-agency-sales-jump-187-year-over-year/?utm_source=Jumbo_Carousel">
                       Read More
                     </a>
-                  </div>
+                  </a>
                 </div>
               </div>
               <a
@@ -212,21 +212,27 @@ class Apphome extends Component {
                   <div className="col-lg-6" style={{ postion: "relative" }}>
                     <div className="arc-homepage-blog-left d-flex flex-column flex-md-row flex-lg-column flex-xl-column">
                       <div className="arc-homepage-blog-img">
-                        <img
-                          src={homeData.recentBlogImage}
-                          className="img-fluid"
-                        />
+                        <a href={homeData.recentBlogLink}>
+                          <img
+                            src={homeData.recentBlogImage}
+                            className="img-fluid"
+                          />
+                        </a>
                       </div>
                       <div className="arc-homepage-blog-meta">
-                        <div
+                        <a
+                          href={homeData.recentBlogLink}
                           className="arc-homepage-blog-title"
                           style={{ marginBottom: "10px" }}
                         >
                           {homeData.recentBlogTitle}
-                        </div>
-                        <div className="arc-homepage-cta-link">
-                          <a href={homeData.recentBlogLink}>Read More</a>
-                        </div>
+                        </a>
+                        <a
+                          href={homeData.recentBlogLink}
+                          className="arc-homepage-cta-link"
+                        >
+                          <span>Read More</span>
+                        </a>
                       </div>
                     </div>
                   </div>
@@ -652,8 +658,8 @@ class Apphome extends Component {
             </div>
             <div className="row">
               <div className="col-lg-7">
-                &copy; 2022 Airlines Reporting Corporation (ARC). All rights
-                reserved.
+                &copy; {new Date().getFullYear()} Airlines Reporting Corporation
+                (ARC). All rights reserved.
               </div>
               <div className="col-lg-2">
                 <a
@@ -729,11 +735,17 @@ class Apphome extends Component {
               <div className="row">
                 <div className="col-lg-12">
                   <span className="footer-rtf-links">
-                    <a href="https://www2.arccorp.com/website-terms-of-use/" title="Terms">
+                    <a
+                      href="https://www2.arccorp.com/website-terms-of-use/"
+                      title="Terms"
+                    >
                       Terms
                     </a>
 
-                    <a href="https://www2.arccorp.com/site-privacy-policy/" title="Privacy">
+                    <a
+                      href="https://www2.arccorp.com/site-privacy-policy/"
+                      title="Privacy"
+                    >
                       Privacy
                     </a>
 
