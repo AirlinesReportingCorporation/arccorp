@@ -25,35 +25,35 @@ function shuffleArray(array) {
 }
 
 var homeData = {
-  recentBlogTitle:
-    "Top Corporate Equity Index Score Reflects ARC’s Commitment to Diversity, Inclusion",
+  recentBlogTitle: "A Deep Dive into Omnichannel Retailing",
   recentBlogLink:
-    "https://www2.arccorp.com/articles-trends/the-latest/arc-receives-top-corporate-equity-index-score-2022",
+    "https://www2.arccorp.com/articles-trends/the-latest/omnichannel-series-recap/",
+  recentBlogImage:
+    "https://www2.arccorp.com/globalassets/homepage/redesign/latest/omnichannel-series-recap.jpg",
   popularArticles: [
     {
-      date: "Feb 21",
+      date: "Updated Every Monday",
+      title: "ARC Provides Updated Air Travel Data During COVID-19",
+      link: "https://www2.arccorp.com/articles-trends/the-latest/coronavirus/",
+    },
+    {
+      date: "Jan 12, 2022",
+      title: "ARC’s Top Insights from 2021",
+      link:
+        "https://www2.arccorp.com/articles-trends/the-latest/arc-top-insights-2021/",
+    },
+    {
+      date: "May 1, 2020",
+      title: "ARC’s COVID-19 Resources for Airlines and Travel Agencies",
+      link:
+        "https://www2.arccorp.com/articles-trends/the-latest/arcs-covid-19-resources-for-airlines-and-travel-agencies/",
+    },
+    {
+      date: "Jan 26, 2022",
       title:
         "Top Corporate Equity Index Score Reflects ARC’s Commitment to Diversity, Inclusion",
       link:
-        "https://www2.arccorp.com/articles-trends/the-latest/arc-receives-top-corporate-equity-index-score-2022",
-    },
-    {
-      date: "Feb 21",
-      title: "ARC’s Top Insights from 2021",
-      link:
-        "https://www2.arccorp.com/articles-trends/the-latest/arc-receives-top-corporate-equity-index-score-2022",
-    },
-    {
-      date: "Feb 21",
-      title: "GBTA 2021 Recap: Looking Toward the Future",
-      link:
-        "https://www2.arccorp.com/articles-trends/the-latest/arc-receives-top-corporate-equity-index-score-2022",
-    },
-    {
-      date: "Feb 21",
-      title: "Celebrating ARC Employees Who Served in the Military",
-      link:
-        "https://www2.arccorp.com/articles-trends/the-latest/arc-receives-top-corporate-equity-index-score-2022",
+        "https://www2.arccorp.com/articles-trends/the-latest/arc-receives-top-corporate-equity-index-score-2022/",
     },
   ],
 };
@@ -86,14 +86,16 @@ class Apphome extends Component {
               <div className="col-md-12 col-sm-12">
                 <Jumbovideo />
 
-                <h2 className="arc-jumbo-inner-title white">
-                  U.S. Travel Agency Sales Recover in 2021
+                <h2 className="arc-jumbo-inner-title white mb-1">
+                  January 2022 U.S. Travel Agency Sales Jump 187% Year Over Year
                 </h2>
                 <div className="arc-jumbo-inner-body">
-                  Learn of a rich history routed in air travel intelligence,
-                  distribution and settlement.{" "}
-                  <div className="arc-homepage-cta-link d-inline-flex pl-2">
-                    <a href="https://www2.arccorp.com/about-us/newsroom/2022-news-releases/january-2022-us-travel-agency-sales-jump-187-year-over-year/?utm_source=Jumbo_Carousel">Read More</a>
+                  Monthly International Passenger Trips Increased 120% Compared
+                  to January 2021{" "}
+                  <div className="arc-homepage-cta-link  arc-jumbo-cta-link d-inline-flex pl-2">
+                    <a href="https://www2.arccorp.com/about-us/newsroom/2022-news-releases/january-2022-us-travel-agency-sales-jump-187-year-over-year/?utm_source=Jumbo_Carousel">
+                      Read More
+                    </a>
                   </div>
                 </div>
               </div>
@@ -122,7 +124,7 @@ class Apphome extends Component {
             <div className="row">
               <div className="col-lg-7 col-md-12">
                 <img
-                  src="https://www2.arccorp.com/globalassets/homepage/redesign/slides/ARCPay_White_Medium.png"
+                  src="https://www2.arccorp.com/globalassets/homepage/redesign/march-update/arcpay_logo.png"
                   style={{ maxWidth: "100px", marginBottom: "15px" }}
                 />
                 <h2 className="arc-jumbo-inner-title white">
@@ -170,7 +172,7 @@ class Apphome extends Component {
                 </a>
                 <a
                   href="https://www2.arccorp.com/arc-talk-podcast?utm_source=Jumbo_Carousel"
-                  className="ctaBtn ctaBtn--white p-0"
+                  className="ctaBtn ctaBtn--white--outline p-0"
                 >
                   More Episodes
                 </a>
@@ -211,7 +213,7 @@ class Apphome extends Component {
                     <div className="arc-homepage-blog-left d-flex flex-column flex-md-row flex-lg-column flex-xl-column">
                       <div className="arc-homepage-blog-img">
                         <img
-                          src="https://www2.arccorp.com/globalassets/homepage/redesign/slides/homepage-blog-image-test.png"
+                          src={homeData.recentBlogImage}
                           className="img-fluid"
                         />
                       </div>
@@ -268,7 +270,8 @@ class Apphome extends Component {
               </div>
             </div>
             <div className="col-lg-6">
-              <div
+              <a
+                href="https://www2.arccorp.com/articles-trends/the-latest/coronavirus?utm_source=homepage-card"
                 className="arc-homepage-card d-flex flex-column align-items-center type-color-white text-center lazy"
                 data-bg={
                   "https://www2.arccorp.com/globalassets/homepage/redesign/slides/homepage-sales-variance.png"
@@ -282,10 +285,10 @@ class Apphome extends Component {
                     Sales Variance
                   </div>
                   <div className="arc-homepage-numbers-eyebrow-2">
-                    vs. the week ending Janurary 9, 2021
+                    vs. the week ending March 13, 2021
                   </div>
                   <div className="arc-homepage-numbers-main">
-                    +140.6<span>%</span>
+                    156.7<span>%</span>
                   </div>
 
                   <div className="arc-homepage-numbers-body">
@@ -300,7 +303,7 @@ class Apphome extends Component {
                     </div>
                   </div>
                 </div>
-              </div>
+              </a>
             </div>
           </div>
 
@@ -314,8 +317,9 @@ class Apphome extends Component {
 
           <div className="row">
             <div className="col-lg-6">
-              <div
-                className="arc-homepage-card lazy"
+              <a
+                href="https://www2.arccorp.com/support-training/travel-agencies/participating-airline-information?utm_source=homepage-card"
+                className="arc-homepage-card d-block lazy"
                 data-bg={
                   "https://www2.arccorp.com/globalassets/homepage/redesign/march-update/monthly_sales_stats.jpg"
                 }
@@ -328,17 +332,20 @@ class Apphome extends Component {
                         <span>Sales Statistics</span>
                       </div>
                       <div className="arc-homepage-cta-link yellow">
-                        <a href="https://www2.arccorp.com/articles-trends/sales-statistics?utm_source=homepage-card">
-                          Get Access
-                        </a>
+                        <span href="https://www2.arccorp.com/articles-trends/sales-statistics?utm_source=homepage-card">
+                          View Info
+                        </span>
                       </div>
                     </div>
                   </div>
                 </div>
-              </div>
+              </a>
             </div>
             <div className="col-lg-3 col-md-6">
-              <div className="arc-homepage-card d-flex align-items-center bg-color-teal">
+              <a
+                href="https://www2.arccorp.com/support-training/travel-agencies/participating-airline-information?utm_source=homepage-card"
+                className="arc-homepage-card d-flex align-items-center bg-color-teal"
+              >
                 <div className="row no-gutters align-items-center text-center type-color-white">
                   <div className="col-lg-12">
                     <div className="arc-homepage-card-inner d-flex flex-column text-left">
@@ -361,18 +368,19 @@ class Apphome extends Component {
                       </div>
 
                       <div className="arc-homepage-cta-link arc-homepage-cta-refund-link white">
-                        <a href="https://www2.arccorp.com/support-training/travel-agencies/participating-airline-information?utm_source=homepage-card">
+                        <span href="https://www2.arccorp.com/support-training/travel-agencies/participating-airline-information?utm_source=homepage-card">
                           Get Access
-                        </a>
+                        </span>
                       </div>
                     </div>
                   </div>
                 </div>
-              </div>
+              </a>
             </div>
             <div className="col-lg-3 col-md-6">
-              <div
-                className="arc-homepage-card arc-homepage-card-long align-items-center lazy"
+              <a
+                href="https://arctravelconnect.com/episodes/using-consumer-spending-to-track-travel-trends?utm_source=homepage-card"
+                className="arc-homepage-card d-block arc-homepage-card-long align-items-center lazy"
                 data-bg={
                   "https://www2.arccorp.com/globalassets/homepage/redesign/march-update/TC_single_box.jpg"
                 }
@@ -381,21 +389,20 @@ class Apphome extends Component {
                   <div className="col-lg-12">
                     <div className="arc-homepage-card-inner d-flex flex-column">
                       <div className="arc-homepage-cta-link border-top-white yellow">
-                        <a href="https://arctravelconnect.com/episodes/using-consumer-spending-to-track-travel-trends?utm_source=homepage-card">
-                          Get Access
-                        </a>
+                        <span>Get Access</span>
                       </div>
                     </div>
                   </div>
                 </div>
-              </div>
+              </a>
             </div>
           </div>
 
           <div className="row">
             <div className="col-lg-12">
-              <div
-                className="arc-homepage-card arc-homepage-card-small lazy"
+              <a
+                href="https://www2.arccorp.com/products-participation/products/arc-travel-demand/?utm_source=homepage-card-long"
+                className="d-block arc-homepage-card arc-homepage-card-small lazy"
                 data-bg={
                   "https://www2.arccorp.com/globalassets/homepage/redesign/march-update/product_highlight.jpg"
                 }
@@ -415,13 +422,11 @@ class Apphome extends Component {
                       className="arc-homepage-cta-link yellow mb-0"
                       style={{ marginRight: "60px" }}
                     >
-                      <a href="https://www2.arccorp.com/products-participation/products/arc-travel-demand/?utm_source=homepage-card-long">
-                        Learn More
-                      </a>
+                      <span>Learn More</span>
                     </div>
                   </div>
                 </div>
-              </div>
+              </a>
             </div>
           </div>
 
@@ -508,7 +513,7 @@ class Apphome extends Component {
                     href="https://www2.arccorp.com/products-participation/travel-agencies/become-an-arc-verified-travel-consultant/?utm_source=footer-link"
                     className="arc-footer-link"
                   >
-                    Become an ARC Vertified Travel Consultant
+                    Become an ARC VTC
                   </a>
                 </div>
               </div>
@@ -588,6 +593,12 @@ class Apphome extends Component {
                     ARC Talk Podcast
                   </a>
                   <a
+                    href="https://arctravelconnect.com?utm_source=footer-link"
+                    className="arc-footer-link"
+                  >
+                    ARC TravelConnect
+                  </a>
+                  <a
                     href="https://www2.arccorp.com/articles-trends/blog/?utm_source=footer-link"
                     className="arc-footer-link"
                   >
@@ -599,27 +610,33 @@ class Apphome extends Component {
                   >
                     Travel Agent Communications
                   </a>
-                  <a
-                    href="https://arctravelconnect.com?utm_source=footer-link"
-                    className="arc-footer-link"
-                  >
-                    TravelConnect
-                  </a>
                 </div>
               </div>
               <div className="col">
                 <div className="arc-footer-section">
                   <div className="arc-footer-title">About Us</div>
-                  <a href="#" className="arc-footer-link">
+                  <a
+                    href="https://www2.arccorp.com/about-us/our-story/?utm_source=footer-link"
+                    className="arc-footer-link"
+                  >
                     Our Story
                   </a>
-                  <a href="#" className="arc-footer-link">
+                  <a
+                    href="https://www2.arccorp.com/about-us/careers/?utm_source=footer-link"
+                    className="arc-footer-link"
+                  >
                     Careers
                   </a>
-                  <a href="#" className="arc-footer-link">
+                  <a
+                    href="https://www2.arccorp.com/about-us/leadership-governance/?utm_source=footer-link"
+                    className="arc-footer-link"
+                  >
                     Leadership & Governance
                   </a>
-                  <a href="#" className="arc-footer-link">
+                  <a
+                    href="https://www2.arccorp.com/about-us/newsroom/media-kit/?utm_source=footer-link"
+                    className="arc-footer-link"
+                  >
                     Media Kit
                   </a>
                 </div>
@@ -712,16 +729,16 @@ class Apphome extends Component {
               <div className="row">
                 <div className="col-lg-12">
                   <span className="footer-rtf-links">
-                    <a href="/website-terms-of-use/" title="Terms">
+                    <a href="https://www2.arccorp.com/website-terms-of-use/" title="Terms">
                       Terms
                     </a>
 
-                    <a href="/site-privacy-policy/" title="Privacy">
+                    <a href="https://www2.arccorp.com/site-privacy-policy/" title="Privacy">
                       Privacy
                     </a>
 
                     <a
-                      href="/pci-data-security-standards/"
+                      href="https://www2.arccorp.com/pci-data-security-standards/"
                       title="PCI Standards"
                     >
                       PCI Standards

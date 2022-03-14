@@ -117,6 +117,7 @@ $margin-spacing: 30px;
   }
 
   &.yellow {
+    color: variables.$beacon;
     &:after {
       color: variables.$beacon;
     }
@@ -125,6 +126,7 @@ $margin-spacing: 30px;
     }
   }
   &.white {
+    color: variables.$white;
     &:after {
       color: variables.$white;
     }
@@ -186,12 +188,12 @@ $margin-spacing: 30px;
 }
 
 .#{$name}homepage-numbers-main {
-  font-family: Oswald, "Oswald", SourceSansPro-Black, "SourceSansPro-Black",
+  font-family: Oswald-Bold, SourceSansPro-Black, "SourceSansPro-Black",
     Arial, Helvetica, sans-serif;
   font-weight: bold;
   font-size: 110px;
   line-height: 1;
-  background: -webkit-linear-gradient(180deg, #ff1b71, #fcbf49);
+  background: -webkit-linear-gradient(180deg, #ff1b71, #ffa619);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   margin-bottom: 20px;

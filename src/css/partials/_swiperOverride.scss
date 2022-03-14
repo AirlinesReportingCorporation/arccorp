@@ -50,6 +50,16 @@ $margin-spacing: 30px;
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center center;
+
+  .#{$name}jumbo-cta-link {
+    vertical-align: top;
+    margin-bottom: 0;
+    line-height: 24px;
+
+    &:after {
+      margin-top: 1px;
+    }
+  }
 }
 
 .#{$name}jumbo-inner {
@@ -78,6 +88,7 @@ $margin-spacing: 30px;
 }
 
 .#{$name}jumbo-subscribe {
+  display: none;
   position: absolute;
   bottom: $margin-spacing;
   left: $margin-spacing;
