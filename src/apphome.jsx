@@ -388,7 +388,7 @@ class Apphome extends Component {
               <a
                 href="https://arctravelconnect.com/episodes/using-consumer-spending-to-track-travel-trends?utm_source=homepage-card"
                 className="arc-homepage-card d-block arc-homepage-card-long align-items-center"
-                style={{backgroundSize: "cover", background: "#000000"}}
+                style={{ backgroundSize: "cover", background: "#000000" }}
               >
                 <div className="row align-items-center type-color-white">
                   <div className="col-lg-12">
@@ -397,7 +397,10 @@ class Apphome extends Component {
                       data-bg={
                         "https://www2.arccorp.com/globalassets/homepage/redesign/march-update/TC_single_box.jpg"
                       }
-                      style={{backgroundSize: "contain"}}
+                      style={{
+                        backgroundSize: "cover",
+                        backgroundPositionX: 0,
+                      }}
                     >
                       <div className="arc-homepage-cta-link border-top-white yellow">
                         <span>Watch Now</span>
