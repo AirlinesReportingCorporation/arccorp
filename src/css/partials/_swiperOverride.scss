@@ -127,7 +127,7 @@ $margin-spacing: 30px;
   background-size: contain;
   height: 45px;
   width: 45px;
-  left: 15%;
+  left: 13%;
   right: auto;
   color: #ffffff;
   //opacity: 0.6;
@@ -144,7 +144,7 @@ $margin-spacing: 30px;
   background-size: contain;
   height: 45px;
   width: 45px;
-  right: 15%;
+  right: 13%;
   color: #ffffff;
   left: auto;
   //opacity: 0.6;
@@ -222,12 +222,12 @@ $margin-spacing: 30px;
 @media (max-width: 575.98px) {
   .swiper-button-prev,
   .swiper-rtl .swiper-button-next {
-    left: 15%;
+    left: 13%;
   }
 
   .swiper-button-next,
   .swiper-rtl .swiper-button-prev {
-    right: 15%;
+    right: 13%;
   }
 
   .#{$name}jumbo-inner {

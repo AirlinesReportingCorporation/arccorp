@@ -188,8 +188,8 @@ $margin-spacing: 30px;
 }
 
 .#{$name}homepage-numbers-main {
-  font-family: Oswald-Bold, SourceSansPro-Black, "SourceSansPro-Black",
-    Arial, Helvetica, sans-serif;
+  font-family: Oswald-Bold, SourceSansPro-Black, "SourceSansPro-Black", Arial,
+    Helvetica, sans-serif;
   font-weight: bold;
   font-size: 110px;
   line-height: 1;
@@ -291,7 +291,7 @@ a.#{$name}homepage-blog-popular-title {
 
 .#{$name}homepage-data {
   color: variables.$white;
-  max-width: 900px;
+  max-width: 1050px;
   padding: $margin-spacing;
   margin: 0 auto;
 }
