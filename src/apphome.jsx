@@ -390,7 +390,7 @@ class Apphome extends Component {
                 className="arc-homepage-card d-block arc-homepage-card-long align-items-center"
                 style={{ backgroundSize: "cover", background: "#000000" }}
               >
-                <div className="row align-items-center type-color-white">
+                <div className="row no-gutters align-items-center type-color-white">
                   <div className="col-lg-12">
                     <div
                       className="arc-homepage-card-inner d-flex flex-column lazy"
