@@ -265,11 +265,11 @@ class Apphome extends Component {
                           );
                         })}
                       </div>
-                      <div className="arc-homepage-cta-link">
-                        <a href="https://www2.arccorp.com/articles-trends/blog?utm_source=homepage-card">
+                      <a href="https://www2.arccorp.com/articles-trends/blog?utm_source=homepage-card" className="arc-homepage-cta-link">
+                        <span>
                           All Articles
-                        </a>
-                      </div>
+                        </span>
+                      </a>
                     </div>
                   </div>
                 </div>
