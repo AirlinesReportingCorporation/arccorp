@@ -288,7 +288,7 @@ class Apphome extends Component {
                     vs. the week ending March 13, 2021
                   </div>
                   <div className="arc-homepage-numbers-main">
-                    156.7<span>%</span>
+                    229.6<span>%</span>
                   </div>
 
                   <div className="arc-homepage-numbers-body">
