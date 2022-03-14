@@ -333,7 +333,7 @@ class Apphome extends Component {
                       </div>
                       <div className="arc-homepage-cta-link yellow">
                         <span href="https://www2.arccorp.com/articles-trends/sales-statistics?utm_source=homepage-card">
-                          View Info
+                          Learn More
                         </span>
                       </div>
                     </div>
@@ -369,7 +369,7 @@ class Apphome extends Component {
 
                       <div className="arc-homepage-cta-link arc-homepage-cta-refund-link white">
                         <span href="https://www2.arccorp.com/support-training/travel-agencies/participating-airline-information?utm_source=homepage-card">
-                          Get Access
+                          View Info
                         </span>
                       </div>
                     </div>
@@ -389,7 +389,7 @@ class Apphome extends Component {
                   <div className="col-lg-12">
                     <div className="arc-homepage-card-inner d-flex flex-column">
                       <div className="arc-homepage-cta-link border-top-white yellow">
-                        <span>Get Access</span>
+                        <span>Watch Now</span>
                       </div>
                     </div>
                   </div>
