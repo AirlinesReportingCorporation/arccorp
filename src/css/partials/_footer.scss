@@ -34,7 +34,6 @@ $margin-spacing: 30px;
   margin-left: auto;
   margin-right: auto;
   //border-bottom: 1px solid #2a2b2c;
-  
 }
 
 .#{$name}footer-section {
@@ -45,7 +44,6 @@ $margin-spacing: 30px;
 }
 
 .#{$name}footer-bottom {
-
   font-family: SourceSansPro-Regular, "SourceSansPro-Regular", Arial, Helvetica,
     sans-serif;
   font-size: 14px;
@@ -61,7 +59,7 @@ $margin-spacing: 30px;
   font-family: SourceSansPro-Bold, "SourceSansPro-Regular", Arial, Helvetica,
     sans-serif;
   line-height: 1.2;
-  margin-bottom: 20px;
+  margin-bottom: 10px;
 }
 
 a.#{$name}footer-link {
@@ -71,7 +69,8 @@ a.#{$name}footer-link {
   font-size: 14px;
   line-height: 1.25;
   color: variables.$tarmac;
-  margin-bottom: 20px;
+  padding-top: 10px;
+  padding-bottom: 10px;
 }
 
 .#{$name}footer-links-social {
@@ -109,7 +108,7 @@ a.#{$name}footer-link {
 
 .#{$name}footer-iso {
   margin-left: 20px;
-  
+
   img {
     max-width: 110px;
     width: auto;
