@@ -265,10 +265,11 @@ class Apphome extends Component {
                           );
                         })}
                       </div>
-                      <a href="https://www2.arccorp.com/articles-trends/blog?utm_source=homepage-card" className="arc-homepage-cta-link">
-                        <span>
-                          All Articles
-                        </span>
+                      <a
+                        href="https://www2.arccorp.com/articles-trends/blog?utm_source=homepage-card"
+                        className="arc-homepage-cta-link"
+                      >
+                        <span>All Articles</span>
                       </a>
                     </div>
                   </div>
@@ -386,14 +387,18 @@ class Apphome extends Component {
             <div className="col-lg-3 col-md-6">
               <a
                 href="https://arctravelconnect.com/episodes/using-consumer-spending-to-track-travel-trends?utm_source=homepage-card"
-                className="arc-homepage-card d-block arc-homepage-card-long align-items-center lazy"
-                data-bg={
-                  "https://www2.arccorp.com/globalassets/homepage/redesign/march-update/TC_single_box.jpg"
-                }
+                className="arc-homepage-card d-block arc-homepage-card-long align-items-center"
+                style={{backgroundSize: "cover", background: "#000000"}}
               >
                 <div className="row align-items-center type-color-white">
                   <div className="col-lg-12">
-                    <div className="arc-homepage-card-inner d-flex flex-column">
+                    <div
+                      className="arc-homepage-card-inner d-flex flex-column lazy"
+                      data-bg={
+                        "https://www2.arccorp.com/globalassets/homepage/redesign/march-update/TC_single_box.jpg"
+                      }
+                      style={{backgroundSize: "contain"}}
+                    >
                       <div className="arc-homepage-cta-link border-top-white yellow">
                         <span>Watch Now</span>
                       </div>
@@ -677,6 +682,19 @@ class Apphome extends Component {
                 <ul className="arc-footer-links-social d-inline-block">
                   <li>
                     <a
+                      href="https://www.linkedin.com/company/arc"
+                      title="LinkedIn"
+                      target="_blank"
+                      className="arc-footer-icon"
+                    >
+                      <img
+                        src="https://www2.arccorp.com/globalassets/homepage/redesign/march-update/linkedin_logo.png"
+                        alt=""
+                      />
+                    </a>
+                  </li>
+                  <li>
+                    <a
                       href="https://twitter.com/ARCtalk"
                       title="twitter"
                       target="_blank"
@@ -701,19 +719,7 @@ class Apphome extends Component {
                       />
                     </a>
                   </li>
-                  <li>
-                    <a
-                      href="https://www.linkedin.com/company/arc"
-                      title="LinkedIn"
-                      target="_blank"
-                      className="arc-footer-icon"
-                    >
-                      <img
-                        src="https://www2.arccorp.com/globalassets/homepage/redesign/march-update/linkedin_logo.png"
-                        alt=""
-                      />
-                    </a>
-                  </li>
+
                   <li>
                     <a
                       href="https://www.youtube.com/channel/UCWHZsoCDNhjorop892EVETw"

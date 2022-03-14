@@ -146,14 +146,14 @@ a.#{$name}homepage-blog-title {
   }
 
   &.border-top-white {
-    margin-bottom: 12px;
+    padding-bottom: 12px;
     padding-top: 30px;
     border-top: 1px solid variables.$white;
   }
 
   &.arc-homepage-cta-refund-link {
     //margin-top: 20px;
-    margin-bottom: 12px;
+    padding-bottom: 12px;
     padding-top: 30px;
     border-top: 1px solid variables.$tarmac;
   }
@@ -274,6 +274,10 @@ a.#{$name}homepage-blog-popular-title {
   padding: 20px;
   color: variables.$tarmac;
   height: 100%;
+
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
 }
 
 .#{$name}homepage-refund-title {
