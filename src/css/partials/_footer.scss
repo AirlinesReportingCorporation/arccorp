@@ -55,6 +55,16 @@ $margin-spacing: 30px;
   padding-top: $margin-spacing;
 }
 
+.#{$name}footer-tagline {
+  color: variables.$teal;
+  font-family: ProximaNova-ExtraBold, SourceSansPro-Bold, "SourceSansPro-Regular", Arial, Helvetica,
+    sans-serif;
+  font-size: 18px;
+  line-height: 30px;
+  letter-spacing: 0.4px;
+  text-transform: uppercase;
+}
+
 .#{$name}footer-title {
   font-family: SourceSansPro-Bold, "SourceSansPro-Regular", Arial, Helvetica,
     sans-serif;

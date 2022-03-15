@@ -486,10 +486,7 @@ class Apphome extends Component {
             <div className="row">
               <div className="col-lg-12">
                 <div className="arc-footer-sub">
-                  <img
-                    src="https://www2.arccorp.com/globalassets/homepage/redesign/arc-footer-sub.png"
-                    alt="The Intelligence Behind Air Travel"
-                  />
+                  <div className="arc-footer-tagline">The Intelligence Behind Air Travel</div>
                 </div>
               </div>
             </div>
