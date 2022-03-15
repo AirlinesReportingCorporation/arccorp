@@ -395,7 +395,7 @@ class Apphome extends Component {
               <a
                 href="https://arctravelconnect.com/episodes/using-consumer-spending-to-track-travel-trends?utm_source=homepage-card"
                 className="arc-homepage-card d-block arc-homepage-card-long align-items-center"
-                style={{ backgroundSize: "cover", background: "#000000" }}
+                style={{ backgroundSize: "contain", background: "#060a0b" }}
               >
                 <div className="row no-gutters align-items-center type-color-white">
                   <div className="col-lg-12">
@@ -405,7 +405,8 @@ class Apphome extends Component {
                         "https://www2.arccorp.com/globalassets/homepage/redesign/march-update/TC_single_box.jpg"
                       }
                       style={{
-                        backgroundSize: "cover",
+                        backgroundColor: "#060a0b",
+                        backgroundSize: "contain",
                         backgroundPositionX: 0,
                       }}
                     >
@@ -433,7 +434,10 @@ class Apphome extends Component {
                     <img src="https://www2.arccorp.com/globalassets/homepage/redesign/slides/homepage-atd-logo.png" />
                   </div>
                   <div className="col-lg-6 text-center height-auto">
-                    <div className="arc-homepage-small-title">
+                    <div
+                      className="arc-homepage-small-title"
+                      style={{ marginLeft: "25px" }}
+                    >
                       Gain <span>full visibility</span> into air travel
                       activity.
                     </div>
@@ -502,7 +506,7 @@ class Apphome extends Component {
           </div>
           <div className="arc-footer-container">
             <div className="row">
-              <div className="col">
+              <div className="col-lg col-md-4 col-sm-12">
                 <div className="arc-footer-section">
                   <div className="arc-footer-title">Participation</div>
                   <a
@@ -537,7 +541,7 @@ class Apphome extends Component {
                   </a>
                 </div>
               </div>
-              <div className="col-auto">
+              <div className="col-lg col-md-4 col-sm-12">
                 <div className="arc-footer-section">
                   <div className="arc-footer-title">
                     Distribution & Financial Solutions
@@ -568,7 +572,7 @@ class Apphome extends Component {
                   </a>
                 </div>
               </div>
-              <div className="col">
+              <div className="col-lg col-md-4 col-sm-12">
                 <div className="arc-footer-section">
                   <div className="arc-footer-title">Data Solutions</div>
                   <a
@@ -597,7 +601,7 @@ class Apphome extends Component {
                   </a>
                 </div>
               </div>
-              <div className="col">
+              <div className="col-lg col-md-4 col-sm-12">
                 <div className="arc-footer-section">
                   <div className="arc-footer-title">Communications</div>
                   <a
@@ -632,7 +636,7 @@ class Apphome extends Component {
                   </a>
                 </div>
               </div>
-              <div className="col">
+              <div className="col-lg col-md-4 col-sm-12">
                 <div className="arc-footer-section">
                   <div className="arc-footer-title">About Us</div>
                   <a
@@ -675,7 +679,7 @@ class Apphome extends Component {
                 &copy; {new Date().getFullYear()} Airlines Reporting Corporation
                 (ARC). All rights reserved.
               </div>
-              <div className="col-lg-2">
+              <div className="col-lg-2 text-sm-center">
                 <a
                   href="https://www.schellman.com/certificate-directory?certificateNumber=1427462-10"
                   target="_blank"
@@ -687,7 +691,7 @@ class Apphome extends Component {
                   />
                 </a>
               </div>
-              <div className="col-lg-3">
+              <div className="col-lg-3 text-sm-center">
                 <ul className="arc-footer-links-social d-inline-block">
                   <li>
                     <a

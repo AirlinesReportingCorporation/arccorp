@@ -210,7 +210,7 @@ a.#{$name}homepage-blog-title {
 
   span {
     font-family: Oswald-Bold, SourceSansPro-Black, "SourceSansPro-Black", Arial,
-    Helvetica, sans-serif;
+      Helvetica, sans-serif;
     font-size: 80px;
   }
 }
@@ -371,9 +371,21 @@ a.#{$name}homepage-blog-popular-title {
     margin-top: $margin-spacing / 2;
     left: 0;
   }
+
+  .#{$name}homepage-refund-title {
+    max-width: 100%;
+  }
+
+  .#{$name}homepage-cta-link.#{$name}homepage-cta-refund-link,
+  .#{$name}homepage-cta-link.border-top-white {
+    border: none;
+  }
 }
 
 @media (max-width: 575.98px) {
+  .text-sm-center {
+    text-align: center;
+  }
   .#{$name}jumbo-inner-title,
   .#{$name}homepage-data-title,
   .#{$name}homepage-stats-title {

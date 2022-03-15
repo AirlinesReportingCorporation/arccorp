@@ -57,8 +57,8 @@ $margin-spacing: 30px;
 
 .#{$name}footer-tagline {
   color: variables.$teal;
-  font-family: ProximaNova-ExtraBold, SourceSansPro-Bold, "SourceSansPro-Regular", Arial, Helvetica,
-    sans-serif;
+  font-family: ProximaNova-ExtraBold, SourceSansPro-Bold,
+    "SourceSansPro-Regular", Arial, Helvetica, sans-serif;
   font-size: 18px;
   line-height: 30px;
   letter-spacing: 0.4px;
@@ -138,5 +138,32 @@ a.#{$name}footer-link {
 
   a {
     margin-right: $margin-spacing;
+  }
+}
+
+@media (max-width: 575.98px) {
+  .#{$name}footer-section {
+    margin-bottom: $margin-spacing;
+  }
+
+  .#{$name}footer-links-social {
+    margin-right: auto;
+    margin-left: auto;
+  }
+
+  .#{$name}footer-iso {
+    display: block;
+    margin-left: 0;
+    margin-bottom: $margin-spacing;
+    margin-top: $margin-spacing;
+  }
+
+  .#{$name}footer-bottom {
+    line-height: 1.2;
+  }
+
+  .#{$name}footer-icon img {
+    max-height: 25px;
+    margin-bottom: $margin-spacing;
   }
 }

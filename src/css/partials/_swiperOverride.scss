@@ -52,7 +52,6 @@ $margin-spacing: 30px;
   background-position: center center;
 
   .#{$name}jumbo-cta-link {
-    vertical-align: top;
     margin-bottom: 0;
     line-height: 24px;
 
@@ -175,7 +174,7 @@ $margin-spacing: 30px;
     }
   }
   .#{$name}jumbo-inner-title {
-    font-size: 45px;
+    font-size: 35px;
     line-height: 1;
   }
 
@@ -215,6 +214,11 @@ $margin-spacing: 30px;
 
     &.teal {
       background: variables.$teal !important;
+    }
+    .#{$name}homepage-cta-link {
+      display: block !important;
+      margin: 15px auto;
+      text-align: center !important;
     }
   }
 }
