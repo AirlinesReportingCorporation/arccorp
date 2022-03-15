@@ -24,6 +24,12 @@ function shuffleArray(array) {
   return array;
 }
 
+var statData = {
+  number: "195.8",
+  type: "Sales Variance",
+  week: "March 13, 2021",
+};
+
 var homeData = {
   recentBlogTitle: "A Deep Dive into Omnichannel Retailing",
   recentBlogLink:
@@ -49,7 +55,7 @@ var homeData = {
         "https://www2.arccorp.com/articles-trends/the-latest/arcs-covid-19-resources-for-airlines-and-travel-agencies/",
     },
     {
-      date: "Jan 26, 2022",
+      date: "Jan 27, 2022",
       title:
         "Top Corporate Equity Index Score Reflects ARC’s Commitment to Diversity, Inclusion",
       link:
@@ -289,13 +295,14 @@ class Apphome extends Component {
                     ARC's Weekly Airline Sales Data
                   </div>
                   <div className="arc-homepage-numbers-eyebrow">
-                    Sales Variance
+                    {statData.type}
                   </div>
                   <div className="arc-homepage-numbers-eyebrow-2">
-                    vs. the week ending March 13, 2021
+                    vs. the week ending {statData.week}
                   </div>
                   <div className="arc-homepage-numbers-main">
-                    229.6<span>%</span>
+                    {statData.number}
+                    <span>%</span>
                   </div>
 
                   <div className="arc-homepage-numbers-body">
@@ -486,7 +493,9 @@ class Apphome extends Component {
             <div className="row">
               <div className="col-lg-12">
                 <div className="arc-footer-sub">
-                  <div className="arc-footer-tagline">The Intelligence Behind Air Travel</div>
+                  <div className="arc-footer-tagline">
+                    The Intelligence Behind Air Travel
+                  </div>
                 </div>
               </div>
             </div>
