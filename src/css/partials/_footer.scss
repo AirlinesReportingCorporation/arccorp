@@ -4,6 +4,7 @@ $name: variables.$namespace;
 $margin-spacing: 30px;
 
 .#{$name}footer {
+  color: variables.$tarmac;
   border-top: 1px solid variables.$tarmac;
   margin-top: 0;
   background: #ffffff;
