@@ -463,6 +463,7 @@ class Apphome extends Component {
                 data-bg={
                   "https://www2.arccorp.com/globalassets/homepage/redesign/march-update/our_data.jpg"
                 }
+                style={{marginBottom: "90px"}}
               >
                 <div className="row align-items-center no-gutters">
                   <div
