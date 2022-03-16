@@ -142,11 +142,7 @@ a.#{$name}footer-link {
   }
 }
 
-@media (max-width: 575.98px) {
-  .#{$name}footer-section {
-    margin-bottom: $margin-spacing;
-  }
-
+@media (max-width: 767.999px) {
   .#{$name}footer-links-social {
     margin-right: auto;
     margin-left: auto;
@@ -165,6 +161,12 @@ a.#{$name}footer-link {
 
   .#{$name}footer-icon img {
     max-height: 25px;
+    margin-bottom: $margin-spacing;
+  }
+}
+
+@media (max-width: 575.98px) {
+  .#{$name}footer-section {
     margin-bottom: $margin-spacing;
   }
 }

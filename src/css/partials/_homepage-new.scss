@@ -382,6 +382,12 @@ a.#{$name}homepage-blog-popular-title {
   }
 }
 
+@media (max-width: 767.99px) {
+  .text-sm-center {
+    text-align: center;
+  }
+}
+
 @media (max-width: 575.98px) {
   .text-sm-center {
     text-align: center;
