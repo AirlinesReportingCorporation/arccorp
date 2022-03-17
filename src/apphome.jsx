@@ -198,7 +198,7 @@ class Apphome extends Component {
                 </a>
                 <a
                   href="https://www2.arccorp.com/arc-talk-podcast?utm_source=Jumbo_Carousel"
-                  className="ctaBtn ctaBtn--white-outline p-0"
+                  className="ctaBtn ctaBtn--white-outline p-0 teal"
                 >
                   More Episodes
                 </a>

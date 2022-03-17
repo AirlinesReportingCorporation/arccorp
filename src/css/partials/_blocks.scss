@@ -149,6 +149,10 @@ a.ctaBtn.product-cta {
   background: $white;
   color: $tarmac !important;
   border-color: $white !important;
+
+  &.teal {
+    color: $teal !important;
+  }
 }
 
 .product-quote-mark {
