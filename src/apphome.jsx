@@ -13,7 +13,6 @@ import { PodcastWidget } from "podcast-widget";
 import { Navigation, Pagination, Mousewheel, Keyboard } from "swiper";
 import Jumbovideo from "./components/Jumbovideo";
 
-
 function shuffleArray(array) {
   let i = array.length - 1;
   for (; i > 0; i--) {
@@ -26,6 +25,7 @@ function shuffleArray(array) {
 }
 
 var statData = {
+  modifier: "+",
   number: "195.8",
   type: "Sales Variance",
   week: "March 13, 2021",
@@ -91,16 +91,35 @@ class Apphome extends Component {
           <div className="arc-jumbo-inner white text-center">
             <div className="row">
               <div className="col-md-12 col-sm-12">
-                <Jumbovideo />
+                {/* Comment out jumbovideo when video is ready */}
+                {/* 
+                    <Jumbovideo />
+                  */}
+                {/* This section is for when the video is not ready */}
+                {
+                  <div className="arc-jumbo-video">
+                    <div className="usa-embed-container mb-4 ">
+                      <a href="https://www2.arccorp.com/about-us/newsroom/2022-news-releases/monthly-u.s.-travel-agency-sales-reach-highest-total-since-february-2020?utm_source=Jumbo_Carousel">
+                        <img
+                          className="img-fluid"
+                          src="https://www2.arccorp.com/globalassets/homepage/redesign/march-update/data_no_video_jumbo.png"
+                          alt="Monthly U.S. Travel Agency Sales Reach Highest Total Since
+                          February 2020"
+                        />
+                      </a>
+                    </div>
+                  </div>
+                }
 
                 <h2 className="arc-jumbo-inner-title white mb-1">
-                  January 2022 U.S. Travel Agency Sales Jump 187% Year Over Year
+                  Monthly U.S. Travel Agency Sales Reach Highest Total Since
+                  February 2020
                 </h2>
                 <div className="arc-jumbo-inner-body">
-                  Monthly International Passenger Trips Increased 120% Compared
-                  to January 2021{" "}
+                  February Sales Eclipse $5 Billion, Growing 48% Month over
+                  Month{" "}
                   <a className="arc-homepage-cta-link arc-jumbo-cta-link d-inline-flex p-0 pl-2">
-                    <a href="https://www2.arccorp.com/about-us/newsroom/2022-news-releases/january-2022-us-travel-agency-sales-jump-187-year-over-year/?utm_source=Jumbo_Carousel">
+                    <a href="https://www2.arccorp.com/about-us/newsroom/2022-news-releases/monthly-u.s.-travel-agency-sales-reach-highest-total-since-february-2020?utm_source=Jumbo_Carousel">
                       Read More
                     </a>
                   </a>
@@ -302,6 +321,9 @@ class Apphome extends Component {
                     vs. the week ending {statData.week}
                   </div>
                   <div className="arc-homepage-numbers-main">
+                    <span className="arc-homepage-numbers-mod">
+                      {statData.modifier}
+                    </span>
                     {statData.number}
                     <span>%</span>
                   </div>
@@ -463,7 +485,7 @@ class Apphome extends Component {
                 data-bg={
                   "https://www2.arccorp.com/globalassets/homepage/redesign/march-update/our_data.jpg"
                 }
-                style={{marginBottom: "90px"}}
+                style={{ marginBottom: "90px" }}
               >
                 <div className="row align-items-center no-gutters">
                   <div
