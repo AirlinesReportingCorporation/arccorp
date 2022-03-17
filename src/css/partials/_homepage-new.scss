@@ -80,6 +80,7 @@ $margin-spacing: 30px;
 .#{$name}homepage-blog-img {
   img {
     width: 100%;
+    border-radius: variables.$border-radius;
   }
 }
 
@@ -379,6 +380,10 @@ a.#{$name}homepage-blog-popular-title {
   .#{$name}homepage-cta-link.#{$name}homepage-cta-refund-link,
   .#{$name}homepage-cta-link.border-top-white {
     border: none;
+  }
+
+  .text-sm-center {
+    text-align: center;
   }
 }
 

@@ -189,7 +189,7 @@ class Footer extends Component {
               <div className="arc-footer-sub-border"></div>
             </div>
           </div>
-          <div className="row">
+          <div className="row align-items-center">
             <div className="col-lg-7">
               &copy; {new Date().getFullYear()} Airlines Reporting Corporation
               (ARC). All rights reserved.
