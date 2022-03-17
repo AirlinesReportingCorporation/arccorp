@@ -189,12 +189,12 @@ class Footer extends Component {
               <div className="arc-footer-sub-border"></div>
             </div>
           </div>
-          <div className="row align-items-center">
-            <div className="col-lg-7">
+          <div className="row align-items-center text-sm-center">
+            <div className="col-lg-7 mb-lg-0 mb-md-3">
               &copy; {new Date().getFullYear()} Airlines Reporting Corporation
               (ARC). All rights reserved.
             </div>
-            <div className="col-lg-2 text-sm-center">
+            <div className="col-lg-2 mb-lg-0 mb-md-3">
               <a
                 href="https://www.schellman.com/certificate-directory?certificateNumber=1427462-10"
                 target="_blank"
@@ -206,7 +206,7 @@ class Footer extends Component {
                 />
               </a>
             </div>
-            <div className="col-lg-3 text-sm-center">
+            <div className="col-lg-3 mb-lg-0 mb-md-3">
               <ul className="arc-footer-links-social d-inline-block">
                 <li>
                   <a
