@@ -2394,12 +2394,12 @@ body .byline {
     max-width: 1170px;
   }
 }
-@media screen and (min-width: 901px) {
+@media screen and (min-width: 1170px) {
   .supernav .supernav-mobile-menu {
     display: none !important;
   }
 }
-@media screen and (max-width: 900px) {
+@media screen and (max-width: 1169.9999px) {
   .supernav {
     z-index: 13;
   }
