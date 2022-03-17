@@ -92,23 +92,23 @@ class Apphome extends Component {
             <div className="row">
               <div className="col-md-12 col-sm-12">
                 {/* Comment out jumbovideo when video is ready */}
-                {/* 
-                    <Jumbovideo />
-                  */}
+
+                {<Jumbovideo />}
+
                 {/* This section is for when the video is not ready */}
                 {
-                  <div className="arc-jumbo-video">
-                    <div className="usa-embed-container mb-4 ">
-                      <a href="https://www2.arccorp.com/about-us/newsroom/2022-news-releases/monthly-u.s.-travel-agency-sales-reach-highest-total-since-february-2020?utm_source=Jumbo_Carousel">
-                        <img
-                          className="img-fluid"
-                          src="https://www2.arccorp.com/globalassets/homepage/redesign/march-update/data_no_video_jumbo.png"
-                          alt="Monthly U.S. Travel Agency Sales Reach Highest Total Since
-                          February 2020"
-                        />
-                      </a>
-                    </div>
-                  </div>
+                  // <div className="arc-jumbo-video">
+                  //   <div className="usa-embed-container mb-4 ">
+                  //     <a href="https://www2.arccorp.com/about-us/newsroom/2022-news-releases/monthly-u.s.-travel-agency-sales-reach-highest-total-since-february-2020?utm_source=Jumbo_Carousel">
+                  //       <img
+                  //         className="img-fluid"
+                  //         src="https://www2.arccorp.com/globalassets/homepage/redesign/march-update/data_no_video_jumbo.png"
+                  //         alt="Monthly U.S. Travel Agency Sales Reach Highest Total Since
+                  //         February 2020"
+                  //       />
+                  //     </a>
+                  //   </div>
+                  // </div>
                 }
 
                 <h2 className="arc-jumbo-inner-title white mb-1">
