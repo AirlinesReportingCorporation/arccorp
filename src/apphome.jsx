@@ -231,7 +231,7 @@ class Apphome extends Component {
                   See how ARC supports the travel ecosystem.
                 </div>
                 <a
-                  className="ctaBtn ctaBtn--white p-0"
+                  className="ctaBtn ctaBtn--white p-0 tarmac"
                   target="_blank"
                   href="https://www2.arccorp.com/about-us/our-story?utm_source=Jumbo_Carousel"
                 >

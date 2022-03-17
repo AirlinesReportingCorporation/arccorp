@@ -132,6 +132,10 @@ a.ctaBtn.product-cta {
   background: #ffffff;
   border-color: #ffffff;
   color: $teal !important;
+
+  &.tarmac {
+    color: $tarmac !important;
+  }
 }
 
 .ctaBtn.ctaBtn--white-outline,
