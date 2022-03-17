@@ -207,6 +207,41 @@ class Apphome extends Component {
           </div>
         </div>
       </SwiperSlide>,
+      <SwiperSlide>
+        <div
+          className="arc-jumbo lazy"
+          data-bg={
+            "https://www2.arccorp.com/globalassets/homepage/redesign/march-update/our_story_background_jumbo.jpg"
+          }
+        >
+          <div className="arc-jumbo-inner white">
+            <div className="row">
+              <div className="col-lg-7 col-md-12">
+                <img
+                  src="https://www2.arccorp.com/globalassets/arc-logos/corporate-logos/arc-logo-l-gray.png"
+                  style={{
+                    maxWidth: "60px",
+                    marginBottom: "15px"
+                  }}
+                />
+                <h2 className="arc-jumbo-inner-title white">
+                  Accelerating the Growth of Global Air Travel
+                </h2>
+                <div className="arc-jumbo-inner-body">
+                  See how ARC supports the travel ecosystem.
+                </div>
+                <a
+                  className="ctaBtn ctaBtn--white p-0"
+                  target="_blank"
+                  href="https://www2.arccorp.com/about-us/our-story?utm_source=Jumbo_Carousel"
+                >
+                  Learn More
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </SwiperSlide>,
     ];
 
     return (
