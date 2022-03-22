@@ -26,9 +26,9 @@ function shuffleArray(array) {
 
 var statData = {
   modifier: "+",
-  number: "195.8",
+  number: "148.7",
   type: "Sales Variance",
-  week: "March 13, 2021",
+  week: "March 20, 2021",
 };
 
 var homeData = {
@@ -221,7 +221,7 @@ class Apphome extends Component {
                   src="https://www2.arccorp.com/globalassets/arc-logos/corporate-logos/arc-logo-l-gray.png"
                   style={{
                     maxWidth: "60px",
-                    marginBottom: "15px"
+                    marginBottom: "15px",
                   }}
                 />
                 <h2 className="arc-jumbo-inner-title white">
@@ -431,12 +431,12 @@ class Apphome extends Component {
                       </div>
 
                       <div className="arc-homepage-refund-title">
-                        Airline Refund and Exchange Information
+                        ARC’s Airline Participation Tool
                       </div>
 
                       <div className="arc-homepage-refund-copy">
-                        View the latest information regarding airline refunds
-                        and ticket validity extenstions.
+                        View ARC-participating airlines and their settlement
+                        details.
                       </div>
 
                       <div className="arc-homepage-cta-link arc-homepage-cta-refund-link white">
