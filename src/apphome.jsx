@@ -25,10 +25,10 @@ function shuffleArray(array) {
 }
 
 var statData = {
-  modifier: "+",
-  number: "148.7",
-  type: "Sales Variance",
-  week: "March 20, 2021",
+  modifier: "-",
+  number: "33.2",
+  type: "Corporate Air Travel Ticket Variance",
+  week: "April 3, 2019",
 };
 
 var homeData = {
