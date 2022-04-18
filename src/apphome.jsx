@@ -26,9 +26,9 @@ function shuffleArray(array) {
 
 var statData = {
   modifier: "-",
-  number: "3.1",
-  type: "Leisure Air Travel Ticket Variance",
-  week: "April 10, 2019",
+  number: "31.5",
+  type: "Corporate Air Travel Ticket Variance",
+  week: "April 17, 2019",
 };
 
 var homeData = {
