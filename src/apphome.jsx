@@ -112,14 +112,14 @@ class Apphome extends Component {
                 }
 
                 <h2 className="arc-jumbo-inner-title white mb-1">
-                  Monthly U.S. Travel Agency Sales Reach Highest Total Since
-                  February 2020
+                  March Air Travel Sales and Average Ticket Price Reach Pandemic
+                  Highs
                 </h2>
                 <div className="arc-jumbo-inner-body">
-                  February Sales Eclipse $5 Billion, Growing 48% Month over
-                  Month{" "}
+                  Total Passenger Trips Continued to Rise Month over Month
+                  Despite Increased Airfare{" "}
                   <a className="arc-homepage-cta-link arc-jumbo-cta-link d-inline-flex p-0 pl-2">
-                    <a href="https://www2.arccorp.com/about-us/newsroom/2022-news-releases/monthly-u.s.-travel-agency-sales-reach-highest-total-since-february-2020?utm_source=Jumbo_Carousel">
+                    <a href="https://www2.arccorp.com/about-us/newsroom/2022-news-releases/march-air-travel-sales-and-average-ticket-price-reach-pandemic-highs/?utm_source=Jumbo_Carousel">
                       Read More
                     </a>
                   </a>
