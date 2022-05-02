@@ -25,10 +25,10 @@ function shuffleArray(array) {
 }
 
 var statData = {
-  modifier: "+",
-  number: "1.1",
-  type: "Leisure Air Travel Ticket Variance",
-  week: "April 25, 2019",
+  modifier: "",
+  number: "0.0",
+  type: "OTA Air Travel Ticket Variance",
+  week: "May 1, 2019",
 };
 
 var homeData = {
