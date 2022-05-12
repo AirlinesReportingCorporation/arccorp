@@ -85,7 +85,7 @@ class Apphome extends Component {
         <div
           className="arc-jumbo lazy"
           data-bg={
-            "https://www2.arccorp.com/globalassets/homepage/redesign/march-update/data_video_background_jumbo.jpg"
+            "https://www2.arccorp.com/globalassets/homepage/redesign/march-update/jumbotron_retina_datavideo2.jpg"
           }
         >
           <div className="arc-jumbo-inner white text-center">

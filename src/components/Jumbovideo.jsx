@@ -37,7 +37,7 @@ class Jumbovideo extends Component {
           >
             <img
               className="img-fluid mb-4"
-              src="https://www2.arccorp.com/globalassets/homepage/redesign/march-update/jumbotron_retina_datavideo2.jpg"
+              src="https://www2.arccorp.com/globalassets/homepage/redesign/march-update/data_video_jumbo_mar2022.png"
               alt="March Data Update 2022"
             />
           </div>
