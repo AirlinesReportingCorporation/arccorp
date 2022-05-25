@@ -93,33 +93,32 @@ class Apphome extends Component {
               <div className="col-md-12 col-sm-12">
                 {/* Comment out jumbovideo when video is ready */}
 
-                {<Jumbovideo />}
+                {/*<Jumbovideo />*/}
 
                 {/* This section is for when the video is not ready */}
                 {
-                  // <div className="arc-jumbo-video">
-                  //   <div className="usa-embed-container mb-4 ">
-                  //     <a href="https://www2.arccorp.com/about-us/newsroom/2022-news-releases/monthly-u.s.-travel-agency-sales-reach-highest-total-since-february-2020?utm_source=Jumbo_Carousel">
-                  //       <img
-                  //         className="img-fluid"
-                  //         src="https://www2.arccorp.com/globalassets/homepage/redesign/march-update/data_no_video_jumbo.png"
-                  //         alt="Monthly U.S. Travel Agency Sales Reach Highest Total Since
-                  //         February 2020"
-                  //       />
-                  //     </a>
-                  //   </div>
-                  // </div>
+                  <div className="arc-jumbo-video">
+                    <div className="usa-embed-container mb-4 ">
+                      <a href="https://www2.arccorp.com/about-us/newsroom/2022-news-releases/average-roundtrip-airfare-for-u.s.-travel-agency-air-ticket-sales-sets-seven-year-high-in-april?utm_source=Jumbo_Carousel">
+                        <img
+                          className="img-fluid"
+                          src="https://www2.arccorp.com/globalassets/homepage/redesign/march-update/data_video_jumbo.png"
+                          alt="Average Roundtrip Airfare for U.S. Travel Agency Air Ticket Sales Sets Seven-Year High in April"
+                        />
+                      </a>
+                    </div>
+                  </div>
                 }
 
                 <h2 className="arc-jumbo-inner-title white mb-1">
-                  March Air Travel Sales and Average Ticket Price Reach Pandemic
-                  Highs
+                  Average Roundtrip Airfare for U.S. Travel Agency Air Ticket
+                  Sales Sets Seven-Year High in April
                 </h2>
                 <div className="arc-jumbo-inner-body">
-                  Total Passenger Trips Continued to Rise Month over Month
-                  Despite Increased Airfare{" "}
+                  Month-over-Month Total Sales Remained Flat as Number of
+                  Passenger Trips Declined{" "}
                   <a className="arc-homepage-cta-link arc-jumbo-cta-link d-inline-flex p-0 pl-2">
-                    <a href="https://www2.arccorp.com/about-us/newsroom/2022-news-releases/march-air-travel-sales-and-average-ticket-price-reach-pandemic-highs/?utm_source=Jumbo_Carousel">
+                    <a href="https://www2.arccorp.com/about-us/newsroom/2022-news-releases/average-roundtrip-airfare-for-u.s.-travel-agency-air-ticket-sales-sets-seven-year-high-in-april?utm_source=Jumbo_Carousel">
                       Read More
                     </a>
                   </a>
