@@ -25,10 +25,10 @@ function shuffleArray(array) {
 }
 
 var statData = {
-  modifier: "",
-  number: "2.6",
-  type: "Leisure/Other Ticket Variance",
-  week: "May 29, 2019",
+  modifier: "-",
+  number: "2.4",
+  type: "Overall Sales Variance",
+  week: "Jun 5, 2019",
 };
 
 var homeData = {
