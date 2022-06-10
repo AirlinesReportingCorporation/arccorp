@@ -905,6 +905,12 @@ a.product-sticky-link-right svg {
   margin-bottom: 0;
 }
 
+.product-sticky-brand,
+.product-sticky-links,
+.product-sticky-menu {
+  flex-grow: 1;
+}
+
 .product-sticky-brand img {
   height: 16px;
   margin-right: 5px;
