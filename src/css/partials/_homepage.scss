@@ -73,7 +73,8 @@ footer .footer-links-social li a.icon-iso_logo {
   background: #ffffff;
   height: auto;
   position: relative;
-  box-shadow: rgba(0, 0, 0, 0.1) 0 29px 30px -30px;
+  border-bottom: 1px solid $tarmac;
+  //box-shadow: rgba(0, 0, 0, 0.1) 0 29px 30px -30px;
 
   &::after {
     display: block;
