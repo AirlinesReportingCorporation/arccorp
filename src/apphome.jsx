@@ -102,7 +102,8 @@ class Apphome extends Component {
                       <a href="https://www2.arccorp.com/about-us/newsroom/2022-news-releases/average-roundtrip-airfare-for-u.s.-travel-agency-air-ticket-sales-sets-seven-year-high-in-april?utm_source=Jumbo_Carousel">
                         <img
                           className="img-fluid"
-                          src="https://www2.arccorp.com/globalassets/homepage/redesign/march-update/data_video_jumbo.png"
+                          src="https://www2.arccorp.com/globalassets/homepage/redesign/march-update/Total-Sales.gif"
+                          loop="infinite"
                           alt="Average Roundtrip Airfare for U.S. Travel Agency Air Ticket Sales Sets Seven-Year High in April"
                         />
                       </a>
@@ -111,12 +112,11 @@ class Apphome extends Component {
                 }
 
                 <h2 className="arc-jumbo-inner-title white mb-1">
-                  Average Roundtrip Airfare for U.S. Travel Agency Air Ticket
-                  Sales Sets Seven-Year High in April
+                  May U.S. Travel Agency Air Ticket Sales Top $8 Billion
                 </h2>
                 <div className="arc-jumbo-inner-body">
-                  Month-over-Month Total Sales Remained Flat as Number of
-                  Passenger Trips Declined{" "}
+                  Monthly Sales Reach Their Highest Level Since January 2020 as
+                  International Trips Increase{" "}
                   <a className="arc-homepage-cta-link arc-jumbo-cta-link d-inline-flex p-0 pl-2">
                     <a href="https://www2.arccorp.com/about-us/newsroom/2022-news-releases/average-roundtrip-airfare-for-u.s.-travel-agency-air-ticket-sales-sets-seven-year-high-in-april?utm_source=Jumbo_Carousel">
                       Read More
