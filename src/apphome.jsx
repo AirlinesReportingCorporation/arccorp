@@ -118,7 +118,7 @@ class Apphome extends Component {
                   Monthly Sales Reach Their Highest Level Since January 2020 as
                   International Trips Increase{" "}
                   <a className="arc-homepage-cta-link arc-jumbo-cta-link d-inline-flex p-0 pl-2">
-                    <a href="https://www2.arccorp.com/about-us/newsroom/2022-news-releases/average-roundtrip-airfare-for-u.s.-travel-agency-air-ticket-sales-sets-seven-year-high-in-april?utm_source=Jumbo_Carousel">
+                    <a href="https://www2.arccorp.com/about-us/newsroom/2022-news-releases/may-u.s.-travel-agency-air-ticket-sales-top-$8-billion/?utm_source=Jumbo_Carousel">
                       Read More
                     </a>
                   </a>
