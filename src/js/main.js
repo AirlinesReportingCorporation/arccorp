@@ -659,6 +659,7 @@ if ($("#ndc-app").length) {
           iarErr: "Corrected by Agent",
           iarMod: "All",
           iarMan: "All",
+          salesfile: "RET"
         },
         {
           display: false,
@@ -672,6 +673,7 @@ if ($("#ndc-app").length) {
           iarErr: "Return to Airline",
           iarMod: "None",
           iarMan: "None",
+          salesfile: "RET"
         },
         {
           display: false,
@@ -685,6 +687,7 @@ if ($("#ndc-app").length) {
           iarErr: "Return to Airline",
           iarMod: "None",
           iarMan: "None",
+          salesfile: "RET"
         },
         {
           display: false,
@@ -698,6 +701,7 @@ if ($("#ndc-app").length) {
           iarErr: "Corrected by Agent",
           iarMod: "All",
           iarMan: "All",
+          salesfile: "SPRF"
         },
         {
           display: false,
@@ -711,6 +715,7 @@ if ($("#ndc-app").length) {
           iarErr: "Return to Airline",
           iarMod: "Commission Only",
           iarMan: "None",
+          salesfile: "SPRF"
         },
       ],
     },

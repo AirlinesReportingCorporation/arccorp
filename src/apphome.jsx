@@ -450,7 +450,7 @@ class Apphome extends Component {
             </div>
             <div className="col-lg-3 col-md-6">
               <a
-                href="https://arctravelconnect.com/episodes/using-consumer-spending-to-track-travel-trends?utm_source=homepage-card"
+                href="https://arctravelconnect.com/episodes/growth-and-innovation-at-the-denver-international-airport?utm_source=homepage-card"
                 className="arc-homepage-card d-block arc-homepage-card-long align-items-center"
                 style={{ backgroundSize: "contain", background: "#060a0b" }}
               >
