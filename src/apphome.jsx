@@ -25,9 +25,9 @@ function shuffleArray(array) {
 }
 
 var statData = {
-  modifier: "",
-  number: "18.7",
-  type: "YOY AIR TICKET VOLUME VARIANCE",
+  modifier: "-",
+  number: "6.1",
+  type: "Ticket Sales Variance",
   week: "July 3, 2019",
 };
 
