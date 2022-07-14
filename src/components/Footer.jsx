@@ -178,6 +178,12 @@ class Footer extends Component {
                 >
                   Media Kit
                 </a>
+                <a
+                  href="https://www2.arccorp.com/styleguide/?utm_source=footer-link"
+                  className="arc-footer-link"
+                >
+                  Brand Style Guide
+                </a>
               </div>
             </div>
           </div>
