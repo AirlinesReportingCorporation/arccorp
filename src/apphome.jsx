@@ -84,49 +84,50 @@ class Apphome extends Component {
   render() {
     var slides = [
       <SwiperSlide>
-        <div data-vbg="https://www.youtube.com/watch?v=ynK4YsVv4so">
-          <div
-            className="arc-jumbo transparent"
-            style={{ alignItems: "flex-end" }}
-          >
-            <div className="arc-jumbo-inner align-items-baseline white text-center">
-              <div className="row">
-                <div className="col-md-12 col-sm-12">
-                  {/* Comment out jumbovideo when video is ready */}
+        <div
+          className="arc-jumbo lazy"
+          data-bg={
+            "https://www2.arccorp.com/globalassets/homepage/redesign/march-update/homepage-data.gif"
+          }
+          style={{ alignItems: "flex-end" }}
+        >
+          <div className="arc-jumbo-inner align-items-baseline white text-center">
+            <div className="row">
+              <div className="col-md-12 col-sm-12">
+                {/* Comment out jumbovideo when video is ready */}
 
-                  {/*<Jumbovideo />*/}
+                {/*<Jumbovideo />*/}
 
-                  {/* This section is for when the video is not ready */}
-                  {}
+                {/* This section is for when the video is not ready */}
+                {}
 
-                  <h2 className="arc-jumbo-inner-title white mb-1">
-                    U.S. Travel Agency June Air Ticket Sales Increase 87% Year
-                    Over Year
-                  </h2>
-                  <div
-                    className="arc-jumbo-inner-body"
-                    style={{ marginBottom: "60px" }}
-                  >
-                    Average Ticket Price Declines Month over Month for the First
-                    Time Since January 2022{" "}
-                    <a className="arc-homepage-cta-link arc-jumbo-cta-link d-inline-flex p-0 pl-2">
-                      <a href="https://www2.arccorp.com/about-us/newsroom/2022-news-releases/u.s.-travel-agency-june-air-ticket-sales-increase-87-year-over-year/?utm_source=Jumbo_Carousel">
-                        Read More
-                      </a>
-                    </a>
-                  </div>
-                </div>
-                <a
-                  target="_blank"
-                  href="https://www.youtube.com/channel/UCWHZsoCDNhjorop892EVETw?sub_confirmation=1"
-                  className="arc-jumbo-subscribe"
+                <h2 className="arc-jumbo-inner-title white mb-1">
+                  U.S. Travel Agency June Air Ticket Sales Increase 87% Year
+                  Over Year
+                </h2>
+                <div
+                  className="arc-jumbo-inner-body"
+                  style={{ marginBottom: "60px" }}
                 >
-                  <img
-                    src="https://www2.arccorp.com/globalassets/homepage/redesign/march-update/subscribe_jumbo.jpg"
-                    alt="subscribe_jumbo.jpg"
-                  />
-                </a>
+                  Average Ticket Price Declines Month over Month for the First
+                  Time Since January 2022{" "}
+                  <a className="arc-homepage-cta-link arc-jumbo-cta-link d-inline-flex p-0 pl-2">
+                    <a href="https://www2.arccorp.com/about-us/newsroom/2022-news-releases/u.s.-travel-agency-june-air-ticket-sales-increase-87-year-over-year/?utm_source=Jumbo_Carousel">
+                      Read More
+                    </a>
+                  </a>
+                </div>
               </div>
+              <a
+                target="_blank"
+                href="https://www.youtube.com/channel/UCWHZsoCDNhjorop892EVETw?sub_confirmation=1"
+                className="arc-jumbo-subscribe"
+              >
+                <img
+                  src="https://www2.arccorp.com/globalassets/homepage/redesign/march-update/subscribe_jumbo.jpg"
+                  alt="subscribe_jumbo.jpg"
+                />
+              </a>
             </div>
           </div>
         </div>
