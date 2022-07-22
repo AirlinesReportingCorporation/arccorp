@@ -1,7 +1,5 @@
 import React, { Component } from "react";
 
-import YoutubeBackground from "react-youtube-background";
-
 import "youtube-background";
 
 import LazyLoad from "vanilla-lazyload";
