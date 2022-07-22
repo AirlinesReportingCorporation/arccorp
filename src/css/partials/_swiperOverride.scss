@@ -15,6 +15,9 @@ $margin-spacing: 30px;
 
   .youtube-background {
     border-radius: 20px;
+    iframe {
+      width: 1210px !important;
+    }
   }
 }
 
