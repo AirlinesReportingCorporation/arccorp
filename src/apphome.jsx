@@ -140,39 +140,6 @@ class Apphome extends Component {
       </SwiperSlide>,
       <SwiperSlide>
         <div
-          className="arc-jumbo lazy"
-          data-bg={
-            "https://www2.arccorp.com/globalassets/homepage/redesign/march-update/arc_pay_jumbo.jpg"
-          }
-        >
-          <div className="arc-jumbo-inner white">
-            <div className="row">
-              <div className="col-lg-7 col-md-12">
-                <img
-                  src="https://www2.arccorp.com/globalassets/homepage/redesign/march-update/arcpay_logo.png"
-                  style={{ maxWidth: "100px", marginBottom: "15px" }}
-                />
-                <h2 className="arc-jumbo-inner-title white">
-                  The Top 5 Payment-Processing Myths
-                </h2>
-                <div className="arc-jumbo-inner-body">
-                  ARC Pay is the popular payment-processing service from ARC,
-                  but there are still some myths out there.
-                </div>
-                <a
-                  className="ctaBtn ctaBtn--main p-0"
-                  target="_blank"
-                  href="https://www2.arccorp.com/products-participation/products/arc-pay/the-top-5-payment-processing-myths?utm_source=Jumbo_Carousel&amp;utm_campaign=Myth_Busters_5"
-                >
-                  See the list
-                </a>
-              </div>
-            </div>
-          </div>
-        </div>
-      </SwiperSlide>,
-      <SwiperSlide>
-        <div
           className="arc-jumbo teal lazy"
           data-bg={
             "https://www2.arccorp.com/globalassets/homepage/redesign/march-update/podcast_jumbo.jpg"
