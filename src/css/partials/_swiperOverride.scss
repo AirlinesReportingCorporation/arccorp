@@ -12,6 +12,13 @@ $margin-spacing: 30px;
   height: auto;
   align-items: stretch;
   display: flex;
+
+  .youtube-background {
+    border-radius: 20px;
+    iframe {
+      width: 1210px !important;
+    }
+  }
 }
 
 .#{$name}jumbo-swiper {
@@ -50,6 +57,11 @@ $margin-spacing: 30px;
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center center;
+  z-index: 1;
+
+  &.transparent {
+    background: transparent;
+  }
 
   .#{$name}jumbo-cta-link {
     margin-bottom: 0;

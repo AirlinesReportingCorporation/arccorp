@@ -1,5 +1,7 @@
 import React, { Component } from "react";
 
+import "youtube-background";
+
 import LazyLoad from "vanilla-lazyload";
 
 if (!document.lazyLoadInstance) {
@@ -11,7 +13,6 @@ if (!document.lazyLoadInstance) {
 import { Swiper, SwiperSlide } from "swiper/react";
 import { PodcastWidget } from "podcast-widget";
 import { Navigation, Pagination, Mousewheel, Keyboard } from "swiper";
-import Jumbovideo from "./components/Jumbovideo";
 
 function shuffleArray(array) {
   let i = array.length - 1;
@@ -72,6 +73,7 @@ class Apphome extends Component {
 
   componentDidMount() {
     document.lazyLoadInstance.update();
+    new VideoBackgrounds("[data-vbg]");
   }
 
   // Update lazyLoad after rerendering of every image
@@ -85,10 +87,11 @@ class Apphome extends Component {
         <div
           className="arc-jumbo lazy"
           data-bg={
-            "https://www2.arccorp.com/globalassets/homepage/redesign/march-update/jumbotron_retina_datavideo2.jpg"
+            "https://www2.arccorp.com/globalassets/homepage/redesign/march-update/homepage-data.gif"
           }
+          style={{ alignItems: "flex-end" }}
         >
-          <div className="arc-jumbo-inner white text-center">
+          <div className="arc-jumbo-inner align-items-baseline white text-center">
             <div className="row">
               <div className="col-md-12 col-sm-12">
                 {/* Comment out jumbovideo when video is ready */}
@@ -96,29 +99,20 @@ class Apphome extends Component {
                 {/*<Jumbovideo />*/}
 
                 {/* This section is for when the video is not ready */}
-                {
-                  <div className="arc-jumbo-video">
-                    <div className="usa-embed-container mb-4 ">
-                      <a href="https://www2.arccorp.com/about-us/newsroom/2022-news-releases/average-roundtrip-airfare-for-u.s.-travel-agency-air-ticket-sales-sets-seven-year-high-in-april?utm_source=Jumbo_Carousel">
-                        <img
-                          className="img-fluid"
-                          src="https://www2.arccorp.com/globalassets/homepage/redesign/march-update/Total-Sales.gif"
-                          loop="infinite"
-                          alt="Average Roundtrip Airfare for U.S. Travel Agency Air Ticket Sales Sets Seven-Year High in April"
-                        />
-                      </a>
-                    </div>
-                  </div>
-                }
+                {}
 
                 <h2 className="arc-jumbo-inner-title white mb-1">
-                  May U.S. Travel Agency Air Ticket Sales Top $8 Billion
+                  U.S. Travel Agency June Air Ticket Sales Increase 87% Year
+                  Over Year
                 </h2>
-                <div className="arc-jumbo-inner-body">
-                  Monthly Sales Reach Their Highest Level Since January 2020 as
-                  International Trips Increase{" "}
+                <div
+                  className="arc-jumbo-inner-body"
+                  style={{ marginBottom: "60px" }}
+                >
+                  Average Ticket Price Declines Month over Month for the First
+                  Time Since January 2022{" "}
                   <a className="arc-homepage-cta-link arc-jumbo-cta-link d-inline-flex p-0 pl-2">
-                    <a href="https://www2.arccorp.com/about-us/newsroom/2022-news-releases/may-u.s.-travel-agency-air-ticket-sales-top-$8-billion/?utm_source=Jumbo_Carousel">
+                    <a href="https://www2.arccorp.com/about-us/newsroom/2022-news-releases/u.s.-travel-agency-june-air-ticket-sales-increase-87-year-over-year/?utm_source=Jumbo_Carousel">
                       Read More
                     </a>
                   </a>
