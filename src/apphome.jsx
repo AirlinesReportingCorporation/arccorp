@@ -26,10 +26,10 @@ function shuffleArray(array) {
 }
 
 var statData = {
-  modifier: "",
-  number: "2.5",
-  type: "Leisure Ticket Variance",
-  week: "July 31, 2022",
+  modifier: "-",
+  number: "24.5",
+  type: "OTA Ticket Variance",
+  week: "August 14, 2022",
 };
 
 var homeData = {
@@ -47,21 +47,18 @@ var homeData = {
     {
       date: "Jan 12, 2022",
       title: "ARC’s Top Insights from 2021",
-      link:
-        "https://www2.arccorp.com/articles-trends/the-latest/arc-top-insights-2021/",
+      link: "https://www2.arccorp.com/articles-trends/the-latest/arc-top-insights-2021/",
     },
     {
       date: "May 1, 2020",
       title: "ARC’s COVID-19 Resources for Airlines and Travel Agencies",
-      link:
-        "https://www2.arccorp.com/articles-trends/the-latest/arcs-covid-19-resources-for-airlines-and-travel-agencies/",
+      link: "https://www2.arccorp.com/articles-trends/the-latest/arcs-covid-19-resources-for-airlines-and-travel-agencies/",
     },
     {
       date: "Jan 27, 2022",
       title:
         "Top Corporate Equity Index Score Reflects ARC’s Commitment to Diversity, Inclusion",
-      link:
-        "https://www2.arccorp.com/articles-trends/the-latest/arc-receives-top-corporate-equity-index-score-2022/",
+      link: "https://www2.arccorp.com/articles-trends/the-latest/arc-receives-top-corporate-equity-index-score-2022/",
     },
   ],
 };
@@ -194,6 +191,43 @@ class Apphome extends Component {
                   className="ctaBtn ctaBtn--white p-0 tarmac"
                   target="_blank"
                   href="https://www2.arccorp.com/about-us/our-story?utm_source=Jumbo_Carousel"
+                >
+                  Learn More
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </SwiperSlide>,
+      <SwiperSlide>
+        <div
+          className="arc-jumbo lazy"
+          data-bg={
+            "https://www2.arccorp.com/globalassets/products--participation/arc-pay/uplift-arc.jpg?1"
+          }
+        >
+          <div className="arc-jumbo-inner white">
+            <div className="row">
+              <div className="col-lg-7 col-md-12">
+                <img
+                  style={{
+                    maxWidth: "170px",
+                    marginBottom: "15px",
+                  }}
+                  src="https://www2.arccorp.com/globalassets/products--participation/arc-pay/logos2x.png"
+                  alt="ARC Logo and uplift logo"
+                />
+                <h2 className="arc-jumbo-inner-title white">
+                  Empower Your <br></br> Customers to Book Now and Pay Later.
+                </h2>
+                <div className="arc-jumbo-inner-body">
+                  Give travelers the flexibility to spread the cost of their{" "}
+                  <br></br> trip over low monthly payments.
+                </div>
+                <a
+                  className="ctaBtn ctaBtn--white p-0 tarmac"
+                  target="_blank"
+                  href="https://www2.arccorp.com/products-participation/products/arc-pay/arc-pay-uplift/?utm_source=Jumbo_Carousel"
                 >
                   Learn More
                 </a>
