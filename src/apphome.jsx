@@ -34,11 +34,11 @@ var statData = {
 };
 
 var homeData = {
-  recentBlogTitle: "A Deep Dive into Omnichannel Retailing",
+  recentBlogTitle: "Register Today for ARC’s Fraud Awareness Month Webinars",
   recentBlogLink:
-    "https://www2.arccorp.com/articles-trends/the-latest/omnichannel-series-recap/",
+    "https://www2.arccorp.com/articles-trends/the-latest/register-now-arc-fraud-awareness-month-webinars-2022/",
   recentBlogImage:
-    "https://www2.arccorp.com/globalassets/homepage/redesign/latest/omnichannel-series-recap.jpg",
+    "https://www2.arccorp.com/globalassets/homepage/redesign/latest/register-now-arc-fraud-awareness-month-webinars-2022.jpg",
   popularArticles: [
     {
       date: "Updated Every Monday",
