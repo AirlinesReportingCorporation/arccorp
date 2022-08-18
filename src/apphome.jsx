@@ -25,6 +25,7 @@ function shuffleArray(array) {
   return array;
 }
 
+
 var statData = {
   modifier: "-",
   number: "24.5",
@@ -84,7 +85,7 @@ class Apphome extends Component {
         <div
           className="arc-jumbo lazy"
           data-bg={
-            "https://www2.arccorp.com/globalassets/homepage/redesign/march-update/homepage-data.gif"
+            "https://www2.arccorp.com/globalassets/homepage/redesign/march-update/August-Data-HP.gif"
           }
           style={{ alignItems: "flex-end" }}
         >
@@ -99,17 +100,17 @@ class Apphome extends Component {
                 {}
 
                 <h2 className="arc-jumbo-inner-title white mb-1">
-                  U.S. Travel Agency June Air Ticket Sales Increase 87% Year
-                  Over Year
+                July Year-Over-Year U.S. Travel Agency Air Ticket Sales Increase 69%
                 </h2>
                 <div
                   className="arc-jumbo-inner-body"
                   style={{ marginBottom: "60px" }}
                 >
-                  Average Ticket Price Declines Month over Month for the First
-                  Time Since January 2022{" "}
+                  Month-Over-Month Total Sales Decrease After Surpassing 2019 Levels in June
+
+{" "}
                   <a className="arc-homepage-cta-link arc-jumbo-cta-link d-inline-flex p-0 pl-2">
-                    <a href="https://www2.arccorp.com/about-us/newsroom/2022-news-releases/u.s.-travel-agency-june-air-ticket-sales-increase-87-year-over-year/?utm_source=Jumbo_Carousel">
+                    <a href="https://www2.arccorp.com/about-us/newsroom/2022-news-releases/july-year-over-year-u.s.-travel-agency-air-ticket-sales-increase-69/?utm_source=Jumbo_Carousel">
                       Read More
                     </a>
                   </a>
