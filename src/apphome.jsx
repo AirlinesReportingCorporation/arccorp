@@ -36,7 +36,7 @@ var statData = {
 var homeData = {
   recentBlogTitle: "Register Today for ARC’s Fraud Awareness Month Webinars",
   recentBlogLink:
-    "https://www2.arccorp.com/articles-trends/the-latest/register-now-arc-fraud-awareness-month-webinars-2022/",
+    "https://www2.arccorp.com/articles-trends/the-latest/register-now-arc-fraud-awareness-month-webinars-2022/?utm_source=homepage-card",
   recentBlogImage:
     "https://www2.arccorp.com/globalassets/homepage/redesign/latest/register-now-arc-fraud-awareness-month-webinars-2022.jpg",
   popularArticles: [
