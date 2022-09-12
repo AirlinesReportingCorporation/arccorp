@@ -29,7 +29,7 @@ function shuffleArray(array) {
 var statData = {
   modifier: "",
   number: "6.8",
-  type: "Liesure Ticket Variance",
+  type: "Leisure Ticket Variance",
   week: "September 11, 2022",
 };
 
