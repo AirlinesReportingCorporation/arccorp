@@ -27,10 +27,10 @@ function shuffleArray(array) {
 
 
 var statData = {
-  modifier: "-",
-  number: "24.6",
-  type: "Corporate Ticket Variance",
-  week: "September 4, 2022",
+  modifier: "",
+  number: "6.8",
+  type: "Liesure Ticket Variance",
+  week: "September 11, 2022",
 };
 
 var homeData = {
