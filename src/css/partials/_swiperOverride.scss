@@ -14,8 +14,9 @@ $margin-spacing: 30px;
   display: flex;
 
   .youtube-background {
+    background: variables.$tarmac;
     border-radius: 20px;
-    iframe {
+    video, iframe {
       width: 1210px !important;
     }
   }

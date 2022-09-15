@@ -25,7 +25,6 @@ function shuffleArray(array) {
   return array;
 }
 
-
 var statData = {
   modifier: "",
   number: "6.8",
@@ -49,18 +48,21 @@ var homeData = {
     {
       date: "Jan 12, 2022",
       title: "ARC’s Top Insights from 2021",
-      link: "https://www2.arccorp.com/articles-trends/the-latest/arc-top-insights-2021/",
+      link:
+        "https://www2.arccorp.com/articles-trends/the-latest/arc-top-insights-2021/",
     },
     {
       date: "May 1, 2020",
       title: "ARC’s COVID-19 Resources for Airlines and Travel Agencies",
-      link: "https://www2.arccorp.com/articles-trends/the-latest/arcs-covid-19-resources-for-airlines-and-travel-agencies/",
+      link:
+        "https://www2.arccorp.com/articles-trends/the-latest/arcs-covid-19-resources-for-airlines-and-travel-agencies/",
     },
     {
       date: "Jan 27, 2022",
       title:
         "Top Corporate Equity Index Score Reflects ARC’s Commitment to Diversity, Inclusion",
-      link: "https://www2.arccorp.com/articles-trends/the-latest/arc-receives-top-corporate-equity-index-score-2022/",
+      link:
+        "https://www2.arccorp.com/articles-trends/the-latest/arc-receives-top-corporate-equity-index-score-2022/",
     },
   ],
 };
@@ -84,49 +86,51 @@ class Apphome extends Component {
     var slides = [
       <SwiperSlide>
         <div
-          className="arc-jumbo lazy"
-          data-bg={
-            "https://www2.arccorp.com/globalassets/homepage/redesign/march-update/August-Data-HP.gif"
-          }
-          style={{ alignItems: "flex-end" }}
+          className="youtube-background"
+          data-vbg="https://www2.arccorp.com/globalassets/video/sept-homepage2x.mp4"
         >
-          <div className="arc-jumbo-inner align-items-baseline white text-center">
-            <div className="row">
-              <div className="col-md-12 col-sm-12">
-                {/* Comment out jumbovideo when video is ready */}
+          <div
+            className="arc-jumbo transparent"
+            style={{ alignItems: "flex-end" }}
+          >
+            <div className="arc-jumbo-inner align-items-baseline white text-center">
+              <div className="row">
+                <div className="col-md-12 col-sm-12">
+                  {/* Comment out jumbovideo when video is ready */}
 
-                {/*<Jumbovideo />*/}
+                  {/*<Jumbovideo />*/}
 
-                {/* This section is for when the video is not ready */}
-                {}
+                  {/* This section is for when the video is not ready */}
+                  {}
 
-                <h2 className="arc-jumbo-inner-title white mb-1">
-                July Year-Over-Year U.S. Travel Agency Air Ticket Sales Increase 69%
-                </h2>
-                <div
-                  className="arc-jumbo-inner-body"
-                  style={{ marginBottom: "60px" }}
-                >
-                  Month-Over-Month Total Sales Decrease After Surpassing 2019 Levels in June
-
-{" "}
-                  <a className="arc-homepage-cta-link arc-jumbo-cta-link d-inline-flex p-0 pl-2">
-                    <a href="https://www2.arccorp.com/about-us/newsroom/2022-news-releases/july-year-over-year-u.s.-travel-agency-air-ticket-sales-increase-69/?utm_source=Jumbo_Carousel">
-                      Read More
+                  <h2 className="arc-jumbo-inner-title white mb-1">
+                    August U.S. Travel Agency Air Ticket Sales More Than Doubled
+                    Year Over Year
+                  </h2>
+                  <div
+                    className="arc-jumbo-inner-body"
+                    style={{ marginBottom: "60px" }}
+                  >
+                    Passenger Trips Increased as Monthly Average Airfare Fell
+                    for Third-Consecutive Month{" "}
+                    <a className="arc-homepage-cta-link arc-jumbo-cta-link d-inline-flex p-0 pl-2">
+                      <a href="https://www2.arccorp.com/about-us/newsroom/2022-news-releases/august-u.s.-travel-agency-air-ticket-sales-more-than-doubled-year-over-year//?utm_source=Jumbo_Carousel">
+                        Read More
+                      </a>
                     </a>
-                  </a>
+                  </div>
                 </div>
+                <a
+                  target="_blank"
+                  href="https://www.youtube.com/channel/UCWHZsoCDNhjorop892EVETw?sub_confirmation=1"
+                  className="arc-jumbo-subscribe"
+                >
+                  <img
+                    src="https://www2.arccorp.com/globalassets/homepage/redesign/march-update/subscribe_jumbo.jpg"
+                    alt="subscribe_jumbo.jpg"
+                  />
+                </a>
               </div>
-              <a
-                target="_blank"
-                href="https://www.youtube.com/channel/UCWHZsoCDNhjorop892EVETw?sub_confirmation=1"
-                className="arc-jumbo-subscribe"
-              >
-                <img
-                  src="https://www2.arccorp.com/globalassets/homepage/redesign/march-update/subscribe_jumbo.jpg"
-                  alt="subscribe_jumbo.jpg"
-                />
-              </a>
             </div>
           </div>
         </div>
@@ -201,7 +205,6 @@ class Apphome extends Component {
           </div>
         </div>
       </SwiperSlide>,
-   
     ];
 
     return (
