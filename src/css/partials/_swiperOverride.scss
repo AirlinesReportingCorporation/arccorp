@@ -16,6 +16,7 @@ $margin-spacing: 30px;
   .youtube-background {
     background: variables.$tarmac;
     border-radius: 20px;
+    pointer-events: all !important;
     video, iframe {
       width: 1210px !important;
     }
