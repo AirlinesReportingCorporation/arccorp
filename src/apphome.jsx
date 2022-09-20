@@ -232,7 +232,6 @@ class Apphome extends Component {
                 </div>
                 <a
                   className="ctaBtn ctaBtn--white p-0 tarmac"
-                  target="_blank"
                   href="https://www2.arccorp.com/products-participation/products/destination-gateway/?utm_source=Jumbo_Carousel"
                 >
                   Learn More
