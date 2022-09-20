@@ -19,6 +19,7 @@ $margin-spacing: 30px;
     pointer-events: all !important;
     video, iframe {
       width: 1210px !important;
+      z-index: -1 !important;
     }
   }
 }
@@ -79,11 +80,18 @@ $margin-spacing: 30px;
   max-width: 960px;
   margin: 0 auto;
   padding: 15px;
+  width: 100%;
 
   &.white,
   h2.white {
     color: variables.$white;
   }
+}
+
+.#{$name}jumbo-new {
+  color: rgb(247, 127, 0);
+  text-transform: uppercase;
+  font-family: SourceSansPro-Bold, Arial, Helvetica, sans-serif;
 }
 
 .#{$name}jumbo-inner-title {

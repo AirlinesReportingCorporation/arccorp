@@ -212,7 +212,7 @@ class Apphome extends Component {
             "https://www2.arccorp.com/globalassets/homepage/redesign/march-update/jumbotron_retina_DG.jpeg"
           }
         >
-          <div className="arc-jumbo-inner white" style={{ width: "100%" }}>
+          <div className="arc-jumbo-inner white">
             <div className="row">
               <div className="col-lg-7 col-md-12">
                 <img
@@ -222,7 +222,7 @@ class Apphome extends Component {
                     marginBottom: "15px",
                   }}
                 />
-                <div style={{ color: "#f77f00", fontFamily: "SourceSansPro-Bold" }}>NEW</div>
+                <div className="arc-jumbo-new">NEW</div>
                 <h2 className="arc-jumbo-inner-title white">
                   Destination Gateway
                 </h2>
