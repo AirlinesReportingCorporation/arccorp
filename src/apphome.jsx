@@ -212,21 +212,23 @@ class Apphome extends Component {
             "https://www2.arccorp.com/globalassets/homepage/redesign/march-update/jumbotron_retina_DG.jpeg"
           }
         >
-          <div className="arc-jumbo-inner white" style={{width: "100%"}}>
+          <div className="arc-jumbo-inner white" style={{ width: "100%" }}>
             <div className="row">
               <div className="col-lg-7 col-md-12">
                 <img
-                  src="https://www2.arccorp.com/globalassets/arc-logos/corporate-logos/arc-logo-l-gray.png"
+                  src="https://www2.arccorp.com/globalassets/homepage/redesign/march-update/arcfk.png"
                   style={{
-                    maxWidth: "60px",
+                    maxWidth: "250px",
                     marginBottom: "15px",
                   }}
                 />
+                <div style={{ color: "#f77f00", fontFamily: "SourceSansPro-Bold" }}>NEW</div>
                 <h2 className="arc-jumbo-inner-title white">
-                Destination Gateway
+                  Destination Gateway
                 </h2>
                 <div className="arc-jumbo-inner-body">
-                Gain Global Airline Insights to Grow your Destination Marketing
+                  Gain Global Airline Insights to Grow your Destination
+                  Marketing
                 </div>
                 <a
                   className="ctaBtn ctaBtn--white p-0 tarmac"
