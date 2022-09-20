@@ -18,3 +18,8 @@ p {
 .home-page a.ctaBtn {
   min-width: 160px;
 }
+
+a.ctaBtn:focus {
+  background: #1a9cb1;
+  border-color: #1a9cb1;
+}
