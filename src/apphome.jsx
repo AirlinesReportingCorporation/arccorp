@@ -516,13 +516,14 @@ class Apphome extends Component {
               >
                 <div className="row align-items-center no-gutters">
                   <div className="col-lg-3 height-auto">
-                    <div style={{paddingLeft: "60px"}}>
+                    <div style={{ paddingLeft: "60px" }}>
                       <div
                         style={{
                           color: "#888888",
                           fontFamily:
                             "SourceSansPro-SemiBold, Arial, Helvetica, sans-serif",
                           fontSize: "14px",
+                          lineHeight: "1",
                         }}
                       >
                         Product Highlight
@@ -540,9 +541,7 @@ class Apphome extends Component {
                     </div>
                   </div>
                   <div className="col-lg-6 text-center height-auto">
-                    <div
-                      className="arc-homepage-small-title"
-                    >
+                    <div className="arc-homepage-small-title">
                       Insights to Grow <span>Destinations</span>
                     </div>
                   </div>
