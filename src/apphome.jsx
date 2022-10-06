@@ -509,10 +509,10 @@ class Apphome extends Component {
           <div className="row">
             <div className="col-lg-12">
               <a
-                href="https://www2.arccorp.com/products-participation/products/arc-travel-demand/?utm_source=homepage-card-long"
+                href="https://www2.arccorp.com/products-participation/products/destination-gateway/?utm_source=homepage-card-long"
                 className="d-block arc-homepage-card arc-homepage-card-small lazy"
                 data-bg={
-                  "https://www2.arccorp.com/globalassets/homepage/redesign/march-update/product_highlight.jpg"
+                  "https://www2.arccorp.com/globalassets/homepage/redesign/march-update/DG_product_highlight.jpg"
                 }
               >
                 <div className="row align-items-center no-gutters">
