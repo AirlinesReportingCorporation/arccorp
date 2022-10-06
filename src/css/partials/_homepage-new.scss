@@ -29,6 +29,14 @@ $margin-spacing: 30px;
   margin-right: auto;
 }
 
+a.#{$name}homepage-card {
+  cursor: pointer !important;
+
+  &:hover {
+    cursor: pointer !important;
+  }
+}
+
 .#{$name}homepage-card {
   border-radius: variables.$border-radius;
   position: relative;

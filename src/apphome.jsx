@@ -512,20 +512,20 @@ class Apphome extends Component {
                 href="https://www2.arccorp.com/products-participation/products/destination-gateway/?utm_source=homepage-card-long"
                 className="d-block arc-homepage-card arc-homepage-card-small lazy"
                 data-bg={
-                  "https://www2.arccorp.com/globalassets/homepage/redesign/march-update/DG_product_highlight.jpg"
+                  "https://www2.arccorp.com/globalassets/homepage/redesign/march-update/DG_product_highlight-bg.jpg"
                 }
               >
                 <div className="row align-items-center no-gutters">
                   <div className="col-lg-3 height-auto">
-                    <img src="https://www2.arccorp.com/globalassets/homepage/redesign/slides/homepage-atd-logo.png" />
+                    <div style={{color: "#888888", fontFamily: "SourceSansPro-SemiBold, Arial, Helvetica, sans-serif", fontSize: "14px"}}>Product Highlight</div>
+                    <div style={{color: "#ffffff", fontFamily: "SourceSansPro-Regular, Arial, Helvetica, sans-serif", fontSize: "24px"}}>Destination Gateway</div>
                   </div>
                   <div className="col-lg-6 text-center height-auto">
                     <div
                       className="arc-homepage-small-title"
                       style={{ marginLeft: "25px" }}
                     >
-                      Gain <span>full visibility</span> into air travel
-                      activity.
+                      Insights to Grow <span>Destinations</span>
                     </div>
                   </div>
                   <div className="col-lg-3 height-auto text-right">
