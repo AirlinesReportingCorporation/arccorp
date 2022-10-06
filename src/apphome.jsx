@@ -241,6 +241,35 @@ class Apphome extends Component {
           </div>
         </div>
       </SwiperSlide>,
+      <SwiperSlide>
+        <div
+          className="arc-jumbo lazy"
+          data-bg={
+            "https://www2.arccorp.com/globalassets/homepage/redesign/slides/data_analytics_jumbotron_retina.jpg"
+          }
+        >
+          <div className="arc-jumbo-inner white">
+            <div className="row">
+              <div className="col-lg-7 col-md-12">
+
+                <div className="arc-jumbo-new">NEW</div>
+                <h2 className="arc-jumbo-inner-title white">
+                  Advanced Data Analytics
+                </h2>
+                <div className="arc-jumbo-inner-body">
+                  Advanced data analytic solutions using Artificial Intelligence
+                </div>
+                <a
+                  className="ctaBtn ctaBtn--white p-0 tarmac"
+                  href="https://www2.arccorp.com/products-participation/products/advanced-data-analytics/?utm_source=Jumbo_Carousel"
+                >
+                  Learn More
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </SwiperSlide>,
     ];
 
     return (
