@@ -251,7 +251,6 @@ class Apphome extends Component {
           <div className="arc-jumbo-inner white">
             <div className="row">
               <div className="col-lg-7 col-md-12">
-
                 <div className="arc-jumbo-new">NEW</div>
                 <h2 className="arc-jumbo-inner-title white">
                   Advanced Data Analytics
@@ -517,13 +516,32 @@ class Apphome extends Component {
               >
                 <div className="row align-items-center no-gutters">
                   <div className="col-lg-3 height-auto">
-                    <div style={{color: "#888888", fontFamily: "SourceSansPro-SemiBold, Arial, Helvetica, sans-serif", fontSize: "14px"}}>Product Highlight</div>
-                    <div style={{color: "#ffffff", fontFamily: "SourceSansPro-Regular, Arial, Helvetica, sans-serif", fontSize: "24px"}}>Destination Gateway</div>
+                    <div style={{paddingLeft: "60px"}}>
+                      <div
+                        style={{
+                          color: "#888888",
+                          fontFamily:
+                            "SourceSansPro-SemiBold, Arial, Helvetica, sans-serif",
+                          fontSize: "14px",
+                        }}
+                      >
+                        Product Highlight
+                      </div>
+                      <div
+                        style={{
+                          color: "#ffffff",
+                          fontFamily:
+                            "SourceSansPro-Regular, Arial, Helvetica, sans-serif",
+                          fontSize: "24px",
+                        }}
+                      >
+                        Destination Gateway
+                      </div>
+                    </div>
                   </div>
                   <div className="col-lg-6 text-center height-auto">
                     <div
                       className="arc-homepage-small-title"
-                      style={{ marginLeft: "25px" }}
                     >
                       Insights to Grow <span>Destinations</span>
                     </div>
