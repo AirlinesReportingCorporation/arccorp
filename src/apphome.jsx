@@ -548,7 +548,7 @@ class Apphome extends Component {
                   <div className="col-lg-3 height-auto text-right">
                     <div
                       className="arc-homepage-cta-link yellow mb-0"
-                      style={{ marginRight: "60px" }}
+                      style={{ marginRight: "40px" }}
                     >
                       <span>Learn More</span>
                     </div>
