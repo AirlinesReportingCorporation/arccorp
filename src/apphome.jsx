@@ -542,7 +542,7 @@ class Apphome extends Component {
                   </div>
                   <div className="col-lg-6 text-center height-auto">
                     <div className="arc-homepage-small-title">
-                      Insights to Grow <span>Destinations</span>
+                      Insights to <span>Grow Destinations</span>
                     </div>
                   </div>
                   <div className="col-lg-3 height-auto text-right">
