@@ -141,7 +141,7 @@ class Apphome extends Component {
             <div className="row text-center">
               <div className="col-lg-12">
                 <img
-                  src="https://www2.arccorp.com/globalassets/homepage/redesign/slides/Elevate-Travelconnect-Facebook.png"
+                  src="https://www2.arccorp.com/globalassets/homepage/redesign/slides/Elevate-Travelconnect-Facebook.png?1"
                   alt=""
                   className="img-fluid"
                 />
@@ -471,7 +471,7 @@ class Apphome extends Component {
             </div>
             <div className="col-lg-3 col-md-6">
               <a
-                href="https://arctravelconnect.com/episodes/growth-and-innovation-at-the-denver-international-airport?utm_source=homepage-card"
+                href="https://www2.arccorp.com/about-us/newsroom/2022-news-releases/atpco-arc-partner-elevate-travelconnect-2023?utm_source=homepage-card"
                 className="arc-homepage-card d-block arc-homepage-card-long align-items-center"
                 style={{ backgroundSize: "contain", background: "#060a0b" }}
               >
@@ -480,7 +480,7 @@ class Apphome extends Component {
                     <div
                       className="arc-homepage-card-inner d-flex flex-column lazy"
                       data-bg={
-                        "https://www2.arccorp.com/globalassets/homepage/redesign/march-update/TC_single_box.jpg"
+                        "https://www2.arccorp.com/globalassets/homepage/redesign/Homepage-Tall-Elevate-TravelConnect.png"
                       }
                       style={{
                         backgroundColor: "#060a0b",
@@ -488,9 +488,6 @@ class Apphome extends Component {
                         backgroundPositionX: 0,
                       }}
                     >
-                      <div className="arc-homepage-cta-link border-top-white yellow">
-                        <span>Watch Now</span>
-                      </div>
                     </div>
                   </div>
                 </div>
