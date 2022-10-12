@@ -136,34 +136,27 @@ class Apphome extends Component {
         </div>
       </SwiperSlide>,
       <SwiperSlide>
-        <div
-          className="arc-jumbo teal lazy"
-          data-bg={
-            "https://www2.arccorp.com/globalassets/homepage/redesign/march-update/podcast_jumbo.jpg"
-          }
-        >
+        <div className="arc-jumbo black lazy" style={{ background: "#000000" }}>
           <div className="arc-jumbo-inner white">
-            <div className="row">
-              <div className="offset-lg-6 col-lg-5">
+            <div className="row text-center">
+              <div className="col-lg-12">
                 <img
-                  src="https://www2.arccorp.com/globalassets/homepage/redesign/march-update/podcast2_jumbo.png"
+                  src="https://www2.arccorp.com/globalassets/homepage/redesign/slides/Elevate-Travelconnect-Facebook.png"
                   alt=""
                   className="img-fluid"
-                  style={{
-                    "margin-bottom": "25px",
-                  }}
                 />
                 <a
-                  href="https://www2.arccorp.com/arc-talk-podcast/omnichannel-chatter-with-cornerstone/?utm_source=Jumbo_Carousel"
-                  className="ctaBtn ctaBtn--white p-0"
+                  href="https://www2.arccorp.com/about-us/newsroom/2022-news-releases/atpco-arc-partner-elevate-travelconnect-2023?utm_source=Jumbo_Carousel"
+                  className="ctaBtn ctaBtn--white tarmac p-0 mt-4"
+                  style={{ color: "#000000 !important" }}
                 >
-                  Listen Now
+                  Learn More
                 </a>
                 <a
-                  href="https://www2.arccorp.com/arc-talk-podcast?utm_source=Jumbo_Carousel"
-                  className="ctaBtn ctaBtn--white-outline p-0 teal"
+                  href="https://www.youtube.com/watch?v=455BxzS76cQ?utm_source=Jumbo_Carousel"
+                  className="ctaBtn ctaBtn--white-outline p-0 teal mt-4"
                 >
-                  More Episodes
+                  Watch Video
                 </a>
               </div>
             </div>

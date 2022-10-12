@@ -237,6 +237,9 @@ $margin-spacing: 30px;
     &.teal {
       background: variables.$teal !important;
     }
+    &.black {
+      background: variables.$black !important;
+    }
     .#{$name}homepage-cta-link {
       display: block !important;
       margin: 15px auto;
