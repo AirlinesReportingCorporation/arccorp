@@ -473,21 +473,27 @@ class Apphome extends Component {
               <a
                 href="https://www2.arccorp.com/about-us/newsroom/2022-news-releases/atpco-arc-partner-elevate-travelconnect-2023?utm_source=homepage-card"
                 className="arc-homepage-card d-block arc-homepage-card-long align-items-center"
-                style={{ backgroundSize: "contain", background: "#060a0b" }}
+                style={{ backgroundSize: "contain", background: "#000000" }}
               >
                 <div className="row no-gutters align-items-center type-color-white">
                   <div className="col-lg-12">
                     <div
                       className="arc-homepage-card-inner d-flex flex-column lazy"
                       data-bg={
-                        "https://www2.arccorp.com/globalassets/homepage/redesign/Homepage-Tall-Elevate-TravelConnect.png"
+                        "https://www2.arccorp.com/globalassets/homepage/redesign/arc-elevate-tc-long.png"
                       }
                       style={{
-                        backgroundColor: "#060a0b",
+                        backgroundColor: "#000000",
                         backgroundSize: "contain",
                         backgroundPositionX: 0,
                       }}
                     >
+                      <div
+                        className="arc-homepage-cta-link text-center"
+                        style={{ paddingLeft: "20px" }}
+                      >
+                        <span>Learn More</span>
+                      </div>
                     </div>
                   </div>
                 </div>
