@@ -1,4 +1,7 @@
+//import all arccorp vars
+@use "~arccorp-vars/dist/scss/main.scss";
 @import "block-utilities";
+
 
 html {
   scroll-behavior: smooth;
@@ -1016,6 +1019,47 @@ a.product-sticky-link-right svg {
     font-size: 25px;
     line-height: 30px;
   }
+}
+
+.dg-icon-container {
+  max-width: 770px;
+  padding-top: 120px;
+  padding-bottom: 80px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.product-icon-item {
+  display: flex;
+  background: main.$tarmac;
+  color: #fff;
+  padding: 40px 30px;
+  border: 1px solid main.$fuselage;
+  border-radius: 7px;
+  margin-bottom: 10px;
+  position: relative;
+}
+
+.product-icon-title {
+  font-family: main.$arc-font-semibold;
+  color: main.$white;
+  font-size: 24px;
+  line-height: 28px;
+  margin-bottom: 60px;
+}
+
+.product-icon-img {
+  display: flex;
+  align-items: center;
+  height: 64px;
+}
+
+.product-icon-copy {
+  font-family: main.$arc-font-semibold;
+  color: main.$white;
+  font-size: 16px;
+  line-height: 22px;
+  margin-left: 40px;
 }
 
 @media screen and (max-width: 768px) {
