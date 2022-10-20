@@ -87,7 +87,7 @@ class Apphome extends Component {
       <SwiperSlide>
         <div
           className="youtube-background"
-          data-vbg="https://www2.arccorp.com/globalassets/video/sept-homepage2x.mp4"
+          data-vbg="https://www2.arccorp.com/globalassets/video/Oct-TotalSales2x.mp4"
         >
           <div
             className="arc-jumbo transparent"
@@ -104,17 +104,17 @@ class Apphome extends Component {
                   {}
 
                   <h2 className="arc-jumbo-inner-title white mb-1">
-                    August U.S. Travel Agency Air Ticket Sales More Than Doubled
-                    Year Over Year
+                    September U.S. Travel Agency Air Ticket Sales Total $7.3
+                    Billion
                   </h2>
                   <div
                     className="arc-jumbo-inner-body"
                     style={{ marginBottom: "60px" }}
                   >
-                    Passenger Trips Increased as Monthly Average Airfare Fell
-                    for Third-Consecutive Month{" "}
+                    Month-Over-Month Sales Remained Flat as Passenger Trips
+                    Decreased by 2%{" "}
                     <a className="arc-homepage-cta-link arc-jumbo-cta-link d-inline-flex p-0 pl-2">
-                      <a href="https://www2.arccorp.com/about-us/newsroom/2022-news-releases/august-u.s.-travel-agency-air-ticket-sales-more-than-doubled-year-over-year//?utm_source=Jumbo_Carousel">
+                      <a href="https://www2.arccorp.com/about-us/newsroom/2022-news-releases/september-u.s.-travel-agency-air-ticket-sales-total-$7.3-billion/?utm_source=Jumbo_Carousel">
                         Read More
                       </a>
                     </a>
