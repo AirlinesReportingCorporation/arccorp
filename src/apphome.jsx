@@ -27,9 +27,9 @@ function shuffleArray(array) {
 
 var statData = {
   modifier: "-",
-  number: "24.3",
-  type: "OTA Ticket Variance",
-  week: "October 16, 2022",
+  number: "26.4",
+  type: "Corporate Ticket Variance",
+  week: "October 23, 2022",
 };
 
 var homeData = {
