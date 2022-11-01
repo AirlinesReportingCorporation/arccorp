@@ -27,9 +27,9 @@ function shuffleArray(array) {
 
 var statData = {
   modifier: "-",
-  number: "26.4",
-  type: "Corporate Ticket Variance",
-  week: "October 23, 2022",
+  number: "7.9",
+  type: "Total Air Travel Ticket Variance",
+  week: "October 30, 2022",
 };
 
 var homeData = {
@@ -410,7 +410,7 @@ class Apphome extends Component {
                     {statData.type}
                   </div>
                   <div className="arc-homepage-numbers-eyebrow-2">
-                    vs. 2019 for the week ending {statData.week}
+                    for the week ending {statData.week}
                   </div>
                   <div className="arc-homepage-numbers-main">
                     <span className="arc-homepage-numbers-mod">
