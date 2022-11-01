@@ -34,11 +34,11 @@ var statData = {
 
 var homeData = {
   recentBlogTitle:
-    "Unauthorized Ticketing: How to Avoid Devastating Financial Losses",
+    "ARC Moves Direct Connect and NDC Forward",
   recentBlogLink:
-    "https://www2.arccorp.com/articles-trends/the-latest/unauthorized-ticketing-fraud/?utm_source=homepage-card",
+    "https://www2.arccorp.com/articles-trends/the-latest/ARC-Moves-Direct-Connect-NDC-Forward//?utm_source=homepage-card",
   recentBlogImage:
-    "https://www2.arccorp.com/globalassets/homepage/redesign/latest/unauthorized-ticketing-fraud.jpg",
+    "https://www2.arccorp.com/globalassets/homepage/redesign/latest/ARC-Moves-Direct-Connect-NDC-Forward.jpg/",
   popularArticles: [
     {
       date: "Updated Every Monday",
