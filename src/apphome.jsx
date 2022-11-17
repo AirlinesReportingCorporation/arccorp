@@ -33,8 +33,7 @@ var statData = {
 };
 
 var homeData = {
-  recentBlogTitle:
-    "ARC Moves Direct Connect and NDC Forward",
+  recentBlogTitle: "ARC Moves Direct Connect and NDC Forward",
   recentBlogLink:
     "https://www2.arccorp.com/articles-trends/the-latest/ARC-Moves-Direct-Connect-NDC-Forward//?utm_source=homepage-card",
   recentBlogImage:
@@ -87,7 +86,7 @@ class Apphome extends Component {
       <SwiperSlide>
         <div
           className="youtube-background"
-          data-vbg="https://www2.arccorp.com/globalassets/video/Oct-TotalSales2x-updated.mp4"
+          data-vbg="https://www2.arccorp.com/globalassets/video/november-homepage-2x.mp4"
         >
           <div
             className="arc-jumbo transparent"
@@ -104,17 +103,17 @@ class Apphome extends Component {
                   {}
 
                   <h2 className="arc-jumbo-inner-title white mb-1">
-                    September U.S. Travel Agency Air Ticket Sales Total $7.3
-                    Billion
+                    October Ancillary Sales by U.S. Air Travel Agencies Increase
+                    113% YoY
                   </h2>
                   <div
                     className="arc-jumbo-inner-body"
                     style={{ marginBottom: "60px" }}
                   >
-                    Month-Over-Month Sales Remained Flat as Passenger Trips
-                    Decreased by 2%{" "}
+                    Air Ticket Sales Totaled $7.3 Billion While International
+                    Passenger Trips Increased 37%{" "}
                     <a className="arc-homepage-cta-link arc-jumbo-cta-link d-inline-flex p-0 pl-2">
-                      <a href="https://www2.arccorp.com/about-us/newsroom/2022-news-releases/september-u.s.-travel-agency-air-ticket-sales-total-$7.3-billion/?utm_source=Jumbo_Carousel">
+                      <a href="https://www2.arccorp.com/about-us/newsroom/2022-news-releases/october-ancillary-sales-by-us-air-travel-agencies/?utm_source=Jumbo_Carousel">
                         Read More
                       </a>
                     </a>
