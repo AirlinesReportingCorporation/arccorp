@@ -26,10 +26,10 @@ function shuffleArray(array) {
 }
 
 var statData = {
-  modifier: "-",
-  number: "11.2",
-  type: "Total Air Travel Sales Variance",
-  week: "November 13, 2022",
+  modifier: "",
+  number: "9.6",
+  type: "Total Air Travel Ticket Variance",
+  week: "November 20, 2022",
 };
 
 var homeData = {
