@@ -758,21 +758,7 @@ if ($("#ndc-app").length) {
           iarMod: "Commission Only",
           iarMan: "None",
           salesfile: "SPRF"
-        },
-        {
-          display: false,
-          designator: "UA",
-          code: "016",
-          name: "United Airlines",
-          system: "0162",
-          payment: "Cash, Credit",
-          types: "Sales, Voids, Refunds, Exchanges",
-          refund: "Yes",
-          iarErr: "Return to Airline",
-          iarMod: "Commission Only",
-          iarMan: "None",
-          salesfile: "SPRF"
-        },
+        }
       ],
     },
     methods: {
