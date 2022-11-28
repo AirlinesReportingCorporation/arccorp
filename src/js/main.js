@@ -649,6 +649,20 @@ if ($("#ndc-app").length) {
       ndcAirlines: [
         {
           display: false,
+          designator: "AF",
+          code: "057",
+          name: "Air France",
+          system: "0571",
+          payment: "Cash, Credit",
+          types: "Sales, Voids, Refunds, Exchanges",
+          refund: "No",
+          iarErr: "Return to Airline",
+          iarMod: "Commission Only",
+          iarMan: "None",
+          salesfile: "RET"
+        },
+        {
+          display: false,
           designator: "TA",
           code: "202",
           name: "Avianca",
@@ -691,6 +705,34 @@ if ($("#ndc-app").length) {
         },
         {
           display: false,
+          designator: "KF",
+          code: "074",
+          name: "KLM",
+          system: "0744",
+          payment: "Cash, Credit",
+          types: "Sales, Voids, Refunds, Exchanges",
+          refund: "No",
+          iarErr: "Return to Airline",
+          iarMod: "Commission Only",
+          iarMan: "None",
+          salesfile: "RET"
+        },
+        {
+          display: false,
+          designator: "QR",
+          code: "157",
+          name: "Qatar",
+          system: "1573",
+          payment: "Cash, Credit",
+          types: "Sales, Voids, Refunds, Exchanges",
+          refund: "Yes",
+          iarErr: "Corrected by Agent",
+          iarMod: "All",
+          iarMan: "All",
+          salesfile: "SPRF"
+        },
+        {
+          display: false,
           designator: "SQ",
           code: "618",
           name: "Singapore Airlines",
@@ -701,6 +743,20 @@ if ($("#ndc-app").length) {
           iarErr: "Corrected by Agent",
           iarMod: "All",
           iarMan: "All",
+          salesfile: "SPRF"
+        },
+        {
+          display: false,
+          designator: "UA",
+          code: "016",
+          name: "United Airlines",
+          system: "0162",
+          payment: "Cash, Credit",
+          types: "Sales, Voids, Refunds, Exchanges",
+          refund: "Yes",
+          iarErr: "Return to Airline",
+          iarMod: "Commission Only",
+          iarMan: "None",
           salesfile: "SPRF"
         },
         {
