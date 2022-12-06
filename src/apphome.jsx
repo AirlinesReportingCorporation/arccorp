@@ -27,9 +27,9 @@ function shuffleArray(array) {
 
 var statData = {
   modifier: "",
-  number: "12.4",
+  number: "+23.8",
   type: "YoY Total Air Travel Ticket Variance",
-  week: "November 27, 2022",
+  week: "December 4, 2022",
 };
 
 var homeData = {
