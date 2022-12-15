@@ -103,7 +103,7 @@ class Apphome extends Component {
                   {}
 
                   <h2 className="arc-jumbo-inner-title white mb-1">
-                    Passenger Trips Increase 14% YoY in November
+                    Passenger Trips Increase 14% YoY <br/>in November
                   </h2>
                   <div
                     className="arc-jumbo-inner-body"
