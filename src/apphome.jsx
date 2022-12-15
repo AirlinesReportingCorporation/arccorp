@@ -102,7 +102,7 @@ class Apphome extends Component {
                   {/* This section is for when the video is not ready */}
                   {}
 
-                  <h2 className="arc-jumbo-inner-title white mb-1">
+                  <h2 className="arc-jumbo-inner-title white mb-1" style={{maxWidth: "720px", margin: "0 auto"}}>
                     Passenger Trips Increase 14% YoY <br/>in November
                   </h2>
                   <div
