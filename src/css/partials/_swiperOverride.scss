@@ -245,6 +245,10 @@ $margin-spacing: 30px;
       margin: 15px auto;
       text-align: center !important;
     }
+
+    &.#{$name}jumbo-holidays {
+      min-height: 0;
+    }
   }
 }
 

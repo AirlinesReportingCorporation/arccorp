@@ -306,27 +306,19 @@ class Apphome extends Component {
       <div className="arc-homepage">
         <div style={{ maxWidth: "100%", overflow: "hidden" }}>
           <div
-            className="arc-jumbo lazy"
-            style={{marginTop: "30px"}}
+            className="arc-jumbo arc-jumbo-holidays lazy"
+            style={{ marginTop: "30px" }}
             data-bg={
               "https://www2.arccorp.com/globalassets/homepage/redesign/slides/archoliday-jumbotron.jpg"
             }
           >
-            <div className="arc-jumbo-inner white">
-              <div className="row">
-                <div className="col-lg-7 col-md-12">
-                  <img
-                    src="https://www2.arccorp.com/globalassets/arc-logos/corporate-logos/arc-logo-l-gray.png"
-                    style={{
-                      maxWidth: "60px",
-                      marginBottom: "15px",
-                    }}
-                  />
-                  
-                </div>
-              </div>
-            </div>
+            <img
+              className="img-fluid mobile-only"
+              src="https://www2.arccorp.com/globalassets/homepage/redesign/slides/archoliday-jumbotron.jpg"
+              alt=""
+            />
           </div>
+
           {/* <Swiper
             navigation={true}
             centeredSlides={true}
