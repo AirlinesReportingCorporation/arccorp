@@ -27,9 +27,9 @@ function shuffleArray(array) {
 
 var statData = {
   modifier: "+",
-  number: "17.9",
-  type: "YoY Total Air Travel Ticket Variance",
-  week: "December 18, 2022",
+  number: "57.0",
+  type: "YoY Total Air Travel Sales Variance",
+  week: "December 11, 2022",
 };
 
 var homeData = {
@@ -102,8 +102,12 @@ class Apphome extends Component {
                   {/* This section is for when the video is not ready */}
                   {}
 
-                  <h2 className="arc-jumbo-inner-title white mb-1" style={{maxWidth: "720px", margin: "0 auto"}}>
-                    Passenger Trips Increase 14% YoY <br/>in November
+                  <h2
+                    className="arc-jumbo-inner-title white mb-1"
+                    style={{ maxWidth: "720px", margin: "0 auto" }}
+                  >
+                    Passenger Trips Increase 14% YoY <br />
+                    in November
                   </h2>
                   <div
                     className="arc-jumbo-inner-body"
@@ -301,7 +305,29 @@ class Apphome extends Component {
     return (
       <div className="arc-homepage">
         <div style={{ maxWidth: "100%", overflow: "hidden" }}>
-          <Swiper
+          <div
+            className="arc-jumbo lazy"
+            style={{marginTop: "30px"}}
+            data-bg={
+              "https://www2.arccorp.com/globalassets/homepage/redesign/slides/archoliday-jumbotron.jpg"
+            }
+          >
+            <div className="arc-jumbo-inner white">
+              <div className="row">
+                <div className="col-lg-7 col-md-12">
+                  <img
+                    src="https://www2.arccorp.com/globalassets/arc-logos/corporate-logos/arc-logo-l-gray.png"
+                    style={{
+                      maxWidth: "60px",
+                      marginBottom: "15px",
+                    }}
+                  />
+                  
+                </div>
+              </div>
+            </div>
+          </div>
+          {/* <Swiper
             navigation={true}
             centeredSlides={true}
             slidesPerView={"1.3"}
@@ -316,7 +342,7 @@ class Apphome extends Component {
             {shuffleArray(slides).map((data, i) => {
               return <div key={i}>{data}</div>;
             })}
-          </Swiper>
+          </Swiper> */}
         </div>
 
         <div className="arc-homepage-section">
