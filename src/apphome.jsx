@@ -474,7 +474,7 @@ class Apphome extends Component {
                           className="arc-homepage-card-subtitle"
                           style={{ width: "200px" }}
                         >
-                          See how ARC Supports the travel ecosystem.
+                          See how ARC supports the travel ecosystem.
                         </div>
                         <div className="arc-homepage-cta-link yellow">
                           <span href="https://www2.arccorp.com/articles-trends/sales-statistics?utm_source=homepage-card">
