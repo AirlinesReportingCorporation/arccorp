@@ -41,7 +41,7 @@ var homeData = {
   popularArticles: [
     {
       date: "Updated Every Monday",
-      title: "ARC Provides Updated Air Travel Data During COVID-19",
+      title: "ARC Data Shows Weekly Air Travel Recovery      ",
       link: "https://www2.arccorp.com/articles-trends/the-latest/coronavirus/",
     },
     {
@@ -457,7 +457,10 @@ class Apphome extends Component {
                 <div className="row align-items-center no-gutters">
                   <div className="col-lg-12">
                     <div className="arc-homepage-stats-container">
-                      <div className="arc-homepage-stats d-flex" style={{flexDirection: "column", flexGrow: "1"}}>
+                      <div
+                        className="arc-homepage-stats d-flex"
+                        style={{ flexDirection: "column", flexGrow: "1" }}
+                      >
                         <div
                           className="logo-link icon-arc-logo"
                           style={{ color: "#aaaaaa", marginBottom: "15px" }}
