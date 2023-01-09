@@ -305,7 +305,7 @@ class Apphome extends Component {
     return (
       <div className="arc-homepage">
         <div style={{ maxWidth: "100%", overflow: "hidden" }}>
-          <div
+          {/* <div
             className="arc-jumbo arc-jumbo-holidays lazy"
             style={{ marginTop: "30px" }}
             data-bg={
@@ -317,9 +317,9 @@ class Apphome extends Component {
               src="https://www2.arccorp.com/globalassets/homepage/redesign/slides/archoliday-jumbotron.jpg"
               alt=""
             />
-          </div>
+          </div> */}
 
-          {/* <Swiper
+          <Swiper
             navigation={true}
             centeredSlides={true}
             slidesPerView={"1.3"}
@@ -334,7 +334,7 @@ class Apphome extends Component {
             {shuffleArray(slides).map((data, i) => {
               return <div key={i}>{data}</div>;
             })}
-          </Swiper> */}
+          </Swiper>
         </div>
 
         <div className="arc-homepage-section">
