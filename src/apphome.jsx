@@ -27,9 +27,9 @@ function shuffleArray(array) {
 
 var statData = {
   modifier: "+",
-  number: "17.9",
-  type: "YoY Total Air Travel Ticket Variance",
-  week: "December 18, 2022",
+  number: "57.0",
+  type: "YoY Total Air Travel Sales Variance",
+  week: "December 11, 2022",
 };
 
 var homeData = {
@@ -41,7 +41,7 @@ var homeData = {
   popularArticles: [
     {
       date: "Updated Every Monday",
-      title: "ARC Provides Updated Air Travel Data During COVID-19",
+      title: "ARC Data Shows Weekly Air Travel Recovery      ",
       link: "https://www2.arccorp.com/articles-trends/the-latest/coronavirus/",
     },
     {
@@ -102,8 +102,12 @@ class Apphome extends Component {
                   {/* This section is for when the video is not ready */}
                   {}
 
-                  <h2 className="arc-jumbo-inner-title white mb-1" style={{maxWidth: "720px", margin: "0 auto"}}>
-                    Passenger Trips Increase 14% YoY <br/>in November
+                  <h2
+                    className="arc-jumbo-inner-title white mb-1"
+                    style={{ maxWidth: "720px", margin: "0 auto" }}
+                  >
+                    Passenger Trips Increase 14% YoY <br />
+                    in November
                   </h2>
                   <div
                     className="arc-jumbo-inner-body"
@@ -301,6 +305,20 @@ class Apphome extends Component {
     return (
       <div className="arc-homepage">
         <div style={{ maxWidth: "100%", overflow: "hidden" }}>
+          {/* <div
+            className="arc-jumbo arc-jumbo-holidays lazy"
+            style={{ marginTop: "30px" }}
+            data-bg={
+              "https://www2.arccorp.com/globalassets/homepage/redesign/slides/archoliday-jumbotron.jpg"
+            }
+          >
+            <img
+              className="img-fluid mobile-only"
+              src="https://www2.arccorp.com/globalassets/homepage/redesign/slides/archoliday-jumbotron.jpg"
+              alt=""
+            />
+          </div> */}
+
           <Swiper
             navigation={true}
             centeredSlides={true}
@@ -391,57 +409,7 @@ class Apphome extends Component {
                 </div>
               </div>
             </div>
-            <div className="col-lg-6">
-              <a
-                href="https://www2.arccorp.com/articles-trends/the-latest/coronavirus?utm_source=homepage-card"
-                className="arc-homepage-card d-flex flex-column align-items-center type-color-white text-center lazy"
-                data-bg={
-                  "https://www2.arccorp.com/globalassets/homepage/redesign/slides/homepage-sales-variance.png"
-                }
-              >
-                <div className="arc-homepage-numbers d-flex flex-column align-items-center">
-                  <div className="arc-homepage-numbers-caption">
-                    ARC's Weekly Airline Sales Data
-                  </div>
-                  <div className="arc-homepage-numbers-eyebrow">
-                    {statData.type}
-                  </div>
-                  <div className="arc-homepage-numbers-eyebrow-2">
-                    for the week ending {statData.week}
-                  </div>
-                  <div className="arc-homepage-numbers-main">
-                    <span className="arc-homepage-numbers-mod">
-                      {statData.modifier}
-                    </span>
-                    {statData.number}
-                    <span>%</span>
-                  </div>
 
-                  <div className="arc-homepage-numbers-body">
-                    Stay up to date on the latest{" "}
-                    <span>airline sales trends during COVID-19</span>.
-                  </div>
-                  <div className="">
-                    <div className="arc-homepage-cta-link arc-homepage-cta-link-center yellow">
-                      <a href="https://www2.arccorp.com/articles-trends/the-latest/coronavirus?utm_source=homepage-card">
-                        See the Data
-                      </a>
-                    </div>
-                  </div>
-                </div>
-              </a>
-            </div>
-          </div>
-
-          <div className="row">
-            <div className="col-lg-12">
-              <div style={{ marginBottom: "60px" }}>
-                <PodcastWidget />
-              </div>
-            </div>
-          </div>
-
-          <div className="row">
             <div className="col-lg-6">
               <a
                 href="https://www2.arccorp.com/articles-trends/sales-statistics?utm_source=homepage-card"
@@ -461,6 +429,61 @@ class Apphome extends Component {
                         <span href="https://www2.arccorp.com/articles-trends/sales-statistics?utm_source=homepage-card">
                           Learn More
                         </span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </a>
+            </div>
+          </div>
+
+          <div className="row">
+            <div className="col-lg-12">
+              <div style={{ marginBottom: "60px" }}>
+                <PodcastWidget />
+              </div>
+            </div>
+          </div>
+
+          <div className="row">
+            <div className="col-lg-6">
+              <a
+                href="https://www2.arccorp.com/about-us/our-story/?utm_source=homepage-card"
+                className="arc-homepage-card d-block lazy"
+                data-bg={
+                  "https://www2.arccorp.com/globalassets/homepage/redesign/march-update/double_box_jumbo.jpg"
+                }
+              >
+                <div className="row align-items-center no-gutters">
+                  <div className="col-lg-12">
+                    <div className="arc-homepage-stats-container">
+                      <div
+                        className="arc-homepage-stats d-flex"
+                        style={{ flexDirection: "column", flexGrow: "1" }}
+                      >
+                        <div
+                          className="logo-link icon-arc-logo"
+                          style={{ color: "#aaaaaa", marginBottom: "15px" }}
+                        ></div>
+                        <div
+                          className="arc-homepage-stats-title"
+                          style={{ width: "300px" }}
+                        >
+                          <span>
+                            Accelerate The Growth of Global Air Travel
+                          </span>
+                        </div>
+                        <div
+                          className="arc-homepage-card-subtitle"
+                          style={{ width: "200px" }}
+                        >
+                          See how ARC supports the travel ecosystem.
+                        </div>
+                        <div className="arc-homepage-cta-link yellow">
+                          <span href="https://www2.arccorp.com/articles-trends/sales-statistics?utm_source=homepage-card">
+                            Learn More
+                          </span>
+                        </div>
                       </div>
                     </div>
                   </div>
