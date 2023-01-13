@@ -16,8 +16,13 @@ $margin-spacing: 30px;
     background: #ffffff;
   }
 
+  .podcast-player {
+    transform: translateZ(0);
+  }
+
   .podcast-player .info .icon:hover {
     cursor: pointer;
+
   }
 }
 
