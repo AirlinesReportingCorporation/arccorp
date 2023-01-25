@@ -86,7 +86,7 @@ class Apphome extends Component {
       <SwiperSlide>
         <div
           className="youtube-background"
-          data-vbg="https://www2.arccorp.com/globalassets/video/december-homepage-2x.mp4"
+          data-vbg="https://www2.arccorp.com/globalassets/january-homepage-2x.mp4"
         >
           <div
             className="arc-jumbo transparent"
@@ -106,16 +106,16 @@ class Apphome extends Component {
                     className="arc-jumbo-inner-title white mb-1"
                     style={{ maxWidth: "720px", margin: "0 auto" }}
                   >
-                    Passenger Trips Increase 14% YoY <br />
-                    in November
+                    December Passenger Trips <br/>Increase 23% YoY
+
                   </h2>
                   <div
                     className="arc-jumbo-inner-body"
                     style={{ marginBottom: "60px" }}
                   >
-                    International Passenger Trips Increased 32% Year over Year{" "}
+                    International Passenger Trips Increased 57% Year over Year{" "}
                     <a className="arc-homepage-cta-link arc-jumbo-cta-link d-inline-flex p-0 pl-2">
-                      <a href="https://www2.arccorp.com/about-us/newsroom/2022-news-releases/passenger-trips-in-november-2022/?utm_source=Jumbo_Carousel">
+                      <a href="https://www2.arccorp.com/about-us/newsroom/2023-news-releases/december-passenger-trips-increase-23-percent-yoy/?utm_source=Jumbo_Carousel">
                         Read More
                       </a>
                     </a>
