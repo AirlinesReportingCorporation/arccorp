@@ -45,23 +45,23 @@ var homeData = {
       link: "https://www2.arccorp.com/articles-trends/the-latest/coronavirus/",
     },
     {
-      date: "Jan 12, 2022",
-      title: "ARC’s Top Insights from 2021",
+      date: "Dec 22, 2022",
+      title: "ARC's Top 10 Blog Posts of 2022",
       link:
-        "https://www2.arccorp.com/articles-trends/the-latest/arc-top-insights-2021/",
+        "https://www2.arccorp.com/articles-trends/the-latest/top-10-blogs-2022/",
     },
     {
-      date: "May 1, 2020",
-      title: "ARC’s COVID-19 Resources for Airlines and Travel Agencies",
+      date: "Mar 03, 2022",
+      title: "A Deep Dive into Omnichannel Retailing",
       link:
-        "https://www2.arccorp.com/articles-trends/the-latest/arcs-covid-19-resources-for-airlines-and-travel-agencies/",
+        "https://www2.arccorp.com/articles-trends/the-latest/omnichannel-series-recap/",
     },
     {
-      date: "Jan 27, 2022",
+      date: "Sep 08, 2022",
       title:
-        "Top Corporate Equity Index Score Reflects ARC’s Commitment to Diversity, Inclusion",
+        "Unauthorized Ticketing: How to Avoid Devastating Financial Losses",
       link:
-        "https://www2.arccorp.com/articles-trends/the-latest/arc-receives-top-corporate-equity-index-score-2022/",
+        "https://www2.arccorp.com/articles-trends/the-latest/unauthorized-ticketing-fraud/",
     },
   ],
 };
