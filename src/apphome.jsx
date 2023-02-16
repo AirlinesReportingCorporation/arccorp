@@ -86,7 +86,7 @@ class Apphome extends Component {
       <SwiperSlide>
         <div
           className="youtube-background-2"
-          data-vbg="https://www2.arccorp.com/globalassets/homepage/redesign/feb-homepage-2x.mp4"
+          data-vbg="https://www2.arccorp.com/globalassets/homepage/redesign/feb-homepage-2x-2.mp4"
         >
           <div
             className="arc-jumbo transparent"
