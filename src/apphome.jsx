@@ -85,14 +85,14 @@ class Apphome extends Component {
     var slides = [
       <SwiperSlide>
         <div
-          className="youtube-background"
-          data-vbg="https://www2.arccorp.com/globalassets/january-homepage-2x.mp4"
+          className="youtube-background-2"
+          data-vbg="https://www2.arccorp.com/globalassets/homepage/redesign/feb-homepage-2x.mp4"
         >
           <div
             className="arc-jumbo transparent"
             style={{ alignItems: "flex-end" }}
           >
-            <div className="arc-jumbo-inner align-items-baseline white text-center">
+            <div className="arc-jumbo-inner align-items-baseline text-center">
               <div className="row">
                 <div className="col-md-12 col-sm-12">
                   {/* Comment out jumbovideo when video is ready */}
@@ -103,7 +103,7 @@ class Apphome extends Component {
                   {}
 
                   <h2
-                    className="arc-jumbo-inner-title white mb-1"
+                    className="arc-jumbo-inner-title mb-1"
                     style={{ maxWidth: "720px", margin: "0 auto" }}
                   >
                     December Passenger Trips <br/>Increase 23% YoY
