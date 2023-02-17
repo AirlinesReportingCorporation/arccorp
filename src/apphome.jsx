@@ -141,19 +141,19 @@ class Apphome extends Component {
             <div className="row text-center">
               <div className="col-lg-12">
                 <img
-                  src="https://www2.arccorp.com/globalassets/homepage/redesign/slides/Elevate-Travelconnect-Facebook.png?1"
+                  src="https://www2.arccorp.com/globalassets/homepage/redesign/tc24.png"
                   alt=""
                   className="img-fluid"
                 />
                 <a
-                  href="https://www2.arccorp.com/about-us/newsroom/2022-news-releases/atpco-arc-partner-elevate-travelconnect-2023?utm_source=Jumbo_Carousel"
+                  href="https://atpcodigital.co1.qualtrics.com/jfe/form/SV_cLQ4SgQDZfRd21E?utm_source=Jumbo_Carousel"
                   className="ctaBtn ctaBtn--white tarmac p-0 mt-4"
                   style={{ color: "#000000 !important" }}
                 >
                   Learn More
                 </a>
                 <a
-                  href="https://www.youtube.com/watch?v=455BxzS76cQ?utm_source=Jumbo_Carousel"
+                  href="https://youtu.be/_5wZ8LvruKE?utm_source=Jumbo_Carousel"
                   className="ctaBtn ctaBtn--white-outline p-0 teal mt-4"
                 >
                   Watch Video
@@ -527,7 +527,7 @@ class Apphome extends Component {
             </div>
             <div className="col-lg-3 col-md-6">
               <a
-                href="https://www2.arccorp.com/about-us/newsroom/2022-news-releases/atpco-arc-partner-elevate-travelconnect-2023?utm_source=homepage-card"
+                href="https://atpcodigital.co1.qualtrics.com/jfe/form/SV_cLQ4SgQDZfRd21E?utm_source=homepage-card"
                 className="arc-homepage-card d-block arc-homepage-card-long align-items-center"
                 style={{ backgroundSize: "contain", background: "#000000" }}
               >
@@ -536,7 +536,7 @@ class Apphome extends Component {
                     <div
                       className="arc-homepage-card-inner d-flex flex-column lazy"
                       data-bg={
-                        "https://www2.arccorp.com/globalassets/homepage/redesign/arc-elevate-tc-long.png"
+                        "https://www2.arccorp.com/globalassets/homepage/redesign/TC24_single_box.jpg"
                       }
                       style={{
                         backgroundColor: "#000000",
