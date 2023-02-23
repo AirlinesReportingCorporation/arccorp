@@ -303,15 +303,55 @@ function articleSocial() {
       $(".btn--link.parentLink").text() == "Case Studies" ||
       $(".custom-brow span").text() == "Highlights"
     ) {
+      var link = window.location.href;
       var url = window.location.href + "?utm_source=social_share";
       var meta = $("meta[name='description']").prop("content");
       var title = $("h1.mainTitle").text();
+      $(".article--headline")
+        .parent()
+        .addClass("blog-layout");
 
-      $(".basic-text-inside")
-        .eq(0)
-        .prepend("<div class='articleShareContainer'></div>");
+      if (link.indexOf("blog-page.html") > -1) {
+        link =
+          "https://www2.arccorp.com/articles-trends/the-latest/ARC-Moves-Direct-Connect-NDC-Forward/";
+      }
 
-      $(".articleShareContainer").append("<div class='shareTitle'>Share</div>");
+      if (link.indexOf("no-author") > -1) {
+        link =
+          "https://www2.arccorp.com/articles-trends/the-latest/book-now-pay-later-options-for-travel-agencies/";
+      }
+
+      console.log(link);
+
+      var subString = link
+        .substring(link.indexOf("latest/") + 7)
+        .replace("/", "");
+      if (link.indexOf("arctravelconnect") > -1) {
+        subString = link
+          .substring(link.indexOf("highlights/") + 11)
+          .replace("/", "");
+      }
+
+      var articleDate = $(".author-byline .metadata li")
+        .last()
+        .text();
+
+      var isAuthor = $(".page-author").length > 0;
+
+      var articleAuthor = isAuthor
+        ? $(".author-byline .metadata li")
+            .first()
+            .text()
+        : "";
+
+      var imgLink =
+        "https://www2.arccorp.com/globalassets/homepage/redesign/latest/" +
+        subString +
+        ".jpg";
+
+      var isRelated = $(".related-content__content").length > 0;
+
+      var authorSection = "";
 
       //add facebook share
       var facebookUrl =
@@ -350,26 +390,107 @@ function articleSocial() {
           "'></a>"
       );
 
-      var scrollTop = $(".basic-text-inside")
-        .eq(0)
-        .offset().top;
-      var scrollLeft = $(".basic-text-inside")
-        .eq(0)
-        .offset().left;
+      if (isAuthor) {
+        authorSection =
+          "<div class='arc-blog-author-side'>" +
+          "<img class='arc-blog-author-img' src='" +
+          $(".page-author__avatar img").attr("src") +
+          "'/>" +
+          "<div class='arc-blog-author-title'>About the Author</div>" +
+          "<div class='arc-blog-author-description'>" +
+          $(".page-author__body").html() +
+          "</div>" +
+          "<div class='arc-blog-share'>" +
+          "<a href='" +
+          linkedinUrl +
+          "'><img src='https://www2.arccorp.com/globalassets/homepage/redesign/latest/linkedin.png'/></a>" +
+          "<a href='" +
+          twitterUrl +
+          "'><img src='https://www2.arccorp.com/globalassets/homepage/redesign/latest/twitter.png'/></a>" +
+          "<a href='" +
+          facebookUrl +
+          "'><img src='https://www2.arccorp.com/globalassets/homepage/redesign/latest/facebook.png'/></a>" +
+          "</div>" +
+          "</div>";
+      }
 
-      $(window).scroll(function() {
-        articleResize(scrollTop, scrollLeft);
-      });
+      $(".article--headline").before(
+        "<div class='arc-blog-page'><div class='arc-blog-page-jumbo'><div class='row no-gutters'><div class='col-lg-6'><div class='arc-blog-page-left'><div class='arc-blog-page-top-img'><img src='" +
+          imgLink +
+          "' /></div></div></div><div class='col-lg-6'><div class='arc-blog-page-right-container'><div class='arc-blog-page-right'><div>" +
+          "<div class='arc-blog-eyebrow'>" +
+          articleDate +
+          " <i class='fa fa-circle'></i> <span class='readingTime'></span> Read</div>" +
+          "<div class='arc-blog-title'>" +
+          $(".mainTitle").text() +
+          "</div>" +
+          "<div class='arc-blog-description'>" +
+          meta +
+          "</div>" +
+          "<div class='arc-blog-author'>" +
+          articleAuthor +
+          "</div>" +
+          "</div></div></div></div></div></div>" +
+          "<div class='arc-blog-content'><div class='row'><div class='" +
+          (isAuthor ? "col-lg-3" : "d-none") +
+          "'>" +
+          authorSection +
+          "</div><div class='" +
+          (isAuthor ? "col-lg-9" : "col-lg-12 no-author") +
+          "'><div class='arc-blog-html'>" +
+          $(".rtf").html() +
+          "</div></div><div></div>"
+      );
 
-      $(window).resize(function() {
-        console.log("hit");
-        scrollTop = $(".basic-text-inside")
-          .eq(0)
-          .offset().top;
-        scrollLeft = $(".basic-text-inside")
-          .eq(0)
-          .offset().left;
-        articleResize(scrollTop, scrollLeft);
+      console.log(isRelated);
+
+      if (isRelated) {
+        var cards = "";
+        $(".related-content__items .content-block").each(function() {
+          var title = $(this)
+            .find(".ctaLink")
+            .text();
+          var description = $(this)
+            .find(".content-block__body")
+            .html();
+          var link = $(this)
+            .find(".ctaLink")
+            .attr("href");
+          var subString = link
+            .substring(link.indexOf("latest/") + 7)
+            .replace("/", "");
+          if (link.indexOf("arctravelconnect") > -1) {
+            subString = link
+              .substring(link.indexOf("highlights/") + 11)
+              .replace("/", "");
+          }
+
+          var imgLink =
+            "https://www2.arccorp.com/globalassets/homepage/redesign/latest/" +
+            subString +
+            ".jpg";
+
+          var card =
+            "<div class='col-lg-3'><div class='arc-blog-related-card'><div class='arc-blog-related-text'><div class='arc-blog-related-text-title'>" +
+            title +
+            "</div><div class='arc-blog-related-description'>" +
+            description +
+            "</div><a href='" +
+            link +
+            "' class='link-download'>Learn More <i class='fas fa-chevron-right'></i></a></div></div></div>";
+
+          cards += card;
+        });
+
+        $("footer").before(
+          "<div class='bg-color-fog'><div class='arc-blog-related'><div class='arc-blog-related-title'>More Stories</div><div class='row'>" +
+            cards +
+            "</div></div></div>"
+        );
+      }
+
+      $(".article-body").readingTime({
+        readingTimeTarget: ".readingTime",
       });
     }
   }
@@ -659,7 +780,7 @@ if ($("#ndc-app").length) {
           iarErr: "Return to Airline",
           iarMod: "Commission Only",
           iarMan: "None",
-          salesfile: "RET"
+          salesfile: "RET",
         },
         {
           display: false,
@@ -673,7 +794,7 @@ if ($("#ndc-app").length) {
           iarErr: "Corrected by Agent",
           iarMod: "All",
           iarMan: "All",
-          salesfile: "RET"
+          salesfile: "RET",
         },
         {
           display: false,
@@ -687,7 +808,7 @@ if ($("#ndc-app").length) {
           iarErr: "Return to Airline",
           iarMod: "None",
           iarMan: "None",
-          salesfile: "RET"
+          salesfile: "RET",
         },
         {
           display: false,
@@ -701,7 +822,7 @@ if ($("#ndc-app").length) {
           iarErr: "Return to Airline",
           iarMod: "None",
           iarMan: "None",
-          salesfile: "RET"
+          salesfile: "RET",
         },
         {
           display: false,
@@ -715,7 +836,7 @@ if ($("#ndc-app").length) {
           iarErr: "Return to Airline",
           iarMod: "Commission Only",
           iarMan: "None",
-          salesfile: "RET"
+          salesfile: "RET",
         },
         {
           display: false,
@@ -729,7 +850,7 @@ if ($("#ndc-app").length) {
           iarErr: "Corrected by Agent",
           iarMod: "All",
           iarMan: "All",
-          salesfile: "SPRF"
+          salesfile: "SPRF",
         },
         {
           display: false,
@@ -743,7 +864,7 @@ if ($("#ndc-app").length) {
           iarErr: "Corrected by Agent",
           iarMod: "All",
           iarMan: "All",
-          salesfile: "SPRF"
+          salesfile: "SPRF",
         },
         {
           display: false,
@@ -757,8 +878,8 @@ if ($("#ndc-app").length) {
           iarErr: "Return to Airline",
           iarMod: "Commission Only",
           iarMan: "None",
-          salesfile: "SPRF"
-        }
+          salesfile: "SPRF",
+        },
       ],
     },
     methods: {
@@ -867,12 +988,20 @@ if ($("body").hasClass("home-page")) {
     $(".jumbo-img-switch").hide();
     $(".jumbo-img-video").show();
 
-    var symbol = $(".jumbo-img-video iframe").attr("src").indexOf("?") > -1 ? "&" : "?";
+    var symbol =
+      $(".jumbo-img-video iframe")
+        .attr("src")
+        .indexOf("?") > -1
+        ? "&"
+        : "?";
 
-    $(".owl-item").not(".cloned").find(".jumbo-img-video iframe").attr(
-      "src",
-      $(".jumbo-img-video iframe").attr("src") + symbol + "autoplay=1"
-    );
+    $(".owl-item")
+      .not(".cloned")
+      .find(".jumbo-img-video iframe")
+      .attr(
+        "src",
+        $(".jumbo-img-video iframe").attr("src") + symbol + "autoplay=1"
+      );
   });
   //quoteRandomize();
   //productRandomize();
@@ -880,7 +1009,7 @@ if ($("body").hasClass("home-page")) {
 
 //functions for tabs
 articleSocial();
-readingTime();
+//readingTime();
 
 //add class to news release pages
 function newsRelease() {

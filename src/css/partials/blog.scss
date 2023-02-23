@@ -1,0 +1,216 @@
+@use "./block-utilities";
+
+.arc-blog-page {
+  padding-top: 60px;
+}
+
+.arc-blog-page-jumbo {
+  .row {
+    max-width: none;
+  }
+}
+
+.arc-blog-page-left {
+  max-width: 605px;
+  margin-left: auto;
+  text-align: left;
+}
+
+.arc-blog-page-top-img {
+  background: #f7f5f5;
+  display: block;
+  border-top-left-radius: 20px;
+  border-bottom-left-radius: 20px;
+
+  img {
+    border-radius: 20px;
+  }
+}
+
+.arc-blog-page-right-container {
+  background: #f7f5f5;
+  height: 100%;
+}
+
+.arc-blog-page-right {
+  display: flex;
+  align-items: center;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  padding-left: 25px;
+  max-width: 585px;
+  height: 100%;
+  max-height: 840px;
+}
+
+.arc-blog-eyebrow {
+  color: #888888;
+  font-family: SourceSansPro-Bold, Arial, Helvetica, sans-serif;
+  font-size: 12px;
+  line-height: 12px;
+  margin-bottom: 30px;
+  text-transform: uppercase;
+
+  i {
+    font-size: 3px;
+    vertical-align: middle;
+    margin: 0 3px;
+  }
+}
+
+.arc-blog-title {
+  color: block-utilities.$tarmac;
+  font-family: SourceSansPro-Bold, Arial, Helvetica, sans-serif;
+  font-size: 48px;
+  line-height: 46px;
+  margin-bottom: 30px;
+}
+
+.arc-blog-description {
+  color: block-utilities.$tarmac;
+  font-family: SourceSansPro-Regular, Arial, Helvetica, sans-serif;
+  font-size: 18px;
+  line-height: 24px;
+  margin-bottom: 30px;
+}
+
+.arc-blog-author,
+.arc-blog-author-title {
+  color: block-utilities.$tarmac;
+  font-family: SourceSansPro-Bold, Arial, Helvetica, sans-serif;
+  font-size: 14px;
+  line-height: 14px;
+  margin-bottom: 30px;
+  text-transform: uppercase;
+}
+
+.arc-blog-content {
+  max-width: 1200px;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 60px;
+}
+
+.arc-blog-html {
+  color: block-utilities.$tarmac;
+  font-size: 18px;
+  line-height: 26px;
+  max-width: 740px;
+
+  p,
+  li {
+    color: block-utilities.$tarmac;
+    font-size: 18px;
+    line-height: 26px;
+  }
+
+  .leadin-text {
+    font-family: SourceSansPro-SemiBold, SourceSansPro-Regular, Arial, Helvetica,
+      sans-serif;
+    background: #f7f5f5;
+    font-size: 20px;
+    line-height: 28px;
+    border-radius: 10px;
+    padding: 30px;
+  }
+}
+
+.no-author .arc-blog-html {
+  margin: 0 auto;
+  max-width: 960px;
+}
+
+.arc-blog-author-side {
+  .arc-blog-author-img {
+    height: 100px;
+    width: 100px;
+    border: 1px solid #dedede;
+    border-radius: 50%;
+    -webkit-filter: grayscale(100%); /* Safari 6.0 - 9.0 */
+    filter: grayscale(100%);
+    margin-bottom: 30px;
+  }
+  .arc-blog-author-description {
+    color: block-utilities.$tarmac;
+    font-family: SourceSansPro-Regular, Arial, Helvetica, sans-serif;
+    font-size: 14px;
+    line-height: 14px;
+    margin-bottom: 30px;
+    max-width: 220px;
+  }
+}
+.arc-blog-share {
+  max-width: 180px;
+  margin-bottom: 30px;
+  padding-top: 30px;
+  border-top: 1px solid block-utilities.$tarmac;
+
+  a {
+    margin-right: 15px;
+  }
+}
+
+.arc-blog-related {
+  color: block-utilities.$tarmac;
+  max-width: 1200px;
+  padding: 45px 15px 75px;
+  margin: 0 auto;
+
+  .arc-blog-related-title {
+    font-size: 36px;
+    line-height: 36px;
+    font-family: SourceSansPro-Regular, Arial, Helvetica, sans-serif;
+    margin-bottom: 45px;
+  }
+
+  .arc-blog-related-card {
+    border-radius: 10px;
+    background: block-utilities.$white;
+    margin-bottom: 15px;
+
+    .arc-blog-related-text {
+      padding: 40px 20px 15px;
+      height: 350px;
+    }
+    .arc-blog-related-text-title {
+      margin-bottom: 30px;
+      font-size: 18px;
+      line-height: 22px;
+      height: 70px;
+      font-family: SourceSansPro-Bold, Arial, Helvetica, sans-serif;
+    }
+    .arc-blog-related-description {
+      height: 150px;
+    }
+  }
+}
+
+.blog-layout {
+  .bg-color-fog {
+    border: 1px solid block-utilities.$tarmac;
+    margin-top: 90px;
+  }
+    
+  .article--headline,
+  .page-author, .related-content__content {
+    display: none;
+  }
+
+  .basic-text-inside {
+    padding: 0 !important;
+  }
+  
+
+  .article-body {
+    .basic-text .basic-text-inside {
+      max-width: 1200px;
+      padding-left: 15px;
+      padding-right: 15px;
+    }
+    .rtf {
+      display: none;
+    }
+  }
+}
