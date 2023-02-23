@@ -439,7 +439,10 @@ function articleSocial() {
           (isAuthor ? "col-lg-9" : "col-lg-12 no-author") +
           "'><div class='arc-blog-html'>" +
           $(".rtf").html() +
-          "</div></div><div></div>"
+          "</div></div><div></div></div>" +
+          "<div class='arc-blog-mobile-author'><div class='row'><div class='col-lg-12'>" +
+          authorSection +
+          "</div></div></div>"
       );
 
       console.log(isRelated);
