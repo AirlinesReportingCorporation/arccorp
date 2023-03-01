@@ -220,6 +220,12 @@
       display: none;
     }
   }
+
+  .newsReleaseLayout .press-release-boilerplate {
+    p {
+      max-width: 1170px;
+    }
+  }
 }
 
 @media screen and (max-width: 990.99999px) {

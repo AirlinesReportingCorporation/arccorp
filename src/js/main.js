@@ -485,9 +485,12 @@ function articleSocial() {
           cards += card;
         });
 
+        $(".arc-blog-html").append(
+          '<div style="margin-top: 90px;"> <p><strong>ABOUT ARC</strong></p> <p> <span >ARC accelerates the growth of global air travel by delivering forward-looking travel data, flexible distribution services and other innovative industry solutions. We are a leading travel intelligence company that possesses the world’s largest, most comprehensive global airline ticket dataset, including more than 15 billion passenger flights representing 490 airlines and 230 countries and territories. Our solutions and expertise strengthen economies and enrich lives by connecting stakeholders across the travel ecosystem. For more information, visit </span ><a href="http://www.arccorp.com/">arccorp.com</a><span>.</span> </p>  </div>'
+        );
+
         $("footer").before(
-          '<div class="newsReleaseLayout"><section class="press-release-boilerplate"> <p><strong>ABOUT ARC</strong></p> <p> <span >ARC accelerates the growth of global air travel by delivering forward-looking travel data, flexible distribution services and other innovative industry solutions. We are a leading travel intelligence company that possesses the world’s largest, most comprehensive global airline ticket dataset, including more than 15 billion passenger flights representing 490 airlines and 230 countries and territories. Our solutions and expertise strengthen economies and enrich lives by connecting stakeholders across the travel ecosystem. For more information, visit </span ><a href="http://www.arccorp.com/">arccorp.com</a><span>.</span> </p>  </section></div>' +
-            "<div class='bg-color-fog'><div class='arc-blog-related'><div class='arc-blog-related-title'>Related Resources</div><div class='row'>" +
+          "<div class='bg-color-fog'><div class='arc-blog-related'><div class='arc-blog-related-title'>Related Resources</div><div class='row'>" +
             cards +
             "</div></div></div>"
         );
