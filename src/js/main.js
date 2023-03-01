@@ -415,9 +415,9 @@ function articleSocial() {
         "</div>";
 
       $(".article--headline").before(
-        "<div class='arc-blog-page'><div class='arc-blog-page-jumbo'><div class='row no-gutters'><div class='col-lg-6'><div class='arc-blog-page-left'><div class='arc-blog-page-top-img'><img src='" +
+        "<div class='arc-blog-post'><div class='arc-blog-post-jumbo'><div class='row no-gutters'><div class='col-lg-6'><div class='arc-blog-post-left'><div class='arc-blog-post-top-img'><img src='" +
           imgLink +
-          "' /></div></div></div><div class='col-lg-6'><div class='arc-blog-page-right-container'><div class='arc-blog-page-right'><div>" +
+          "' /></div></div></div><div class='col-lg-6'><div class='arc-blog-post-right-container'><div class='arc-blog-post-right'><div>" +
           "<div class='arc-blog-eyebrow'>" +
           articleDate +
           " <i class='fa fa-circle'></i> <span class='readingTime'></span> Read</div>" +
