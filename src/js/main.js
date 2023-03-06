@@ -298,10 +298,13 @@ function articleSocial() {
   if ($(".article--headline").length) {
     //test on latest first & case studies
     if (
-      $(".btn--link.parentLink").text() == "The Latest" ||
-      $(".btn--link.parentLink").text() == "Blog" ||
-      $(".btn--link.parentLink").text() == "Case Studies" ||
-      $(".custom-brow span").text() == "Highlights"
+      ($(".btn--link.parentLink").text() == "The Latest" ||
+        $(".btn--link.parentLink").text() == "Blog" ||
+        $(".btn--link.parentLink").text() == "Case Studies" ||
+        $(".custom-brow span").text() == "Highlights") &&
+      $("h1")
+        .eq(0)
+        .text() != "ARC Provides Updated Air Travel Data During COVID-19"
     ) {
       var link = window.location.href;
       var url = window.location.href + "?utm_source=social_share";
