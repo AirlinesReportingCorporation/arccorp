@@ -349,7 +349,7 @@ function articleSocial() {
 
       var imgLink =
         "https://www2.arccorp.com/globalassets/homepage/redesign/latest/" +
-        subString +
+        subString.split("?")[0] +
         ".jpg";
 
       var isRelated = $(".related-content__content").length > 0;
