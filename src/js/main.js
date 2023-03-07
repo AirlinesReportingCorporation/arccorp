@@ -347,9 +347,13 @@ function articleSocial() {
             .text()
         : "";
 
+      subString = subString.split("?")[0];
+
+      subString = subString.endsWith("/") ? subString.slice(0, -1) : subString;
+
       var imgLink =
         "https://www2.arccorp.com/globalassets/homepage/redesign/latest/" +
-        subString.split("?")[0] +
+        subString +
         ".jpg";
 
       var isRelated = $(".related-content__content").length > 0;
