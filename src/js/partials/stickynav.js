@@ -1,5 +1,5 @@
 function stickynav() {
-  var stickyExists = $(".sticky-wrapper").length > 0;
+  var stickyExists = $("#sticky-wrapper").length > 0;
   console.log(stickyExists);
   if (stickyExists) {
     $(document).ready(function() {
