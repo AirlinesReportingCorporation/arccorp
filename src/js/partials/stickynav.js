@@ -1,14 +1,15 @@
 function stickynav() {
-  var stickyExists = $("#sticky-wrapper").length > 0;
-  console.log(stickyExists);
+  var stickyExists = $(".sticky-wrapper").length > 0;
+  
   if (stickyExists) {
+    console.log(stickyExists);
     $(document).ready(function() {
       var sticky = $(".sticky-wrapper");
 
       $(".navcontainer").after(sticky);
       $(".sticky-wrapper").show();
 
-      var product;
+      var title;
 
       if (
         $("h2.block-header")
@@ -31,11 +32,11 @@ function stickynav() {
       } else {
         product = $("h2.block-header").html();
       }
-      console.log("Product: " + product);
+      console.log("Title: " + title);
 
       $(".sticky-nav__linksList").before(
         "<div class='sticky-nav__Branding'><img src='https://www2.arccorp.com/globalassets/arc-logos/corporate-logos/arc-logo-s-white.png' alt='ARC Logo' class='sticky-nav__arcLogo'><div class='sticky-nav__Productname'>" +
-          product +
+          title +
           "</div></div>"
       );
     });
