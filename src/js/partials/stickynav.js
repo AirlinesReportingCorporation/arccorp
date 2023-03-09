@@ -16,21 +16,21 @@ function stickynav() {
           .html()
           .includes("ADXMI")
       ) {
-        product = "ADXMI";
+        title = "ADXMI";
       } else if (
         $("h2.block-header")
           .html()
           .includes("ODSS")
       ) {
-        product = "ODSS";
+        title = "ODSS";
       } else if (
         $("h2.block-header")
           .html()
           .includes("ARC's IRS 1099 Processing Service")
       ) {
-        product = "IRS 1099 Processing Service";
+        title = "IRS 1099 Processing Service";
       } else {
-        product = $("h2.block-header").html();
+        title = $("h2.block-header").html();
       }
       console.log("Title: " + title);
 
