@@ -6,7 +6,7 @@ function stickynav() {
       var sticky = $(".sticky-wrapper");
 
       $(sticky).insertAfter(".navcontainer");
-      $(".sticky-wrapper").show();
+      // $(".sticky-wrapper").show();
 
       if ($(location).attr("href").includes("products")) {
         var product;
