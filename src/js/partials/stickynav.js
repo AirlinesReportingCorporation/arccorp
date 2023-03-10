@@ -1,14 +1,15 @@
 function stickynav() {
-  var stickyExists = $(".sticky-wrapper").length > 0;
-
-  if (stickyExists) {
-    $(document).ready(function () {
+  $(document).ready(function () {
+    var stickyExists = $(".sticky-wrapper").length > 0;
+    console.log("hello from sticky" + stickyExists);
+    if (stickyExists) {
+      $(".supernav").css("border-bottom", "none");
       var sticky = $(".sticky-wrapper");
       // Moves sticky to be after navcontainer
       $(sticky).insertAfter(".navcontainer");
+      $(sticky).addClass('arc-legacy-stickynav');
       // Shows sticky
       $(sticky).show();
-
 
       // Checks to see if its a product
       var isProduct = $(location).attr("href").includes("products");
@@ -35,8 +36,8 @@ function stickynav() {
             "</div></div>"
         );
       }
-    });
-  }
+    }
+  });
 }
 
 stickynav();

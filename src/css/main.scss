@@ -37,6 +37,7 @@
 @use "partials/blog";
 //react page styles
 @use "partials/homepage-new";
+@use "partials/arc-legacy-stickynav";
 
 [v-cloak] {
   display: none;

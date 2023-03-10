@@ -1,0 +1,139 @@
+.arc-legacy-stickynav {
+
+  &.sticky-wrapper {
+    display: none;
+    background-color: #189bb0;
+    height: 56px;
+  }
+
+  .sticky-nav__content {
+    border-bottom: none;
+    background-color: #189bb0;
+    height: 56px;
+    display: flex;
+    align-items: center;
+  }
+
+  .sticky-nav__inner {
+    display: flex;
+  }
+
+  .sticky-nav__linksList {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 60%;
+  }
+
+  .sticky-nav__linkItem {
+    padding-right: 35px;
+  }
+
+  .sticky-nav__header {
+    color: white;
+    background-color: #189bb0;
+    border-bottom: none;
+  }
+
+  .sticky-nav__Branding {
+    display: flex;
+    margin-right: auto;
+    padding-left: 5px;
+    align-items: center;
+    width: 25%;
+  }
+
+  .sticky-nav__arcLogo {
+    height: 16px;
+    margin-right: 5px;
+    margin-left: 5px;
+  }
+
+  .sticky-nav__Productname {
+    font-family: SourceSansPro-Regular, Arial, Helvetica, sans-serif;
+    font-size: 20px;
+    margin-left: 0px;
+    color: #fff;
+    line-height: 1;
+    white-space: nowrap;
+  }
+
+  .sticky-nav--collapsed {
+    border-bottom: none;
+  }
+
+  .sticky-nav__link {
+    color: #fff;
+    font-size: 16px;
+    text-transform: capitalize;
+    font-family: SourceSansPro-SemiBold, Arial, Helvetica, sans-serif;
+  }
+
+  .sticky-nav__link:hover {
+    color: #fff;
+    opacity: 0.9;
+  }
+
+  .sticky-nav__ctaItem > .ctaLink {
+    color: white;
+    font-size: 16px;
+    text-transform: capitalize;
+    font-family: SourceSansPro-SemiBold, Arial, Helvetica, sans-serif;
+  }
+  .sticky-nav__link:root {
+    --swiper-theme-color: #fff;
+  }
+
+  .sticky-nav__ctaItem {
+    border-top: none;
+    justify-content: end;
+    display: flex;
+    align-items: center;
+    padding-top: 0px;
+  }
+
+  .sticky-nav__linksList .sticky-nav__linkItem {
+    padding-right: 25px;
+  }
+
+  @media only screen and (max-width: 767px) {
+    .sticky-nav__Branding {
+      padding-bottom: 10px;
+      margin: auto;
+    }
+
+    .sticky-nav__link {
+      padding: 10px;
+    }
+
+    .sticky-nav__ctaItem {
+      border-bottom: none;
+    }
+
+    .sticky-nav__ctaItem > .ctaLink {
+      padding: 10px;
+    }
+
+    .sticky-nav__content {
+      height: unset;
+    }
+
+    .sticky-nav--expanded .sticky-nav__content {
+      border-bottom: none;
+    }
+
+    .sticky-nav__linksList .sticky-nav__linkItem {
+      border-top: none;
+      border-bottom: none;
+      padding-right: 0px;
+    }
+
+    .sticky-nav__linksList {
+      display: flex;
+      padding-right: 0px;
+      flex-wrap: wrap;
+      align-items: center;
+      text-align: center;
+    }
+  }
+}
