@@ -4,11 +4,15 @@ function stickynav() {
   if (stickyExists) {
     $(document).ready(function () {
       var sticky = $(".sticky-wrapper");
-
+      // Moves sticky to be after navcontainer
       $(sticky).insertAfter(".navcontainer");
-      // $(".sticky-wrapper").show();
+      // Shows sticky
+      $(sticky).show();
 
-      if ($(location).attr("href").includes("products")) {
+
+      // Checks to see if its a product
+      var isProduct = $(location).attr("href").includes("products");
+      if (isProduct) {
         var product;
         if ($("h2.block-header").html().includes("ADXMI")) {
           product = "ADXMI";
