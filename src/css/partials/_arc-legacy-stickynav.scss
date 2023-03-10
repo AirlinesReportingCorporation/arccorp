@@ -18,6 +18,12 @@
     display: flex;
   }
 
+  .sticky-nav__inner {
+    max-width: 1200px;
+    padding-right: 15px;
+    display: flex;
+  }
+
   .sticky-nav__linksList {
     display: flex;
     align-items: center;
@@ -49,13 +55,17 @@
     margin-left: 5px;
   }
 
-  .sticky-nav__Productname {
+  .sticky-nav__Productname, .sticky-nav__PageTitle {
     font-family: SourceSansPro-Regular, Arial, Helvetica, sans-serif;
     font-size: 20px;
     margin-left: 0px;
     color: #fff;
     line-height: 1;
     white-space: nowrap;
+  }
+
+  .sticky-nav__PageTitle {
+      padding-left: 10px;
   }
 
   .sticky-nav--collapsed {
@@ -90,6 +100,7 @@
     display: flex;
     align-items: center;
     padding-top: 0px;
+    padding-right: 10px;
   }
 
   .sticky-nav__linksList .sticky-nav__linkItem {

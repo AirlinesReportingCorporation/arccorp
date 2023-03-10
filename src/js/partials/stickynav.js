@@ -38,6 +38,17 @@ function stickynav() {
             "</div></div>"
         );
       }
+
+      else {
+        var title = $(".mainTitle").html();
+        console.log(title);
+
+        $(".sticky-nav__linksList").before(
+          "<div class='sticky-nav__Branding'><div class='sticky-nav__PageTitle'>" +
+            title +
+            "</div></div>"
+        );
+      }
     }
   });
 }
