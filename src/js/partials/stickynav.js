@@ -12,7 +12,8 @@ function stickynav() {
       $(sticky).show();
 
       // Checks to see if its a product
-      var isProduct = $(location).attr("href").includes("products");
+      var isProduct = $(location).attr("href").includes("product");
+      console.log(isProduct)
       if (isProduct) {
         var product;
         if ($("h2.block-header").html().includes("ADXMI")) {
@@ -27,6 +28,7 @@ function stickynav() {
           product = "IRS 1099 Processing Service";
         } else {
           product = $("h2.block-header").html();
+          console.log(product)
         }
         console.log("Product: " + product);
 
