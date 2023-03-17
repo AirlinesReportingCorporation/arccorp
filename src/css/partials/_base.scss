@@ -6,7 +6,8 @@ body {
   font-family: SourceSansPro-Regular, Arial, Helvetica, sans-serif;
   font-size: 16px;
 
-  h1, h2 {
+  h1,
+  h2 {
     color: #2a2b2c;
   }
 }
@@ -22,4 +23,12 @@ p {
 a.ctaBtn:focus {
   background: #1a9cb1;
   border-color: #1a9cb1;
+}
+
+// epi styles overrides
+
+.page--headline__content {
+  max-width: 1200px;
+  padding: 0 15px;
+  margin: 0;
 }
