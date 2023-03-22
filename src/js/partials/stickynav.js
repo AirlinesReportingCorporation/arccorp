@@ -15,11 +15,19 @@ export default function ARCStickyNav () {
     links.push(newLink)
   })
   console.log(links);
+  let ctaLink = document.querySelector(".ctaLink").href;
+  let ctaName = document.querySelector(".ctaLink").innerText;
   document.querySelector(".sticky-wrapper").style.display='none';
   return (
     <Stickynav
     link={links}
-    title={pageTitle}/>
+    title={pageTitle}
+    stickyCTA={ctaName}
+    stickyCTALink={ctaLink}
+    />
+
+    // Requires an updated arccorp-vars npm
+    //updated arccorp-vars to more easily understand the names for updating the cta part of the sticky
 
     // grab all instances of the sticky nav items
     // grab the cta
