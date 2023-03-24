@@ -7,6 +7,7 @@ import ReactDOM from "react-dom";
 import { Stickynav } from "arccorp-vars";
 
 function mountsticky() {
+
   $(document).ready(function() {
     document.querySelector(".sticky-wrapper").style.display = "none";
     var stickyExists = $(".sticky-wrapper").length > 0;
@@ -18,8 +19,9 @@ function mountsticky() {
       console.log(pageLinks);
       let links = [];
       pageLinks.forEach((pageLink) => {
+        console.log(pageLink.href)
         const newLink = {
-          link: pageLink.href.split("#")[1],
+          url: '#' + pageLink.href.split("#")[1],
           title: pageLink.innerText,
         };
         links.push(newLink);
@@ -28,19 +30,22 @@ function mountsticky() {
       let ctaLink = document.querySelector(".ctaLink").href;
       let ctaName = document.querySelector(".ctaLink").innerText;
       document.querySelector(".sticky-wrapper").style.display = "none";
-
+      
       console.log("sticky exists");
       $(".navcontainer").after("<div id='stickynav-app'></div>");
       var appNode = document.getElementById("stickynav-app");
+      appNode.style.position="relative";
+      appNode.style.height="auto"
       ReactDOM.render(
         <Stickynav
-          link={links}
+          links={links}
           title={pageTitle}
           stickyCTA={ctaName}
           stickyCTALink={ctaLink}
         />,
         appNode
       );
+      $(".arc-sticky-container").unwrap()
     }
   });
 }
