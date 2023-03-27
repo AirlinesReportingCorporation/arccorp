@@ -13,7 +13,7 @@ function mountsticky() {
     var stickyExists = $(".sticky-wrapper").length > 0;
 
     if (stickyExists) {
-      let pageTitle = document.querySelector(".mainTitle").innerText;
+      let pageTitle = document.getElementsByTagName('h1')[0].innerText;
       console.log(pageTitle);
       let pageLinks = document.querySelectorAll(".sticky-nav__link");
       console.log(pageLinks);
