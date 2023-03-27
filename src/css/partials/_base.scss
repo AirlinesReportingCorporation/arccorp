@@ -21,12 +21,23 @@ body {
   .page--headline__content {
     max-width: 100%;
   }
+
   .basic-text {
     .basic-text-inside {
       max-width: 1200px;
       padding-left: 15px;
       padding-right: 15px;
     }
+  }
+
+  .article--headline {
+    padding: 0;
+  }
+
+  .article--headline__content {
+    max-width: 1200px;
+    padding-left: 15px;
+    padding-right: 15px;
   }
 }
 
