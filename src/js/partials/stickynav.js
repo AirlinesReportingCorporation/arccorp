@@ -13,6 +13,18 @@ function mountsticky() {
     var stickyExists = $(".sticky-wrapper").length > 0;
 
     if (stickyExists) {
+
+    //get the data-sticky-id. for each, grab the value. on that same element, add an id with that value
+    
+    $("[data-sticky-id]").each(function(){
+      var value = $(this).attr("data-sticky-id");
+      console.log(value)
+      $(this).attr("id", value)
+      console.log(value)
+    });
+
+
+
       let pageTitle = document.getElementsByTagName('h1')[0].innerText;
       console.log(pageTitle);
       let pageLinks = document.querySelectorAll(".sticky-nav__link");
