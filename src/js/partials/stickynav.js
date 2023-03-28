@@ -22,10 +22,8 @@ function mountsticky() {
       $(this).attr("id", value)
       console.log(value)
     });
-
-
-
-      let pageTitle = document.getElementsByTagName('h1')[0].innerText;
+    let titleExists = document.getElementsByTagName('h1').length > 0;
+    let pageTitle = (titleExists ? document.getElementsByTagName('h1')[0].innerText : '');
       console.log(pageTitle);
       let pageLinks = document.querySelectorAll(".sticky-nav__link");
       console.log(pageLinks);
@@ -58,6 +56,11 @@ function mountsticky() {
         appNode
       );
       $(".arc-sticky-container").unwrap()
+      if(!titleExists)
+    {
+      document.querySelector('.arc-sticky-brand').style.display = "none";
+      $('.arc-sticky-links').css('marginLeft', '0');
+    }
     }
   });
 }
