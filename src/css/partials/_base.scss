@@ -6,8 +6,38 @@ body {
   font-family: SourceSansPro-Regular, Arial, Helvetica, sans-serif;
   font-size: 16px;
 
-  h1, h2 {
+  h1,
+  h2 {
     color: #2a2b2c;
+  }
+
+  .page--headline {
+    max-width: 1200px;
+    padding: 0 15px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .page--headline__content {
+    max-width: 100%;
+  }
+
+  .basic-text {
+    .basic-text-inside {
+      max-width: 1200px;
+      padding-left: 15px;
+      padding-right: 15px;
+    }
+  }
+
+  .article--headline {
+    padding: 0;
+  }
+
+  .article--headline__content {
+    max-width: 1200px;
+    padding-left: 15px;
+    padding-right: 15px;
   }
 }
 
@@ -23,3 +53,5 @@ a.ctaBtn:focus {
   background: #1a9cb1;
   border-color: #1a9cb1;
 }
+
+// epi styles overrides

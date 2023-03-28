@@ -146,7 +146,7 @@ class Apphome extends Component {
                   className="img-fluid"
                 />
                 <a
-                  href="https://atpcodigital.co1.qualtrics.com/jfe/form/SV_cLQ4SgQDZfRd21E?utm_source=Jumbo_Carousel"
+                  href="https://www2.arccorp.com/about-us/newsroom/2023-news-releases/elevate-travelconnect-dates-location/?utm_source=Jumbo_Carousel"
                   className="ctaBtn ctaBtn--white tarmac p-0 mt-4"
                   style={{ color: "#000000 !important" }}
                 >
