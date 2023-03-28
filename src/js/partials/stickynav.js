@@ -54,7 +54,7 @@ export default function mountsticky() {
         <Stickynav
           links={links}
           title={pageTitle}
-          contactUS={ctaName}
+          contactUs={ctaName}
           rightLink={ctaLink}
         />,
         appNode
