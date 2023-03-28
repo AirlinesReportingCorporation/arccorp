@@ -7,11 +7,10 @@ import ReactDOM from "react-dom";
 import { Stickynav } from "arccorp-vars";
 
 export default function mountsticky() {
-
+  
+  document.querySelector(".sticky-wrapper").style.display = "none";
   $(document).ready(function() {
-    document.querySelector(".sticky-wrapper").style.display = "none";
     var stickyExists = $(".sticky-wrapper").length > 0;
-
     if (stickyExists) {
 
     //get the data-sticky-id. for each, grab the value. on that same element, add an id with that value
