@@ -12,7 +12,6 @@ module.exports = {
   entry: {
     main: "./src/js/main.js",
     blog: "./src/js/blog.js",
-    stickynav: "./src/js/partials/stickynav.js",
     webinar: "./src/js/webinar.js",
     "main-react": "./src/index.jsx",
     "footer-react": "./src/footer.jsx",

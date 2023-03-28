@@ -6,7 +6,7 @@ import ReactDOM from "react-dom";
 
 import { Stickynav } from "arccorp-vars";
 
-function mountsticky() {
+export default function mountsticky() {
 
   $(document).ready(function() {
     document.querySelector(".sticky-wrapper").style.display = "none";
@@ -64,7 +64,3 @@ function mountsticky() {
     }
   });
 }
-
-mountsticky();
-
-//if stickyexsists, then add a new div elementid #stickynav

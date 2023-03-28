@@ -8,6 +8,7 @@ import "owl.carousel";
 import "jquery-validation";
 import stickybits from "stickybits";
 import LazyLoad from "vanilla-lazyload";
+import mountsticky from "./partials/stickynav";
 
 $(".owl-carousel").owlCarousel({
   center: true,
@@ -1079,3 +1080,5 @@ if ($(".navcontainer").hasClass("signedIn")) {
 
   $(".supernav-myarc-username").html(username);
 }
+
+mountsticky();
