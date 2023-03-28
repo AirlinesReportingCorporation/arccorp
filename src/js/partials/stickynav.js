@@ -23,8 +23,11 @@ export default function mountsticky() {
       console.log(value)
     });
     let titleExists = document.getElementsByTagName('h1').length > 0;
-    let pageTitle = (titleExists ? document.getElementsByTagName('h1')[0].innerText : '');
-      console.log(pageTitle);
+    let pageTitle ='';
+    let currPage = $(location).attr("href");
+    console.log(currPage.indexOf('/products/'));
+    (currPage.indexOf('/products/') > 0 && titleExists ? pageTitle = document.getElementsByTagName('h1')[0].innerText : pageTitle="" )
+      console.log("Page title: " + pageTitle);
       let pageLinks = document.querySelectorAll(".sticky-nav__link");
       console.log(pageLinks);
       let links = [];
@@ -56,7 +59,7 @@ export default function mountsticky() {
         appNode
       );
       $(".arc-sticky-container").unwrap()
-      if(!titleExists)
+      if(pageTitle == "")
     {
       document.querySelector('.arc-sticky-brand').style.display = "none";
       $('.arc-sticky-links').css('marginLeft', '0');
