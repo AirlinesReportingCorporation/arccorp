@@ -42,6 +42,7 @@ export default function mountsticky() {
       console.log(links);
       let ctaLink = document.querySelector(".ctaLink").href;
       let ctaName = document.querySelector(".ctaLink").innerText;
+      console.log(ctaName + " : " + ctaName);
       document.querySelector(".sticky-wrapper").style.display = "none";
       
       console.log("sticky exists");
@@ -53,8 +54,8 @@ export default function mountsticky() {
         <Stickynav
           links={links}
           title={pageTitle}
-          stickyCTA={ctaName}
-          stickyCTALink={ctaLink}
+          contactUS={ctaName}
+          rightLink={ctaLink}
         />,
         appNode
       );
