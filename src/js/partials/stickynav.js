@@ -15,10 +15,9 @@ export default function mountsticky() {
 
       $("[data-sticky-id]").each(function() {
         var value = $(this).attr("data-sticky-id");
-        console.log(value);
         $(this).attr("id", value);
-        console.log(value);
       });
+      
       let titleExists = document.getElementsByTagName("h1").length > 0;
       let pageTitle = "";
       let currPage = $(location).attr("href");
@@ -41,10 +40,7 @@ export default function mountsticky() {
 
       let ctaLink = document.querySelector(".ctaLink").href;
       let ctaName = document.querySelector(".ctaLink").innerText;
-      console.log(ctaName + " : " + ctaName);
-      document.querySelector(".sticky-wrapper").style.display = "none";
 
-      console.log("sticky exists");
       $(".navcontainer").after("<div id='stickynav-app'></div>");
       var appNode = document.getElementById("stickynav-app");
       appNode.style.position = "relative";
