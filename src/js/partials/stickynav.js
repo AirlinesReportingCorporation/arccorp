@@ -17,14 +17,14 @@ export default function mountsticky() {
         var value = $(this).attr("data-sticky-id");
         $(this).attr("id", value);
       });
-      
+
       let titleExists = document.getElementsByTagName("h1").length > 0;
       let pageTitle = "";
 
       titleExists
         ? (pageTitle = document.getElementsByTagName("h1")[0].innerText)
         : (pageTitle = "");
-
+        
       let pageLinks = document.querySelectorAll(".sticky-nav__link");
 
       let links = [];
@@ -41,6 +41,7 @@ export default function mountsticky() {
       let ctaName = document.querySelector(".ctaLink").innerText;
 
       $(".navcontainer").after("<div id='stickynav-app'></div>");
+      
       var appNode = document.getElementById("stickynav-app");
       appNode.style.position = "relative";
       appNode.style.height = "auto";
@@ -55,7 +56,7 @@ export default function mountsticky() {
       );
       $(".arc-sticky-container").unwrap();
       if (pageTitle == "") {
-        document.querySelector(".arc-sticky-brand").style.display = "none";
+        $(".arc-sticky-brand").hide();
         $(".arc-sticky-links").css("marginLeft", "0");
       }
     }
