@@ -20,9 +20,8 @@ export default function mountsticky() {
       
       let titleExists = document.getElementsByTagName("h1").length > 0;
       let pageTitle = "";
-      let currPage = $(location).attr("href");
 
-      currPage.indexOf("/products/") > 0 && titleExists
+      titleExists
         ? (pageTitle = document.getElementsByTagName("h1")[0].innerText)
         : (pageTitle = "");
 
