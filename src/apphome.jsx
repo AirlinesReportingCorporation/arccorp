@@ -86,7 +86,7 @@ class Apphome extends Component {
       <SwiperSlide>
         <div
           className="youtube-background-2"
-          data-vbg="https://www2.arccorp.com/globalassets/homepage/redesign/feb-homepage-2x-2.mp4"
+          data-vbg="https://www2.arccorp.com/globalassets/homepage/redesign/Homepage-2-mar.mp4"
         >
           <div
             className="arc-jumbo transparent"
@@ -106,15 +106,16 @@ class Apphome extends Component {
                     className="arc-jumbo-inner-title mb-1"
                     style={{ maxWidth: "720px", margin: "0 auto" }}
                   >
-                    January Passenger Trips <br/>Increase 46% YoY
+                    February U.S. Travel Agency Air<br/> Ticket Sales Increase 54% YoY
+
                   </h2>
                   <div
                     className="arc-jumbo-inner-body"
                     style={{ marginBottom: "60px" }}
                   >
-                    International Passenger Trips Increased 70% vs. January 2022{" "}
+                    Pre-Pandemic Seasonality Trends Return{" "}
                     <a className="arc-homepage-cta-link arc-jumbo-cta-link d-inline-flex p-0 pl-2">
-                      <a href="https://www2.arccorp.com/about-us/newsroom/2023-news-releases/january-passenger-trips-increase-46-percent-yoy/?utm_source=Jumbo_Carousel">
+                      <a href="https://www2.arccorp.com/about-us/newsroom/2023-news-releases/february-u.s.-travel-agency-air-ticket-sales-increase-54-yoy/?utm_source=Jumbo_Carousel">
                         Read More
                       </a>
                     </a>
