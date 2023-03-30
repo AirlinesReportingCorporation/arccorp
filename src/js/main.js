@@ -422,10 +422,22 @@ function articleSocial() {
         "</div>" +
         "</div>";
 
+      var caseStudy = $(".btn--link.parentLink").text() == "Case Studies";
+
       $(".article--headline").before(
-        "<div class='arc-blog-post'><div class='arc-blog-post-jumbo'><div class='row no-gutters'><div class='col-lg-6'><div class='arc-blog-post-left'><div class='arc-blog-post-top-img'><img src='" +
-          imgLink +
-          "' /></div></div></div><div class='col-lg-6'><div class='arc-blog-post-right-container'><div class='arc-blog-post-right'><div>" +
+        "<div class='arc-blog-post'><div class='arc-blog-post-jumbo " +
+          (!caseStudy ? "" : "no-img") +
+          "'><div class='row no-gutters'><div class='" +
+          (!caseStudy ? "col-lg-6" : "d-none") +
+          "'><div class='arc-blog-post-left'>" +
+          (!caseStudy
+            ? "<div class='arc-blog-post-top-img'><img src='" +
+              imgLink +
+              "' /></div> "
+            : "") +
+          " </div></div><div class='" +
+          (!caseStudy ? "col-lg-6" : "col-lg-12") +
+          "'><div class='arc-blog-post-right-container'><div class='arc-blog-post-right'><div>" +
           "<div class='arc-blog-eyebrow'>" +
           articleDate +
           " <i class='fa fa-circle'></i> <span class='readingTime'></span> Read</div>" +
