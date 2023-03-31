@@ -45,10 +45,10 @@ var homeData = {
       link: "https://www2.arccorp.com/articles-trends/the-latest/coronavirus/",
     },
     {
-      date: "Dec 22, 2022",
-      title: "ARC's Top 10 Blog Posts of 2022",
+      date: "Mar 31, 2023",
+      title: "Travel Tales and Tips from the Women of ARC",
       link:
-        "https://www2.arccorp.com/articles-trends/the-latest/top-10-blogs-2022/",
+        "https://www2.arccorp.com/articles-trends/the-latest/travel-tales-and-tips/",
     },
     {
       date: "Mar 03, 2022",
@@ -399,7 +399,7 @@ class Apphome extends Component {
                         })}
                       </div>
                       <a
-                        href="https://www2.arccorp.com/articles-trends/blog?utm_source=homepage-card"
+                        href="https://www2.arccorp.com/articles-trends/articles/?utm_source=homepage-card"
                         className="arc-homepage-cta-link"
                       >
                         <span>All Articles</span>
