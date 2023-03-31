@@ -60,3 +60,9 @@ a.ctaBtn:focus {
 }
 
 // epi styles overrides
+@media screen and (min-width: 1230px) {
+  .page-grid__content {
+    max-width: 1200px;
+    padding: 45px 0;
+  }
+}
