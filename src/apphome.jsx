@@ -33,11 +33,11 @@ var statData = {
 };
 
 var homeData = {
-  recentBlogTitle: "ARC Moves Direct Connect and NDC Forward",
+  recentBlogTitle: "ARC is NDC-Ready",
   recentBlogLink:
-    "https://www2.arccorp.com/articles-trends/the-latest/ARC-Moves-Direct-Connect-NDC-Forward//?utm_source=homepage-card",
+    "https://www2.arccorp.com/articles-trends/the-latest/arc-is-ndc-ready/?utm_source=homepage-card",
   recentBlogImage:
-    "https://www2.arccorp.com/globalassets/homepage/redesign/latest/ARC-Moves-Direct-Connect-NDC-Forward.jpg/",
+    "https://www2.arccorp.com/globalassets/homepage/redesign/latest/arc-is-ndc-ready.jpg/",
   popularArticles: [
     {
       date: "Updated Every Monday",
