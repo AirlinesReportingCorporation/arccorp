@@ -116,7 +116,7 @@ class Apphome extends Component {
                   >
                     Monthly Sales Total Tops Pre-Pandemic Levels for Second Straight Month{" "}
                     <a className="arc-homepage-cta-link arc-jumbo-cta-link d-inline-flex p-0 pl-2">
-                      <a href="https://www2.arccorp.com/about-us/newsroom/2023-news-releases/february-u.s.-travel-agency-air-ticket-sales-increase-54-yoy/?utm_source=Jumbo_Carousel">
+                      <a href="https://www2.arccorp.com/about-us/newsroom/2023-news-releases/march-2023-monthly-sales/?utm_source=Jumbo_Carousel">
                         Read More
                       </a>
                     </a>
