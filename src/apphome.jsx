@@ -57,11 +57,11 @@ var homeData = {
         "https://www2.arccorp.com/articles-trends/the-latest/omnichannel-series-recap/",
     },
     {
-      date: "Sep 08, 2022",
+      date: "APRIL 27, 2023",
       title:
-        "Unauthorized Ticketing: How to Avoid Devastating Financial Losses",
+        "Travel Industry Fraud & Scams Webinar Recap",
       link:
-        "https://www2.arccorp.com/articles-trends/the-latest/unauthorized-ticketing-fraud/",
+        "https://www2.arccorp.com/articles-trends/the-latest/travel-industry-fraud-scams-webinar-recap/",
     },
   ],
 };
