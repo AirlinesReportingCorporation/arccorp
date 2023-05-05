@@ -22,7 +22,6 @@ $margin-spacing: 30px;
 
   .podcast-player .info .icon:hover {
     cursor: pointer;
-
   }
 }
 
@@ -55,8 +54,18 @@ a.#{$name}homepage-card {
   background-position: center center;
 
   &.#{$name}homepage-card-small {
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
     height: 90px;
     //padding-left: $margin-spacing * 2;
+    img {
+      padding: 0 !important;
+    }
+
+    .#{$name}homepage-card-small-product-title {
+      padding-left: 60px;
+    }
   }
 
   & .row,
@@ -361,10 +370,15 @@ a.#{$name}homepage-blog-popular-title {
     min-height: auto !important;
 
     &.#{$name}homepage-card-small {
+      background: #2a2b2c;
       padding: $margin-spacing;
       img {
         padding-top: $margin-spacing;
         padding-bottom: $margin-spacing;
+      }
+
+      .#{$name}homepage-card-small-product-title {
+        padding-left: 0px;
       }
     }
 

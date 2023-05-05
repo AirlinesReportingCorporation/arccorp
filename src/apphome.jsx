@@ -47,21 +47,17 @@ var homeData = {
     {
       date: "Mar 31, 2023",
       title: "Travel Tales and Tips from the Women of ARC",
-      link:
-        "https://www2.arccorp.com/articles-trends/the-latest/travel-tales-and-tips/",
+      link: "https://www2.arccorp.com/articles-trends/the-latest/travel-tales-and-tips/",
     },
     {
       date: "Mar 03, 2022",
       title: "A Deep Dive into Omnichannel Retailing",
-      link:
-        "https://www2.arccorp.com/articles-trends/the-latest/omnichannel-series-recap/",
+      link: "https://www2.arccorp.com/articles-trends/the-latest/omnichannel-series-recap/",
     },
     {
       date: "APRIL 27, 2023",
-      title:
-        "Travel Industry Fraud & Scams Webinar Recap",
-      link:
-        "https://www2.arccorp.com/articles-trends/the-latest/travel-industry-fraud-scams-webinar-recap/",
+      title: "Travel Industry Fraud & Scams Webinar Recap",
+      link: "https://www2.arccorp.com/articles-trends/the-latest/travel-industry-fraud-scams-webinar-recap/",
     },
   ],
 };
@@ -107,14 +103,13 @@ class Apphome extends Component {
                     style={{ maxWidth: "720px", margin: "0 auto" }}
                   >
                     U.S. Travel Agency Air Ticket Sales Hit Record in March
-
-
                   </h2>
                   <div
                     className="arc-jumbo-inner-body"
                     style={{ marginBottom: "60px" }}
                   >
-                    Monthly Sales Total Tops Pre-Pandemic Levels for Second Straight Month{" "}
+                    Monthly Sales Total Tops Pre-Pandemic Levels for Second
+                    Straight Month{" "}
                     <a className="arc-homepage-cta-link arc-jumbo-cta-link d-inline-flex p-0 pl-2">
                       <a href="https://www2.arccorp.com/about-us/newsroom/2023-news-releases/march-2023-monthly-sales/?utm_source=Jumbo_Carousel">
                         Read More
@@ -562,15 +557,15 @@ class Apphome extends Component {
           <div className="row">
             <div className="col-lg-12">
               <a
-                href="https://www2.arccorp.com/products-participation/products/destination-gateway/?utm_source=homepage-card-long"
+                href="https://www2.arccorp.com/products-participation/distribution/arcdirectconnect?utm_source=homepage-card-long"
                 className="d-block arc-homepage-card arc-homepage-card-small lazy"
                 data-bg={
-                  "https://www2.arccorp.com/globalassets/homepage/redesign/march-update/DG_product_highlight-bg.jpg"
+                  "https://www2.arccorp.com/globalassets/homepage/redesign/march-update/arc-direct-connect-ad.png"
                 }
               >
                 <div className="row align-items-center no-gutters">
                   <div className="col-lg-3 height-auto">
-                    <div style={{ paddingLeft: "60px" }}>
+                    <div className="arc-homepage-card-small-product-title">
                       <div
                         style={{
                           color: "#888888",
@@ -588,21 +583,28 @@ class Apphome extends Component {
                           fontFamily:
                             "SourceSansPro-Regular, Arial, Helvetica, sans-serif",
                           fontSize: "24px",
+                          display: "flex",
+                          alignItems: "center"
                         }}
                       >
-                        Destination Gateway
+                        <img
+                          src="https://www2.arccorp.com/globalassets/arc-logos/corporate-logos/arc-logo-s-white.png"
+                          alt="ARC Logo"
+                          style={{height: "20px", marginRight: "5px"}}
+                        />
+                        Direct Connect
                       </div>
                     </div>
                   </div>
-                  <div className="col-lg-6 text-center height-auto">
+                  <div className="col-lg-7 text-right height-auto">
                     <div className="arc-homepage-small-title">
-                      Insights to <span>Grow Destinations</span>
+                      <span>ARC is NDC Ready</span>
                     </div>
                   </div>
-                  <div className="col-lg-3 height-auto text-right">
+                  <div className="col-lg-2 height-auto text-right">
                     <div
                       className="arc-homepage-cta-link yellow mb-0"
-                      style={{ marginRight: "40px" }}
+                      style={{ marginRight: "20px" }}
                     >
                       <span>Learn More</span>
                     </div>
