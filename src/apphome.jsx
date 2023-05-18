@@ -82,7 +82,7 @@ class Apphome extends Component {
       <SwiperSlide>
         <div
           className="youtube-background-2"
-          data-vbg="https://www2.arccorp.com/globalassets/homepage/redesign/april-homepage-2x.mp4"
+          data-vbg="https://www2.arccorp.com/globalassets/homepage/redesign/may-homepage-2x.mp4"
         >
           <div
             className="arc-jumbo transparent"
@@ -102,16 +102,16 @@ class Apphome extends Component {
                     className="arc-jumbo-inner-title mb-1"
                     style={{ maxWidth: "720px", margin: "0 auto" }}
                   >
-                    U.S. Travel Agency Air Ticket Sales Hit Record in March
+                    April U.S. Travel Agency Air Ticket Sales Total $8.7 Billion
                   </h2>
                   <div
                     className="arc-jumbo-inner-body"
                     style={{ marginBottom: "60px" }}
                   >
-                    Monthly Sales Total Tops Pre-Pandemic Levels for Second
-                    Straight Month{" "}
+                    Average Monthly Ticket Price Falls Below Year-Over-Year
+                    Levels for the First Time Since 2021{" "}
                     <a className="arc-homepage-cta-link arc-jumbo-cta-link d-inline-flex p-0 pl-2">
-                      <a href="https://www2.arccorp.com/about-us/newsroom/2023-news-releases/march-2023-monthly-sales/?utm_source=Jumbo_Carousel">
+                      <a href="https://www2.arccorp.com/about-us/newsroom/2023-news-releases/april-2023-ticket-sales/?utm_source=Jumbo_Carousel">
                         Read More
                       </a>
                     </a>
@@ -584,13 +584,13 @@ class Apphome extends Component {
                             "SourceSansPro-Regular, Arial, Helvetica, sans-serif",
                           fontSize: "24px",
                           display: "flex",
-                          alignItems: "center"
+                          alignItems: "center",
                         }}
                       >
                         <img
                           src="https://www2.arccorp.com/globalassets/arc-logos/corporate-logos/arc-logo-s-white.png"
                           alt="ARC Logo"
-                          style={{height: "20px", marginRight: "5px"}}
+                          style={{ height: "20px", marginRight: "5px" }}
                         />
                         Direct Connect
                       </div>
