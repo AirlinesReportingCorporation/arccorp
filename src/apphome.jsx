@@ -1,4 +1,4 @@
-import React, { Component, lazy } from "react";
+import React, { Component } from "react";
 
 import "youtube-background";
 
@@ -113,7 +113,6 @@ class Apphome extends Component {
                       </a>
                     </a>
                   </div>
-                  g
                 </div>
                 <a
                   target="_blank"
@@ -341,6 +340,7 @@ class Apphome extends Component {
                       <div className="arc-homepage-blog-img">
                         <a href={homeData.recentBlogLink}>
                           <img
+                            loading="lazy"
                             data-src={homeData.recentBlogImage}
                             className="img-fluid lazy"
                           />
