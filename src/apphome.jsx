@@ -12,7 +12,7 @@ if (!document.lazyLoadInstance) {
 
 import { Swiper, SwiperSlide } from "swiper/react";
 import { PodcastWidget } from "podcast-widget";
-import { Navigation, Pagination, Mousewheel, Keyboard } from "swiper";
+import { Navigation, Pagination } from "swiper";
 
 function shuffleArray(array) {
   let i = array.length - 1;
