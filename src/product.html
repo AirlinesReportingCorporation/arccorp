@@ -22,11 +22,12 @@
       href="https://www2.arccorp.com/globalassets//static/style.css?a3834s721982a73"
       rel="stylesheet"
     />
-    <link rel="icon" type="image/x-icon" href="https://www2.arccorp.com/globalassets//favicon.ico" />
     <link
-      rel="stylesheet"
-      href="main.min.css"
+      rel="icon"
+      type="image/x-icon"
+      href="https://www2.arccorp.com/globalassets//favicon.ico"
     />
+    <link rel="stylesheet" href="single.min.css" />
 
     <meta
       name="google-site-verification"
@@ -61,11 +62,11 @@
     </style>
 
     <script type="text/javascript">
-      (function(i, s, o, g, r, a, m) {
+      (function (i, s, o, g, r, a, m) {
         i["GoogleAnalyticsObject"] = r;
         (i[r] =
           i[r] ||
-          function() {
+          function () {
             (i[r].q = i[r].q || []).push(arguments);
           }),
           (i[r].l = 1 * new Date());
@@ -89,7 +90,7 @@
 
     <!-- Google Tag Manager -->
     <script>
-      (function(w, d, s, l, i) {
+      (function (w, d, s, l, i) {
         w[l] = w[l] || [];
         w[l].push({ "gtm.start": new Date().getTime(), event: "gtm.js" });
         var f = d.getElementsByTagName(s)[0],
@@ -152,7 +153,7 @@
       window["_fs_script"] = "edge.fullstory.com/s/fs.js";
       window["_fs_org"] = "ZEMG0";
       window["_fs_namespace"] = "FS";
-      (function(m, n, e, t, l, o, g, y) {
+      (function (m, n, e, t, l, o, g, y) {
         if (e in m) {
           if (m.console && m.console.log) {
             m.console.log(
@@ -161,7 +162,7 @@
           }
           return;
         }
-        g = m[e] = function(a, b, s) {
+        g = m[e] = function (a, b, s) {
           g.q ? g.q.push([a, b, s]) : g._api(a, b, s);
         };
         g.q = [];
@@ -171,39 +172,39 @@
         o.src = "https://" + _fs_script;
         y = n.getElementsByTagName(t)[0];
         y.parentNode.insertBefore(o, y);
-        g.identify = function(i, v, s) {
+        g.identify = function (i, v, s) {
           g(l, { uid: i }, s);
           if (v) g(l, v, s);
         };
-        g.setUserVars = function(v, s) {
+        g.setUserVars = function (v, s) {
           g(l, v, s);
         };
-        g.event = function(i, v, s) {
+        g.event = function (i, v, s) {
           g("event", { n: i, p: v }, s);
         };
-        g.anonymize = function() {
+        g.anonymize = function () {
           g.identify(!!0);
         };
-        g.shutdown = function() {
+        g.shutdown = function () {
           g("rec", !1);
         };
-        g.restart = function() {
+        g.restart = function () {
           g("rec", !0);
         };
-        g.log = function(a, b) {
+        g.log = function (a, b) {
           g("log", [a, b]);
         };
-        g.consent = function(a) {
+        g.consent = function (a) {
           g("consent", !arguments.length || a);
         };
-        g.identifyAccount = function(i, v) {
+        g.identifyAccount = function (i, v) {
           o = "account";
           v = v || {};
           v.acctId = i;
           g(o, v);
         };
-        g.clearUserCookie = function() {};
-        g.setVars = function(n, p) {
+        g.clearUserCookie = function () {};
+        g.setVars = function (n, p) {
           g("setVars", [n, p]);
         };
         g._w = {};
@@ -212,7 +213,7 @@
         y = "fetch";
         g._w[y] = m[y];
         if (m[y])
-          m[y] = function() {
+          m[y] = function () {
             return g._w[y].apply(this, arguments);
           };
         g._v = "1.3.0";
@@ -225,7 +226,7 @@
       }
     </style>
   </head>
-  <body class=" 1467">
+  <body class="1467">
     <div class="navcontainer signedOut" data-username="">
       <!-- supernav start -->
       <div class="supernav" v-on:mouseleave="navPanelReset()">
@@ -242,7 +243,7 @@
         <!-- end alert -->
 
         <!-- start menu nav -->
-        <div style="position: relative; z-index: 104; background: #ffffff;">
+        <div style="position: relative; z-index: 104; background: #ffffff">
           <div class="supernav-inner d-flex align-items-center">
             <div class="supernav-mobile-icon">
               <div class="hamburger icon-menu"></div>
@@ -426,10 +427,10 @@
                   <a
                     href="https://myarc.force.com/agencyportal"
                     class="topnav-link topnav-myarc"
-                    style="border: none;"
+                    style="border: none"
                     >Accreditation Login
                     <i
-                      style="font-size: 11px; margin-left: 5px;"
+                      style="font-size: 11px; margin-left: 5px"
                       class="fas fa-chevron-right"
                     ></i
                   ></a>
@@ -640,7 +641,7 @@
               <a
                 href="/products-participation/distribution/?utm_source=Global_Navigation"
                 class="supernav-header"
-                style="margin-bottom:0;"
+                style="margin-bottom: 0"
                 >New Distribution Capability (NDC)</a
               >
               <a
@@ -657,7 +658,7 @@
             <div class="supernav-sub-main col-3">
               <div
                 class="supernav-header supernav-header-nonlink"
-                style="margin-bottom:15px;"
+                style="margin-bottom: 15px"
               >
                 Payment and Fraud Services
               </div>
@@ -675,7 +676,7 @@
             <div class="supernav-sub-main col-3">
               <div
                 class="supernav-header supernav-header-nonlink"
-                style="margin-bottom:15px;"
+                style="margin-bottom: 15px"
               >
                 Business Services
               </div>
@@ -781,12 +782,12 @@
                 </div>
               </div>
             </div>
-            <div class="col-6" style="background: #f6f6f6;">
+            <div class="col-6" style="background: #f6f6f6">
               <div class="supernav-sub-container supernav-sub-container-left">
                 <div class="row justify-content-end">
                   <div
                     class="supernav-sub-main col-md-6"
-                    style="background: #ffffff;"
+                    style="background: #ffffff"
                   >
                     <a
                       href="/products-participation/corporations/?utm_source=Global_Navigation "
@@ -812,11 +813,11 @@
                   </div>
                   <div
                     class="supernav-sub-main col-md-6"
-                    style="background: #f6f6f6; text-align:center;"
+                    style="background: #f6f6f6; text-align: center"
                   >
                     <div
                       class="supernav-participation-stats"
-                      style="color: #333333;"
+                      style="color: #333333"
                     >
                       Omnichannel Retailing
                     </div>
@@ -922,15 +923,15 @@
                 </div>
               </div>
             </div>
-            <div class="col-6" style="background: #f6f6f6;">
+            <div class="col-6" style="background: #f6f6f6">
               <div
                 class="supernav-sub-container supernav-sub-container-left"
-                style="height:100%"
+                style="height: 100%"
               >
-                <div class="row justify-content-end" style="height:100%">
+                <div class="row justify-content-end" style="height: 100%">
                   <div
                     class="supernav-sub-main col-md-6"
-                    style="background: #ffffff;"
+                    style="background: #ffffff"
                   >
                     <a
                       href="/support-training/working-groups/?utm_source=Global_Navigation"
@@ -950,11 +951,11 @@
                   </div>
                   <div
                     class="supernav-sub-main col-md-6"
-                    style="background: #f6f6f6; text-align:center;"
+                    style="background: #f6f6f6; text-align: center"
                   >
                     <div
                       class="supernav-participation-stats"
-                      style="color: #333333;"
+                      style="color: #333333"
                     >
                       Customer Success Stories
                     </div>
@@ -1039,7 +1040,7 @@
                 </div>
               </div>
             </div>
-            <div class="col-6" style="background:#f6f6f6;">
+            <div class="col-6" style="background: #f6f6f6">
               <div class="supernav-sub-container supernav-sub-container-left">
                 <div class="row justify-content-end">
                   <div class="supernav-sub-main col-md-6">
@@ -1197,7 +1198,7 @@
                 <div class="row justify-content-end">
                   <div
                     class="supernav-sub-main col-md-6"
-                    style="background: #ffffff;"
+                    style="background: #ffffff"
                   >
                     <div class="supernav-header supernav-header-nonlink">
                       Airline Resources
@@ -1426,7 +1427,7 @@
       </div>
       <!-- supernav end -->
     </div>
-    <h1 style="display:none;">Agency BI</h1>
+    <h1 style="display: none">Agency BI</h1>
 
     <section
       class="jumbotron jumbotron--image"
@@ -1436,11 +1437,13 @@
     >
       <div
         class="background"
-        style="background-image:url(https://www2.arccorp.com/globalassets//products--participation/products/agency-bi/agencybi_jumbotronstandard_1400x483.jpg)"
+        style="
+          background-image: url(https://www2.arccorp.com/globalassets//products--participation/products/agency-bi/agencybi_jumbotronstandard_1400x483.jpg);
+        "
       >
         <div
           class="background--opacity"
-          style="-ms-transform: translateY(-50%);"
+          style="-ms-transform: translateY(-50%)"
         ></div>
       </div>
 
@@ -1458,7 +1461,7 @@
       </div>
     </section>
 
-    <nav class="sticky-nav--collapsed " data-nav-type="sticky">
+    <nav class="sticky-nav--collapsed" data-nav-type="sticky">
       <header class="sticky-nav__header"><span>On this page</span></header>
       <section class="sticky-nav__content">
         <div class="sticky-nav__inner clearfix">
@@ -1514,7 +1517,7 @@
 
           <div class="byline"></div>
         </div>
-        <div class="matrix__items  matrix__items--left">
+        <div class="matrix__items matrix__items--left">
           <div class="matrix__row matrix__row--4 clearfix" data-matrix="row">
             <div class="content-block" data-item="content-block">
               <div
@@ -1540,7 +1543,21 @@
               <div class="content-block__body">
                 <p>
                   <span
-                    style="line-height: 107%; font-family: 'Calibri',sans-serif; font-size: 11pt; mso-fareast-font-family: Calibri; mso-bidi-font-family: 'Times New Roman'; mso-ascii-theme-font: minor-latin; mso-fareast-theme-font: minor-latin; mso-hansi-theme-font: minor-latin; mso-bidi-theme-font: minor-bidi; mso-ansi-language: EN-US; mso-fareast-language: EN-US; mso-bidi-language: AR-SA; mso-no-proof: yes;"
+                    style="
+                      line-height: 107%;
+                      font-family: 'Calibri', sans-serif;
+                      font-size: 11pt;
+                      mso-fareast-font-family: Calibri;
+                      mso-bidi-font-family: 'Times New Roman';
+                      mso-ascii-theme-font: minor-latin;
+                      mso-fareast-theme-font: minor-latin;
+                      mso-hansi-theme-font: minor-latin;
+                      mso-bidi-theme-font: minor-bidi;
+                      mso-ansi-language: EN-US;
+                      mso-fareast-language: EN-US;
+                      mso-bidi-language: AR-SA;
+                      mso-no-proof: yes;
+                    "
                     >Analyze current year and two full years of historical data
                     plus all future departures.</span
                   >
@@ -1571,7 +1588,21 @@
               <div class="content-block__body">
                 <p>
                   <span
-                    style="line-height: 107%; font-family: 'Calibri',sans-serif; font-size: 11pt; mso-fareast-font-family: Calibri; mso-bidi-font-family: 'Times New Roman'; mso-ascii-theme-font: minor-latin; mso-fareast-theme-font: minor-latin; mso-hansi-theme-font: minor-latin; mso-bidi-theme-font: minor-bidi; mso-ansi-language: EN-US; mso-fareast-language: EN-US; mso-bidi-language: AR-SA; mso-no-proof: yes;"
+                    style="
+                      line-height: 107%;
+                      font-family: 'Calibri', sans-serif;
+                      font-size: 11pt;
+                      mso-fareast-font-family: Calibri;
+                      mso-bidi-font-family: 'Times New Roman';
+                      mso-ascii-theme-font: minor-latin;
+                      mso-fareast-theme-font: minor-latin;
+                      mso-hansi-theme-font: minor-latin;
+                      mso-bidi-theme-font: minor-bidi;
+                      mso-ansi-language: EN-US;
+                      mso-fareast-language: EN-US;
+                      mso-bidi-language: AR-SA;
+                      mso-no-proof: yes;
+                    "
                     >Make decisions with more confidence based on more extensive
                     data.</span
                   >
@@ -1668,14 +1699,16 @@
     >
       <div
         class="background"
-        style="background-image:url(https://www2.arccorp.com/globalassets//products--participation/products/agency-bi/agencybi_fullbleed_1400x687.jpg)"
+        style="
+          background-image: url(https://www2.arccorp.com/globalassets//products--participation/products/agency-bi/agencybi_fullbleed_1400x687.jpg);
+        "
       >
         <div class="background--opacity"></div>
       </div>
       <div class="full-bleed__inside">
         <div
           class="foreground foreground--left valign--middle"
-          style="-ms-transform: translateY(-50%);"
+          style="-ms-transform: translateY(-50%)"
         >
           <span class="eyebrow">Benefits</span>
 
@@ -1732,7 +1765,7 @@
     </section>
 
     <section
-      class="contained-panel contained-panel--grey  clearfix"
+      class="contained-panel contained-panel--grey clearfix"
       data-section="containedPanel"
     >
       <div
@@ -1781,9 +1814,7 @@
             internal and external business objectives.
           </p>
         </div>
-        <p class="quote-footer">
-          &ndash;&nbsp;Peter Harders,&nbsp;LBF Travel
-        </p>
+        <p class="quote-footer">&ndash;&nbsp;Peter Harders,&nbsp;LBF Travel</p>
 
         <a
           href="/products-participation/case-studies/LBF-Travel-Proves-Their-Value-with-ARCs-Agency-BI/"
@@ -1881,7 +1912,7 @@
         </div>
       </div>
 
-      <section class="cta-support ">
+      <section class="cta-support">
         <div class="cta-support__inside">
           <h2 class="block-header">Contact Us</h2>
 
@@ -1990,12 +2021,12 @@
             src="https://secure-web.cisco.com/1lFIqAtewp9_1BLUnV0GC98_Dk17wziT5RY3nBb8ZXxTeDBINBdDwEpMrgda9AlaE4ynN8wwEGDc8xENujrxKH6c46BuYWUkWtrxBOZp96AYq8vSkmcjVU9rB4h6xZCtjcFWmJwlnWvVorXMe5D0hCBV6eCxDfpt5Syb2yPI6WozRP4eESeFUnG18ovf8C-Et-677xqxaI6b5EfgxOnxlc_yCKvwsz6FI2urXjO3vKbIbppx02UEzS8PcAgPbkcMA2zZBPQoHGHC6iFlNll5ng4aUnNCeBpFEZPiJBFdkYDrilPOFxEnv2jsDQauqxP2VBLd0EeQ5bOFJ9N-Boqc5hw/https%3A%2F%2Fdc.ads.linkedin.com/collect/?pid=80871&amp;fmt=gif"
             /&gt;
           </noscript>
-          <script style="display: none;" type="text/javascript">
+          <script style="display: none" type="text/javascript">
             // <![CDATA[
             adroll_adv_id = "6SV36AWZU5BMFPQT5EOX2V";
             adroll_pix_id = "XJ5KQFURMBGTHCRU5E7YZW";
-            (function() {
-              var _onload = function() {
+            (function () {
+              var _onload = function () {
                 if (
                   document.readyState &&
                   !/loaded|complete/.test(document.readyState)
@@ -2029,7 +2060,7 @@
             })();
             // ]]>
           </script>
-          <div style="display: none;">
+          <div style="display: none">
             <style>
               <!--
               .jumbotron.jumbotron--image{
@@ -2048,14 +2079,7 @@
               -->
             </style>
           </div>
-          <script
-            type="text/javascript"
-            src="main.min.js"
-          ></script>
-          <script
-            type="text/javascript"
-            src="stickynav.min.js"
-          ></script>
+          <script type="text/javascript" src="single.min.js"></script>
 
           <span class="footer-rtf-links">
             <a href="/website-terms-of-use/" title="Terms">Terms</a>
@@ -2135,7 +2159,7 @@
         src="https://www.googletagmanager.com/ns.html?id=GTM-P4F2JRN"
         height="0"
         width="0"
-        style="display:none;visibility:hidden"
+        style="display: none; visibility: hidden"
       ></iframe
     ></noscript>
     <!-- End Google Tag Manager (noscript) -->
@@ -2145,7 +2169,7 @@
     <script>
       //The below script is for Siteimprove's Analytics tool collects statistics about the users on your website and how they use your website.
       /*<![CDATA[*/
-      (function() {
+      (function () {
         var sz = document.createElement("script");
         sz.type = "text/javascript";
         sz.async = true;
