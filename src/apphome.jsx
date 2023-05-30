@@ -1,4 +1,4 @@
-import React, { Component } from "react";
+import React, { Component, lazy } from "react";
 
 import "youtube-background";
 
@@ -92,12 +92,9 @@ class Apphome extends Component {
               <div className="row">
                 <div className="col-md-12 col-sm-12">
                   {/* Comment out jumbovideo when video is ready */}
-
                   {/*<Jumbovideo />*/}
-
                   {/* This section is for when the video is not ready */}
                   {}
-
                   <h2
                     className="arc-jumbo-inner-title mb-1"
                     style={{ maxWidth: "720px", margin: "0 auto" }}
@@ -116,6 +113,7 @@ class Apphome extends Component {
                       </a>
                     </a>
                   </div>
+                  g
                 </div>
                 <a
                   target="_blank"
@@ -199,7 +197,7 @@ class Apphome extends Component {
         <div
           className="arc-jumbo lazy"
           data-bg={
-            "https://www2.arccorp.com/globalassets/homepage/redesign/march-update/jumbotron_retina_DG.jpeg"
+            "https://www2.arccorp.com/globalassets/homepage/redesign/march-update/jumbotron_retina_DG.jpg"
           }
         >
           <div className="arc-jumbo-inner white">
@@ -343,8 +341,8 @@ class Apphome extends Component {
                       <div className="arc-homepage-blog-img">
                         <a href={homeData.recentBlogLink}>
                           <img
-                            src={homeData.recentBlogImage}
-                            className="img-fluid"
+                            data-src={homeData.recentBlogImage}
+                            className="img-fluid lazy"
                           />
                         </a>
                       </div>

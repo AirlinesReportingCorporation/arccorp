@@ -303,10 +303,7 @@ class Footer extends Component {
                   >
                     ARC System Status
                   </a>
-                  <a href="https://www2.arccorp.com/support-training/data-subject-access-request-form/">
-                    CA – Do Not Sell or Share my Personal Information/Limit the
-                    Use of My Sensitive Personal Information.
-                  </a>
+                  <a href='https://www2.arccorp.com/support-training/data-subject-access-request-form/'>Do Not Sell My Personal Information</a>
                 </span>
               </div>
             </div>
