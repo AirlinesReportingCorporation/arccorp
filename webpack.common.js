@@ -60,12 +60,5 @@ module.exports = {
     new webpack.HotModuleReplacementPlugin(),
     extractSass,
     new NodePolyfillPlugin(),
-  ],
-  optimization: {
-    splitChunks: {
-      chunks: 'all',
-      minSize: 10000,
-      maxSize: 250000,
-    },
-  },
+  ]
 };
