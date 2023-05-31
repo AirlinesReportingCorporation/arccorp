@@ -10,6 +10,7 @@ import stickybits from "stickybits";
 import LazyLoad from "vanilla-lazyload";
 import mountsticky from "./partials/stickynav";
 
+
 $(".owl-carousel").owlCarousel({
   center: true,
   //autoplay: true,

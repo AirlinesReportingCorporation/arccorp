@@ -28,6 +28,7 @@ class HomepageSlider extends Component {
     super(props);
     this.state = {
       videoClick: false,
+      index: "0"
     };
   }
 
@@ -45,54 +46,67 @@ class HomepageSlider extends Component {
     this.setState({ VideoClick: true });
   }
 
+  updateVideoIndex(i) {
+    this.setState({index: i});
+  }
+
   render() {
     var slides = [
-      <SwiperSlide>
+      <SwiperSlide className="swiper-no-swiping">
         <div
-          className="youtube-background-2"
-          data-vbg="https://www2.arccorp.com/globalassets/homepage/redesign/may-homepage-2x.mp4"
+          className="arc-jumbo arc-youtube-jumbo fog"
+          style={{ alignItems: "flex-end" }}
         >
-          <div
-            className="arc-jumbo transparent"
-            style={{ alignItems: "flex-end" }}
+          <video
+            class="youtube-background-poster lazy"
+            width="620"
+            loop="true"
+            autoPlay
+            muted
+            data-src="https://www2.arccorp.com/globalassets/homepage/redesign/may-homepage-2x.mp4"
           >
-            <div className="arc-jumbo-inner align-items-baseline text-center">
-              <div className="row">
-                <div className="col-md-12 col-sm-12">
-                  {/* Comment out jumbovideo when video is ready */}
-                  {/*<Jumbovideo />*/}
-                  {/* This section is for when the video is not ready */}
-                  {}
-                  <h2
-                    className="arc-jumbo-inner-title mb-1"
-                    style={{ maxWidth: "720px", margin: "0 auto" }}
-                  >
-                    April U.S. Travel Agency Air Ticket Sales Total $8.7 Billion
-                  </h2>
-                  <div
-                    className="arc-jumbo-inner-body"
-                    style={{ marginBottom: "60px" }}
-                  >
-                    Average Monthly Ticket Price Falls Below Year-Over-Year
-                    Levels for the First Time Since 2021{" "}
-                    <a className="arc-homepage-cta-link arc-jumbo-cta-link d-inline-flex p-0 pl-2">
-                      <a href="https://www2.arccorp.com/about-us/newsroom/2023-news-releases/april-2023-ticket-sales/?utm_source=Jumbo_Carousel">
-                        Read More
-                      </a>
-                    </a>
-                  </div>
-                </div>
-                <a
-                  target="_blank"
-                  href="https://www.youtube.com/channel/UCWHZsoCDNhjorop892EVETw?sub_confirmation=1"
-                  className="arc-jumbo-subscribe"
+            <source
+              type="https://www2.arccorp.com/globalassets/homepage/redesign/may-homepage-2x.mp4"
+              data-src="lazy.mp4"
+            />
+          </video>
+
+          <div className="arc-jumbo-inner align-items-baseline text-center">
+            <div className="row">
+              <div className="col-md-12 col-sm-12">
+                {/* Comment out jumbovideo when video is ready */}
+                {/*<Jumbovideo />*/}
+                {/* This section is for when the video is not ready */}
+                {}
+                <h2
+                  className="arc-jumbo-inner-title mb-1"
+                  style={{ maxWidth: "720px", margin: "0 auto" }}
                 >
-                  <img
-                    src="https://www2.arccorp.com/globalassets/homepage/redesign/march-update/subscribe_jumbo.jpg"
-                    alt="subscribe_jumbo.jpg"
-                  />
-                </a>
+                  April U.S. Travel Agency Air Ticket Sales Total $8.7 Billion
+                </h2>
+                <div
+                  className="arc-jumbo-inner-body"
+                  style={{ marginBottom: "60px" }}
+                >
+                  Average Monthly Ticket Price Falls Below Year-Over-Year Levels
+                  for the First Time Since 2021{" "}
+                  <a className="arc-homepage-cta-link arc-jumbo-cta-link d-inline-flex p-0 pl-2">
+                    <a href="https://www2.arccorp.com/about-us/newsroom/2023-news-releases/april-2023-ticket-sales/?utm_source=Jumbo_Carousel">
+                      Read More
+                    </a>
+                  </a>
+                </div>
               </div>
+              <a
+                target="_blank"
+                href="https://www.youtube.com/channel/UCWHZsoCDNhjorop892EVETw?sub_confirmation=1"
+                className="arc-jumbo-subscribe"
+              >
+                <img
+                  src="https://www2.arccorp.com/globalassets/homepage/redesign/march-update/subscribe_jumbo.jpg"
+                  alt="subscribe_jumbo.jpg"
+                />
+              </a>
             </div>
           </div>
         </div>
@@ -273,6 +287,7 @@ class HomepageSlider extends Component {
           clickable: true,
         }}
         spaceBetween={30}
+        watchSlidesVisibility="true"
         modules={[Navigation, Pagination]}
         className="arc-jumbo-swiper"
       >

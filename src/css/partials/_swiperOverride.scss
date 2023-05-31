@@ -17,6 +17,7 @@ $margin-spacing: 30px;
     background: variables.$tarmac;
     border-radius: 20px;
     pointer-events: all !important;
+
     video,
     iframe {
       width: 1210px !important;
@@ -24,14 +25,19 @@ $margin-spacing: 30px;
     }
   }
 
-  .youtube-background-2 {
+  .arc-youtube-jumbo {
     background: #e9e9e9;
     border-radius: 20px;
     pointer-events: all !important;
+    overflow: hidden;
+
     video,
     iframe {
-      width: 1210px !important;
-      z-index: -1 !important;
+      top: 0;
+      position: absolute;
+      width: 100%;
+      z-index: 0;
+      border-radius: 20px;
     }
   }
 }
@@ -252,6 +258,9 @@ $margin-spacing: 30px;
     &.black {
       background: variables.$black !important;
     }
+    &.fog {
+      background: #ddd !important;
+    }
     .#{$name}homepage-cta-link {
       display: block !important;
       margin: 15px auto;
@@ -260,6 +269,10 @@ $margin-spacing: 30px;
 
     &.#{$name}jumbo-holidays {
       min-height: 0;
+    }
+
+    video {
+      display: none;
     }
   }
 
