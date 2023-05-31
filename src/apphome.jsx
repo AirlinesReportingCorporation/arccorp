@@ -10,7 +10,7 @@ if (!document.lazyLoadInstance) {
   });
 }
 
-const HomepageSlider = lazy(() => import("./components/HomepageSlider"));
+import HomepageSlider from "./components/HomepageSlider";
 const HomepageSection = lazy(() => import("./components/HomepageSection"));
 
 
@@ -34,19 +34,7 @@ class Apphome extends Component {
     return (
       <div className="arc-homepage">
         <div style={{ maxWidth: "100%", overflow: "hidden" }}>
-          <Suspense
-            fallback={
-              <div className="loading-container">
-                <div className="loading">
-                  <div className="loading-icon">
-                    <i className="fas fa-circle-notch fa-spin"></i>
-                  </div>
-                </div>
-              </div>
-            }
-          >
             <HomepageSlider />
-          </Suspense>
         </div>
 
         <Suspense
