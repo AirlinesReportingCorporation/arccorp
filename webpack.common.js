@@ -63,15 +63,4 @@ module.exports = {
     extractSass,
     new NodePolyfillPlugin(),
   ],
-  optimization: {
-    splitChunks: {
-      cacheGroups: {
-        reactVendor: {
-          test: /[\\/]node_modules[\\/](react|react-dom|react-router-dom)[\\/]/,
-          name: 'vendor-react',
-          chunks: 'all',
-        },
-      },
-    },
-  },
 };
