@@ -63,10 +63,10 @@ class HomepageSlider extends Component {
             loop="true"
             autoPlay
             muted
-            data-src="https://www2.arccorp.com/globalassets/homepage/redesign/may-homepage-2x.mp4"
+            data-src="https://www2.arccorp.com/globalassets/homepage/redesign/june-homepage-2x.mp4"
           >
             <source
-              type="https://www2.arccorp.com/globalassets/homepage/redesign/may-homepage-2x.mp4"
+              type="https://www2.arccorp.com/globalassets/homepage/redesign/june-homepage-2x.mp4"
               data-src="lazy.mp4"
             />
           </video>
@@ -82,16 +82,15 @@ class HomepageSlider extends Component {
                   className="arc-jumbo-inner-title mb-1"
                   style={{ maxWidth: "720px", margin: "0 auto" }}
                 >
-                  April U.S. Travel Agency Air Ticket Sales Total $8.7 Billion
+                  U.S. Travel Agency Air Ticket Sales Top $9 Billion in May
                 </h2>
                 <div
                   className="arc-jumbo-inner-body"
                   style={{ marginBottom: "60px" }}
                 >
-                  Average Monthly Ticket Price Falls Below Year-Over-Year Levels
-                  for the First Time Since 2021{" "}
+                  Monthly Sales Total Indicates Robust Demand Amid Year-Over-Year Ticket Price Decline{" "}
                   <a className="arc-homepage-cta-link arc-jumbo-cta-link d-inline-flex p-0 pl-2">
-                    <a href="https://www2.arccorp.com/about-us/newsroom/2023-news-releases/april-2023-ticket-sales/?utm_source=Jumbo_Carousel">
+                    <a href="https://www2.arccorp.com/about-us/newsroom/2023-news-releases/may-2023-ticket-sales//?utm_source=Jumbo_Carousel">
                       Read More
                     </a>
                   </a>
