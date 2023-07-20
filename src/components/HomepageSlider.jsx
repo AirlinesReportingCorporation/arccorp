@@ -63,10 +63,10 @@ class HomepageSlider extends Component {
             loop="true"
             autoPlay
             muted
-            data-src="https://www2.arccorp.com/globalassets/homepage/redesign/june-homepage-2x.mp4"
+            data-src="https://www2.arccorp.com/globalassets/homepage/redesign/july-homepage-2x.mp4"
           >
             <source
-              type="https://www2.arccorp.com/globalassets/homepage/redesign/june-homepage-2x.mp4"
+              type="https://www2.arccorp.com/globalassets/homepage/redesign/july-homepage-2x.mp4"
               data-src="lazy.mp4"
             />
           </video>
@@ -82,15 +82,16 @@ class HomepageSlider extends Component {
                   className="arc-jumbo-inner-title mb-1"
                   style={{ maxWidth: "720px", margin: "0 auto" }}
                 >
-                  U.S. Travel Agency Air Ticket Sales Top $9 Billion in May
+                  U.S. Travel Agency Air Ticket Sales Top $8 Billion in June
                 </h2>
                 <div
                   className="arc-jumbo-inner-body"
                   style={{ marginBottom: "60px" }}
                 >
-                  Monthly Sales Total Indicates Robust Demand Amid Year-Over-Year Ticket Price Decline{" "}
+                  Air Travel Sales and Passenger Trips Grew Steadily in the
+                  First Half of 2023{" "}
                   <a className="arc-homepage-cta-link arc-jumbo-cta-link d-inline-flex p-0 pl-2">
-                    <a href="https://www2.arccorp.com/about-us/newsroom/2023-news-releases/may-2023-ticket-sales//?utm_source=Jumbo_Carousel">
+                    <a href="https://www2.arccorp.com/about-us/newsroom/2023-news-releases/june-2023-ticket-sales/?utm_source=Jumbo_Carousel">
                       Read More
                     </a>
                   </a>
@@ -220,11 +221,13 @@ class HomepageSlider extends Component {
             <div className="row">
               <div className="col-lg-7 col-md-12">
                 <h2 className="arc-jumbo-inner-title white">
-                  Uncover Passenger <br/>Intentions with <br/>Trip Class Indicator
+                  Uncover Passenger <br />
+                  Intentions with <br />
+                  Trip Class Indicator
                 </h2>
                 <div className="arc-jumbo-inner-body">
-                  Advanced data analytics enables enhanced accuracy <br/>of business
-                  and leisure travel data
+                  Advanced data analytics enables enhanced accuracy <br />
+                  of business and leisure travel data
                 </div>
                 <a
                   className="ctaBtn ctaBtn--white p-0 tarmac"
