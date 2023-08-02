@@ -1,11 +1,7 @@
 import React, { Component } from "react";
 
-import { Swiper, SwiperSlide } from "swiper/react";
-import { Navigation, Pagination } from "swiper";
-
 import "youtube-background";
 import LazyLoad from "vanilla-lazyload";
-import { PodcastWidget } from "podcast-widget";
 
 if (!document.lazyLoadInstance) {
   document.lazyLoadInstance = new LazyLoad({
@@ -172,14 +168,6 @@ class HomepageSection extends Component {
                 </div>
               </div>
             </a>
-          </div>
-        </div>
-
-        <div className="row">
-          <div className="col-lg-12">
-            <div style={{ marginBottom: "60px" }}>
-              <PodcastWidget />
-            </div>
           </div>
         </div>
 
