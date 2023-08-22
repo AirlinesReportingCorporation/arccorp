@@ -269,12 +269,12 @@ class HomepageSection extends Component {
                       backgroundPositionX: 0,
                     }}
                   >
-                    <div
+                    {/* <div
                       className="arc-homepage-cta-link text-center"
                       style={{ paddingLeft: "20px" }}
                     >
                       <span>Learn More</span>
-                    </div>
+                    </div> */}
                   </div>
                 </div>
               </div>

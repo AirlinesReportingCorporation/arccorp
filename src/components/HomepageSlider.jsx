@@ -111,34 +111,6 @@ class HomepageSlider extends Component {
         </div>
       </SwiperSlide>,
       <SwiperSlide>
-        <div className="arc-jumbo black lazy" style={{ background: "#000000" }}>
-          <div className="arc-jumbo-inner white">
-            <div className="row text-center">
-              <div className="col-lg-12">
-                <img
-                  src="https://www2.arccorp.com/globalassets/homepage/redesign/tc24.png"
-                  alt=""
-                  className="img-fluid"
-                />
-                <a
-                  href="https://www2.arccorp.com/about-us/newsroom/2023-news-releases/elevate-travelconnect-dates-location/?utm_source=Jumbo_Carousel"
-                  className="ctaBtn ctaBtn--white tarmac p-0 mt-4"
-                  style={{ color: "#000000 !important" }}
-                >
-                  Learn More
-                </a>
-                <a
-                  href="https://youtu.be/_5wZ8LvruKE?utm_source=Jumbo_Carousel"
-                  className="ctaBtn ctaBtn--white-outline p-0 teal mt-4"
-                >
-                  Watch Video
-                </a>
-              </div>
-            </div>
-          </div>
-        </div>
-      </SwiperSlide>,
-      <SwiperSlide>
         <div
           className="arc-jumbo lazy"
           data-bg={
