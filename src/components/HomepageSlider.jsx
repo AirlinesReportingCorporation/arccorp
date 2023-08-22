@@ -82,13 +82,15 @@ class HomepageSlider extends Component {
                   className="arc-jumbo-inner-title mb-1"
                   style={{ maxWidth: "720px", margin: "0 auto" }}
                 >
-                  July U.S. Travel Agency Air Ticket Sales Increase 11% Year Over Year
+                  July U.S. Travel Agency Air Ticket Sales Increase 11% Year
+                  Over Year
                 </h2>
                 <div
                   className="arc-jumbo-inner-body"
                   style={{ marginBottom: "60px" }}
                 >
-                  Month-over-Month Growth in U.S. Domestic Passenger Trips Outpaced International in July{" "}
+                  Month-over-Month Growth in U.S. Domestic Passenger Trips
+                  Outpaced International in July{" "}
                   <a className="arc-homepage-cta-link arc-jumbo-cta-link d-inline-flex p-0 pl-2">
                     <a href="https://www2.arccorp.com/about-us/newsroom/2023-news-releases/july-2023-ticket-sales/?utm_source=Jumbo_Carousel">
                       Read More
@@ -107,6 +109,36 @@ class HomepageSlider extends Component {
                 />
               </a>
             </div>
+          </div>
+        </div>
+      </SwiperSlide>,
+      <SwiperSlide>
+        <div
+          className="arc-jumbo black lazy"
+          data-bg={
+            "https://www2.arccorp.com/globalassets/homepage/redesign/etc-2024-jumbotron.jpg"
+          }
+        >
+          <div
+            className="arc-jumbo-inner white"
+            style={{ alignItems: "flex-end" }}
+          >
+            <a
+              href="https://arctravelconnect.com/?utm_source=Jumbo_Carousel"
+              className=""
+              style={{
+                color: "#000000 !important",
+                position: "absolute",
+                top: "0",
+                left: "0",
+                width: "100%",
+                height: "100%",
+              }}
+              alt="Learn More"
+              title="learn more"
+            >
+              &nbsp;
+            </a>
           </div>
         </div>
       </SwiperSlide>,
