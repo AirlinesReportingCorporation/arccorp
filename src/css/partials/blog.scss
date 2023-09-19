@@ -10,7 +10,7 @@
   }
 
   &.no-img {
-    width: 1200px;
+    max-width: 1200px;
     padding-left: 15px;
     padding-right: 15px;
     margin: 0 auto;
@@ -298,5 +298,8 @@
   .arc-blog-html {
     padding-right: 30px;
     padding-left: 30px;
+    table {
+      overflow-x: auto;
+    }
   }
 }
