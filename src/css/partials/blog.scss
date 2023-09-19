@@ -21,6 +21,20 @@
       padding-bottom: 30px;
       padding-left: 15px;
     }
+
+    .newsrelease-headline {
+      .arc-blog-eyebrow {
+        display: none;
+      }
+      .arc-blog-post-right-container {
+        padding: 0;
+        background: transparent;
+      }
+      .arc-blog-post-right {
+        max-width: 740px;
+        padding: 0 0 0 7px;
+      }
+    }
   }
 }
 
@@ -112,6 +126,7 @@
   font-size: 18px;
   line-height: 26px;
   max-width: 740px;
+  padding-bottom: 30px;
 
   p,
   li {
@@ -212,8 +227,14 @@
   }
 
   .article--headline,
+  .page--headline,
   .page-author,
-  .related-content__content {
+  .related-content__content,
+  .press-release-boilerplate {
+    display: none;
+  }
+
+  .page--headline + .basic-text {
     display: none;
   }
 

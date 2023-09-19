@@ -10,7 +10,6 @@ import stickybits from "stickybits";
 import LazyLoad from "vanilla-lazyload";
 import mountsticky from "./partials/stickynav";
 
-
 $(".owl-carousel").owlCarousel({
   center: true,
   //autoplay: true,
@@ -40,14 +39,14 @@ $(".owl-carousel").owlCarousel({
       items: 1,
     },
   },
-  onInitialize: function(element) {
+  onInitialize: function (element) {
     /* randomize carousel*/
     $(".owl-carousel")
       .children()
-      .sort(function() {
+      .sort(function () {
         return Math.round(Math.random()) - 0.5;
       })
-      .each(function() {
+      .each(function () {
         $(this).appendTo($(".owl-carousel"));
       });
   },
@@ -62,8 +61,8 @@ if ($(".data-panel-sticky").length) {
 var lazyLoadInstance = new LazyLoad({});
 
 /* reading time script start */
-!(function(e) {
-  e.fn.readingTime = function(n) {
+!(function (e) {
+  e.fn.readingTime = function (n) {
     var t = {
         readingTimeTarget: ".eta",
         wordCountTarget: null,
@@ -75,8 +74,8 @@ var lazyLoadInstance = new LazyLoad({});
         prependWordString: "",
         remotePath: null,
         remoteTarget: null,
-        success: function() {},
-        error: function() {},
+        success: function () {},
+        error: function () {},
       },
       i = this,
       r = e(this);
@@ -110,7 +109,7 @@ var lazyLoadInstance = new LazyLoad({});
     else
       var s = a.lessThanAMinuteString || "Less than a minute",
         l = "min";
-    var u = function(n) {
+    var u = function (n) {
       if ("" !== n) {
         var t = n.trim().split(/\s+/g).length,
           i = a.wordsPerMinute / 60,
@@ -132,15 +131,10 @@ var lazyLoadInstance = new LazyLoad({});
           a.success.call(this);
       } else a.error.call(this, "The element is empty.");
     };
-    r.each(function() {
+    r.each(function () {
       null != a.remotePath && null != a.remoteTarget
-        ? e.get(a.remotePath, function(n) {
-            u(
-              e("<div>")
-                .html(n)
-                .find(a.remoteTarget)
-                .text()
-            );
+        ? e.get(a.remotePath, function (n) {
+            u(e("<div>").html(n).find(a.remoteTarget).text());
           })
         : u(r.text());
     });
@@ -154,11 +148,9 @@ var maxSliderHeight = 0;
 var latestTechPosition = 0;
 
 function latestSliderInit() {
-  $(".homePageGrid .content-block--pageItem__inside").each(function() {
+  $(".homePageGrid .content-block--pageItem__inside").each(function () {
     var e = $(this);
-    var link = $(this)
-      .find(".ctaLink")
-      .prop("href");
+    var link = $(this).find(".ctaLink").prop("href");
 
     $(this)
       .find(".ctaLink")
@@ -222,11 +214,11 @@ function latestSliderInit() {
     .addClass("owl-carousel")
     .addClass("owl-theme");
 
-  $(".page-grid__row").each(function(index) {
+  $(".page-grid__row").each(function (index) {
     $(this).prop("data-hash", index);
   });
 
-  $(document).ready(function() {
+  $(document).ready(function () {
     $(".page-grid__items.page-grid__items--expanded").owlCarousel({
       loop: true,
       dots: true,
@@ -267,9 +259,7 @@ function articleResize(scrollTop, scrollLeft, resize) {
     var isPositionFixed = $el.css("position") == "fixed";
     var windowWidth = $(window).width();
 
-    var offset = $(".basic-text-inside")
-      .eq(0)
-      .offset().left;
+    var offset = $(".basic-text-inside").eq(0).offset().left;
 
     if (parseInt(windowWidth) > 1169) {
       if ($(window).scrollTop() > scrollTop && !isPositionFixed) {
@@ -297,24 +287,38 @@ function articleResize(scrollTop, scrollLeft, resize) {
 
 function articleSocial() {
   // add social for articles
-  if ($(".article--headline").length) {
+  if (
+    $(".article--headline").length ||
+    $(".press-release-boilerplate").length
+  ) {
     //test on latest first & case studies
     if (
       ($(".btn--link.parentLink").text() == "The Latest" ||
         $(".btn--link.parentLink").text() == "Blog" ||
+        $(".btn--link.parentLink").text().indexOf("News Releases") > -1 ||
         $(".btn--link.parentLink").text() == "Case Studies" ||
         $(".custom-brow span").text() == "Highlights") &&
-      $("h1")
-        .eq(0)
-        .text() != "ARC Provides Updated Air Travel Data During COVID-19"
+      $("h1").eq(0).text() !=
+        "ARC Provides Updated Air Travel Data During COVID-19"
     ) {
       var link = window.location.href;
       var url = window.location.href + "?utm_source=social_share";
       var meta = $("meta[name='description']").prop("content");
       var title = $("h1.mainTitle").text();
-      $(".article--headline")
-        .parent()
-        .addClass("blog-layout");
+      var type = "";
+
+      var headline = $(".article--headline").length
+        ? $(".article--headline")
+        : $(".page--headline");
+
+      console.log(headline);
+
+      if ($(".btn--link.parentLink").text().indexOf("News Releases") > -1) {
+        headline.parent().addClass("blog-layout").addClass("newsroom-layout");
+        type = "newsrelease";
+      } else {
+        headline.parent().addClass("blog-layout");
+      }
 
       if (link.indexOf("blog-page.html") > -1) {
         link =
@@ -337,16 +341,12 @@ function articleSocial() {
           .replace("/", "");
       }
 
-      var articleDate = $(".author-byline .metadata li")
-        .last()
-        .text();
+      var articleDate = $(".author-byline .metadata li").last().text();
 
       var isAuthor = $(".page-author").length > 0;
 
       var articleAuthor = isAuthor
-        ? $(".author-byline .metadata li")
-            .first()
-            .text()
+        ? $(".author-byline .metadata li").first().text()
         : "";
 
       subString = subString.split("?")[0];
@@ -423,22 +423,29 @@ function articleSocial() {
         "</div>" +
         "</div>";
 
-      var caseStudy = $(".btn--link.parentLink").text() == "Case Studies";
+      var noImg =
+        $(".btn--link.parentLink").text() == "Case Studies" ||
+        $(".press-release-boilerplate").length;
 
-      $(".article--headline").before(
-        "<div class='arc-blog-post'><div class='arc-blog-post-jumbo " +
-          (!caseStudy ? "" : "no-img") +
+      headline.before(
+        '<div class="arc-sticky-container" style="z-index: 3; position: sticky; top: 0px;"><div class="bg-color-tarmac arc-sticky-inner"><div class="arc-sticky-nav"><div class="arc-sticky-brand d-flex align-items-center"><a href="https://www2.arccorp.com/about-us/newsroom/" class="arc-sticky-title" style="line-height: 20px;">Newsroom</a></div><div class="arc-sticky-links d-flex align-items-center"></div><div class="arc-sticky-menu d-flex align-items-center"><a href="https://www2.arccorp.com/about-us/newsroom/subscribe/" class="arc-sticky-link-right">Subscribe to ARC News <i class="fas fa-chevron-right"></i></a></div></div></div></div>' +
+          "<div class='arc-blog-post'><div class='arc-blog-post-jumbo " +
+          (!noImg ? "" : "no-img") +
           "'><div class='row no-gutters'><div class='" +
-          (!caseStudy ? "col-lg-6" : "d-none") +
+          (!noImg ? "col-lg-6" : "d-none") +
           "'><div class='arc-blog-post-left'>" +
-          (!caseStudy
+          (!noImg
             ? "<div class='arc-blog-post-top-img'><img src='" +
               imgLink +
               "' /></div> "
             : "") +
           " </div></div><div class='" +
-          (!caseStudy ? "col-lg-6" : "col-lg-12") +
-          "'><div class='arc-blog-post-right-container'><div class='arc-blog-post-right'><div>" +
+          (!noImg
+            ? "col-lg-6"
+            : type == "newsrelease"
+            ? "offset-lg-3 col-lg-9 newsrelease-headline"
+            : "col-lg-12") +
+          "'><div class='arc-blog-post-right-container '><div class='arc-blog-post-right'><div>" +
           "<div class='arc-blog-eyebrow'>" +
           articleDate +
           " <i class='fa fa-circle'></i> <span class='readingTime'></span> Read</div>" +
@@ -460,8 +467,10 @@ function articleSocial() {
           "col-lg-9" +
           "'><div class='arc-blog-html'>" +
           $(".rtf").html() +
-          "</div></div><div></div></div>" +
-          "<div class='arc-blog-mobile-author'><div class='row'><div class='col-lg-12'>" +
+          '<div class="row" style="margin-top: 90px;"><div class="col-lg-12"> <p><strong>ABOUT ARC</strong></p> <p> <span >ARC accelerates the growth of global air travel by delivering forward-looking travel data, flexible distribution services and other innovative industry solutions. We are a leading travel intelligence company that possesses the world’s largest, most comprehensive global airline ticket dataset, including more than 15 billion passenger flights representing 490 airlines and 230 countries and territories. Our solutions and expertise strengthen economies and enrich lives by connecting stakeholders across the travel ecosystem. For more information, visit </span ><a href="http://www.arccorp.com/">arccorp.com</a><span>.</span> </p> </div> </div>' +
+          '<div class="row"><div class="col-lg-6"><p><strong>Connect with ARC</strong></p><p>ARC provides journalists with timely statistics, data analysis and in-depth interviews with subject matter experts.</p><a class="ctaBtn ctaBtn--main" title="Email" href="mailto:rspoon@arccorp.com">Media Inquiries</a> <a class="ctaBtn ctaBtn--secondary" title="Media Kit" href="/link/96a1c007524f4c1194065225dffa7519.aspx">Media Kit </a></div><div class="col-lg-6"><p><strong>Contact</strong></p>Randy Spoon<br/>1-703-816-5119<br/><a href="mailto:rspoon@arccorp.com">rspoon@arccorp.com</a></div></div>' +
+          "</div><div></div></div>" +
+          "</div><div class='arc-blog-mobile-author'><div class='row'><div class='col-lg-12'>" +
           authorSection +
           "</div></div></div>"
       );
@@ -470,16 +479,10 @@ function articleSocial() {
 
       if (isRelated) {
         var cards = "";
-        $(".related-content__items .content-block").each(function() {
-          var title = $(this)
-            .find(".ctaLink")
-            .text();
-          var description = $(this)
-            .find(".content-block__body")
-            .html();
-          var link = $(this)
-            .find(".ctaLink")
-            .attr("href");
+        $(".related-content__items .content-block").each(function () {
+          var title = $(this).find(".ctaLink").text();
+          var description = $(this).find(".content-block__body").html();
+          var link = $(this).find(".ctaLink").attr("href");
           var subString = link
             .substring(link.indexOf("latest/") + 7)
             .replace("/", "");
@@ -506,10 +509,6 @@ function articleSocial() {
           cards += card;
         });
 
-        $(".arc-blog-html").append(
-          '<div style="margin-top: 90px;"> <p><strong>ABOUT ARC</strong></p> <p> <span >ARC accelerates the growth of global air travel by delivering forward-looking travel data, flexible distribution services and other innovative industry solutions. We are a leading travel intelligence company that possesses the world’s largest, most comprehensive global airline ticket dataset, including more than 15 billion passenger flights representing 490 airlines and 230 countries and territories. Our solutions and expertise strengthen economies and enrich lives by connecting stakeholders across the travel ecosystem. For more information, visit </span ><a href="http://www.arccorp.com/">arccorp.com</a><span>.</span> </p>  </div>'
-        );
-
         $("footer").before(
           "<div class='bg-color-fog'><div class='arc-blog-related'><div class='arc-blog-related-title'>Related Resources</div><div class='row'>" +
             cards +
@@ -531,14 +530,10 @@ function techInit() {
 
   $(".iconContainer").width(tcWidth * length + 100 + "px");
 
-  $(".techArrowRight").click(function() {
+  $(".techArrowRight").click(function () {
     var leftmargin = $(".iconContainer").css("margin-left");
     techIcon = $(".techIcon").width();
-    var percentage =
-      tcWidth /
-      $(".techIcon")
-        .css("width")
-        .replace("px", "");
+    var percentage = tcWidth / $(".techIcon").css("width").replace("px", "");
 
     var techNum = $(".iconContainer").width() - techIcon * percentage;
 
@@ -558,7 +553,7 @@ function techInit() {
     }
   });
 
-  $(".techArrowLeft").click(function() {
+  $(".techArrowLeft").click(function () {
     var leftmargin = $(".iconContainer").css("margin-left");
     techIcon = $(".techIcon").width();
     //console.log(leftmargin);
@@ -581,9 +576,7 @@ function quoteRandomize() {
   var num = $(".fullPanel").length;
   var random = Math.floor(Math.random() * num);
   $(".fullPanel-first").hide();
-  $(".fullPanel")
-    .eq(random)
-    .show();
+  $(".fullPanel").eq(random).show();
 }
 
 function sectionRandomize() {
@@ -602,13 +595,11 @@ function productRandomize() {
   var num = $(".featuredProduct").length;
   var random = Math.floor(Math.random() * num);
   $(".featuredProduct-first").hide();
-  $(".featuredProduct")
-    .eq(random)
-    .show();
+  $(".featuredProduct").eq(random).show();
 }
 
 function tabbedPanel() {
-  $(".tabbed-panel__nav li").click(function() {
+  $(".tabbed-panel__nav li").click(function () {
     var index = $(this).index();
 
     //change tab to new tab
@@ -627,15 +618,15 @@ function tabbedPanel() {
 }
 
 function dataSticky() {
-  $(".sticky-nav__inner").click(function() {});
+  $(".sticky-nav__inner").click(function () {});
 }
 
 function formValidate() {
   if ($(".page-form").length) {
-    $(document).ready(function() {
+    $(document).ready(function () {
       $(".page-form form").attr("id", "silverpopForm");
       $("#silverpopForm").validate({
-        errorPlacement: function(error, element) {
+        errorPlacement: function (error, element) {
           if ($(element).is(".error")) {
             $(element)
               .parents("div")
@@ -652,9 +643,9 @@ function formValidate() {
           }
         },
       });
-      $("select", ".page-form").each(function() {
+      $("select", ".page-form").each(function () {
         $(this).rules("add", {
-          required: function(element) {
+          required: function (element) {
             return (
               $(element)
                 .parents("div", "div[id^=container_]")
@@ -667,10 +658,10 @@ function formValidate() {
           },
         });
       });
-      $("input", ".page-form").each(function() {
+      $("input", ".page-form").each(function () {
         if (this.parentNode.getElementsByTagName("span").length) {
           $(this).rules("add", {
-            required: function(element) {
+            required: function (element) {
               return (
                 $(element)
                   .parents("div", "div[id^=container_]")
@@ -680,7 +671,7 @@ function formValidate() {
             messages: {
               required: "",
             },
-            unhighlight: function(element) {
+            unhighlight: function (element) {
               if (
                 $(element).is(".error") === !1 ||
                 element["aria-invalid"] == !1
@@ -715,7 +706,7 @@ function formValidate() {
     });
     jQuery.validator.addMethod(
       "phoneUS",
-      function(phone_number, element) {
+      function (phone_number, element) {
         phone_number = phone_number.replace(/\s+/g, "");
         return (
           this.optional(element) ||
@@ -734,7 +725,7 @@ function stickyNav() {
   if (stickyNav.length) {
     var stickyNavTop = stickyNav.offset().top;
 
-    $(window).scroll(function() {
+    $(window).scroll(function () {
       var scrollTop = $(window).scrollTop();
 
       if (scrollTop > stickyNavTop) {
@@ -744,7 +735,7 @@ function stickyNav() {
       }
     });
 
-    $(".sticky-nav__header").click(function(event) {
+    $(".sticky-nav__header").click(function (event) {
       var $el = $(".sticky-nav__content");
       console.log($el.css("max-height"));
 
@@ -755,10 +746,8 @@ function stickyNav() {
       }
     });
 
-    $(".sticky-nav--collapsed a").click(function(event) {
-      var linkID = $(this)
-        .prop("href")
-        .split("#")[1];
+    $(".sticky-nav--collapsed a").click(function (event) {
+      var linkID = $(this).prop("href").split("#")[1];
 
       if ($("[data-sticky-id='" + linkID + "']")) {
         var target = $("[data-sticky-id='" + linkID + "']");
@@ -771,7 +760,7 @@ function stickyNav() {
               scrollTop: target.offset().top,
             },
             1000,
-            function() {
+            function () {
               // Callback after animation
               // Must change focus!
               var $target = $(target);
@@ -911,12 +900,12 @@ if ($("#ndc-app").length) {
       ],
     },
     methods: {
-      toggleView: function(i) {
+      toggleView: function (i) {
         var copy = this.ndcAirlines;
         copy[i].display = !copy[i].display;
         this.ndcAirlines = copy;
       },
-      paymentMatch: function(item, x) {
+      paymentMatch: function (item, x) {
         return item.indexOf(x) > -1;
       },
     },
@@ -936,16 +925,16 @@ var app = new Vue({
   el: ".supernav",
   data: data,
   methods: {
-    primaryNavCheck: function(item) {
+    primaryNavCheck: function (item) {
       return item === this.primaryNav;
     },
-    navPanelReset: function() {
+    navPanelReset: function () {
       this.primaryNav = "";
     },
-    navPanelSwitch: function(curNav) {
+    navPanelSwitch: function (curNav) {
       this.primaryNav = curNav;
     },
-    showPopup: function(elem) {
+    showPopup: function (elem) {
       if (this[elem] == false) {
         if (elem == "contactActive") {
           this.loginActive = false;
@@ -955,14 +944,14 @@ var app = new Vue({
       }
       this[elem] = !this[elem];
     },
-    hideLogin: function() {
+    hideLogin: function () {
       this.loginActive = false;
       this.contactActive = false;
     },
-    hideContact: function() {
+    hideContact: function () {
       this.contactActive = false;
     },
-    toggleSearch: function() {
+    toggleSearch: function () {
       if (this.showSearch == false) {
         this.showSearch = true;
         this.$nextTick(() => {
@@ -975,7 +964,7 @@ var app = new Vue({
   },
   directives: {
     "click-outside": {
-      bind: function(el, binding, vNode) {
+      bind: function (el, binding, vNode) {
         // Provided expression must evaluate to a function.
         if (typeof binding.value !== "function") {
           const compName = vNode.context.name;
@@ -999,7 +988,7 @@ var app = new Vue({
         document.addEventListener("click", handler);
       },
 
-      unbind: function(el, binding) {
+      unbind: function (el, binding) {
         // Remove Event Listeners
         document.removeEventListener("click", el.__vueClickOutside__);
         el.__vueClickOutside__ = null;
@@ -1012,16 +1001,12 @@ var app = new Vue({
 if ($("body").hasClass("home-page")) {
   latestSliderInit();
 
-  $(".jumbo-img-switch").click(function() {
+  $(".jumbo-img-switch").click(function () {
     $(".jumbo-img-switch").hide();
     $(".jumbo-img-video").show();
 
     var symbol =
-      $(".jumbo-img-video iframe")
-        .attr("src")
-        .indexOf("?") > -1
-        ? "&"
-        : "?";
+      $(".jumbo-img-video iframe").attr("src").indexOf("?") > -1 ? "&" : "?";
 
     $(".owl-item")
       .not(".cloned")
@@ -1039,36 +1024,15 @@ if ($("body").hasClass("home-page")) {
 articleSocial();
 //readingTime();
 
-//add class to news release pages
-function newsRelease() {
-  if ($(".btn--link.parentLink")) {
-    if (
-      $(".btn--link.parentLink")
-        .text()
-        .indexOf("News Releases") > -1
-    ) {
-      $("body").addClass("newsReleaseLayout");
-
-      $(".btn--link.parentLink").text("Newsroom");
-      $(".btn--link.parentLink").attr("href", "/about-us/newsroom");
-    }
-  }
-}
-
 function webinarPages() {
   if ($(".btn--link.parentLink")) {
-    if (
-      $(".btn--link.parentLink")
-        .text()
-        .indexOf("On-Demand Webinars") > -1
-    ) {
+    if ($(".btn--link.parentLink").text().indexOf("On-Demand Webinars") > -1) {
       $("body").addClass("webinarPageLayout");
     }
   }
 }
 
 //style with new news release
-newsRelease();
 webinarPages();
 
 //rewriting simple foundation scripts for speed
@@ -1076,7 +1040,7 @@ webinarPages();
 //stickyNav();
 //formValidate();
 
-$(".supernav-mobile-icon .icon-menu").click(function() {
+$(".supernav-mobile-icon .icon-menu").click(function () {
   $(".supernav-mobile-menu").toggle();
   if ($(".supernav-mobile-menu").css("display") == "none") {
     console.log(true);
