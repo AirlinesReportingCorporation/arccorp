@@ -428,7 +428,9 @@ function articleSocial() {
         $(".press-release-boilerplate").length;
 
       headline.before(
-        '<div class="arc-sticky-container" style="z-index: 3; position: sticky; top: 0px;"><div class="bg-color-tarmac arc-sticky-inner"><div class="arc-sticky-nav"><div class="arc-sticky-brand d-flex align-items-center"><a href="https://www2.arccorp.com/about-us/newsroom/" class="arc-sticky-title" style="line-height: 20px;">Newsroom</a></div><div class="arc-sticky-links d-flex align-items-center"></div><div class="arc-sticky-menu d-flex align-items-center"><a href="https://www2.arccorp.com/about-us/newsroom/subscribe/" class="arc-sticky-link-right">Subscribe to ARC News <i class="fas fa-chevron-right"></i></a></div></div></div></div>' +
+        (type == "newsrelease"
+          ? '<div class="arc-sticky-container" style="z-index: 3; position: sticky; top: 0px;"><div class="bg-color-tarmac arc-sticky-inner"><div class="arc-sticky-nav"><div class="arc-sticky-brand d-flex align-items-center"><a href="https://www2.arccorp.com/about-us/newsroom/" class="arc-sticky-title" style="line-height: 20px;">Newsroom</a></div><div class="arc-sticky-links d-flex align-items-center"></div><div class="arc-sticky-menu d-flex align-items-center"><a href="https://www2.arccorp.com/about-us/newsroom/subscribe/" class="arc-sticky-link-right">Subscribe to ARC News <i class="fas fa-chevron-right"></i></a></div></div></div></div>'
+          : "") +
           "<div class='arc-blog-post'><div class='arc-blog-post-jumbo " +
           (!noImg ? "" : "no-img") +
           "'><div class='row no-gutters'><div class='" +
