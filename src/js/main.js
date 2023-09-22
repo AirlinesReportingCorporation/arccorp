@@ -455,7 +455,7 @@ function articleSocial() {
           $(".mainTitle").text() +
           "</div>" +
           "<div class='arc-blog-description'>" +
-          meta +
+          (type == "newsrelease" ? "" : meta) +
           "</div>" +
           "<div class='arc-blog-author'>" +
           articleAuthor +
