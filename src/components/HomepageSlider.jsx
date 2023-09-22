@@ -63,10 +63,10 @@ class HomepageSlider extends Component {
             loop="true"
             autoPlay
             muted
-            data-src="https://www2.arccorp.com/globalassets/homepage/redesign/august-homepage-2x.mp4"
+            data-src="https://www2.arccorp.com/globalassets/homepage/redesign/September-homepage-2x.mp4"
           >
             <source
-              type="https://www2.arccorp.com/globalassets/homepage/redesign/august-homepage-2x.mp4"
+              type="https://www2.arccorp.com/globalassets/homepage/redesign/September-homepage-2x.mp4"
               data-src="lazy.mp4"
             />
           </video>
@@ -82,32 +82,21 @@ class HomepageSlider extends Component {
                   className="arc-jumbo-inner-title mb-1"
                   style={{ maxWidth: "720px", margin: "0 auto" }}
                 >
-                  July U.S. Travel Agency Air Ticket Sales Increase 11% Year
-                  Over Year
+                  August U.S. Travel Agency Air Ticket Sales Surpass $8 Billion
                 </h2>
                 <div
                   className="arc-jumbo-inner-body"
                   style={{ marginBottom: "60px" }}
                 >
-                  Month-over-Month Growth in U.S. Domestic Passenger Trips
-                  Outpaced International in July{" "}
+                  Total Passenger Trips Rebounded in August as Average Ticket
+                  Price Declined for Third Consecutive Month{" "}
                   <a className="arc-homepage-cta-link arc-jumbo-cta-link d-inline-flex p-0 pl-2">
-                    <a href="https://www2.arccorp.com/about-us/newsroom/2023-news-releases/july-2023-ticket-sales/?utm_source=Jumbo_Carousel">
+                    <a href="https://www2.arccorp.com/about-us/newsroom/2023-news-releases/august-2023-ticket-sales/?utm_source=Jumbo_Carousel">
                       Read More
                     </a>
                   </a>
                 </div>
               </div>
-              <a
-                target="_blank"
-                href="https://www.youtube.com/channel/UCWHZsoCDNhjorop892EVETw?sub_confirmation=1"
-                className="arc-jumbo-subscribe"
-              >
-                <img
-                  src="https://www2.arccorp.com/globalassets/homepage/redesign/march-update/subscribe_jumbo.jpg"
-                  alt="subscribe_jumbo.jpg"
-                />
-              </a>
             </div>
           </div>
         </div>
