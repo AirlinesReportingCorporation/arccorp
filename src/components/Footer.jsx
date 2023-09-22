@@ -97,10 +97,10 @@ class Footer extends Component {
                   Our Data
                 </a>
                 <a
-                  href="https://www2.arccorp.com/products-participation/products/arc-data-connect/?utm_source=footer-link"
+                  href="https://www2.arccorp.com/products-participation/products/arc-corporate-intelligence/?utm_source=footer-link"
                   className="arc-footer-link"
                 >
-                  ARC Data Connect
+                  ARC Corporate Intelligence
                 </a>
                 <a
                   href="https://www2.arccorp.com/products-participation/products/arc-travel-demand/?utm_source=footer-link"
