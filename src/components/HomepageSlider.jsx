@@ -236,36 +236,29 @@ class HomepageSlider extends Component {
         <div
           className="arc-jumbo lazy"
           data-bg={
-            "https://www2.arccorp.com/globalassets/products--participation/arc-pay/uplift-arc.jpg?1"
+            "https://www2.arccorp.com/globalassets/products--participation/ndc/dc-ndc-avianac-jumbotron.jpg"
           }
         >
-          <div className="arc-jumbo-inner white">
-            <div className="row">
-              <div className="col-lg-7 col-md-12">
-                <img
-                  style={{
-                    maxWidth: "170px",
-                    marginBottom: "15px",
-                  }}
-                  src="https://www2.arccorp.com/globalassets/products--participation/arc-pay/logos2x.png"
-                  alt="ARC Logo and uplift logo"
-                />
-                <h2 className="arc-jumbo-inner-title white">
-                  Empower Your <br></br> Customers to Book Now and Pay Later.
-                </h2>
-                <div className="arc-jumbo-inner-body">
-                  Give travelers the flexibility to spread the cost of their{" "}
-                  <br></br> trip over low monthly payments.
-                </div>
-                <a
-                  className="ctaBtn ctaBtn--white p-0 tarmac"
-                  target="_blank"
-                  href="https://www2.arccorp.com/products-participation/products/arc-pay/arc-pay-uplift/?utm_source=Jumbo_Carousel"
-                >
-                  Learn More
-                </a>
-              </div>
-            </div>
+          <div
+            className="arc-jumbo-inner white"
+            style={{ alignItems: "flex-end" }}
+          >
+            <a
+              href="https://www2.arccorp.com/products-participation/distribution/arcdirectconnect/?utm_source=Jumbo_Carousel"
+              className=""
+              style={{
+                color: "#000000 !important",
+                position: "absolute",
+                top: "0",
+                left: "0",
+                width: "100%",
+                height: "100%",
+              }}
+              alt="Learn More"
+              title="learn more"
+            >
+              &nbsp;
+            </a>
           </div>
         </div>
       </SwiperSlide>,
