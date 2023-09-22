@@ -313,7 +313,7 @@ function articleSocial() {
 
       console.log(headline);
 
-      if ($(".btn--link.parentLink").text().indexOf("News Releases") > -1) {
+      if ($(".press-release-boilerplate").length > -1) {
         headline.parent().addClass("blog-layout").addClass("newsroom-layout");
         type = "newsrelease";
       } else {
