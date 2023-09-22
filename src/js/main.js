@@ -295,7 +295,7 @@ function articleSocial() {
     if (
       ($(".btn--link.parentLink").text() == "The Latest" ||
         $(".btn--link.parentLink").text() == "Blog" ||
-        $(".btn--link.parentLink").text().indexOf("News Releases") > -1 ||
+        $(".press-release-boilerplate").length > -1 ||
         $(".btn--link.parentLink").text() == "Case Studies" ||
         $(".custom-brow span").text() == "Highlights") &&
       $("h1").eq(0).text() !=
