@@ -289,7 +289,7 @@ function articleSocial() {
   // add social for articles
   if (
     $(".article--headline").length ||
-    $(".press-release-boilerplate").length
+    $(".press-release-boilerplate").length > -1
   ) {
     //test on latest first & case studies
     if (
