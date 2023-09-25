@@ -289,13 +289,14 @@ function articleSocial() {
   // add social for articles
   if (
     $(".article--headline").length ||
-    $(".press-release-boilerplate").length > -1
+    $(".press-release-boilerplate").length > 0
   ) {
+    console.log()
     //test on latest first & case studies
     if (
       ($(".btn--link.parentLink").text() == "The Latest" ||
         $(".btn--link.parentLink").text() == "Blog" ||
-        $(".press-release-boilerplate").length > -1 ||
+        $(".press-release-boilerplate").length > 0 ||
         $(".btn--link.parentLink").text() == "Case Studies" ||
         $(".custom-brow span").text() == "Highlights") &&
       $("h1").eq(0).text() !=
@@ -311,9 +312,7 @@ function articleSocial() {
         ? $(".article--headline")
         : $(".page--headline");
 
-      console.log(headline);
-
-      if ($(".press-release-boilerplate").length > -1) {
+      if ($(".press-release-boilerplate").length > 0) {
         headline.parent().addClass("blog-layout").addClass("newsroom-layout");
         type = "newsrelease";
       } else {
