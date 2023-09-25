@@ -680,6 +680,12 @@ a.ctaBtn.ctaBtn--main-outline {
     border: $teal 2px solid;
   }
 
+  .ctaBtn--tarmac {
+    background: $tarmac;
+    color: $white;
+    border-color: $tarmac;
+  }
+
   .row {
     margin: 0;
     max-width: 100%;

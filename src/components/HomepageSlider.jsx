@@ -170,30 +170,29 @@ class HomepageSlider extends Component {
         <div
           className="arc-jumbo lazy"
           data-bg={
-            "https://www2.arccorp.com/globalassets/homepage/redesign/march-update/jumbotron_retina_DG.jpg"
+            "https://www2.arccorp.com/globalassets/homepage/redesign/jumbotron_retina_ARCPay.jpg"
           }
         >
           <div className="arc-jumbo-inner white">
             <div className="row">
               <div className="col-lg-7 col-md-12">
                 <img
-                  src="https://www2.arccorp.com/globalassets/homepage/redesign/march-update/arcfk.png"
+                  src="https://www2.arccorp.com/globalassets/homepage/redesign/slides/arcpay_logo.png"
                   style={{
-                    maxWidth: "250px",
+                    maxWidth: "100px",
                     marginBottom: "15px",
+                    filter: "invert(1)"
                   }}
                 />
-                <div className="arc-jumbo-new">NEW</div>
-                <h2 className="arc-jumbo-inner-title white">
-                  Destination Gateway
+                <h2
+                  className="arc-jumbo-inner-title white"
+                  style={{ maxWidth: "500px" }}
+                >
+                  Payment processing built by and for travel professionals
                 </h2>
-                <div className="arc-jumbo-inner-body">
-                  Gain Global Airline Insights to Grow your Destination
-                  Marketing
-                </div>
                 <a
-                  className="ctaBtn ctaBtn--white p-0 tarmac"
-                  href="https://www2.arccorp.com/products-participation/products/destination-gateway/?utm_source=Jumbo_Carousel"
+                  className="ctaBtn ctaBtn--tarmac p-0 mt-0"
+                  href="https://www2.arccorp.com/products-participation/products/arc-pay/?utm_source=Jumbo_Carousel"
                 >
                   Learn More
                 </a>
