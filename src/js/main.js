@@ -291,7 +291,7 @@ function articleSocial() {
     $(".article--headline").length ||
     $(".press-release-boilerplate").length > 0
   ) {
-    console.log()
+    console.log();
     //test on latest first & case studies
     if (
       ($(".btn--link.parentLink").text() == "The Latest" ||
@@ -323,6 +323,7 @@ function articleSocial() {
         link =
           "https://www2.arccorp.com/articles-trends/the-latest/ARC-Moves-Direct-Connect-NDC-Forward/";
       }
+      $(".press-release-boilerplate").length > 0;
 
       if (link.indexOf("no-author") > -1) {
         link =
@@ -468,9 +469,11 @@ function articleSocial() {
           "col-lg-9" +
           "'><div class='arc-blog-html'>" +
           $(".rtf").html() +
-          '<div class="row" style="margin-top: 90px;"><div class="col-lg-12"> <p><strong>ABOUT ARC</strong></p> <p> <span >ARC accelerates the growth of global air travel by delivering forward-looking travel data, flexible distribution services and other innovative industry solutions. We are a leading travel intelligence company that possesses the world’s largest, most comprehensive global airline ticket dataset, including more than 15 billion passenger flights representing 490 airlines and 230 countries and territories. Our solutions and expertise strengthen economies and enrich lives by connecting stakeholders across the travel ecosystem. For more information, visit </span ><a href="http://www.arccorp.com/">arccorp.com</a><span>.</span> </p> </div> </div>' +
-          '<div class="row"><div class="col-lg-6"><p><strong>Connect with ARC</strong></p><p>ARC provides journalists with timely statistics, data analysis and in-depth interviews with subject matter experts.</p><a class="ctaBtn ctaBtn--main" title="Email" href="mailto:rspoon@arccorp.com">Media Inquiries</a> <a class="ctaBtn ctaBtn--secondary" title="Media Kit" href="/link/96a1c007524f4c1194065225dffa7519.aspx">Media Kit </a></div><div class="col-lg-6"><p><strong>Contact</strong></p>Randy Spoon<br/>1-703-816-5119<br/><a href="mailto:rspoon@arccorp.com">rspoon@arccorp.com</a></div></div>' +
-          "</div><div></div></div>" +
+          (type == "newsrelease"
+            ? '<div class="row" style="margin-top: 90px;"><div class="col-lg-12"> <p><strong>ABOUT ARC</strong></p> <p> <span >ARC accelerates the growth of global air travel by delivering forward-looking travel data, flexible distribution services and other innovative industry solutions. We are a leading travel intelligence company that possesses the world’s largest, most comprehensive global airline ticket dataset, including more than 15 billion passenger flights representing 490 airlines and 230 countries and territories. Our solutions and expertise strengthen economies and enrich lives by connecting stakeholders across the travel ecosystem. For more information, visit </span ><a href="http://www.arccorp.com/">arccorp.com</a><span>.</span> </p> </div> </div>' +
+              '<div class="row"><div class="col-lg-6"><p><strong>Connect with ARC</strong></p><p>ARC provides journalists with timely statistics, data analysis and in-depth interviews with subject matter experts.</p><a class="ctaBtn ctaBtn--main" title="Email" href="mailto:rspoon@arccorp.com">Media Inquiries</a> <a class="ctaBtn ctaBtn--secondary" title="Media Kit" href="/link/96a1c007524f4c1194065225dffa7519.aspx">Media Kit </a></div><div class="col-lg-6"><p><strong>Contact</strong></p>Randy Spoon<br/>1-703-816-5119<br/><a href="mailto:rspoon@arccorp.com">rspoon@arccorp.com</a></div></div>' +
+              "</div><div></div></div>"
+            : "") +
           "</div><div class='arc-blog-mobile-author'><div class='row'><div class='col-lg-12'>" +
           authorSection +
           "</div></div></div>"
