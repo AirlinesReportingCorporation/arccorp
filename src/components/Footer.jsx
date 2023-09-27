@@ -202,7 +202,7 @@ class Footer extends Component {
             </div>
             <div className="col-lg-2 mb-lg-0 mb-md-3">
               <a
-                href="https://www.schellman.com/certificate-directory?certificateNumber=1427462-10"
+                href="https://www.schellman.com/certificate-directory?certificateNumber=1427462-12"
                 target="_blank"
                 className="arc-footer-iso"
               >
