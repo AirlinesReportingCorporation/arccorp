@@ -349,6 +349,12 @@ function articleSocial() {
         ? $(".author-byline .metadata li").first().text()
         : "";
 
+      var newsreleaseSub = $(".rtf").find(".leadin-text").eq(0).text();
+
+      if (newsreleaseSub.length) {
+        $(".rtf").find(".leadin-text").eq(0).hide();
+      }
+
       subString = subString.split("?")[0];
 
       subString = subString.endsWith("/") ? subString.slice(0, -1) : subString;
@@ -416,7 +422,7 @@ function articleSocial() {
         "'><img src='https://www2.arccorp.com/globalassets/homepage/redesign/latest/linkedin.png'/></a>" +
         "<a href='" +
         twitterUrl +
-        "'><img src='https://www2.arccorp.com/globalassets/homepage/redesign/latest/twitter.png'/></a>" +
+        "'><img src='https://www2.arccorp.com/globalassets/homepage/redesign/twitter-tarmac.png'/></a>" +
         "<a href='" +
         facebookUrl +
         "'><img src='https://www2.arccorp.com/globalassets/homepage/redesign/latest/facebook.png'/></a>" +
@@ -451,27 +457,28 @@ function articleSocial() {
           "<div class='arc-blog-eyebrow'>" +
           articleDate +
           " <i class='fa fa-circle'></i> <span class='readingTime'></span> Read</div>" +
-          "<div class='arc-blog-title'>" +
+          "<div class='arc-blog-title'> " +
           $(".mainTitle").text() +
           "</div>" +
           "<div class='arc-blog-description'>" +
-          (type == "newsrelease" ? "" : meta) +
+          (type == "newsrelease" ? newsreleaseSub : meta) +
           "</div>" +
-          "<div class='arc-blog-author'>" +
-          articleAuthor +
-          "</div>" +
+          (type == "newsrelease" ? authorSection : "") +
+          (isAuthor
+            ? "<div class='arc-blog-author'>" + articleAuthor + "</div>"
+            : "") +
           "</div></div></div></div></div></div>" +
-          "<div class='arc-blog-content'><div class='row'><div class='" +
-          "col-lg-3" +
-          "'>" +
-          authorSection +
-          "</div><div class='" +
+          "<div class='arc-blog-content'><div class='row'>" +
+          (type == "newsrelease"
+            ? "<div class='col-lg-3'></div>"
+            : "<div class='" + "col-lg-3" + "'>" + authorSection + "</div>") +
+          "<div class='" +
           "col-lg-9" +
           "'><div class='arc-blog-html'>" +
           $(".rtf").html() +
           (type == "newsrelease"
-            ? '<div class="row" style="margin-top: 90px;"><div class="col-lg-12"> <p><strong>About ARC</strong></p> <p> <span >ARC accelerates the growth of global air travel by delivering forward-looking travel data, flexible distribution services and other innovative industry solutions. We are a leading travel intelligence company that possesses the world’s largest, most comprehensive global airline ticket dataset, including more than 15 billion passenger flights representing 490 airlines and 230 countries and territories. Our solutions and expertise strengthen economies and enrich lives by connecting stakeholders across the travel ecosystem. For more information, visit </span ><a href="http://www.arccorp.com/">arccorp.com</a><span>.</span> </p> </div> </div>' +
-              '<div class="row"><div class="col-lg-6"><p><strong>Connect with ARC</strong></p><p>ARC provides journalists with timely statistics, data analysis and in-depth interviews with subject matter experts.</p></div><div class="col-lg-6"><p><strong>Contact</strong></p>Randy Spoon<br/>1-703-816-5119<br/><a href="mailto:rspoon@arccorp.com">rspoon@arccorp.com</a></div></div>' +
+            ? '<div class="row" style="margin-top: 90px;"><div class="col-lg-12"> <p><strong>Connect with ARC</strong></p> <p> <span >ARC accelerates the growth of global air travel by delivering forward-looking travel data, flexible distribution services and other innovative industry solutions. We are a leading travel intelligence company that possesses the world’s largest, most comprehensive global airline ticket dataset, including more than 15 billion passenger flights representing 490 airlines and 230 countries and territories. Our solutions and expertise strengthen economies and enrich lives by connecting stakeholders across the travel ecosystem. For more information, visit </span ><a href="http://www.arccorp.com/">arccorp.com</a><span>.</span> </p> </div> </div>' +
+              '<div class="row"><div class="col-lg-12"><p><strong>Contact</strong></p>Randy Spoon<br/>1-703-816-5119<br/><a href="mailto:rspoon@arccorp.com">rspoon@arccorp.com</a></div></div>' +
               "</div><div></div></div>"
             : "") +
           "</div><div class='arc-blog-mobile-author'><div class='row'><div class='col-lg-12'>" +
