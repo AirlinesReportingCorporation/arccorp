@@ -470,10 +470,10 @@ function articleSocial() {
           "</div></div></div></div></div></div>" +
           "<div class='arc-blog-content'><div class='row'>" +
           (type == "newsrelease"
-            ? "<div class='col-lg-3'></div>"
+            ? "<div class='col-lg-2'></div>"
             : "<div class='" + "col-lg-3" + "'>" + authorSection + "</div>") +
           "<div class='" +
-          "col-lg-9" +
+          (type == "newsrelease" ? "col-lg-8" : "col-lg-9") +
           "'><div class='arc-blog-html'>" +
           $(".rtf").html() +
           (type == "newsrelease"
