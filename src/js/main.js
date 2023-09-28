@@ -451,7 +451,7 @@ function articleSocial() {
           (!noImg
             ? "col-lg-6"
             : type == "newsrelease"
-            ? "offset-lg-3 col-lg-9 newsrelease-headline"
+            ? "offset-lg-2 col-lg-8 newsrelease-headline"
             : "col-lg-12") +
           "'><div class='arc-blog-post-right-container '><div class='arc-blog-post-right'><div>" +
           "<div class='arc-blog-eyebrow'>" +
