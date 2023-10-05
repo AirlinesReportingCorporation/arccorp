@@ -252,7 +252,7 @@ class HomepageSection extends Component {
           </div>
           <div className="col-lg-3 col-md-6">
             <a
-              href="https://arctravelconnect.com?utm_source=homepage-card"
+              href="https://elevate-travelconnect.com/?utm_source=homepage-card"
               className="arc-homepage-card d-block arc-homepage-card-long align-items-center"
               style={{ backgroundSize: "contain", background: "#000000" }}
             >
@@ -261,12 +261,11 @@ class HomepageSection extends Component {
                   <div
                     className="arc-homepage-card-inner d-flex flex-column lazy"
                     data-bg={
-                      "https://www2.arccorp.com/globalassets/homepage/redesign/TC24_single_box.jpg?1"
+                      "https://www2.arccorp.com/globalassets/homepage/ETC_singlebox-RegOpen.jpg"
                     }
                     style={{
-                      backgroundColor: "#000000",
+                      backgroundColor: "#f7f6f5",
                       backgroundSize: "contain",
-                      backgroundPositionX: 0,
                     }}
                   >
                     {/* <div

@@ -204,6 +204,17 @@ $margin-spacing: 30px;
   border-radius: 50%;
 }
 
+@media (max-width: 1200px) {
+  .arc-jumbo {
+    &.jumbo-image {
+      background-color: #f7f5f5;
+      background-size: contain;
+      background-repeat: no-repeat;
+      background-position: center center;
+    }
+  }
+}
+
 @media (max-width: 959.9999px) {
   .#{$name}jumbo {
     min-height: 592px;
@@ -250,7 +261,7 @@ $margin-spacing: 30px;
 
 @media (max-width: 767.99px) {
   .#{$name}jumbo {
-    background: variables.$tarmac !important;
+    //background: variables.$tarmac !important;
 
     &.teal {
       background: variables.$teal !important;
@@ -273,6 +284,13 @@ $margin-spacing: 30px;
 
     video {
       display: none;
+    }
+
+    &.jumbo-image {
+      background-color: #f7f5f5;
+      background-size: contain;
+      background-repeat: no-repeat;
+      background-position: center center;
     }
   }
 

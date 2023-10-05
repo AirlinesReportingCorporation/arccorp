@@ -103,9 +103,9 @@ class HomepageSlider extends Component {
       </SwiperSlide>,
       <SwiperSlide>
         <div
-          className="arc-jumbo black lazy"
+          className="arc-jumbo jumbo-image lazy"
           data-bg={
-            "https://www2.arccorp.com/globalassets/homepage/redesign/etc-2024-jumbotron.jpg"
+            "https://www2.arccorp.com/globalassets/homepage/ETC-RegOpen-jumbotron.jpg"
           }
         >
           <div
@@ -113,7 +113,7 @@ class HomepageSlider extends Component {
             style={{ alignItems: "flex-end" }}
           >
             <a
-              href="https://arctravelconnect.com/?utm_source=Jumbo_Carousel"
+              href="https://elevate-travelconnect.com/?utm_source=Jumbo_Carousel"
               className=""
               style={{
                 color: "#000000 !important",
