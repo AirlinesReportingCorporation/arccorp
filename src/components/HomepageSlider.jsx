@@ -205,36 +205,6 @@ class HomepageSlider extends Component {
         <div
           className="arc-jumbo lazy"
           data-bg={
-            "https://www2.arccorp.com/globalassets/homepage/redesign/slides/jumbotron_retina_TCI.jpg"
-          }
-        >
-          <div className="arc-jumbo-inner white">
-            <div className="row">
-              <div className="col-lg-7 col-md-12">
-                <h2 className="arc-jumbo-inner-title white">
-                  Uncover Passenger <br />
-                  Intentions with <br />
-                  Trip Class Indicator
-                </h2>
-                <div className="arc-jumbo-inner-body">
-                  Advanced data analytics enables enhanced accuracy <br />
-                  of business and leisure travel data
-                </div>
-                <a
-                  className="ctaBtn ctaBtn--white p-0 tarmac"
-                  href="https://www2.arccorp.com/products-participation/products/advanced-data-analytics/?utm_source=Jumbo_Carousel#tci"
-                >
-                  Learn More
-                </a>
-              </div>
-            </div>
-          </div>
-        </div>
-      </SwiperSlide>,
-      <SwiperSlide>
-        <div
-          className="arc-jumbo lazy"
-          data-bg={
             "https://www2.arccorp.com/globalassets/products--participation/ndc/dc-ndc-avianac-jumbotron.jpg"
           }
         >
