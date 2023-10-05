@@ -419,13 +419,13 @@ function articleSocial() {
         "<div class='arc-blog-share'>" +
         "<a href='" +
         linkedinUrl +
-        "'><img src='https://www2.arccorp.com/globalassets/homepage/redesign/latest/linkedin.png'/></a>" +
+        "'><img src='https://www2.arccorp.com/globalassets/homepage/redesign/march-update/linkedin_logo.png'/></a>" +
         "<a href='" +
         twitterUrl +
-        "'><img src='https://www2.arccorp.com/globalassets/homepage/redesign/twitter-tarmac.png'/></a>" +
+        "'><img src='https://www2.arccorp.com/globalassets/homepage/redesign/march-update/twitter_logo.png'/></a>" +
         "<a href='" +
         facebookUrl +
-        "'><img src='https://www2.arccorp.com/globalassets/homepage/redesign/latest/facebook.png'/></a>" +
+        "'><img src='https://www2.arccorp.com/globalassets/homepage/redesign/march-update/facebook_logo.png'/></a>" +
         "</div>" +
         "</div>";
 
