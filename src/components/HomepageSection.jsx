@@ -17,11 +17,11 @@ var statData = {
 };
 
 var homeData = {
-  recentBlogTitle: "ARC is NDC-Ready",
+  recentBlogTitle: "2024 Air Travel Hacks Report",
   recentBlogLink:
-    "https://www2.arccorp.com/articles-trends/the-latest/arc-is-ndc-ready/?utm_source=homepage-card",
+    "https://www2.arccorp.com/articles-trends/the-latest/2024-air-travel-hacks-report/?utm_source=homepage-card",
   recentBlogImage:
-    "https://www2.arccorp.com/globalassets/homepage/redesign/latest/arc-is-ndc-ready.jpg/",
+    "https://www2.arccorp.com/globalassets/homepage/redesign/latest/2024-air-travel-hacks-report.jpg/",
   popularArticles: [
     {
       date: "Updated Every Monday",
