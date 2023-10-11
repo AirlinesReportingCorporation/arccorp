@@ -29,14 +29,14 @@ var homeData = {
       link: "https://www2.arccorp.com/articles-trends/the-latest/coronavirus/",
     },
     {
+      date: "Oct 4",
+      title: "Navigating NDC and ARC Direct Connect: A Roadmap to Innovation Webinar Recap",
+      link: "https://www2.arccorp.com/articles-trends/the-latest/navigating-ndc-arc-direct-connect-webinar-recap/",
+    },
+    {
       date: "Mar 31, 2023",
       title: "Travel Tales and Tips from the Women of ARC",
       link: "https://www2.arccorp.com/articles-trends/the-latest/travel-tales-and-tips/",
-    },
-    {
-      date: "Mar 03, 2022",
-      title: "A Deep Dive into Omnichannel Retailing",
-      link: "https://www2.arccorp.com/articles-trends/the-latest/omnichannel-series-recap/",
     },
     {
       date: "APRIL 27, 2023",
