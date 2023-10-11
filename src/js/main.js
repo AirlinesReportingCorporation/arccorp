@@ -291,7 +291,6 @@ function articleSocial() {
     $(".article--headline").length ||
     $(".press-release-boilerplate").length > 0
   ) {
-    console.log();
     //test on latest first & case studies
     if (
       ($(".btn--link.parentLink").text() == "The Latest" ||
@@ -1049,6 +1048,13 @@ function webinarPages() {
   if ($(".btn--link.parentLink")) {
     if ($(".btn--link.parentLink").text().indexOf("On-Demand Webinars") > -1) {
       $("body").addClass("webinarPageLayout");
+
+      var stickyNav =
+        '<div class="arc-sticky-container" style="z-index: 3; position: sticky; top: 0px;"><div class="bg-color-tarmac arc-sticky-inner"><div class="arc-sticky-nav"><div class="arc-sticky-brand d-flex align-items-center"><a href="https://www2.arccorp.com/articles-trends/on-demand-webinars/" class="arc-sticky-title" style="line-height: 20px;">On-Demand Webinars</a></div><div class="arc-sticky-links d-flex align-items-center"></div><div class="arc-sticky-menu d-flex align-items-center"><a href="https://www2.arccorp.com/about-us/contact-us/" class="arc-sticky-link-right">Contact Us<i class="fas fa-chevron-right"></i></a></div></div></div></div>';
+
+      $(".page--headline").before(stickyNav);
+
+      $(".btn--link.parentLink").hide();
     }
   }
 }
