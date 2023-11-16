@@ -63,10 +63,10 @@ class HomepageSlider extends Component {
             loop="true"
             autoPlay
             muted
-            data-src="https://www2.arccorp.com/globalassets/homepage/october-homepage-2x.mp4"
+            data-src="https://www2.arccorp.com/globalassets/homepage/november-homepage-2x.mp4"
           >
             <source
-              type="https://www2.arccorp.com/globalassets/homepage/october-homepage-2x.mp4"
+              type="https://www2.arccorp.com/globalassets/homepage/november-homepage-2x.mp4"
               data-src="lazy.mp4"
             />
           </video>
@@ -82,15 +82,15 @@ class HomepageSlider extends Component {
                   className="arc-jumbo-inner-title mb-1"
                   style={{ maxWidth: "720px", margin: "0 auto" }}
                 >
-                  September U.S. Travel Agency Air Ticket Sales Total $7.6 Billion
+                  U.S. Travel Agency Air Ticket Sales Top $7.2 Billion in October
                 </h2>
                 <div
                   className="arc-jumbo-inner-body"
                   style={{ marginBottom: "60px" }}
                 >
-                  Month-over-Month Sales and Passenger Trips Declined as Summer Air Travel Wound Down{" "}
+                  Year-over-Year Increase in Passenger Trips Driven by U.S. Domestic Travel{" "}
                   <span className="arc-homepage-cta-link arc-jumbo-cta-link d-inline-flex p-0 pl-2">
-                    <a href="https://www2.arccorp.com/about-us/newsroom/2023-news-releases/september-u.s.-travel-agency-air-ticket-sales-total-$7.6-billion/?utm_source=Jumbo_Carousel">
+                    <a href="https://www2.arccorp.com/about-us/newsroom/2023-news-releases/october-2023-ticket-sales/?utm_source=Jumbo_Carousel">
                       Read More
                     </a>
                   </span>
