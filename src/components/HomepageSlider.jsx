@@ -134,7 +134,7 @@ class HomepageSlider extends Component {
         <div
           className="arc-jumbo lazy"
           data-bg={
-            "https://www2.arccorp.com/globalassets/homepage/redesign/march-update/our_story_background_jumbo.jpg"
+            "https://www2.arccorp.com/globalassets/homepage/redesign/march-update/fraudalert-jumbotron.jpg"
           }
         >
           <div className="arc-jumbo-inner white">
@@ -148,17 +148,17 @@ class HomepageSlider extends Component {
                   }}
                 />
                 <h2 className="arc-jumbo-inner-title white">
-                  Accelerating the Growth of Global Air Travel
+                Fraud Alert
                 </h2>
                 <div className="arc-jumbo-inner-body">
-                  See how ARC supports the travel ecosystem.
+                Stay vigilant against the latest fraud schemes.
                 </div>
                 <a
                   className="ctaBtn ctaBtn--white p-0 tarmac"
                   target="_blank"
-                  href="https://www2.arccorp.com/about-us/our-story?utm_source=Jumbo_Carousel"
+                  href="https://www2.arccorp.com/support-training/fraud-prevention/schemes/?utm_source=Jumbo_Carousel"
                 >
-                  Learn More
+                  Take Action
                 </a>
               </div>
             </div>
