@@ -7,13 +7,13 @@ import ReactDOM from "react-dom";
 import { Stickynav } from "arccorp-vars";
 
 export default function mountsticky() {
-  $(document).ready(function() {
+  $(document).ready(function () {
     var stickyExists = $(".sticky-wrapper").length > 0;
 
     if (stickyExists) {
       //get the data-sticky-id. for each, grab the value. on that same element, add an id with that value
 
-      $("[data-sticky-id]").each(function() {
+      $("[data-sticky-id]").each(function () {
         var value = $(this).attr("data-sticky-id");
         $(this).attr("id", value);
       });
@@ -24,24 +24,29 @@ export default function mountsticky() {
       titleExists
         ? (pageTitle = document.getElementsByTagName("h1")[0].innerText)
         : (pageTitle = "");
-        
+
       let pageLinks = document.querySelectorAll(".sticky-nav__link");
 
       let links = [];
 
-      $(".sticky-nav__linkItem").each(function() {
+      $(".sticky-nav__linkItem").each(function () {
         const newLink = {
           url: $(this).find("a").attr("href"),
-          title: $(this).find("a").text()
+          title: $(this).find("a").text(),
         };
         links.push(newLink);
       });
 
-      let ctaLink = document.querySelector(".ctaLink").href;
-      let ctaName = document.querySelector(".ctaLink").innerText;
+      let ctaLink = "";
+      let ctaName = ""
+
+      if (document.querySelector(".ctaLink")) {
+        ctaLink = document.querySelector(".ctaLink").href;
+        ctaName = document.querySelector(".ctaLink").innerText;
+      }
 
       $(".navcontainer").after("<div id='stickynav-app'></div>");
-      
+
       var appNode = document.getElementById("stickynav-app");
       appNode.style.position = "relative";
       appNode.style.height = "auto";
