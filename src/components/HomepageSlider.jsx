@@ -63,10 +63,10 @@ class HomepageSlider extends Component {
             loop="true"
             autoPlay
             muted
-            data-src="https://www2.arccorp.com/globalassets/homepage/november-homepage-2x.mp4"
+            data-src="https://www2.arccorp.com/globalassets/homepage/december-homepage-2x2.mp4"
           >
             <source
-              type="https://www2.arccorp.com/globalassets/homepage/november-homepage-2x.mp4"
+              type="https://www2.arccorp.com/globalassets/homepage/december-homepage-2x2.mp4"
               data-src="lazy.mp4"
             />
           </video>
@@ -82,15 +82,15 @@ class HomepageSlider extends Component {
                   className="arc-jumbo-inner-title mb-1"
                   style={{ maxWidth: "720px", margin: "0 auto" }}
                 >
-                  U.S. Travel Agency Air Ticket Sales Top $7.2 Billion in October
+                  November U.S. Travel Agency Air Ticket Sales Total $6.8 Billion
                 </h2>
                 <div
                   className="arc-jumbo-inner-body"
                   style={{ marginBottom: "60px" }}
                 >
-                  Year-over-Year Increase in Passenger Trips Driven by U.S. Domestic Travel{" "}
+                  Strong International Travel Demand Helped Elevate Sales Above Year-Over-Year Levels
                   <span className="arc-homepage-cta-link arc-jumbo-cta-link d-inline-flex p-0 pl-2">
-                    <a href="https://www2.arccorp.com/about-us/newsroom/2023-news-releases/october-2023-ticket-sales/?utm_source=Jumbo_Carousel">
+                    <a href="https://www2.arccorp.com/about-us/newsroom/2023-news-releases/november-2023-ticket-sales/">
                       Read More
                     </a>
                   </span>
@@ -147,11 +147,9 @@ class HomepageSlider extends Component {
                     marginBottom: "15px",
                   }}
                 />
-                <h2 className="arc-jumbo-inner-title white">
-                Fraud Alert
-                </h2>
+                <h2 className="arc-jumbo-inner-title white">Fraud Alert</h2>
                 <div className="arc-jumbo-inner-body">
-                Stay vigilant against the latest fraud schemes.
+                  Stay vigilant against the latest fraud schemes.
                 </div>
                 <a
                   className="ctaBtn ctaBtn--white p-0 tarmac"
@@ -180,7 +178,7 @@ class HomepageSlider extends Component {
                   style={{
                     maxWidth: "100px",
                     marginBottom: "15px",
-                    filter: "invert(1)"
+                    filter: "invert(1)",
                   }}
                 />
                 <h2
