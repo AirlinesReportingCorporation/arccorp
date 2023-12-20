@@ -24,9 +24,9 @@ var homeData = {
     "https://www2.arccorp.com/globalassets/homepage/redesign/latest/2024-air-travel-hacks-report.jpg/",
   popularArticles: [
     {
-      date: "Updated Every Monday",
-      title: "ARC Data Shows Weekly Air Travel Recovery      ",
-      link: "https://www2.arccorp.com/articles-trends/the-latest/coronavirus/",
+      date: "Updated Every Month",
+      title: "ARC Data Shows Monthly and Annual Sales Statistics",
+      link: "https://www2.arccorp.com/articles-trends/sales-statistics",
     },
     {
       date: "Oct 4",
