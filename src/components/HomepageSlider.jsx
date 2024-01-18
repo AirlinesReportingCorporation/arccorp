@@ -63,10 +63,10 @@ class HomepageSlider extends Component {
             loop="true"
             autoPlay
             muted
-            data-src="https://www2.arccorp.com/globalassets/homepage/december-homepage-2x2.mp4"
+            data-src="https://www2.arccorp.com/globalassets/homepage/january-homepage-2x.mp4"
           >
             <source
-              type="https://www2.arccorp.com/globalassets/homepage/december-homepage-2x2.mp4"
+              type="https://www2.arccorp.com/globalassets/homepage/january-homepage-2x.mp4"
               data-src="lazy.mp4"
             />
           </video>
@@ -82,15 +82,15 @@ class HomepageSlider extends Component {
                   className="arc-jumbo-inner-title mb-1"
                   style={{ maxWidth: "720px", margin: "0 auto" }}
                 >
-                  November U.S. Travel Agency Air Ticket Sales Total $6.8 Billion
+                  U.S. Travel Agency Sales Total $95.3 Billion in 2023
                 </h2>
                 <div
                   className="arc-jumbo-inner-body"
                   style={{ marginBottom: "60px" }}
                 >
-                  Strong International Travel Demand Helped Elevate Sales Above Year-Over-Year Levels
+                  Yearly Total Finishes Slightly Below 2019 Record
                   <span className="arc-homepage-cta-link arc-jumbo-cta-link d-inline-flex p-0 pl-2">
-                    <a href="https://www2.arccorp.com/about-us/newsroom/2023-news-releases/november-2023-ticket-sales/">
+                    <a href="https://www2.arccorp.com/about-us/newsroom/2024-news-releases/december-2023-ticket-sales/">
                       Read More
                     </a>
                   </span>
