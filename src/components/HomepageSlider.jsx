@@ -90,7 +90,7 @@ class HomepageSlider extends Component {
                 >
                   Yearly Total Finishes Slightly Below 2019 Record
                   <span className="arc-homepage-cta-link arc-jumbo-cta-link d-inline-flex p-0 pl-2">
-                    <a href="https://www2.arccorp.com/about-us/newsroom/2024-news-releases/december-2023-ticket-sales/">
+                    <a href="https://www2.arccorp.com/about-us/newsroom/2024-news-releases/dec-2023-ticket-sales/">
                       Read More
                     </a>
                   </span>
