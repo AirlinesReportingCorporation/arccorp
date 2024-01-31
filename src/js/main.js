@@ -940,83 +940,6 @@ var data = {
   formInput: "",
 };
 
-//supernav
-var app = new Vue({
-  el: ".supernav",
-  data: data,
-  methods: {
-    primaryNavCheck: function (item) {
-      return item === this.primaryNav;
-    },
-    navPanelReset: function () {
-      this.primaryNav = "";
-    },
-    navPanelSwitch: function (curNav) {
-      this.primaryNav = curNav;
-    },
-    showPopup: function (elem) {
-      if (this[elem] == false) {
-        if (elem == "contactActive") {
-          this.loginActive = false;
-        } else {
-          this.contactActive = false;
-        }
-      }
-      this[elem] = !this[elem];
-    },
-    hideLogin: function () {
-      this.loginActive = false;
-      this.contactActive = false;
-    },
-    hideContact: function () {
-      this.contactActive = false;
-    },
-    toggleSearch: function () {
-      if (this.showSearch == false) {
-        this.showSearch = true;
-        this.$nextTick(() => {
-          this.$refs.search.focus();
-        });
-      } else {
-        this.showSearch = false;
-      }
-    },
-  },
-  directives: {
-    "click-outside": {
-      bind: function (el, binding, vNode) {
-        // Provided expression must evaluate to a function.
-        if (typeof binding.value !== "function") {
-          const compName = vNode.context.name;
-          let warn = `[Vue-click-outside:] provided expression '${binding.expression}' is not a function, but has to be`;
-          if (compName) {
-            warn += `Found in component '${compName}'`;
-          }
-
-          console.warn(warn);
-        }
-        // Define Handler and cache it on the element
-        const bubble = binding.modifiers.bubble;
-        const handler = (e) => {
-          if (bubble || (!el.contains(e.target) && el !== e.target)) {
-            binding.value(e);
-          }
-        };
-        el.__vueClickOutside__ = handler;
-
-        // add Event Listeners
-        document.addEventListener("click", handler);
-      },
-
-      unbind: function (el, binding) {
-        // Remove Event Listeners
-        document.removeEventListener("click", el.__vueClickOutside__);
-        el.__vueClickOutside__ = null;
-      },
-    },
-  },
-});
-
 //functions for just the homepage
 if ($("body").hasClass("home-page")) {
   latestSliderInit();
@@ -1066,23 +989,5 @@ webinarPages();
 //tabbedPanel();
 //stickyNav();
 //formValidate();
-
-$(".supernav-mobile-icon .icon-menu").click(function () {
-  $(".supernav-mobile-menu").toggle();
-  if ($(".supernav-mobile-menu").css("display") == "none") {
-    console.log(true);
-    $(".supernav-sub").hide();
-  }
-});
-
-//function for sign-in
-if ($(".navcontainer").hasClass("signedIn")) {
-  var username = $(".navcontainer").data("username");
-
-  $("#frmMyARCLogin").hide();
-  $(".supernav-loggedin").show();
-
-  $(".supernav-myarc-username").html(username);
-}
 
 mountsticky();

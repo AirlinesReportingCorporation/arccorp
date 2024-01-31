@@ -194,6 +194,7 @@ footer .footer-links-social li a.icon-iso_logo {
 }
 
 .supernav .supernav-sub {
+  display: none;
   background: #ffffff;
   border-top: #189bb0 2px solid;
   font-size: 0.9rem;
@@ -204,6 +205,10 @@ footer .footer-links-social li a.icon-iso_logo {
   z-index: 103;
   box-shadow: 0 1px 100px rgba(0, 0, 0, 0.22), 0 1px 100px rgba(0, 0, 0, 0.34);
   transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+
+  &.active {
+    display: block;
+  }
 }
 
 .supernav .supernav-sub .supernav-sub-inner {
