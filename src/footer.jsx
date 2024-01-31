@@ -4,6 +4,8 @@ import "react-app-polyfill/stable";
 import React from "react";
 import ReactDOM from "react-dom";
 import Footer from "./components/Footer";
+import MainNavigation from "./components/MainNavigation";
+
 
 var footerNode = document.getElementById("arc-footer");
 var navNode = document.getElementById("arc-main-nav");
