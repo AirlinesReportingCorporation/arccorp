@@ -51,7 +51,7 @@ module.exports = {
     alias: {
       vue: "vue/dist/vue.js",
     },
-    extensions: ["*", ".js", ".jsx"],
+    extensions: [".*",".js",".jsx"],
   },
   plugins: [
     new webpack.ProvidePlugin({
