@@ -3,6 +3,13 @@
   height: auto;
   position: relative;
   border-bottom: 1px solid #2a2b2c;
+
+  a.show-search {
+    color: #2a2b2c;
+    vertical-align: middle;
+    padding: 0;
+    font-size: 1.3rem;
+  }
 }
 
 .arc-mn-nav-container {
@@ -342,7 +349,7 @@ a.arc-mn-mobile-btn {
 
 .arc-mn-mobile-menu-category {
   margin-bottom: 1rem;
-  font-size: 2rem;
+  font-size: 1.75rem;
   font-family: SourceSansPro-SemiBold, "Source Sans Pro", helvetica, arial,
     sans-serif;
   opacity: 0.8;
@@ -366,7 +373,6 @@ a.arc-mn-mobile-btn {
     border-top: 1px solid #222222;
     opacity: 0.5;
     padding-top: 15px;
-
   }
   a {
     font-family: SourceSansPro-SemiBold, "Source Sans Pro", helvetica, arial,

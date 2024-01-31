@@ -114,6 +114,10 @@ function MainNavigation() {
             onMouseEnter={() => setActiveMenu("")}
           >
             <a
+              href="https://www2.arccorp.com/search"
+              class="topnav-link show-search icon-search"
+            ></a>
+            <a
               href="https://www2.arccorp.com/about-us/contact-us/"
               class="arc-mn-contact-link"
             >
