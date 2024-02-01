@@ -165,7 +165,7 @@ function Support() {
           </div>
         </div>
       </div>
-      <div class="col-md-6 arc-mn-sub-feature">
+      <div class="col-md-6 ">
         <div class="arc-mn-sub-container arc-mn-sub-container-left">
           <div class="row justify-content-end">
             <div
@@ -208,9 +208,6 @@ function Support() {
               >
                 Re-designation form for Airlines
               </a>
-              <br />
-              <br />
-              <br />
             </div>
             <div class="arc-mn-sub-main col-md-6">
               <div class="arc-mn-header arc-mn-header-nonlink">
