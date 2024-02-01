@@ -5,7 +5,7 @@ import "core-js/stable";
 import "owl.carousel";
 import stickybits from "stickybits";
 import LazyLoad from "vanilla-lazyload";
-//import mountsticky from "./partials/stickynav";
+import mountsticky from "./partials/stickynav";
 
 if ($(".owl-carousel").length) {
   $(".owl-carousel").owlCarousel({
