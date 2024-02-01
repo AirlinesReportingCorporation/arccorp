@@ -1,14 +1,10 @@
 //css imports
 import "../css/main.scss";
 
-//js dependency imports
-//import $ from "jquery";
-import Vue from "vue";
 import "owl.carousel";
-import "jquery-validation";
 import stickybits from "stickybits";
 import LazyLoad from "vanilla-lazyload";
-import mountsticky from "./partials/stickynav";
+//import mountsticky from "./partials/stickynav";
 
 if ($(".owl-carousel").length) {
   $(".owl-carousel").owlCarousel({
