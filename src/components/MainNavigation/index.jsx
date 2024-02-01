@@ -98,6 +98,7 @@ function MainNavigation() {
               <div className="arc-mn-menu-items">
                 {navCategories.map((navCategory, i) => (
                   <a
+                  key={i}
                     href="#"
                     className="arc-mn-menu-item"
                     onMouseEnter={() => setActiveMenu(navCategory.key)}
@@ -155,6 +156,7 @@ function MainNavigation() {
 
       {navCategories.map((navCategory, i) => (
         <div
+        key={i}
           className={
             "arc-mn-sub animated " +
             (activeMenu === navCategory.key ? "active fadeInDown" : "") +
@@ -177,6 +179,7 @@ function MainNavigation() {
           <div style={{ display: mobileCategory === "" ? "block" : "none" }}>
             {navCategories.map((navCategory, i) => (
               <div
+              key={i}
                 className="arc-mn-mobile-menu-category"
                 onClick={() => setMobileCategory(navCategory.key)}
               >
@@ -188,6 +191,7 @@ function MainNavigation() {
           <div className="arc-mn-mobile-menu-category-menu">
             {navCategories.map((navCategory, i) => (
               <div
+              key={i}
                 style={{
                   display:
                     mobileCategory === navCategory.key ? "block" : "none",

@@ -1,5 +1,5 @@
 import React, { Component, lazy, Suspense } from "react";
-
+import "core-js/stable";
 import "youtube-background";
 
 import LazyLoad from "vanilla-lazyload";
@@ -12,8 +12,6 @@ if (!document.lazyLoadInstance) {
 
 import HomepageSlider from "./components/HomepageSlider";
 const HomepageSection = lazy(() => import("./components/HomepageSection"));
-
-
 
 class Apphome extends Component {
   constructor(props) {
@@ -34,7 +32,7 @@ class Apphome extends Component {
     return (
       <div className="arc-homepage">
         <div style={{ maxWidth: "100%", overflow: "hidden" }}>
-            <HomepageSlider />
+          <HomepageSlider />
         </div>
 
         <Suspense

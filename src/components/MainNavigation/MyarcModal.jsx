@@ -20,24 +20,24 @@ function MyarcModal({ closeMyarcModal }) {
 
   return (
     <div
-      class="arc-mn-myarc-login"
+      className="arc-mn-myarc-login"
       ref={ref}
       
     >
-      <div class="arc-mn-myarc-login-inner">
+      <div className="arc-mn-myarc-login-inner">
         <div
-          class="arc-mn-myarc-loggedin"
+          className="arc-mn-myarc-loggedin"
           style={{ display: loggedIn.length > 0 ? "block" : "none" }}
         >
           You are currently logged in as
-          <div class="arc-mn-myarc-username">{loggedIn}</div>
-          <a target="_blank" href="https://myarc.arccorp.com/" class="ctaBtn">
+          <div className="arc-mn-myarc-username">{loggedIn}</div>
+          <a target="_blank" href="https://myarc.arccorp.com/" className="ctaBtn">
             My ARC
           </a>
           <a
             target="_blank"
             href="https://myarc.arccorp.com/PortalApp/ARCGateway.portal?_nfpb=true&_st=&_pageLabel=ARC_Login&_name=logout&_nfls=false"
-            class="ctaBtn"
+            className="ctaBtn"
           >
             Log Out
           </a>
@@ -64,10 +64,10 @@ function MyarcModal({ closeMyarcModal }) {
             placeholder="Password"
             title="password"
           />
-          <div class="arc-mn-myarc-submit">
+          <div className="arc-mn-myarc-submit">
             <button
               title="submit form"
-              class="ctaBtn ctaBtn--main"
+              className="ctaBtn ctaBtn--main"
               type="submit"
             >
               Log In
@@ -77,14 +77,14 @@ function MyarcModal({ closeMyarcModal }) {
           <a
             href="https://myarc.arccorp.com/PortalApp/ArcPublicPortal.portal?_nfpb=true&_pageLabel=MyARC_ForgotUserName&_nfls=false"
             target="_blank"
-            class="forgotUsername"
+            className="forgotUsername"
           >
             Forgot Username?
           </a>
           <a
             href="https://myarc.arccorp.com/PortalApp/ArcPublicPortal.portal?_nfpb=true&_pageLabel=ARC_ForgotPassword&_nfls=false"
             target="_blank"
-            class="forgotUsername"
+            className="forgotUsername"
           >
             Forgot Password?
           </a>
