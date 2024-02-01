@@ -290,6 +290,10 @@ a.arc-mn-contact-link {
   &.animated {
     visibility: visible;
   }
+
+  .arc-mn-sub-feature {
+    display: none;
+  }
 }
 
 .arc-mn-mobile-header {
