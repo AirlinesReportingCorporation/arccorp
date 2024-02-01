@@ -98,7 +98,7 @@ function Communications() {
           </div>
         </div>
       </div>
-      <div class="col-md-6 arc-mn-sub-feature" style={{ background: "#f6f6f6" }}>
+      <div class="col-md-6" style={{ background: "#f6f6f6" }}>
         <div
           class="arc-mn-sub-container arc-mn-sub-container-left"
           style={{ height: "100%" }}
