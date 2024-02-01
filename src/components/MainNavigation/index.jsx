@@ -193,7 +193,6 @@ function MainNavigation() {
                     mobileCategory === navCategory.key ? "block" : "none",
                 }}
               >
-                <div className="arc-mn-mobile-header">{navCategory.name}</div>
                 {navCategory.menu}
               </div>
             ))}
