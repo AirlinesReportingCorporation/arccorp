@@ -120,6 +120,12 @@ function Communications() {
               >
                 ARC Payments Forum
               </a>
+              <a
+                href="/products-participation/distribution/arcdirectconnect/?utm_source=Global_Navigation"
+                class="arc-mn-sub-link"
+              >
+                NDC Advancement Working Group (NAWG)
+              </a>
             </div>
             <div
               class="arc-mn-sub-main col-md-6 arc-mn-sub-feature"
