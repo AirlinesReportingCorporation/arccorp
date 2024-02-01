@@ -224,7 +224,7 @@ a.arc-mn-contact-link {
     max-width: 1170px;
 
     &.row {
-      max-width: 1170px ;
+      max-width: 1170px;
     }
   }
 
@@ -421,7 +421,8 @@ a.arc-mn-mobile-btn {
   .arc-mn-sub-feature {
     display: none;
   }
-  .arc-mn-sub-main {
+  .arc-mn-sub-main,
+  .arc-mn-sub-quarter {
     background: #2a2b2c !important;
   }
 }

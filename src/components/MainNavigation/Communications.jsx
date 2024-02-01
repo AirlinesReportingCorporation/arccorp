@@ -98,12 +98,12 @@ function Communications() {
           </div>
         </div>
       </div>
-      <div class="col-md-6" style={{ background: "#f6f6f6" }}>
+      <div class="col-md-6 arc-mn-sub-quarter" style={{ background: "#f6f6f6" }}>
         <div
           class="arc-mn-sub-container arc-mn-sub-container-left"
           style={{ height: "100%" }}
         >
-          <div class="row justify-content-end" style={{ height: "100%" }}>
+          <div class="row" style={{ height: "100%" }}>
             <div
               class="arc-mn-sub-main col-md-6"
               style={{ background: "#ffffff" }}
