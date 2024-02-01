@@ -347,4 +347,4 @@ function webinarPages() {
 //style with new news release
 webinarPages();
 
-mountsticky();
+//mountsticky();

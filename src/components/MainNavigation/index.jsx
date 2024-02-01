@@ -79,27 +79,27 @@ function MainNavigation() {
     <div className="arc-mn" onMouseLeave={() => setActiveMenu("")}>
       <div className="arc-mn-nav-container">
         <div className="arc-mn-inner">
-          <div class="arc-mn-logo-inner">
-            <div class="arc-mn-logo">
+          <div className="arc-mn-logo-inner">
+            <div className="arc-mn-logo">
               <a
                 href="/"
-                class="arc-mn-logo-link icon-arc-logo"
+                className="arc-mn-logo-link icon-arc-logo"
                 title="logo"
               ></a>
             </div>
           </div>
 
-          <div class="arc-mn-mobile-icon" onClick={mobileMenuOpen}>
-            <div class="hamburger icon-menu"></div>
+          <div className="arc-mn-mobile-icon" onClick={mobileMenuOpen}>
+            <div className="hamburger icon-menu"></div>
           </div>
 
           <div className="arc-mn-menu">
-            <div class="arc-mn-menu">
-              <div class="arc-mn-menu-items">
+            <div className="arc-mn-menu">
+              <div className="arc-mn-menu-items">
                 {navCategories.map((navCategory, i) => (
                   <a
                     href="#"
-                    class="arc-mn-menu-item"
+                    className="arc-mn-menu-item"
                     onMouseEnter={() => setActiveMenu(navCategory.key)}
                   >
                     {navCategory.name}
@@ -115,17 +115,17 @@ function MainNavigation() {
           >
             <a
               href="https://www2.arccorp.com/search"
-              class="topnav-link show-search icon-search"
+              className="topnav-link show-search icon-search"
             ></a>
             <a
               href="https://www2.arccorp.com/about-us/contact-us/"
-              class="arc-mn-contact-link"
+              className="arc-mn-contact-link"
             >
               Contact Us
             </a>
             <a
               href="https://myarc.arccorp.com/"
-              class="arc-mn-myarc-link"
+              className="arc-mn-myarc-link"
               onClick={(event) => clickMyarcModal(event)}
             >
               My ARC
@@ -140,12 +140,12 @@ function MainNavigation() {
 
             <a
               href={accreditationLoginLink}
-              class="arc-mn-accreditation-link"
+              className="arc-mn-accreditation-link"
               target="_blank"
             >
               Accreditation Login
               <i
-                style={{ fontSize: "11px;", marginLeft: "5px" }}
+                style={{ fontSize: "11px", marginLeft: "5px" }}
                 className="fas fa-chevron-right"
               ></i>
             </a>
@@ -180,7 +180,7 @@ function MainNavigation() {
                 className="arc-mn-mobile-menu-category"
                 onClick={() => setMobileCategory(navCategory.key)}
               >
-                {navCategory.name} <i class="fas fa-chevron-right"></i>
+                {navCategory.name} <i className="fas fa-chevron-right"></i>
               </div>
             ))}
           </div>
@@ -219,11 +219,11 @@ function MainNavigation() {
           style={{ display: mobileCategory === "" ? "none" : "block" }}
           onClick={() => setMobileCategory("")}
         >
-          <i class="fas fa-chevron-left"></i>
+          <i className="fas fa-chevron-left"></i>
         </div>
 
         <div className="arc-mn-mobile-menu-close" onClick={mobileMenuClose}>
-          <i class="fas fa-times"></i>
+          <i className="fas fa-times"></i>
         </div>
       </div>
     </div>

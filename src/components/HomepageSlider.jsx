@@ -58,7 +58,7 @@ class HomepageSlider extends Component {
           style={{ alignItems: "flex-end" }}
         >
           <video
-            class="youtube-background-poster lazy"
+            className="youtube-background-poster lazy"
             width="620"
             loop="true"
             autoPlay

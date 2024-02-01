@@ -5,9 +5,7 @@ function Products() {
     <div class="arc-mn-sub-products">
       <div class="arc-mn-sub-inner row">
         <div class="arc-mn-sub-main col-md-12">
-          <div class="arc-mn-header arc-mn-header-nonlink">
-            Data Products
-          </div>
+          <div class="arc-mn-header arc-mn-header-nonlink">Data Products</div>
         </div>
       </div>
 
@@ -164,7 +162,7 @@ function Products() {
         <div class="arc-mn-sub-main col-md-3">
           <div
             class="arc-mn-header arc-mn-header-nonlink"
-            style={{ "margin-bottom": "15px" }}
+            style={{ marginBottom: "15px" }}
           >
             Payment and Fraud Services
           </div>
