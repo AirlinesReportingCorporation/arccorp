@@ -1,5 +1,6 @@
 //css imports
 import "../css/main.scss";
+import "core-js/stable";
 
 import "owl.carousel";
 import stickybits from "stickybits";
@@ -54,14 +55,6 @@ if ($(".data-panel-sticky").length) {
   stickybits(".data-panel-sticky", { useStickyClasses: true });
   $(".supernav").addClass("supernav-secondary-present");
 }
-
-// lazy load
-var lazyLoadInstance = new LazyLoad({});
-
-var latestSliderPosition = 0;
-var latestSliderWidth = 100;
-var maxSliderHeight = 0;
-var latestTechPosition = 0;
 
 function articleSocial() {
   // add social for articles
@@ -343,4 +336,4 @@ function webinarPages() {
 //style with new news release
 webinarPages();
 
-//mountsticky();
+mountsticky();
