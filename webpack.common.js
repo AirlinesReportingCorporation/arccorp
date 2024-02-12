@@ -14,11 +14,22 @@ module.exports = {
     main: "./src/js/main.js",
     webinar: "./src/js/webinar.js",
     "main-react": "./src/index.jsx",
-    "footer-react": "./src/footer.jsx"
+    "footer-react": "./src/footer.jsx",
   },
   output: {
     filename: "[name].min.js",
     path: path.resolve(__dirname, "dist"),
+  },
+  optimization: {
+    splitChunks: {
+      cacheGroups: {
+        vendor: {
+          test: /[\\/]node_modules[\\/]/,
+          name: "vendor",
+          chunks: "all",
+        },
+      },
+    },
   },
   target: ["web", "es5"],
   module: {
@@ -51,7 +62,8 @@ module.exports = {
     alias: {
       vue: "vue/dist/vue.js",
     },
-    extensions: [".*",".js",".jsx"],
+    extensions: [".*", ".js", ".jsx"],
+    modules: ["src", "node_modules"],
   },
   plugins: [
     new webpack.ProvidePlugin({

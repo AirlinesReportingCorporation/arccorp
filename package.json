@@ -34,7 +34,9 @@
     "start": "npx webpack serve --config webpack.dev.js",
     "dev": "npm start",
     "build": "webpack --config webpack.prod.js",
-    "test": "npm start"
+    "test": "npm start",
+    "stats": "npx webpack --profile --json > stats.json",
+    "error": "npx webpack --display-error-details"
   },
   "author": "",
   "license": "ISC",
@@ -56,18 +58,5 @@
     "webpack-cli": "^5.1.4",
     "webpack-dev-server": "^4.15.1",
     "webpack-merge": "^5.1.1"
-  },
-  "browserslist": {
-    "production": [
-      ">0.2%",
-      "not dead",
-      "not op_mini all"
-    ],
-    "development": [
-      "last 1 chrome version",
-      "last 1 firefox version",
-      "last 1 safari version",
-      "ie 11"
-    ]
   }
 }
