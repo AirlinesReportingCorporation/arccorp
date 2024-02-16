@@ -3,6 +3,13 @@
 $name: variables.$namespace;
 $margin-spacing: 30px;
 
+#home-app {
+  color: #414042;
+  min-height: 80vh;
+  width: 100%;
+  align-items: center;
+}
+
 .loading-container {
   color: #414042;
   min-height: 592px;

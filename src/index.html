@@ -18,19 +18,31 @@
     />
     <meta http-equiv="x-ua-compatible" content="IE=edge" />
 
-    <link
-      href="https://www2.arccorp.com/globalassets/static/style.css?a3834s721982a73"
-      rel="stylesheet"
-    />
+    <link rel="preload" as="style"
+    href="https://www2.arccorp.com/globalassets/static/style.css?a3834s721982a73"
+    onload="this.onload=null;this.rel='stylesheet'">
+
+    <noscript
+      ><link
+        rel="stylesheet"
+        href="https://www2.arccorp.com/globalassets/static/style.css?a3834s721982a73"
+    /></noscript>
+
     <link
       rel="icon"
       type="image/x-icon"
       href="https://www2.arccorp.com/globalassets/favicon.ico"
     />
-    <link
-      rel="stylesheet"
-      href="single.min.css"
-    />
+
+    <link rel="preload" as="style"
+    href="main.min.css"
+    onload="this.onload=null;this.rel='stylesheet'">
+    
+    <noscript
+      ><link
+        rel="stylesheet"
+        href="main.min.css"
+    /></noscript>
 
     <meta
       name="google-site-verification"
@@ -91,11 +103,11 @@
     </style>
 
     <script type="text/javascript">
-      (function(i, s, o, g, r, a, m) {
+      (function (i, s, o, g, r, a, m) {
         i["GoogleAnalyticsObject"] = r;
         (i[r] =
           i[r] ||
-          function() {
+          function () {
             (i[r].q = i[r].q || []).push(arguments);
           }),
           (i[r].l = 1 * new Date());
@@ -119,7 +131,7 @@
 
     <!-- Google Tag Manager -->
     <script>
-      (function(w, d, s, l, i) {
+      (function (w, d, s, l, i) {
         w[l] = w[l] || [];
         w[l].push({ "gtm.start": new Date().getTime(), event: "gtm.js" });
         var f = d.getElementsByTagName(s)[0],
@@ -219,13 +231,13 @@
       }
     </style>
   </head>
-  <body class=" home-page">
+  <body class="home-page">
     <div class="navcontainer signedOut" data-username="">
       <!-- supernav start -->
       <div id="arc-main-nav"></div>
       <!-- supernav end -->
     </div>
-    <h1 style="display:none;">Airlines Reporting Corporation</h1>
+    <h1 style="display: none">Airlines Reporting Corporation</h1>
 
     <section
       class="data-panel data-panel--white"
@@ -234,7 +246,15 @@
     >
       <div class="background">
         <!-- react app start -->
-        <div id="home-app"></div>
+        <div id="home-app">
+          <div className="loading-container">
+            <div className="loading">
+              <div className="loading-icon">
+                <i className="fas fa-circle-notch fa-spin"></i>
+              </div>
+            </div>
+          </div>
+        </div>
         <!-- react app end -->
       </div>
       <div class="data-panel__inside">
@@ -246,7 +266,8 @@
 
     <section
       class="page-grid homePageGrid page-grid--noThumbnails page-grid--centerItemText"
-      data-section="page-grid" style="display: none;"
+      data-section="page-grid"
+      style="display: none"
     >
       <div class="page-grid__content">
         <div class="page-grid__topContent">
@@ -587,66 +608,64 @@
                 <div class="content-block--pageItem__body">
                   <p>
                     <span
-                      class="TextRun Highlight  BCX0 SCXW152794"
+                      class="TextRun Highlight BCX0 SCXW152794"
                       lang="EN-US"
                       data-contrast="none"
-                      ><span class="NormalTextRun CommentStart  BCX0 SCXW152794"
+                      ><span class="NormalTextRun CommentStart BCX0 SCXW152794"
                         >The</span
                       ></span
                     ><span
-                      class="TextRun  BCX0 SCXW152794"
+                      class="TextRun BCX0 SCXW152794"
                       lang="EN-US"
                       data-contrast="auto"
-                      ><span class="NormalTextRun  BCX0 SCXW152794">
-                        Enter </span
-                      ><span class="NormalTextRun  BCX0 SCXW152794">the</span
-                      ><span class="NormalTextRun  BCX0 SCXW152794">
+                      ><span class="NormalTextRun BCX0 SCXW152794"> Enter </span
+                      ><span class="NormalTextRun BCX0 SCXW152794">the</span
+                      ><span class="NormalTextRun BCX0 SCXW152794">
                         Travel-Verse Hackathon</span
                       ></span
                     ><span
-                      class="TextRun Highlight  BCX0 SCXW152794"
+                      class="TextRun Highlight BCX0 SCXW152794"
                       lang="EN-US"
                       data-contrast="none"
-                      ><span class="NormalTextRun  BCX0 SCXW152794">
+                      ><span class="NormalTextRun BCX0 SCXW152794">
                         is free and open to </span
-                      ><span class="NormalTextRun  BCX0 SCXW152794"
-                        >partici</span
-                      ><span class="NormalTextRun  BCX0 SCXW152794">pants </span
-                      ><span class="NormalTextRun  BCX0 SCXW152794"
+                      ><span class="NormalTextRun BCX0 SCXW152794">partici</span
+                      ><span class="NormalTextRun BCX0 SCXW152794">pants </span
+                      ><span class="NormalTextRun BCX0 SCXW152794"
                         >with
                       </span></span
                     ><span
-                      class="TextRun  BCX0 SCXW152794"
+                      class="TextRun BCX0 SCXW152794"
                       lang="EN-US"
                       data-contrast="auto"
-                      ><span class="NormalTextRun  BCX0 SCXW152794"
+                      ><span class="NormalTextRun BCX0 SCXW152794"
                         >data analytics, machine learning, programming, </span
-                      ><span class="NormalTextRun  BCX0 SCXW152794">design</span
-                      ><span class="NormalTextRun  BCX0 SCXW152794">
+                      ><span class="NormalTextRun BCX0 SCXW152794">design</span
+                      ><span class="NormalTextRun BCX0 SCXW152794">
                         and other technology skillsets.</span
                       ></span
                     ><span
-                      class="TextRun Highlight  BCX0 SCXW152794"
+                      class="TextRun Highlight BCX0 SCXW152794"
                       lang="EN-US"
                       data-contrast="none"
-                      ><span class="NormalTextRun  BCX0 SCXW152794"> P</span
-                      ><span class="NormalTextRun  BCX0 SCXW152794"
+                      ><span class="NormalTextRun BCX0 SCXW152794"> P</span
+                      ><span class="NormalTextRun BCX0 SCXW152794"
                         >articipants </span
-                      ><span class="NormalTextRun  BCX0 SCXW152794"
+                      ><span class="NormalTextRun BCX0 SCXW152794"
                         >can compete </span
-                      ><span class="NormalTextRun  BCX0 SCXW152794">as </span
-                      ><span class="NormalTextRun  BCX0 SCXW152794"
+                      ><span class="NormalTextRun BCX0 SCXW152794">as </span
+                      ><span class="NormalTextRun BCX0 SCXW152794"
                         >individuals or in</span
-                      ><span class="NormalTextRun  BCX0 SCXW152794"> </span
-                      ><span class="NormalTextRun  BCX0 SCXW152794">team</span
-                      ><span class="NormalTextRun  BCX0 SCXW152794">s</span
-                      ><span class="NormalTextRun  BCX0 SCXW152794"> of </span
-                      ><span class="NormalTextRun  BCX0 SCXW152794">up to</span
-                      ><span class="NormalTextRun  BCX0 SCXW152794"> </span
-                      ><span class="NormalTextRun  BCX0 SCXW152794">four</span
-                      ><span class="NormalTextRun  BCX0 SCXW152794">
+                      ><span class="NormalTextRun BCX0 SCXW152794"> </span
+                      ><span class="NormalTextRun BCX0 SCXW152794">team</span
+                      ><span class="NormalTextRun BCX0 SCXW152794">s</span
+                      ><span class="NormalTextRun BCX0 SCXW152794"> of </span
+                      ><span class="NormalTextRun BCX0 SCXW152794">up to</span
+                      ><span class="NormalTextRun BCX0 SCXW152794"> </span
+                      ><span class="NormalTextRun BCX0 SCXW152794">four</span
+                      ><span class="NormalTextRun BCX0 SCXW152794">
                         members</span
-                      ><span class="NormalTextRun  BCX0 SCXW152794"
+                      ><span class="NormalTextRun BCX0 SCXW152794"
                         >.</span
                       ></span
                     >
@@ -783,7 +802,7 @@
             src="https://secure-web.cisco.com/1lFIqAtewp9_1BLUnV0GC98_Dk17wziT5RY3nBb8ZXxTeDBINBdDwEpMrgda9AlaE4ynN8wwEGDc8xENujrxKH6c46BuYWUkWtrxBOZp96AYq8vSkmcjVU9rB4h6xZCtjcFWmJwlnWvVorXMe5D0hCBV6eCxDfpt5Syb2yPI6WozRP4eESeFUnG18ovf8C-Et-677xqxaI6b5EfgxOnxlc_yCKvwsz6FI2urXjO3vKbIbppx02UEzS8PcAgPbkcMA2zZBPQoHGHC6iFlNll5ng4aUnNCeBpFEZPiJBFdkYDrilPOFxEnv2jsDQauqxP2VBLd0EeQ5bOFJ9N-Boqc5hw/https%3A%2F%2Fdc.ads.linkedin.com/collect/?pid=80871&amp;fmt=gif"
             /&gt;
           </noscript>
-          <div style="display: none;">
+          <div style="display: none">
             <style>
               <!--
               .jumbotron.jumbotron--image{
@@ -802,24 +821,18 @@
               -->
             </style>
           </div>
-          <script
-            type="text/javascript"
-            src="main.min.js"
-          ></script>
+          
 
           <!-- script -->
-          
-          <script src="main-react.min.js"></script>
+          <script defer src="shared.min.js"></script>
+          <script defer src="main-react.min.js"></script>
           <script src="footer-react.min.js"></script>
-
         </div>
-
       </div>
     </div>
 
-    <script src="https://www2.arccorp.com/globalassets/static/scripts.js?1235452123d2"></script>
-    <script src="https://www2.arccorp.com/static/js/foundation-custom.js"></script>
-    <script src="https://www2.arccorp.com/globalassets/static/app.js?462233"></script>
+    <script defer src="https://www2.arccorp.com/globalassets/static/scripts.js?1235452123d2"></script>
+    <script defer src="https://www2.arccorp.com/static/js/foundation-custom.js"></script>
 
     <!-- Google Tag Manager (noscript) -->
     <noscript
@@ -827,17 +840,15 @@
         src="https://www.googletagmanager.com/ns.html?id=GTM-P4F2JRN"
         height="0"
         width="0"
-        style="display:none;visibility:hidden"
+        style="display: none; visibility: hidden"
       ></iframe
     ></noscript>
     <!-- End Google Tag Manager (noscript) -->
 
-    <script src="https://www.google.com/recaptcha/api.js"></script>
-
     <script>
       //The below script is for Siteimprove's Analytics tool collects statistics about the users on your website and how they use your website.
       /*<![CDATA[*/
-      (function() {
+      (function () {
         var sz = document.createElement("script");
         sz.type = "text/javascript";
         sz.async = true;

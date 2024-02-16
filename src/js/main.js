@@ -4,7 +4,6 @@ import "core-js/stable";
 
 import "owl.carousel";
 import stickybits from "stickybits";
-import LazyLoad from "vanilla-lazyload";
 import mountsticky from "./partials/stickynav";
 
 if ($(".owl-carousel").length) {
@@ -282,11 +281,6 @@ function articleSocial() {
               .substring(link.indexOf("highlights/") + 11)
               .replace("/", "");
           }
-
-          var imgLink =
-            "https://www2.arccorp.com/globalassets/homepage/redesign/latest/" +
-            subString +
-            ".jpg";
 
           var card =
             "<div class='col-lg-3'><div class='arc-blog-related-card'><div class='arc-blog-related-text'><div class='arc-blog-related-text-title'>" +

@@ -80,9 +80,8 @@ class HomepageSection extends Component {
                     <div className="arc-homepage-blog-img">
                       <a href={homeData.recentBlogLink}>
                         <img
-                          loading="lazy"
-                          data-src={homeData.recentBlogImage}
-                          className="img-fluid lazy"
+                          src={homeData.recentBlogImage}
+                          className="img-fluid"
                         />
                       </a>
                     </div>
