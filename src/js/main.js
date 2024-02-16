@@ -212,10 +212,10 @@ function articleSocial() {
 
       headline.before(
         (type == "newsrelease"
-          ? '<div class="arc-sticky-container" style="z-index: 3; position: sticky; top: 0px;"><div class="bg-color-tarmac arc-sticky-inner"><div class="arc-sticky-nav"><div class="arc-sticky-brand d-flex align-items-center"><a href="https://www2.arccorp.com/about-us/newsroom/" class="arc-sticky-title" style="line-height: 20px;">Newsroom</a></div><div class="arc-sticky-links d-flex align-items-center"></div><div class="arc-sticky-menu d-flex align-items-center"><a href="https://www2.arccorp.com/about-us/newsroom/subscribe/" class="arc-sticky-link-right">Subscribe to ARC News <i class="fas fa-chevron-right"></i></a></div></div></div></div>'
+          ? '<div class="arc-sticky-container" style="z-index: 4; position: sticky; top: 0px;"><div class="bg-color-tarmac arc-sticky-inner"><div class="arc-sticky-nav"><div class="arc-sticky-brand d-flex align-items-center"><a href="https://www2.arccorp.com/about-us/newsroom/" class="arc-sticky-title" style="line-height: 20px;">Newsroom</a></div><div class="arc-sticky-links d-flex align-items-center"></div><div class="arc-sticky-menu d-flex align-items-center"><a href="https://www2.arccorp.com/about-us/newsroom/subscribe/" class="arc-sticky-link-right">Subscribe to ARC News <i class="fas fa-chevron-right"></i></a></div></div></div></div>'
           : "") +
           (type == "blog"
-            ? '<div class="arc-sticky-container" style="z-index: 3; position: sticky; top: 0px;"><div class="bg-color-tarmac arc-sticky-inner"><div class="arc-sticky-nav"><div class="arc-sticky-brand d-flex align-items-center"><a href="https://www2.arccorp.com/articles-trends/articles/" class="arc-sticky-title" style="line-height: 20px;">Articles</a></div><div class="arc-sticky-links d-flex align-items-center"></div><div class="arc-sticky-menu d-flex align-items-center"><a href="https://www2.arccorp.com/about-us/contact-us/" class="arc-sticky-link-right">Contact Us <i class="fas fa-chevron-right"></i></a></div></div></div></div>'
+            ? '<div class="arc-sticky-container" style="z-index: 4; position: sticky; top: 0px;"><div class="bg-color-tarmac arc-sticky-inner"><div class="arc-sticky-nav"><div class="arc-sticky-brand d-flex align-items-center"><a href="https://www2.arccorp.com/articles-trends/articles/" class="arc-sticky-title" style="line-height: 20px;">Articles</a></div><div class="arc-sticky-links d-flex align-items-center"></div><div class="arc-sticky-menu d-flex align-items-center"><a href="https://www2.arccorp.com/about-us/contact-us/" class="arc-sticky-link-right">Contact Us <i class="fas fa-chevron-right"></i></a></div></div></div></div>'
             : "") +
           "<div class='arc-blog-post'><div class='arc-blog-post-jumbo " +
           (!noImg ? "" : "no-img") +
@@ -324,7 +324,7 @@ function webinarPages() {
       $("body").addClass("webinarPageLayout");
 
       var stickyNav =
-        '<div class="arc-sticky-container" style="z-index: 3; position: sticky; top: 0px;"><div class="bg-color-tarmac arc-sticky-inner"><div class="arc-sticky-nav"><div class="arc-sticky-brand d-flex align-items-center"><a href="https://www2.arccorp.com/articles-trends/on-demand-webinars/" class="arc-sticky-title" style="line-height: 20px;">On-Demand Webinars</a></div><div class="arc-sticky-links d-flex align-items-center"></div><div class="arc-sticky-menu d-flex align-items-center"><a href="https://www2.arccorp.com/about-us/contact-us/" class="arc-sticky-link-right">Contact Us<i class="fas fa-chevron-right"></i></a></div></div></div></div>';
+        '<div class="arc-sticky-container" style="z-index: 4; position: sticky; top: 0px;"><div class="bg-color-tarmac arc-sticky-inner"><div class="arc-sticky-nav"><div class="arc-sticky-brand d-flex align-items-center"><a href="https://www2.arccorp.com/articles-trends/on-demand-webinars/" class="arc-sticky-title" style="line-height: 20px;">On-Demand Webinars</a></div><div class="arc-sticky-links d-flex align-items-center"></div><div class="arc-sticky-menu d-flex align-items-center"><a href="https://www2.arccorp.com/about-us/contact-us/" class="arc-sticky-link-right">Contact Us<i class="fas fa-chevron-right"></i></a></div></div></div></div>';
 
       $(".page--headline").before(stickyNav);
 

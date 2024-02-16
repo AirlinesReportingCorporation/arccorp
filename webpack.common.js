@@ -12,7 +12,6 @@ module.exports = {
   entry: {
     single: "./src/single.jsx",
     main: "./src/js/main.js",
-    webinar: "./src/js/webinar.js",
     "main-react": "./src/index.jsx",
     "footer-react": "./src/footer.jsx"
   },
