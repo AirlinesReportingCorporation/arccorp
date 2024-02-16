@@ -30,7 +30,8 @@ var homeData = {
     },
     {
       date: "Oct 4",
-      title: "Navigating NDC and ARC Direct Connect: A Roadmap to Innovation Webinar Recap",
+      title:
+        "Navigating NDC and ARC Direct Connect: A Roadmap to Innovation Webinar Recap",
       link: "https://www2.arccorp.com/articles-trends/the-latest/navigating-ndc-arc-direct-connect-webinar-recap/",
     },
     {
@@ -80,6 +81,7 @@ class HomepageSection extends Component {
                     <div className="arc-homepage-blog-img">
                       <a href={homeData.recentBlogLink}>
                         <img
+                          fetchpriority="high"
                           src={homeData.recentBlogImage}
                           className="img-fluid"
                         />

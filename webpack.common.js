@@ -10,22 +10,12 @@ const extractSass = new MiniCssExtractPlugin({
 
 module.exports = {
   entry: {
-    single: {
-      import: "./src/single.jsx",
-      dependOn: "shared",
-    },
+    single: "./src/single.jsx",
     main: "./src/js/main.js",
-    "main-react": { import: "./src/index.jsx", dependOn: "shared" },
-    "footer-react": { import: "./src/footer.jsx", dependOn: "shared" },
-    shared: [
-      "react",
-      "react-dom",
-      "react-app-polyfill/ie11",
-      "react-app-polyfill/stable",
-      "core-js/stable",
-    ],
+    "main-react": "./src/index.jsx",
+    "footer-react": "./src/footer.jsx"
   },
-
+  
   output: {
     filename: "[name].min.js",
     path: path.resolve(__dirname, "dist"),
@@ -61,7 +51,7 @@ module.exports = {
     alias: {
       vue: "vue/dist/vue.js",
     },
-    extensions: [".*", ".js", ".jsx"],
+    extensions: [".*",".js",".jsx"],
   },
   plugins: [
     new webpack.ProvidePlugin({
