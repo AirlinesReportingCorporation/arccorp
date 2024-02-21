@@ -202,7 +202,7 @@ class HomepageSlider extends Component {
         <div
           className="arc-jumbo lazy"
           data-bg={
-            "https://www2.arccorp.com/globalassets/products--participation/ndc/dc-ndc-ka-jumbotron.jpg"
+            "https://www2.arccorp.com/globalassets/products--participation/ndc/dc-ndc-tapportugal-jumbotron.jpg"
           }
         >
           <div
