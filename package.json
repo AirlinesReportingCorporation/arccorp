@@ -9,6 +9,7 @@
     "featherlight": "^1.7.9",
     "intersection-observer": "^0.11.0",
     "jquery": "^3.7.1",
+    "moment": "^2.30.1",
     "owl.carousel": "^2.3.4",
     "react": "^17.0.2",
     "react-app-polyfill": "^3.0.0",

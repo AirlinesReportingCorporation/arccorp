@@ -13,7 +13,8 @@ module.exports = {
     single: "./src/single.jsx",
     main: "./src/js/main.js",
     "main-react": "./src/index.jsx",
-    "footer-react": "./src/footer.jsx"
+    "footer-react": "./src/footer.jsx",
+    "events": "./src/events.jsx"
   },
   
   output: {
