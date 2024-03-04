@@ -26,6 +26,42 @@
         max-width: 190px;
         background-position: left center;
         background-size: cover;
+
+        .event-date {
+          padding-top: 8px;
+          padding-left: 10px;
+        }
+
+        .event-month {
+          height: 28px;
+          width: 67px;
+          border-radius: 11px 11px 0 0;
+          background-color: #189bb0;
+          p {
+            color: main.$white;
+            font-family: main.$arc-font-bold;
+            font-size: 18px;
+            letter-spacing: 0;
+            line-height: 30px;
+            text-align: center;
+            text-transform: uppercase;
+          }
+        }
+        .event-day {
+          height: 39px;
+          width: 67px;
+          border-radius: 0 0 11px 11px;
+          background-color: #ffffff;
+          p {
+            color: #2a2b2d;
+            font-family: main.$arc-font-bold;
+            font-size: 34px;
+            letter-spacing: 0;
+            line-height: 30px;
+            text-align: center;
+            padding-top: 2px;
+          }
+        }
       }
 
       .event-card-right {
@@ -73,15 +109,12 @@
         font-weight: 600;
         letter-spacing: 0;
         line-height: 16px;
+        padding-bottom: 75px;
 
-        .location-on-material {
+        .location-icon {
           height: 14px;
-          width: 13px;
-          color: #2a2b2c;
-          font-family: material;
-          font-size: 14px;
-          letter-spacing: 0;
-          line-height: 16px;
+          padding-right: 7px;
+          padding-bottom: 2px;
         }
       }
 

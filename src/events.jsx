@@ -1,5 +1,6 @@
 import React, { Component } from "react";
 import ReactDOM from "react-dom";
+import moment from "moment";
 
 import "react-app-polyfill/ie11";
 import "react-app-polyfill/stable";
@@ -43,8 +44,12 @@ class Events extends Component {
           <div className="event-inner">
             <div className="row no-gutters">
               {eventsList.map((event) => {
+
                 let city = event.location.split(",")[0].replace(" ", "-").toLowerCase()
                 let url = "https://www2.arccorp.com/globalassets/homepage/redesign/events/" + city + ".jpg";
+                let month = moment(event.date).format("MMM");
+                let day = (moment(event.date).format("D").length != 2 ? "0" + moment(event.date).format("D") : moment(event.date).format("D"));
+                
                 return (
                   <div className="col-lg-6">
                     <div className="event-card-outer">
@@ -57,16 +62,15 @@ class Events extends Component {
                           }}
                         >
                           <div className="event-date">
-                            <div className="event-month"></div>
-                            <div className="event-day"></div>
+                            <div className="event-month"><p>{month}</p></div>
+                            <div className="event-day"><p>{day}</p></div>
                           </div>
-                          <p>{event.date}</p>
                         </div>
                         <div className="col event-card-right">
                           <div className="event-right-inner">
                             <p className="event-title">{event.title}</p>
                             <p className="event-desc">{event.desc}</p>
-                            <p className="event-location"><i class="fa-solid fa-location-dot"></i>{event.location}</p>
+                            <p className="event-location"><img className="location-icon" src="https://www2.arccorp.com/globalassets/homepage/redesign/events/location.png"/>{event.location}</p>
                             <a href={event.url} className="event-cta">
                               Learn More
                             </a>
