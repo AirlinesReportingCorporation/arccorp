@@ -1,6 +1,122 @@
 @use "~arccorp-vars/dist/scss/main.scss";
 
 #arc-events {
+  .webinar-jumbo {
+    margin-top: 60px;
+    margin-bottom: 60px;
+    min-height: 425px;
+    height: 100%;
+
+    .jumbo-left {
+      background-repeat: no-repeat;
+      background-size: cover;
+      box-shadow: inset 0 0 0 2000px rgba(42, 43, 44, 0.3);
+      border-bottom-left-radius: 20px;
+      border-top-left-radius: 20px;
+      min-height: 425px;
+      height: 100%;
+      margin-left: auto;
+      max-width: 605px;
+      position: relative;
+      width: 100%;
+
+      .jumbo-header,
+      .jumbo-header > h2 {
+        color: main.$white;
+      }
+
+      .jumbo-header {
+        height: 100%;
+        justify-content: center;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        h2 {
+          font-family: main.$arc-font-bold;
+          font-size: 48px;
+          letter-spacing: 0;
+          line-height: 46px;
+        }
+        .jumbo-tag {
+          font-family: main.$arc-font-regular;
+          font-size: 18px;
+          letter-spacing: 0;
+          line-height: 20px;
+        }
+      }
+    }
+
+    .jumbo-right {
+      background-color: main.$tarmac;
+      min-height: 425px;
+      height: 100%;
+
+      .webinar-events {
+        align-items: center;
+        display: flex;
+        height: 100%;
+      }
+
+      .event-month {
+        height: 30px;
+        width: 72px;
+        border-radius: 11px 11px 0 0;
+        background-color: #189bb0;
+        p {
+          color: main.$white;
+          font-family: main.$arc-font-bold;
+          font-size: 18px;
+          letter-spacing: 0;
+          line-height: 30px;
+          text-align: center;
+          text-transform: uppercase;
+        }
+      }
+      .event-day {
+        height: 39px;
+        width: 72px;
+        border-radius: 0 0 11px 11px;
+        background-color: #ffffff;
+        p {
+          color: #2a2b2d;
+          font-family: main.$arc-font-bold;
+          font-size: 34px;
+          letter-spacing: 0;
+          line-height: 30px;
+          text-align: center;
+          padding-top: 2px;
+        }
+      }
+
+      .webinar-details {
+        color: main.$white;
+      }
+
+      .webinar-event {
+        padding: 30px;
+      }
+
+      .webinar-cal, .webinar-details {
+        display: inline-block;
+      }
+
+      .webinar-event-title {
+        font-family: main.$arc-font-semibold;
+        font-size: 21px;
+        letter-spacing: 0;
+        line-height: 23px;
+      }
+
+      .webinar-time {
+        font-family: main.$arc-font-semibold;
+        font-size: 14px;
+        letter-spacing: 0;
+        line-height: 16px;
+      }
+
+    }
+  }
+
   .event-page {
     .event-inner {
       width: 1210px;
@@ -143,7 +259,6 @@
       }
     }
   }
-
   .on-demand-webinar-callout {
     margin-top: 80px;
     margin-bottom: 60px;
@@ -154,10 +269,10 @@
     padding: 90px 0px;
   }
 
-  .webinar-inside, .webinar-title  {
+  .webinar-inside,
+  .webinar-title {
     color: main.$white;
   }
-
   .webinar-title {
     font-family: main.$arc-font-bold;
     font-size: 48px;

@@ -22,15 +22,92 @@ class Events extends Component {
   }
 
   // Update lazyLoad after rerendering of every image
-  // componentDidUpdate() {
-  //   document.lazyLoadInstance.update();
-  // }
+  componentDidUpdate() {
+    document.lazyLoadInstance.update();
+  }
 
   render() {
-    console.log(eventsList);
+    const webinarList = [
+      {
+        date: "Feb 12, 2024",
+        title:
+          "Protecting Agents: Security Agreement Insights & Updates Webinar",
+        time: "2:30PM EST",
+        url: "",
+      },
+      {
+        date: "Feb 12, 2024",
+        title:
+          "Protecting Agents: Security Agreement Insights & Updates Webinar",
+        time: "2:30PM EST",
+        url: "",
+      },
+      {
+        date: "Feb 12, 2024",
+        title:
+          "Protecting Agents: Security Agreement Insights & Updates Webinar",
+        time: "2:30PM EST",
+        url: "",
+      },
+    ];
     return (
       <div className="event-page">
         <Stickynav className="bg-color-tarmac" title="Events" />
+        <div className="webinar-jumbo">
+          <div className="row no-gutters jumbo-row">
+            <div className="col-lg-6">
+              <div
+                className="jumbo-left"
+                style={{
+                  backgroundImage: "url('')",
+                }}
+              >
+                <div className="jumbo-header">
+                  <h2>Upcoming Webinars</h2>
+                  <div className="jumbo-tag">
+                    Stay up to date with the latest industry knowledge.
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div className="col-lg-6">
+              <div className="jumbo-right">
+                <div className="webinar-events">
+                  <div className="webinar-list">
+                    {webinarList.map((webinar) => {
+                      let month = moment(webinar.date).format("MMM");
+                      let day =
+                        moment(webinar.date).format("D").length != 2
+                          ? "0" + moment(webinar.date).format("D")
+                          : moment(webinar.date).format("D");
+
+                      return (
+                        <div className="row">
+                          <div className="col-lg-12">
+                            <div className="webinar-event">
+                              <div className="webinar-cal">
+                                <div className="event-month">
+                                  <p>{month}</p>
+                                </div>
+                                <div className="event-day">
+                                  <p>{day}</p>
+                                </div>
+                              </div>
+                              <div className="webinar-details">
+                                <div className="webinar-event-title">{webinar.title}</div>
+                                <div className="webinar-time"><img src=""/> {webinar.time} EST</div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      );
+                    })}
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
         <div className="container event-container">
           <div className="row no-gutters">
             <div className="col-lg-12">
