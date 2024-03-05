@@ -2,14 +2,15 @@
 
 #arc-events {
   .event-page {
-    .event-inner > .row {
-      justify-content: space-between;
+
+    .event-inner {
+      width: 1210px;
     }
 
     .event-card-outer {
       margin-top: 20px;
       margin-bottom: 20px;
-      height: 316px;
+      max-height: 316px;
       max-width: 570px;
       width: 100%;
 
@@ -22,7 +23,8 @@
         border-bottom-left-radius: 10px;
         background-color: #089bb0;
         float: left;
-        height: inherit;
+        min-height: 316px;
+        height: 100%;
         max-width: 190px;
         background-position: left center;
         background-size: cover;
@@ -68,9 +70,11 @@
         border-top-right-radius: 10px;
         border-bottom-right-radius: 10px;
         background-color: #f7f5f5;
-
+        min-height: 316px;
+        height: 100%;
         .event-right-inner {
           padding: 20px 30px 20px 25px;
+          height: 100%;
         }
       }
     }
@@ -84,32 +88,27 @@
         color: #2a2b2d;
       }
       .event-title {
-        height: 64px;
-        width: 307px;
         font-family: main.$arc-font-bold;
         font-size: 28px;
         letter-spacing: 0;
         line-height: 32px;
+        margin-bottom: 10px;
       }
       .event-desc {
-        height: 72px;
-        width: 316px;
         color: #2a2b2c;
         font-family: main.$arc-font-regular;
         font-size: 14px;
         letter-spacing: 0;
         line-height: 16px;
+        margin-bottom: 10px;
       }
       .event-location {
-        height: 18px;
-        width: 154px;
         color: #2a2b2c;
         font-family: main.$arc-font-semibold;
         font-size: 14px;
         font-weight: 600;
         letter-spacing: 0;
         line-height: 16px;
-        padding-bottom: 75px;
 
         .location-icon {
           height: 14px;
@@ -125,6 +124,9 @@
         text-transform: uppercase;
         letter-spacing: 0;
         line-height: 28px;
+        position: absolute;
+        bottom: 17px;
+        margin-top: auto;
 
         &::after {
           font-family: "icomoon";
