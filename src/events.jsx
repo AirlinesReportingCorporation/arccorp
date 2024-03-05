@@ -31,7 +31,7 @@ class Events extends Component {
     return (
       <div className="event-page">
         <Stickynav className="bg-color-tarmac" title="Events" />
-        <div className="container">
+        <div className="container event-container">
           <div className="row no-gutters">
             <div className="col-lg-12">
               <div className="event-page-title">
@@ -95,7 +95,10 @@ class Events extends Component {
                         </div>
                       </div>
                     ) : (
-                      <div className="event-card-outer" style={{height: "100%"}}>
+                      <div
+                        className="event-card-outer"
+                        style={{ height: "100%" }}
+                      >
                         <a href={event.url}>
                           <div
                             className="arc-event"
@@ -109,6 +112,31 @@ class Events extends Component {
                   </div>
                 );
               })}
+            </div>
+          </div>
+        </div>
+        <div className="on-demand-webinar-callout">
+          <div className="container on-demand-webinar-inner">
+            <div className="row">
+              <div className="col-lg-6">
+                <div className="webinar-inside">
+                  <h2 className="webinar-title">On-Demand Webinars</h2>
+                  <div className="webinar-desc">
+                    Stay up to date with the latest industry knowledge. Lorem
+                    ipsum dolor sit amet, consectetur adipiscing elit. Donec ac
+                    diam facilisis, lacinia sem ac, volutpat justo.
+                  </div>
+                  <div className="webinar-buttons">
+                    <a
+                      href="https://www2.arccorp.com/articles-trends/on-demand-webinars/?utm_source=events"
+                      className="ctaBtn ctaBtn--white-outline"
+                    >
+                      Visit our On-demand Webinars
+                    </a>
+                  </div>
+                </div>
+              </div>
+              <div className="col-lg-6"></div>
             </div>
           </div>
         </div>
