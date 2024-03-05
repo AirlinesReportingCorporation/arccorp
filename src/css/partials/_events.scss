@@ -2,9 +2,15 @@
 
 #arc-events {
   .event-page {
-
     .event-inner {
       width: 1210px;
+    }
+
+    .arc-event {
+      height: 100%;
+      background-position: center;
+      background-size: cover;
+      border-radius: 10px;
     }
 
     .event-card-outer {
