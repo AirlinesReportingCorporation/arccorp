@@ -50,10 +50,14 @@ class Events extends Component {
         url: "",
       },
     ];
+
+    console.log(webinarList.length)
     return (
       <div className="event-page">
         <Stickynav className="bg-color-tarmac" title="Events" />
-        <div className="webinar-jumbo">
+        {
+          webinarList.length > 0 ? 
+          <div className="webinar-jumbo">
           <div className="row no-gutters jumbo-row">
             <div className="col-lg-6">
               <div
@@ -108,6 +112,8 @@ class Events extends Component {
             </div>
           </div>
         </div>
+        : ""
+        }
         <div className="container event-container">
           <div className="row no-gutters">
             <div className="col-lg-12">
