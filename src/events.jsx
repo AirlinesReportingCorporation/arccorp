@@ -63,7 +63,7 @@ class Events extends Component {
               <div
                 className="jumbo-left"
                 style={{
-                  backgroundImage: "url('')",
+                  backgroundImage: "url('https://www2.arccorp.com/globalassets/homepage/redesign/events/webinar-jumbo.png')",
                 }}
               >
                 <div className="jumbo-header">
