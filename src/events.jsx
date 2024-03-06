@@ -140,7 +140,7 @@ class Events extends Component {
                     : moment(event.date).format("D");
 
                 return (
-                  <div className="col-lg-6">
+                  <div className="col-lg-6 col-sm-12">
                     {event.type != "arc" ? (
                       <div className="event-card-outer">
                         <div className="row">
@@ -201,7 +201,7 @@ class Events extends Component {
         <div className="on-demand-webinar-callout">
           <div className="container on-demand-webinar-inner">
             <div className="row">
-              <div className="col-lg-6">
+              <div className="col-sm-12 col-lg-6">
                 <div className="webinar-inside">
                   <h2 className="webinar-title">On-Demand Webinars</h2>
                   <div className="webinar-desc">
@@ -219,7 +219,6 @@ class Events extends Component {
                   </div>
                 </div>
               </div>
-              <div className="col-lg-6"></div>
             </div>
           </div>
         </div>

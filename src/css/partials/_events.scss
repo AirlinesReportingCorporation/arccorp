@@ -132,7 +132,7 @@
 
   .event-page {
     .event-inner {
-      width: 1210px;
+      max-width: 1210px;
     }
 
     .arc-event {
@@ -297,7 +297,7 @@
     line-height: 52px;
   }
   .webinar-desc {
-    width: 578px;
+    max-width: 578px;
     font-family: main.$arc-font-regular;
     font-size: 21px;
     letter-spacing: 0;
