@@ -90,7 +90,7 @@ class HomepageSlider extends Component {
                 >
                   Total Agency Sales Topped $8.9 Billion on Strong Domestic and International Demand
                   <span className="arc-homepage-cta-link arc-jumbo-cta-link d-inline-flex p-0 pl-2">
-                    <a href="https://www2.arccorp.com/about-us/newsroom/2024-news-releases/january-2024-ticket-sales/">
+                    <a href="https://www2.arccorp.com/about-us/newsroom/2024-news-releases/january-2024-ticket-sales/>
                       Read More
                     </a>
                   </span>
