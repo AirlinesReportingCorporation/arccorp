@@ -1,0 +1,49 @@
+.apa-process-text {
+  font-family: SourceSansPro-SemiBold, Arial, Helvetica, sans-serif;
+  font-size: 18px;
+  line-height: 20px;
+  text-align: center;
+  margin-top: 15px;
+}
+
+.product-border {
+  border-top: 1px solid #898790;
+  padding-top: 60px;
+  margin-top: 60px;
+}
+
+.apa-sdk {
+  cursor: pointer;
+
+  &:hover {
+    filter: invert(40%) sepia(95%) saturate(2563%) hue-rotate(164deg)
+      brightness(100%) contrast(81%);
+  }
+}
+
+a.apa-link {
+  font-family: SourceSansPro-SemiBold, SourceSansPro-Regular, arial, helvetica,
+    sans-serif;
+  font-size: 22px;
+  border-bottom: 1px solid #2a2b2c;
+  padding: 30px 0;
+  margin-bottom: 30px;
+  width: 100%;
+  display: block;
+}
+
+.apa-dev {
+  color: #ffffff;
+  font-family: SourceSansPro-SemiBold, SourceSansPro-Regular, arial, helvetica,
+    sans-serif;
+  color: #fff;
+  font-size: 16px;
+  line-height: 22px;
+  margin-left: 40px;
+  background: #000000;
+  border: 1px solid #5d5c68;
+  border-radius: 7px;
+  padding: 30px 20px;
+  margin-bottom: 10px;
+  text-align: center;
+}

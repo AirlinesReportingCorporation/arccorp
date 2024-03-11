@@ -2,7 +2,6 @@
 @use "~arccorp-vars/dist/scss/main.scss";
 @import "block-utilities";
 
-
 html {
   scroll-behavior: smooth;
 }
@@ -762,6 +761,7 @@ a.ctaBtn.product-cta {
 }
 
 .callout-box {
+  border-radius: 20px;
   padding: 60px;
   text-align: center;
 }
