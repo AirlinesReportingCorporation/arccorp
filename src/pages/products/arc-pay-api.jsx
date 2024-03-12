@@ -34,7 +34,8 @@ function ARCPayAPI() {
       />
 
       <ProductJumbo
-        backgroundImage="https://www2.arccorp.com/globalassets/products--participation/arc-pay/arc-pay-jumbo-3.png"
+        className="bg-top"
+        backgroundImage="https://www2.arccorp.com/globalassets/products--participation/arc-pay/arc-pay-api-jumbo.jpg"
         title={
           <>
             Integrate.
@@ -465,7 +466,7 @@ function ARCPayAPI() {
       />
 
       <ProductQuote
-        backgroundImage="https://www2.arccorp.com/globalassets/destination-gateway/dg-quote.png"
+        backgroundImage="https://www2.arccorp.com/globalassets/products--participation/arc-pay/arc-pay-api-quote.jpg"
         quote="We're delighted to expand our relationship with ARC by using the ARC Pay API, marking a pivotal moment in improving the customer experience on our website. By using the ARC Pay API to enable features like Apple Pay, Google Pay, and 3DS, we're simplifying and elevating the travel-buying process for our clients. This collaboration underscores our commitment to innovation and excellence in travel solutions."
         author="-	Brian Crist, "
         title="Founder and CEO"
