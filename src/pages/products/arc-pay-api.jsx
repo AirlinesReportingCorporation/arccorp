@@ -515,6 +515,6 @@ function ARCPayAPI() {
 
 export default ARCPayAPI;
 
-var mountNode = document.getElementById("home-app");
+var mountNode = document.getElementById("product-app");
 
 ReactDOM.render(<ARCPayAPI />, mountNode);
