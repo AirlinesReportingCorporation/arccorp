@@ -29,6 +29,8 @@ function ARCPayAPI() {
           { title: "Developers", url: "#developers" },
           { title: "Supplementary Data", url: "#data" },
         ]}
+        stickyCTALink="https://www2.arccorp.com/support-training/product-sales-request?Product=ARC_Pay"
+        stickyCTA="Learn More"
       />
 
       <ProductJumbo
@@ -207,7 +209,7 @@ function ARCPayAPI() {
         backgroundImage="https://www2.arccorp.com/globalassets/products--participation/arc-pay/arc-pay-credit-bg.png"
         eyebrow="Features"
         title={
-          <span class="type-color-white">
+          <span className="type-color-white">
             All major credit cards and preferred digital wallets accepted
           </span>
         }
@@ -303,16 +305,17 @@ function ARCPayAPI() {
         title={<span className="">Designed for Developers</span>}
         subtitle=""
         body={
-          <div className="row mt-5">
-            <div className="col-lg-5">
-              <div>
-                <CodeBlock
-                  customStyle={{
-                    height: "600px",
-                    overflow: "scroll",
-                    borderRadius: "10px"
-                  }}
-                  text={`{
+          <div className="container">
+            <div className="row mt-5">
+              <div className="col-lg-5">
+                <div>
+                  <CodeBlock
+                    customStyle={{
+                      height: "538px",
+                      overflow: "scroll",
+                      borderRadius: "10px",
+                    }}
+                    text={`{
                     "airline": {
                       "bookingReference": "MC12D8",
                       "itinerary": {
@@ -344,25 +347,48 @@ function ARCPayAPI() {
                       ]
                     }
                   }`}
-                  language={"javascript"}
-                  theme={atomOneDark}
-                  {...{ showLineNumbers, wrapLines, codeBlock }}
-                />
+                    language={"javascript"}
+                    theme={atomOneDark}
+                    {...{ showLineNumbers, wrapLines, codeBlock }}
+                  />
+                </div>
               </div>
-            </div>
-            <div className="col-lg-7">
-              <div className="apa-dev">
-                Code samples and illustrative instances
+              <div className="col-lg-7">
+                <div className="row">
+                  <div className="col-lg-12">
+                    <div className="apa-dev">
+                      Code samples and illustrative instances
+                    </div>
+                    <div className="apa-dev">
+                      Command-line interface for development and testing
+                    </div>
+                    <div className="apa-dev">
+                      Version-controlled API modifications{" "}
+                    </div>
+                    <div className="apa-dev">Webhook functionality </div>
+                    <div className="apa-dev">Testing environment </div>
+                    <div className="apa-dev">Support for metadata </div>
+                  </div>
+                  <div className="col-lg-6">
+                    <a
+                      href="https://api.arcpay.travel/api/documentation/integrationGuidelines/index.html"
+                      className="ctaBtn"
+                      style={{ width: "100%" }}
+                    >
+                      Developer Portal
+                    </a>{" "}
+                  </div>
+                  <div className="col-lg-6">
+                    <a
+                      href="https://www.postman.com/arccorp?tab=collections"
+                      className="ctaBtn"
+                      style={{ width: "100%" }}
+                    >
+                      Postman Collection
+                    </a>
+                  </div>
+                </div>
               </div>
-              <div className="apa-dev">
-                Command-line interface for development and testing
-              </div>
-              <div className="apa-dev">
-                Version-controlled API modifications{" "}
-              </div>
-              <div className="apa-dev">Webhook functionality </div>
-              <div className="apa-dev">Testing environment </div>
-              <div className="apa-dev">Support for metadata </div>
             </div>
           </div>
         }
@@ -376,33 +402,60 @@ function ARCPayAPI() {
           <div className="container">
             <div className="row">
               <div className="col-md-6">
-                <a href="#" className="apa-link">
+                <a
+                  href="https://api.arcpay.travel/api/documentation/integrationGuidelines/supportedFeatures/pickAdditionalFunctionality/supplementaryData.html?locale=en_US"
+                  className="apa-link"
+                >
                   Integration Guidelines Page
                 </a>
-                <a href="#" className="apa-link">
+                <a
+                  href="https://api.arcpay.travel/api/documentation/integrationGuidelines/supportedFeatures/pickAdditionalFunctionality/supplementaryData.html?locale=en_US"
+                  className="apa-link"
+                >
                   Statement Descriptor Data
                 </a>
-                <a href="#" className="apa-link">
+                <a
+                  href="https://api.arcpay.travel/api/documentation/integrationGuidelines/supportedFeatures/pickAdditionalFunctionality/supplementaryData.html?locale=en_US"
+                  className="apa-link"
+                >
                   Level II and Level III Data
                 </a>
-                <a href="#" className="apa-link">
+                <a
+                  href="https://api.arcpay.travel/api/documentation/integrationGuidelines/supportedFeatures/pickAdditionalFunctionality/supplementaryData.html?locale=en_US"
+                  className="apa-link"
+                >
                   Cruise Data
                 </a>
-                <a href="#" className="apa-link">
+                <a
+                  href="https://api.arcpay.travel/api/documentation/integrationGuidelines/supportedFeatures/pickAdditionalFunctionality/supplementaryData.html?locale=en_US#:~:text=Risk%20Custom%20Data-,Merchant%20Custom%20Data,-Merchant%20custom%20data"
+                  className="apa-link"
+                >
                   Merchant Custom Data
                 </a>
               </div>
               <div className="col-md-6">
-                <a href="#" className="apa-link">
+                <a
+                  href="https://api.arcpay.travel/api/documentation/downloads/index.html?locale=en_US"
+                  className="apa-link"
+                >
                   Sample Code
                 </a>
-                <a href="#" className="apa-link">
+                <a
+                  href="https://api.arcpay.travel/api/documentation/glossary/index.html?locale=en_US"
+                  className="apa-link"
+                >
                   Glossary
                 </a>
-                <a href="#" className="apa-link">
+                <a
+                  href="https://api.arcpay.travel/api/documentation/troubleshootingFaqs/index.html?locale=en_US"
+                  className="apa-link"
+                >
                   Troubleshooting & FAQ
                 </a>
-                <a href="#" className="apa-link">
+                <a
+                  href="https://api.arcpay.travel/api/documentation/apiDocumentation/index.html?locale=en_US"
+                  className="apa-link"
+                >
                   API Reference Documentation
                 </a>
               </div>
