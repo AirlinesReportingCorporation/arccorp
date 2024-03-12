@@ -206,6 +206,13 @@ function ARCPayAPI() {
         }
       />
 
+<ProductText
+        className="pb-5 bg-color-fog"
+        eyebrow="features"
+        title="Use a Payment Link"
+        subtitle={<>Payment Link is a <span>secure way to receive payments</span>. You create a payment link URL and share it with the payer through email, text, or a QR code. When the payer clicks the link, they can choose a payment method to complete the transaction on the payment page. </>}
+      />
+
       <ProductText
         backgroundImage="https://www2.arccorp.com/globalassets/products--participation/arc-pay/arc-pay-credit-bg.png"
         eyebrow="Features"
@@ -306,6 +313,7 @@ function ARCPayAPI() {
           </div>
         }
       />
+
       <ProductText
         className=""
         id="developers"
