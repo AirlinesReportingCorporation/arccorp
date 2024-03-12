@@ -34,7 +34,7 @@ function ARCPayAPI() {
       />
 
       <ProductJumbo
-        className="bg-top"
+        className="apa-jumbo-top"
         backgroundImage="https://www2.arccorp.com/globalassets/products--participation/arc-pay/arc-pay-api-jumbo.jpg"
         title={
           <>
@@ -78,6 +78,7 @@ function ARCPayAPI() {
             <div className="row text-center">
               <div className="col-lg-2">
                 <img
+                  style={{ maxWidth: "80px" }}
                   className="img-fluid"
                   src="https://www2.arccorp.com/globalassets/products--participation/arc-pay/secure-1.png"
                 />
@@ -85,6 +86,7 @@ function ARCPayAPI() {
               </div>
               <div className="col-lg-2">
                 <img
+                  style={{ maxWidth: "80px" }}
                   className="img-fluid"
                   src="https://www2.arccorp.com/globalassets/products--participation/arc-pay/secure-2.png"
                 />
@@ -94,6 +96,7 @@ function ARCPayAPI() {
               </div>
               <div className="col-lg-2">
                 <img
+                  style={{ maxWidth: "80px" }}
                   className="img-fluid"
                   src="https://www2.arccorp.com/globalassets/products--participation/arc-pay/secure-3.png"
                 />
@@ -104,6 +107,7 @@ function ARCPayAPI() {
               </div>
               <div className="col-lg-2">
                 <img
+                  style={{ maxWidth: "80px" }}
                   className="img-fluid"
                   src="https://www2.arccorp.com/globalassets/products--participation/arc-pay/secure-4.png"
                 />
@@ -114,6 +118,7 @@ function ARCPayAPI() {
               </div>
               <div className="col-lg-2">
                 <img
+                  style={{ maxWidth: "80px" }}
                   className="img-fluid"
                   src="https://www2.arccorp.com/globalassets/products--participation/arc-pay/secure-5.png"
                 />
@@ -124,6 +129,7 @@ function ARCPayAPI() {
               <div className="col-lg-2">
                 <img
                   className="img-fluid"
+                  style={{ maxWidth: "80px" }}
                   src="https://www2.arccorp.com/globalassets/products--participation/arc-pay/secure-6.png"
                 />
                 <div className="apa-process-text">
@@ -206,11 +212,18 @@ function ARCPayAPI() {
         }
       />
 
-<ProductText
+      <ProductText
         className="pb-5 bg-color-fog"
         eyebrow="features"
         title="Use a Payment Link"
-        subtitle={<>Payment Link is a <span>secure way to receive payments</span>. You create a payment link URL and share it with the payer through email, text, or a QR code. When the payer clicks the link, they can choose a payment method to complete the transaction on the payment page. </>}
+        subtitle={
+          <>
+            Payment Link is a <span>secure way to receive payments</span>. You
+            create a payment link URL and share it with the payer through email,
+            text, or a QR code. When the payer clicks the link, they can choose
+            a payment method to complete the transaction on the payment page.{" "}
+          </>
+        }
       />
 
       <ProductText
@@ -225,7 +238,9 @@ function ARCPayAPI() {
           <>
             All ARC Pay solutions accept and are fully supported by all the
             major credit card brands,{" "}
-            <span className="type-color-white">allowing you the flexibility to focus on other things.</span>
+            <span className="type-color-white">
+              allowing you the flexibility to focus on other things.
+            </span>
           </>
         }
         body={
@@ -409,6 +424,15 @@ function ARCPayAPI() {
         }
       />
 
+      <ProductQuote
+        className="apa-quote"
+        backgroundImage="https://www2.arccorp.com/globalassets/products--participation/arc-pay/arc-pay-api-quote.jpg"
+        quote="We're delighted to expand our relationship with ARC by using the ARC Pay API, marking a pivotal moment in improving the customer experience on our website. By using the ARC Pay API to enable features like Apple Pay, Google Pay, and 3DS, we're simplifying and elevating the travel-buying process for our clients. This collaboration underscores our commitment to innovation and excellence in travel solutions."
+        author="Brian Crist, "
+        title="Founder and CEO"
+        company="Business Travel Group "
+      />
+
       <ProductText
         className="bg-color-fog"
         id="data"
@@ -479,21 +503,13 @@ function ARCPayAPI() {
         }
       />
 
-      <ProductQuote
-        backgroundImage="https://www2.arccorp.com/globalassets/products--participation/arc-pay/arc-pay-api-quote.jpg"
-        quote="We're delighted to expand our relationship with ARC by using the ARC Pay API, marking a pivotal moment in improving the customer experience on our website. By using the ARC Pay API to enable features like Apple Pay, Google Pay, and 3DS, we're simplifying and elevating the travel-buying process for our clients. This collaboration underscores our commitment to innovation and excellence in travel solutions."
-        author="-	Brian Crist, "
-        title="Founder and CEO"
-        company="Business Travel Group "
-      />
-
       <ProductText
-        className="bg-color-tarmac pb-5  text-center"
-        subtitle={<span className="type-color-white">Latest Webinar</span>}
+        className="bg-color-tarmac pb-5  text-center apa-webinar"
+        title={<span className="type-color-white">Latest Webinar</span>}
         body={
           <div className="container mt-5 text-center">
             <div className="row">
-              <div className="col-lg-6 offset-lg-3">
+              <div className="col-lg-8 offset-lg-2">
                 <a href="https://www2.arccorp.com/articles-trends/on-demand-webinars/on-demand-webinar-list/webinar-083023/">
                   <img
                     className="img-fluid"

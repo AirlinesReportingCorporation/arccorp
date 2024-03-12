@@ -6,8 +6,9 @@
   margin-top: 15px;
 }
 
-.bg-top {
-  background-position: top center;
+.apa-jumbo-top {
+  background-position: 0 20%;
+  background-color: #000000;
 }
 
 .product-border {
@@ -25,13 +26,42 @@
   }
 }
 
+.apa-webinar {
+  .callout-container {
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
+
+  .product-header {
+    margin-bottom: 15px;
+    font-size: 40px;
+  }
+}
+
+@media (min-width: 992px) {
+  .apa-webinar {
+    .col-lg-10 {
+      -ms-flex: 0 0 100%;
+      flex: 0 0 100%;
+      max-width: 100%;
+    }
+  }
+}
+
+.apa-quote {
+  .product-quote-copy {
+    max-width: 780px !important;
+  }
+}
+
 a.apa-link {
   font-family: SourceSansPro-SemiBold, SourceSansPro-Regular, arial, helvetica,
     sans-serif;
-  font-size: 22px;
+  font-size: 20px;
+  line-height: 22px;
   border-bottom: 1px solid #2a2b2c;
-  padding: 30px 0;
-  margin-bottom: 30px;
+  padding: 20px 0;
+  margin-bottom: 20px;
   width: 100%;
   display: block;
 }
