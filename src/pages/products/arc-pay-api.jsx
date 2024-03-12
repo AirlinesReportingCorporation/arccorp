@@ -214,7 +214,13 @@ function ARCPayAPI() {
             All major credit cards and preferred digital wallets accepted
           </span>
         }
-        subtitle="Payment Link is a secure way to receive payments. You create a payment link URL and share it with the payer through email, text, or a QR code. When the payer clicks the link, they can choose a payment method to complete the transaction on the payment page. "
+        subtitle={
+          <>
+            All ARC Pay solutions accept and are fully supported by all the
+            major credit card brands,{" "}
+            <span className="type-color-white">allowing you the flexibility to focus on other things.</span>
+          </>
+        }
         body={
           <div
             className="sub-callout-container "
