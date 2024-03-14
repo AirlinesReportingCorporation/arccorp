@@ -2,6 +2,8 @@ import "react-app-polyfill/ie11";
 import "react-app-polyfill/stable";
 import "core-js/stable";
 
+import "./index.scss";
+
 import React, { useState } from "react";
 import ReactDOM from "react-dom";
 import {
@@ -187,12 +189,18 @@ function ARCPayAPI() {
         className="pb-5"
         eyebrow="features"
         title="Mobile SDKs Integration"
-        subtitle="Everything you need to develop and deploy mobile payment solutions using ARC Pay."
+        subtitle={
+          <div style={{ maxWidth: "700px" }}>
+            Everything you need to develop and deploy mobile payment solutions
+            using ARC Pay.
+          </div>
+        }
         body={
-          <div className="row">
+          <div className="row mt-4">
             <div className="col-lg-12">
               <a
-                className="ctaBtn"
+                style={{ width: "150px" }}
+                className="ctaBtn mr-3"
                 target="_blank"
                 href="https://api.arcpay.travel/api/documentation/integrationGuidelines/mobileSDK/gatewayiOSSDK.html?locale=en_US"
               >
@@ -200,6 +208,7 @@ function ARCPayAPI() {
               </a>
 
               <a
+                style={{ width: "150px" }}
                 className="ctaBtn"
                 target="_blank"
                 href="https://api.arcpay.travel/api/documentation/integrationGuidelines/mobileSDK/gatewayAndroidSDK.html?locale=en_US"

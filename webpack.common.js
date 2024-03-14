@@ -14,7 +14,8 @@ module.exports = {
     main: "./src/js/main.js",
     "main-react": "./src/index.jsx",
     "footer-react": "./src/footer.jsx",
-    "arc-pay-api": "./src/pages/products/arc-pay-api.jsx",
+    "arc-pay-api": "./src/pages/products/arc-pay-api/index.jsx",
+    "agency-bi": "./src/pages/products/agency-bi/index.jsx",
   },
 
   output: {

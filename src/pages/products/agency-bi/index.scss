@@ -44,16 +44,6 @@
   }
 }
 
-@media (min-width: 992px) {
-  .apa-webinar {
-    .col-lg-10 {
-      -ms-flex: 0 0 100%;
-      flex: 0 0 100%;
-      max-width: 100%;
-    }
-  }
-}
-
 .apa-quote {
   .product-quote-copy {
     max-width: 780px !important;
@@ -84,3 +74,15 @@ a.apa-link {
   margin-bottom: 15px;
   text-align: center;
 }
+
+
+@media (min-width: 992px) {
+  .apa-webinar {
+    .col-lg-10 {
+      -ms-flex: 0 0 100%;
+      flex: 0 0 100%;
+      max-width: 100%;
+    }
+  }
+}
+
