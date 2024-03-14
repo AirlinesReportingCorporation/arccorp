@@ -21,7 +21,7 @@ const codeBlock = false;
 
 function ARCPayAPI() {
   return (
-    <div style={{ paddingBottom: "90px" }}>
+    <div className="apa-product-page" style={{ paddingBottom: "90px" }}>
       <Stickynav
         title="ARC Pay API"
         links={[
@@ -45,11 +45,11 @@ function ARCPayAPI() {
         subtitle={
           <>
             <span>
-              Our simplified integration ensures your customers enjoy a
-              one-click payment experience
+              Our simplified integration ensures your customers enjoy an
+              experience optimized for travel
             </span>
-            , supporting Apple Pay, Android Pay and other travel-related
-            features and payment choices.{" "}
+            , that supports Apple Pay, Google Pay and other travel-related
+            features and payment choices.
           </>
         }
       />
@@ -62,8 +62,7 @@ function ARCPayAPI() {
             cruise lines and airlines to{" "}
             <span>seamlessly incorporate ARC's payment processing</span> into
             their booking platforms. ARC Pay API can be accessed through mobile,
-            web interfaces or custom software solutions. ARC is PCI Compliant,
-            and actively participates in the PCI Security Standards Council.
+            web interfaces or custom software solutions.
           </>
         }
       />
@@ -82,7 +81,7 @@ function ARCPayAPI() {
                   className="img-fluid"
                   src="https://www2.arccorp.com/globalassets/products--participation/arc-pay/secure-1.png"
                 />
-                <div className="apa-process-text">Passwords & Certificates</div>
+                <div className="apa-process-text">Level 1 PCI Compliant</div>
               </div>
               <div className="col-lg-2">
                 <img
@@ -165,8 +164,9 @@ function ARCPayAPI() {
         title="Hosted Checkout"
         subtitle={
           <>
-            Simplify and enhance the payment process for <br />
-            both customers and businesses.
+            Simplify and enhance the payment process for both customers and
+            businesses with our simplified integration that ensures your
+            customers enjoy a <span>one-click payment experience</span>.
           </>
         }
         body={
@@ -187,26 +187,25 @@ function ARCPayAPI() {
         className="pb-5"
         eyebrow="features"
         title="Mobile SDKs Integration"
+        subtitle="Everything you need to develop and deploy mobile payment solutions using ARC Pay."
         body={
-          <div className="container mt-5">
-            <div className="row">
-              <div className="col-lg-12">
-                <a href="https://api.arcpay.travel/api/documentation/integrationGuidelines/mobileSDK/gatewayiOSSDK.html?locale=en_US">
-                  <img
-                    className="img-fluid apa-sdk"
-                    style={{ maxHeight: "116px", marginRight: "90px" }}
-                    src="https://www2.arccorp.com/globalassets/products--participation/arc-pay/sdk-ios.png"
-                  />
-                </a>
+          <div className="row">
+            <div className="col-lg-12">
+              <a
+                className="ctaBtn"
+                target="_blank"
+                href="https://api.arcpay.travel/api/documentation/integrationGuidelines/mobileSDK/gatewayiOSSDK.html?locale=en_US"
+              >
+                iOS
+              </a>
 
-                <a href="https://api.arcpay.travel/api/documentation/integrationGuidelines/mobileSDK/gatewayAndroidSDK.html?locale=en_US">
-                  <img
-                    className="img-fluid apa-sdk"
-                    style={{ maxHeight: "116px" }}
-                    src="https://www2.arccorp.com/globalassets/products--participation/arc-pay/sdk-android.png"
-                  />
-                </a>
-              </div>
+              <a
+                className="ctaBtn"
+                target="_blank"
+                href="https://api.arcpay.travel/api/documentation/integrationGuidelines/mobileSDK/gatewayAndroidSDK.html?locale=en_US"
+              >
+                Android
+              </a>
             </div>
           </div>
         }
@@ -401,6 +400,7 @@ function ARCPayAPI() {
                   </div>
                   <div className="col-lg-6">
                     <a
+                      target="_blank"
                       href="https://api.arcpay.travel/api/documentation/integrationGuidelines/index.html"
                       className="ctaBtn"
                       style={{ width: "100%" }}
@@ -410,6 +410,7 @@ function ARCPayAPI() {
                   </div>
                   <div className="col-lg-6">
                     <a
+                      target="_blank"
                       href="https://www.postman.com/arccorp?tab=collections"
                       className="ctaBtn"
                       style={{ width: "100%" }}
@@ -433,74 +434,27 @@ function ARCPayAPI() {
         company="Business Travel Group "
       />
 
-      <ProductText
-        className="bg-color-fog"
-        id="data"
-        title="Supplementary Data"
-        body={
-          <div className="container">
-            <div className="row">
-              <div className="col-md-6">
-                <a
-                  href="https://api.arcpay.travel/api/documentation/integrationGuidelines/supportedFeatures/pickAdditionalFunctionality/supplementaryData.html?locale=en_US"
-                  className="apa-link"
-                >
-                  Integration Guidelines Page
-                </a>
-                <a
-                  href="https://api.arcpay.travel/api/documentation/integrationGuidelines/supportedFeatures/pickAdditionalFunctionality/supplementaryData.html?locale=en_US"
-                  className="apa-link"
-                >
-                  Statement Descriptor Data
-                </a>
-                <a
-                  href="https://api.arcpay.travel/api/documentation/integrationGuidelines/supportedFeatures/pickAdditionalFunctionality/supplementaryData.html?locale=en_US"
-                  className="apa-link"
-                >
-                  Level II and Level III Data
-                </a>
-                <a
-                  href="https://api.arcpay.travel/api/documentation/integrationGuidelines/supportedFeatures/pickAdditionalFunctionality/supplementaryData.html?locale=en_US"
-                  className="apa-link"
-                >
-                  Cruise Data
-                </a>
-                <a
-                  href="https://api.arcpay.travel/api/documentation/integrationGuidelines/supportedFeatures/pickAdditionalFunctionality/supplementaryData.html?locale=en_US#:~:text=Risk%20Custom%20Data-,Merchant%20Custom%20Data,-Merchant%20custom%20data"
-                  className="apa-link"
-                >
-                  Merchant Custom Data
-                </a>
-              </div>
-              <div className="col-md-6">
-                <a
-                  href="https://api.arcpay.travel/api/documentation/downloads/index.html?locale=en_US"
-                  className="apa-link"
-                >
-                  Sample Code
-                </a>
-                <a
-                  href="https://api.arcpay.travel/api/documentation/glossary/index.html?locale=en_US"
-                  className="apa-link"
-                >
-                  Glossary
-                </a>
-                <a
-                  href="https://api.arcpay.travel/api/documentation/troubleshootingFaqs/index.html?locale=en_US"
-                  className="apa-link"
-                >
-                  Troubleshooting & FAQ
-                </a>
-                <a
-                  href="https://api.arcpay.travel/api/documentation/apiDocumentation/index.html?locale=en_US"
-                  className="apa-link"
-                >
-                  API Reference Documentation
-                </a>
-              </div>
-            </div>
-          </div>
-        }
+      <ProductLinks
+        className="apa-product-links"
+        colClass="col-lg-6"
+        prodLink={[
+          {
+            alt: "Supplementary Data",
+            copy: "Pass additional data related to the order in transactions.",
+            cta: "Learn More",
+            direction: "right",
+            header: "Supplementary Data",
+            icon: "https://www2.arccorp.com/globalassets/products--participation/arc-travel-demand/atd-product-sheet.jpg",
+            link: "https://api.arcpay.travel/api/documentation/integrationGuidelines/supportedFeatures/pickAdditionalFunctionality/supplementaryData.html?locale=en_US",
+          },
+          {
+            alt: "Troubleshooting & FAQ",
+            copy: "Suggestions and solutions to problems that may occur with your integration.",
+            cta: "Learn More",
+            header: "Troubleshooting & FAQ",
+            icon: "https://www2.arccorp.com/globalassets/products--participation/arc-pay/agreement-icon.png",
+          },
+        ]}
       />
 
       <ProductText
@@ -525,18 +479,36 @@ function ARCPayAPI() {
 
       <ProductCallout
         className=""
-        cta="Learn More"
-        ctaLink="https://www2.arccorp.com/support-training/product-sales-request?Product=ARC_Pay"
-        subtitle=""
+        //cta="Learn More"
+        //ctaLink="https://www2.arccorp.com/support-training/product-sales-request?Product=ARC_Pay"
+        //subtitle="Click to learn more."
         title={
           <>
             <div>
               <img
-                src="https://www2.arccorp.com/globalassets/products--participation/airportis/airportis-arc-logo.png"
+                width="125px"
+                src="https://www2.arccorp.com/globalassets/products--participation/arc-pay/arc-pay-api-wordmark.png"
                 alt=""
               />
             </div>
-            <div className="mt-3">Get Started</div>
+            <div className="my-4">
+              Ready to elevate your payment experience?
+            </div>
+            <div class="callout-box-copy">Click to learn more.</div>
+            <div>
+              <a
+                href="https://www2.arccorp.com/support-training/product-sales-request?Product=ARC_Pay"
+                class="ctaBtn ctaBtn--white  product-cta mr-4"
+              >
+                Learn More
+              </a>
+              <a
+                href="https://www2.arccorp.com/globalassets/datasheets/arc-pay-datasheet.pdf"
+                class="ctaBtn ctaBtn--white-outline  product-cta"
+              >
+                Product Sheet
+              </a>
+            </div>
           </>
         }
       />
