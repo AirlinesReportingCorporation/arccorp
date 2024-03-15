@@ -462,6 +462,7 @@ function ARCPayAPI() {
             cta: "Learn More",
             header: "Troubleshooting & FAQ",
             icon: "https://www2.arccorp.com/globalassets/products--participation/arc-pay/agreement-icon.png",
+            link: "https://api.arcpay.travel/api/documentation/troubleshootingFaqs/index.html?locale=en_US",
           },
         ]}
       />
@@ -473,7 +474,7 @@ function ARCPayAPI() {
           <div className="container mt-5 text-center">
             <div className="row">
               <div className="col-lg-8 offset-lg-2">
-                <a href="https://www2.arccorp.com/articles-trends/on-demand-webinars/on-demand-webinar-list/webinar-083023/">
+                <a target="_blank" href="https://www2.arccorp.com/articles-trends/on-demand-webinars/on-demand-webinar-list/webinar-083023/">
                   <img
                     className="img-fluid"
                     src="https://www2.arccorp.com/globalassets/homepage/redesign/webinar/webinar-083023.jpg"
