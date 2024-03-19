@@ -443,30 +443,31 @@ function ARCPayAPI() {
         company="Business Travel Group "
       />
 
-      <ProductLinks
-        id="data"
-        className="apa-product-links"
-        colClass="col-lg-6"
-        prodLink={[
-          {
-            alt: "Supplementary Data",
-            copy: "Pass additional data related to the order in transactions.",
-            cta: "Learn More",
-            direction: "right",
-            header: "Supplementary Data",
-            icon: "https://www2.arccorp.com/globalassets/products--participation/arc-travel-demand/atd-product-sheet.jpg",
-            link: "https://api.arcpay.travel/api/documentation/integrationGuidelines/supportedFeatures/pickAdditionalFunctionality/supplementaryData.html?locale=en_US",
-          },
-          {
-            alt: "Troubleshooting & FAQ",
-            copy: "Suggestions and solutions to problems that may occur with your integration.",
-            cta: "Learn More",
-            header: "Troubleshooting & FAQ",
-            icon: "https://www2.arccorp.com/globalassets/products--participation/arc-pay/agreement-icon.png",
-            link: "https://api.arcpay.travel/api/documentation/troubleshootingFaqs/index.html?locale=en_US",
-          },
-        ]}
-      />
+      <div id="data">
+        <ProductLinks
+          className="apa-product-links"
+          colClass="col-lg-6"
+          prodLink={[
+            {
+              alt: "Supplementary Data",
+              copy: "Pass additional data related to the order in transactions.",
+              cta: "Learn More",
+              direction: "right",
+              header: "Supplementary Data",
+              icon: "https://www2.arccorp.com/globalassets/products--participation/arc-travel-demand/atd-product-sheet.jpg",
+              link: "https://api.arcpay.travel/api/documentation/integrationGuidelines/supportedFeatures/pickAdditionalFunctionality/supplementaryData.html?locale=en_US",
+            },
+            {
+              alt: "Troubleshooting & FAQ",
+              copy: "Suggestions and solutions to problems that may occur with your integration.",
+              cta: "Learn More",
+              header: "Troubleshooting & FAQ",
+              icon: "https://www2.arccorp.com/globalassets/products--participation/arc-pay/agreement-icon.png",
+              link: "https://api.arcpay.travel/api/documentation/troubleshootingFaqs/index.html?locale=en_US",
+            },
+          ]}
+        />
+      </div>
 
       <ProductText
         className="bg-color-tarmac pb-5  text-center apa-webinar"
