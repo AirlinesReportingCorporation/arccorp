@@ -6,7 +6,7 @@
     padding-bottom: 60px;
     min-height: 425px;
     height: 100%;
-    background-color: #F7F5F6;
+    background-color: #f7f5f6;
 
     .jumbo-row {
       width: 100%;
@@ -16,7 +16,7 @@
     .jumbo-left {
       background-repeat: no-repeat;
       background-size: cover;
-      box-shadow: inset 0 0 0 2000px rgba(42, 43, 44, 0.3);
+      box-shadow: inset 0 0 0 2000px rgba(42, 43, 44, 0.5);
       border-bottom-left-radius: 20px;
       border-top-left-radius: 20px;
       border-right: 15px solid main.$tarmac;
@@ -104,11 +104,12 @@
         padding: 30px 0px;
       }
 
-      .webinar-cal, .webinar-details {
+      .webinar-cal,
+      .webinar-details {
         display: inline-block;
       }
 
-      .webinar-details  {
+      .webinar-details {
         padding-left: 15px;
       }
 
@@ -126,7 +127,6 @@
         letter-spacing: 0;
         line-height: 16px;
       }
-
     }
   }
 
@@ -163,41 +163,40 @@
         max-width: 190px;
         background-position: left center;
         background-size: cover;
-        box-shadow: inset 0 0 0 2000px rgba(42,43,44,.1);
+        box-shadow: inset 0 0 0 2000px rgba(42, 43, 44, 0.1);
 
         .event-date {
-          padding-top: 8px;
-          padding-left: 10px;
+          padding-top: 9px;
+          padding-left: 9px;
         }
 
         .event-month {
           height: 28px;
-          width: 67px;
+          width: 79px;
           border-radius: 11px 11px 0 0;
           background-color: #189bb0;
           p {
             color: main.$white;
             font-family: main.$arc-font-bold;
-            font-size: 18px;
+            font-size: 22px;
             letter-spacing: 0;
-            line-height: 30px;
+            line-height: 28px;
             text-align: center;
             text-transform: uppercase;
           }
         }
         .event-day {
-          height: 39px;
-          width: 67px;
+          height: 44px;
+          width: 79px;
           border-radius: 0 0 11px 11px;
           background-color: #ffffff;
           p {
             color: #2a2b2d;
             font-family: main.$arc-font-bold;
-            font-size: 34px;
+            font-size: 42px;
             letter-spacing: 0;
-            line-height: 30px;
+            line-height: 40px;
             text-align: center;
-            padding-top: 2px;
           }
         }
       }
@@ -304,5 +303,64 @@
     letter-spacing: 0;
     line-height: 23px;
     margin-bottom: 10px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+
+  //Jumbo
+  #arc-events .webinar-jumbo .jumbo-left {
+    height: 200px;
+    min-height: unset;
+    border-radius: 10px 10px 0px 0px;
+    border-right: unset;
+
+    .jumbo-header {
+      text-align: center;
+      
+      h2 {font-size: 38px;}
+
+      .jumbo-tag {
+        max-width: 225px;
+      }
+    }
+  }
+
+  #arc-events .webinar-jumbo .jumbo-right .webinar-events {
+    padding-left: unset;
+  }
+
+  #arc-events .webinar-jumbo .jumbo-right .webinar-details {
+    padding-left: unset;
+    padding-top: 10px;
+  }
+
+  #arc-events .webinar-jumbo .jumbo-right .webinar-time {
+    padding-top: 5px;
+  }
+
+  // Events section
+  #arc-events .event-page .event-inner .event-title {
+    font-size: 20px;
+    line-height: 20px;
+    
+  }
+  #arc-events .event-page .event-card-outer {
+    max-height: unset;
+  }
+
+  #arc-events .event-page .arc-event {
+    height: 240px;
+  }
+
+  #arc-events .event-page .event-card-outer .event-card-left {
+    height: 95px;
+    max-width: 100%;
+    min-height: unset;
+    border-radius: 10px 10px 0px 0px;
+  }
+  #arc-events .event-page .event-card-outer .event-card-right {
+    min-height: 270px;
+    border-radius: 0px 0px 10px 10px;
   }
 }

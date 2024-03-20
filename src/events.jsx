@@ -118,7 +118,7 @@ class Events extends Component {
           <div className="row no-gutters">
             <div className="col-lg-12">
               <div className="event-page-title">
-                <h2>Upcoming Events</h2>
+                <h2>Upcoming Industry Events</h2>
               </div>
             </div>
           </div>
@@ -145,7 +145,7 @@ class Events extends Component {
                       <div className="event-card-outer">
                         <div className="row">
                           <div
-                            className="col event-card-left"
+                            className="col-xs-push-12 col-md-4 event-card-left"
                             style={{
                               backgroundImage: "url(" + url + ")",
                             }}
@@ -159,7 +159,7 @@ class Events extends Component {
                               </div>
                             </div>
                           </div>
-                          <div className="col event-card-right">
+                          <div className="col-xs-pull-12 col-md-8 event-card-right">
                             <div className="event-right-inner">
                               <p className="event-title">{event.title}</p>
                               <p className="event-desc">{event.desc}</p>
