@@ -82,15 +82,15 @@ class HomepageSlider extends Component {
                   className="arc-jumbo-inner-title mb-1"
                   style={{ maxWidth: "720px", margin: "0 auto" }}
                 >
-                  Monthly U.S. Travel Agency Air Ticket Sales Set January Record
+                 U.S. Travel Agencies Air Ticket Sales Reach $8.9 Billion in February 2024
                 </h2>
                 <div
                   className="arc-jumbo-inner-body"
                   style={{ marginBottom: "60px" }}
                 >
-                  Total Agency Sales Topped $8.9 Billion on Strong Domestic and International Demand
+                  Strong Domestic Travel Demand Elevated Sales to Another Record Month
                   <span className="arc-homepage-cta-link arc-jumbo-cta-link d-inline-flex p-0 pl-2">
-                    <a href="https://www2.arccorp.com/about-us/newsroom/2024-news-releases/january-2024-ticket-sales/?utm_source=Jumbo_Carouse">
+                    <a href="https://www2.arccorp.com/about-us/newsroom/2024-news-releases/u.s.-travel-agencies-air-ticket-sales-reach-$8.9-billion-in-february-2024/">
                       Read More
                     </a>
                   </span>
