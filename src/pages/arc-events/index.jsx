@@ -3,12 +3,10 @@ import "./index.scss";
 import React, { Component } from "react";
 import ReactDOM from "react-dom";
 
-
 import "react-app-polyfill/ie11";
 import "react-app-polyfill/stable";
 import "core-js/stable";
 import moment from "moment";
-
 
 import LazyLoad from "vanilla-lazyload";
 import { eventsList } from "./events";
@@ -21,29 +19,20 @@ if (!document.lazyLoadInstance) {
   });
 }
 
-function ARCEvents() {
-  const webinarList = [
-    // {
-    //   date: "Feb 12, 2024",
-    //   title: "Protecting Agents: Security Agreement Insights & Updates Webinar",
-    //   time: "2:30PM EST",
-    //   url: "",
-    // },
-    // {
-    //   date: "Feb 12, 2024",
-    //   title: "Protecting Agents: Security Agreement Insights & Updates Webinar",
-    //   time: "2:30PM EST",
-    //   url: "",
-    // },
-    // {
-    //   date: "Feb 12, 2024",
-    //   title: "Protecting Agents: Security Agreement Insights & Updates Webinar",
-    //   time: "2:30PM EST",
-    //   url: "",
-    // },
-  ];
+/*
+Webinar Object:
+  {
+      date: "Feb 12, 2024",
+      title: "Protecting Agents: Security Agreement Insights & Updates Webinar",
+      time: "2:30PM EST",
+      url: "https://www2.arccorp.com/articles-trends/on-demand-webinars/on-demand-webinar-list/webinar-012624/",
+    }
 
-  console.log(eventsList.length)
+*/
+
+function ARCEvents() {
+  const webinarList = [];
+
   return (
     <div className="event-page">
       <Stickynav className="bg-color-tarmac" title="Events" />
@@ -89,14 +78,14 @@ function ARCEvents() {
                                   <p>{day}</p>
                                 </div>
                               </div>
-                              <div className="webinar-details">
+                              <a href={webinar.url} className="webinar-details">
                                 <div className="webinar-event-title">
                                   {webinar.title}
                                 </div>
                                 <div className="webinar-time">
                                   <img src="" /> {webinar.time} EST
                                 </div>
-                              </div>
+                              </a>
                             </div>
                           </div>
                         </div>
@@ -119,44 +108,56 @@ function ARCEvents() {
             </div>
           </div>
         </div>
-          {eventsList.map((event, i) => {
-           
-            let eventRow = (<div></div>);
-
-            //[0,1,2,3]
-            // i == arraylist.length - 1
-            // if i is the last elem in the array, then
-            // make a row that contains only one col-6 elem for that single event
-            if (i == eventsList.length - 1 && i % 2 == 0) {
-              console.log(event.title)
-              console.log(i)
-              eventRow = (
-                <div className="row" key={i}>
-                  <div className="col-lg-6">
-                    <EventCard title={event.title} imgUrl={event.imgUrl} url={event.url} type={event.type} desc={event.desc} location={event.location} date={event.date}/>
-                  </div>
+        {eventsList.map((event, i) => {
+          let eventRow = <div></div>;
+          if (i == eventsList.length - 1 && i % 2 == 0) {
+            eventRow = (
+              <div className="row" key={i}>
+                <div className="col-lg-6">
+                  <EventCard
+                    title={event.title}
+                    imgUrl={event.imgUrl}
+                    url={event.url}
+                    type={event.type}
+                    desc={event.desc}
+                    location={event.location}
+                    date={event.date}
+                  />
                 </div>
-              )
-            } 
-            else if (i == 0 || (i % 2 == 0 && i != eventsList.length - 1)) {
-              console.log(event.title + " , " + eventsList[i + 1].title);
-              console.log(i )
-              console.log(i+1)
-              let secondEvent = eventsList[i + 1];
-              eventRow = (
-                <div className="row" key={i}>
-                  <div className="col-lg-6">
-                    <EventCard title={event.title} url={event.url} imgUrl={event.imgUrl} type={event.type} desc={event.desc} location={event.location} date={event.date}/>
-                  </div>
-                  <div className="col-lg-6">
-                    <EventCard title={secondEvent.title} url={event.url} imgUrl={secondEvent.imgUrl} type={secondEvent.type} desc={secondEvent.desc} location={secondEvent.location} date={secondEvent.date}/>
-                  </div>
+              </div>
+            );
+          } else if (i == 0 || (i % 2 == 0 && i != eventsList.length - 1)) {
+            let secondEvent = eventsList[i + 1];
+            eventRow = (
+              <div className="row" key={i}>
+                <div className="col-lg-6">
+                  <EventCard
+                    title={event.title}
+                    url={event.url}
+                    imgUrl={event.imgUrl}
+                    type={event.type}
+                    desc={event.desc}
+                    location={event.location}
+                    date={event.date}
+                  />
                 </div>
-              )
-            }
+                <div className="col-lg-6">
+                  <EventCard
+                    title={secondEvent.title}
+                    url={secondEvent.url}
+                    imgUrl={secondEvent.imgUrl}
+                    type={secondEvent.type}
+                    desc={secondEvent.desc}
+                    location={secondEvent.location}
+                    date={secondEvent.date}
+                  />
+                </div>
+              </div>
+            );
+          }
 
-            return eventRow;
-          })}
+          return eventRow;
+        })}
       </div>
       <div className="on-demand-webinar-callout">
         <div className="container on-demand-webinar-inner">
@@ -165,9 +166,7 @@ function ARCEvents() {
               <div className="webinar-inside">
                 <h2 className="webinar-title">On-Demand Webinars</h2>
                 <div className="webinar-desc">
-                  Stay up to date with the latest industry knowledge. Lorem
-                  ipsum dolor sit amet, consectetur adipiscing elit. Donec ac
-                  diam facilisis, lacinia sem ac, volutpat justo.
+                  Build your knowledge of ARC and the travel industry.
                 </div>
                 <div className="webinar-buttons">
                   <a

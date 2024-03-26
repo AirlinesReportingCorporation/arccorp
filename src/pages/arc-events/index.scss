@@ -272,15 +272,14 @@
   .on-demand-webinar-callout {
     margin-top: 80px;
     margin-bottom: 60px;
-    height: 420px;
     background-color: main.$black;
     background-image: url("https://www2.arccorp.com/globalassets/homepage/redesign/events/webinar-callout-banner.jpg");
     background-position: center top;
-    background-size: contain;
+    background-size: cover;
     background-repeat: no-repeat;
   }
   .on-demand-webinar-inner {
-    padding: 90px 0px;
+    padding: 120px 0px;
   }
 
   .webinar-inside,
@@ -317,12 +316,14 @@
 @media screen and (max-width: 768px) {
 
   //Jumbo
-  #arc-events-app .webinar-jumbo .jumbo-left {
+  #arc-events-app .webinar-jumbo {
+    padding-top: 0px;
+  
+  .jumbo-left {
     height: 200px;
-    min-height: none;
-    border-radius: 10px 10px 0px 0px;
     border-right: none;
     max-width: none;
+    border-radius: 0px 0px 0px 0px;
 
     .jumbo-header {
       text-align: center;
@@ -334,6 +335,8 @@
       }
     }
   }
+
+}
 
   #arc-events-app .webinar-jumbo .jumbo-right .webinar-events {
     padding-left: none;
@@ -364,5 +367,9 @@
   #arc-events-app .event-page .event-card-outer .event-card-right {
     min-height: 270px;
     border-radius: 0px 0px 10px 10px;
+  }
+
+  .on-demand-webinar-callout {
+    box-shadow: inset 0 0 0 2000px rgba(42, 43, 44, 0.6);
   }
 }
