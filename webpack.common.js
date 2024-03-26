@@ -14,9 +14,11 @@ module.exports = {
     main: "./src/js/main.js",
     "main-react": "./src/index.jsx",
     "footer-react": "./src/footer.jsx",
-    "events": "./src/events.jsx"
+    "arc-pay-api": "./src/pages/products/arc-pay-api/index.jsx",
+    "agency-bi": "./src/pages/products/agency-bi/index.jsx",
+    "arc-events": "./src/pages/arc-events/index.jsx",
   },
-  
+
   output: {
     filename: "[name].min.js",
     path: path.resolve(__dirname, "dist"),
@@ -52,7 +54,7 @@ module.exports = {
     alias: {
       vue: "vue/dist/vue.js",
     },
-    extensions: [".*",".js",".jsx"],
+    extensions: [".*", ".js", ".jsx"],
   },
   plugins: [
     new webpack.ProvidePlugin({

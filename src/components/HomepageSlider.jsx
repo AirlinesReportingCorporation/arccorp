@@ -80,7 +80,7 @@ class HomepageSlider extends Component {
                 {}
                 <h2
                   className="arc-jumbo-inner-title mb-1"
-                  style={{ maxWidth: "720px", margin: "0 auto" }}
+                  style={{ maxWidth: "720px", margin: "0 auto", fontSize: "40px" }}
                 >
                  U.S. Travel Agencies Air Ticket Sales Reach $8.9 Billion in February 2024
                 </h2>
@@ -90,7 +90,7 @@ class HomepageSlider extends Component {
                 >
                   Strong Domestic Travel Demand Elevated Sales to Another Record Month
                   <span className="arc-homepage-cta-link arc-jumbo-cta-link d-inline-flex p-0 pl-2">
-                    <a href="https://www2.arccorp.com/about-us/newsroom/2024-news-releases/u.s.-travel-agencies-air-ticket-sales-reach-$8.9-billion-in-february-2024/">
+                    <a href="https://www2.arccorp.com/about-us/newsroom/2024-news-releases/u.s.-travel-agencies-air-ticket-sales-reach-$8.9-billion-in-february-2024/?utm_source=Jumbo_Carousel">
                       Read More
                     </a>
                   </span>

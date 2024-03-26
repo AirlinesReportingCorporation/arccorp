@@ -1,6 +1,6 @@
 @use "~arccorp-vars/dist/scss/main.scss";
 
-#arc-events {
+#arc-events-app {
   .webinar-jumbo {
     padding-top: 60px;
     padding-bottom: 60px;
@@ -102,11 +102,7 @@
 
       .webinar-event {
         padding: 30px 0px;
-      }
-
-      .webinar-cal,
-      .webinar-details {
-        display: inline-block;
+        display: flex;
       }
 
       .webinar-details {
@@ -131,39 +127,38 @@
   }
 
   .event-page {
-    .event-inner {
-      max-width: 1210px;
-    }
 
     .arc-event {
       height: 100%;
       background-position: center;
       background-size: cover;
       border-radius: 10px;
+      min-height: 316px;
+
     }
 
     .event-card-outer {
       margin-top: 20px;
       margin-bottom: 20px;
-      max-height: 316px;
-      max-width: 570px;
-      width: 100%;
+      height: 100%;
+      max-height: -webkit-fill-available;
 
-      .col {
-        padding: unset;
+
+      .row.no-gutters {
+        height: 100%;
       }
+
 
       .event-card-left {
         border-top-left-radius: 10px;
         border-bottom-left-radius: 10px;
         background-color: #6c6c6c;
-        float: left;
         min-height: 316px;
-        height: 100%;
         max-width: 190px;
         background-position: left center;
         background-size: cover;
         box-shadow: inset 0 0 0 2000px rgba(42, 43, 44, 0.1);
+        height: 100%;
 
         .event-date {
           padding-top: 9px;
@@ -218,7 +213,7 @@
       padding-top: 30px;
       padding-bottom: 30px;
     }
-    .event-inner {
+    .event-container {
       p {
         color: #2a2b2d;
       }
@@ -244,6 +239,8 @@
         font-weight: 600;
         letter-spacing: 0;
         line-height: 16px;
+        margin-bottom: 34px;
+
 
         .location-icon {
           height: 14px;
@@ -309,7 +306,7 @@
 @media screen and (max-width: 768px) {
 
   //Jumbo
-  #arc-events .webinar-jumbo .jumbo-left {
+  #arc-events-app .webinar-jumbo .jumbo-left {
     height: 200px;
     min-height: unset;
     border-radius: 10px 10px 0px 0px;
@@ -326,40 +323,33 @@
     }
   }
 
-  #arc-events .webinar-jumbo .jumbo-right .webinar-events {
+  #arc-events-app .webinar-jumbo .jumbo-right .webinar-events {
     padding-left: unset;
   }
 
-  #arc-events .webinar-jumbo .jumbo-right .webinar-details {
-    padding-left: unset;
-    padding-top: 10px;
-  }
-
-  #arc-events .webinar-jumbo .jumbo-right .webinar-time {
+  #arc-events-app .webinar-jumbo .jumbo-right .webinar-time {
     padding-top: 5px;
   }
 
   // Events section
-  #arc-events .event-page .event-inner .event-title {
+  #arc-events-app .event-page .event-conteiner .event-title {
     font-size: 20px;
     line-height: 20px;
     
   }
-  #arc-events .event-page .event-card-outer {
-    max-height: unset;
+
+  #arc-events-app .event-page .arc-event {
+    height: 230px;
+    min-height: auto;
   }
 
-  #arc-events .event-page .arc-event {
-    height: 240px;
-  }
-
-  #arc-events .event-page .event-card-outer .event-card-left {
+  #arc-events-app .event-page .event-card-outer .event-card-left {
     height: 95px;
     max-width: 100%;
     min-height: unset;
     border-radius: 10px 10px 0px 0px;
   }
-  #arc-events .event-page .event-card-outer .event-card-right {
+  #arc-events-app .event-page .event-card-outer .event-card-right {
     min-height: 270px;
     border-radius: 0px 0px 10px 10px;
   }
