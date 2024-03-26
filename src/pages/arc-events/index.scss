@@ -303,14 +303,26 @@
   }
 }
 
+@media screen and (max-width: 991px) {
+  #arc-events-app .webinar-jumbo .jumbo-left .jumbo-header {
+    text-align: center;
+  }
+
+  #arc-events-app .event-page .event-card-outer .event-card-left {
+    max-width: none;
+  }
+
+}
+
 @media screen and (max-width: 768px) {
 
   //Jumbo
   #arc-events-app .webinar-jumbo .jumbo-left {
     height: 200px;
-    min-height: unset;
+    min-height: none;
     border-radius: 10px 10px 0px 0px;
-    border-right: unset;
+    border-right: none;
+    max-width: none;
 
     .jumbo-header {
       text-align: center;
@@ -324,7 +336,7 @@
   }
 
   #arc-events-app .webinar-jumbo .jumbo-right .webinar-events {
-    padding-left: unset;
+    padding-left: none;
   }
 
   #arc-events-app .webinar-jumbo .jumbo-right .webinar-time {
@@ -346,7 +358,7 @@
   #arc-events-app .event-page .event-card-outer .event-card-left {
     height: 95px;
     max-width: 100%;
-    min-height: unset;
+    min-height: none;
     border-radius: 10px 10px 0px 0px;
   }
   #arc-events-app .event-page .event-card-outer .event-card-right {

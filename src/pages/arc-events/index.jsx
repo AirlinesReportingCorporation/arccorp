@@ -50,7 +50,7 @@ function ARCEvents() {
       {webinarList.length > 0 ? (
         <div className="webinar-jumbo">
           <div className="row jumbo-row no-gutters">
-            <div className="col-lg-6">
+            <div className="col-lg-6 col-md-4 col-xs-12">
               <div
                 className="jumbo-left"
                 style={{
@@ -66,7 +66,7 @@ function ARCEvents() {
                 </div>
               </div>
             </div>
-            <div className="col-lg-6">
+            <div className="col-lg-6 col-md-8">
               <div className="jumbo-right">
                 <div className="webinar-events">
                   <div className="webinar-list">
