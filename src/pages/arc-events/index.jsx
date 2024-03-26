@@ -23,24 +23,24 @@ if (!document.lazyLoadInstance) {
 
 function ARCEvents() {
   const webinarList = [
-    {
-      date: "Feb 12, 2024",
-      title: "Protecting Agents: Security Agreement Insights & Updates Webinar",
-      time: "2:30PM EST",
-      url: "",
-    },
-    {
-      date: "Feb 12, 2024",
-      title: "Protecting Agents: Security Agreement Insights & Updates Webinar",
-      time: "2:30PM EST",
-      url: "",
-    },
-    {
-      date: "Feb 12, 2024",
-      title: "Protecting Agents: Security Agreement Insights & Updates Webinar",
-      time: "2:30PM EST",
-      url: "",
-    },
+    // {
+    //   date: "Feb 12, 2024",
+    //   title: "Protecting Agents: Security Agreement Insights & Updates Webinar",
+    //   time: "2:30PM EST",
+    //   url: "",
+    // },
+    // {
+    //   date: "Feb 12, 2024",
+    //   title: "Protecting Agents: Security Agreement Insights & Updates Webinar",
+    //   time: "2:30PM EST",
+    //   url: "",
+    // },
+    // {
+    //   date: "Feb 12, 2024",
+    //   title: "Protecting Agents: Security Agreement Insights & Updates Webinar",
+    //   time: "2:30PM EST",
+    //   url: "",
+    // },
   ];
 
   console.log(eventsList.length)
