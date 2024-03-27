@@ -4,7 +4,7 @@
   .webinar-jumbo {
     padding-top: 60px;
     padding-bottom: 60px;
-    min-height: 425px;
+
     height: 100%;
     background-color: #f7f5f6;
 
@@ -20,7 +20,7 @@
       border-bottom-left-radius: 20px;
       border-top-left-radius: 20px;
       border-right: 15px solid main.$tarmac;
-      min-height: 425px;
+
       height: 100%;
       margin-left: auto;
       max-width: 600px;
@@ -55,8 +55,16 @@
 
     .jumbo-right {
       background-color: main.$tarmac;
-      min-height: 425px;
+
       height: 100%;
+
+      &.webinar-length-1 {
+        min-height: 350px;
+      }
+
+      &.webinar-length-2 {
+        min-height: 380px;
+      }
 
       .webinar-events {
         align-items: center;
@@ -105,6 +113,11 @@
         display: flex;
       }
 
+      .webinar-list {
+        padding-top: 20px;
+        padding-bottom: 20px;
+      }
+
       .webinar-details {
         padding-left: 15px;
       }
@@ -127,14 +140,12 @@
   }
 
   .event-page {
-
     .arc-event {
       height: 100%;
       background-position: center;
       background-size: cover;
       border-radius: 10px;
       min-height: 316px;
-
     }
 
     .event-card-outer {
@@ -143,11 +154,9 @@
       height: 100%;
       max-height: -webkit-fill-available;
 
-
       .row.no-gutters {
         height: 100%;
       }
-
 
       .event-card-left {
         border-top-left-radius: 10px;
@@ -241,7 +250,6 @@
         line-height: 16px;
         margin-bottom: 34px;
 
-
         .location-icon {
           height: 14px;
           padding-right: 7px;
@@ -310,33 +318,32 @@
   #arc-events-app .event-page .event-card-outer .event-card-left {
     max-width: none;
   }
-
 }
 
 @media screen and (max-width: 768px) {
-
   //Jumbo
   #arc-events-app .webinar-jumbo {
     padding-top: 0px;
-  
-  .jumbo-left {
-    height: 200px;
-    border-right: none;
-    max-width: none;
-    border-radius: 0px 0px 0px 0px;
 
-    .jumbo-header {
-      text-align: center;
-      
-      h2 {font-size: 38px;}
+    .jumbo-left {
+      height: 200px;
+      border-right: none;
+      max-width: none;
+      border-radius: 0px 0px 0px 0px;
 
-      .jumbo-tag {
-        max-width: 225px;
+      .jumbo-header {
+        text-align: center;
+
+        h2 {
+          font-size: 38px;
+        }
+
+        .jumbo-tag {
+          max-width: 225px;
+        }
       }
     }
   }
-
-}
 
   #arc-events-app .webinar-jumbo .jumbo-right .webinar-events {
     padding-left: none;
@@ -350,7 +357,6 @@
   #arc-events-app .event-page .event-conteiner .event-title {
     font-size: 20px;
     line-height: 20px;
-    
   }
 
   #arc-events-app .event-page .arc-event {

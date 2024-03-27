@@ -31,7 +31,14 @@ Webinar Object:
 */
 
 function ARCEvents() {
-  const webinarList = [];
+  const webinarList = [
+    {
+      date: "Feb 12, 2024",
+      title: "Protecting Agents: Security Agreement Insights & Updates Webinar",
+      time: "2:30PM EST",
+      url: "https://www2.arccorp.com/articles-trends/on-demand-webinars/on-demand-webinar-list/webinar-012624/",
+    },
+  ];
 
   return (
     <div className="event-page">
@@ -48,7 +55,7 @@ function ARCEvents() {
                 }}
               >
                 <div className="jumbo-header">
-                  <h2>Upcoming Webinars</h2>
+                  <h2>Upcoming Webinar{webinarList.length > 1 ? "s" : ""}</h2>
                   <div className="jumbo-tag">
                     Stay up to date with the latest industry knowledge.
                   </div>
@@ -56,7 +63,9 @@ function ARCEvents() {
               </div>
             </div>
             <div className="col-lg-6 col-md-8">
-              <div className="jumbo-right">
+              <div
+                className={"jumbo-right webinar-length-" + webinarList.length}
+              >
                 <div className="webinar-events">
                   <div className="webinar-list">
                     {webinarList.map((webinar, i) => {
