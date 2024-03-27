@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "dependencies": {
-    "arccorp-vars": "^0.2.9",
+    "arccorp-vars": "^0.3.0",
     "bootstrap-vue": "^2.15.0",
     "featherlight": "^1.7.9",
     "intersection-observer": "^0.11.0",
