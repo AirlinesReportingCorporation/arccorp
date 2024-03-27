@@ -24,21 +24,14 @@ Webinar Object:
   {
       date: "Feb 12, 2024",
       title: "Protecting Agents: Security Agreement Insights & Updates Webinar",
-      time: "2:30PM EST",
+      time: "2:30PM",
       url: "https://www2.arccorp.com/articles-trends/on-demand-webinars/on-demand-webinar-list/webinar-012624/",
     }
 
 */
 
 function ARCEvents() {
-  const webinarList = [
-    {
-      date: "Feb 12, 2024",
-      title: "Protecting Agents: Security Agreement Insights & Updates Webinar",
-      time: "2:30PM EST",
-      url: "https://www2.arccorp.com/articles-trends/on-demand-webinars/on-demand-webinar-list/webinar-012624/",
-    },
-  ];
+  const webinarList = [];
 
   return (
     <div className="event-page">
