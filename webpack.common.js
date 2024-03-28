@@ -16,6 +16,7 @@ module.exports = {
     "footer-react": "./src/footer.jsx",
     "arc-pay-api": "./src/pages/products/arc-pay-api/index.jsx",
     "agency-bi": "./src/pages/products/agency-bi/index.jsx",
+    "reference-guides": "./src/pages/products/reference-guides/index.jsx",
     "arc-events": "./src/pages/arc-events/index.jsx",
   },
 
