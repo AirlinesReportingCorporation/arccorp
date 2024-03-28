@@ -4,13 +4,31 @@ import "core-js/stable";
 
 import "./index.scss";
 
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import ReactDOM from "react-dom";
 import { Stickynav, ARCAccordion } from "arccorp-vars";
 
 import { guides } from "./guide-info";
 
 function ReferenceGuides() {
+
+  const [isShowing, setShowing] = useState(false);
+
+  useEffect(() => {
+    let showing = isShowing;
+    if (showing) {
+      setShowing(true);
+    }
+    else {
+      setShowing (false)
+    }
+  }, [isShowing])
+
+
+  const toggleShow = () => {
+    setShowing(!isShowing);
+  };
+
   return (
     <div className="arc-reference-guides" style={{ paddingBottom: "90px" }}>
       <Stickynav title="Reference Guides" />
@@ -36,10 +54,20 @@ function ReferenceGuides() {
         </div>
         <div className="row">
           <div className="col-lg-12">
+              <div
+              className="show-button"
+              onClick={(toggleShow)}
+            >
+              {isShowing ? (
+                <span className="guides-open">Collapse All References</span>
+              ) : (
+                <span className="guides-close">Expand All References</span>
+              )}
+            </div>
             {guides.map((guide, i) => {
-              console.log(guide);
               return (
                 <ARCAccordion
+                showing={isShowing}
                   id={guide.id}
                   name={guide.name}
                   body={guide.body}
