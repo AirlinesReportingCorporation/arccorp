@@ -59,9 +59,9 @@ function ReferenceGuides() {
               onClick={(toggleShow)}
             >
               {isShowing ? (
-                <span className="guides-open">Collapse All References</span>
+                <span className="guides-open">Collapse All</span>
               ) : (
-                <span className="guides-close">Expand All References</span>
+                <span className="guides-close">Expand All</span>
               )}
             </div>
             {guides.map((guide, i) => {
