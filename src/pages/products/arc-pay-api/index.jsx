@@ -34,7 +34,7 @@ function ARCPayAPI() {
         stickyCTALink="https://www2.arccorp.com/support-training/product-sales-request?Product=ARC_Pay"
         stickyCTA="Learn More"
       />
-
+      
       <ProductJumbo
         className="apa-jumbo-top"
         backgroundImage="https://www2.arccorp.com/globalassets/products--participation/arc-pay/arc-pay-api-jumbo.jpg"
