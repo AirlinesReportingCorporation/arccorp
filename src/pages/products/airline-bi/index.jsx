@@ -210,8 +210,8 @@ function AirlineBI() {
         subtitle="Related Resources"
         body={
           <div className="row">
-            <ReferenceCard link="https://www2.arccorp.com/products-participation/products/memo-analyzer-for-airlines/" title="Memo Analyzer for Airlines" desc="Memo Analyzer helps airlines track, benchmark and analyze memo and ticketing data to improve processes and reduce debit memos." cta="Learn more"/>
-            <ReferenceCard link="https://www2.arccorp.com/products-participation/products/direct-data-solutions/" title="Direct Data Solutions" desc="Direct Data Solutions provide airlines with the industry’s most comprehensive global airline sales, market and passenger itinerary data." cta="Learn more"/>
+            <ReferenceCard link="/products-participation/products/memo-analyzer-for-airlines/" title="Memo Analyzer for Airlines" desc="Memo Analyzer helps airlines track, benchmark and analyze memo and ticketing data to improve processes and reduce debit memos." cta="Learn more"/>
+            <ReferenceCard link="/products-participation/products/direct-data-solutions/" title="Direct Data Solutions" desc="Direct Data Solutions provide airlines with the industry’s most comprehensive global airline sales, market and passenger itinerary data." cta="Learn more"/>
           </div>
         }
       />
