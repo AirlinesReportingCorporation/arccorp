@@ -15,6 +15,7 @@ import {
   ProductLinks,
 } from "arccorp-vars";
 import { quotes } from "./quote";
+import ReferenceCard from "./ReferenceCard";
 
 function AirlineBI() {
   let number = Math.floor(Math.random() * quotes.length);
@@ -28,7 +29,10 @@ function AirlineBI() {
         links={[
           { title: "Features", url: "#features" },
           { title: "Benefites", url: "#benefits" },
-          { title: "Customer Success Stories", url: "https://www2.arccorp.com/products-participation/customer-success-stories/" },
+          {
+            title: "Customer Success Stories",
+            url: "https://www2.arccorp.com/products-participation/customer-success-stories/",
+          },
         ]}
       />
       <ProductJumbo
@@ -188,7 +192,7 @@ function AirlineBI() {
             direction: "down",
             header: "Download Product Sheet",
             icon: "https://www2.arccorp.com/globalassets/products--participation/arc-pay/money-report-icon.png",
-            link: "https://www2.arccorp.com/globalassets/datasheets/airline-bi-product-sheet.pdf"
+            link: "https://www2.arccorp.com/globalassets/datasheets/airline-bi-product-sheet.pdf",
           },
           {
             alt: "Fraud Prevention Practices",
@@ -200,6 +204,16 @@ function AirlineBI() {
           },
         ]}
         valignClass="align-items-start"
+      />
+
+      <ProductText
+        subtitle="Related Resources"
+        body={
+          <div className="row">
+            <ReferenceCard link="https://www2.arccorp.com/products-participation/products/memo-analyzer-for-airlines/" title="Memo Analyzer for Airlines" desc="Memo Analyzer helps airlines track, benchmark and analyze memo and ticketing data to improve processes and reduce debit memos." cta="Learn more"/>
+            <ReferenceCard link="https://www2.arccorp.com/products-participation/products/direct-data-solutions/" title="Direct Data Solutions" desc="Direct Data Solutions provide airlines with the industry’s most comprehensive global airline sales, market and passenger itinerary data." cta="Learn more"/>
+          </div>
+        }
       />
     </div>
   );

@@ -1,3 +1,5 @@
+@use "~arccorp-vars/src/scss/main";
+
 .arc-airline-bi {
     .airline-bi-quote-image-overlay {
         box-shadow: inset 0 0 0 2000px rgba(42, 43, 44, 0.8);
@@ -7,6 +9,76 @@
         max-height: 150px;
       }
 }
+
+.card-outer {
+  border-radius: 10px;
+  min-height: 350px;
+  background-color: #f7f5f5;
+  margin: 30px auto;
+}
+
+.card-inner-top {
+    padding-top: 30px;
+    margin-bottom: auto;
+}
+.card-inner-bottom {
+    margin-top: auto;
+}
+
+.card-cta,
+.card-desc,
+.card-title {
+  margin: auto;
+}
+
+.card-title {
+  width: 225px;
+  padding-bottom: 10px;
+  font-family: main.$arc-font-bold;
+  font-size: 22px;
+  line-height: 25px;
+  color: main.$arc-teal;
+  &:hover {
+    color: #20b8d1
+  }
+}
+
+.card-desc {
+  height: 90px;
+  width: 223px;
+  font-size: 14px;
+  line-height: 18px;
+  font-family: main.$arc-font-regular;
+}
+
+a.card-link, a.card-link:hover {
+  color: unset;
+}
+
+a.card-link:hover {
+  .card-title {
+    color: #20b8d1
+  }
+}
+
+.card-cta {
+  margin-top: auto;
+  font-size: 14px;
+  letter-spacing: 0;
+  line-height: 18px;
+  font-family: main.$arc-font-regular;
+
+  span {
+    position: absolute;
+    bottom: 60px;
+    left: 40px;
+    color: main.$arc-teal;
+    font-family: main.$arc-font-semibold;
+    font-size: 14px;
+    text-transform: uppercase;
+  }
+}
+
 
 @media (min-width: 992px) {
 }
