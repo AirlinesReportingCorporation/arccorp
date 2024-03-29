@@ -12,13 +12,6 @@ function Support() {
               </div>
               <a
                 target="_blank"
-                href="https://www2.arccorp.com/globalassets/email/fees/2023-agency-fees.pdf?utm_source=Global_Navigation"
-                className="arc-mn-sub-link"
-              >
-                2023 ARC Agency Fees
-              </a>
-              <a
-                target="_blank"
                 href="https://www2.arccorp.com/globalassets/email/fees/2024-agency-fees.pdf?utm_source=Global_Navigation"
                 className="arc-mn-sub-link"
               >
@@ -28,14 +21,13 @@ function Support() {
                 href="/support-training/holiday-schedule/?utm_source=Global_Navigation"
                 className="arc-mn-sub-link"
               >
-                2023 & 2024 Holiday Schedule
+                2024 Holiday Schedule
               </a>
-
               <a
                 href="/support-training/airlines/processing-schedule/?utm_source=Global_Navigation"
                 className="arc-mn-sub-link"
               >
-                2023 Processing Schedule
+                2024 Processing Schedule
               </a>
               <a
                 href="/support-training/travel-agencies/participating-airline-information//?utm_source=Global_Navigation"
