@@ -1,13 +1,5 @@
 export const eventsList= [
     {
-        date: "Apr 2, 2024",
-        title: "Connect Spring Marketplace 2024",
-        desc: "Unlock unparalleled opportunities for growth and success at Connect Spring Marketplace, the paramount event designed exclusively for event professionals.",
-        location:"Las Vegas, NV",
-        url: "https://www.connectmeetings.com/events/connect-spring-marketplace-2024",
-        type: "industry"
-    },
-    {
         date: "Apr 9, 2024",
         title: "Elevate + TravelConnect 2024",
         desc: "ARC and ATPCO are coming together to serve the travel industry with Elevate + TravelConnect, a jointly hosted conference in Washington, DC, on April 9-11, 2024. ",
