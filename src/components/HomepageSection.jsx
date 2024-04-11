@@ -326,7 +326,7 @@ class HomepageSection extends Component {
                 </div>
                 <div className="col-lg-7 text-right height-auto">
                   <div className="arc-homepage-small-title">
-                    <span>ARC is NDC Ready</span>
+                    <span>Unlock The Power of Distribution and NDC</span>
                   </div>
                 </div>
                 <div className="col-lg-2 height-auto text-right">
