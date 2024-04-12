@@ -1,14 +1,5 @@
 export const eventsList= [
     {
-        date: "Apr 9, 2024",
-        title: "Elevate + TravelConnect 2024",
-        desc: "ARC and ATPCO are coming together to serve the travel industry with Elevate + TravelConnect, a jointly hosted conference in Washington, DC, on April 9-11, 2024. ",
-        location:"Washington, DC",
-        url: "https://elevate-travelconnect.com/",
-        imgUrl: "https://www2.arccorp.com/globalassets/homepage/ETC-RegOpen-jumbotron.jpg",
-        type: "arc"
-    },
-    {
         date: "May 3, 2024",
         title: "IPW",
         desc: "U.S. Travel Association’s IPW will continue to reunite and rebuild the global travel industry, providing an in-person platform to conduct business and renew our relationships around the world.",
