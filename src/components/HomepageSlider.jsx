@@ -102,36 +102,6 @@ class HomepageSlider extends Component {
       </SwiperSlide>,
       <SwiperSlide>
         <div
-          className="arc-jumbo jumbo-image lazy"
-          data-bg={
-            "https://www2.arccorp.com/globalassets/homepage/ETC-RegOpen-jumbotron.jpg"
-          }
-        >
-          <div
-            className="arc-jumbo-inner white"
-            style={{ alignItems: "flex-end" }}
-          >
-            <a
-              href="https://elevate-travelconnect.com/?utm_source=Jumbo_Carousel"
-              className=""
-              style={{
-                color: "#000000 !important",
-                position: "absolute",
-                top: "0",
-                left: "0",
-                width: "100%",
-                height: "100%",
-              }}
-              alt="Learn More"
-              title="learn more"
-            >
-              &nbsp;
-            </a>
-          </div>
-        </div>
-      </SwiperSlide>,
-      <SwiperSlide>
-        <div
           className="arc-jumbo lazy"
           data-bg={
             "https://www2.arccorp.com/globalassets/homepage/redesign/march-update/fraudalert-jumbotron.jpg"

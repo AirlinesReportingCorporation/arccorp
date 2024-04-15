@@ -253,28 +253,30 @@ class HomepageSection extends Component {
           </div>
           <div className="col-lg-3 col-md-6">
             <a
-              href="https://elevate-travelconnect.com/?utm_source=homepage-card"
-              className="arc-homepage-card d-block arc-homepage-card-long align-items-center"
-              style={{ backgroundSize: "contain", background: "#000000" }}
+              href="https://www2.arccorp.com/about-us/newsroom?utm_source=homepage-card"
+              className="arc-homepage-card d-flex align-items-center lazy"
+              style={{backgroundPosition: "center left"}}
+              data-bg={
+                "https://www2.arccorp.com/globalassets/homepage/redesign/newsroom-card.png"
+              }
             >
-              <div className="row no-gutters align-items-center type-color-white">
+              <div className="row no-gutters align-items-center text-center type-color-white">
                 <div className="col-lg-12">
-                  <div
-                    className="arc-homepage-card-inner d-flex flex-column lazy"
-                    data-bg={
-                      "https://www2.arccorp.com/globalassets/homepage/ETC_singlebox-RegOpen.jpg"
-                    }
-                    style={{
-                      backgroundColor: "#f7f6f5",
-                      backgroundSize: "contain",
-                    }}
-                  >
-                    {/* <div
-                      className="arc-homepage-cta-link text-center"
-                      style={{ paddingLeft: "20px" }}
-                    >
-                      <span>Learn More</span>
-                    </div> */}
+                  <div className="arc-homepage-card-inner d-flex flex-column text-left">
+
+                    <div className="arc-homepage-refund-title">Newsroom</div>
+
+                    <div className="arc-homepage-refund-copy type-color-white">
+                      For timely data and air travel intelligence, Airlines
+                      Reporting Corporation (ARC) is a no-cost valuable resource
+                      for members of the media.
+                    </div>
+
+                    <div className="arc-homepage-cta-link arc-homepage-cta-refund-link white">
+                      <span href="https://www2.arccorp.com/about-us/newsroom?utm_source=homepage-card">
+                        Learn More
+                      </span>
+                    </div>
                   </div>
                 </div>
               </div>
