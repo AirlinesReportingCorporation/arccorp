@@ -63,10 +63,10 @@ class HomepageSlider extends Component {
             loop="true"
             autoPlay
             muted
-            data-src="https://www2.arccorp.com/globalassets/homepage/march-homepage-2x.mp4"
+            data-src="https://www2.arccorp.com/globalassets/homepage/april-Homepage-2x.mp4"
           >
             <source
-              type="https://www2.arccorp.com/globalassets/homepage/march-homepage-2x.mp4"
+              type="https://www2.arccorp.com/globalassets/homepage/april-Homepage-2x.mp4"
               data-src="lazy.mp4"
             />
           </video>
@@ -80,17 +80,22 @@ class HomepageSlider extends Component {
                 {}
                 <h2
                   className="arc-jumbo-inner-title mb-1"
-                  style={{ maxWidth: "720px", margin: "0 auto", fontSize: "40px" }}
+                  style={{
+                    maxWidth: "720px",
+                    margin: "0 auto",
+                    fontSize: "40px",
+                  }}
                 >
-                 U.S. Travel Agencies Air Ticket Sales Reach $8.9 Billion in February 2024
+                  March U.S. Travel Agencies Air Ticket Sales Top $9 Billion
                 </h2>
                 <div
                   className="arc-jumbo-inner-body"
                   style={{ marginBottom: "60px" }}
                 >
-                  Strong Domestic Travel Demand Elevated Sales to Another Record Month
+                  First Quarter Total Sales and Passengers Trips Increased Year
+                  Over Year
                   <span className="arc-homepage-cta-link arc-jumbo-cta-link d-inline-flex p-0 pl-2">
-                    <a href="https://www2.arccorp.com/about-us/newsroom/2024-news-releases/u.s.-travel-agencies-air-ticket-sales-reach-$8.9-billion-in-february-2024/?utm_source=Jumbo_Carousel">
+                    <a href="https://www2.arccorp.com/about-us/newsroom/2024-news-releases/march-u.s.-travel-agencies-air-ticket-sales-top-$9-billion/?utm_source=Jumbo_Carousel">
                       Read More
                     </a>
                   </span>
