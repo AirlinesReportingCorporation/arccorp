@@ -173,6 +173,12 @@ function Products() {
             ARC Pay <span className="arc-mn-new">NEW!</span>
           </a>
           <a
+            href="/products-participation/products/arc-pay/arc-pay-api/?utm_source=Global_Navigation"
+            className="arc-mn-sub-link"
+          >
+            ARC Pay API <span className="arc-mn-new">NEW!</span>
+          </a>
+          <a
             href="/support-training/fraud-prevention/arc-risk-check/?utm_source=Global_Navigation"
             className="arc-mn-sub-link"
           >
