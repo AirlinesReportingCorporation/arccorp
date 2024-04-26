@@ -1,54 +1,7 @@
 //css imports
 import "../css/main.scss";
-import "core-js/stable";
-
-import "owl.carousel";
-import stickybits from "stickybits";
+import "core-js/stable";import stickybits from "stickybits";
 import mountsticky from "./partials/stickynav";
-
-if ($(".owl-carousel").length) {
-  $(".owl-carousel").owlCarousel({
-    center: true,
-    //autoplay: true,
-    loop: true,
-    nav: true,
-    autoHeight: true,
-    autoplayTimeout: 8000,
-    autoplaySpeed: 2000,
-    smartSpeed: 700,
-    autoplayHoverPause: true,
-    URLhashListener: true,
-    autoplayHoverPause: true,
-    animateIn: "fadeIn",
-    animateOut: "fadeOut",
-    navText: [
-      '<img src="https://www2.arccorp.com/globalassets/homepage/redesign/latestArrowLeft.png">',
-      '<img src="https://www2.arccorp.com/globalassets/homepage/redesign/latestArrowRight.png">',
-    ],
-    responsive: {
-      0: {
-        items: 1,
-      },
-      600: {
-        items: 1,
-      },
-      1000: {
-        items: 1,
-      },
-    },
-    onInitialize: function (element) {
-      /* randomize carousel*/
-      $(".owl-carousel")
-        .children()
-        .sort(function () {
-          return Math.round(Math.random()) - 0.5;
-        })
-        .each(function () {
-          $(this).appendTo($(".owl-carousel"));
-        });
-    },
-  });
-}
 
 if ($(".data-panel-sticky").length) {
   stickybits(".data-panel-sticky", { useStickyClasses: true });
