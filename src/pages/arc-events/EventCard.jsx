@@ -20,20 +20,18 @@ export default function EventCard(props) {
           <div className="event-card-bg">
             <div className="row no-gutters">
               <div className="col-md-4">
-                <div>
-                  <div
-                    className="event-card-left"
-                    style={{
-                      backgroundImage: "url(" + url + ")",
-                    }}
-                  >
-                    <div className="event-date">
-                      <div className="event-month">
-                        <p>{month}</p>
-                      </div>
-                      <div className="event-day">
-                        <p>{day}</p>
-                      </div>
+                <div
+                  className="event-card-left"
+                  style={{
+                    backgroundImage: "url(" + url + ")",
+                  }}
+                >
+                  <div className="event-date">
+                    <div className="event-month">
+                      <p>{month}</p>
+                    </div>
+                    <div className="event-day">
+                      <p>{day}</p>
                     </div>
                   </div>
                 </div>
