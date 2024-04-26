@@ -153,6 +153,9 @@
       margin-bottom: 20px;
       height: 100%;
       max-height: -webkit-fill-available;
+      border-top-right-radius: 10px;
+      border-bottom-right-radius: 10px;
+      background-color: #f7f5f5;
 
       .row.no-gutters {
         height: 100%;
@@ -206,9 +209,6 @@
       }
 
       .event-card-right {
-        border-top-right-radius: 10px;
-        border-bottom-right-radius: 10px;
-        background-color: #f7f5f5;
         min-height: 316px;
         position: relative;
         height: 100%;
@@ -355,7 +355,7 @@
   }
 
   // Events section
-  #arc-events-app .event-page .event-conteiner .event-title {
+  #arc-events-app .event-page .event-container .event-title {
     font-size: 20px;
     line-height: 20px;
   }
@@ -363,6 +363,10 @@
   #arc-events-app .event-page .arc-event {
     height: 230px;
     min-height: auto;
+  }
+
+  #arc-events-app .event-page .event-card-outer {
+    border-radius: 10px;
   }
 
   #arc-events-app .event-page .event-card-outer .event-card-left {
@@ -373,7 +377,6 @@
   }
   #arc-events-app .event-page .event-card-outer .event-card-right {
     min-height: 270px;
-    border-radius: 0px 0px 10px 10px;
   }
 
   .on-demand-webinar-callout {
