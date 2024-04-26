@@ -17,42 +17,44 @@ export default function EventCard(props) {
     <>
       {props.type != "arc" ? (
         <div className="event-card-outer">
-          <div className="row no-gutters">
-            <div className="col-md-4">
-              <div>
-                <div
-                  className="event-card-left"
-                  style={{
-                    backgroundImage: "url(" + url + ")",
-                  }}
-                >
-                  <div className="event-date">
-                    <div className="event-month">
-                      <p>{month}</p>
-                    </div>
-                    <div className="event-day">
-                      <p>{day}</p>
+          <div className="event-card-bg">
+            <div className="row no-gutters">
+              <div className="col-md-4">
+                <div>
+                  <div
+                    className="event-card-left"
+                    style={{
+                      backgroundImage: "url(" + url + ")",
+                    }}
+                  >
+                    <div className="event-date">
+                      <div className="event-month">
+                        <p>{month}</p>
+                      </div>
+                      <div className="event-day">
+                        <p>{day}</p>
+                      </div>
                     </div>
                   </div>
                 </div>
               </div>
-            </div>
-            <div className="col-md-8">
-              <div>
-                <div className="event-card-right">
-                  <div className="event-right-inner">
-                    <p className="event-title">{props.title}</p>
-                    <p className="event-desc">{props.desc}</p>
-                    <p className="event-location">
-                      <img
-                        className="location-icon"
-                        src="https://www2.arccorp.com/globalassets/homepage/redesign/events/location.png"
-                      />
-                      {props.location}
-                    </p>
-                    <a href={props.url} className="event-cta">
-                      Learn More
-                    </a>
+              <div className="col-md-8">
+                <div>
+                  <div className="event-card-right">
+                    <div className="event-right-inner">
+                      <p className="event-title">{props.title}</p>
+                      <p className="event-desc">{props.desc}</p>
+                      <p className="event-location">
+                        <img
+                          className="location-icon"
+                          src="https://www2.arccorp.com/globalassets/homepage/redesign/events/location.png"
+                        />
+                        {props.location}
+                      </p>
+                      <a href={props.url} className="event-cta">
+                        Learn More
+                      </a>
+                    </div>
                   </div>
                 </div>
               </div>
