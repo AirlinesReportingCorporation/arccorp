@@ -37,22 +37,20 @@ export default function EventCard(props) {
                 </div>
               </div>
               <div className="col-md-8">
-                <div>
-                  <div className="event-card-right">
-                    <div className="event-right-inner">
-                      <p className="event-title">{props.title}</p>
-                      <p className="event-desc">{props.desc}</p>
-                      <p className="event-location">
-                        <img
-                          className="location-icon"
-                          src="https://www2.arccorp.com/globalassets/homepage/redesign/events/location.png"
-                        />
-                        {props.location}
-                      </p>
-                      <a href={props.url} className="event-cta">
-                        Learn More
-                      </a>
-                    </div>
+                <div className="event-card-right">
+                  <div className="event-right-inner">
+                    <p className="event-title">{props.title}</p>
+                    <p className="event-desc">{props.desc}</p>
+                    <p className="event-location">
+                      <img
+                        className="location-icon"
+                        src="https://www2.arccorp.com/globalassets/homepage/redesign/events/location.png"
+                      />
+                      {props.location}
+                    </p>
+                    <a href={props.url} className="event-cta">
+                      Learn More
+                    </a>
                   </div>
                 </div>
               </div>
