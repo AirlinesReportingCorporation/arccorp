@@ -170,7 +170,7 @@ function Products() {
             href="/products-participation/products/arc-pay/?utm_source=Global_Navigation"
             className="arc-mn-sub-link"
           >
-            ARC Pay <span className="arc-mn-new">NEW!</span>
+            ARC Pay
           </a>
           <a
             href="/products-participation/products/arc-pay/arc-pay-api/?utm_source=Global_Navigation"
