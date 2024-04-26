@@ -151,10 +151,8 @@
     .event-card-outer {
       margin-top: 20px;
       margin-bottom: 20px;
-      height: 100%;
-      max-height: -webkit-fill-available;
-      border-top-right-radius: 10px;
-      border-bottom-right-radius: 10px;
+      // height: 100%;
+      border-radius: 10px;
       background-color: #f7f5f5;
 
       .row.no-gutters {
@@ -367,7 +365,6 @@
 
   #arc-events-app .event-page .event-card-outer {
     border-radius: 10px;
-    margin-bottom: 20px;
   }
 
   #arc-events-app .event-page .event-card-outer .event-card-left {
